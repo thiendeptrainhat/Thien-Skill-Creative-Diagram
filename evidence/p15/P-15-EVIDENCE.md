@@ -3,7 +3,7 @@
 **Date:** 2026-08-16
 **Authorization:** D-039
 **Authorized scope:** root license discovery, README logo presentation, governance/evidence, commit and push directly to private `main`
-**Phase disposition:** `in-progress` pending remote execution verification
+**Phase disposition:** `passed` under D-040
 
 ## Scope boundary
 
@@ -43,4 +43,12 @@ Pre-push GitHub verification confirmed the target is `thiendeptrainhat/Thien-Ski
 
 ## Remote closure
 
-Commit and push results, GitHub root-license detection and post-push tag/Release invariants will be appended after remote execution. A closure commit may update only this evidence file and authoritative phase status; it must not move the tag or mutate the Release.
+- Publication commit `9fdf15a5e140b5a366a415b59195de23be77ea3a` was pushed directly to private `main`.
+- GitHub contents API reports root `LICENSE.md`, 51,371 bytes, blob `081562e91716ccf34afac7eac3fe8e48d4af53d2`.
+- GitHub license detection reports `key: other`, `name: Other`, `spdx_id: NOASSERTION` and points to root `LICENSE.md`. This is the expected classification for the approved custom commercial source-available license; no standard/open-source license was substituted.
+- GitHub contents API reports the updated root `README.md`, blob `e03c3b14749bf8aff01037eebfede325bf061dc7`, and the referenced approved logo file, blob `407cb432ad437c3f2c58eb2b2070a863cbb72144`, 85,814 bytes.
+- Annotated tag object remains `c91194cb454e7e04eafd2636f98a87a6b32fe24f`.
+- GitHub Release `v1.0.0` remains non-draft and non-prerelease; the three ZIP digests and `SHA256SUMS.txt` digest remain exactly as listed above.
+- The audit-closure commit updates only authoritative phase status, D-040 and this evidence record. It does not move the tag or mutate the Release.
+
+No open finding remains within the authorized publication-patch scope.

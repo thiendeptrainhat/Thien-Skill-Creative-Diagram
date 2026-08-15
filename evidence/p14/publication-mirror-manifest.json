@@ -23,7 +23,7 @@
       "source_sha256": "e3648b4d8273ca3f7bf88557842897978bf3f527b838eef66c57ad84cc27b06f"
     },
     {
-      "mirror_sha256": "5632dce22fab7e893b3cd59ab5beac7693966a54f364b19a96fed288d83276b2",
+      "mirror_sha256": "8b8c2fb8de280fb123751ae58cf52961f16e16feb9f2963bd5958a5625896753",
       "path": "PROJECT-CONTRACT.md",
       "replacements": [
         {
@@ -35,7 +35,7 @@
           "replacement_id": "owner_license_template"
         }
       ],
-      "source_sha256": "28a36a3474eb8eab8d5e83db1a301af82bc19c17346aa6e00567ec6fd7c2bd06"
+      "source_sha256": "0d0041ffef90882ef07a9004750197a636b63950c33aed328e040a1cd5036e27"
     },
     {
       "mirror_sha256": "3d8558b97ee0fa639dccc8c69bad14e9a200daeab3d0f45517047bfd0cee8e58",
@@ -103,5 +103,5 @@
   "record_id": "P14-PUBLICATION-MIRROR-1",
   "source_file_count": 276,
   "source_root": "<LOCAL_WORKSPACE>",
-  "tree_aggregate_sha256": "a7b4870188863f9a9bcd47b342703050705e0007d042cfba41c54a3b90971dd3"
+  "tree_aggregate_sha256": "1eb432b7d070d239500358e295e40b53b38578367599e14571229483426f361b"
 }

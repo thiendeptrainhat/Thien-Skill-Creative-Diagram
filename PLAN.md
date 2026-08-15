@@ -3,10 +3,10 @@
 File này là nguồn sự thật duy nhất cho **cách thực hiện, quyền thực hiện và trạng thái phase**.
 
 **Cập nhật:** 2026-08-16  
-**Phạm vi được phép trong yêu cầu hiện tại:** chỉ P-15 publication patch theo D-039; v1.0.0 đã phát hành
-**Phase tiếp theo đã được phép:** P-15 publication patch đang thực hiện; không có maintenance scope nào khác được phép
-**Quyền triển khai skill:** không thay đổi runtime/implementation; chỉ presentation/governance/evidence theo D-039
-**Quyền build/package/push/release:** được commit và push trực tiếp `main` cho publication patch; không rebuild package, retag, thay GitHub Release/asset, version, legal wording hoặc brand bytes
+**Phạm vi được phép trong yêu cầu hiện tại:** P-15 publication patch theo D-039 đã hoàn tất và được đóng theo D-040
+**Phase tiếp theo đã được phép:** không có; maintenance scope khác chưa được phép
+**Quyền triển khai skill:** không có triển khai mới được phép
+**Quyền build/package/push/release:** publication patch đã push; không có quyền rebuild package, retag, thay GitHub Release/asset hoặc push thay đổi khác
 
 Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`, `passed`.
 
@@ -29,7 +29,7 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 | P-12 | E2 benchmarks & independent forward tests | passed | G-04 | Đóng theo quyết định D-026 ngày 2026-08-15; exact fixtures/goldens và visual rubric đã được chủ sở hữu duyệt. |
 | P-13 | Deterministic three-package build | passed | G-05 | Ba ZIP RC1 được sinh xác định từ một canonical source; 23/23 package checks và 127 regression test `PASS`; G-05 `PASS` theo D-033. P-14 đang chuẩn bị release candidate theo D-034. |
 | P-14 | Owner release approval & private release | passed | G-07 | D-038: sanitized mirror commit/tag/push và private GitHub Release v1.0.0 hoàn tất; exact asset digests khớp; audit-closure commit không di chuyển tag. |
-| P-15 | Maintenance & controlled updates | in-progress | Lặp gate theo release | Chỉ publication patch theo D-039: root license byte-identical, README logo đã duyệt, evidence, commit/push `main`; không đổi package/tag/Release/version/legal wording/brand bytes. |
+| P-15 | Maintenance & controlled updates | passed | Lặp gate theo release | Publication patch hoàn tất theo D-039/D-040; root license được GitHub nhận diện là custom `Other`, README hiển thị logo đã duyệt; package/tag/Release/version/legal wording/brand bytes không đổi. |
 
 ## 2. Bảng trạng thái gate có thẩm quyền
 
@@ -435,7 +435,7 @@ Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và 
 
 **Verification:** mọi thay đổi có decision, source mapping, test và approval tương ứng; mỗi maintenance release lặp G-01 đến G-07 theo phần bị ảnh hưởng và luôn lặp G-05 đến G-07.
 
-**Publication patch đang được phép:** D-039 giới hạn workstream hiện tại ở root `LICENSE.md` byte-identical với exact legal candidate, hiển thị logo 400px đã duyệt trên root `README.md`, cập nhật evidence/governance và commit/push `main`. Không có upstream capability delta, runtime/package rebuild, semantic-version change, retag hoặc GitHub Release mutation.
+**Publication patch đã hoàn tất:** D-039/D-040 giới hạn và đóng workstream ở root `LICENSE.md` byte-identical với exact legal candidate, logo 400px đã duyệt trên root `README.md`, evidence/governance và commit/push private `main`. Không có upstream capability delta, runtime/package rebuild, semantic-version change, retag hoặc GitHub Release mutation. Evidence: `evidence/p15/P-15-EVIDENCE.md`.
 
 ## 3. Change-control record
 
