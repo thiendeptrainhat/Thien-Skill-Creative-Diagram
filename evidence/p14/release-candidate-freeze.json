@@ -1,7 +1,7 @@
 {
   "record_id": "TCD-RELEASE-1.0.0-RC1",
   "version": "1.0.0",
-  "status": "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION",
+  "status": "RELEASED",
   "frozen_at": "2026-08-16",
   "package_candidate_id": "TCD-PACKAGES-1.0.0-RC1",
   "artifacts": [
@@ -133,6 +133,15 @@
     ],
     "target": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
     "required_visibility": "PRIVATE"
+  },
+  "release_execution": {
+    "decision_id": "D-038",
+    "release_commit": "1aae0a0073dd685af1341554f27554eb44c42f63",
+    "tag": "v1.0.0",
+    "tag_object_sha": "c91194cb454e7e04eafd2636f98a87a6b32fe24f",
+    "release_url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v1.0.0",
+    "evidence": "evidence/p14/RELEASE-EVIDENCE.json",
+    "remote_asset_digests_match": true
   },
   "freeze_rule": "Any byte change to a ZIP, checksum manifest, approved legal candidate or approved packaged brand asset creates a new candidate and requires the affected gate to be re-evaluated.",
   "release_authorized": true

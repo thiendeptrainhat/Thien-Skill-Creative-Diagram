@@ -3,10 +3,10 @@
 File này là nguồn sự thật duy nhất cho **cách thực hiện, quyền thực hiện và trạng thái phase**.
 
 **Cập nhật:** 2026-08-16  
-**Phạm vi được phép trong yêu cầu hiện tại:** tiếp tục P-14 theo D-034 đến D-037; G-07 `PASS` và exact init/commit/tag/push/release actions đã được cấp quyền; execution dừng tại điều kiện GitHub CLI authentication hợp lệ  
+**Phạm vi được phép trong yêu cầu hiện tại:** P-14 closure theo D-034 đến D-038; v1.0.0 đã phát hành; không bắt đầu P-15  
 **Phase tiếp theo đã được phép:** P-14; P-15 và maintenance chưa được phép  
-**Quyền triển khai skill:** chỉ P-14 release execution và evidence closure; không bắt đầu P-15  
-**Quyền build/package/push/release:** không rebuild ba ZIP đã freeze; được init sanitized mirror, commit `main`, tag/push `v1.0.0`, push `main` và tạo đúng GitHub Release theo D-037 sau khi `gh auth status` hợp lệ
+**Quyền triển khai skill:** P-14 đã hoàn tất; P-15 và maintenance chưa được phép  
+**Quyền build/package/push/release:** v1.0.0 execution đã hoàn tất theo D-038; không rebuild, retag, thay asset hoặc tạo release khác
 
 Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`, `passed`.
 
@@ -28,7 +28,7 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 | P-11 | Automated QA & golden infrastructure | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; P-09/P-12 không được bắt đầu. |
 | P-12 | E2 benchmarks & independent forward tests | passed | G-04 | Đóng theo quyết định D-026 ngày 2026-08-15; exact fixtures/goldens và visual rubric đã được chủ sở hữu duyệt. |
 | P-13 | Deterministic three-package build | passed | G-05 | Ba ZIP RC1 được sinh xác định từ một canonical source; 23/23 package checks và 127 regression test `PASS`; G-05 `PASS` theo D-033. P-14 đang chuẩn bị release candidate theo D-034. |
-| P-14 | Owner release approval & private release | blocked | G-07 | G-07 `PASS` và release actions đã được cấp quyền theo D-037; README/license đạt; `gh auth status` báo token không hợp lệ nên dừng trước init/push/release sanitized mirror. |
+| P-14 | Owner release approval & private release | passed | G-07 | D-038: sanitized mirror commit/tag/push và private GitHub Release v1.0.0 hoàn tất; exact asset digests khớp; audit-closure commit không di chuyển tag. |
 | P-15 | Maintenance & controlled updates | not-started | Lặp gate theo release | Ngoài completion scope của v1.0.0. |
 
 ## 2. Bảng trạng thái gate có thẩm quyền
@@ -42,7 +42,7 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 | G-04 | PASS | `evidence/p12/G-04-EVIDENCE.md` SHA-256 `a45ce627f2f539ee956986bd20a9bf81359bb9d1783e1c687c6485591e512356`; approved fixture/golden manifests và P-07/P-08/P-11/P-12 evidence được hash trong record. | Tran Ngoc Thien duyệt exact candidate inputs, contact sheet/golden, visual rubric và xác nhận technical/QA review đủ / 2026-08-15. |
 | G-05 | PASS | P-13 `passed`; exact candidate `TCD-PACKAGES-1.0.0-RC1` gồm Claude SHA-256 `bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9`, OpenAI `7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c`, Universal `4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f`; 23/23 focused checks, Claude validator và 127 regression test `PASS`; 13 conditional/2 unsupported surface status được giữ nguyên, 0 supported claim. Gate record: `evidence/p13/G-05-EVIDENCE.md` SHA-256 `d5328c9665427b8f75e52dbe870076b6f1100b3171ac6670ebe17f979fd1fb1e`; phase record: `evidence/p13/P-13-EVIDENCE.md` SHA-256 `44a994da5f1c7a5ea310b1c0ea365d3dda01f9b0727552c7e6bd845aa6dde6a0`. | Tran Ngoc Thien xác nhận technical/QA review hiện tại là đủ và phê duyệt G-05 `PASS` theo D-033 / 2026-08-16 |
 | G-06 | PASS | P-09 và P-10 đều `passed`; D-027/D-029/D-030 khóa brand và exact candidate `TCD-LEGAL-1.0.0-RC2`, aggregate SHA-256 `8f16380761cd6026166daa12ee36227d96e0e3b92ce605f4d9057624de8292c6`. 29/29 focused checks và 127 regression test `PASS`; không có blocking failure. Gate record: `evidence/p10/G-06-EVIDENCE.md` SHA-256 `73c9732e82ceb9cb99cc86c2140c1916b11969ad5d45fb785ae539987ca166bb`; phase record: `evidence/p10/P-10-EVIDENCE.md` SHA-256 `36ec653200fe7ac588839bc684e16104474fa3d51113b889e7bcb177d91778a1`. | Tran Ngoc Thien phê duyệt G-06 `PASS` theo D-031 / 2026-08-15; Vietnamese-lawyer approval D-030 dựa trên professional-capacity self-attestation, không xác minh độc lập |
-| G-07 | PASS | Exact candidate `TCD-RELEASE-1.0.0-RC1`; D-035 candidate/risk/scope approval, D-036/A1 sanitized mirror 5/5, root README installation/license check, freeze 26/26, package 23/23 và regression 127/127 đều đạt; exact private target đã xác minh. Gate record: `evidence/p14/G-07-EVIDENCE.md` SHA-256 `1da613ac05c72278275bd8003cfa417a44c5ccf0deeac1b97b81e89345e6c6a7`; phase record: `evidence/p14/P-14-EVIDENCE.md` SHA-256 `2ee0b021aff817452aacb8378cb467571b9cdde15e720ebb9cd03afec87706e4`. | Tran Ngoc Thien phê duyệt G-07 `PASS` và exact release actions theo D-037 / 2026-08-16; execution chờ GitHub CLI authentication hợp lệ |
+| G-07 | PASS | Exact candidate `TCD-RELEASE-1.0.0-RC1`; D-035/D-036 approvals, README/license, sanitized mirror, freeze/release 27/27, package 23/23 và regression 127/127 đều đạt. D-038 xác minh private `main`, annotated tag `v1.0.0`, GitHub Release và bốn remote asset digest đúng frozen candidate. Gate record: `evidence/p14/G-07-EVIDENCE.md` SHA-256 `f76441110b3a149771ff3d7608624aebd4c5ac29a278d1c8e64b9c7f54da3dc6`; phase record: `evidence/p14/P-14-EVIDENCE.md` SHA-256 `3ce5f34201bcebde991f46aa7fe2c16cc795be86c8f42192127698e69db53857`. | Tran Ngoc Thien phê duyệt G-07 `PASS` và exact release actions theo D-037 / 2026-08-16; D-038 execution verified |
 
 Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và ngày trong bảng này. Tiêu chí của từng gate chỉ nằm trong `PHASE-GATES.md`.
 
@@ -415,7 +415,7 @@ Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và 
 
 **Gate đóng góp:** G-07.
 
-**Evidence hiện tại:** exact release candidate `TCD-RELEASE-1.0.0-RC1` vẫn giữ nguyên ba ZIP/G-06 legal/brand bytes; root `README.md` bổ sung hướng dẫn checksum, Claude Code, Codex raw skill, OpenAI local marketplace, limitations, license và provenance mà không sửa package bytes. D-035/D-036/D-037 khóa candidate, residual risk, scope A/A1, private target, G-07 `PASS` và exact release actions. Deterministic sanitized mirror đạt 5/5, freeze/README check đạt 26/26, package check đạt 23/23 và regression đạt 127/127. Phase record và gate record được hash-bind trong bảng G-07 ở trên. P-14 `blocked`; G-07 `PASS`; exact Git/release mutation được cấp quyền nhưng chưa thực hiện vì `gh auth status` báo token tài khoản `thiendeptrainhat` không hợp lệ.
+**Evidence hiện tại:** exact release candidate `TCD-RELEASE-1.0.0-RC1` giữ nguyên ba ZIP/G-06 legal/brand bytes. Root `README.md` có hướng dẫn checksum, Claude Code, Codex raw skill, OpenAI local marketplace, limitations, license và provenance. Sanitized mirror release commit `1aae0a0073dd685af1341554f27554eb44c42f63` đã push lên private `main`; annotated tag `v1.0.0` peel về đúng commit; GitHub Release `v1.0.0` là non-draft/non-prerelease và bốn remote asset digest/size khớp frozen candidate. Mirror 5/5, freeze/release 27/27, package 23/23 và regression 127/127 `PASS`. P-14 `passed`; G-07 `PASS`; P-15 chưa được phép.
 
 ## P-15 — Maintenance & controlled updates
 

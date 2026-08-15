@@ -2,7 +2,7 @@
 
 **Release candidate:** `TCD-RELEASE-1.0.0-RC1`  
 **Package candidate:** `TCD-PACKAGES-1.0.0-RC1`  
-**Status:** G-07 `PASS` and release authorized under D-037; execution pending GitHub CLI authentication
+**Status:** released under D-038
 
 ## Exact artifacts submitted for approval
 
@@ -45,4 +45,4 @@ The exact GitHub target was subsequently verified by read-only inspection in an 
 
 The owner approved G-07 `PASS` and authorized init of the sanitized mirror, commit to `main`, creation and push of tag `v1.0.0`, push of `main`, and GitHub Release `v1.0.0` with the three frozen ZIPs and `SHA256SUMS.txt`. The pushed repository must include a detailed installation README and license information; root `README.md` satisfies that requirement.
 
-Execution is paused because `gh auth status` reports the active `thiendeptrainhat` token as invalid. Authentication must be restored before any authorized Git or release mutation.
+Execution completed after GitHub CLI device authentication was restored. Release commit `1aae0a0073dd685af1341554f27554eb44c42f63`, tag `v1.0.0` and all four release assets were verified remotely; GitHub-reported SHA-256 digests match the frozen candidate.

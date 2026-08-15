@@ -212,6 +212,40 @@ def build() -> dict:
     return verify()
 
 
+def refresh_git_worktree() -> dict:
+    """Refresh the already initialized staging worktree without touching .git."""
+    git_dir = STAGE_ROOT / ".git"
+    if not git_dir.is_dir():
+        raise RuntimeError("Refusing refresh: staging target is not an initialized Git worktree")
+    entries, changes = expected_tree()
+    record = manifest(entries, changes)
+    expected_paths = {entry["path"] for entry in entries} | {MANIFEST_REL.as_posix()}
+    for path in sorted(STAGE_ROOT.rglob("*"), reverse=True):
+        relative = path.relative_to(STAGE_ROOT)
+        if ".git" in relative.parts:
+            continue
+        if path.is_file() and relative.as_posix() not in expected_paths:
+            path.unlink()
+        elif path.is_dir() and not any(path.iterdir()):
+            path.rmdir()
+    entry_by_path = {entry["path"]: entry for entry in entries}
+    for relative in source_files():
+        source = ROOT / relative
+        mirror_data, _ = transformed(relative, source.read_bytes())
+        destination = STAGE_ROOT / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_bytes(mirror_data)
+        os.chmod(destination, int(entry_by_path[relative.as_posix()]["mode"], 8))
+    encoded = manifest_bytes(record)
+    LOCAL_MANIFEST.write_bytes(encoded)
+    stage_manifest = STAGE_ROOT / MANIFEST_REL
+    stage_manifest.parent.mkdir(parents=True, exist_ok=True)
+    stage_manifest.write_bytes(encoded)
+    os.chmod(LOCAL_MANIFEST, 0o644)
+    os.chmod(stage_manifest, 0o644)
+    return verify()
+
+
 def verify() -> dict:
     entries, changes = expected_tree()
     record = manifest(entries, changes)
@@ -220,7 +254,7 @@ def verify() -> dict:
     actual_paths = {
         path.relative_to(STAGE_ROOT).as_posix()
         for path in STAGE_ROOT.rglob("*")
-        if path.is_file()
+        if path.is_file() and ".git" not in path.relative_to(STAGE_ROOT).parts
     } if STAGE_ROOT.is_dir() else set()
     if actual_paths != expected_paths:
         failures.append("mirror inventory differs from expected publication scope")
@@ -257,8 +291,18 @@ def verify() -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true", help="verify the existing mirror without writing")
+    parser.add_argument(
+        "--refresh-git-worktree",
+        action="store_true",
+        help="refresh an initialized staging worktree without changing its .git directory",
+    )
     args = parser.parse_args()
-    result = verify() if args.check else build()
+    if args.check and args.refresh_git_worktree:
+        parser.error("choose only one of --check or --refresh-git-worktree")
+    if args.refresh_git_worktree:
+        result = refresh_git_worktree()
+    else:
+        result = verify() if args.check else build()
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     return 0 if result["status"] == "PASS" else 1
 

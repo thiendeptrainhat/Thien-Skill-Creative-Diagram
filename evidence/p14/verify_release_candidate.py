@@ -32,7 +32,7 @@ def main() -> int:
     check("version", freeze["version"] == "1.0.0", checks)
     check(
         "owner-approved freeze and exact release authorization",
-        freeze["status"] == "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION"
+        freeze["status"] == "RELEASED"
         and freeze["owner_approval"]["exact_release_candidate_approved"]
         and freeze["owner_approval"]["all_three_zip_hashes_approved"]
         and freeze["owner_approval"]["accepted_medium_risks"] == ["P14-R01", "P14-R02"]
@@ -59,6 +59,17 @@ def main() -> int:
         and readme["license_information"]
         and "LICENSE.md" in readme_path.read_text(encoding="utf-8")
         and "SHA256SUMS.txt" in readme_path.read_text(encoding="utf-8"),
+        checks,
+    )
+    release = freeze["release_execution"]
+    release_evidence = ROOT / release["evidence"]
+    check(
+        "release execution evidence",
+        release["decision_id"] == "D-038"
+        and release["release_commit"] == "1aae0a0073dd685af1341554f27554eb44c42f63"
+        and release["tag"] == "v1.0.0"
+        and release["remote_asset_digests_match"]
+        and release_evidence.is_file(),
         checks,
     )
 
@@ -96,7 +107,7 @@ def main() -> int:
     report = {
         "record_id": "P14-FREEZE-VERIFICATION-1",
         "candidate": freeze["record_id"],
-        "status": "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION" if not failed else "FREEZE_INTEGRITY_FAILED",
+        "status": "RELEASED" if not failed else "FREEZE_INTEGRITY_FAILED",
         "checks": len(checks),
         "passed": len(checks) - len(failed),
         "failed": len(failed),

@@ -23,7 +23,7 @@
       "source_sha256": "e3648b4d8273ca3f7bf88557842897978bf3f527b838eef66c57ad84cc27b06f"
     },
     {
-      "mirror_sha256": "c181a77dc68832bb1e2082664b1c2df09cdb7fd9e5b29d25fb366d5cf4214f75",
+      "mirror_sha256": "a1d504c11c48dc46f62e788e0b236a4b6ece96ba318d5f6e8c801c9cbd8cd650",
       "path": "PROJECT-CONTRACT.md",
       "replacements": [
         {
@@ -35,7 +35,7 @@
           "replacement_id": "owner_license_template"
         }
       ],
-      "source_sha256": "01db9c70dfc3a66bf223759f675fa6a07fa7a9faed6046c922b2e8f431bd32e9"
+      "source_sha256": "bb2bfde4903fd997b950f88a9a7b6bb31f5ee52c9a95e4d5d3fcd133a4c455d5"
     },
     {
       "mirror_sha256": "3d8558b97ee0fa639dccc8c69bad14e9a200daeab3d0f45517047bfd0cee8e58",
@@ -92,7 +92,7 @@
     "generic /Users/example test fixture"
   ],
   "git_or_release_mutation_performed": false,
-  "mirror_file_count_including_manifest": 274,
+  "mirror_file_count_including_manifest": 275,
   "mirror_root": "<LOCAL_RELEASE_STAGING>/TCD-RELEASE-1.0.0-RC1",
   "personal_machine_path_scan": {
     "forbidden_token": "/Users/<owner>",
@@ -101,7 +101,7 @@
   },
   "publication_scope": "A_FULL_PRIVATE_AUDIT_REPOSITORY_SANITIZED_MIRROR",
   "record_id": "P14-PUBLICATION-MIRROR-1",
-  "source_file_count": 273,
+  "source_file_count": 274,
   "source_root": "<LOCAL_WORKSPACE>",
-  "tree_aggregate_sha256": "5162f55be96c48e9699d222034a2eb34c611812c2cd3754ecf2d1cc4c354336f"
+  "tree_aggregate_sha256": "512d3be6bc4ec2c8d957ad4c982462ecd7136b99a1f08fbdc03f6c32a530b6f1"
 }

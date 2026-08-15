@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-16  
 **Candidate:** `TCD-RELEASE-1.0.0-RC1`  
-**Current state:** G-07 `PASS`; release authorized; execution pending valid GitHub CLI authentication
+**Current state:** v1.0.0 released; P-14 closure evidence recorded
 
 ## Residual risks requiring explicit owner acceptance
 
@@ -21,7 +21,7 @@ No open Critical or High product/quality/legal finding is recorded. The two High
 |---|---|---|---|
 | `P14-B01` | Exact three ZIP files and the overall release candidate need owner approval. | resolved by D-035 | Owner approved `TCD-RELEASE-1.0.0-RC1` and all three frozen hashes. |
 | `P14-B02` | Repository publication scope is not defined. | resolved by D-035/D-036 | Scope A is materialized as a deterministic sanitized mirror. Five files with actual owner-machine paths use stable placeholders; two generic security-pattern files remain unchanged; the original local corpus is preserved. |
-| `P14-B03` | Local workspace is not a Git repository and has no remote. | authorized by D-037; execution paused | Initialize only the sanitized mirror after `gh auth status` succeeds; never initialize/push the unsanitized audit source. |
+| `P14-B03` | Local workspace is not a Git repository and has no remote. | resolved by D-038 | Only the sanitized mirror was initialized and pushed; the unsanitized audit source remains non-Git. |
 | `P14-B04` | Private target repository cannot currently be verified. | resolved by read-only authenticated inspection | The exact owner-provided URL exists, displays the `Private` badge and an empty repository quick-setup surface. Connector/CLI limitations remain recorded but do not negate the direct authenticated observation. |
 | `P14-B05` | G-07 and release authorization are absent. | resolved by D-037 | G-07 is `PASS`; exact init/commit/tag/push/release actions and README/license requirement are authorized. |
 

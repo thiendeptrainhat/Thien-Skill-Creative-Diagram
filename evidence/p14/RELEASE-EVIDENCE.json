@@ -1,0 +1,64 @@
+{
+  "record_id": "P14-RELEASE-EVIDENCE-1",
+  "candidate": "TCD-RELEASE-1.0.0-RC1",
+  "version": "1.0.0",
+  "decision": "D-037",
+  "repository": {
+    "name_with_owner": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "visibility": "PRIVATE"
+  },
+  "release_commit": "1aae0a0073dd685af1341554f27554eb44c42f63",
+  "main_at_release": "1aae0a0073dd685af1341554f27554eb44c42f63",
+  "tag": {
+    "name": "v1.0.0",
+    "object_sha": "c91194cb454e7e04eafd2636f98a87a6b32fe24f",
+    "peeled_commit": "1aae0a0073dd685af1341554f27554eb44c42f63"
+  },
+  "release": {
+    "name": "Thien-Skill-Creative-Diagram v1.0.0",
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "target_commitish": "main"
+  },
+  "assets": [
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 363,
+      "sha256": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-1.0.0-claude-plugin.zip",
+      "bytes": 178105,
+      "sha256": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-1.0.0-openai-plugin.zip",
+      "bytes": 269167,
+      "sha256": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip",
+      "bytes": 264452,
+      "sha256": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f",
+      "state": "uploaded"
+    }
+  ],
+  "readme": {
+    "path": "README.md",
+    "sha256": "6294ea8eb5594363ee200e7cb8c83147996baec5cd201c35f11465430c2cd055",
+    "detailed_installation": true,
+    "license_information": true
+  },
+  "verification": {
+    "publication_mirror": "5/5 PASS",
+    "freeze_and_readme": "26/26 PASS",
+    "package": "23/23 PASS",
+    "regression": "127/127 PASS",
+    "remote_asset_digests_match": true
+  }
+}

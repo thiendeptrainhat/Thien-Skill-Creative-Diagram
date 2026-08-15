@@ -1,8 +1,8 @@
 {
   "candidate": "TCD-RELEASE-1.0.0-RC1",
-  "checks": 26,
+  "checks": 27,
   "failed": 0,
-  "passed": 26,
+  "passed": 27,
   "record_id": "P14-FREEZE-VERIFICATION-1",
   "results": [
     {
@@ -23,6 +23,10 @@
     },
     {
       "check": "repository README installation and license",
+      "result": "PASS"
+    },
+    {
+      "check": "release execution evidence",
       "result": "PASS"
     },
     {
@@ -110,5 +114,5 @@
       "result": "PASS"
     }
   ],
-  "status": "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION"
+  "status": "RELEASED"
 }
