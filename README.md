@@ -1,5 +1,9 @@
 # Thien-Skill-Creative-Diagram
 
+<p align="center">
+  <img src="evidence/p09/candidates/full-crest-plate-light-400.png" alt="TDTN crest with sword, lion, letterforms and open book in navy and gold" width="180">
+</p>
+
 `Thien-Skill-Creative-Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. Phiên bản `1.0.0` cung cấp một canonical runtime với ba artifact phát hành xác định: Claude Code plugin, OpenAI plugin và Universal raw skill.
 
 Repository này là **private audit repository**. Quyền truy cập, xem, tải xuống hoặc clone repository **không tự cấp quyền sử dụng**. Xem mục [Giấy phép](#giấy-phép) trước khi cài đặt hoặc thực thi.
@@ -194,7 +198,7 @@ Phiên bản này chịu sự điều chỉnh của **Tran Ngoc Thien's Skill Co
 
 Đọc đầy đủ trước khi sử dụng:
 
-- [`thien-skill-creative-diagram/LICENSE.md`](thien-skill-creative-diagram/LICENSE.md)
+- [`LICENSE.md`](LICENSE.md) — bản ở root repository, byte-identical với legal candidate đã duyệt
 - [`thien-skill-creative-diagram/LICENSE-APPLICATION.md`](thien-skill-creative-diagram/LICENSE-APPLICATION.md)
 - [`thien-skill-creative-diagram/NOTICE`](thien-skill-creative-diagram/NOTICE)
 - [`thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md`](thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md)
