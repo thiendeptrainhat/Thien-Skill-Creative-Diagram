@@ -1,0 +1,52 @@
+{
+  "record_id": "P14-TARGET-VERIFICATION-1",
+  "checked_at": "2026-08-16",
+  "expected_target": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+  "expected_url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+  "owner_confirmed_url": true,
+  "required_visibility": "PRIVATE",
+  "local_checkout": {
+    "is_git_repository": false,
+    "remotes": [],
+    "result": "UNVERIFIED_BLOCKING"
+  },
+  "github_connector": {
+    "owner_filter_repositories_returned": 0,
+    "explicit_url_lookup": "HTTP_404_NOT_FOUND",
+    "target_found": null,
+    "visibility": null,
+    "interpretation": "The repository may be absent or the connector may lack permission to a private repository; the result cannot establish existence or privacy.",
+    "result": "UNVERIFIED_BLOCKING"
+  },
+  "github_cli": {
+    "active_account": "thiendeptrainhat",
+    "authentication": "INVALID_TOKEN",
+    "api_connection": "FAILED",
+    "target_found": null,
+    "visibility": null,
+    "result": "UNVERIFIED_BLOCKING"
+  },
+  "authenticated_github_browser": {
+    "method": "READ_ONLY_AUTHENTICATED_UI_INSPECTION",
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "page_title": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "target_found": true,
+    "visibility": "PRIVATE",
+    "repository_state": "EMPTY_QUICK_SETUP_PAGE",
+    "owner_access_signal": "SETTINGS_NAVIGATION_VISIBLE",
+    "result": "VERIFIED",
+    "mutation_performed": false
+  },
+  "repository_content_scope": {
+    "status": "OPTION_A_OWNER_APPROVED_BUT_NOT_PUBLICATION_READY",
+    "selection": "A_FULL_PRIVATE_AUDIT_REPOSITORY",
+    "excluded_classes": [
+      ".DS_Store",
+      "cache",
+      "transient files"
+    ],
+    "blocking_reason": "Seven in-scope text files contain personal-machine absolute paths and cannot enter a release payload without a sanitization/scope decision."
+  },
+  "mutation_performed": false,
+  "overall_result": "TARGET_VERIFIED_PUBLICATION_SCOPE_BLOCKING"
+}

@@ -1,0 +1,225 @@
+{
+  "browser_verification": "not-run-out-of-scope: P-11 builds static QA/golden infrastructure; executable benchmark/browser runs belong to P-12",
+  "carrier_equivalence": {
+    "normalized_sha256": "586eb2e28bdd11cfb65123d2b4bc27f4c7aaf78f00a6d0f4e3c4d0edf4b381f3",
+    "row_count": 2,
+    "status": "pass"
+  },
+  "golden": {
+    "baseline_updated": false,
+    "compared": 18,
+    "immutable": true
+  },
+  "motion": {
+    "mode": "step",
+    "status": "pass"
+  },
+  "p09_p12_boundary": "not-started",
+  "phase": "P-11",
+  "qa_version": "p11-qa-1",
+  "quantitative": [
+    {
+      "diagram_type": "bar-chart",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "line-chart",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "radar",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "gantt",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "timeline",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "quadrant",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "status": "pass"
+    }
+  ],
+  "schema_version": "1.0",
+  "skill_tree": {
+    "contrast_pairs": 27,
+    "coverage": {
+      "capability_count": 95,
+      "status": "pass",
+      "type_count": 27
+    },
+    "json": {
+      "count": 8,
+      "paths": [
+        "references/capability-map.json",
+        "references/p08-coverage-map.json",
+        "references/p11-hard-failure-map.json",
+        "references/request.schema.json",
+        "references/semantic-ir.schema.json",
+        "references/specimen-map.json",
+        "references/visual-coverage-map.json",
+        "references/visual-system.json"
+      ],
+      "status": "pass"
+    },
+    "links": {
+      "checked_links": 72,
+      "status": "pass"
+    },
+    "package": {
+      "path_count": 75,
+      "status": "pass"
+    },
+    "qa_version": "p11-qa-1",
+    "status": "pass"
+  },
+  "svg_matrix": [
+    {
+      "diagram_type": "architecture",
+      "sha256": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "sha256": "a80662974a54bbd0e8265e78d9366c5ab193f559a836ccac492beed08018e1f3",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "flowchart",
+      "sha256": "f8d08b76f709b8b1a9b50bed41c4b5aa32a013d81757897155402e4ca233608d",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "sequence",
+      "sha256": "8967a1a9e2570b5aed93119de2e1c2e78bb84b8c5a925b3660be8fc1b4d1f9a4",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "state-machine",
+      "sha256": "1eee75f54aedf1f647b8fd635142f31146d3eced938cb3034a1fac8153722578",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "sha256": "ed0415f37f2ad2b48be8b7cec24e41f6fd034c5724739e993636f4fd13c12089",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "timeline",
+      "sha256": "9df92d96e91b19187043819c58dc51ed3f7c9f3647358dc754e6b547c2013c5c",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "swimlane",
+      "sha256": "e7929d8befea97602b7ef4d4505462c60939cd57a4e6be6a788b4cc43ce4b88b",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "quadrant",
+      "sha256": "f51b2240d840874035691e9a7cebb6195535d8341f09be6f405b93679b2182ca",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "radar",
+      "sha256": "ebfc1996eaea2efdb38ad4b9138f66c686be1c54404f2d5014f9be877c490675",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "sha256": "37aaa342fd6d2b1a54752a52812ae63b659a0abb29e78d79c16c4a78e7473754",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "nested",
+      "sha256": "33c27fbf1d5e7453eb24e5b08b20b6889f71114e39d169eb1cc5886a476e02a2",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "tree",
+      "sha256": "010fd227001d2096f3a5ec726306be310fdc4d4611c5cef6a3c328c804a63452",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "org-chart",
+      "sha256": "2afb08a27db2084fcfa22893d069ab76aa2a04046f4164a252ff3fa0fe0c9901",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "sha256": "a65de9499e40b85f67c067c047e4671412918f24f75fe72b6a776685bf9858f0",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "venn",
+      "sha256": "c092ae3a7f79d7a968f6fd7b58397db29a3150c0d1527877cf88d9b5947cf960",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "sha256": "b0c0be8d0095abb66b00e9f97471baebffc26ad3672e88cb89d7265e6eb169a9",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "sha256": "b68cefc66bfb5fad1d1796b12774cba89946d1affe385a1d1b28a68f87a50f81",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "line-chart",
+      "sha256": "4d4dd1d5ede581f6e82d3dedb572ccdf18bd0ee07c8b2b3f3683816574965584",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "gantt",
+      "sha256": "5eb81d17beb451f50fd7759b2854858b693462ae4e7aa9658bf81eac2ec2838f",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "sha256": "ee13695ec0dc554161ba25d5074986d8df571a94f1d33a6ab15cf81d302fea98",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "high-level",
+      "sha256": "93536c073a55e692700286de8dd6c3576b135c8490f3c4f5fdfbe793ae49deee",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "process",
+      "sha256": "ed41e0f4495f5a0dea023fc57bed1cf963d277a3de18393d1a3d9d5a1fe4d31c",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "medallion",
+      "sha256": "6545910b1623234119f3b82e606471774dd38da9c018cc27f22de7dc6a916912",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "data-flow",
+      "sha256": "10a430c980584a372b1a8ae56d1fa1dc505cd6bc1b4e138d0ce2d0dc2bf87418",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "sha256": "0f523f06afe0884c0bd46949ace4d0503bb0a09f1256a61153eeebb112a12d6a",
+      "validation": "pass"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "sha256": "73f91d26aefe3649147f018d45949fd473c91d0631fb36dc24d7eb2b22167260",
+      "validation": "pass"
+    }
+  ],
+  "svg_matrix_count": 27
+}

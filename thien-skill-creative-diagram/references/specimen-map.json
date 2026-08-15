@@ -1,0 +1,111 @@
+[
+  {
+    "capabilities": [
+      "CAP-V01",
+      "CAP-V02",
+      "CAP-V03",
+      "CAP-T01",
+      "CAP-T02",
+      "CAP-T03",
+      "CAP-T04",
+      "CAP-T05",
+      "CAP-T06",
+      "CAP-T07",
+      "CAP-T08",
+      "CAP-T09",
+      "CAP-T10",
+      "CAP-T11",
+      "CAP-T12",
+      "CAP-T13",
+      "CAP-T14",
+      "CAP-T15",
+      "CAP-T16",
+      "CAP-T17",
+      "CAP-T18",
+      "CAP-T19",
+      "CAP-T20",
+      "CAP-T21",
+      "CAP-T22",
+      "CAP-T23",
+      "CAP-T24",
+      "CAP-T25",
+      "CAP-T26",
+      "CAP-T27"
+    ],
+    "count": 81,
+    "id": "SPEC-BASE",
+    "mapping": "27 type grammars plus three later visual modes"
+  },
+  {
+    "capabilities": [
+      "CAP-T22",
+      "CAP-V10"
+    ],
+    "count": 3,
+    "id": "SPEC-HIGH-VERTICAL",
+    "mapping": "High-Level equivalent IR; layout deferred to P-06"
+  },
+  {
+    "capabilities": [
+      "CAP-V11",
+      "CAP-T22",
+      "CAP-T24",
+      "CAP-T26"
+    ],
+    "count": 3,
+    "id": "SPEC-DATA-LAKE",
+    "mapping": "profile selector chooses existing parent by dominant semantics"
+  },
+  {
+    "capabilities": [
+      "CAP-T04",
+      "CAP-V09",
+      "CAP-V16"
+    ],
+    "count": 3,
+    "id": "SPEC-SEQUENCE-BRANCH",
+    "mapping": "original combined-fragment semantic fixture"
+  },
+  {
+    "capabilities": [
+      "CAP-I01",
+      "CAP-I05",
+      "CAP-I11",
+      "CAP-I12"
+    ],
+    "count": 2,
+    "id": "SPEC-IMPORT",
+    "mapping": "carrier behavior deferred to P-07; fidelity core exists"
+  },
+  {
+    "capabilities": [
+      "CAP-T09",
+      "CAP-V04"
+    ],
+    "count": 1,
+    "id": "SPEC-QUADRANT",
+    "mapping": "named-cell scenario annotations"
+  },
+  {
+    "capabilities": [
+      "CAP-T11",
+      "CAP-V13"
+    ],
+    "count": 1,
+    "id": "SPEC-LOOP-TERMINAL",
+    "mapping": "loop semantics now; terminal presentation deferred"
+  },
+  {
+    "capabilities": [
+      "CAP-P01",
+      "CAP-P04",
+      "CAP-P05",
+      "CAP-M02",
+      "CAP-M03",
+      "CAP-M04"
+    ],
+    "count": 3,
+    "id": "SPEC-ANIMATED-PATTERNS",
+    "mapping": "semantic transformations now; motion deferred to P-08"
+  }
+]

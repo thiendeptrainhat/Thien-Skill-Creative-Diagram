@@ -1,0 +1,429 @@
+{
+  "boundary": "P-09 and P-12 are not started; no benchmark or independent forward test is included.",
+  "categories": [
+    "accessibility",
+    "contract",
+    "coverage",
+    "determinism",
+    "geometry",
+    "golden",
+    "import-fidelity",
+    "import-security",
+    "motion",
+    "package-hygiene",
+    "quantitative",
+    "vietnamese-typography"
+  ],
+  "hard_failure_count": 58,
+  "hard_failures": {
+    "accessible-name-missing": {
+      "category": "accessibility",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_duplicate_id_name_external_and_bounds_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-A11Y-01"
+    },
+    "bar-zero-baseline": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_numeric_unit_missingness_and_source_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-04"
+    },
+    "build-drift": {
+      "category": "determinism",
+      "detector": "validate_determinism",
+      "mutation_test": "RepositoryQATests.test_determinism_mutation_is_detected",
+      "status": "detected",
+      "test_id": "T-P11-DET-01"
+    },
+    "carrier-ir-mismatch": {
+      "category": "quantitative",
+      "detector": "validate_carrier_equivalence",
+      "mutation_test": "QuantitativeIntegrityTests.test_three_carriers_normalize_equivalently_including_zero_negative_and_missing",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-01"
+    },
+    "color-only-state": {
+      "category": "accessibility",
+      "detector": "validate_state_redundancy",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_contrast_and_non_color_state_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-A11Y-04"
+    },
+    "contrast-failure": {
+      "category": "accessibility",
+      "detector": "validate_contrast_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_contrast_and_non_color_state_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-A11Y-03"
+    },
+    "decompression-over-limit": {
+      "category": "import-security",
+      "detector": "safe_import.parse_drawio",
+      "mutation_test": "DrawioTests.test_decompression_ratio_abuse_is_rejected",
+      "status": "detected",
+      "test_id": "T-P11-SEC-03"
+    },
+    "duplicate-svg-id": {
+      "category": "geometry",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_duplicate_id_name_external_and_bounds_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-10"
+    },
+    "fidelity-equation-invalid": {
+      "category": "import-fidelity",
+      "detector": "validate_fidelity",
+      "mutation_test": "SecurityMotionPackageTests.test_fidelity_equation_and_invention_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-FID-01"
+    },
+    "focus-style-missing": {
+      "category": "motion",
+      "detector": "validate_motion_html",
+      "mutation_test": "SecurityMotionPackageTests.test_motion_static_reduced_print_focus_and_controls_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-MOT-04"
+    },
+    "funnel-order-invalid": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_scatter_radar_quadrant_and_funnel_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-09"
+    },
+    "golden-approval-missing": {
+      "category": "golden",
+      "detector": "golden_review.load_manifest",
+      "mutation_test": "ImmutableGoldenReviewTests.test_drift_missing_approval_and_path_escape_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GOLD-02"
+    },
+    "golden-auto-update": {
+      "category": "golden",
+      "detector": "golden_review CLI has no update operation",
+      "mutation_test": "ImmutableGoldenReviewTests.test_cli_exposes_compare_only_and_rejects_update",
+      "status": "detected",
+      "test_id": "T-P11-GOLD-04"
+    },
+    "golden-drift": {
+      "category": "golden",
+      "detector": "golden_review.compare_manifest",
+      "mutation_test": "ImmutableGoldenReviewTests.test_drift_missing_approval_and_path_escape_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GOLD-01"
+    },
+    "golden-path-escape": {
+      "category": "golden",
+      "detector": "golden_review.compare_manifest",
+      "mutation_test": "ImmutableGoldenReviewTests.test_drift_missing_approval_and_path_escape_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GOLD-03"
+    },
+    "graphic-out-of-bounds": {
+      "category": "geometry",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_duplicate_id_name_external_and_bounds_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-02"
+    },
+    "invented-content": {
+      "category": "import-fidelity",
+      "detector": "validate_fidelity",
+      "mutation_test": "SecurityMotionPackageTests.test_fidelity_equation_and_invention_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-FID-02"
+    },
+    "json-depth-over-limit": {
+      "category": "import-security",
+      "detector": "safe_import.parse_json_text",
+      "mutation_test": "SafeTextCarrierTests.test_json_rejects_duplicate_nonfinite_and_deep_input",
+      "status": "detected",
+      "test_id": "T-P11-SEC-04"
+    },
+    "material-clipping-risk": {
+      "category": "geometry",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_clipping_compression_ellipsis_and_unicode_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-03"
+    },
+    "material-ellipsis": {
+      "category": "vietnamese-typography",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_clipping_compression_ellipsis_and_unicode_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-VI-02"
+    },
+    "material-label-missing": {
+      "category": "vietnamese-typography",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_read_order_and_material_loss_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-VI-04"
+    },
+    "mermaid-executable-feature": {
+      "category": "import-security",
+      "detector": "safe_import.parse_mermaid",
+      "mutation_test": "MermaidTests.test_directives_links_html_and_click_actions_fail",
+      "status": "detected",
+      "test_id": "T-P11-SEC-01"
+    },
+    "missingness-implicit": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_numeric_unit_missingness_and_source_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-03"
+    },
+    "motion-controls-missing": {
+      "category": "motion",
+      "detector": "validate_motion_html",
+      "mutation_test": "SecurityMotionPackageTests.test_motion_static_reduced_print_focus_and_controls_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-MOT-05"
+    },
+    "network-side-effect": {
+      "category": "import-security",
+      "detector": "safe import has no network path",
+      "mutation_test": "SecurityMotionPackageTests.test_import_security_codes_and_zero_network_side_effect",
+      "status": "detected",
+      "test_id": "T-P11-SEC-05"
+    },
+    "node-out-of-bounds": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_bounds_clipping_overlap_and_endpoint_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-01"
+    },
+    "node-overlap": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_bounds_clipping_overlap_and_endpoint_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-04"
+    },
+    "package-development-file": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-03"
+    },
+    "package-duplicate-path": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-05"
+    },
+    "package-path-absolute": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-01"
+    },
+    "package-path-traversal": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-02"
+    },
+    "package-qa-only-file": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-04"
+    },
+    "package-secret-file": {
+      "category": "package-hygiene",
+      "detector": "validate_package_inventory",
+      "mutation_test": "SecurityMotionPackageTests.test_package_hygiene_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-PKG-03B"
+    },
+    "print-frame-missing": {
+      "category": "motion",
+      "detector": "validate_motion_html",
+      "mutation_test": "SecurityMotionPackageTests.test_motion_static_reduced_print_focus_and_controls_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-MOT-03"
+    },
+    "quadrant-coordinate-out-of-domain": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_scatter_radar_quadrant_and_funnel_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-08"
+    },
+    "quantitative-unit-missing": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_numeric_unit_missingness_and_source_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-02"
+    },
+    "radar-scale-incompatible": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_scatter_radar_quadrant_and_funnel_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-07"
+    },
+    "reading-order-mismatch": {
+      "category": "accessibility",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_read_order_and_material_loss_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-A11Y-02"
+    },
+    "reduced-motion-missing": {
+      "category": "motion",
+      "detector": "validate_motion_html",
+      "mutation_test": "SecurityMotionPackageTests.test_motion_static_reduced_print_focus_and_controls_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-MOT-02"
+    },
+    "reference-link-escape": {
+      "category": "contract",
+      "detector": "validate_markdown_links",
+      "mutation_test": "RepositoryQATests.test_missing_and_escaping_link_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-LINK-02"
+    },
+    "reference-link-missing": {
+      "category": "contract",
+      "detector": "validate_markdown_links",
+      "mutation_test": "RepositoryQATests.test_missing_and_escaping_link_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-LINK-01"
+    },
+    "route-crosses-node": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_unrelated_node_crossing_mutation_is_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-07"
+    },
+    "route-crossing-unmarked": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_connector_crossing_and_shared_attach_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-08"
+    },
+    "route-endpoint-invalid": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_bounds_clipping_overlap_and_endpoint_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-05"
+    },
+    "route-endpoint-missing": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_bounds_clipping_overlap_and_endpoint_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-06"
+    },
+    "scatter-coordinate-out-of-domain": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_scatter_radar_quadrant_and_funnel_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-06"
+    },
+    "schema-json-invalid": {
+      "category": "contract",
+      "detector": "validate_json_documents",
+      "mutation_test": "RepositoryQATests.test_invalid_json_mutation_is_detected",
+      "status": "detected",
+      "test_id": "T-P11-SCHEMA-01"
+    },
+    "shared-attach-point": {
+      "category": "geometry",
+      "detector": "validate_geometry_contract",
+      "mutation_test": "GeometryMutationTests.test_connector_crossing_and_shared_attach_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-GEO-09"
+    },
+    "source-render-time-mismatch": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_temporal_date_timezone_duration_order_and_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-13"
+    },
+    "source-render-value-mismatch": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_numeric_unit_missingness_and_source_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-05"
+    },
+    "static-frame-incomplete": {
+      "category": "motion",
+      "detector": "validate_motion_html",
+      "mutation_test": "SecurityMotionPackageTests.test_motion_static_reduced_print_focus_and_controls_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-MOT-01"
+    },
+    "temporal-duration-invalid": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_temporal_date_timezone_duration_order_and_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-11"
+    },
+    "temporal-order-invalid": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_temporal_date_timezone_duration_order_and_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-12"
+    },
+    "timezone-missing": {
+      "category": "quantitative",
+      "detector": "validate_quantitative_ir",
+      "mutation_test": "QuantitativeIntegrityTests.test_temporal_date_timezone_duration_order_and_render_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-QUANT-10"
+    },
+    "type-coverage-mismatch": {
+      "category": "coverage",
+      "detector": "validate_type_coverage",
+      "mutation_test": "RepositoryQATests.test_type_coverage_mutation_is_detected",
+      "status": "detected",
+      "test_id": "T-P11-COVERAGE-01"
+    },
+    "typography-compressed": {
+      "category": "vietnamese-typography",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_clipping_compression_ellipsis_and_unicode_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-VI-01"
+    },
+    "unicode-not-nfc": {
+      "category": "vietnamese-typography",
+      "detector": "validate_svg_contract",
+      "mutation_test": "SVGAccessibilityTypographyTests.test_clipping_compression_ellipsis_and_unicode_mutations_are_detected",
+      "status": "detected",
+      "test_id": "T-P11-VI-03"
+    },
+    "xml-external-feature": {
+      "category": "import-security",
+      "detector": "safe_import.parse_drawio",
+      "mutation_test": "DrawioTests.test_dtd_entity_and_missing_png_model_fail_before_resolution",
+      "status": "detected",
+      "test_id": "T-P11-SEC-02"
+    }
+  },
+  "phase": "P-11",
+  "qa_version": "p11-qa-1",
+  "schema_version": "1.0"
+}

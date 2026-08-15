@@ -1,0 +1,224 @@
+{
+  "approval": "owner-approved",
+  "approval_ref": "P09-OWNER-A-2026-08-15",
+  "approved_artifacts": [
+    {
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-1024.png",
+      "sha256": "21ad34d49d29c381c7d81abe14d29b29ee16a109b5f98e2113afb3659b8788b1"
+    },
+    {
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-512.png",
+      "sha256": "20a83423a77ac03177b244c808b83b224177ab6123061c24d2ec7415bd0dd516"
+    },
+    {
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-400.png",
+      "sha256": "b0b93f8b523a636299465678ac47bd3a51a9e19a94fed65ebd4f8b8e2ea3512e"
+    },
+    {
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-256.png",
+      "sha256": "5982799c7be383590e4b3d97cd25e9038ea4f4d5609ff94138c6d7f979831bdc"
+    },
+    {
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-128.png",
+      "sha256": "088a2cf1f07da32815f973978ee510018d7a229dee2ec5fbfc31b99196a9f73a"
+    },
+    {
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-64.png",
+      "sha256": "4955305d5d6cdebe8e8cbf07d27591ea7be7ac9fc2f76c362cae7079206719c3"
+    },
+    {
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-512.png",
+      "sha256": "ad17e260a194f5750b8b91c84a152a78683c1519bba13079f84a4d4301079371"
+    },
+    {
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-400.png",
+      "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453"
+    },
+    {
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-256.png",
+      "sha256": "75d36d549af791e102d2ed21080102321100ccf53f8608d8edc45773d5413322"
+    },
+    {
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-128.png",
+      "sha256": "0f14b393d3bf5cd4a90900c9ba4b08d7763221fc19ffd9166448792e700cd3a1"
+    },
+    {
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-64.png",
+      "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de"
+    },
+    {
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-512.png",
+      "sha256": "6bba9325d05f9f26cf0410b0a72ad3c8247514226513493181704a2be01c6502"
+    },
+    {
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-400.png",
+      "sha256": "eb49f13f9fc5bd53be5942d19b9351b82a3410424575c6e45fab1f957635f004"
+    },
+    {
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-256.png",
+      "sha256": "b8c35974524f4620d97029563c55398d661a07afc43191a0ca46d51beb75d9cd"
+    },
+    {
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-128.png",
+      "sha256": "5d477309169b66de919a4574765478403097bef4e5d837fc6668c6ac1fae010a"
+    },
+    {
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-64.png",
+      "sha256": "ffe7d296a75cee9b5df1f8eeba40179e87436d772f65195154b20a6469f7d256"
+    }
+  ],
+  "approved_families": [
+    "full-crest-transparent-safe-area",
+    "full-crest-light-squircle-plate",
+    "full-crest-dark-squircle-plate"
+  ],
+  "date": "2026-08-15",
+  "decision": "D-027",
+  "excluded_qa_only": [
+    {
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-48.png",
+      "sha256": "6d827db4e74360e5d51edcdc6716153d19f56ee679e9c3a60bd52902825093ce"
+    },
+    {
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "path": "candidates/full-crest-transparent-32.png",
+      "sha256": "c3da2b083a423470889f0dc150245224a4cc5b4ba05513644f91efde50378cf0"
+    },
+    {
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-48.png",
+      "sha256": "85272ce501fae7f91544d2739d0d5264909d0a9540e3f11f2199a99f2864e416"
+    },
+    {
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "path": "candidates/full-crest-plate-light-32.png",
+      "sha256": "ea752191839952a901967b8335f3468e49df50752b24375cb81a041af1b32d52"
+    },
+    {
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-48.png",
+      "sha256": "396a2d069d111e8373e6723c628d362c6031d022cd16bf3d70d00e882a561400"
+    },
+    {
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "path": "candidates/full-crest-plate-dark-32.png",
+      "sha256": "c5d5daa3ad7c83b11562b5827015b496f95c7de73375d686d34d80de138d611c"
+    }
+  ],
+  "immutable": true,
+  "minimum_size_px": 64,
+  "option": "A",
+  "record_id": "P09-APPROVED-BRAND-SELECTION-1",
+  "release_blockers": [
+    "P-10 and G-06 legal/provenance approval",
+    "P-13 platform mapping and package build"
+  ],
+  "release_eligible": false,
+  "schema_version": "1.0",
+  "simplified_mark": "not-created-for-v1.0.0"
+}

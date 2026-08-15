@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="p07-architecture-neutral-light-title p07-architecture-neutral-light-desc" lang="vi">
+<title id="p07-architecture-neutral-light-title">Fixture architecture</title>
+<desc id="p07-architecture-neutral-light-desc">Static architecture visual preserving 2 nodes, 1 edges, and 0 quantitative series.</desc>
+<defs>
+  <marker id="p07-architecture-neutral-light-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#405A78"/></marker>
+  <pattern id="p07-architecture-neutral-light-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#AEBAC9" stroke-width="3"/></pattern>
+</defs>
+<style>
+.title{font:700 32px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#172033}.subtitle{font:500 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#526175}.heading{font:700 21px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#172033}.node-label{font:650 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#172033}.annotation{font:500 16px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#526175}.numeric{font:700 17px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#172033;font-variant-numeric:tabular-nums}.edge-label{font:600 15px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;fill:#172033}
+</style>
+<rect width="1600" height="900" fill="#F5F7FA"/>
+<text class="subtitle" x="56" y="56">P-07 · architecture · static coverage</text>
+<text class="title" x="56" y="100">Fixture architecture</text>
+<rect id="p07-architecture-neutral-light-boundary-trust" x="386" y="178" width="324" height="214" rx="18" fill="#E9EEF4" stroke="#AEBAC9" stroke-width="2" stroke-dasharray="8 6"/><text class="heading" x="402" y="206">Vùng tin cậy</text><path id="p07-architecture-neutral-light-edge-access" d="M360,295.0 H384.0 V295.0 H408" fill="none" stroke="#405A78" stroke-width="3" marker-end="url(#p07-architecture-neutral-light-arrow)"/><text class="edge-label" x="384.0" y="287.0" text-anchor="middle">dependency</text><rect id="p07-architecture-neutral-light-actor-user" x="80" y="220" width="280" height="150" rx="14" fill="#FFFFFF" stroke="#AEBAC9" stroke-width="2"/><rect x="80" y="220" width="7" height="150" rx="3" fill="#246BCE"/><text class="node-label" x="220.0" y="301.0" text-anchor="middle"><tspan x="220.0" dy="0">Người dùng</tspan></text><rect id="p07-architecture-neutral-light-service-api" x="408" y="220" width="280" height="150" rx="14" fill="#FFFFFF" stroke="#AEBAC9" stroke-width="2"/><rect x="408" y="220" width="7" height="150" rx="3" fill="#246BCE"/><text class="node-label" x="548.0" y="301.0" text-anchor="middle"><tspan x="548.0" dy="0">Cổng dịch vụ</tspan></text>
+</svg>

@@ -1,0 +1,339 @@
+{
+  "approval": "golden-candidate; owner review required",
+  "artifact_count": 18,
+  "artifacts": [
+    {
+      "case": "architecture",
+      "html": "pilot-architecture-neutral-light.html",
+      "html_sha256": "e7bc34b7205194414025c1334ba5a7814602831b9e921345020eabc117e01cd0",
+      "mode": "neutral-light",
+      "svg": "pilot-architecture-neutral-light.svg",
+      "svg_sha256": "5a16392cc9bff94db2dd3215c873832e99c78ac4f442c6e681c30c75492222ec",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 8,
+          "routes": 8,
+          "status": "pass"
+        },
+        "mode": "neutral-light",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "3b9304a070ef497174e78c2830ca746ff34f63352ec5da06ee3660fa4df6445c",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 22
+        }
+      }
+    },
+    {
+      "case": "architecture",
+      "html": "pilot-architecture-neutral-dark.html",
+      "html_sha256": "de19d3d0ff1eeadb612f4de64f63d9999814946f140ab38464917034a3c34c20",
+      "mode": "neutral-dark",
+      "svg": "pilot-architecture-neutral-dark.svg",
+      "svg_sha256": "9ff9899a4d1ecc051e9dbf82c02863ab09a369d7b6b4c1c951ebd28905b8370d",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 8,
+          "routes": 8,
+          "status": "pass"
+        },
+        "mode": "neutral-dark",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "3b9304a070ef497174e78c2830ca746ff34f63352ec5da06ee3660fa4df6445c",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 22
+        }
+      }
+    },
+    {
+      "case": "architecture",
+      "html": "pilot-architecture-editorial.html",
+      "html_sha256": "bf57ed695e27f4f783003cce4823a7e7068781ce776ab21a43fb82ea9b715d2e",
+      "mode": "editorial",
+      "svg": "pilot-architecture-editorial.svg",
+      "svg_sha256": "3a145e5376d6565afd2f79df2d4d5565f2025412cffad8689e3d316a4ff5407a",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 8,
+          "routes": 8,
+          "status": "pass"
+        },
+        "mode": "editorial",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "3b9304a070ef497174e78c2830ca746ff34f63352ec5da06ee3660fa4df6445c",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 22
+        }
+      }
+    },
+    {
+      "case": "bar-chart",
+      "html": "pilot-bar-chart-neutral-light.html",
+      "html_sha256": "9e709e685fc3bfdc5ced62d722ba7eff9cf421b18fe22abae1e4b9b0fd3e4c8c",
+      "mode": "neutral-light",
+      "svg": "pilot-bar-chart-neutral-light.svg",
+      "svg_sha256": "3ac1af610664a6313578abf9f28ed471721c9187bc5f42eb95f48cb2ec4fbb9b",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "plot_in_bounds": true,
+          "status": "pass"
+        },
+        "mode": "neutral-light",
+        "quantitative": {
+          "values": [
+            [
+              12,
+              18,
+              9,
+              16
+            ],
+            [
+              24,
+              20,
+              28,
+              22
+            ]
+          ],
+          "zero_baseline": true
+        },
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "a329b4fd98acd1637aa54b99f3810ecf9e3e43295b97a668122b50da5aee7cde",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 14
+        }
+      }
+    },
+    {
+      "case": "bar-chart",
+      "html": "pilot-bar-chart-neutral-dark.html",
+      "html_sha256": "2b0763e55ce7447732515f2df5d34876171b83f0234e63c2a3d144d3cdfc06f1",
+      "mode": "neutral-dark",
+      "svg": "pilot-bar-chart-neutral-dark.svg",
+      "svg_sha256": "713bceae9d25561df23b37487222152202d142144fa8f25fcd212f45f6814eca",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "plot_in_bounds": true,
+          "status": "pass"
+        },
+        "mode": "neutral-dark",
+        "quantitative": {
+          "values": [
+            [
+              12,
+              18,
+              9,
+              16
+            ],
+            [
+              24,
+              20,
+              28,
+              22
+            ]
+          ],
+          "zero_baseline": true
+        },
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "a329b4fd98acd1637aa54b99f3810ecf9e3e43295b97a668122b50da5aee7cde",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 14
+        }
+      }
+    },
+    {
+      "case": "bar-chart",
+      "html": "pilot-bar-chart-editorial.html",
+      "html_sha256": "635a690070ec329c5d786150380a39b82f5e2432740cb0be7f8dc4a1df3b3f8a",
+      "mode": "editorial",
+      "svg": "pilot-bar-chart-editorial.svg",
+      "svg_sha256": "d797e90d630de1bb9ef841b2f377a1b174db5bf29e2532428a6d17e84a79740c",
+      "validation": {
+        "contrast": "pass",
+        "geometry": {
+          "plot_in_bounds": true,
+          "status": "pass"
+        },
+        "mode": "editorial",
+        "quantitative": {
+          "values": [
+            [
+              12,
+              18,
+              9,
+              16
+            ],
+            [
+              24,
+              20,
+              28,
+              22
+            ]
+          ],
+          "zero_baseline": true
+        },
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "a329b4fd98acd1637aa54b99f3810ecf9e3e43295b97a668122b50da5aee7cde",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 14
+        }
+      }
+    },
+    {
+      "case": "swimlane",
+      "html": "pilot-swimlane-neutral-light.html",
+      "html_sha256": "f31d8b50a3cc58fbfad25acdcd8498f11ff009354a382530f000660ab1469f4c",
+      "mode": "neutral-light",
+      "svg": "pilot-swimlane-neutral-light.svg",
+      "svg_sha256": "4cb2354cf1f68dd2dc77c7613bfef655403f555d95fcebfeff9c5875dc44af80",
+      "validation": {
+        "benchmark": {
+          "handoffs": [
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)",
+            "(5)"
+          ],
+          "lanes": 6,
+          "owner_groups": 2,
+          "roles": [
+            "document",
+            "file",
+            "listing",
+            "money"
+          ]
+        },
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 12,
+          "routes": 10,
+          "status": "pass"
+        },
+        "mode": "neutral-light",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "91a3643293c5705bbef68cd74477bde8e3a45672c27e0fed9e51169da9224830",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 32
+        }
+      }
+    },
+    {
+      "case": "swimlane",
+      "html": "pilot-swimlane-neutral-dark.html",
+      "html_sha256": "d1d35426aa16ab15807f0a169d2eae20b5e0df768531d881aa7b9d3fd12a4140",
+      "mode": "neutral-dark",
+      "svg": "pilot-swimlane-neutral-dark.svg",
+      "svg_sha256": "a5e86b933921a09d3def34d68fe9ce84633660bda6e49fc6d7ccfb5aa437700d",
+      "validation": {
+        "benchmark": {
+          "handoffs": [
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)",
+            "(5)"
+          ],
+          "lanes": 6,
+          "owner_groups": 2,
+          "roles": [
+            "document",
+            "file",
+            "listing",
+            "money"
+          ]
+        },
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 12,
+          "routes": 10,
+          "status": "pass"
+        },
+        "mode": "neutral-dark",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "91a3643293c5705bbef68cd74477bde8e3a45672c27e0fed9e51169da9224830",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 32
+        }
+      }
+    },
+    {
+      "case": "swimlane",
+      "html": "pilot-swimlane-editorial.html",
+      "html_sha256": "b5a7960c8b71741c6f5454447f65d2040d0c3312a9cb45c6b455245b3b5c2763",
+      "mode": "editorial",
+      "svg": "pilot-swimlane-editorial.svg",
+      "svg_sha256": "87992cae6f7262ffabb73731a21919b916937b5a9769bac5e81180a2f32c2a8f",
+      "validation": {
+        "benchmark": {
+          "handoffs": [
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)",
+            "(5)"
+          ],
+          "lanes": 6,
+          "owner_groups": 2,
+          "roles": [
+            "document",
+            "file",
+            "listing",
+            "money"
+          ]
+        },
+        "contrast": "pass",
+        "geometry": {
+          "nodes": 12,
+          "routes": 10,
+          "status": "pass"
+        },
+        "mode": "editorial",
+        "renderer_version": "p06-pilot-1",
+        "semantic_ir_hash": "91a3643293c5705bbef68cd74477bde8e3a45672c27e0fed9e51169da9224830",
+        "serialization": {
+          "accessible_name": true,
+          "self_contained": true,
+          "status": "pass",
+          "unique_ids": 32
+        }
+      }
+    }
+  ],
+  "qa_artifacts": [
+    {
+      "path": "contact-sheet.html",
+      "sha256": "456004a2c64ae97029f4fe2d7fe2713221c2d2df03fb2aaa5de4460dfa485274"
+    }
+  ],
+  "renderer_version": "p06-pilot-1",
+  "schema_version": "1.0",
+  "source": "original P-06 pilot fixtures"
+}

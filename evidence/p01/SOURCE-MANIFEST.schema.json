@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:thien-skill-creative-diagram:schema:source-manifest:1.0-draft",
+  "title": "Thien-Skill-Creative-Diagram SOURCE_MANIFEST",
+  "description": "Draft P-01 schema. The manifest is the source of truth for source provenance and deterministic notice projection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "generated_at",
+    "sources",
+    "capability_mappings",
+    "notice_projection"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0-draft"
+    },
+    "project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["technical_id", "version", "reimplementation_model"],
+      "properties": {
+        "technical_id": {
+          "const": "thien-skill-creative-diagram"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+        },
+        "reimplementation_model": {
+          "const": "clean-room-oriented independent reimplementation"
+        }
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "capability_mappings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/capabilityMapping" }
+    },
+    "notice_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_selector", "sort_key", "template_id", "validator_mode"],
+      "properties": {
+        "source_selector": {
+          "const": "sources[notice.include=true]"
+        },
+        "sort_key": {
+          "const": "source_id"
+        },
+        "template_id": {
+          "const": "third-party-notice-v1"
+        },
+        "validator_mode": {
+          "const": "exact-projection"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "name",
+        "category",
+        "role",
+        "authority",
+        "locator",
+        "snapshot",
+        "license",
+        "usage",
+        "material_transfer",
+        "notice"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^SRC-[A-Z0-9-]+$"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "category": {
+          "enum": [
+            "functional-reference",
+            "principle-reference",
+            "official-platform-documentation",
+            "third-party-material",
+            "owner-provided-material"
+          ]
+        },
+        "role": {
+          "enum": [
+            "primary-functional",
+            "principles-only",
+            "normative-platform-evidence",
+            "bundled-material-origin",
+            "qa-reference"
+          ]
+        },
+        "authority": {
+          "enum": ["reference", "normative-external", "project-approved"]
+        },
+        "locator": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind", "canonical"],
+          "properties": {
+            "kind": { "enum": ["url", "repository", "local-repository", "artifact"] },
+            "canonical": { "type": "string", "minLength": 1 },
+            "repository": { "type": "string" },
+            "path": { "type": "string" }
+          }
+        },
+        "snapshot": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["captured_at", "revision_kind", "revision"],
+          "properties": {
+            "captured_at": { "type": "string", "format": "date-time" },
+            "revision_kind": { "enum": ["git-commit", "tag", "document-current-at-date", "artifact-hash"] },
+            "revision": { "type": "string", "minLength": 1 },
+            "commit_time": { "type": "string", "format": "date-time" },
+            "tree": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+            "sha256": { "$ref": "#/$defs/sha256" },
+            "tag": { "type": ["string", "null"] }
+          }
+        },
+        "license": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status"],
+          "properties": {
+            "status": { "enum": ["declared", "not-applicable-documentation", "pending-review", "owner-asserted"] },
+            "identifier": { "type": ["string", "null"] },
+            "evidence_locator": { "type": ["string", "null"] },
+            "evidence_sha256": {
+              "oneOf": [
+                { "$ref": "#/$defs/sha256" },
+                { "type": "null" }
+              ]
+            }
+          }
+        },
+        "files_evaluated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path_or_url", "purpose"],
+            "properties": {
+              "path_or_url": { "type": "string", "minLength": 1 },
+              "sha256": { "$ref": "#/$defs/sha256" },
+              "purpose": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "usage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["allowed", "prohibited"],
+          "properties": {
+            "allowed": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "type": "string", "minLength": 1 }
+            },
+            "prohibited": {
+              "type": "array",
+              "items": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "material_transfer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "copied_bytes"],
+          "properties": {
+            "mode": { "enum": ["none", "verbatim-authorized", "modified-authorized"] },
+            "copied_bytes": { "type": "boolean" },
+            "asset_manifest_ids": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "modification_ledger": { "type": ["string", "null"] }
+          }
+        },
+        "notice": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["include", "reason"],
+          "properties": {
+            "include": { "type": "boolean" },
+            "reason": { "type": "string", "minLength": 1 },
+            "display_name": { "type": "string" },
+            "copyright": { "type": ["string", "null"] },
+            "license_label": { "type": ["string", "null"] },
+            "source_url": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "capabilityMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capability_id",
+        "source_ids",
+        "abstract_requirement",
+        "independent_boundary",
+        "planned_test_ids"
+      ],
+      "properties": {
+        "capability_id": { "type": "string", "pattern": "^CAP-[A-Z][A-Z0-9-]+$" },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "pattern": "^SRC-[A-Z0-9-]+$" }
+        },
+        "abstract_requirement": { "type": "string", "minLength": 1 },
+        "independent_boundary": { "type": "string", "minLength": 1 },
+        "planned_implementation_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "planned_test_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "copying_risk": { "enum": ["low", "medium", "high"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

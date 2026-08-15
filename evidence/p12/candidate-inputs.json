@@ -1,0 +1,282 @@
+{
+  "approval_ref": "P12-G04-OWNER-2026-08-15",
+  "approval_state": "owner-approved",
+  "date": "2026-08-15",
+  "golden_eligible": true,
+  "manifest_id": "P02-E2-1-P12-CANDIDATE-INPUTS",
+  "rows": [
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "da2ebf42618dc4f3e0a95437f7ce5084ff5d63d2bc1a067f9ac3f31738d805b1",
+      "case_id": "E2-T01",
+      "golden_eligible": true,
+      "source_summary_sha256": "534a340431c4872f95535b83c15e7b3f223fe56e6c6a7448cdd32461f0d44032",
+      "type": "architecture"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "a2d14c7b96c8d9cfd29de15839cad403933ca73d6a8bc0971b7777d252619986",
+      "case_id": "E2-T02",
+      "golden_eligible": true,
+      "source_summary_sha256": "c5389f57d1a78ece66c19a4d5840eb73755128aaa70179b38402183f543bd162",
+      "type": "it-current-state"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "b1b3c680ff42b2a24f1a724a7f983ddbde23cb01fc6afbcf83d53c18587b88ef",
+      "case_id": "E2-T03",
+      "golden_eligible": true,
+      "source_summary_sha256": "0cfd2f540f50fea32c4dd6dca8327243177bd7c17b7eac905572b5f6aa48803b",
+      "type": "flowchart"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "0ac98db707fc830c471f286b064a715e49e6e423d342d6aae474ed431832480c",
+      "case_id": "E2-T04",
+      "golden_eligible": true,
+      "source_summary_sha256": "d9821caa32a84cf0c5c8aac59a0d3c0e34dd0a6b229d88342daad2fdcb601b4c",
+      "type": "sequence"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "b05a12ea33a5f29dcb9333b46052e480fe25dc75a192d9dafc744df9c649ddc0",
+      "case_id": "E2-T05",
+      "golden_eligible": true,
+      "source_summary_sha256": "51479428462e18b5d54a1c7c403189328640329528a661e699b4eb33bd6ddeea",
+      "type": "state-machine"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "1b52b1a6cf5ecac15b8b3085879436b575c5bf5dee73af415d427d04d0979ba0",
+      "case_id": "E2-T06",
+      "golden_eligible": true,
+      "source_summary_sha256": "3ab9ad1fb51384d9c671a376818b94fbc291b9db7566e82442f7f0b58458b1b1",
+      "type": "er-data-model"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "d09d0b52260fb4c95e31a0795ab2fd8940e3a6eb89c1b6d4a973182eb94a657d",
+      "case_id": "E2-T07",
+      "golden_eligible": true,
+      "source_summary_sha256": "42c17dff03f3fc1006bab75c6447f28c71552f9f697a3315cc1a4d5b6f118a05",
+      "type": "timeline"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "aa7806693d9e66c13f5f0a0091083f6c60e68275611241b2b9da002a3c44958c",
+      "case_id": "E2-T08",
+      "golden_eligible": true,
+      "source_summary_sha256": "f351e0b6912ecfede54d2b369965756e4d309e472cd01d856102fce2437e091e",
+      "type": "swimlane"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "462ddf2eea654affcc9b3a006d2171594e59e0b6cce405dc1fba845439f9f93f",
+      "case_id": "E2-T09",
+      "golden_eligible": true,
+      "source_summary_sha256": "f4ecb0c18bb04b75750b4f853149d10fefaf67c45a46a61cc3213939677c20d3",
+      "type": "quadrant"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "1b38a797910d60b457415b7b6abb108dbaca9fb0707f2c01361229240de249ce",
+      "case_id": "E2-T10",
+      "golden_eligible": true,
+      "source_summary_sha256": "39111e8bc46db8756c7591610c34e7b9b59a2dda4591c691495913fa7b0a5025",
+      "type": "radar"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "ec95672acc36050148b997edd6fe7db137239d466ba9629281278c89cea60d46",
+      "case_id": "E2-T11",
+      "golden_eligible": true,
+      "source_summary_sha256": "4dc1cedf059719e0ae5f8c4e62b920c8cd7f46682eba83dbf0899dd2f0f0820e",
+      "type": "loop-flywheel"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "8b6fc89dceaaa07547ec0ebaedfaef848e42f3bbcf4903554ebc50e4991327f1",
+      "case_id": "E2-T12",
+      "golden_eligible": true,
+      "source_summary_sha256": "0e201894d07ff2c4f139e63a8afcf97cfb095c32a8d0c56a39e7d2e35796dd38",
+      "type": "nested"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "5f0796910cb382e4d63f24c89fca5df3bbc17b59c6e08b36d3195151aca6cfed",
+      "case_id": "E2-T13",
+      "golden_eligible": true,
+      "source_summary_sha256": "a5a5656f63d2428e48faac71792be24762e0770b0577767b31d952e8fe7ac2a8",
+      "type": "tree"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "af6d69b07a98edff3fd7b8870fd27cf522660d0985517aa1df673452c41b3946",
+      "case_id": "E2-T14",
+      "golden_eligible": true,
+      "source_summary_sha256": "be22654bfd86038500b9d72d56f56c8a2e120e8feb6601aa252227941bfcbfb7",
+      "type": "org-chart"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "13c1703f8d6a63f35b66655b70ea49473e9e21d06e0984e06bffda0f98812d9f",
+      "case_id": "E2-T15",
+      "golden_eligible": true,
+      "source_summary_sha256": "ec0705308bfb6131d41c6408156a3e414c6ec9e51802bca9228d03cfa0e80852",
+      "type": "layer-stack"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "2586cd423503a8c1cc42dfe0881f528aa2ed384b0c5f8590b542adff7c312344",
+      "case_id": "E2-T16",
+      "golden_eligible": true,
+      "source_summary_sha256": "1a9a976136c730f20775d24eab70476e3a678fa6b9e90ba0de160429f122b488",
+      "type": "venn"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "adeae827409d37c26fec8c3c48713cd2d4147171f0a6229803559314a0cd3388",
+      "case_id": "E2-T17",
+      "golden_eligible": true,
+      "source_summary_sha256": "0eb3fb368508673dedc45155a655078d3b4e20f448ef2fab24056ea7c06b9bf6",
+      "type": "pyramid-funnel"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "f23c1b13b89ed643c995213bf2fd5ec5106d31d6d97a0f18a55ee8104ce1c8c9",
+      "case_id": "E2-T18",
+      "golden_eligible": true,
+      "source_summary_sha256": "592bee6e1bda34449a3f5d198db755f124f960d868d4835926d2cbd3b7efc737",
+      "type": "bar-chart"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "9adc671fbfeb04ccf7a1ce39708b9361e4eee5133798b67b5032299ca1a24946",
+      "case_id": "E2-T19",
+      "golden_eligible": true,
+      "source_summary_sha256": "831dd3bfccb22ccf7551af69f39e8eb844bb84d6ee71550df42fd90f8875a2dc",
+      "type": "line-chart"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "6c885f7411fb4286f78c2107eae2da26fe3763d06d4eb13bac95346b893db11f",
+      "case_id": "E2-T20",
+      "golden_eligible": true,
+      "source_summary_sha256": "cf0fed4b35e3f9f1a051a05da5b2e47eea1814400f1cabb0c39f0b160969b1fe",
+      "type": "gantt"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "c0bab80881716b20b7decc8702edcd32133f8e44cf89ff455f93c680331c8af7",
+      "case_id": "E2-T21",
+      "golden_eligible": true,
+      "source_summary_sha256": "ecf65b1d0ba206745d1b8d24816dc9c53e49ecd404ad9a290a75da0927bed00b",
+      "type": "scatter-plot"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "181d4b331886ef374f4a61c70c8fce204c239f94030611de0ce96873ad9ab982",
+      "case_id": "E2-T22",
+      "golden_eligible": true,
+      "source_summary_sha256": "47a551e0a624c8cbae62ebeaaadc4d0a4a16138d9981180b4c3c4ef989b9fe3c",
+      "type": "high-level"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "5ab76e1bd56557472724882235f10fc252d92bd85d3d70251a049c9de832d174",
+      "case_id": "E2-T23",
+      "golden_eligible": true,
+      "source_summary_sha256": "bab4ee0622bfe58d6242e1bcbca145b853b415434f1df21ba12b6fb06b56b8ca",
+      "type": "process"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "2691175918a913f67902ac93ad7cf509450e854b2c8a89c435632e4419310286",
+      "case_id": "E2-T24",
+      "golden_eligible": true,
+      "source_summary_sha256": "08f47a7083d2e33bf393b97876207b270322352d76c8c3335696d6d2f05a8222",
+      "type": "medallion"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "3dc2f0406115a96c2b2ae8d48d653ff37bc2f626e0e730d20ca429fbdbf79176",
+      "case_id": "E2-T25",
+      "golden_eligible": true,
+      "source_summary_sha256": "b35ca2f11549f35b63f071a3281b90107101888844669c2db415ddf8953fdd5f",
+      "type": "data-flow"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "daf8369a801db1389be8820dc31b60664ca2a7c6a519fdb4e9e83310f0c79f67",
+      "case_id": "E2-T26",
+      "golden_eligible": true,
+      "source_summary_sha256": "b2d169667ef71de1c2292bb265d56dfeea0b007c731e01cff1d2fe6b4a17cb40",
+      "type": "dp-integration"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "assertion_source": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "candidate_ir_sha256": "50f223637f732111d9fa58e6fd9ee41609be2d6955f30676fe95d5b207fdea7b",
+      "case_id": "E2-T27",
+      "golden_eligible": true,
+      "source_summary_sha256": "f1081c2bda30dde5f4699166594ae5e9aac07fef9ea1dba7c5d73ffa31ec741c",
+      "type": "dp-security-matrix"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "QA-only exact implementation fixtures; excluded from release packages",
+  "source_contract": "evidence/p02/BENCHMARK-MANIFEST.md"
+}

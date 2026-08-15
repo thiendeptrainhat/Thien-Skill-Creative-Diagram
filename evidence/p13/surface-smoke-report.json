@@ -1,0 +1,102 @@
+{
+  "approved_matrix": "evidence/p02/SURFACE-SUPPORT-MATRIX.md",
+  "candidate_id": "TCD-PACKAGES-1.0.0-RC1",
+  "checked_at": "2026-08-15",
+  "conditional_count": 13,
+  "policy": "Conditional cells are not counted or advertised as supported without exact host install, fresh-session trigger, output and fallback evidence.",
+  "record_id": "P13-SURFACE-SMOKE-1",
+  "rows": [
+    {
+      "approved_status": "conditional",
+      "evidence": "local raw-skill structure/runtime smoke passed; fresh Claude session discovery/trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-01"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "local raw-skill structure/runtime smoke passed; project trust and fresh-session trigger remain external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-02"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "Claude manifest validation and nested runtime smoke passed; live --plugin-dir trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-03"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "exact package exists; cloud repository session condition was not available",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-04"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "exact Universal ZIP exists; claude.ai account upload/code-execution condition was not available",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-05"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "exact artifacts exist; Cowork account/plugin condition was not available",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-06"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "exact Universal ZIP exists; Skills API access/code-execution condition was not available",
+      "p13_status": "conditional",
+      "surface_id": "SUR-CL-07"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "OpenAI manifest and nested runtime smoke passed; marketplace/account install condition remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-01"
+    },
+    {
+      "approved_status": "unsupported",
+      "evidence": "no official standalone raw-skill route for ChatGPT web/mobile",
+      "p13_status": "unsupported",
+      "surface_id": "SUR-OAI-02"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "Universal skill structure/runtime/UI metadata smoke passed; desktop discovery trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-03"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "OpenAI manifest and nested runtime smoke passed; ChatGPT desktop marketplace condition remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-04"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "Universal skill structure/runtime smoke passed; fresh Codex CLI discovery/trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-05"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "OpenAI manifest and nested runtime smoke passed; marketplace install/trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-06"
+    },
+    {
+      "approved_status": "conditional",
+      "evidence": "Universal skill structure/runtime smoke passed; fresh IDE discovery/trigger remains external",
+      "p13_status": "conditional",
+      "surface_id": "SUR-OAI-07"
+    },
+    {
+      "approved_status": "unsupported",
+      "evidence": "no approved OpenAI plugin route for Codex IDE extension",
+      "p13_status": "unsupported",
+      "surface_id": "SUR-OAI-08"
+    }
+  ],
+  "supported_count": 0,
+  "unsupported_count": 2
+}

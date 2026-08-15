@@ -1,0 +1,275 @@
+{
+  "artifacts": {
+    "swimlane-thu-tien.html": {
+      "bytes": 14567,
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "94d297c5f939647c870f4a344f6820031976988dbb09510ce43c64cdfa5c8e81"
+    },
+    "swimlane-thu-tien.svg": {
+      "bytes": 13406,
+      "media_type": "image/svg+xml",
+      "sha256": "55d01e938b89052695ebc387983c0e052179402f3bc1143698962307d49ae4b8"
+    }
+  },
+  "diagram_type": "swimlane",
+  "fallback": "PNG unavailable because no approved preinstalled rasterizer was detected; standalone SVG is the transparent portable fallback.",
+  "language": "vi",
+  "qa": {
+    "browser_live": "blocked-by-browser-file-url-policy",
+    "contrast": {
+      "pairs": 27,
+      "report": [
+        {
+          "background": "canvas",
+          "foreground": "text",
+          "mode": "neutral-light",
+          "ratio": 15.159,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "surface",
+          "foreground": "text",
+          "mode": "neutral-light",
+          "ratio": 16.268,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "canvas",
+          "foreground": "muted",
+          "mode": "neutral-light",
+          "ratio": 5.884,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "accent",
+          "foreground": "on_accent",
+          "mode": "neutral-light",
+          "ratio": 5.161,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "money_fill",
+          "foreground": "money_text",
+          "mode": "neutral-light",
+          "ratio": 10.823,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "document_fill",
+          "foreground": "document_stroke",
+          "mode": "neutral-light",
+          "ratio": 4.945,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "file_fill",
+          "foreground": "file_stroke",
+          "mode": "neutral-light",
+          "ratio": 4.566,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_1",
+          "mode": "neutral-light",
+          "ratio": 4.808,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_2",
+          "mode": "neutral-light",
+          "ratio": 5.31,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "text",
+          "mode": "neutral-dark",
+          "ratio": 16.402,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "surface",
+          "foreground": "text",
+          "mode": "neutral-dark",
+          "ratio": 14.418,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "canvas",
+          "foreground": "muted",
+          "mode": "neutral-dark",
+          "ratio": 9.954,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "accent",
+          "foreground": "on_accent",
+          "mode": "neutral-dark",
+          "ratio": 7.577,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "money_fill",
+          "foreground": "money_text",
+          "mode": "neutral-dark",
+          "ratio": 11.535,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "document_fill",
+          "foreground": "document_stroke",
+          "mode": "neutral-dark",
+          "ratio": 5.284,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "file_fill",
+          "foreground": "file_stroke",
+          "mode": "neutral-dark",
+          "ratio": 5.706,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_1",
+          "mode": "neutral-dark",
+          "ratio": 7.577,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_2",
+          "mode": "neutral-dark",
+          "ratio": 10.067,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "text",
+          "mode": "editorial",
+          "ratio": 13.199,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "surface",
+          "foreground": "text",
+          "mode": "editorial",
+          "ratio": 14.801,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "canvas",
+          "foreground": "muted",
+          "mode": "editorial",
+          "ratio": 5.289,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "accent",
+          "foreground": "on_accent",
+          "mode": "editorial",
+          "ratio": 6.22,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "money_fill",
+          "foreground": "money_text",
+          "mode": "editorial",
+          "ratio": 9.532,
+          "status": "pass",
+          "threshold": 4.5
+        },
+        {
+          "background": "document_fill",
+          "foreground": "document_stroke",
+          "mode": "editorial",
+          "ratio": 4.849,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "file_fill",
+          "foreground": "file_stroke",
+          "mode": "editorial",
+          "ratio": 4.973,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_1",
+          "mode": "editorial",
+          "ratio": 5.42,
+          "status": "pass",
+          "threshold": 3.0
+        },
+        {
+          "background": "canvas",
+          "foreground": "series_2",
+          "mode": "editorial",
+          "ratio": 5.123,
+          "status": "pass",
+          "threshold": 3.0
+        }
+      ],
+      "status": "pass"
+    },
+    "determinism": {
+      "sha256": "55d01e938b89052695ebc387983c0e052179402f3bc1143698962307d49ae4b8",
+      "status": "pass"
+    },
+    "fidelity": {
+      "source_count": 31,
+      "status": "pass"
+    },
+    "html": {
+      "mode": "none",
+      "status": "pass"
+    },
+    "png": "unavailable-no-approved-preinstalled-rasterizer",
+    "semantic": "pass",
+    "state_redundancy": {
+      "stateful_items": 0,
+      "status": "pass"
+    },
+    "svg": {
+      "status": "pass",
+      "unique_ids": 31,
+      "view_box": [
+        0.0,
+        0.0,
+        2000.0,
+        1280.0
+      ]
+    },
+    "visual_inspection": "pass-after-local-thumbnail-review"
+  },
+  "schema_version": "1.0",
+  "source_policy": "reference image treated as inert QA data; no pixels, layout, or assets embedded",
+  "source_sha256": "a7dfa484b5d324dcb4269aec5dcae68154dec1947ab1b78c75b12f11a4fb6113",
+  "visual_mode": "editorial"
+}

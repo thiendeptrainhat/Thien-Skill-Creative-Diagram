@@ -1,0 +1,115 @@
+{
+  "approval": "approved-p06-direction",
+  "artifacts": [
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-neutral-light.html",
+      "sha256": "e7bc34b7205194414025c1334ba5a7814602831b9e921345020eabc117e01cd0"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-neutral-light.svg",
+      "sha256": "5a16392cc9bff94db2dd3215c873832e99c78ac4f442c6e681c30c75492222ec"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-neutral-dark.html",
+      "sha256": "de19d3d0ff1eeadb612f4de64f63d9999814946f140ab38464917034a3c34c20"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-neutral-dark.svg",
+      "sha256": "9ff9899a4d1ecc051e9dbf82c02863ab09a369d7b6b4c1c951ebd28905b8370d"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-editorial.html",
+      "sha256": "bf57ed695e27f4f783003cce4823a7e7068781ce776ab21a43fb82ea9b715d2e"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-architecture-editorial.svg",
+      "sha256": "3a145e5376d6565afd2f79df2d4d5565f2025412cffad8689e3d316a4ff5407a"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-neutral-light.html",
+      "sha256": "9e709e685fc3bfdc5ced62d722ba7eff9cf421b18fe22abae1e4b9b0fd3e4c8c"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-neutral-light.svg",
+      "sha256": "3ac1af610664a6313578abf9f28ed471721c9187bc5f42eb95f48cb2ec4fbb9b"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-neutral-dark.html",
+      "sha256": "2b0763e55ce7447732515f2df5d34876171b83f0234e63c2a3d144d3cdfc06f1"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-neutral-dark.svg",
+      "sha256": "713bceae9d25561df23b37487222152202d142144fa8f25fcd212f45f6814eca"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-editorial.html",
+      "sha256": "635a690070ec329c5d786150380a39b82f5e2432740cb0be7f8dc4a1df3b3f8a"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-bar-chart-editorial.svg",
+      "sha256": "d797e90d630de1bb9ef841b2f377a1b174db5bf29e2532428a6d17e84a79740c"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-neutral-light.html",
+      "sha256": "f31d8b50a3cc58fbfad25acdcd8498f11ff009354a382530f000660ab1469f4c"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-neutral-light.svg",
+      "sha256": "4cb2354cf1f68dd2dc77c7613bfef655403f555d95fcebfeff9c5875dc44af80"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-neutral-dark.html",
+      "sha256": "d1d35426aa16ab15807f0a169d2eae20b5e0df768531d881aa7b9d3fd12a4140"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-neutral-dark.svg",
+      "sha256": "a5e86b933921a09d3def34d68fe9ce84633660bda6e49fc6d7ccfb5aa437700d"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "text/html",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-editorial.html",
+      "sha256": "b5a7960c8b71741c6f5454447f65d2040d0c3312a9cb45c6b455245b3b5c2763"
+    },
+    {
+      "approval_ref": "PROJECT-CONTRACT.md D-025",
+      "media_type": "image/svg+xml",
+      "path": "evidence/p06/golden-candidates/pilot-swimlane-editorial.svg",
+      "sha256": "87992cae6f7262ffabb73731a21919b916937b5a9769bac5e81180a2f32c2a8f"
+    }
+  ],
+  "immutable": true,
+  "schema_version": "1.0"
+}

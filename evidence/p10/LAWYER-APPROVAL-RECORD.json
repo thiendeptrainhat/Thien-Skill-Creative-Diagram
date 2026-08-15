@@ -1,0 +1,43 @@
+{
+  "record_id": "P10-LAWYER-APPROVAL-1",
+  "decision_ref": "D-030",
+  "reviewed_at": "2026-08-15",
+  "reviewer": {
+    "name": "Tran Ngoc Thien",
+    "capacity": "Vietnamese lawyer and owner",
+    "capacity_basis": "Explicit self-attestation in the project conversation",
+    "independent_credential_verification": "not-performed"
+  },
+  "candidate_id": "TCD-LEGAL-1.0.0-RC2",
+  "version": "1.0.0",
+  "aggregate_sha256": "8f16380761cd6026166daa12ee36227d96e0e3b92ce605f4d9057624de8292c6",
+  "decision": "approved",
+  "conditions": [],
+  "reviewed_artifacts": [
+    {
+      "path": "thien-skill-creative-diagram/LICENSE.md",
+      "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+    },
+    {
+      "path": "thien-skill-creative-diagram/LICENSE-APPLICATION.md",
+      "sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381"
+    },
+    {
+      "path": "thien-skill-creative-diagram/NOTICE",
+      "sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0"
+    },
+    {
+      "path": "thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md",
+      "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+    },
+    {
+      "path": "thien-skill-creative-diagram/SOURCE_MANIFEST.json",
+      "sha256": "f534b3ec80bb69923a4a692a35abecc1ab327677077aadcc90c24231c5d5dcb7"
+    },
+    {
+      "path": "thien-skill-creative-diagram/ASSET_MANIFEST.json",
+      "sha256": "549651fd285035d31823e1020552011c69bf76c6a84dbe6e957fc03152897b2e"
+    }
+  ],
+  "statement": "This record reflects the reviewer's explicit approval in the stated professional capacity of the exact candidate identified above. It is a project evidence record, not an independently authenticated bar record or electronic signature."
+}

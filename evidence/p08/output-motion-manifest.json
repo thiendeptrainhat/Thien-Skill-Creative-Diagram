@@ -1,0 +1,1168 @@
+{
+  "browser_verification": "blocked-not-executable: local file URL rejected by browser URL policy; no workaround used",
+  "expected_matrix_count": 135,
+  "matrix": [
+    {
+      "diagram_type": "architecture",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724"
+    },
+    {
+      "diagram_type": "architecture",
+      "format": "html",
+      "motion": "none",
+      "sha256": "3ea62519c7d375eb84c2c1889a7441fba5fea284d44ad0f281226a1debfd85c8"
+    },
+    {
+      "diagram_type": "architecture",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "bab70df43c6a5456f907b128be4b0162e7ca72506deb3c005a56f2ff518c3242"
+    },
+    {
+      "diagram_type": "architecture",
+      "format": "html",
+      "motion": "step",
+      "sha256": "31e16eb2bae37be2b88b768f75c0277546b656ade354de404b7d017a568d9d4b"
+    },
+    {
+      "diagram_type": "architecture",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "606254ef6ced39f77d582b790f01ad99f7250546fbe899625cd95575d26d9fae"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "a80662974a54bbd0e8265e78d9366c5ab193f559a836ccac492beed08018e1f3"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "format": "html",
+      "motion": "none",
+      "sha256": "ee760d67fc5aa28eb70315b7056a26bfb2eb94b105d04cfbfeab941f20c8415e"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "dc6848e5feb9443ce3ca023b8e05335f56873ca91d13e3e647c2efc402b016fb"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "format": "html",
+      "motion": "step",
+      "sha256": "0bbdbe73681ca756ed4308e08cb9a2ed6ae50d6b22c79e2eb847fa88c6d79da2"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "810e8bbdd2d25c2c1cc24ab9e0fad4e0f45b0f8a10e6bdc014a7af499cc34d15"
+    },
+    {
+      "diagram_type": "flowchart",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "f8d08b76f709b8b1a9b50bed41c4b5aa32a013d81757897155402e4ca233608d"
+    },
+    {
+      "diagram_type": "flowchart",
+      "format": "html",
+      "motion": "none",
+      "sha256": "b1563b9819fd73ba28a9e2073f5c3de0ff0bb348bc5be41fd6ce1ca941be4e9c"
+    },
+    {
+      "diagram_type": "flowchart",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "b34efd3aa158ff0ec87dda516179513c71fb27c5cd3b3da3916dbdff67f996d8"
+    },
+    {
+      "diagram_type": "flowchart",
+      "format": "html",
+      "motion": "step",
+      "sha256": "ed6f2f482ecce4640d69c72f388eb822fc32e16a81c7cb9d8fb5ec65a194fbf4"
+    },
+    {
+      "diagram_type": "flowchart",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "8c923ced70fca718c14e8ccf184585faad2312998f7a00ee4c2e97b6c06f1fb4"
+    },
+    {
+      "diagram_type": "sequence",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "8967a1a9e2570b5aed93119de2e1c2e78bb84b8c5a925b3660be8fc1b4d1f9a4"
+    },
+    {
+      "diagram_type": "sequence",
+      "format": "html",
+      "motion": "none",
+      "sha256": "7ab2620f04c2e346f325a285cc99fc1b614a777e394d969f54d791999dcf71bd"
+    },
+    {
+      "diagram_type": "sequence",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "3ac0625a2aff70d48083b9d51f3ca97e5c1a8e2cce390922122e914dde145572"
+    },
+    {
+      "diagram_type": "sequence",
+      "format": "html",
+      "motion": "step",
+      "sha256": "417bfa96f59494251d8335159eca0156a96b15c49c66f277a7a8b90e6bd0c878"
+    },
+    {
+      "diagram_type": "sequence",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "04db23ad6e72ebc5a8fd432593539622a2e8fbd426b84570b61248848c1a9f50"
+    },
+    {
+      "diagram_type": "state-machine",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "1eee75f54aedf1f647b8fd635142f31146d3eced938cb3034a1fac8153722578"
+    },
+    {
+      "diagram_type": "state-machine",
+      "format": "html",
+      "motion": "none",
+      "sha256": "6b16d2efff8479bd02686f1481ce46ebfb8f77a52bd461d21fb7b84d9f122fec"
+    },
+    {
+      "diagram_type": "state-machine",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "49b95d76d87d5e45177592e542aac69a2fbddd63954f3a7ef882d4f084d89b55"
+    },
+    {
+      "diagram_type": "state-machine",
+      "format": "html",
+      "motion": "step",
+      "sha256": "0f404b9a952dd6dd1925377be69e4963426a1cbc81b61ace87d2f0ecdac32649"
+    },
+    {
+      "diagram_type": "state-machine",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "9c9fa78eaf3a6ab8eb3cc689b2db13978e3b8629b9ece6adb8d97252e34bcdee"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "ed0415f37f2ad2b48be8b7cec24e41f6fd034c5724739e993636f4fd13c12089"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "format": "html",
+      "motion": "none",
+      "sha256": "a6368dcc1477b438b47ad4be102cc514105b851561c4fb0eb9d2a53d530fc7c2"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "58a0d6477b798b3b46627afbd2748978f71b5fce3bf3f8774405344a56e7b37b"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "format": "html",
+      "motion": "step",
+      "sha256": "403ffbbefc59c448c8c60ae4d90cbdea53ff70ad56534ea1927adc09473ffd09"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "b546a837a9e951ec34f6f4402b10e9e1bc04a2a9170f6cb50eeab80fe2447e16"
+    },
+    {
+      "diagram_type": "timeline",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "9df92d96e91b19187043819c58dc51ed3f7c9f3647358dc754e6b547c2013c5c"
+    },
+    {
+      "diagram_type": "timeline",
+      "format": "html",
+      "motion": "none",
+      "sha256": "0e3988ddddb7bbf48db985c18bc6a6eeb1ed378b6c4e50386afaa767a6d7d6d0"
+    },
+    {
+      "diagram_type": "timeline",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "efffdcd835a96ab8624fb65ce90814af796c3d00b6bea8f72e8393fd007b5333"
+    },
+    {
+      "diagram_type": "timeline",
+      "format": "html",
+      "motion": "step",
+      "sha256": "8e53cda9044c84e7868bdd6b405525c07fe210e0f79e9e06752aaaac4759d53d"
+    },
+    {
+      "diagram_type": "timeline",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "b554f1f70c5811719c979f17b0ee3bdb64aaab60d139302117c4f7d0b8267588"
+    },
+    {
+      "diagram_type": "swimlane",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "e7929d8befea97602b7ef4d4505462c60939cd57a4e6be6a788b4cc43ce4b88b"
+    },
+    {
+      "diagram_type": "swimlane",
+      "format": "html",
+      "motion": "none",
+      "sha256": "836c927c4e52c206e60b931b6727469feaa5ccb3cb511876712c46ccaa4d2ef2"
+    },
+    {
+      "diagram_type": "swimlane",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "d5fec7d474c1582519476059c70e5acae652250b1ab7adcc6474e51b75da52e7"
+    },
+    {
+      "diagram_type": "swimlane",
+      "format": "html",
+      "motion": "step",
+      "sha256": "cbc1aaad0ca310a64e918d5646c047ab09af84fb061e3a95c811bc978adcc707"
+    },
+    {
+      "diagram_type": "swimlane",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "2e0c1af81eba5fdfceb9a2068e69f03947ec7e6d550a7b1e67b26c34ff543afd"
+    },
+    {
+      "diagram_type": "quadrant",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "f51b2240d840874035691e9a7cebb6195535d8341f09be6f405b93679b2182ca"
+    },
+    {
+      "diagram_type": "quadrant",
+      "format": "html",
+      "motion": "none",
+      "sha256": "3b01354b7a5ffa32ba57d7f1197b7bd841ef40681d8431ca109c55a5c59df474"
+    },
+    {
+      "diagram_type": "quadrant",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "42ee4de521b15ca2c43122ea7115a312cc68881fe09edb60747fc0c192d457eb"
+    },
+    {
+      "diagram_type": "quadrant",
+      "format": "html",
+      "motion": "step",
+      "sha256": "076b841083792b9a0096a63cf8b3ba8df314677b647bb6df77c87e030cd2e67d"
+    },
+    {
+      "diagram_type": "quadrant",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "75d5d6d6991e50e953271810304baa7461800df63d013403c292bb3a4ea40a59"
+    },
+    {
+      "diagram_type": "radar",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "ebfc1996eaea2efdb38ad4b9138f66c686be1c54404f2d5014f9be877c490675"
+    },
+    {
+      "diagram_type": "radar",
+      "format": "html",
+      "motion": "none",
+      "sha256": "5d0a80011ddc3d9eee2b3f7eabd9ba36da0158fa69c747b149ac4dbd51891be0"
+    },
+    {
+      "diagram_type": "radar",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "314630a503a01c148b9956331ba7a3aa6ff9c96044e1bd745ff51bf6eec1e128"
+    },
+    {
+      "diagram_type": "radar",
+      "format": "html",
+      "motion": "step",
+      "sha256": "4e1ff6a1e3e6099f717d4d794398bfae7b37fd6518518a394c7762c2aa7e93ea"
+    },
+    {
+      "diagram_type": "radar",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "4e0224e7bc88984e5377513daa3002e37aca10fca8f6433b0df30f5949d6cfc4"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "37aaa342fd6d2b1a54752a52812ae63b659a0abb29e78d79c16c4a78e7473754"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "format": "html",
+      "motion": "none",
+      "sha256": "f5c5088f4704b20c39325d0b9b0a32b8386ed6ad280c6b7c632f844580462f50"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "4058fe627924ffa11afcd94ba8479c55f65173a20795b5d0306f7b5d166f250e"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "format": "html",
+      "motion": "step",
+      "sha256": "c0bf48b0e6c0a51643bbdde21b65ee06f76bb9c82a8ae606d4efff09d8e7fa7a"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "61b41d34061d2af91885dd4c412eb37b260c519bad3fac80f7e6ae06775de457"
+    },
+    {
+      "diagram_type": "nested",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "33c27fbf1d5e7453eb24e5b08b20b6889f71114e39d169eb1cc5886a476e02a2"
+    },
+    {
+      "diagram_type": "nested",
+      "format": "html",
+      "motion": "none",
+      "sha256": "2868e38bb4dda97c15873968ec1ec4de9650981d3d7266ac7c17b0d0f84d4b05"
+    },
+    {
+      "diagram_type": "nested",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "9267b2f9818a5b1fdba579b40cb3be043f24f8d1aaf2a51d0726f9510e4a133b"
+    },
+    {
+      "diagram_type": "nested",
+      "format": "html",
+      "motion": "step",
+      "sha256": "426c157ca842e78beef7668d1df4d81427e1cabb25294f222da77eafe61b50a1"
+    },
+    {
+      "diagram_type": "nested",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "6714f804765e25fbd54bea353647db2079523d3e8e546b986aaac157f590af7a"
+    },
+    {
+      "diagram_type": "tree",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "010fd227001d2096f3a5ec726306be310fdc4d4611c5cef6a3c328c804a63452"
+    },
+    {
+      "diagram_type": "tree",
+      "format": "html",
+      "motion": "none",
+      "sha256": "137b10772af93461ebac9621acb66053220a8f17e20a3f740060b8feec548f86"
+    },
+    {
+      "diagram_type": "tree",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "007ba8c2155612c852294e3d0cd3fd76ed205c4654aa26a83e1b456eec13995e"
+    },
+    {
+      "diagram_type": "tree",
+      "format": "html",
+      "motion": "step",
+      "sha256": "9f62ff5152029ca887171581c19b6b594ac90d50e9c687f55024dcf3f8fe2aef"
+    },
+    {
+      "diagram_type": "tree",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "e54cd996cf28834dcd4c1a6019445ee9b9886484b19445c32dc808f93c3b7bd4"
+    },
+    {
+      "diagram_type": "org-chart",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "2afb08a27db2084fcfa22893d069ab76aa2a04046f4164a252ff3fa0fe0c9901"
+    },
+    {
+      "diagram_type": "org-chart",
+      "format": "html",
+      "motion": "none",
+      "sha256": "60b9681e20cfac11cc9ade09ca4d656febfd6eb19865ab9db00f41c9f4a600a3"
+    },
+    {
+      "diagram_type": "org-chart",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "0327dbaea18720a36bf1a71ad36933c9b950b34b283e390fe388dfb914df408d"
+    },
+    {
+      "diagram_type": "org-chart",
+      "format": "html",
+      "motion": "step",
+      "sha256": "6090dc711218f4392be92615a7c7f8986ebe7b7a785c7bb43c3fa09199de968b"
+    },
+    {
+      "diagram_type": "org-chart",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "751ca1e7bdca54fe931349e3abf0962195f64a581fc32a86e094f3cb23329638"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "a65de9499e40b85f67c067c047e4671412918f24f75fe72b6a776685bf9858f0"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "format": "html",
+      "motion": "none",
+      "sha256": "109ae8fdb321979effa18b8ecc97cb5d635f57cdf9abd8a83cae8c35f7e8080a"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "75f37a170d18440dc11a2dd3d77dd313f51ede3f2040d6f86f015a35519e6714"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "format": "html",
+      "motion": "step",
+      "sha256": "acef3574fb463aeea967282e7821332945907ecc99c97eeecbf6b4bd94e50aa4"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "9f64a2840d0e12ec581e2927d006e2021ee785c1239a03935bac830e9f59de22"
+    },
+    {
+      "diagram_type": "venn",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "c092ae3a7f79d7a968f6fd7b58397db29a3150c0d1527877cf88d9b5947cf960"
+    },
+    {
+      "diagram_type": "venn",
+      "format": "html",
+      "motion": "none",
+      "sha256": "48c4c4beea22b6e4259c45e09948d9bacdd8aef9922fceb2ac9c456040a5e9b7"
+    },
+    {
+      "diagram_type": "venn",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "e859926c9a67f824f71583bf289069f2f583a2370acbf8a47c2c7e72bbbb945d"
+    },
+    {
+      "diagram_type": "venn",
+      "format": "html",
+      "motion": "step",
+      "sha256": "88fd424210ce2cca70ba8358e64745d4ae74e78dbaab8884edc4afcc043288ca"
+    },
+    {
+      "diagram_type": "venn",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "27aec4bc8a393f1bddb7ba360f9c1a85129b1cd7f94e9c9fae02c4236b72adb3"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "b0c0be8d0095abb66b00e9f97471baebffc26ad3672e88cb89d7265e6eb169a9"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "format": "html",
+      "motion": "none",
+      "sha256": "492f02546b000ec87f7fbaa3fc68abfcd2f52c6abab6f3b3b3720f9eec56ad97"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "db2683ba653ca09d9ca9fd26cc228d50201e684aa90e68ebb543e1c6f53c7526"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "format": "html",
+      "motion": "step",
+      "sha256": "4de94036131177c29ac870fae00eb7e9e6bba71155376f4c7353837c82218476"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "28be54e4193689f3f8af2ef1ae21308a4ad8fec4dc0dbac228f3fed801cdf14d"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "b68cefc66bfb5fad1d1796b12774cba89946d1affe385a1d1b28a68f87a50f81"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "format": "html",
+      "motion": "none",
+      "sha256": "a73198809e62b1c85ab8ac0536a4a1324a9a82685de313091276d6c6d9b0bb8f"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "db09f657ccc19e7123b2166c03a12492f99d869d4b31712e23ce3e252f3b21a9"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "format": "html",
+      "motion": "step",
+      "sha256": "74c038134baf6096b45bd8b361189f34a330bbdb624c274d779a7c0f197f3106"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "0fb6d659a464bb6bcb16c169584e83b721448d131dd31fe10c8b40de08243f08"
+    },
+    {
+      "diagram_type": "line-chart",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "4d4dd1d5ede581f6e82d3dedb572ccdf18bd0ee07c8b2b3f3683816574965584"
+    },
+    {
+      "diagram_type": "line-chart",
+      "format": "html",
+      "motion": "none",
+      "sha256": "08009e645f8ffb8de72f0eff48bd8a9a3fecf57a8d9bfb0b724da30b41fe15ee"
+    },
+    {
+      "diagram_type": "line-chart",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "c5ca674cf37fa7c7a7da2ad1da48cf89b838cda8c2af0f27db964155b2417170"
+    },
+    {
+      "diagram_type": "line-chart",
+      "format": "html",
+      "motion": "step",
+      "sha256": "96ebf96821e88e99836093d65dbe64be5fe91abca9d18d043f3b599cad0ae25a"
+    },
+    {
+      "diagram_type": "line-chart",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "02e6059f98c12d23c748fefd268c27b44169019ef1f0ac796a0b3c650bfbd973"
+    },
+    {
+      "diagram_type": "gantt",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "5eb81d17beb451f50fd7759b2854858b693462ae4e7aa9658bf81eac2ec2838f"
+    },
+    {
+      "diagram_type": "gantt",
+      "format": "html",
+      "motion": "none",
+      "sha256": "36c0c59b99002ca9a023d92afd3e8df766ddacfd15d5ce2e5e4f1413774be691"
+    },
+    {
+      "diagram_type": "gantt",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "13cfabe1516a820ec14867a4bfd3f0bac9f314ab62b9bd738e5a950630aaa496"
+    },
+    {
+      "diagram_type": "gantt",
+      "format": "html",
+      "motion": "step",
+      "sha256": "f9d396c68777cd92b293215c01d4839988975b312b28c7bbafb9d7e555517701"
+    },
+    {
+      "diagram_type": "gantt",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "570060832f51ae685d183ae61f1e269c82ef6b71a36c69455c5d0049f524aa83"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "ee13695ec0dc554161ba25d5074986d8df571a94f1d33a6ab15cf81d302fea98"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "format": "html",
+      "motion": "none",
+      "sha256": "333c052b2db59bec3a42f80956e2cf434b353ca297025e3f498421abc3cfff09"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "7996a03ce93254560d550244f85700771802bf7b9b0ef009d300b69f024f3034"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "format": "html",
+      "motion": "step",
+      "sha256": "9617bcc4178dd9082b431791b05fa7c928752fa9f814126c84ed096ecfa332a5"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "a834c11e7ec3b59c86bde05c9d563ae95247d554f041145e1805934ee726d906"
+    },
+    {
+      "diagram_type": "high-level",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "93536c073a55e692700286de8dd6c3576b135c8490f3c4f5fdfbe793ae49deee"
+    },
+    {
+      "diagram_type": "high-level",
+      "format": "html",
+      "motion": "none",
+      "sha256": "37cfc14891d80bd0fcc7f07419a99ed69a82a57a37c7caf92a186c70ad023bb7"
+    },
+    {
+      "diagram_type": "high-level",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "d5203f170389dff6ba53609f6d9f40c080a92a8152c7995073671a8d0fb53251"
+    },
+    {
+      "diagram_type": "high-level",
+      "format": "html",
+      "motion": "step",
+      "sha256": "88f01bc8c4e53a8cd669909432698ee1ecb145377fecd4c1491925c9fac9c559"
+    },
+    {
+      "diagram_type": "high-level",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "e900baf448457c731b79637937b515ec7dea9a1681c02dc8217bb347517ccf6d"
+    },
+    {
+      "diagram_type": "process",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "ed41e0f4495f5a0dea023fc57bed1cf963d277a3de18393d1a3d9d5a1fe4d31c"
+    },
+    {
+      "diagram_type": "process",
+      "format": "html",
+      "motion": "none",
+      "sha256": "506d5229de57a1ab0657af69ae59a19e33af6b9805bfb0a4ea428ae02fa01b88"
+    },
+    {
+      "diagram_type": "process",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "3a37030426cffef312390f901d8756f8ef49c2c23102eda2048fbab6921337b8"
+    },
+    {
+      "diagram_type": "process",
+      "format": "html",
+      "motion": "step",
+      "sha256": "91f5a190e6fd653a6f1189e97b806aa3a371311404a86611ad8287e4c24a1ee4"
+    },
+    {
+      "diagram_type": "process",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "f1c0326ad658eacfcf74c93f62f0f6c6e2fa1688bcd71183c032e577a42db13c"
+    },
+    {
+      "diagram_type": "medallion",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "6545910b1623234119f3b82e606471774dd38da9c018cc27f22de7dc6a916912"
+    },
+    {
+      "diagram_type": "medallion",
+      "format": "html",
+      "motion": "none",
+      "sha256": "b1f6aa60af024f7bff0dfad1962edb9e50bbc9874e8e7ec92fb3ea623073ae22"
+    },
+    {
+      "diagram_type": "medallion",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "89dcfd050365b39376c5ede31da39138697c54370c26bb5f94af230dfd7b2e5f"
+    },
+    {
+      "diagram_type": "medallion",
+      "format": "html",
+      "motion": "step",
+      "sha256": "bf2d9e478e5ae72311c0e5a79593b38c6a49f86edc121adcdb710a773fcee71e"
+    },
+    {
+      "diagram_type": "medallion",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "cfa2da301fa21a842532c2edb2bbb40c26b20009bad53564aec4593e585d6a90"
+    },
+    {
+      "diagram_type": "data-flow",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "10a430c980584a372b1a8ae56d1fa1dc505cd6bc1b4e138d0ce2d0dc2bf87418"
+    },
+    {
+      "diagram_type": "data-flow",
+      "format": "html",
+      "motion": "none",
+      "sha256": "454da6e2097ef999750dc7a8f0b5dc401731b97130cf2faf7630895d6fb65bd9"
+    },
+    {
+      "diagram_type": "data-flow",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "b97f984c38121ade08d4ea6d85edca692bd26213f3af37d5d8619c2a870f7bd7"
+    },
+    {
+      "diagram_type": "data-flow",
+      "format": "html",
+      "motion": "step",
+      "sha256": "791c1770b5d3e972649e80e1469b6ad82efb6cda9300e23c51126a3d333218f5"
+    },
+    {
+      "diagram_type": "data-flow",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "0f21e5123630370ad8a7f4034b02a17c86554a985116c1f529d012ec9b0c8092"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "0f523f06afe0884c0bd46949ace4d0503bb0a09f1256a61153eeebb112a12d6a"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "format": "html",
+      "motion": "none",
+      "sha256": "ecdcd934ce08ce2d7cf3943c19c754d4846fe6d096c6e5a489068290f0fbe7ba"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "62028492044fe65217caae62a50de3730f7675473f16d650acb89e15d0de9948"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "format": "html",
+      "motion": "step",
+      "sha256": "cf0ddf529003ee6df56cb14c444c4e27085ce00f3777f36de4304313bf33dc70"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "a534c4beb370823bb75341c5e3f97f7890248997baa84bcaed67a21b9e7bd60c"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "format": "svg",
+      "motion": "none",
+      "sha256": "73f91d26aefe3649147f018d45949fd473c91d0631fb36dc24d7eb2b22167260"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "format": "html",
+      "motion": "none",
+      "sha256": "39f719d5916687ddb8a636ad4712ac02ea57e21c861b09426fa8cef59b3e4ff0"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "format": "html",
+      "motion": "reveal",
+      "sha256": "0ae093d8a31877632fecf63d6037f8814699d4ae7953400449c4dd74298e7afa"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "format": "html",
+      "motion": "step",
+      "sha256": "d0d0e99d073829c3d2691895e5ffeaa51b7b75b0d42b300ba209080213125939"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "format": "html",
+      "motion": "loop",
+      "sha256": "9ff7f6e29ef8550ba1c5987d9d77ad749714b3fc9be744353e2c3629ab9b7653"
+    }
+  ],
+  "matrix_count": 135,
+  "motion_capability_count": 12,
+  "output_version": "p08-output-1",
+  "p08_capability_count": 25,
+  "p09_p11_boundary": "not-started",
+  "phase": "P-08",
+  "png_environment": {
+    "detected": null,
+    "fallback_delivered": [
+      "svg"
+    ],
+    "real_png_generated": false,
+    "warnings": [
+      "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+    ]
+  },
+  "public_motion_modes": [
+    "none",
+    "reveal",
+    "step",
+    "loop"
+  ],
+  "representative_ledgers": {
+    "representative-loop.html": {
+      "artifacts": {
+        "html": {
+          "bytes": 10076,
+          "media_type": "text/html; charset=utf-8",
+          "name": "diagram.html",
+          "sha256": "61b41d34061d2af91885dd4c412eb37b260c519bad3fac80f7e6ae06775de457"
+        }
+      },
+      "base_static_svg_hash": "8c6881c9052133f39459b3f0bf3d7e6d5e1b1d9712334ed7df9de1d506ad0a6e",
+      "delivered_artifacts": [
+        "html"
+      ],
+      "diagram_type": "loop-flywheel",
+      "dials": {
+        "audience": "mixed",
+        "detail": "faithful",
+        "format": "html",
+        "motion": "loop",
+        "size": "fit",
+        "visual_mode": "neutral-light"
+      },
+      "font_policy": {
+        "network_fetch": false,
+        "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif",
+        "substitution": null
+      },
+      "ir_hash": "ad2bc226b323874f1cc1cf99fdfa6c788ebef89284b3cad03eb32ea4747f903b",
+      "language": "vi",
+      "motion_capabilities": [
+        "CAP-M01",
+        "CAP-M04",
+        "CAP-M10"
+      ],
+      "output_capabilities": [
+        "CAP-O01",
+        "CAP-O02",
+        "CAP-O03",
+        "CAP-O04",
+        "CAP-O05",
+        "CAP-O06",
+        "CAP-O07"
+      ],
+      "output_version": "p08-output-1",
+      "rasterizer": null,
+      "renderer_version": "p07-static-coverage-1",
+      "requested_format": "html",
+      "schema_version": "1.0",
+      "standalone_svg_hash": "37aaa342fd6d2b1a54752a52812ae63b659a0abb29e78d79c16c4a78e7473754",
+      "static_fallback_complete": true,
+      "validation": {
+        "html": "pass",
+        "png": "unavailable-or-not-requested",
+        "semantic": "pass",
+        "svg": "pass"
+      },
+      "warnings": []
+    },
+    "representative-reveal.html": {
+      "artifacts": {
+        "html": {
+          "bytes": 9245,
+          "media_type": "text/html; charset=utf-8",
+          "name": "diagram.html",
+          "sha256": "bab70df43c6a5456f907b128be4b0162e7ca72506deb3c005a56f2ff518c3242"
+        }
+      },
+      "base_static_svg_hash": "fa3f64c9cac73964cb88989c0d4050e079355e39e5440b47cd83f6e6d75ca5c3",
+      "delivered_artifacts": [
+        "html"
+      ],
+      "diagram_type": "architecture",
+      "dials": {
+        "audience": "mixed",
+        "detail": "faithful",
+        "format": "html",
+        "motion": "reveal",
+        "size": "fit",
+        "visual_mode": "neutral-light"
+      },
+      "font_policy": {
+        "network_fetch": false,
+        "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif",
+        "substitution": null
+      },
+      "ir_hash": "f1f70e40c959613a51a0659af13226129d2d7ad5f959c62412d1565a22eea273",
+      "language": "vi",
+      "motion_capabilities": [
+        "CAP-M01",
+        "CAP-M02",
+        "CAP-M05",
+        "CAP-M06",
+        "CAP-M11"
+      ],
+      "output_capabilities": [
+        "CAP-O01",
+        "CAP-O02",
+        "CAP-O03",
+        "CAP-O04",
+        "CAP-O05",
+        "CAP-O06",
+        "CAP-O07"
+      ],
+      "output_version": "p08-output-1",
+      "rasterizer": null,
+      "renderer_version": "p07-static-coverage-1",
+      "requested_format": "html",
+      "schema_version": "1.0",
+      "standalone_svg_hash": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724",
+      "static_fallback_complete": true,
+      "validation": {
+        "html": "pass",
+        "png": "unavailable-or-not-requested",
+        "semantic": "pass",
+        "svg": "pass"
+      },
+      "warnings": []
+    },
+    "representative-static.html": {
+      "artifacts": {
+        "html": {
+          "bytes": 7013,
+          "media_type": "text/html; charset=utf-8",
+          "name": "diagram.html",
+          "sha256": "3ea62519c7d375eb84c2c1889a7441fba5fea284d44ad0f281226a1debfd85c8"
+        }
+      },
+      "base_static_svg_hash": "fa3f64c9cac73964cb88989c0d4050e079355e39e5440b47cd83f6e6d75ca5c3",
+      "delivered_artifacts": [
+        "html"
+      ],
+      "diagram_type": "architecture",
+      "dials": {
+        "audience": "mixed",
+        "detail": "faithful",
+        "format": "html",
+        "motion": "none",
+        "size": "fit",
+        "visual_mode": "neutral-light"
+      },
+      "font_policy": {
+        "network_fetch": false,
+        "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif",
+        "substitution": null
+      },
+      "ir_hash": "f1f70e40c959613a51a0659af13226129d2d7ad5f959c62412d1565a22eea273",
+      "language": "vi",
+      "motion_capabilities": [
+        "CAP-M01"
+      ],
+      "output_capabilities": [
+        "CAP-O01",
+        "CAP-O02",
+        "CAP-O03",
+        "CAP-O04",
+        "CAP-O05",
+        "CAP-O06",
+        "CAP-O07"
+      ],
+      "output_version": "p08-output-1",
+      "rasterizer": null,
+      "renderer_version": "p07-static-coverage-1",
+      "requested_format": "html",
+      "schema_version": "1.0",
+      "standalone_svg_hash": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724",
+      "static_fallback_complete": true,
+      "validation": {
+        "html": "pass",
+        "png": "unavailable-or-not-requested",
+        "semantic": "pass",
+        "svg": "pass"
+      },
+      "warnings": []
+    },
+    "representative-step.html": {
+      "artifacts": {
+        "html": {
+          "bytes": 10134,
+          "media_type": "text/html; charset=utf-8",
+          "name": "diagram.html",
+          "sha256": "ed6f2f482ecce4640d69c72f388eb822fc32e16a81c7cb9d8fb5ec65a194fbf4"
+        }
+      },
+      "base_static_svg_hash": "25d7a86a2ec93be21e0e9c9d2760dffd79e79d6506071c741298fba4bd2006f0",
+      "delivered_artifacts": [
+        "html"
+      ],
+      "diagram_type": "flowchart",
+      "dials": {
+        "audience": "mixed",
+        "detail": "faithful",
+        "format": "html",
+        "motion": "step",
+        "size": "fit",
+        "visual_mode": "neutral-light"
+      },
+      "font_policy": {
+        "network_fetch": false,
+        "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif",
+        "substitution": null
+      },
+      "ir_hash": "0521c41cbac70dab42a8c2571924c81dff6f3f493b7d918c92bf12db98a1cb00",
+      "language": "vi",
+      "motion_capabilities": [
+        "CAP-M01",
+        "CAP-M03",
+        "CAP-M09"
+      ],
+      "output_capabilities": [
+        "CAP-O01",
+        "CAP-O02",
+        "CAP-O03",
+        "CAP-O04",
+        "CAP-O05",
+        "CAP-O06",
+        "CAP-O07"
+      ],
+      "output_version": "p08-output-1",
+      "rasterizer": null,
+      "renderer_version": "p07-static-coverage-1",
+      "requested_format": "html",
+      "schema_version": "1.0",
+      "standalone_svg_hash": "f8d08b76f709b8b1a9b50bed41c4b5aa32a013d81757897155402e4ca233608d",
+      "static_fallback_complete": true,
+      "validation": {
+        "html": "pass",
+        "png": "unavailable-or-not-requested",
+        "semantic": "pass",
+        "svg": "pass"
+      },
+      "warnings": []
+    },
+    "representative.svg": {
+      "artifacts": {
+        "svg": {
+          "bytes": 3483,
+          "media_type": "image/svg+xml",
+          "name": "diagram.svg",
+          "sha256": "b68cefc66bfb5fad1d1796b12774cba89946d1affe385a1d1b28a68f87a50f81"
+        }
+      },
+      "base_static_svg_hash": "bc17f0c7c6f91035526bd27dd4a1650f42fa9557f0c24ef999a0a6a9dd87d0fd",
+      "delivered_artifacts": [
+        "svg"
+      ],
+      "diagram_type": "bar-chart",
+      "dials": {
+        "audience": "mixed",
+        "detail": "faithful",
+        "format": "svg",
+        "motion": "none",
+        "size": "fit",
+        "visual_mode": "neutral-light"
+      },
+      "font_policy": {
+        "network_fetch": false,
+        "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif",
+        "substitution": null
+      },
+      "ir_hash": "fcdd82f5cc9ced36a397ef5880f4613ea5db306e58805c296288c46013e4a4cb",
+      "language": "vi",
+      "motion_capabilities": [
+        "CAP-M01"
+      ],
+      "output_capabilities": [
+        "CAP-O01",
+        "CAP-O02",
+        "CAP-O03",
+        "CAP-O04",
+        "CAP-O05",
+        "CAP-O06",
+        "CAP-O07"
+      ],
+      "output_version": "p08-output-1",
+      "rasterizer": null,
+      "renderer_version": "p07-static-coverage-1",
+      "requested_format": "svg",
+      "schema_version": "1.0",
+      "standalone_svg_hash": "b68cefc66bfb5fad1d1796b12774cba89946d1affe385a1d1b28a68f87a50f81",
+      "static_fallback_complete": true,
+      "validation": {
+        "html": "not-requested",
+        "png": "unavailable-or-not-requested",
+        "semantic": "pass",
+        "svg": "pass"
+      },
+      "warnings": []
+    }
+  },
+  "schema_version": "1.0",
+  "size_runs": [
+    {
+      "sha256": "5d1ef740ee8f79a8eddbd2fdbc7ac11022d14641549df7c37e3afbe83faf8a40",
+      "size": "doc-inline"
+    },
+    {
+      "sha256": "0f1fca83ea8744cdd5d46c16b24afcece5871f658ab49d1d910e00ff4b8f0aa6",
+      "size": "doc-wide"
+    },
+    {
+      "sha256": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724",
+      "size": "slide-16x9"
+    },
+    {
+      "sha256": "c9c66db2c5c358d6f758e5f7a60ead5bf807d6ceb125c32864d82d6c3b0294e9",
+      "size": "slide-4x3"
+    },
+    {
+      "sha256": "f8a447d444e004ab0cbafde03db5ed0de40468633285365af8a3ec5b7337bd9d",
+      "size": "social-og"
+    },
+    {
+      "sha256": "bc719c553ee51bbd194adc0ed54884ff437c759f4f173a6d2782efa9fe13069b",
+      "size": "social-square"
+    },
+    {
+      "sha256": "50f1e525839b98322948be44cc6e53cac66a9ed3bc3c1ed220b2a08b4cf3c713",
+      "size": "print-a4-landscape"
+    },
+    {
+      "sha256": "415bcdc045ceb486a3cc9ee076552bafc9db5f8645fe640949b67fb4ed688a41",
+      "size": "print-letter-landscape"
+    },
+    {
+      "sha256": "dff9782c96a34f44b905e592d5265f3d73c715b84aacf8e36605e3da5d9f2724",
+      "size": "fit"
+    }
+  ],
+  "type_count": 27
+}

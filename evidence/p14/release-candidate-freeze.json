@@ -1,0 +1,139 @@
+{
+  "record_id": "TCD-RELEASE-1.0.0-RC1",
+  "version": "1.0.0",
+  "status": "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION",
+  "frozen_at": "2026-08-16",
+  "package_candidate_id": "TCD-PACKAGES-1.0.0-RC1",
+  "artifacts": [
+    {
+      "target": "claude-plugin",
+      "path": "dist/thien-skill-creative-diagram-1.0.0-claude-plugin.zip",
+      "bytes": 178105,
+      "sha256": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9"
+    },
+    {
+      "target": "openai-plugin",
+      "path": "dist/thien-skill-creative-diagram-1.0.0-openai-plugin.zip",
+      "bytes": 269167,
+      "sha256": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c"
+    },
+    {
+      "target": "universal-raw-skill",
+      "path": "dist/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip",
+      "bytes": 264452,
+      "sha256": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f"
+    }
+  ],
+  "checksum_manifest": {
+    "path": "dist/SHA256SUMS.txt",
+    "sha256": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596"
+  },
+  "legal_candidate": {
+    "candidate_id": "TCD-LEGAL-1.0.0-RC2",
+    "aggregate_sha256": "8f16380761cd6026166daa12ee36227d96e0e3b92ce605f4d9057624de8292c6",
+    "approval_record": "evidence/p10/LAWYER-APPROVAL-RECORD.json",
+    "approval_record_sha256": "688a588587f4458baa8386f7e6af3507fce4a1dd3f6dc2d7ede57ef701714cd1"
+  },
+  "approval_bindings": [
+    {
+      "gate": "G-01",
+      "result": "PASS",
+      "path": "evidence/p01/G-01-EVIDENCE.md",
+      "sha256": "d93cb5c0832ab83252d0823d699132c5f5349670d110b2ff984af8841cd6f726"
+    },
+    {
+      "gate": "G-02",
+      "result": "PASS",
+      "path": "evidence/p02/G-02-EVIDENCE.md",
+      "sha256": "899b5058b7a9205f3badadb9c75384748d446c5bc451d2c6e23d069d8a764fd8"
+    },
+    {
+      "gate": "G-03",
+      "result": "PASS",
+      "path": "evidence/p06/P-06-EVIDENCE.md",
+      "sha256": "3994aa8f45d5061d7b6ce6c43d913a6ac28361ca6a8c08708af88be405a6f4eb"
+    },
+    {
+      "gate": "G-04",
+      "result": "PASS",
+      "path": "evidence/p12/G-04-EVIDENCE.md",
+      "sha256": "a45ce627f2f539ee956986bd20a9bf81359bb9d1783e1c687c6485591e512356"
+    },
+    {
+      "gate": "G-05",
+      "result": "PASS",
+      "path": "evidence/p13/G-05-EVIDENCE.md",
+      "sha256": "d5328c9665427b8f75e52dbe870076b6f1100b3171ac6670ebe17f979fd1fb1e"
+    },
+    {
+      "gate": "G-06",
+      "result": "PASS",
+      "path": "evidence/p10/G-06-EVIDENCE.md",
+      "sha256": "73c9732e82ceb9cb99cc86c2140c1916b11969ad5d45fb785ae539987ca166bb"
+    }
+  ],
+  "approved_golden_manifest": {
+    "path": "evidence/p12/approved-p12-golden-manifest.json",
+    "sha256": "b78d9d82051a08f07a6af6518b43af20f4e2d49af2ae1dcb0cce10a0f139c1d6"
+  },
+  "approved_brand_selection": {
+    "path": "evidence/p09/APPROVED-BRAND-SELECTION.json",
+    "sha256": "b38a922d42cb21d20e9d5bc316d0d17fe368ed6080528868a3537ab691aa2437"
+  },
+  "surface_status": {
+    "supported": 0,
+    "conditional": 13,
+    "unsupported": 2,
+    "record": "evidence/p13/surface-smoke-report.json",
+    "record_sha256": "9d71a14f6a26b6945d7e671fc7250a6ce6194e556f2911cf1294d0f929afffac"
+  },
+  "owner_approval": {
+    "decision_id": "D-035",
+    "approved_at": "2026-08-16",
+    "exact_release_candidate_approved": true,
+    "all_three_zip_hashes_approved": true,
+    "accepted_medium_risks": [
+      "P14-R01",
+      "P14-R02"
+    ]
+  },
+  "repository_publication_scope": {
+    "selection": "A_FULL_PRIVATE_AUDIT_REPOSITORY",
+    "publication_form": "DETERMINISTIC_SANITIZED_MIRROR",
+    "decision": "D-036",
+    "exclude": [
+      ".DS_Store",
+      "__pycache__",
+      "*.pyc",
+      "cache",
+      "transient files"
+    ],
+    "publication_ready": true,
+    "mirror_manifest": "evidence/p14/publication-mirror-manifest.json",
+    "blocking_reason": null
+  },
+  "repository_readme": {
+    "path": "README.md",
+    "sha256": "6294ea8eb5594363ee200e7cb8c83147996baec5cd201c35f11465430c2cd055",
+    "detailed_installation": true,
+    "license_information": true,
+    "official_platform_sources_only": true
+  },
+  "release_authorization": {
+    "decision_id": "D-037",
+    "approved_at": "2026-08-16",
+    "g07_result": "PASS",
+    "authorized_actions": [
+      "git_init_publication_mirror",
+      "git_commit_main",
+      "git_tag_v1.0.0",
+      "git_push_main",
+      "git_push_tag_v1.0.0",
+      "github_release_v1.0.0_with_three_zips_and_SHA256SUMS"
+    ],
+    "target": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "required_visibility": "PRIVATE"
+  },
+  "freeze_rule": "Any byte change to a ZIP, checksum manifest, approved legal candidate or approved packaged brand asset creates a new candidate and requires the affected gate to be re-evaluated.",
+  "release_authorized": true
+}

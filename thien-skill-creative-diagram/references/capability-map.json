@@ -1,0 +1,1144 @@
+{
+  "CAP-F01": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "named carrier failure",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for malformed or missing input",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F01-MAP"
+  },
+  "CAP-F02": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "explicit grammar boundary",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for unsupported Mermaid kind",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F02-MAP"
+  },
+  "CAP-F03": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded rejection",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-07",
+    "selector": "request or environment condition for resource cap",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F03-MAP"
+  },
+  "CAP-F04": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "focused clarification",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for ambiguous blank label",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F04-MAP"
+  },
+  "CAP-F05": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "explicit fidelity disposition",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-07",
+    "selector": "request or environment condition for source rot",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F05-MAP"
+  },
+  "CAP-F06": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "neutralize with zero side effect",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for executable directive",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F06-MAP"
+  },
+  "CAP-F07": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "core-format fallback",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-08",
+    "selector": "request or environment condition for missing rasterizer",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F07-MAP"
+  },
+  "CAP-F08": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "refuse guessed write",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for ambiguous export target",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F08-MAP"
+  },
+  "CAP-F09": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "diagram-only disclosure",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for editorial export boundary",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F09-MAP"
+  },
+  "CAP-F10": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "local fallback and warning",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for font unavailable",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F10-MAP"
+  },
+  "CAP-F11": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "complete static fallback",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for motion failure",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F11-MAP"
+  },
+  "CAP-F12": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "complete static state",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for reduced motion or print",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-F-CAP-F12-MAP"
+  },
+  "CAP-F13": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "larger/split/narrow clarification",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04",
+    "selector": "request or environment condition for complexity budget",
+    "status": "implemented-contract",
+    "test_id": "T-F-CAP-F13-MAP"
+  },
+  "CAP-F14": {
+    "class": "failure",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "ask or bounded assumption",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-05",
+    "selector": "request or environment condition for material ambiguity",
+    "status": "implemented-contract",
+    "test_id": "T-F-CAP-F14-MAP"
+  },
+  "CAP-I01": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded inert parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for draw.io XML carrier",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I01-MAP"
+  },
+  "CAP-I02": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded embedded-model decoder",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for draw.io PNG embedded model",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I02-MAP"
+  },
+  "CAP-I03": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "safe XML embedded-model decoder",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for draw.io SVG embedded model",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I03-MAP"
+  },
+  "CAP-I04": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "page-preserving parser adapter",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for draw.io page selection",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I04-MAP"
+  },
+  "CAP-I05": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded inert text parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Mermaid file carrier",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I05-MAP"
+  },
+  "CAP-I06": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded fence scanner",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Markdown Mermaid fences",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I06-MAP"
+  },
+  "CAP-I07": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "independent subset parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Mermaid flowchart grammar",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I07-MAP"
+  },
+  "CAP-I08": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "independent subset parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Mermaid sequence grammar",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I08-MAP"
+  },
+  "CAP-I09": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "independent subset parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Mermaid state grammar",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I09-MAP"
+  },
+  "CAP-I10": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "independent subset parser",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for Mermaid ER grammar",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I10-MAP"
+  },
+  "CAP-I11": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "style-discarding semantic normalization",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-07",
+    "selector": "request or environment condition for safe redraw",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-I-CAP-I11-MAP"
+  },
+  "CAP-I12": {
+    "class": "import-fidelity",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "exact common-IR reconciliation",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04",
+    "selector": "request or environment condition for fidelity ledger",
+    "status": "implemented-contract",
+    "test_id": "T-I-CAP-I12-MAP"
+  },
+  "CAP-M01": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "complete script-free static mode",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for none",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M01-MAP"
+  },
+  "CAP-M02": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "deterministic one-run reveal",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for reveal",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M02-MAP"
+  },
+  "CAP-M03": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "controlled deterministic steps",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for step",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M03-MAP"
+  },
+  "CAP-M04": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "decorative-only repetition",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for loop",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M04-MAP"
+  },
+  "CAP-M05": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "bounded decorative relationship trace",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for path draw",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M05-MAP"
+  },
+  "CAP-M06": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "ordered reveal with static fallback",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for item reveal",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M06-MAP"
+  },
+  "CAP-M07": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "count-preserving animation",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for queue accumulation",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M07-MAP"
+  },
+  "CAP-M08": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "static-complete text population",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for field population",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M08-MAP"
+  },
+  "CAP-M09": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "ordered policy status motion",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for policy evaluation",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M09-MAP"
+  },
+  "CAP-M10": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "decorative hidden token",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for flow token",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M10-MAP"
+  },
+  "CAP-M11": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "static-complete hierarchy reveal",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for containment reveal",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M11-MAP"
+  },
+  "CAP-M12": {
+    "class": "motion",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "chronological static-complete append",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for audit append",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-M-CAP-M12-MAP"
+  },
+  "CAP-O01": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "request validation and exporter routing",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-08",
+    "selector": "request or environment condition for format dial",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O01-MAP"
+  },
+  "CAP-O02": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "complexity plan then layout",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-06",
+    "selector": "request or environment condition for size dial",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O02-MAP"
+  },
+  "CAP-O03": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "fidelity-preserving semantic policy",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-05",
+    "selector": "request or environment condition for detail dial",
+    "status": "implemented-contract",
+    "test_id": "T-O-CAP-O03-MAP"
+  },
+  "CAP-O04": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "wording depth without fact change",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-04/P-06",
+    "selector": "request or environment condition for audience dial",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O04-MAP"
+  },
+  "CAP-O05": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "portable exporter",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for diagram-only SVG",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O05-MAP"
+  },
+  "CAP-O06": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "detected rasterizer with fallback",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for conditional PNG",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O06-MAP"
+  },
+  "CAP-O07": {
+    "class": "output",
+    "fallback": "named non-destructive outcome with no guessed artifact",
+    "implementation": "output accessibility validator",
+    "parents": [
+      "cross-type"
+    ],
+    "phase_owner": "P-08",
+    "selector": "request or environment condition for accessible SVG",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-O-CAP-O07-MAP"
+  },
+  "CAP-P01": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_fan_in_queue",
+    "parents": [
+      "data-flow"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P01 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P01-SEM"
+  },
+  "CAP-P02": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_repeated_stages",
+    "parents": [
+      "process"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P02 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P02-SEM"
+  },
+  "CAP-P03": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_unstructured_artifact",
+    "parents": [
+      "data-flow"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P03 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P03-SEM"
+  },
+  "CAP-P04": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_policy_traces",
+    "parents": [
+      "flowchart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P04 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P04-SEM"
+  },
+  "CAP-P05": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_secure_route",
+    "parents": [
+      "architecture"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P05 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P05-SEM"
+  },
+  "CAP-P06": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_control_catalog",
+    "parents": [
+      "layer-stack"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P06 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P06-SEM"
+  },
+  "CAP-P07": {
+    "class": "semantic-pattern",
+    "fallback": "invalid or needs-clarification; never create a new type",
+    "implementation": "transform_compensating_layers",
+    "parents": [
+      "layer-stack"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit pattern CAP-P07 with complete required fields",
+    "status": "implemented-transformation",
+    "test_id": "T-PAT-CAP-P07-SEM"
+  },
+  "CAP-T01": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[architecture] plus validate_typed_ir",
+    "parents": [
+      "architecture"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-01-SEM"
+  },
+  "CAP-T02": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[it-current-state] plus validate_typed_ir",
+    "parents": [
+      "it-current-state"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-02-SEM"
+  },
+  "CAP-T03": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[flowchart] plus validate_typed_ir",
+    "parents": [
+      "flowchart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-03-SEM"
+  },
+  "CAP-T04": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[sequence] plus validate_typed_ir",
+    "parents": [
+      "sequence"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-04-SEM"
+  },
+  "CAP-T05": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[state-machine] plus validate_typed_ir",
+    "parents": [
+      "state-machine"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-05-SEM"
+  },
+  "CAP-T06": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[er-data-model] plus validate_typed_ir",
+    "parents": [
+      "er-data-model"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-06-SEM"
+  },
+  "CAP-T07": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[timeline] plus validate_typed_ir",
+    "parents": [
+      "timeline"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-07-SEM"
+  },
+  "CAP-T08": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[swimlane] plus validate_typed_ir",
+    "parents": [
+      "swimlane"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-08-SEM"
+  },
+  "CAP-T09": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[quadrant] plus validate_typed_ir",
+    "parents": [
+      "quadrant"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-09-SEM"
+  },
+  "CAP-T10": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[radar] plus validate_typed_ir",
+    "parents": [
+      "radar"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-10-SEM"
+  },
+  "CAP-T11": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[loop-flywheel] plus validate_typed_ir",
+    "parents": [
+      "loop-flywheel"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-11-SEM"
+  },
+  "CAP-T12": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[nested] plus validate_typed_ir",
+    "parents": [
+      "nested"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-12-SEM"
+  },
+  "CAP-T13": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[tree] plus validate_typed_ir",
+    "parents": [
+      "tree"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-13-SEM"
+  },
+  "CAP-T14": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[org-chart] plus validate_typed_ir",
+    "parents": [
+      "org-chart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-14-SEM"
+  },
+  "CAP-T15": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[layer-stack] plus validate_typed_ir",
+    "parents": [
+      "layer-stack"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-15-SEM"
+  },
+  "CAP-T16": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[venn] plus validate_typed_ir",
+    "parents": [
+      "venn"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-16-SEM"
+  },
+  "CAP-T17": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[pyramid-funnel] plus validate_typed_ir",
+    "parents": [
+      "pyramid-funnel"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-17-SEM"
+  },
+  "CAP-T18": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[bar-chart] plus validate_typed_ir",
+    "parents": [
+      "bar-chart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-18-SEM"
+  },
+  "CAP-T19": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[line-chart] plus validate_typed_ir",
+    "parents": [
+      "line-chart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-19-SEM"
+  },
+  "CAP-T20": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[gantt] plus validate_typed_ir",
+    "parents": [
+      "gantt"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-20-SEM"
+  },
+  "CAP-T21": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[scatter-plot] plus validate_typed_ir",
+    "parents": [
+      "scatter-plot"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-21-SEM"
+  },
+  "CAP-T22": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[high-level] plus validate_typed_ir",
+    "parents": [
+      "high-level"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-22-SEM"
+  },
+  "CAP-T23": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[process] plus validate_typed_ir",
+    "parents": [
+      "process"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-23-SEM"
+  },
+  "CAP-T24": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[medallion] plus validate_typed_ir",
+    "parents": [
+      "medallion"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-24-SEM"
+  },
+  "CAP-T25": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[data-flow] plus validate_typed_ir",
+    "parents": [
+      "data-flow"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-25-SEM"
+  },
+  "CAP-T26": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[dp-integration] plus validate_typed_ir",
+    "parents": [
+      "dp-integration"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-26-SEM"
+  },
+  "CAP-T27": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[dp-security-matrix] plus validate_typed_ir",
+    "parents": [
+      "dp-security-matrix"
+    ],
+    "phase_owner": "P-05",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-27-SEM"
+  },
+  "CAP-V01": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "visual-mode tokens",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V01 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V01-MAP"
+  },
+  "CAP-V02": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "visual-mode tokens and contrast checks",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V02 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V02-MAP"
+  },
+  "CAP-V03": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "editorial composition around complete diagram",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V03 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V03-MAP"
+  },
+  "CAP-V04": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "scenario-cell semantic annotations",
+    "parents": [
+      "quadrant"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V04 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V04-MAP"
+  },
+  "CAP-V05": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "multiple series sharing categorical domain",
+    "parents": [
+      "bar-chart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V05 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V05-MAP"
+  },
+  "CAP-V06": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "segment-to-total reconciliation",
+    "parents": [
+      "bar-chart"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V06 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V06-MAP"
+  },
+  "CAP-V07": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "ordered level semantics",
+    "parents": [
+      "pyramid-funnel"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V07 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V07-MAP"
+  },
+  "CAP-V08": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "ordered stage values and disclosed drop-off",
+    "parents": [
+      "pyramid-funnel"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V08 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V08-MAP"
+  },
+  "CAP-V09": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "alt/opt/loop group and guard semantics",
+    "parents": [
+      "sequence"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V09 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V09-MAP"
+  },
+  "CAP-V10": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "equivalent IR with alternate layout plan",
+    "parents": [
+      "high-level"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V10 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V10-MAP"
+  },
+  "CAP-V11": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "semantic profile selector without new type",
+    "parents": [
+      "medallion",
+      "dp-integration",
+      "high-level"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V11 or matching semantic profile",
+    "status": "implemented-selector",
+    "test_id": "T-VAR-CAP-V11-MAP"
+  },
+  "CAP-V12": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "original optional presentation treatment",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V12 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V12-MAP"
+  },
+  "CAP-V13": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "original optional terminal frame",
+    "parents": [
+      "loop-flywheel"
+    ],
+    "phase_owner": "P-06",
+    "selector": "explicit capability CAP-V13 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V13-MAP"
+  },
+  "CAP-V14": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "annotation target and reading-order validation",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V14 or matching semantic profile",
+    "status": "implemented-common-ir",
+    "test_id": "T-VAR-CAP-V14-MAP"
+  },
+  "CAP-V15": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "approved manifest-tracked symbol with text equivalent",
+    "parents": [
+      "all"
+    ],
+    "phase_owner": "P-09",
+    "selector": "explicit capability CAP-V15 or matching semantic profile",
+    "status": "deferred-to-authorized-phase",
+    "test_id": "T-VAR-CAP-V15-MAP"
+  },
+  "CAP-V16": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "original combined-fragment semantic fixture",
+    "parents": [
+      "sequence"
+    ],
+    "phase_owner": "P-05",
+    "selector": "explicit capability CAP-V16 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V16-MAP"
+  }
+}

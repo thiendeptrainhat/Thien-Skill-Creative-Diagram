@@ -1,0 +1,685 @@
+{
+  "candidate_aggregate_sha256": "8f16380761cd6026166daa12ee36227d96e0e3b92ce605f4d9057624de8292c6",
+  "candidate_id": "TCD-LEGAL-1.0.0-RC2",
+  "checks": [
+    {
+      "check_id": "V-P10-001",
+      "detail": "SOURCE_MANIFEST top-level keys match P-01 schema",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-002",
+      "detail": "P-01 schema version retained",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-003",
+      "detail": "Exact provenance boundary retained",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-004",
+      "detail": "Six unique source records",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-005",
+      "detail": "SOURCE_MANIFEST equals deterministic builder output",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-006",
+      "detail": "Third-party notice is exact manifest projection",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-007",
+      "detail": "NOTICE is exact manifest-derived output",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-008",
+      "detail": "All six candidate artifacts match build-record hashes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-009",
+      "detail": "LICENSE.md matches the owner-approved singular-title transform of the locked template",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-010",
+      "detail": "Locked bilingual grant, priority, law, and forum terms are present",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-011",
+      "detail": "Application declaration does not create rights",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-012",
+      "detail": "Brand carve-out is bilingual",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-013",
+      "detail": "Licensing contact is consistent",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-014",
+      "detail": "Candidate version is consistent",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-014A",
+      "detail": "Both bilingual title lines use the owner-approved singular exact license name",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-015",
+      "detail": "D-027 inventory is 16 approved and 6 QA-only excluded",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-016",
+      "detail": "Every approved derivative meets the 64px minimum",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-017",
+      "detail": "Only 32/48px derivatives are QA-only excluded",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-018",
+      "detail": "All 22 derivative evidence hashes resolve",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-019",
+      "detail": "Logo master hash resolves",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-020",
+      "detail": "No asset is release-eligible before G-06 and authorized P-13 execution",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-020A",
+      "detail": "D-028 selects only light-plate 64px and 400px for OpenAI and Universal",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-020B",
+      "detail": "Claude has no brand target and the other 14 approved derivatives are provenance-only",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-020C",
+      "detail": "Package-scope decision is locked to D-028 without starting P-13",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-021",
+      "detail": "No personal/development absolute path in legal bundle",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-022",
+      "detail": "diagram-design material transfer is explicitly none",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-023",
+      "detail": "Vietnamese-lawyer approval is bound to the exact RC2 candidate, version, and aggregate hash",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-024",
+      "detail": "Unconditional approval, reviewer identity/capacity/date, self-attestation basis, and verification limit are recorded",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P10-025",
+      "detail": "Lawyer approval covers the exact six artifacts and their build-record hashes",
+      "result": "PASS"
+    }
+  ],
+  "lawyer_approval": {
+    "conditions": [],
+    "decision": "approved",
+    "decision_ref": "D-030",
+    "record_path": "evidence/p10/LAWYER-APPROVAL-RECORD.json",
+    "record_sha256": "688a588587f4458baa8386f7e6af3507fce4a1dd3f6dc2d7ede57ef701714cd1",
+    "reviewed_at": "2026-08-15",
+    "reviewer": {
+      "capacity": "Vietnamese lawyer and owner",
+      "capacity_basis": "Explicit self-attestation in the project conversation",
+      "independent_credential_verification": "not-performed",
+      "name": "Tran Ngoc Thien"
+    }
+  },
+  "legal_artifacts": [
+    {
+      "path": "thien-skill-creative-diagram/LICENSE.md",
+      "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+    },
+    {
+      "path": "thien-skill-creative-diagram/LICENSE-APPLICATION.md",
+      "sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381"
+    },
+    {
+      "path": "thien-skill-creative-diagram/NOTICE",
+      "sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0"
+    },
+    {
+      "path": "thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md",
+      "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+    },
+    {
+      "path": "thien-skill-creative-diagram/SOURCE_MANIFEST.json",
+      "sha256": "f534b3ec80bb69923a4a692a35abecc1ab327677077aadcc90c24231c5d5dcb7"
+    },
+    {
+      "path": "thien-skill-creative-diagram/ASSET_MANIFEST.json",
+      "sha256": "549651fd285035d31823e1020552011c69bf76c6a84dbe6e957fc03152897b2e"
+    }
+  ],
+  "limits": [
+    "Reviewer capacity is recorded from explicit self-attestation in the project conversation; no independent credential verification was performed.",
+    "The Python jsonschema package is unavailable; schema invariants used by this candidate are verified dependency-free and JSON syntax is checked separately.",
+    "P-13 official host-field verification, asset copying, package construction, ZIP build, install testing, and release actions were not performed."
+  ],
+  "record_id": "P10-VERIFICATION-1",
+  "resolved_decisions": [
+    {
+      "authority": "D-028 owner approval on 2026-08-15; Vietnamese-lawyer review still required",
+      "decision_id": "P10-OD-01",
+      "resolution": "Use singular Skill as the controlling exact name and apply the same one-word correction to both bilingual title lines.",
+      "status": "resolved-owner-approved",
+      "topic": "license-name"
+    },
+    {
+      "authority": "D-028 owner approval on 2026-08-15; P-13 execution remains not started",
+      "decision_id": "P10-OD-02",
+      "resolution": "Target only light-plate 64px/400px to OpenAI plugin and Universal raw skill under assets/brand; no Claude asset; other approved derivatives remain provenance-only.",
+      "status": "resolved-owner-approved",
+      "topic": "asset-package-mapping"
+    }
+  ],
+  "runtime_inventory": {
+    "aggregate_sha256": "82212334ee247916d5d50a0f65695d927cb7c733286f7585766721276eb6398e",
+    "file_count": 76,
+    "files": [
+      {
+        "bytes": 7666,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/SKILL.md",
+        "sha256": "e4c598c800e088035a2c095fdaa640fa3f004269d55b14b373865f31e9760925"
+      },
+      {
+        "bytes": 229,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/agents/openai.yaml",
+        "sha256": "92ae4ff25cab334f7b647185437774079e72313d7e655875f74811989a016720"
+      },
+      {
+        "bytes": 38163,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/capability-map.json",
+        "sha256": "f4a040ba4f4e061e1d4a92f752e13b8bed5597919fa7f9c176b059e01eac0b89"
+      },
+      {
+        "bytes": 2086,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/import-security.md",
+        "sha256": "740bbda5e7c6d370dc43533725e623cd28bb1943318fd52262c64bd3c3ea5395"
+      },
+      {
+        "bytes": 3162,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/output-motion.md",
+        "sha256": "5e3b5821228d01fbbe7726094e71c0fb9003b9be81cee080339ba104d4bbf9b5"
+      },
+      {
+        "bytes": 4884,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/p08-coverage-map.json",
+        "sha256": "3ef6980472e01968bed844588c5a10cd1bc8e57e905fe7f0071f788dd60339c3"
+      },
+      {
+        "bytes": 17374,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/p11-hard-failure-map.json",
+        "sha256": "f1d8124682d390ddc294f572b4398127bdc3a3f58ec8acede05c1f3034aea26b"
+      },
+      {
+        "bytes": 2841,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/qa-golden.md",
+        "sha256": "b7499df4ccc12f31ad2cf50f03002c567cecef37b24a4a0a7f0e799a2af451c4"
+      },
+      {
+        "bytes": 3836,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/request.schema.json",
+        "sha256": "6f993a4fd6890a4dd183ba66578af73f53da429ddbdeef5654d9fa17742f40c2"
+      },
+      {
+        "bytes": 6962,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/router-ir.md",
+        "sha256": "9093532ad7e4bcb5f19977bcef6508b93fd3772aae80823fc6a200a9a05709f3"
+      },
+      {
+        "bytes": 9985,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/semantic-ir.schema.json",
+        "sha256": "01fb3c28b81d199230c14428bd48f2f5a7aa5b9367ded3e80a1217965cda7b78"
+      },
+      {
+        "bytes": 2099,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/specimen-map.json",
+        "sha256": "3da8e3f192c38c9b5c3186d4f00795425ba85219729387dddd4cd94d3e4df16a"
+      },
+      {
+        "bytes": 1602,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-architecture.md",
+        "sha256": "9b5e06cf5fb3bbb5d278578752fe1ffde5ff915de88315062e69f6e7a1c44bfa"
+      },
+      {
+        "bytes": 1599,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-bar-chart.md",
+        "sha256": "8e55810933eaa35b651e9fc39ef3eb2c9abfd503b8b1d61ecc1b2db5a7ca2a81"
+      },
+      {
+        "bytes": 1624,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-data-flow.md",
+        "sha256": "b9e2f4a2dcd2cf23be5cb91fad3faa55dab2491bc139796db9819442033dcb09"
+      },
+      {
+        "bytes": 1755,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-dp-integration.md",
+        "sha256": "ba133716ded6f1f436c02af98c8c7cf35b9a1c378ef69ae79a6bd6fe52d7ce4e"
+      },
+      {
+        "bytes": 1666,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-dp-security-matrix.md",
+        "sha256": "2e29f743c6bb4456b0547102e77af1a56e1f9913b5e67b8ca0d3b616141d95b9"
+      },
+      {
+        "bytes": 1591,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-er-data-model.md",
+        "sha256": "fd004827aaf7248be8d8d317629dc0e1f10b6dce861931488de0a13c230695f9"
+      },
+      {
+        "bytes": 1605,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-flowchart.md",
+        "sha256": "c7a2a230c296714196b56503b9253200a24ae11c2bd165ec9ef204dc6a4eec0c"
+      },
+      {
+        "bytes": 1519,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-gantt.md",
+        "sha256": "4f0abd223b5ae54e32bd0d24c396e1fec0fde1b9419cbdb37086f081e868b1a9"
+      },
+      {
+        "bytes": 1718,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-high-level.md",
+        "sha256": "7ea0daa53549ef161bb5adf06e77fadd6415310ed6e61d177d028968719f059e"
+      },
+      {
+        "bytes": 2957,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-index.md",
+        "sha256": "8410db61090860b4d6da8b2dd904597e776c9a956f1f211f33b88221e6ef027d"
+      },
+      {
+        "bytes": 1645,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-it-current-state.md",
+        "sha256": "38216f1333fc9b59122511bb7a84cfe62878cbbaa3026f7cc0d64b8b22578894"
+      },
+      {
+        "bytes": 1591,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-layer-stack.md",
+        "sha256": "5a02c9ff15e64c6bc54ba4bdaca09160adfa3514fc7ded642350b14b7e9c8c59"
+      },
+      {
+        "bytes": 1538,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-line-chart.md",
+        "sha256": "5ea1040f9e926b6390b03709c40724d5ee055a5551e54683035312ed48394752"
+      },
+      {
+        "bytes": 1566,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-loop-flywheel.md",
+        "sha256": "3977c7f7bf167dec82aa06c2aec08f88b272c1471c880e58f16e5873055bc3a3"
+      },
+      {
+        "bytes": 1568,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-medallion.md",
+        "sha256": "9abff785d7a84323e9b248efc3ab5358b0ac7bc077e7f5d548429ed6bddc01ee"
+      },
+      {
+        "bytes": 1515,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-nested.md",
+        "sha256": "24e3ac01b6167a37d9d47bfd06fa853afd14e560f6898ce3e976281233a08efb"
+      },
+      {
+        "bytes": 1547,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-org-chart.md",
+        "sha256": "44ae8ea5c337a2b28d7aa19cb2235a13550c373cdac2b026c1a91f6050a4ff19"
+      },
+      {
+        "bytes": 1615,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-process.md",
+        "sha256": "54119e5b5ab180ba16c58ae337f36217956333e9211817103f0989fece946e33"
+      },
+      {
+        "bytes": 1575,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-pyramid-funnel.md",
+        "sha256": "844ea14f6f2930e7243d74e0a730ee020e7e565e3249458b5a75bbcedc2aa00e"
+      },
+      {
+        "bytes": 1605,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-quadrant.md",
+        "sha256": "bfffb0951d2efd08625feb894172da8c2487fc7c1cb155d2a2986cc92c156ba9"
+      },
+      {
+        "bytes": 1590,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-radar.md",
+        "sha256": "e9c6e475e0a8cf841164e27a1aab161470a712094a116749b5a24f542ef8b24f"
+      },
+      {
+        "bytes": 1574,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-scatter-plot.md",
+        "sha256": "9d3537bf4e41ef8a04a5196d912d4459ce9ec71c2514111792ef5824efca6833"
+      },
+      {
+        "bytes": 1602,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-sequence.md",
+        "sha256": "34caf8601cac4c5373760596b9303a77a8ba6f050f3ec971bf7d19f69c0bc311"
+      },
+      {
+        "bytes": 1594,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-state-machine.md",
+        "sha256": "389b8a5791e2715e1dcf82d8e48f6232c1c76ca3dc3dd7710566619c4704ae5d"
+      },
+      {
+        "bytes": 1625,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-swimlane.md",
+        "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f"
+      },
+      {
+        "bytes": 1555,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-timeline.md",
+        "sha256": "5a16897934608f543fca69df7ea711cee7c42acb00bcea67994b2c5844c7d7cf"
+      },
+      {
+        "bytes": 1398,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-tree.md",
+        "sha256": "77a0d0520422ef6313356442d63e869571206291a88da83e040412a6dcf5aea8"
+      },
+      {
+        "bytes": 1554,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/type-venn.md",
+        "sha256": "7caa6601fab6bb50d0ec3560a37c09651fc151d4f8e824d22bcb228094dce812"
+      },
+      {
+        "bytes": 29088,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/visual-coverage-map.json",
+        "sha256": "5de56ac4275029015bbec4e9adde67184fdade1416ff56035ca14b2973176abe"
+      },
+      {
+        "bytes": 1692,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/visual-coverage.md",
+        "sha256": "97e2e322a24d1677eae3e98575ab2da7769931d9a6a7fb06f40dbab2c493dbcf"
+      },
+      {
+        "bytes": 2772,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/visual-system.json",
+        "sha256": "77ab0f8c4e65bf213342aa07dd09445b3b1f8b5745e026c0aac637e993a8c2a8"
+      },
+      {
+        "bytes": 4912,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/references/visual-system.md",
+        "sha256": "10c54653c324630e167a442512498a5bd0a3eb14c64cd6b3ea8a598c91357196"
+      },
+      {
+        "bytes": 50684,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/diagram_core.py",
+        "sha256": "02e4c74619d6a5e5d7619a112f61f550d8ebcdf47b8a0789c7058bc947d0b4c4"
+      },
+      {
+        "bytes": 31310,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/full_renderer.py",
+        "sha256": "7ea93dd3a3e3535152732fa3fa76837246a2010195b3314cd51eac987ca7aa67"
+      },
+      {
+        "bytes": 7283,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/generate_p07_evidence.py",
+        "sha256": "ddeabc9ed1774e096e28728e87a0087419256d3589faf841fea2a1cb3e2b4e0c"
+      },
+      {
+        "bytes": 5407,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/generate_p08_evidence.py",
+        "sha256": "89298fb0e9048ca7e9bf49a44a73071c65c510836fceb5d31dcfcfb47f48a062"
+      },
+      {
+        "bytes": 6513,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/generate_p11_evidence.py",
+        "sha256": "67bd454db65b4f6c284408e0e1020fd90296f531c275a9367908c9cb26dd2459"
+      },
+      {
+        "bytes": 4229,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/generate_semantic_references.py",
+        "sha256": "d44228c2b97a30552575cb96385b494abeba124c0a140afbf38ed4d2248f5f5f"
+      },
+      {
+        "bytes": 4213,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/golden_review.py",
+        "sha256": "208273be78acd89bda3cbe59ee9b4faa3f2c5db22993a14dbb5e7fe36cddda39"
+      },
+      {
+        "bytes": 2840,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/motion_catalog.py",
+        "sha256": "be83b6e65482743d4e4bbc0069a59c4c8a9fb734d8a68e1aec1f696da1351b56"
+      },
+      {
+        "bytes": 30248,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/output_pipeline.py",
+        "sha256": "1d3c83c3f927f672a325b8464580df85aa5ed1ba770bb5cbbec695171f8bbd32"
+      },
+      {
+        "bytes": 2941,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/p07_coverage.py",
+        "sha256": "3a116600a3bb86a7123a358443d2e261168805f0d0810c6ab2b070a3949ea0f0"
+      },
+      {
+        "bytes": 2041,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/p08_coverage.py",
+        "sha256": "4f29c006fd91827929da453008849ab5b9daf3b08951ce65411dad92d2a54413"
+      },
+      {
+        "bytes": 11127,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/p11_coverage.py",
+        "sha256": "6ecd9f9605ebc87d9c7f1e99a48dfba624c2ca85496e5c08544cb1a402c26784"
+      },
+      {
+        "bytes": 10787,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/pilot_cases.py",
+        "sha256": "038af6eedec83c38b6f6ce57f3efc53d27e103dfdc86932a929629373c02e8f2"
+      },
+      {
+        "bytes": 31900,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/pilot_renderer.py",
+        "sha256": "e79a4d9586a9e8e0adab9d177bfa873607c0ae6b676acc5e3d3a0738ba89f0ee"
+      },
+      {
+        "bytes": 27505,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/qa_contract.py",
+        "sha256": "5dd7c75c05e60dd420c40284191e15db08441c1a99a6a51082474d7fe9a34d2d"
+      },
+      {
+        "bytes": 36417,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/safe_import.py",
+        "sha256": "bfd6143365c69661fbf739b82e1b2a22776aa2f5deb0dd97c2403bdfa1c8dc4d"
+      },
+      {
+        "bytes": 39167,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/semantic_catalog.py",
+        "sha256": "12da2aad3149a0f283bc2b399c313f7359eaab7cc5faab814cad29538655cc74"
+      },
+      {
+        "bytes": 28606,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/semantic_grammars.py",
+        "sha256": "1c657c23dc0ed2c321e0a8761c93b45b47928566fdd899c68e8afec65134ce18"
+      },
+      {
+        "bytes": 9644,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/semantic_patterns.py",
+        "sha256": "adaca12fe3d3d9ca9c5d3e523fb2beb16aba7c5935bab2e336acf707de5398cb"
+      },
+      {
+        "bytes": 16070,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/semantic_fixtures.py",
+        "sha256": "3809866525fef41efc0ac10dde1f5ea59e4682eb6902c88bf2bc47104d48e37e"
+      },
+      {
+        "bytes": 14779,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_diagram_core.py",
+        "sha256": "fe574685bb52cc049c7e513626a21b6d8e1bb7ec76ede26721c1fac103837bf3"
+      },
+      {
+        "bytes": 5624,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_full_renderer.py",
+        "sha256": "fc50097231948f3a3dc220db9186041201c39a07ba3978874e61b1466054aa4e"
+      },
+      {
+        "bytes": 3026,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_golden_review.py",
+        "sha256": "5c552e71f187b2a922b88164c2fab4ef888e3b2c7b67b6cef63ce7e49cb20053"
+      },
+      {
+        "bytes": 12604,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_output_pipeline.py",
+        "sha256": "1fec854b2a980b204e9fb788f4911c4cab508cfcb8f214868ba54fd385726b4a"
+      },
+      {
+        "bytes": 1557,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_p07_coverage.py",
+        "sha256": "5b8cbe505864593b52effbc57bf612a2060a678c87fa44792ef958160115106f"
+      },
+      {
+        "bytes": 1869,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_p11_coverage.py",
+        "sha256": "1eba4398767e0d96d54821007619566ac144a3d906f4f64655695dd26e723e62"
+      },
+      {
+        "bytes": 3937,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_p12_benchmark.py",
+        "sha256": "046c90ecdbe6ee02b1d0c9ac9b8b200e96bc2299ca51d8c9249dc61f8163ca58"
+      },
+      {
+        "bytes": 5451,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_pilot_renderer.py",
+        "sha256": "d01726af91e8f6f17716784fecc3f6f04a12c5f43e9ee24341fef0bd62fc03f5"
+      },
+      {
+        "bytes": 18576,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_qa_contract.py",
+        "sha256": "aeb7ff1e7626aaeaf0123831fbbbabad06bae9c0524598f89c6e43cbdc1446b8"
+      },
+      {
+        "bytes": 10794,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_safe_import.py",
+        "sha256": "6141ac471f64a223307f0afe1eb1eeb07d083eb24d9957d97544c78b081a91e7"
+      },
+      {
+        "bytes": 7797,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/tests/test_semantic_grammars.py",
+        "sha256": "1ad7aefaa164e39f3e4e735f79796b71e7f38975fab4a9b0a49094eed7b1db9d"
+      },
+      {
+        "bytes": 7361,
+        "origin": "project-original independent implementation",
+        "path": "thien-skill-creative-diagram/scripts/visual_system.py",
+        "sha256": "48dbaaa91dd719fa128ac1bd6a17df495b7bf14799542588419dce6d49f0f5db"
+      }
+    ]
+  },
+  "status": "P10-PASSED",
+  "summary": {
+    "blocking_open_decisions": 0,
+    "checks": 29,
+    "failed": 0,
+    "lawyer_signoff_present": true,
+    "passed": 29
+  },
+  "verified_at": "2026-08-15T00:00:00+07:00",
+  "version": "1.0.0"
+}

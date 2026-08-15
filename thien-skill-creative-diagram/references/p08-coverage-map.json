@@ -1,0 +1,158 @@
+{
+  "capabilities": {
+    "CAP-F07": {
+      "class": "failure",
+      "implementation": "SVG/HTML fallback; no install",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-OUT-RASTER-FALLBACK"
+    },
+    "CAP-F08": {
+      "class": "failure",
+      "implementation": "exact relative target set required",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-OUT-TARGET-EXACT"
+    },
+    "CAP-F09": {
+      "class": "failure",
+      "implementation": "standalone SVG without HTML/editorial shell",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-OUT-SVG-DIAGRAM-ONLY"
+    },
+    "CAP-F10": {
+      "class": "failure",
+      "implementation": "local system fallback and warning",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-OUT-FONT-FALLBACK"
+    },
+    "CAP-F11": {
+      "class": "failure",
+      "implementation": "script-free complete static HTML",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-MOT-STATIC-FALLBACK"
+    },
+    "CAP-F12": {
+      "class": "failure",
+      "implementation": "complete static frame via media rules",
+      "status": "implemented-safe-failure-p08",
+      "test_id": "T-MOT-REDUCED-PRINT"
+    },
+    "CAP-M01": {
+      "class": "motion",
+      "implementation": "complete static",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M01-STATIC"
+    },
+    "CAP-M02": {
+      "class": "motion",
+      "implementation": "ordered reveal",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M02-REVEAL"
+    },
+    "CAP-M03": {
+      "class": "motion",
+      "implementation": "controlled steps",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M03-STEP"
+    },
+    "CAP-M04": {
+      "class": "motion",
+      "implementation": "decorative loop",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M04-LOOP"
+    },
+    "CAP-M05": {
+      "class": "motion",
+      "implementation": "path emphasis",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M05-PATH"
+    },
+    "CAP-M06": {
+      "class": "motion",
+      "implementation": "item emphasis",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M06-ITEM"
+    },
+    "CAP-M07": {
+      "class": "motion",
+      "implementation": "queue progression",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M07-QUEUE"
+    },
+    "CAP-M08": {
+      "class": "motion",
+      "implementation": "field progression",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M08-FIELD"
+    },
+    "CAP-M09": {
+      "class": "motion",
+      "implementation": "policy evaluation",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M09-POLICY"
+    },
+    "CAP-M10": {
+      "class": "motion",
+      "implementation": "decorative flow token",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M10-TOKEN"
+    },
+    "CAP-M11": {
+      "class": "motion",
+      "implementation": "containment emphasis",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M11-CONTAINMENT"
+    },
+    "CAP-M12": {
+      "class": "motion",
+      "implementation": "chronological progression",
+      "status": "implemented-static-first-p08",
+      "test_id": "T-MOT-CAP-M12-AUDIT"
+    },
+    "CAP-O01": {
+      "class": "output",
+      "implementation": "format routing and transparent fallback",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O01-P08"
+    },
+    "CAP-O02": {
+      "class": "output",
+      "implementation": "responsive size preset",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O02-P08"
+    },
+    "CAP-O03": {
+      "class": "output",
+      "implementation": "validated detail preservation",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O03-P08"
+    },
+    "CAP-O04": {
+      "class": "output",
+      "implementation": "audience wording without fact changes",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O04-P08"
+    },
+    "CAP-O05": {
+      "class": "output",
+      "implementation": "diagram-only standalone SVG",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O05-P08"
+    },
+    "CAP-O06": {
+      "class": "output",
+      "implementation": "conditional PNG from an existing rasterizer",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O06-P08"
+    },
+    "CAP-O07": {
+      "class": "output",
+      "implementation": "accessible SVG name, description, and exact-data alternative",
+      "status": "implemented-p08",
+      "test_id": "T-OUT-CAP-O07-P08"
+    }
+  },
+  "coverage_count": 25,
+  "p09_p11_boundary": "P-09 brand assets and P-11 automated QA/golden infrastructure remain not started.",
+  "phase": "P-08",
+  "schema_version": "1.0"
+}

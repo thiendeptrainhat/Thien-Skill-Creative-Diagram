@@ -1,0 +1,784 @@
+{
+  "capability_count": 95,
+  "p08_boundary": "No production exporter, rasterizer, animation, or motion behavior is implemented by P-07.",
+  "pattern_count": 7,
+  "pattern_runs": [
+    {
+      "capability_id": "CAP-P01",
+      "parent": "data-flow",
+      "sha256": "3535ecd7e5a0339edc932912a78eb7ef448568e8da97763bf1ed2d7bbe06a99a",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P02",
+      "parent": "process",
+      "sha256": "92bc5b20b43f0213e0fdf5ba873da849ada3d945a9e75f714fddce85a5f8c4cc",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P03",
+      "parent": "data-flow",
+      "sha256": "e07aee578579bbe18a08049acd79ac239446b4f1cf1eb7089560169cba1097fd",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P04",
+      "parent": "flowchart",
+      "sha256": "05cdd458d8cba8fa2b7569cdb82f1eda421e03c098a378f9acc7070ddb00874c",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P05",
+      "parent": "architecture",
+      "sha256": "5926149e34ad65350158d9101243facc12dba011a266c2357f62716c28a1f834",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P06",
+      "parent": "layer-stack",
+      "sha256": "4bb41eba22cd381b18f8f2e8aa994f16f576e554a140360d9b417095815d6fd7",
+      "status": "pass"
+    },
+    {
+      "capability_id": "CAP-P07",
+      "parent": "layer-stack",
+      "sha256": "5d5051a2d6fcf74b21a9354675fc185afb20a454c50a6a00b1f7bc8c6c209312",
+      "status": "pass"
+    }
+  ],
+  "phase": "P-07",
+  "renderer_version": "p07-static-coverage-1",
+  "schema_version": "1.0",
+  "specimen_count": 97,
+  "specimen_groups": [
+    {
+      "capabilities": [
+        "CAP-V01",
+        "CAP-V02",
+        "CAP-V03",
+        "CAP-T01",
+        "CAP-T02",
+        "CAP-T03",
+        "CAP-T04",
+        "CAP-T05",
+        "CAP-T06",
+        "CAP-T07",
+        "CAP-T08",
+        "CAP-T09",
+        "CAP-T10",
+        "CAP-T11",
+        "CAP-T12",
+        "CAP-T13",
+        "CAP-T14",
+        "CAP-T15",
+        "CAP-T16",
+        "CAP-T17",
+        "CAP-T18",
+        "CAP-T19",
+        "CAP-T20",
+        "CAP-T21",
+        "CAP-T22",
+        "CAP-T23",
+        "CAP-T24",
+        "CAP-T25",
+        "CAP-T26",
+        "CAP-T27"
+      ],
+      "count": 81,
+      "id": "SPEC-BASE",
+      "mapping": "27 type grammars plus three later visual modes"
+    },
+    {
+      "capabilities": [
+        "CAP-T22",
+        "CAP-V10"
+      ],
+      "count": 3,
+      "id": "SPEC-HIGH-VERTICAL",
+      "mapping": "High-Level equivalent IR; layout deferred to P-06"
+    },
+    {
+      "capabilities": [
+        "CAP-V11",
+        "CAP-T22",
+        "CAP-T24",
+        "CAP-T26"
+      ],
+      "count": 3,
+      "id": "SPEC-DATA-LAKE",
+      "mapping": "profile selector chooses existing parent by dominant semantics"
+    },
+    {
+      "capabilities": [
+        "CAP-T04",
+        "CAP-V09",
+        "CAP-V16"
+      ],
+      "count": 3,
+      "id": "SPEC-SEQUENCE-BRANCH",
+      "mapping": "original combined-fragment semantic fixture"
+    },
+    {
+      "capabilities": [
+        "CAP-I01",
+        "CAP-I05",
+        "CAP-I11",
+        "CAP-I12"
+      ],
+      "count": 2,
+      "id": "SPEC-IMPORT",
+      "mapping": "carrier behavior deferred to P-07; fidelity core exists"
+    },
+    {
+      "capabilities": [
+        "CAP-T09",
+        "CAP-V04"
+      ],
+      "count": 1,
+      "id": "SPEC-QUADRANT",
+      "mapping": "named-cell scenario annotations"
+    },
+    {
+      "capabilities": [
+        "CAP-T11",
+        "CAP-V13"
+      ],
+      "count": 1,
+      "id": "SPEC-LOOP-TERMINAL",
+      "mapping": "loop semantics now; terminal presentation deferred"
+    },
+    {
+      "capabilities": [
+        "CAP-P01",
+        "CAP-P04",
+        "CAP-P05",
+        "CAP-M02",
+        "CAP-M03",
+        "CAP-M04"
+      ],
+      "count": 3,
+      "id": "SPEC-ANIMATED-PATTERNS",
+      "mapping": "semantic transformations now; motion deferred to P-08"
+    }
+  ],
+  "type_mode_count": 81,
+  "type_mode_runs": [
+    {
+      "diagram_type": "architecture",
+      "mode": "neutral-light",
+      "sha256": "d96264aea0c0b7919a90b2606e382297dffefcaa46617e9b322e08a8f808513f",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "architecture",
+      "mode": "neutral-dark",
+      "sha256": "36317f275550ae057a4dc2bae12026fa72f0e7f2eab87ee686afa27e4474e0b1",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "architecture",
+      "mode": "editorial",
+      "sha256": "49382e0418fd612fd91ceb2834c4c37675ceac1c80fcff7933c97fcc38029d63",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "mode": "neutral-light",
+      "sha256": "1e0e5ed4393817e107ff2cad2a5360c58bb185613f5b639bb9e5e6f9c39d718c",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "mode": "neutral-dark",
+      "sha256": "d6738e7adea4cfdf491b86df5d31195969c24f346351b0dd612c5aea01cccb6e",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "it-current-state",
+      "mode": "editorial",
+      "sha256": "9227309e276ae2b743a51febc75995f127867b423951138b49fbcfb5b350a69c",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "flowchart",
+      "mode": "neutral-light",
+      "sha256": "919b4dcdd624613ffc074988cc8f02043fe998ba33e065edd602ac5f0981aa25",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "flowchart",
+      "mode": "neutral-dark",
+      "sha256": "0563c96cded24c22d3f2a72a440e48cc094be4fdb6bcb9a7448866a974fab46b",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "flowchart",
+      "mode": "editorial",
+      "sha256": "ad59d3a9e79af150285f512ea225c2dd435d701bb4c785e71344698466c950d6",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "sequence",
+      "mode": "neutral-light",
+      "sha256": "1af65b71d74e56607d104998a06d7aa3a109a07cdbb3092c0c8ffb3653a4ae06",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "sequence",
+      "mode": "neutral-dark",
+      "sha256": "f960930b15349f07b7d1757e89768703376b0e1a6fab047e9856e4474aa0e437",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "sequence",
+      "mode": "editorial",
+      "sha256": "9b7cbe6049f9f57280b9dc69e24c9b3ef19ef54608f441be82211bcb610fe449",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "state-machine",
+      "mode": "neutral-light",
+      "sha256": "688253fa06aeb78005e7dc5f22e5c12c386f49df7778641ed2879ec8267d26cb",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "state-machine",
+      "mode": "neutral-dark",
+      "sha256": "74920d4e5f54ea51960de7bbf69c115aa39205105a6d00a26b08198ec265a328",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "state-machine",
+      "mode": "editorial",
+      "sha256": "7d5e1f0d386586c483995d7ae451b89f57df0ede112e067456cf09838f6272fa",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "mode": "neutral-light",
+      "sha256": "90fb06536c3e992c2387b0b048a7c0a0a300dce51dec34fca1505d4aa6d32e13",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "mode": "neutral-dark",
+      "sha256": "73de5657cc178ca9e2c9c49450bba2aa0ec34dc23db64be26a53b021b8799ade",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "er-data-model",
+      "mode": "editorial",
+      "sha256": "68677b2a3ea5527d419c368adc9201fa53b5ef5ccd931f3f20696c98fc3257e4",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "timeline",
+      "mode": "neutral-light",
+      "sha256": "c699aa4f29d6b52be98b601bce2e0ecd75125fd08dfc6300e50cc71dd9bc169d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "timeline",
+      "mode": "neutral-dark",
+      "sha256": "4dcb984d9b80709104d695b15df02d49b9f4480532eefe05ac7fbabcb784076e",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "timeline",
+      "mode": "editorial",
+      "sha256": "a28ef1b6a61cf8ca620e837d5f8001ca3bf72484b6560b16bff9d2ede99836bd",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "swimlane",
+      "mode": "neutral-light",
+      "sha256": "4e55989095158f470ccf55420d263029ba931c2f258ddf84ca323d69717877be",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "swimlane",
+      "mode": "neutral-dark",
+      "sha256": "814f0f1610efcfde06634015944aa1982fea6a12bdd13dabfa706b905259e8cd",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "swimlane",
+      "mode": "editorial",
+      "sha256": "d2c6b7367b8433691076f18b283c7f57b0f1ac8bb287cc21e9c97b56d8a79826",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "quadrant",
+      "mode": "neutral-light",
+      "sha256": "cad0e9d3800254a59b31b8c1a4a49e97d05f74b6235580094e2da7d2a725ee0d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "quadrant",
+      "mode": "neutral-dark",
+      "sha256": "c2b860090ac25345dbd6fe79166b47572a00de96897ffa2bf010ffd05b044d2f",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "quadrant",
+      "mode": "editorial",
+      "sha256": "b9463a84adbd9183562f741bc214a54c24f265a170a4407f9f412dd42fc55d75",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "radar",
+      "mode": "neutral-light",
+      "sha256": "250b8e36b16695a3656e18296cd8911120d42790cdf17294706e11489c317177",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "radar",
+      "mode": "neutral-dark",
+      "sha256": "aac6b6332415d22243e4a22d41eda6733c4be5ed6548673053711509e5604983",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "radar",
+      "mode": "editorial",
+      "sha256": "1d796aa1372b8e5c7933e09a87f52a86664a232d6bbb0f6198b68c79b59dde6a",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "mode": "neutral-light",
+      "sha256": "5d9c6bda444ae1d594561b7cc20b622be9f6684663245652c70407e507c8af80",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "mode": "neutral-dark",
+      "sha256": "fc53bace5769ab4d2eccd972eeedbfc0d59041ceed733e0a87a1755963f2f5d0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "loop-flywheel",
+      "mode": "editorial",
+      "sha256": "c3444c047ba44496f3a44578d0074c7ec27d878e999bf474a849cf7ef8b7dbf0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "nested",
+      "mode": "neutral-light",
+      "sha256": "592d5679eebea4f6622a5acf8c47ae822a890e81e41a1c940408a8e21aa786f5",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "nested",
+      "mode": "neutral-dark",
+      "sha256": "05f920df2f0ba3cea09f9f76e7ba2757c931ef388c1451eed8965fdc6989fc56",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "nested",
+      "mode": "editorial",
+      "sha256": "1bbc2a6872491b08de3a1dafaf9e4f5fb92e43d2ab4675fddaa222888eb0254f",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "tree",
+      "mode": "neutral-light",
+      "sha256": "6859da1b582f439cbdcdbb84855159e1c23112e93a0baa70a54349821775e8bf",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "tree",
+      "mode": "neutral-dark",
+      "sha256": "ec34e8b8c944f1487a4c1b3685f3a574ff9af59bd21705438cf706b93a577d15",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "tree",
+      "mode": "editorial",
+      "sha256": "5996aaeb6fed087fd463d44d9725f5829f7d69f5d06a580687e62442fa16778a",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "org-chart",
+      "mode": "neutral-light",
+      "sha256": "476a8fc5338931b03d6bd13c5facecfdb026d8d22c785ebce14853a59fc2640d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "org-chart",
+      "mode": "neutral-dark",
+      "sha256": "16a85388c955789c0266391b84ef45a8f52252e6a513fe3f61fe249e23841f65",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "org-chart",
+      "mode": "editorial",
+      "sha256": "50eceaa3cda333bbd9c095760177fa1c158fb98cc9594eb8d1027816802ef585",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "mode": "neutral-light",
+      "sha256": "07b3f99768cdfa9f1467b613a3d420d4f74f76089418b01c9016590a89632637",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "mode": "neutral-dark",
+      "sha256": "47fda98d95c8d66151e062c3c5f79ff09e9918e553660b4571f7593edc3ac26b",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "layer-stack",
+      "mode": "editorial",
+      "sha256": "3c10f276cd2f9206e8abf9d18304d62953c3593d6d31dbee9b38b3991c8a57e5",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "venn",
+      "mode": "neutral-light",
+      "sha256": "d4cf5b7eecca0cbecc5acebc290b945d58fa43eba0d7e91e036e7c347acc2e3d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "venn",
+      "mode": "neutral-dark",
+      "sha256": "3c225fa756fbee7239544858289e2307f9743c29998fd0e846ab58e8df9dbaa2",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "venn",
+      "mode": "editorial",
+      "sha256": "5a7d2f041dbf1620565ea615ed191ccd69645b8340fd7765e95134451dfa55f8",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "mode": "neutral-light",
+      "sha256": "814b683b32d962587acd9b06d145b5a47d2be34e0843ad6feb604dbb7f739175",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "mode": "neutral-dark",
+      "sha256": "b01f9e4663fd37c09c76abc47c969ae6d738f4933e6667d963c3214d7a2116dc",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "pyramid-funnel",
+      "mode": "editorial",
+      "sha256": "306056b41548e830f3c6f83673b1f32bb1f81ecbe6b4e594346f1a2312e70beb",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "mode": "neutral-light",
+      "sha256": "538f042a7ffe95a74af0dd6e6e31d718a0f24a94d56eec08114d987aca580f4e",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "mode": "neutral-dark",
+      "sha256": "aa0f169457cb4098b1385323e3903d4b528d10dca1ba9f9b3bc01d4b7a596617",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "bar-chart",
+      "mode": "editorial",
+      "sha256": "ba867fe17519f5cf9c5ebd69c37f39200debc3901817fd94891c2218d9808154",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "line-chart",
+      "mode": "neutral-light",
+      "sha256": "8c35f89a22d5df218e67a0e9df62ad14bda6debb4e63b89489d0a9a91f86d31f",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "line-chart",
+      "mode": "neutral-dark",
+      "sha256": "e4c6918b7c430601a56d3f4b00a98cbc0ec53f10fe92b80717c382f7c34a29c0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "line-chart",
+      "mode": "editorial",
+      "sha256": "da5716afad5e1f541e64c055e6bb5ba79b90bfdd94537e9ce0b4f3a7557445d2",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "gantt",
+      "mode": "neutral-light",
+      "sha256": "56bccc5e79f1c883f9f3a851065b5d506f175ae0335d85cfd9556103424e9e7e",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "gantt",
+      "mode": "neutral-dark",
+      "sha256": "66e8f4039f7b0f351f9f5fa0dafd0f4283883caeec57b9e45a69b6cfa07e6aaf",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "gantt",
+      "mode": "editorial",
+      "sha256": "bd81b2537a1842a614e4d32830f9b9680b868e137ea7b5e65e2204a8eb49ff88",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "mode": "neutral-light",
+      "sha256": "f019b2f7fe9012359fc1715a6afc4c3f9bdc26ef5e899056c8ba2eacccd81d53",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "mode": "neutral-dark",
+      "sha256": "33915fe62db74a7b2b2d539e08a8f8b8f6fdccc733f378b48a772b4cc4f1f5c6",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "scatter-plot",
+      "mode": "editorial",
+      "sha256": "88c1c49a5faf1d42eb56bb00c81dda88c9abdd9fe23477ce9a7c8e014f5887c0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "high-level",
+      "mode": "neutral-light",
+      "sha256": "8f4cd8ce2d540f626c4884aeac599e26d650c0272fef5668bca0d188e219dc9d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "high-level",
+      "mode": "neutral-dark",
+      "sha256": "8627601132a7423a14b9e6bde909cd944f56103da5f3831de6cc814ed64aa393",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "high-level",
+      "mode": "editorial",
+      "sha256": "09933fe82cff9d0a16c5de170cd668fbfa1998e7a837dbae4c6c02ab95b7aad7",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "process",
+      "mode": "neutral-light",
+      "sha256": "5ec50e957c528c5be5ad0b9b9ccf956e5bf93d92d51e5f82690ef0e405e9757c",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "process",
+      "mode": "neutral-dark",
+      "sha256": "0efe5591cc7848f274ab935e7bbf05b8beba098b4b4c225454c91214629ee38d",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "process",
+      "mode": "editorial",
+      "sha256": "4def9ae16651dcf7db9e1fcbc888dbe0d4278a5fbc648be41afdd7ba7e6b3d98",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "medallion",
+      "mode": "neutral-light",
+      "sha256": "0eec32bc20f17176f65773a33785514412c87ce6a8b2dba29c9e92e8948b8c9b",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "medallion",
+      "mode": "neutral-dark",
+      "sha256": "17594d9c8eaf015c152b49eefd81abc53006cc6217d57630b72a00de8ada1104",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "medallion",
+      "mode": "editorial",
+      "sha256": "6d104ca011dab96c60600d16aa895e11bcc7d643b3a2aab1831060cb205dd490",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "data-flow",
+      "mode": "neutral-light",
+      "sha256": "7b78a1fd399ca3bb6591bb5b7b21c3428fb07ce309e7e8b53f5670d977f8adb7",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "data-flow",
+      "mode": "neutral-dark",
+      "sha256": "2d10e8c18cfbe72aff545cdbeaef3e100ef5bc1621f229b557246ecd201855f4",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "data-flow",
+      "mode": "editorial",
+      "sha256": "8a10b57e828a2cac3336b3a8d72ebc59d027e036b6bfb793eb94e37e358f35d1",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "mode": "neutral-light",
+      "sha256": "8f3f996556613d59dc7d8cc0ef3447d7a179614b6fc20c6309945c6717d881d0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "mode": "neutral-dark",
+      "sha256": "0ef55ca1cfe3111b84c2eeeaeae1e3de372762987ca1a63eff1fecda45e6f2f1",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-integration",
+      "mode": "editorial",
+      "sha256": "06fb34424fd904cdbc8d1eab8a40e55550d490d8623e11ff0c449f826e8420e0",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "mode": "neutral-light",
+      "sha256": "bc8175f43d782b1321c7bd100263be896c1484cce0498cb542aea4777d127952",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "mode": "neutral-dark",
+      "sha256": "5345de8a2f2ea150e7ba4743797e7de393c0eed1544923f8bdaccd59fb7942c7",
+      "status": "pass"
+    },
+    {
+      "diagram_type": "dp-security-matrix",
+      "mode": "editorial",
+      "sha256": "00ef5383ba16b447f2a5723a9fc460c02c820d978704dc3a673990d1657a6f86",
+      "status": "pass"
+    }
+  ],
+  "variant_count": 16,
+  "variant_runs": [
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V01",
+      "mode": "neutral-light",
+      "parent": "architecture",
+      "sha256": "d96264aea0c0b7919a90b2606e382297dffefcaa46617e9b322e08a8f808513f",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V02",
+      "mode": "neutral-dark",
+      "parent": "architecture",
+      "sha256": "36317f275550ae057a4dc2bae12026fa72f0e7f2eab87ee686afa27e4474e0b1",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V03",
+      "mode": "editorial",
+      "parent": "architecture",
+      "sha256": "49382e0418fd612fd91ceb2834c4c37675ceac1c80fcff7933c97fcc38029d63",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V04",
+      "mode": "neutral-light",
+      "parent": "quadrant",
+      "sha256": "cad0e9d3800254a59b31b8c1a4a49e97d05f74b6235580094e2da7d2a725ee0d",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V05",
+      "mode": "neutral-light",
+      "parent": "bar-chart",
+      "sha256": "538f042a7ffe95a74af0dd6e6e31d718a0f24a94d56eec08114d987aca580f4e",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V06",
+      "mode": "neutral-light",
+      "parent": "bar-chart",
+      "sha256": "538f042a7ffe95a74af0dd6e6e31d718a0f24a94d56eec08114d987aca580f4e",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V07",
+      "mode": "neutral-light",
+      "parent": "pyramid-funnel",
+      "sha256": "814b683b32d962587acd9b06d145b5a47d2be34e0843ad6feb604dbb7f739175",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V08",
+      "mode": "neutral-light",
+      "parent": "pyramid-funnel",
+      "sha256": "814b683b32d962587acd9b06d145b5a47d2be34e0843ad6feb604dbb7f739175",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V09",
+      "mode": "neutral-light",
+      "parent": "sequence",
+      "sha256": "1af65b71d74e56607d104998a06d7aa3a109a07cdbb3092c0c8ffb3653a4ae06",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V10",
+      "mode": "neutral-light",
+      "parent": "high-level",
+      "sha256": "a64594f890dc35b0eafcace6f5fe17f414a3c77f0eafeb6ef6c82f1de056c543",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V11",
+      "mode": "neutral-light",
+      "parent": "medallion",
+      "sha256": "0eec32bc20f17176f65773a33785514412c87ce6a8b2dba29c9e92e8948b8c9b",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V12",
+      "mode": "neutral-light",
+      "parent": "architecture",
+      "sha256": "43df3c2ad475687237f788a661b9bc9bf637384c8d683eb0e602917c16777072",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V13",
+      "mode": "neutral-light",
+      "parent": "loop-flywheel",
+      "sha256": "5edd8c0ede5ca765a564a6749807860f608e14d8803472c12b7392eae94fa0cb",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V14",
+      "mode": "neutral-light",
+      "parent": "architecture",
+      "sha256": "d96264aea0c0b7919a90b2606e382297dffefcaa46617e9b322e08a8f808513f",
+      "status": "pass"
+    },
+    {
+      "boundary": "symbol asset remains deferred to P-09",
+      "capability_id": "CAP-V15",
+      "mode": "neutral-light",
+      "parent": "architecture",
+      "sha256": "d96264aea0c0b7919a90b2606e382297dffefcaa46617e9b322e08a8f808513f",
+      "status": "pass"
+    },
+    {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "capability_id": "CAP-V16",
+      "mode": "neutral-light",
+      "parent": "sequence",
+      "sha256": "1af65b71d74e56607d104998a06d7aa3a109a07cdbb3092c0c8ffb3653a4ae06",
+      "status": "pass"
+    }
+  ]
+}

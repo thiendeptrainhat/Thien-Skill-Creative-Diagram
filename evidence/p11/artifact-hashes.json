@@ -1,0 +1,6 @@
+{
+  "approved-p06-golden-manifest.json": "b5b57f94e038d605ef8799038ba2d652e7fa1eaa25541906d3062f821ab335ae",
+  "golden-review-report.json": "b9de938749acc67476db3291957356fa2f4a821909749582c78551eec1f3df3b",
+  "mutation-coverage-report.json": "1c1a098a4664b9e2a7f27f642f845fc9950a4b13fbb1e3e59348ea2c98255e8d",
+  "qa-run-report.json": "c80de57ea3a5daca45845ec1021e91b1e3f61afd8712d0345224249da5c8c19d"
+}

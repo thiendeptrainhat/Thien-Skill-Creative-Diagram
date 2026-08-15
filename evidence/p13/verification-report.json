@@ -1,0 +1,227 @@
+{
+  "archive_sha256": {
+    "claude-plugin": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+    "openai-plugin": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+    "universal-raw-skill": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f"
+  },
+  "candidate_id": "TCD-PACKAGES-1.0.0-RC1",
+  "checks": [
+    {
+      "check_id": "V-P13-001",
+      "detail": "Build record equals deterministic builder projection",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-002",
+      "detail": "All three ZIP bytes equal deterministic builder output",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-003",
+      "detail": "Checksum manifest exactly matches the three ZIP files",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-004",
+      "detail": "No undeclared ZIP exists in dist/",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-005",
+      "detail": "ZIP order, timestamp, mode, compression, uniqueness and one-top-level-folder invariants pass",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-006",
+      "detail": "No traversal, symlink-mode, QA, test, cache, secret or development-only member is packaged",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-007",
+      "detail": "No personal/development absolute path appears in packaged text",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-008",
+      "detail": "Every archive member path and byte matches its declared target mapping",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-008A",
+      "detail": "Every packaged JSON manifest/schema/reference parses successfully",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-008B",
+      "detail": "All packaged relative Markdown links resolve inside the same archive",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-008C",
+      "detail": "Canonical package-inventory validator passes every archive inventory",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-009",
+      "detail": "Runtime-core aggregate is byte-identical across all three packages",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-010",
+      "detail": "Six-file legal/provenance bundle is byte-identical across all three packages",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-011",
+      "detail": "G-06-approved RC2 aggregate and all six legal artifact hashes remain unchanged",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-012",
+      "detail": "Claude package contains no brand asset under D-028",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-013",
+      "detail": "OpenAI and Universal contain exactly the two D-028 brand destinations",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-014",
+      "detail": "OpenAI metadata overlay is excluded from Claude and included in OpenAI/Universal",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-015",
+      "detail": "All three extracted packages render Vietnamese HTML/SVG and transparently fall back from PNG without installing dependencies",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-016",
+      "detail": "Claude 2.1.183 validates the extracted Claude plugin manifest and layout",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-017",
+      "detail": "OpenAI manifest identity, skill path, UI fields and asset references resolve",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-018",
+      "detail": "All 15 approved surface rows retain honest conditional/unsupported status; none is promoted on documentary or structural evidence alone",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-019",
+      "detail": "SKILL.md common frontmatter name/description and folder identity remain valid",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P13-020",
+      "detail": "Current platform record uses only official Claude, OpenAI and Agent Skills sources",
+      "result": "PASS"
+    }
+  ],
+  "claude_validation": {
+    "command": [
+      "claude",
+      "plugin",
+      "validate",
+      "<TEMP>/claude-plugin/thien-skill-creative-diagram"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Validating plugin manifest: <TEMP>/claude-plugin/thien-skill-creative-diagram/.claude-plugin/plugin.json\n\n✔ Validation passed"
+  },
+  "legal_bundle_aggregate_sha256": "f5c9ac23fd5bff4e8303961cf309b8447243c5db4f4a5501574aafaa3545a94d",
+  "limits": [
+    "No conditional surface was promoted to supported because exact live account/marketplace/fresh-session conditions were not available in this local build context.",
+    "The OpenAI plugin-creator validator could not be executed with the workspace Python because PyYAML is absent; dependency installation was not attempted. Equivalent manifest/path invariants were checked dependency-free against the current official fields.",
+    "P-14, G-07, Git initialization/commit/tag/push and release were not performed."
+  ],
+  "openai_validation": {
+    "detail": "OpenAI manifest identity, skill path, UI fields and asset references resolve",
+    "passed": true
+  },
+  "record_id": "P13-VERIFICATION-1",
+  "runtime_core_aggregate_sha256": "35ad082905d7909a1180ba1807b7de15611b447db7925dc009953fe5ec1da564",
+  "smoke_results": {
+    "claude-plugin": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    },
+    "openai-plugin": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    },
+    "universal-raw-skill": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    }
+  },
+  "status": "P13-PASSED-READY-FOR-G05-EVALUATION",
+  "summary": {
+    "checks": 23,
+    "failed": 0,
+    "passed": 23
+  },
+  "tool_versions": {
+    "claude": {
+      "command": [
+        "claude",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "2.1.183 (Claude Code)"
+    },
+    "codex": {
+      "command": [
+        "codex",
+        "--version"
+      ],
+      "returncode": 0,
+      "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)",
+      "stdout": "codex-cli 0.146.0"
+    },
+    "python": "3.14.5"
+  },
+  "verified_at": "2026-08-15T00:00:00+07:00",
+  "version": "1.0.0"
+}

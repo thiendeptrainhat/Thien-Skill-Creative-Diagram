@@ -1,0 +1,1211 @@
+{
+  "authorization": "D-032",
+  "brand_decision": "D-028",
+  "built_at": "2026-08-15T00:00:00+07:00",
+  "candidate_id": "TCD-PACKAGES-1.0.0-RC1",
+  "canonical_source": "thien-skill-creative-diagram",
+  "legal_candidate_aggregate_sha256": "8f16380761cd6026166daa12ee36227d96e0e3b92ce605f4d9057624de8292c6",
+  "legal_candidate_id": "TCD-LEGAL-1.0.0-RC2",
+  "packages": [
+    {
+      "bytes": 178105,
+      "file_count": 63,
+      "filename": "thien-skill-creative-diagram-1.0.0-claude-plugin.zip",
+      "legal_bundle_aggregate_sha256": "f5c9ac23fd5bff4e8303961cf309b8447243c5db4f4a5501574aafaa3545a94d",
+      "members": [
+        {
+          "bytes": 360,
+          "path": "thien-skill-creative-diagram/.claude-plugin/plugin.json",
+          "role": "platform-overlay",
+          "sha256": "75f8b135353ff8e46da88a3b8903f1c31ff2ec2313fb012b1330bdfc10989317"
+        },
+        {
+          "bytes": 20481,
+          "path": "thien-skill-creative-diagram/ASSET_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "549651fd285035d31823e1020552011c69bf76c6a84dbe6e957fc03152897b2e"
+        },
+        {
+          "bytes": 8783,
+          "path": "thien-skill-creative-diagram/LICENSE-APPLICATION.md",
+          "role": "legal-provenance",
+          "sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381"
+        },
+        {
+          "bytes": 51371,
+          "path": "thien-skill-creative-diagram/LICENSE.md",
+          "role": "legal-provenance",
+          "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+        },
+        {
+          "bytes": 2124,
+          "path": "thien-skill-creative-diagram/NOTICE",
+          "role": "legal-provenance",
+          "sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0"
+        },
+        {
+          "bytes": 10457,
+          "path": "thien-skill-creative-diagram/SOURCE_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "f534b3ec80bb69923a4a692a35abecc1ab327677077aadcc90c24231c5d5dcb7"
+        },
+        {
+          "bytes": 832,
+          "path": "thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md",
+          "role": "legal-provenance",
+          "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+        },
+        {
+          "bytes": 7666,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/SKILL.md",
+          "role": "runtime-core",
+          "sha256": "e4c598c800e088035a2c095fdaa640fa3f004269d55b14b373865f31e9760925"
+        },
+        {
+          "bytes": 38163,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/capability-map.json",
+          "role": "runtime-core",
+          "sha256": "f4a040ba4f4e061e1d4a92f752e13b8bed5597919fa7f9c176b059e01eac0b89"
+        },
+        {
+          "bytes": 2086,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/import-security.md",
+          "role": "runtime-core",
+          "sha256": "740bbda5e7c6d370dc43533725e623cd28bb1943318fd52262c64bd3c3ea5395"
+        },
+        {
+          "bytes": 3162,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/output-motion.md",
+          "role": "runtime-core",
+          "sha256": "5e3b5821228d01fbbe7726094e71c0fb9003b9be81cee080339ba104d4bbf9b5"
+        },
+        {
+          "bytes": 4884,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/p08-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "3ef6980472e01968bed844588c5a10cd1bc8e57e905fe7f0071f788dd60339c3"
+        },
+        {
+          "bytes": 17374,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/p11-hard-failure-map.json",
+          "role": "runtime-core",
+          "sha256": "f1d8124682d390ddc294f572b4398127bdc3a3f58ec8acede05c1f3034aea26b"
+        },
+        {
+          "bytes": 2841,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/qa-golden.md",
+          "role": "runtime-core",
+          "sha256": "b7499df4ccc12f31ad2cf50f03002c567cecef37b24a4a0a7f0e799a2af451c4"
+        },
+        {
+          "bytes": 3836,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/request.schema.json",
+          "role": "runtime-core",
+          "sha256": "6f993a4fd6890a4dd183ba66578af73f53da429ddbdeef5654d9fa17742f40c2"
+        },
+        {
+          "bytes": 6962,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/router-ir.md",
+          "role": "runtime-core",
+          "sha256": "9093532ad7e4bcb5f19977bcef6508b93fd3772aae80823fc6a200a9a05709f3"
+        },
+        {
+          "bytes": 9985,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/semantic-ir.schema.json",
+          "role": "runtime-core",
+          "sha256": "01fb3c28b81d199230c14428bd48f2f5a7aa5b9367ded3e80a1217965cda7b78"
+        },
+        {
+          "bytes": 2099,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/specimen-map.json",
+          "role": "runtime-core",
+          "sha256": "3da8e3f192c38c9b5c3186d4f00795425ba85219729387dddd4cd94d3e4df16a"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-architecture.md",
+          "role": "runtime-core",
+          "sha256": "9b5e06cf5fb3bbb5d278578752fe1ffde5ff915de88315062e69f6e7a1c44bfa"
+        },
+        {
+          "bytes": 1599,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-bar-chart.md",
+          "role": "runtime-core",
+          "sha256": "8e55810933eaa35b651e9fc39ef3eb2c9abfd503b8b1d61ecc1b2db5a7ca2a81"
+        },
+        {
+          "bytes": 1624,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-data-flow.md",
+          "role": "runtime-core",
+          "sha256": "b9e2f4a2dcd2cf23be5cb91fad3faa55dab2491bc139796db9819442033dcb09"
+        },
+        {
+          "bytes": 1755,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-dp-integration.md",
+          "role": "runtime-core",
+          "sha256": "ba133716ded6f1f436c02af98c8c7cf35b9a1c378ef69ae79a6bd6fe52d7ce4e"
+        },
+        {
+          "bytes": 1666,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-dp-security-matrix.md",
+          "role": "runtime-core",
+          "sha256": "2e29f743c6bb4456b0547102e77af1a56e1f9913b5e67b8ca0d3b616141d95b9"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-er-data-model.md",
+          "role": "runtime-core",
+          "sha256": "fd004827aaf7248be8d8d317629dc0e1f10b6dce861931488de0a13c230695f9"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-flowchart.md",
+          "role": "runtime-core",
+          "sha256": "c7a2a230c296714196b56503b9253200a24ae11c2bd165ec9ef204dc6a4eec0c"
+        },
+        {
+          "bytes": 1519,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-gantt.md",
+          "role": "runtime-core",
+          "sha256": "4f0abd223b5ae54e32bd0d24c396e1fec0fde1b9419cbdb37086f081e868b1a9"
+        },
+        {
+          "bytes": 1718,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-high-level.md",
+          "role": "runtime-core",
+          "sha256": "7ea0daa53549ef161bb5adf06e77fadd6415310ed6e61d177d028968719f059e"
+        },
+        {
+          "bytes": 2957,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-index.md",
+          "role": "runtime-core",
+          "sha256": "8410db61090860b4d6da8b2dd904597e776c9a956f1f211f33b88221e6ef027d"
+        },
+        {
+          "bytes": 1645,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-it-current-state.md",
+          "role": "runtime-core",
+          "sha256": "38216f1333fc9b59122511bb7a84cfe62878cbbaa3026f7cc0d64b8b22578894"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-layer-stack.md",
+          "role": "runtime-core",
+          "sha256": "5a02c9ff15e64c6bc54ba4bdaca09160adfa3514fc7ded642350b14b7e9c8c59"
+        },
+        {
+          "bytes": 1538,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-line-chart.md",
+          "role": "runtime-core",
+          "sha256": "5ea1040f9e926b6390b03709c40724d5ee055a5551e54683035312ed48394752"
+        },
+        {
+          "bytes": 1566,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-loop-flywheel.md",
+          "role": "runtime-core",
+          "sha256": "3977c7f7bf167dec82aa06c2aec08f88b272c1471c880e58f16e5873055bc3a3"
+        },
+        {
+          "bytes": 1568,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-medallion.md",
+          "role": "runtime-core",
+          "sha256": "9abff785d7a84323e9b248efc3ab5358b0ac7bc077e7f5d548429ed6bddc01ee"
+        },
+        {
+          "bytes": 1515,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-nested.md",
+          "role": "runtime-core",
+          "sha256": "24e3ac01b6167a37d9d47bfd06fa853afd14e560f6898ce3e976281233a08efb"
+        },
+        {
+          "bytes": 1547,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-org-chart.md",
+          "role": "runtime-core",
+          "sha256": "44ae8ea5c337a2b28d7aa19cb2235a13550c373cdac2b026c1a91f6050a4ff19"
+        },
+        {
+          "bytes": 1615,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-process.md",
+          "role": "runtime-core",
+          "sha256": "54119e5b5ab180ba16c58ae337f36217956333e9211817103f0989fece946e33"
+        },
+        {
+          "bytes": 1575,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-pyramid-funnel.md",
+          "role": "runtime-core",
+          "sha256": "844ea14f6f2930e7243d74e0a730ee020e7e565e3249458b5a75bbcedc2aa00e"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-quadrant.md",
+          "role": "runtime-core",
+          "sha256": "bfffb0951d2efd08625feb894172da8c2487fc7c1cb155d2a2986cc92c156ba9"
+        },
+        {
+          "bytes": 1590,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-radar.md",
+          "role": "runtime-core",
+          "sha256": "e9c6e475e0a8cf841164e27a1aab161470a712094a116749b5a24f542ef8b24f"
+        },
+        {
+          "bytes": 1574,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-scatter-plot.md",
+          "role": "runtime-core",
+          "sha256": "9d3537bf4e41ef8a04a5196d912d4459ce9ec71c2514111792ef5824efca6833"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-sequence.md",
+          "role": "runtime-core",
+          "sha256": "34caf8601cac4c5373760596b9303a77a8ba6f050f3ec971bf7d19f69c0bc311"
+        },
+        {
+          "bytes": 1594,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-state-machine.md",
+          "role": "runtime-core",
+          "sha256": "389b8a5791e2715e1dcf82d8e48f6232c1c76ca3dc3dd7710566619c4704ae5d"
+        },
+        {
+          "bytes": 1625,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-swimlane.md",
+          "role": "runtime-core",
+          "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f"
+        },
+        {
+          "bytes": 1555,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-timeline.md",
+          "role": "runtime-core",
+          "sha256": "5a16897934608f543fca69df7ea711cee7c42acb00bcea67994b2c5844c7d7cf"
+        },
+        {
+          "bytes": 1398,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-tree.md",
+          "role": "runtime-core",
+          "sha256": "77a0d0520422ef6313356442d63e869571206291a88da83e040412a6dcf5aea8"
+        },
+        {
+          "bytes": 1554,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-venn.md",
+          "role": "runtime-core",
+          "sha256": "7caa6601fab6bb50d0ec3560a37c09651fc151d4f8e824d22bcb228094dce812"
+        },
+        {
+          "bytes": 29088,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "5de56ac4275029015bbec4e9adde67184fdade1416ff56035ca14b2973176abe"
+        },
+        {
+          "bytes": 1692,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-coverage.md",
+          "role": "runtime-core",
+          "sha256": "97e2e322a24d1677eae3e98575ab2da7769931d9a6a7fb06f40dbab2c493dbcf"
+        },
+        {
+          "bytes": 2772,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-system.json",
+          "role": "runtime-core",
+          "sha256": "77ab0f8c4e65bf213342aa07dd09445b3b1f8b5745e026c0aac637e993a8c2a8"
+        },
+        {
+          "bytes": 4912,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-system.md",
+          "role": "runtime-core",
+          "sha256": "10c54653c324630e167a442512498a5bd0a3eb14c64cd6b3ea8a598c91357196"
+        },
+        {
+          "bytes": 50684,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/diagram_core.py",
+          "role": "runtime-core",
+          "sha256": "02e4c74619d6a5e5d7619a112f61f550d8ebcdf47b8a0789c7058bc947d0b4c4"
+        },
+        {
+          "bytes": 31310,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/full_renderer.py",
+          "role": "runtime-core",
+          "sha256": "7ea93dd3a3e3535152732fa3fa76837246a2010195b3314cd51eac987ca7aa67"
+        },
+        {
+          "bytes": 4213,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/golden_review.py",
+          "role": "runtime-core",
+          "sha256": "208273be78acd89bda3cbe59ee9b4faa3f2c5db22993a14dbb5e7fe36cddda39"
+        },
+        {
+          "bytes": 2840,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/motion_catalog.py",
+          "role": "runtime-core",
+          "sha256": "be83b6e65482743d4e4bbc0069a59c4c8a9fb734d8a68e1aec1f696da1351b56"
+        },
+        {
+          "bytes": 30248,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/output_pipeline.py",
+          "role": "runtime-core",
+          "sha256": "1d3c83c3f927f672a325b8464580df85aa5ed1ba770bb5cbbec695171f8bbd32"
+        },
+        {
+          "bytes": 10787,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/pilot_cases.py",
+          "role": "runtime-core",
+          "sha256": "038af6eedec83c38b6f6ce57f3efc53d27e103dfdc86932a929629373c02e8f2"
+        },
+        {
+          "bytes": 31900,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/pilot_renderer.py",
+          "role": "runtime-core",
+          "sha256": "e79a4d9586a9e8e0adab9d177bfa873607c0ae6b676acc5e3d3a0738ba89f0ee"
+        },
+        {
+          "bytes": 27505,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/qa_contract.py",
+          "role": "runtime-core",
+          "sha256": "5dd7c75c05e60dd420c40284191e15db08441c1a99a6a51082474d7fe9a34d2d"
+        },
+        {
+          "bytes": 36417,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/safe_import.py",
+          "role": "runtime-core",
+          "sha256": "bfd6143365c69661fbf739b82e1b2a22776aa2f5deb0dd97c2403bdfa1c8dc4d"
+        },
+        {
+          "bytes": 39167,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_catalog.py",
+          "role": "runtime-core",
+          "sha256": "12da2aad3149a0f283bc2b399c313f7359eaab7cc5faab814cad29538655cc74"
+        },
+        {
+          "bytes": 28606,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_grammars.py",
+          "role": "runtime-core",
+          "sha256": "1c657c23dc0ed2c321e0a8761c93b45b47928566fdd899c68e8afec65134ce18"
+        },
+        {
+          "bytes": 9644,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_patterns.py",
+          "role": "runtime-core",
+          "sha256": "adaca12fe3d3d9ca9c5d3e523fb2beb16aba7c5935bab2e336acf707de5398cb"
+        },
+        {
+          "bytes": 7361,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/visual_system.py",
+          "role": "runtime-core",
+          "sha256": "48dbaaa91dd719fa128ac1bd6a17df495b7bf14799542588419dce6d49f0f5db"
+        }
+      ],
+      "runtime_core_aggregate_sha256": "35ad082905d7909a1180ba1807b7de15611b447db7925dc009953fe5ec1da564",
+      "sha256": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+      "target": "claude-plugin"
+    },
+    {
+      "bytes": 269167,
+      "file_count": 66,
+      "filename": "thien-skill-creative-diagram-1.0.0-openai-plugin.zip",
+      "legal_bundle_aggregate_sha256": "f5c9ac23fd5bff4e8303961cf309b8447243c5db4f4a5501574aafaa3545a94d",
+      "members": [
+        {
+          "bytes": 957,
+          "path": "thien-skill-creative-diagram/.codex-plugin/plugin.json",
+          "role": "platform-overlay",
+          "sha256": "eff46545566401c950cdc019d74686f87efbbddc23b9138b96e7d8ed51b16672"
+        },
+        {
+          "bytes": 20481,
+          "path": "thien-skill-creative-diagram/ASSET_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "549651fd285035d31823e1020552011c69bf76c6a84dbe6e957fc03152897b2e"
+        },
+        {
+          "bytes": 8783,
+          "path": "thien-skill-creative-diagram/LICENSE-APPLICATION.md",
+          "role": "legal-provenance",
+          "sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381"
+        },
+        {
+          "bytes": 51371,
+          "path": "thien-skill-creative-diagram/LICENSE.md",
+          "role": "legal-provenance",
+          "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+        },
+        {
+          "bytes": 2124,
+          "path": "thien-skill-creative-diagram/NOTICE",
+          "role": "legal-provenance",
+          "sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0"
+        },
+        {
+          "bytes": 10457,
+          "path": "thien-skill-creative-diagram/SOURCE_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "f534b3ec80bb69923a4a692a35abecc1ab327677077aadcc90c24231c5d5dcb7"
+        },
+        {
+          "bytes": 832,
+          "path": "thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md",
+          "role": "legal-provenance",
+          "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+        },
+        {
+          "bytes": 85814,
+          "path": "thien-skill-creative-diagram/assets/brand/full-crest-plate-light-400.png",
+          "role": "brand-presentation",
+          "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453"
+        },
+        {
+          "bytes": 4430,
+          "path": "thien-skill-creative-diagram/assets/brand/full-crest-plate-light-64.png",
+          "role": "brand-presentation",
+          "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de"
+        },
+        {
+          "bytes": 7666,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/SKILL.md",
+          "role": "runtime-core",
+          "sha256": "e4c598c800e088035a2c095fdaa640fa3f004269d55b14b373865f31e9760925"
+        },
+        {
+          "bytes": 229,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/agents/openai.yaml",
+          "role": "platform-overlay",
+          "sha256": "92ae4ff25cab334f7b647185437774079e72313d7e655875f74811989a016720"
+        },
+        {
+          "bytes": 38163,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/capability-map.json",
+          "role": "runtime-core",
+          "sha256": "f4a040ba4f4e061e1d4a92f752e13b8bed5597919fa7f9c176b059e01eac0b89"
+        },
+        {
+          "bytes": 2086,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/import-security.md",
+          "role": "runtime-core",
+          "sha256": "740bbda5e7c6d370dc43533725e623cd28bb1943318fd52262c64bd3c3ea5395"
+        },
+        {
+          "bytes": 3162,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/output-motion.md",
+          "role": "runtime-core",
+          "sha256": "5e3b5821228d01fbbe7726094e71c0fb9003b9be81cee080339ba104d4bbf9b5"
+        },
+        {
+          "bytes": 4884,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/p08-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "3ef6980472e01968bed844588c5a10cd1bc8e57e905fe7f0071f788dd60339c3"
+        },
+        {
+          "bytes": 17374,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/p11-hard-failure-map.json",
+          "role": "runtime-core",
+          "sha256": "f1d8124682d390ddc294f572b4398127bdc3a3f58ec8acede05c1f3034aea26b"
+        },
+        {
+          "bytes": 2841,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/qa-golden.md",
+          "role": "runtime-core",
+          "sha256": "b7499df4ccc12f31ad2cf50f03002c567cecef37b24a4a0a7f0e799a2af451c4"
+        },
+        {
+          "bytes": 3836,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/request.schema.json",
+          "role": "runtime-core",
+          "sha256": "6f993a4fd6890a4dd183ba66578af73f53da429ddbdeef5654d9fa17742f40c2"
+        },
+        {
+          "bytes": 6962,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/router-ir.md",
+          "role": "runtime-core",
+          "sha256": "9093532ad7e4bcb5f19977bcef6508b93fd3772aae80823fc6a200a9a05709f3"
+        },
+        {
+          "bytes": 9985,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/semantic-ir.schema.json",
+          "role": "runtime-core",
+          "sha256": "01fb3c28b81d199230c14428bd48f2f5a7aa5b9367ded3e80a1217965cda7b78"
+        },
+        {
+          "bytes": 2099,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/specimen-map.json",
+          "role": "runtime-core",
+          "sha256": "3da8e3f192c38c9b5c3186d4f00795425ba85219729387dddd4cd94d3e4df16a"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-architecture.md",
+          "role": "runtime-core",
+          "sha256": "9b5e06cf5fb3bbb5d278578752fe1ffde5ff915de88315062e69f6e7a1c44bfa"
+        },
+        {
+          "bytes": 1599,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-bar-chart.md",
+          "role": "runtime-core",
+          "sha256": "8e55810933eaa35b651e9fc39ef3eb2c9abfd503b8b1d61ecc1b2db5a7ca2a81"
+        },
+        {
+          "bytes": 1624,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-data-flow.md",
+          "role": "runtime-core",
+          "sha256": "b9e2f4a2dcd2cf23be5cb91fad3faa55dab2491bc139796db9819442033dcb09"
+        },
+        {
+          "bytes": 1755,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-dp-integration.md",
+          "role": "runtime-core",
+          "sha256": "ba133716ded6f1f436c02af98c8c7cf35b9a1c378ef69ae79a6bd6fe52d7ce4e"
+        },
+        {
+          "bytes": 1666,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-dp-security-matrix.md",
+          "role": "runtime-core",
+          "sha256": "2e29f743c6bb4456b0547102e77af1a56e1f9913b5e67b8ca0d3b616141d95b9"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-er-data-model.md",
+          "role": "runtime-core",
+          "sha256": "fd004827aaf7248be8d8d317629dc0e1f10b6dce861931488de0a13c230695f9"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-flowchart.md",
+          "role": "runtime-core",
+          "sha256": "c7a2a230c296714196b56503b9253200a24ae11c2bd165ec9ef204dc6a4eec0c"
+        },
+        {
+          "bytes": 1519,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-gantt.md",
+          "role": "runtime-core",
+          "sha256": "4f0abd223b5ae54e32bd0d24c396e1fec0fde1b9419cbdb37086f081e868b1a9"
+        },
+        {
+          "bytes": 1718,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-high-level.md",
+          "role": "runtime-core",
+          "sha256": "7ea0daa53549ef161bb5adf06e77fadd6415310ed6e61d177d028968719f059e"
+        },
+        {
+          "bytes": 2957,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-index.md",
+          "role": "runtime-core",
+          "sha256": "8410db61090860b4d6da8b2dd904597e776c9a956f1f211f33b88221e6ef027d"
+        },
+        {
+          "bytes": 1645,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-it-current-state.md",
+          "role": "runtime-core",
+          "sha256": "38216f1333fc9b59122511bb7a84cfe62878cbbaa3026f7cc0d64b8b22578894"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-layer-stack.md",
+          "role": "runtime-core",
+          "sha256": "5a02c9ff15e64c6bc54ba4bdaca09160adfa3514fc7ded642350b14b7e9c8c59"
+        },
+        {
+          "bytes": 1538,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-line-chart.md",
+          "role": "runtime-core",
+          "sha256": "5ea1040f9e926b6390b03709c40724d5ee055a5551e54683035312ed48394752"
+        },
+        {
+          "bytes": 1566,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-loop-flywheel.md",
+          "role": "runtime-core",
+          "sha256": "3977c7f7bf167dec82aa06c2aec08f88b272c1471c880e58f16e5873055bc3a3"
+        },
+        {
+          "bytes": 1568,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-medallion.md",
+          "role": "runtime-core",
+          "sha256": "9abff785d7a84323e9b248efc3ab5358b0ac7bc077e7f5d548429ed6bddc01ee"
+        },
+        {
+          "bytes": 1515,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-nested.md",
+          "role": "runtime-core",
+          "sha256": "24e3ac01b6167a37d9d47bfd06fa853afd14e560f6898ce3e976281233a08efb"
+        },
+        {
+          "bytes": 1547,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-org-chart.md",
+          "role": "runtime-core",
+          "sha256": "44ae8ea5c337a2b28d7aa19cb2235a13550c373cdac2b026c1a91f6050a4ff19"
+        },
+        {
+          "bytes": 1615,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-process.md",
+          "role": "runtime-core",
+          "sha256": "54119e5b5ab180ba16c58ae337f36217956333e9211817103f0989fece946e33"
+        },
+        {
+          "bytes": 1575,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-pyramid-funnel.md",
+          "role": "runtime-core",
+          "sha256": "844ea14f6f2930e7243d74e0a730ee020e7e565e3249458b5a75bbcedc2aa00e"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-quadrant.md",
+          "role": "runtime-core",
+          "sha256": "bfffb0951d2efd08625feb894172da8c2487fc7c1cb155d2a2986cc92c156ba9"
+        },
+        {
+          "bytes": 1590,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-radar.md",
+          "role": "runtime-core",
+          "sha256": "e9c6e475e0a8cf841164e27a1aab161470a712094a116749b5a24f542ef8b24f"
+        },
+        {
+          "bytes": 1574,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-scatter-plot.md",
+          "role": "runtime-core",
+          "sha256": "9d3537bf4e41ef8a04a5196d912d4459ce9ec71c2514111792ef5824efca6833"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-sequence.md",
+          "role": "runtime-core",
+          "sha256": "34caf8601cac4c5373760596b9303a77a8ba6f050f3ec971bf7d19f69c0bc311"
+        },
+        {
+          "bytes": 1594,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-state-machine.md",
+          "role": "runtime-core",
+          "sha256": "389b8a5791e2715e1dcf82d8e48f6232c1c76ca3dc3dd7710566619c4704ae5d"
+        },
+        {
+          "bytes": 1625,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-swimlane.md",
+          "role": "runtime-core",
+          "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f"
+        },
+        {
+          "bytes": 1555,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-timeline.md",
+          "role": "runtime-core",
+          "sha256": "5a16897934608f543fca69df7ea711cee7c42acb00bcea67994b2c5844c7d7cf"
+        },
+        {
+          "bytes": 1398,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-tree.md",
+          "role": "runtime-core",
+          "sha256": "77a0d0520422ef6313356442d63e869571206291a88da83e040412a6dcf5aea8"
+        },
+        {
+          "bytes": 1554,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/type-venn.md",
+          "role": "runtime-core",
+          "sha256": "7caa6601fab6bb50d0ec3560a37c09651fc151d4f8e824d22bcb228094dce812"
+        },
+        {
+          "bytes": 29088,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "5de56ac4275029015bbec4e9adde67184fdade1416ff56035ca14b2973176abe"
+        },
+        {
+          "bytes": 1692,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-coverage.md",
+          "role": "runtime-core",
+          "sha256": "97e2e322a24d1677eae3e98575ab2da7769931d9a6a7fb06f40dbab2c493dbcf"
+        },
+        {
+          "bytes": 2772,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-system.json",
+          "role": "runtime-core",
+          "sha256": "77ab0f8c4e65bf213342aa07dd09445b3b1f8b5745e026c0aac637e993a8c2a8"
+        },
+        {
+          "bytes": 4912,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/references/visual-system.md",
+          "role": "runtime-core",
+          "sha256": "10c54653c324630e167a442512498a5bd0a3eb14c64cd6b3ea8a598c91357196"
+        },
+        {
+          "bytes": 50684,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/diagram_core.py",
+          "role": "runtime-core",
+          "sha256": "02e4c74619d6a5e5d7619a112f61f550d8ebcdf47b8a0789c7058bc947d0b4c4"
+        },
+        {
+          "bytes": 31310,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/full_renderer.py",
+          "role": "runtime-core",
+          "sha256": "7ea93dd3a3e3535152732fa3fa76837246a2010195b3314cd51eac987ca7aa67"
+        },
+        {
+          "bytes": 4213,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/golden_review.py",
+          "role": "runtime-core",
+          "sha256": "208273be78acd89bda3cbe59ee9b4faa3f2c5db22993a14dbb5e7fe36cddda39"
+        },
+        {
+          "bytes": 2840,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/motion_catalog.py",
+          "role": "runtime-core",
+          "sha256": "be83b6e65482743d4e4bbc0069a59c4c8a9fb734d8a68e1aec1f696da1351b56"
+        },
+        {
+          "bytes": 30248,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/output_pipeline.py",
+          "role": "runtime-core",
+          "sha256": "1d3c83c3f927f672a325b8464580df85aa5ed1ba770bb5cbbec695171f8bbd32"
+        },
+        {
+          "bytes": 10787,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/pilot_cases.py",
+          "role": "runtime-core",
+          "sha256": "038af6eedec83c38b6f6ce57f3efc53d27e103dfdc86932a929629373c02e8f2"
+        },
+        {
+          "bytes": 31900,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/pilot_renderer.py",
+          "role": "runtime-core",
+          "sha256": "e79a4d9586a9e8e0adab9d177bfa873607c0ae6b676acc5e3d3a0738ba89f0ee"
+        },
+        {
+          "bytes": 27505,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/qa_contract.py",
+          "role": "runtime-core",
+          "sha256": "5dd7c75c05e60dd420c40284191e15db08441c1a99a6a51082474d7fe9a34d2d"
+        },
+        {
+          "bytes": 36417,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/safe_import.py",
+          "role": "runtime-core",
+          "sha256": "bfd6143365c69661fbf739b82e1b2a22776aa2f5deb0dd97c2403bdfa1c8dc4d"
+        },
+        {
+          "bytes": 39167,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_catalog.py",
+          "role": "runtime-core",
+          "sha256": "12da2aad3149a0f283bc2b399c313f7359eaab7cc5faab814cad29538655cc74"
+        },
+        {
+          "bytes": 28606,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_grammars.py",
+          "role": "runtime-core",
+          "sha256": "1c657c23dc0ed2c321e0a8761c93b45b47928566fdd899c68e8afec65134ce18"
+        },
+        {
+          "bytes": 9644,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/semantic_patterns.py",
+          "role": "runtime-core",
+          "sha256": "adaca12fe3d3d9ca9c5d3e523fb2beb16aba7c5935bab2e336acf707de5398cb"
+        },
+        {
+          "bytes": 7361,
+          "path": "thien-skill-creative-diagram/skills/thien-skill-creative-diagram/scripts/visual_system.py",
+          "role": "runtime-core",
+          "sha256": "48dbaaa91dd719fa128ac1bd6a17df495b7bf14799542588419dce6d49f0f5db"
+        }
+      ],
+      "runtime_core_aggregate_sha256": "35ad082905d7909a1180ba1807b7de15611b447db7925dc009953fe5ec1da564",
+      "sha256": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+      "target": "openai-plugin"
+    },
+    {
+      "bytes": 264452,
+      "file_count": 65,
+      "filename": "thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip",
+      "legal_bundle_aggregate_sha256": "f5c9ac23fd5bff4e8303961cf309b8447243c5db4f4a5501574aafaa3545a94d",
+      "members": [
+        {
+          "bytes": 20481,
+          "path": "thien-skill-creative-diagram/ASSET_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "549651fd285035d31823e1020552011c69bf76c6a84dbe6e957fc03152897b2e"
+        },
+        {
+          "bytes": 8783,
+          "path": "thien-skill-creative-diagram/LICENSE-APPLICATION.md",
+          "role": "legal-provenance",
+          "sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381"
+        },
+        {
+          "bytes": 51371,
+          "path": "thien-skill-creative-diagram/LICENSE.md",
+          "role": "legal-provenance",
+          "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+        },
+        {
+          "bytes": 2124,
+          "path": "thien-skill-creative-diagram/NOTICE",
+          "role": "legal-provenance",
+          "sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0"
+        },
+        {
+          "bytes": 7666,
+          "path": "thien-skill-creative-diagram/SKILL.md",
+          "role": "runtime-core",
+          "sha256": "e4c598c800e088035a2c095fdaa640fa3f004269d55b14b373865f31e9760925"
+        },
+        {
+          "bytes": 10457,
+          "path": "thien-skill-creative-diagram/SOURCE_MANIFEST.json",
+          "role": "legal-provenance",
+          "sha256": "f534b3ec80bb69923a4a692a35abecc1ab327677077aadcc90c24231c5d5dcb7"
+        },
+        {
+          "bytes": 832,
+          "path": "thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md",
+          "role": "legal-provenance",
+          "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+        },
+        {
+          "bytes": 352,
+          "path": "thien-skill-creative-diagram/agents/openai.yaml",
+          "role": "platform-overlay",
+          "sha256": "e9c00570df2d73f74eaa051dabbe8cb0c83c32280b857efd5124307476ef8156"
+        },
+        {
+          "bytes": 85814,
+          "path": "thien-skill-creative-diagram/assets/brand/full-crest-plate-light-400.png",
+          "role": "brand-presentation",
+          "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453"
+        },
+        {
+          "bytes": 4430,
+          "path": "thien-skill-creative-diagram/assets/brand/full-crest-plate-light-64.png",
+          "role": "brand-presentation",
+          "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de"
+        },
+        {
+          "bytes": 38163,
+          "path": "thien-skill-creative-diagram/references/capability-map.json",
+          "role": "runtime-core",
+          "sha256": "f4a040ba4f4e061e1d4a92f752e13b8bed5597919fa7f9c176b059e01eac0b89"
+        },
+        {
+          "bytes": 2086,
+          "path": "thien-skill-creative-diagram/references/import-security.md",
+          "role": "runtime-core",
+          "sha256": "740bbda5e7c6d370dc43533725e623cd28bb1943318fd52262c64bd3c3ea5395"
+        },
+        {
+          "bytes": 3162,
+          "path": "thien-skill-creative-diagram/references/output-motion.md",
+          "role": "runtime-core",
+          "sha256": "5e3b5821228d01fbbe7726094e71c0fb9003b9be81cee080339ba104d4bbf9b5"
+        },
+        {
+          "bytes": 4884,
+          "path": "thien-skill-creative-diagram/references/p08-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "3ef6980472e01968bed844588c5a10cd1bc8e57e905fe7f0071f788dd60339c3"
+        },
+        {
+          "bytes": 17374,
+          "path": "thien-skill-creative-diagram/references/p11-hard-failure-map.json",
+          "role": "runtime-core",
+          "sha256": "f1d8124682d390ddc294f572b4398127bdc3a3f58ec8acede05c1f3034aea26b"
+        },
+        {
+          "bytes": 2841,
+          "path": "thien-skill-creative-diagram/references/qa-golden.md",
+          "role": "runtime-core",
+          "sha256": "b7499df4ccc12f31ad2cf50f03002c567cecef37b24a4a0a7f0e799a2af451c4"
+        },
+        {
+          "bytes": 3836,
+          "path": "thien-skill-creative-diagram/references/request.schema.json",
+          "role": "runtime-core",
+          "sha256": "6f993a4fd6890a4dd183ba66578af73f53da429ddbdeef5654d9fa17742f40c2"
+        },
+        {
+          "bytes": 6962,
+          "path": "thien-skill-creative-diagram/references/router-ir.md",
+          "role": "runtime-core",
+          "sha256": "9093532ad7e4bcb5f19977bcef6508b93fd3772aae80823fc6a200a9a05709f3"
+        },
+        {
+          "bytes": 9985,
+          "path": "thien-skill-creative-diagram/references/semantic-ir.schema.json",
+          "role": "runtime-core",
+          "sha256": "01fb3c28b81d199230c14428bd48f2f5a7aa5b9367ded3e80a1217965cda7b78"
+        },
+        {
+          "bytes": 2099,
+          "path": "thien-skill-creative-diagram/references/specimen-map.json",
+          "role": "runtime-core",
+          "sha256": "3da8e3f192c38c9b5c3186d4f00795425ba85219729387dddd4cd94d3e4df16a"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/references/type-architecture.md",
+          "role": "runtime-core",
+          "sha256": "9b5e06cf5fb3bbb5d278578752fe1ffde5ff915de88315062e69f6e7a1c44bfa"
+        },
+        {
+          "bytes": 1599,
+          "path": "thien-skill-creative-diagram/references/type-bar-chart.md",
+          "role": "runtime-core",
+          "sha256": "8e55810933eaa35b651e9fc39ef3eb2c9abfd503b8b1d61ecc1b2db5a7ca2a81"
+        },
+        {
+          "bytes": 1624,
+          "path": "thien-skill-creative-diagram/references/type-data-flow.md",
+          "role": "runtime-core",
+          "sha256": "b9e2f4a2dcd2cf23be5cb91fad3faa55dab2491bc139796db9819442033dcb09"
+        },
+        {
+          "bytes": 1755,
+          "path": "thien-skill-creative-diagram/references/type-dp-integration.md",
+          "role": "runtime-core",
+          "sha256": "ba133716ded6f1f436c02af98c8c7cf35b9a1c378ef69ae79a6bd6fe52d7ce4e"
+        },
+        {
+          "bytes": 1666,
+          "path": "thien-skill-creative-diagram/references/type-dp-security-matrix.md",
+          "role": "runtime-core",
+          "sha256": "2e29f743c6bb4456b0547102e77af1a56e1f9913b5e67b8ca0d3b616141d95b9"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/references/type-er-data-model.md",
+          "role": "runtime-core",
+          "sha256": "fd004827aaf7248be8d8d317629dc0e1f10b6dce861931488de0a13c230695f9"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/references/type-flowchart.md",
+          "role": "runtime-core",
+          "sha256": "c7a2a230c296714196b56503b9253200a24ae11c2bd165ec9ef204dc6a4eec0c"
+        },
+        {
+          "bytes": 1519,
+          "path": "thien-skill-creative-diagram/references/type-gantt.md",
+          "role": "runtime-core",
+          "sha256": "4f0abd223b5ae54e32bd0d24c396e1fec0fde1b9419cbdb37086f081e868b1a9"
+        },
+        {
+          "bytes": 1718,
+          "path": "thien-skill-creative-diagram/references/type-high-level.md",
+          "role": "runtime-core",
+          "sha256": "7ea0daa53549ef161bb5adf06e77fadd6415310ed6e61d177d028968719f059e"
+        },
+        {
+          "bytes": 2957,
+          "path": "thien-skill-creative-diagram/references/type-index.md",
+          "role": "runtime-core",
+          "sha256": "8410db61090860b4d6da8b2dd904597e776c9a956f1f211f33b88221e6ef027d"
+        },
+        {
+          "bytes": 1645,
+          "path": "thien-skill-creative-diagram/references/type-it-current-state.md",
+          "role": "runtime-core",
+          "sha256": "38216f1333fc9b59122511bb7a84cfe62878cbbaa3026f7cc0d64b8b22578894"
+        },
+        {
+          "bytes": 1591,
+          "path": "thien-skill-creative-diagram/references/type-layer-stack.md",
+          "role": "runtime-core",
+          "sha256": "5a02c9ff15e64c6bc54ba4bdaca09160adfa3514fc7ded642350b14b7e9c8c59"
+        },
+        {
+          "bytes": 1538,
+          "path": "thien-skill-creative-diagram/references/type-line-chart.md",
+          "role": "runtime-core",
+          "sha256": "5ea1040f9e926b6390b03709c40724d5ee055a5551e54683035312ed48394752"
+        },
+        {
+          "bytes": 1566,
+          "path": "thien-skill-creative-diagram/references/type-loop-flywheel.md",
+          "role": "runtime-core",
+          "sha256": "3977c7f7bf167dec82aa06c2aec08f88b272c1471c880e58f16e5873055bc3a3"
+        },
+        {
+          "bytes": 1568,
+          "path": "thien-skill-creative-diagram/references/type-medallion.md",
+          "role": "runtime-core",
+          "sha256": "9abff785d7a84323e9b248efc3ab5358b0ac7bc077e7f5d548429ed6bddc01ee"
+        },
+        {
+          "bytes": 1515,
+          "path": "thien-skill-creative-diagram/references/type-nested.md",
+          "role": "runtime-core",
+          "sha256": "24e3ac01b6167a37d9d47bfd06fa853afd14e560f6898ce3e976281233a08efb"
+        },
+        {
+          "bytes": 1547,
+          "path": "thien-skill-creative-diagram/references/type-org-chart.md",
+          "role": "runtime-core",
+          "sha256": "44ae8ea5c337a2b28d7aa19cb2235a13550c373cdac2b026c1a91f6050a4ff19"
+        },
+        {
+          "bytes": 1615,
+          "path": "thien-skill-creative-diagram/references/type-process.md",
+          "role": "runtime-core",
+          "sha256": "54119e5b5ab180ba16c58ae337f36217956333e9211817103f0989fece946e33"
+        },
+        {
+          "bytes": 1575,
+          "path": "thien-skill-creative-diagram/references/type-pyramid-funnel.md",
+          "role": "runtime-core",
+          "sha256": "844ea14f6f2930e7243d74e0a730ee020e7e565e3249458b5a75bbcedc2aa00e"
+        },
+        {
+          "bytes": 1605,
+          "path": "thien-skill-creative-diagram/references/type-quadrant.md",
+          "role": "runtime-core",
+          "sha256": "bfffb0951d2efd08625feb894172da8c2487fc7c1cb155d2a2986cc92c156ba9"
+        },
+        {
+          "bytes": 1590,
+          "path": "thien-skill-creative-diagram/references/type-radar.md",
+          "role": "runtime-core",
+          "sha256": "e9c6e475e0a8cf841164e27a1aab161470a712094a116749b5a24f542ef8b24f"
+        },
+        {
+          "bytes": 1574,
+          "path": "thien-skill-creative-diagram/references/type-scatter-plot.md",
+          "role": "runtime-core",
+          "sha256": "9d3537bf4e41ef8a04a5196d912d4459ce9ec71c2514111792ef5824efca6833"
+        },
+        {
+          "bytes": 1602,
+          "path": "thien-skill-creative-diagram/references/type-sequence.md",
+          "role": "runtime-core",
+          "sha256": "34caf8601cac4c5373760596b9303a77a8ba6f050f3ec971bf7d19f69c0bc311"
+        },
+        {
+          "bytes": 1594,
+          "path": "thien-skill-creative-diagram/references/type-state-machine.md",
+          "role": "runtime-core",
+          "sha256": "389b8a5791e2715e1dcf82d8e48f6232c1c76ca3dc3dd7710566619c4704ae5d"
+        },
+        {
+          "bytes": 1625,
+          "path": "thien-skill-creative-diagram/references/type-swimlane.md",
+          "role": "runtime-core",
+          "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f"
+        },
+        {
+          "bytes": 1555,
+          "path": "thien-skill-creative-diagram/references/type-timeline.md",
+          "role": "runtime-core",
+          "sha256": "5a16897934608f543fca69df7ea711cee7c42acb00bcea67994b2c5844c7d7cf"
+        },
+        {
+          "bytes": 1398,
+          "path": "thien-skill-creative-diagram/references/type-tree.md",
+          "role": "runtime-core",
+          "sha256": "77a0d0520422ef6313356442d63e869571206291a88da83e040412a6dcf5aea8"
+        },
+        {
+          "bytes": 1554,
+          "path": "thien-skill-creative-diagram/references/type-venn.md",
+          "role": "runtime-core",
+          "sha256": "7caa6601fab6bb50d0ec3560a37c09651fc151d4f8e824d22bcb228094dce812"
+        },
+        {
+          "bytes": 29088,
+          "path": "thien-skill-creative-diagram/references/visual-coverage-map.json",
+          "role": "runtime-core",
+          "sha256": "5de56ac4275029015bbec4e9adde67184fdade1416ff56035ca14b2973176abe"
+        },
+        {
+          "bytes": 1692,
+          "path": "thien-skill-creative-diagram/references/visual-coverage.md",
+          "role": "runtime-core",
+          "sha256": "97e2e322a24d1677eae3e98575ab2da7769931d9a6a7fb06f40dbab2c493dbcf"
+        },
+        {
+          "bytes": 2772,
+          "path": "thien-skill-creative-diagram/references/visual-system.json",
+          "role": "runtime-core",
+          "sha256": "77ab0f8c4e65bf213342aa07dd09445b3b1f8b5745e026c0aac637e993a8c2a8"
+        },
+        {
+          "bytes": 4912,
+          "path": "thien-skill-creative-diagram/references/visual-system.md",
+          "role": "runtime-core",
+          "sha256": "10c54653c324630e167a442512498a5bd0a3eb14c64cd6b3ea8a598c91357196"
+        },
+        {
+          "bytes": 50684,
+          "path": "thien-skill-creative-diagram/scripts/diagram_core.py",
+          "role": "runtime-core",
+          "sha256": "02e4c74619d6a5e5d7619a112f61f550d8ebcdf47b8a0789c7058bc947d0b4c4"
+        },
+        {
+          "bytes": 31310,
+          "path": "thien-skill-creative-diagram/scripts/full_renderer.py",
+          "role": "runtime-core",
+          "sha256": "7ea93dd3a3e3535152732fa3fa76837246a2010195b3314cd51eac987ca7aa67"
+        },
+        {
+          "bytes": 4213,
+          "path": "thien-skill-creative-diagram/scripts/golden_review.py",
+          "role": "runtime-core",
+          "sha256": "208273be78acd89bda3cbe59ee9b4faa3f2c5db22993a14dbb5e7fe36cddda39"
+        },
+        {
+          "bytes": 2840,
+          "path": "thien-skill-creative-diagram/scripts/motion_catalog.py",
+          "role": "runtime-core",
+          "sha256": "be83b6e65482743d4e4bbc0069a59c4c8a9fb734d8a68e1aec1f696da1351b56"
+        },
+        {
+          "bytes": 30248,
+          "path": "thien-skill-creative-diagram/scripts/output_pipeline.py",
+          "role": "runtime-core",
+          "sha256": "1d3c83c3f927f672a325b8464580df85aa5ed1ba770bb5cbbec695171f8bbd32"
+        },
+        {
+          "bytes": 10787,
+          "path": "thien-skill-creative-diagram/scripts/pilot_cases.py",
+          "role": "runtime-core",
+          "sha256": "038af6eedec83c38b6f6ce57f3efc53d27e103dfdc86932a929629373c02e8f2"
+        },
+        {
+          "bytes": 31900,
+          "path": "thien-skill-creative-diagram/scripts/pilot_renderer.py",
+          "role": "runtime-core",
+          "sha256": "e79a4d9586a9e8e0adab9d177bfa873607c0ae6b676acc5e3d3a0738ba89f0ee"
+        },
+        {
+          "bytes": 27505,
+          "path": "thien-skill-creative-diagram/scripts/qa_contract.py",
+          "role": "runtime-core",
+          "sha256": "5dd7c75c05e60dd420c40284191e15db08441c1a99a6a51082474d7fe9a34d2d"
+        },
+        {
+          "bytes": 36417,
+          "path": "thien-skill-creative-diagram/scripts/safe_import.py",
+          "role": "runtime-core",
+          "sha256": "bfd6143365c69661fbf739b82e1b2a22776aa2f5deb0dd97c2403bdfa1c8dc4d"
+        },
+        {
+          "bytes": 39167,
+          "path": "thien-skill-creative-diagram/scripts/semantic_catalog.py",
+          "role": "runtime-core",
+          "sha256": "12da2aad3149a0f283bc2b399c313f7359eaab7cc5faab814cad29538655cc74"
+        },
+        {
+          "bytes": 28606,
+          "path": "thien-skill-creative-diagram/scripts/semantic_grammars.py",
+          "role": "runtime-core",
+          "sha256": "1c657c23dc0ed2c321e0a8761c93b45b47928566fdd899c68e8afec65134ce18"
+        },
+        {
+          "bytes": 9644,
+          "path": "thien-skill-creative-diagram/scripts/semantic_patterns.py",
+          "role": "runtime-core",
+          "sha256": "adaca12fe3d3d9ca9c5d3e523fb2beb16aba7c5935bab2e336acf707de5398cb"
+        },
+        {
+          "bytes": 7361,
+          "path": "thien-skill-creative-diagram/scripts/visual_system.py",
+          "role": "runtime-core",
+          "sha256": "48dbaaa91dd719fa128ac1bd6a17df495b7bf14799542588419dce6d49f0f5db"
+        }
+      ],
+      "runtime_core_aggregate_sha256": "35ad082905d7909a1180ba1807b7de15611b447db7925dc009953fe5ec1da564",
+      "sha256": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f",
+      "target": "universal-raw-skill"
+    }
+  ],
+  "record_id": "P13-PACKAGE-BUILD-1",
+  "version": "1.0.0",
+  "zip_timestamp": "2026-08-15T00:00:00"
+}

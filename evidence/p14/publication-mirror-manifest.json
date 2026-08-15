@@ -1,0 +1,107 @@
+{
+  "aggregate_excludes_generated_manifest": true,
+  "candidate": "TCD-RELEASE-1.0.0-RC1",
+  "changed_file_count": 5,
+  "changed_files": [
+    {
+      "mirror_sha256": "b87a5c02b38533d911dcd09b242406d8c02bd9fd11575ecd9c9c5338f061e792",
+      "path": "HANDOFF-P01.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "workspace"
+        },
+        {
+          "count": 1,
+          "replacement_id": "ui_ux_reference"
+        },
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        }
+      ],
+      "source_sha256": "e3648b4d8273ca3f7bf88557842897978bf3f527b838eef66c57ad84cc27b06f"
+    },
+    {
+      "mirror_sha256": "c181a77dc68832bb1e2082664b1c2df09cdb7fd9e5b29d25fb366d5cf4214f75",
+      "path": "PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        },
+        {
+          "count": 1,
+          "replacement_id": "owner_license_template"
+        }
+      ],
+      "source_sha256": "01db9c70dfc3a66bf223759f675fa6a07fa7a9faed6046c922b2e8f431bd32e9"
+    },
+    {
+      "mirror_sha256": "3d8558b97ee0fa639dccc8c69bad14e9a200daeab3d0f45517047bfd0cee8e58",
+      "path": "evidence/p01/SNAPSHOT-RECORD.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "ui_ux_reference"
+        }
+      ],
+      "source_sha256": "f6544d36e078a0dae784fd1b63881df907d484b9bd79f8a2a3ee8ecea2480a6f"
+    },
+    {
+      "mirror_sha256": "ec956a8507c532917ab7226ba2a44bc0a050ffa1d5c3adc0344167675e4ba732",
+      "path": "evidence/p09/P-09-EVIDENCE.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        }
+      ],
+      "source_sha256": "89ac01ae05b4ac541598510b52b486a099928215d0d10ac9462237eea4204eec"
+    },
+    {
+      "mirror_sha256": "63d6c2aa1d914ea868b984f2dcda2307c40daf26a03fa53265ad09159c860c5f",
+      "path": "evidence/p13/verify_packages.py",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "local_plugin_validator"
+        }
+      ],
+      "source_sha256": "02646a0bc42acb96ff8e40ab9d4e61d1da0c3080a9b8de103dc46fe41cf4d925"
+    }
+  ],
+  "decision": "D-036",
+  "excluded_classes": [
+    ".DS_Store",
+    ".git",
+    ".mypy_cache",
+    ".pyc",
+    ".pyo",
+    ".pytest_cache",
+    ".release-staging",
+    ".ruff_cache",
+    ".swp",
+    ".tmp",
+    "__pycache__",
+    "node_modules"
+  ],
+  "generated_manifest_path": "evidence/p14/publication-mirror-manifest.json",
+  "generic_security_patterns_preserved": [
+    "validator regex for absolute paths",
+    "generic /Users/example test fixture"
+  ],
+  "git_or_release_mutation_performed": false,
+  "mirror_file_count_including_manifest": 274,
+  "mirror_root": "<LOCAL_RELEASE_STAGING>/TCD-RELEASE-1.0.0-RC1",
+  "personal_machine_path_scan": {
+    "forbidden_token": "/Users/<owner>",
+    "matches": 0,
+    "result": "PASS"
+  },
+  "publication_scope": "A_FULL_PRIVATE_AUDIT_REPOSITORY_SANITIZED_MIRROR",
+  "record_id": "P14-PUBLICATION-MIRROR-1",
+  "source_file_count": 273,
+  "source_root": "<LOCAL_WORKSPACE>",
+  "tree_aggregate_sha256": "5162f55be96c48e9699d222034a2eb34c611812c2cd3754ecf2d1cc4c354336f"
+}

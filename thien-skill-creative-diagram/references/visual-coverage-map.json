@@ -1,0 +1,961 @@
+{
+  "capabilities": {
+    "CAP-F01": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F01-FAIL"
+    },
+    "CAP-F02": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F02-FAIL"
+    },
+    "CAP-F03": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F03-FAIL"
+    },
+    "CAP-F04": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F04-FAIL"
+    },
+    "CAP-F05": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F05-FAIL"
+    },
+    "CAP-F06": {
+      "boundary": "P-07 named non-destructive failure",
+      "class": "failure",
+      "p07_disposition": "implemented-safe-failure",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-F06-FAIL"
+    },
+    "CAP-F07": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F08": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F09": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F10": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F11": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F12": {
+      "boundary": "production exporter or motion failure remains deferred to P-08",
+      "class": "failure",
+      "p07_disposition": "static-fallback-evidenced",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-F13": {
+      "boundary": "existing P-04/P-05 behavior retained",
+      "class": "failure",
+      "p07_disposition": "integrated-existing-failure-contract",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04",
+      "visual_or_import_evidence": "T-P07-REGRESSION"
+    },
+    "CAP-F14": {
+      "boundary": "existing P-04/P-05 behavior retained",
+      "class": "failure",
+      "p07_disposition": "integrated-existing-failure-contract",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-05",
+      "visual_or_import_evidence": "T-P07-REGRESSION"
+    },
+    "CAP-I01": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I01-IMPORT"
+    },
+    "CAP-I02": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I02-IMPORT"
+    },
+    "CAP-I03": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I03-IMPORT"
+    },
+    "CAP-I04": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I04-IMPORT"
+    },
+    "CAP-I05": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I05-IMPORT"
+    },
+    "CAP-I06": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I06-IMPORT"
+    },
+    "CAP-I07": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I07-IMPORT"
+    },
+    "CAP-I08": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I08-IMPORT"
+    },
+    "CAP-I09": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I09-IMPORT"
+    },
+    "CAP-I10": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I10-IMPORT"
+    },
+    "CAP-I11": {
+      "boundary": "bounded inert P-07 parser/redraw path",
+      "class": "import-fidelity",
+      "p07_disposition": "implemented-safe-import",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-07",
+      "visual_or_import_evidence": "T-P07-CAP-I11-IMPORT"
+    },
+    "CAP-I12": {
+      "boundary": "P-04 invariant integrated into P-07 imports",
+      "class": "import-fidelity",
+      "p07_disposition": "integrated-fidelity-reconciliation",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04",
+      "visual_or_import_evidence": "T-P07-FIDELITY"
+    },
+    "CAP-M01": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M02": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M03": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M04": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M05": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M06": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M07": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M08": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M09": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M10": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M11": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-M12": {
+      "boundary": "motion remains deferred to P-08",
+      "class": "motion",
+      "p07_disposition": "complete-static-fallback-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O01": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O02": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-06",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O03": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-05",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O04": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-04/P-06",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O05": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O06": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-O07": {
+      "boundary": "production export remains deferred to P-08",
+      "class": "output",
+      "p07_disposition": "static-coverage-smoke",
+      "parents": [
+        "cross-type"
+      ],
+      "phase_owner": "P-08",
+      "visual_or_import_evidence": "T-P07-P08-BOUNDARY"
+    },
+    "CAP-P01": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "data-flow"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P02": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "process"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P03": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "data-flow"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P04": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "flowchart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P05": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "architecture"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P06": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "layer-stack"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-P07": {
+      "boundary": "rendered under the existing canonical parent",
+      "class": "semantic-pattern",
+      "p07_disposition": "implemented-parent-pattern-smoke",
+      "parents": [
+        "layer-stack"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-7-PATTERNS"
+    },
+    "CAP-T01": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "architecture"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T02": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "it-current-state"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T03": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "flowchart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T04": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "sequence"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T05": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "state-machine"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T06": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "er-data-model"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T07": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "timeline"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T08": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "swimlane"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T09": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "quadrant"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T10": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "radar"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T11": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "loop-flywheel"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T12": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "nested"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T13": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "tree"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T14": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "org-chart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T15": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "layer-stack"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T16": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "venn"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T17": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "pyramid-funnel"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T18": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "bar-chart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T19": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "line-chart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T20": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "gantt"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T21": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "scatter-plot"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T22": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "high-level"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T23": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "process"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T24": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "medallion"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T25": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "data-flow"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T26": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "dp-integration"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-T27": {
+      "boundary": "P-07 static SVG coverage",
+      "class": "canonical-type",
+      "p07_disposition": "implemented-static-visual-3-mode",
+      "parents": [
+        "dp-security-matrix"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-27X3-VISUAL"
+    },
+    "CAP-V01": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V02": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V03": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V04": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "quadrant"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V05": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "bar-chart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V06": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "bar-chart"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V07": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "pyramid-funnel"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V08": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "pyramid-funnel"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V09": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "sequence"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V10": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "high-level"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V11": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "medallion",
+        "dp-integration",
+        "high-level"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V12": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V13": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "loop-flywheel"
+      ],
+      "phase_owner": "P-06",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V14": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V15": {
+      "boundary": "symbol asset remains deferred to P-09",
+      "class": "variant",
+      "p07_disposition": "text-equivalent-fallback",
+      "parents": [
+        "all"
+      ],
+      "phase_owner": "P-09",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    },
+    "CAP-V16": {
+      "boundary": "P-07 presentation or semantic variant coverage",
+      "class": "variant",
+      "p07_disposition": "implemented-static-variant-smoke",
+      "parents": [
+        "sequence"
+      ],
+      "phase_owner": "P-05",
+      "visual_or_import_evidence": "T-P07-16-VARIANTS"
+    }
+  },
+  "capability_count": 95,
+  "p08_boundary": "Production export and motion remain deferred; this map records static coverage/fallback only.",
+  "phase": "P-07",
+  "schema_version": "1.0",
+  "specimen_count": 97
+}

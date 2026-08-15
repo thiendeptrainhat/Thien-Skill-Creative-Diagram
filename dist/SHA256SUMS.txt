@@ -1,0 +1,3 @@
+bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9  thien-skill-creative-diagram-1.0.0-claude-plugin.zip
+7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c  thien-skill-creative-diagram-1.0.0-openai-plugin.zip
+4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f  thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip

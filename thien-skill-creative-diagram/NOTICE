@@ -1,0 +1,24 @@
+THIEN-SKILL-CREATIVE-DIAGRAM NOTICE
+
+Version: 1.0.0
+Candidate status: EXACT RC2 — awaiting Vietnamese-lawyer approval; not authorized for release
+Owner: Tran Ngoc Thien, an individual in Ho Chi Minh City, Vietnam
+Licensing contact: thien.8888@gmail.com
+
+Copyright notice
+Copyright © 2026 Tran Ngoc Thien for project-original material to the extent protected and owned or licensable by him. No ownership is asserted here over third-party material.
+
+License application
+Use is governed by Tran Ngoc Thien's Skill Commercial Source-Available License 2.0 together with LICENSE-APPLICATION.md and an applicable Paid Order, Written Permission/email, or Commercial Agreement. Viewing or receiving source does not itself create usage rights. The Vietnamese license text prevails in a conflict.
+
+Brand carve-out
+The TDTN name, crest, logo, marks, identity, and goodwill are excluded from the general skill/code grant. ASSET_MANIFEST.json records an owner-provided AI-created raster master, its hash, deterministic derivatives, approval state, and limitations. It does not claim trademark registration, clearance, or protectability.
+
+Provenance
+SOURCE_MANIFEST.json is the machine-readable source ledger. THIRD_PARTY_NOTICES.md is an exact deterministic projection of its notice-selected records. The current projection contains 1 external functional-reference entry. That reference transferred no code, prose, CSS, template, script, specimen, or asset bytes into this project.
+
+Asset state
+ASSET_MANIFEST.json records 16 owner-approved derivatives at 64px or larger and 6 QA-only 32/48px derivatives excluded from v1.0.0. Under D-028, only the light-plate 64px and 400px derivatives target the OpenAI plugin and Universal raw skill under assets/brand; Claude receives no brand asset. The other owner-approved derivatives remain provenance-only and are not packaged in v1.0.0. No asset is release-eligible before G-06 and P-13 execution.
+
+Release control
+This candidate is not release authorization. Vietnamese counsel must approve the exact legal-candidate version/hash, and G-06 must pass, before package construction can begin.

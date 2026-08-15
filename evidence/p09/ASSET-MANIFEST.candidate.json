@@ -1,0 +1,846 @@
+{
+  "approval": {
+    "approval_ref": "P09-OWNER-A-2026-08-15",
+    "decision": "D-027",
+    "minimum_size_px": 64,
+    "option": "A",
+    "release_blockers": [
+      "P-10 and G-06 legal/provenance approval",
+      "P-13 platform mapping and package build"
+    ],
+    "release_eligible": false,
+    "simplified_mark": "not-created-for-v1.0.0",
+    "state": "owner-approved-selection"
+  },
+  "candidates": [
+    {
+      "alpha_bbox": [
+        204,
+        95,
+        819,
+        928
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 518863,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-1024.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "21ad34d49d29c381c7d81abe14d29b29ee16a109b5f98e2113afb3659b8788b1",
+      "variant_id": "full-crest-transparent-1024"
+    },
+    {
+      "alpha_bbox": [
+        101,
+        46,
+        410,
+        462
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 161516,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-512.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "20a83423a77ac03177b244c808b83b224177ab6123061c24d2ec7415bd0dd516",
+      "variant_id": "full-crest-transparent-512"
+    },
+    {
+      "alpha_bbox": [
+        78,
+        36,
+        321,
+        361
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 108798,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-400.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "b0b93f8b523a636299465678ac47bd3a51a9e19a94fed65ebd4f8b8e2ea3512e",
+      "variant_id": "full-crest-transparent-400"
+    },
+    {
+      "alpha_bbox": [
+        49,
+        23,
+        206,
+        232
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 53560,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-256.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "5982799c7be383590e4b3d97cd25e9038ea4f4d5609ff94138c6d7f979831bdc",
+      "variant_id": "full-crest-transparent-256"
+    },
+    {
+      "alpha_bbox": [
+        23,
+        11,
+        104,
+        116
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 17911,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-128.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "088a2cf1f07da32815f973978ee510018d7a229dee2ec5fbfc31b99196a9f73a",
+      "variant_id": "full-crest-transparent-128"
+    },
+    {
+      "alpha_bbox": [
+        11,
+        6,
+        53,
+        58
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 5779,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-64.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "4955305d5d6cdebe8e8cbf07d27591ea7be7ac9fc2f76c362cae7079206719c3",
+      "variant_id": "full-crest-transparent-64"
+    },
+    {
+      "alpha_bbox": [
+        7,
+        4,
+        40,
+        43
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 3638,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-48.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "6d827db4e74360e5d51edcdc6716153d19f56ee679e9c3a60bd52902825093ce",
+      "variant_id": "full-crest-transparent-48"
+    },
+    {
+      "alpha_bbox": [
+        4,
+        3,
+        28,
+        29
+      ],
+      "alt": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 1986,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-transparent-32.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "operation": "proportional-downsample-complete-master-and-center",
+        "resampling": "Pillow LANCZOS",
+        "scale": 0.82
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "c3da2b083a423470889f0dc150245224a4cc5b4ba05513644f91efde50378cf0",
+      "variant_id": "full-crest-transparent-32"
+    },
+    {
+      "alpha_bbox": [
+        13,
+        13,
+        499,
+        499
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 127827,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-512.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "ad17e260a194f5750b8b91c84a152a78683c1519bba13079f84a4d4301079371",
+      "variant_id": "full-crest-plate-light-512"
+    },
+    {
+      "alpha_bbox": [
+        10,
+        10,
+        390,
+        390
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 85814,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-400.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453",
+      "variant_id": "full-crest-plate-light-400"
+    },
+    {
+      "alpha_bbox": [
+        6,
+        6,
+        250,
+        250
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 41722,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-256.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "75d36d549af791e102d2ed21080102321100ccf53f8608d8edc45773d5413322",
+      "variant_id": "full-crest-plate-light-256"
+    },
+    {
+      "alpha_bbox": [
+        3,
+        3,
+        125,
+        125
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 13938,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-128.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "0f14b393d3bf5cd4a90900c9ba4b08d7763221fc19ffd9166448792e700cd3a1",
+      "variant_id": "full-crest-plate-light-128"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        62,
+        62
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 4430,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-64.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de",
+      "variant_id": "full-crest-plate-light-64"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        46,
+        46
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 2910,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-48.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "85272ce501fae7f91544d2739d0d5264909d0a9540e3f11f2199a99f2864e416",
+      "variant_id": "full-crest-plate-light-48"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "alt": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 1554,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-light-32.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "ea752191839952a901967b8335f3468e49df50752b24375cb81a041af1b32d52",
+      "variant_id": "full-crest-plate-light-32"
+    },
+    {
+      "alpha_bbox": [
+        13,
+        13,
+        499,
+        499
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 123272,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-512.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "6bba9325d05f9f26cf0410b0a72ad3c8247514226513493181704a2be01c6502",
+      "variant_id": "full-crest-plate-dark-512"
+    },
+    {
+      "alpha_bbox": [
+        10,
+        10,
+        390,
+        390
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 81941,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-400.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "eb49f13f9fc5bd53be5942d19b9351b82a3410424575c6e45fab1f957635f004",
+      "variant_id": "full-crest-plate-dark-400"
+    },
+    {
+      "alpha_bbox": [
+        6,
+        6,
+        250,
+        250
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 39303,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-256.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "b8c35974524f4620d97029563c55398d661a07afc43191a0ca46d51beb75d9cd",
+      "variant_id": "full-crest-plate-dark-256"
+    },
+    {
+      "alpha_bbox": [
+        3,
+        3,
+        125,
+        125
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 12958,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-128.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "5d477309169b66de919a4574765478403097bef4e5d837fc6668c6ac1fae010a",
+      "variant_id": "full-crest-plate-dark-128"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        62,
+        62
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-approved",
+      "bytes": 4108,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-64.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "approved-brand-derivative",
+      "sha256": "ffe7d296a75cee9b5df1f8eeba40179e87436d772f65195154b20a6469f7d256",
+      "variant_id": "full-crest-plate-dark-64"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        46,
+        46
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 2704,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        48,
+        48
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-48.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "396a2d069d111e8373e6723c628d362c6031d022cd16bf3d70d00e882a561400",
+      "variant_id": "full-crest-plate-dark-48"
+    },
+    {
+      "alpha_bbox": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "alt": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "approval_state": "owner-excluded-qa-only",
+      "bytes": 1462,
+      "destination_status": "candidate; exact platform mapping deferred to P-13",
+      "dimensions": [
+        32,
+        32
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "mode": "RGBA",
+      "path": "candidates/full-crest-plate-dark-32.png",
+      "recipe": {
+        "encoding": "lossless PNG with standard sRGB chunk",
+        "mark_scale": 0.74,
+        "operation": "separate-rounded-plate-plus-proportional-complete-master",
+        "palette": {
+          "gold": "#C3AA75",
+          "ink": "#10213A",
+          "line": "#D7DCE5",
+          "muted": "#5E6A7C",
+          "navy": "#071A33",
+          "parchment": "#F8F5E8",
+          "white": "#FFFFFF"
+        },
+        "resampling": "Pillow LANCZOS"
+      },
+      "release_eligible": false,
+      "selection_state": "qa-only",
+      "sha256": "c5d5daa3ad7c83b11562b5827015b496f95c7de73375d686d34d80de138d611c",
+      "variant_id": "full-crest-plate-dark-32"
+    }
+  ],
+  "date": "2026-08-15",
+  "generation": {
+    "color_space": "standard PNG sRGB chunk",
+    "dependency_install": "none",
+    "metadata_policy": "derivatives contain no copied EXIF/XMP; provenance stays in this manifest",
+    "network": "none",
+    "pillow": "12.3.0",
+    "python": "3.12.13",
+    "script": "generate_brand_assets.py"
+  },
+  "master": {
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "immutable": true,
+    "mode": "RGBA",
+    "origin_note": "owner-provided AI-created raster; no vector source",
+    "ownership_basis": "owner assertion recorded in PROJECT-CONTRACT.md D-016",
+    "package_targets": [],
+    "path": "source/Logo-TDTN-master.png",
+    "sha256": "020a47a3c831664c700c9e4491c7ae00cf5a8f330e6c3c57422ee246df56d69e"
+  },
+  "palette_note": "Candidate presentation tones measured from visible master pixels; not a trademark, clearance, or final brand-token claim.",
+  "preview": {
+    "alpha_bbox": [
+      0,
+      0,
+      1900,
+      1660
+    ],
+    "bytes": 430634,
+    "dimensions": [
+      1900,
+      1660
+    ],
+    "mode": "RGB",
+    "path": "previews/contact-sheet.png",
+    "sha256": "4edc73ca21fab5b92af47c13961f01993f830edbd2e78d3ff07e59de1d5ee80f"
+  },
+  "record_id": "P09-ASSET-CANDIDATE-1",
+  "schema_version": "1.0",
+  "scope": "P-09 QA-only candidate assets; not a release ASSET_MANIFEST"
+}

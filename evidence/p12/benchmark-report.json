@@ -1,0 +1,2096 @@
+{
+  "approval": {
+    "approval_ref": "P12-G04-OWNER-2026-08-15",
+    "exact_candidate_inputs": "owner-approved",
+    "g04": "PASS",
+    "goldens": "owner-approved",
+    "technical_qa_review": "owner-confirmed-sufficient",
+    "visual_rubric": "owner-approved"
+  },
+  "approved_golden_manifest": {
+    "approval": "owner-approved",
+    "artifact_count": 18,
+    "immutable": true,
+    "path": "approved-p12-golden-manifest.json",
+    "sha256": "b78d9d82051a08f07a6af6518b43af20f4e2d49af2ae1dcb0cce10a0f139c1d6"
+  },
+  "boundary": {
+    "cases": 27,
+    "detected": 27,
+    "rows": [
+      {
+        "case_id": "E2-B01",
+        "detected": true,
+        "failure": "boundary-required",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-B02",
+        "detected": true,
+        "failure": "node-state-required",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-B03",
+        "detected": true,
+        "failure": "decision-guard-required",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-B04",
+        "detected": true,
+        "failure": "edge-order-invalid",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-B05",
+        "detected": true,
+        "failure": "missing-role-terminal",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-B06",
+        "detected": true,
+        "failure": "cardinality-required",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-B07",
+        "detected": true,
+        "failure": "chronology-out-of-order",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-B08",
+        "detected": true,
+        "failure": "cross-lane-handoff-required",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-B09",
+        "detected": true,
+        "failure": "coordinate-out-of-domain",
+        "type": "quadrant"
+      },
+      {
+        "case_id": "E2-B10",
+        "detected": true,
+        "failure": "incompatible-axis-domain",
+        "type": "radar"
+      },
+      {
+        "case_id": "E2-B11",
+        "detected": true,
+        "failure": "cycle-required",
+        "type": "loop-flywheel"
+      },
+      {
+        "case_id": "E2-B12",
+        "detected": true,
+        "failure": "nested-group-required",
+        "type": "nested"
+      },
+      {
+        "case_id": "E2-B13",
+        "detected": true,
+        "failure": "tree-parent-count",
+        "type": "tree"
+      },
+      {
+        "case_id": "E2-B14",
+        "detected": true,
+        "failure": "primary-reporting-required",
+        "type": "org-chart"
+      },
+      {
+        "case_id": "E2-B15",
+        "detected": true,
+        "failure": "layer-order-duplicate",
+        "type": "layer-stack"
+      },
+      {
+        "case_id": "E2-B16",
+        "detected": true,
+        "failure": "minimum-two-groups",
+        "type": "venn"
+      },
+      {
+        "case_id": "E2-B17",
+        "detected": true,
+        "failure": "single-series-required",
+        "type": "pyramid-funnel"
+      },
+      {
+        "case_id": "E2-B18",
+        "detected": true,
+        "failure": "bar-zero-baseline",
+        "type": "bar-chart"
+      },
+      {
+        "case_id": "E2-B19",
+        "detected": true,
+        "failure": "domain-order-invalid",
+        "type": "line-chart"
+      },
+      {
+        "case_id": "E2-B20",
+        "detected": true,
+        "failure": "end-before-start",
+        "type": "gantt"
+      },
+      {
+        "case_id": "E2-B21",
+        "detected": true,
+        "failure": "missingness-mismatch",
+        "type": "scatter-plot"
+      },
+      {
+        "case_id": "E2-B22",
+        "detected": true,
+        "failure": "cross-cutting-annotation-required",
+        "type": "high-level"
+      },
+      {
+        "case_id": "E2-B23",
+        "detected": true,
+        "failure": "missing-role-artifact",
+        "type": "process"
+      },
+      {
+        "case_id": "E2-B24",
+        "detected": true,
+        "failure": "promotion-edge-required",
+        "type": "medallion"
+      },
+      {
+        "case_id": "E2-B25",
+        "detected": true,
+        "failure": "data-flow-role-missing",
+        "type": "data-flow"
+      },
+      {
+        "case_id": "E2-B26",
+        "detected": true,
+        "failure": "integration-role-missing",
+        "type": "dp-integration"
+      },
+      {
+        "case_id": "E2-B27",
+        "detected": true,
+        "failure": "permission-matrix-incomplete",
+        "type": "dp-security-matrix"
+      }
+    ]
+  },
+  "browser": {
+    "claim": "not a browser or cross-browser pass",
+    "reason": "in-app browser URL policy rejected the local file:// contact sheet; no workaround attempted",
+    "status": "blocked / not executable"
+  },
+  "candidate_artifacts": [
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-neutral-light.svg",
+      "risk": "must-pass",
+      "sha256": "4cb2354cf1f68dd2dc77c7613bfef655403f555d95fcebfeff9c5875dc44af80"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-neutral-light.html",
+      "risk": "must-pass",
+      "sha256": "f31d8b50a3cc58fbfad25acdcd8498f11ff009354a382530f000660ab1469f4c"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-neutral-dark.svg",
+      "risk": "must-pass",
+      "sha256": "a5e86b933921a09d3def34d68fe9ce84633660bda6e49fc6d7ccfb5aa437700d"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-neutral-dark.html",
+      "risk": "must-pass",
+      "sha256": "d1d35426aa16ab15807f0a169d2eae20b5e0df768531d881aa7b9d3fd12a4140"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-editorial.svg",
+      "risk": "must-pass",
+      "sha256": "87992cae6f7262ffabb73731a21919b916937b5a9769bac5e81180a2f32c2a8f"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-editorial.html",
+      "risk": "must-pass",
+      "sha256": "b5a7960c8b71741c6f5454447f65d2040d0c3312a9cb45c6b455245b3b5c2763"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-architecture",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-architecture-editorial.html",
+      "risk": "cross-boundary-connectors",
+      "sha256": "5ee939fcd3dfee86ea1ccee72dcbe7f488181f9ed9205719138b48250f840836"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-architecture",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-architecture-editorial.svg",
+      "risk": "cross-boundary-connectors",
+      "sha256": "c2f5bd963671ca201ac27679b5bb47019253270ed5d225422cc7760114844649"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-bar-chart",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-bar-chart-neutral-light.html",
+      "risk": "zero-baseline-and-exact-data",
+      "sha256": "b5efac795256564539f53a5755184a5500e6d6edf42cf961d9927d9dc24fa5e6"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-bar-chart",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-bar-chart-neutral-light.svg",
+      "risk": "zero-baseline-and-exact-data",
+      "sha256": "ba3cac198af255bf69afa714add7bd378cd57767427bedfce867a1ae5e8390fb"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-scatter-plot",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-scatter-plot-editorial.html",
+      "risk": "dense-250-point-suite-is-separate",
+      "sha256": "603d1bf019297065dc0cff60f6abf97057c9bd0bc07a6103973d6dc3d26237c9"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-scatter-plot",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-scatter-plot-editorial.svg",
+      "risk": "dense-250-point-suite-is-separate",
+      "sha256": "d1bcb9974652d85bcafaa88c14e53472121681ccf1301b7baac41e07430767ea"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-sequence",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-sequence-neutral-dark.html",
+      "risk": "ordered-messages",
+      "sha256": "72bd96586b7b49760b52e14f72d9498001b1a0b770a9b9d7cfcb45285338f816"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-sequence",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-sequence-neutral-dark.svg",
+      "risk": "ordered-messages",
+      "sha256": "27db71175b6b6cc83b12c2cf148352ff02be058db0bda375eccf860fe70ad5a8"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-radar",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-radar-neutral-light.html",
+      "risk": "shared-scale",
+      "sha256": "464cf6e1d46bfb088a1d95a8908579e220e3fe9b2afcdc5817caf439b3575788"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-radar",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-radar-neutral-light.svg",
+      "risk": "shared-scale",
+      "sha256": "5f4044060323d96f29d1ca9f9e6c968c054c4f4b9cca43ee5c08d29f0ab2c16f"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-dp-security-matrix",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-dp-security-matrix-editorial.html",
+      "risk": "non-color-permission-state",
+      "sha256": "c87da0026d18ce53aeeebb3140343b74e120124737fcf7155b40a9111dd15080"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "approval_state": "owner-approved",
+      "case_id": "E2-dp-security-matrix",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-dp-security-matrix-editorial.svg",
+      "risk": "non-color-permission-state",
+      "sha256": "4db433b72e567e126fb6d9748c42070759495b590332113b2cff8a1f3bf7265c"
+    }
+  ],
+  "candidate_inputs": {
+    "approval_state": "owner-approved",
+    "case_count": 27,
+    "golden_eligible": true,
+    "path": "candidate-inputs.json"
+  },
+  "canonical": {
+    "base_renders": 81,
+    "modes": [
+      "neutral-light",
+      "neutral-dark",
+      "editorial"
+    ],
+    "positive_cases": 27,
+    "rows": [
+      {
+        "case_id": "E2-T01",
+        "ir_hash": "da2ebf42618dc4f3e0a95437f7ce5084ff5d63d2bc1a067f9ac3f31738d805b1",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "7f183a2caea9ffdf18acaf4fea9dccd645407d42c7b5b7522669e9da5cf10330",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-T01",
+        "ir_hash": "da2ebf42618dc4f3e0a95437f7ce5084ff5d63d2bc1a067f9ac3f31738d805b1",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "8b4aa34aa3984b11e87e059cd01187ed7338f71ea9a4b428e2b27321b39dfae4",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-T01",
+        "ir_hash": "da2ebf42618dc4f3e0a95437f7ce5084ff5d63d2bc1a067f9ac3f31738d805b1",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "7907cde79a7cf1910e6287f4435795926957baf953709f15aa0e9b30c7bba244",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-T02",
+        "ir_hash": "a2d14c7b96c8d9cfd29de15839cad403933ca73d6a8bc0971b7777d252619986",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "08bc92556ffd67c9db0811c0cb8801cf901cf88b2d11e16d0194173e545e2b2d",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-T02",
+        "ir_hash": "a2d14c7b96c8d9cfd29de15839cad403933ca73d6a8bc0971b7777d252619986",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "bcaabd5efceb3ec085c8ea525a3b18eaf872fc98a3c26eb5604083e13e94f117",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-T02",
+        "ir_hash": "a2d14c7b96c8d9cfd29de15839cad403933ca73d6a8bc0971b7777d252619986",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "9222c3302b881f7851847357b3c2e7e5dba505c1e9070300c321ac65ab6c5517",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-T03",
+        "ir_hash": "b1b3c680ff42b2a24f1a724a7f983ddbde23cb01fc6afbcf83d53c18587b88ef",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "37538f1475365b305eca8a41d3565d2002398d7bbbbb1753a98193f2aa102764",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-T03",
+        "ir_hash": "b1b3c680ff42b2a24f1a724a7f983ddbde23cb01fc6afbcf83d53c18587b88ef",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "7de38f0970619f6ca1fb5957b4a4b83676f9be5a1b3e3fd38afd3205a9b9d507",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-T03",
+        "ir_hash": "b1b3c680ff42b2a24f1a724a7f983ddbde23cb01fc6afbcf83d53c18587b88ef",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "f0755346beab9a18f743a2aca9f0f2fc38bb32fed327fcc4b92498b02e71d0d5",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-T04",
+        "ir_hash": "0ac98db707fc830c471f286b064a715e49e6e423d342d6aae474ed431832480c",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "1bc6440cd28e60f2a767a56dc307bf91d2c92e8ba15d309c1d6ff6171f74bd00",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-T04",
+        "ir_hash": "0ac98db707fc830c471f286b064a715e49e6e423d342d6aae474ed431832480c",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "1d5b1ca3b70c2b857a229e08836c63d7dcd785f5ce665d3ac5f370941301263b",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-T04",
+        "ir_hash": "0ac98db707fc830c471f286b064a715e49e6e423d342d6aae474ed431832480c",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "c3b53883e9de15cfbe74925501ae7aebdd5d63c5d4829612f4ee375b6c050c28",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-T05",
+        "ir_hash": "b05a12ea33a5f29dcb9333b46052e480fe25dc75a192d9dafc744df9c649ddc0",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "295d4674e848ce7aa7aed5e585833f97fbe39664f42d1d48dd330c587d8ef220",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-T05",
+        "ir_hash": "b05a12ea33a5f29dcb9333b46052e480fe25dc75a192d9dafc744df9c649ddc0",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "916118dec597e6086f5dd87a2b3a6e72c1be3c632c44aef56977fd2635383593",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-T05",
+        "ir_hash": "b05a12ea33a5f29dcb9333b46052e480fe25dc75a192d9dafc744df9c649ddc0",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "d434f05741ab8a0c7273fd27d9a1e7dcf0a35c93bc8ef6c2b4ff6a8c960a853e",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-T06",
+        "ir_hash": "1b52b1a6cf5ecac15b8b3085879436b575c5bf5dee73af415d427d04d0979ba0",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "e75cf87216d631ecc2ffd7589e62f5cdad6a16e074c361837eb5e66b4854523f",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-T06",
+        "ir_hash": "1b52b1a6cf5ecac15b8b3085879436b575c5bf5dee73af415d427d04d0979ba0",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "7f4b92314ddb74e7c6ece459732c691492ebab4f35370822048dec6f7a1fe1fd",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-T06",
+        "ir_hash": "1b52b1a6cf5ecac15b8b3085879436b575c5bf5dee73af415d427d04d0979ba0",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "c0c42838f51715a51e5b2d9e62f6e01ee0a07d2ac08e36fcb70f1429baa5ef74",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-T07",
+        "ir_hash": "d09d0b52260fb4c95e31a0795ab2fd8940e3a6eb89c1b6d4a973182eb94a657d",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "d04e390cc40adbd89e37a944a77b3e12ceca9b9cbc4c5a0570bd66cb5be90995",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-T07",
+        "ir_hash": "d09d0b52260fb4c95e31a0795ab2fd8940e3a6eb89c1b6d4a973182eb94a657d",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "2379462337dca5bc41fa8dcbd5bfed27647e39f2e60a3eeddf38e2c1fb92f477",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-T07",
+        "ir_hash": "d09d0b52260fb4c95e31a0795ab2fd8940e3a6eb89c1b6d4a973182eb94a657d",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "539338e5b84e06e115ea1848cf3f841ab60f3f0a00350a1ce6deefe3e8c21abc",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-T08",
+        "ir_hash": "aa7806693d9e66c13f5f0a0091083f6c60e68275611241b2b9da002a3c44958c",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "cf325e67efc23d5c94e667ffe7e837c31fbd1b705fd7c48e33d0a6919435df57",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-T08",
+        "ir_hash": "aa7806693d9e66c13f5f0a0091083f6c60e68275611241b2b9da002a3c44958c",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "c83c91e345404e03d9db6b71b622f3323510c01975bef65d3c7acdce8931faea",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-T08",
+        "ir_hash": "aa7806693d9e66c13f5f0a0091083f6c60e68275611241b2b9da002a3c44958c",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "fa4ab13b2f9c48466e31e52b006492630fcbdabba1585cb577a99ee0ebef1776",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-T09",
+        "ir_hash": "462ddf2eea654affcc9b3a006d2171594e59e0b6cce405dc1fba845439f9f93f",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "0e7ac346b4710321889c31693636e435263107f465b56ca96088da2284bfbb1e",
+        "type": "quadrant"
+      },
+      {
+        "case_id": "E2-T09",
+        "ir_hash": "462ddf2eea654affcc9b3a006d2171594e59e0b6cce405dc1fba845439f9f93f",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "8a9ca41c264f7036bae64c347c3f3671c675316db35be4b4f93e4d35d15a2c9c",
+        "type": "quadrant"
+      },
+      {
+        "case_id": "E2-T09",
+        "ir_hash": "462ddf2eea654affcc9b3a006d2171594e59e0b6cce405dc1fba845439f9f93f",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "8e3de818e599b42cfae6890c33895df9ed99a78dd88d8ca2fdd2cbd3b47def81",
+        "type": "quadrant"
+      },
+      {
+        "case_id": "E2-T10",
+        "ir_hash": "1b38a797910d60b457415b7b6abb108dbaca9fb0707f2c01361229240de249ce",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "d66b8482922ba8f3b53206937105657f41bc261f53f9f196732c6d325c4a0ca8",
+        "type": "radar"
+      },
+      {
+        "case_id": "E2-T10",
+        "ir_hash": "1b38a797910d60b457415b7b6abb108dbaca9fb0707f2c01361229240de249ce",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "9a1f18e0acba9b7dc4dde61954cc5543dd900c4190d0ec304a880d86525e4068",
+        "type": "radar"
+      },
+      {
+        "case_id": "E2-T10",
+        "ir_hash": "1b38a797910d60b457415b7b6abb108dbaca9fb0707f2c01361229240de249ce",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "5b77cf9deaeaefcd83e7b7cab93f7d33e345585f0cf22e6dbe29a16f3487a713",
+        "type": "radar"
+      },
+      {
+        "case_id": "E2-T11",
+        "ir_hash": "ec95672acc36050148b997edd6fe7db137239d466ba9629281278c89cea60d46",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "0c0d6e6fdaec42d0cb5c2b9de296bcc8f29acc0e9be1e40cee7aef9b01c8799e",
+        "type": "loop-flywheel"
+      },
+      {
+        "case_id": "E2-T11",
+        "ir_hash": "ec95672acc36050148b997edd6fe7db137239d466ba9629281278c89cea60d46",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "9ddc78498dd3a369a9a70d5c25b63f95d8d3d9e6269802845bf452c5cea10aa8",
+        "type": "loop-flywheel"
+      },
+      {
+        "case_id": "E2-T11",
+        "ir_hash": "ec95672acc36050148b997edd6fe7db137239d466ba9629281278c89cea60d46",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "7502e69e23be8dafb40775cedca41adbd885a2990b618607c6ce9455c4765cbb",
+        "type": "loop-flywheel"
+      },
+      {
+        "case_id": "E2-T12",
+        "ir_hash": "8b6fc89dceaaa07547ec0ebaedfaef848e42f3bbcf4903554ebc50e4991327f1",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "3f684498e626f9ed6bcf1866ff37d544fcf5fe8f00f4cf7a86a711ecc7f9ee5b",
+        "type": "nested"
+      },
+      {
+        "case_id": "E2-T12",
+        "ir_hash": "8b6fc89dceaaa07547ec0ebaedfaef848e42f3bbcf4903554ebc50e4991327f1",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "735e334a948e9da48735f1db147b90f533a1c8eb6dc422fbf6fc5edab752633a",
+        "type": "nested"
+      },
+      {
+        "case_id": "E2-T12",
+        "ir_hash": "8b6fc89dceaaa07547ec0ebaedfaef848e42f3bbcf4903554ebc50e4991327f1",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "2ef1a4341ffd2299386b84daf563de0c66581ff42a3f2a8f4d0d1989c8dd4fa7",
+        "type": "nested"
+      },
+      {
+        "case_id": "E2-T13",
+        "ir_hash": "5f0796910cb382e4d63f24c89fca5df3bbc17b59c6e08b36d3195151aca6cfed",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "901e3b2c7aa408b915fea5f236c08329223d7b050e3aca4393d0fc92796bdfd1",
+        "type": "tree"
+      },
+      {
+        "case_id": "E2-T13",
+        "ir_hash": "5f0796910cb382e4d63f24c89fca5df3bbc17b59c6e08b36d3195151aca6cfed",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "addb6f4f76e61d53934f539e07982f79707877bbcc0ba2e8b584cfa3061ab986",
+        "type": "tree"
+      },
+      {
+        "case_id": "E2-T13",
+        "ir_hash": "5f0796910cb382e4d63f24c89fca5df3bbc17b59c6e08b36d3195151aca6cfed",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "102fce226a720304367da483e10215cf60a32b4f0257057be6702ad7e3e95e5a",
+        "type": "tree"
+      },
+      {
+        "case_id": "E2-T14",
+        "ir_hash": "af6d69b07a98edff3fd7b8870fd27cf522660d0985517aa1df673452c41b3946",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "18b6e17f2829aea5c9fcfca0536a0957ab9c66da36456dd3975fcba43940d432",
+        "type": "org-chart"
+      },
+      {
+        "case_id": "E2-T14",
+        "ir_hash": "af6d69b07a98edff3fd7b8870fd27cf522660d0985517aa1df673452c41b3946",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "e831d7167bfe05aa634928df5241337fb3616b0b2c69d33de2a1ac896c1ee602",
+        "type": "org-chart"
+      },
+      {
+        "case_id": "E2-T14",
+        "ir_hash": "af6d69b07a98edff3fd7b8870fd27cf522660d0985517aa1df673452c41b3946",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "9c358320fa74f2eb342e4491bd95d59d42a637b8af79d3bea98d44d21ca1c44a",
+        "type": "org-chart"
+      },
+      {
+        "case_id": "E2-T15",
+        "ir_hash": "13c1703f8d6a63f35b66655b70ea49473e9e21d06e0984e06bffda0f98812d9f",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "0ab9546897b5bfa983a9bfc8ed7ddcded8fff966efee164d654c3038c9aa9028",
+        "type": "layer-stack"
+      },
+      {
+        "case_id": "E2-T15",
+        "ir_hash": "13c1703f8d6a63f35b66655b70ea49473e9e21d06e0984e06bffda0f98812d9f",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "77ed10432616613e13c670f1bc2c3c2173e4d6cc93792a1f44558151ad0b9358",
+        "type": "layer-stack"
+      },
+      {
+        "case_id": "E2-T15",
+        "ir_hash": "13c1703f8d6a63f35b66655b70ea49473e9e21d06e0984e06bffda0f98812d9f",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "a855301a676e5cb8646d34bfbb4c295d118aadfebf4d03d58935c67e50a57301",
+        "type": "layer-stack"
+      },
+      {
+        "case_id": "E2-T16",
+        "ir_hash": "2586cd423503a8c1cc42dfe0881f528aa2ed384b0c5f8590b542adff7c312344",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "590174456decb8d3068065be0ebc887afb3f63bcb2beb93f2a3276bce7708740",
+        "type": "venn"
+      },
+      {
+        "case_id": "E2-T16",
+        "ir_hash": "2586cd423503a8c1cc42dfe0881f528aa2ed384b0c5f8590b542adff7c312344",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "519b1cbf7a27594afcd9dbd2c56796ddd6f97c3ba43252a8c5909606b4819607",
+        "type": "venn"
+      },
+      {
+        "case_id": "E2-T16",
+        "ir_hash": "2586cd423503a8c1cc42dfe0881f528aa2ed384b0c5f8590b542adff7c312344",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "6fda27a1cd9a1fc14e9399198bb72eff7d5467bb34339ff59238d35708d8b5e4",
+        "type": "venn"
+      },
+      {
+        "case_id": "E2-T17",
+        "ir_hash": "adeae827409d37c26fec8c3c48713cd2d4147171f0a6229803559314a0cd3388",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "7cf1c8aa536ce514102eec3a5f0448525eead968ef3c1880b922fb27add5b0aa",
+        "type": "pyramid-funnel"
+      },
+      {
+        "case_id": "E2-T17",
+        "ir_hash": "adeae827409d37c26fec8c3c48713cd2d4147171f0a6229803559314a0cd3388",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "abb224e6a2c498aec6b0550503bb070a42baec27b0861c04ca02854b276224ff",
+        "type": "pyramid-funnel"
+      },
+      {
+        "case_id": "E2-T17",
+        "ir_hash": "adeae827409d37c26fec8c3c48713cd2d4147171f0a6229803559314a0cd3388",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "4d1a2ffd80579adbdbd0314caf72c39c68ff657a6aecc2c66fc0dc9c65879ffb",
+        "type": "pyramid-funnel"
+      },
+      {
+        "case_id": "E2-T18",
+        "ir_hash": "f23c1b13b89ed643c995213bf2fd5ec5106d31d6d97a0f18a55ee8104ce1c8c9",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "780a36bb6fc1feac11d480a58ad25f5ec5d295942b62ebee91a85216c80e9e80",
+        "type": "bar-chart"
+      },
+      {
+        "case_id": "E2-T18",
+        "ir_hash": "f23c1b13b89ed643c995213bf2fd5ec5106d31d6d97a0f18a55ee8104ce1c8c9",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "bdada23dc540a8c4ddb991609d4ec1a0174baae98382be2cc480c0b55d182270",
+        "type": "bar-chart"
+      },
+      {
+        "case_id": "E2-T18",
+        "ir_hash": "f23c1b13b89ed643c995213bf2fd5ec5106d31d6d97a0f18a55ee8104ce1c8c9",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "a811a149fccfb834ffb4973511c0e996bb1f2853acd1ee59a7c3279be269fac2",
+        "type": "bar-chart"
+      },
+      {
+        "case_id": "E2-T19",
+        "ir_hash": "9adc671fbfeb04ccf7a1ce39708b9361e4eee5133798b67b5032299ca1a24946",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "5fb2eaac13789111baad89563781e9adaf4e27474474fb216ab351fe9997f52d",
+        "type": "line-chart"
+      },
+      {
+        "case_id": "E2-T19",
+        "ir_hash": "9adc671fbfeb04ccf7a1ce39708b9361e4eee5133798b67b5032299ca1a24946",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "724211e594bb556d20888808d48030cb6e37d16bcf8080a21bea8d8661196276",
+        "type": "line-chart"
+      },
+      {
+        "case_id": "E2-T19",
+        "ir_hash": "9adc671fbfeb04ccf7a1ce39708b9361e4eee5133798b67b5032299ca1a24946",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "5f6988d45952c1bf7ba4c63faa3d686deccfd393382112475de7f874d463dfa9",
+        "type": "line-chart"
+      },
+      {
+        "case_id": "E2-T20",
+        "ir_hash": "6c885f7411fb4286f78c2107eae2da26fe3763d06d4eb13bac95346b893db11f",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "ff5ca9d7c01fff930646f4ec7f70d72c94594350b30b8651a494ff4202bef4f2",
+        "type": "gantt"
+      },
+      {
+        "case_id": "E2-T20",
+        "ir_hash": "6c885f7411fb4286f78c2107eae2da26fe3763d06d4eb13bac95346b893db11f",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "24df4b6f6ea7bf99d06f7db2f1bc78553a7b0d3089d19121511ebd7ace8b7983",
+        "type": "gantt"
+      },
+      {
+        "case_id": "E2-T20",
+        "ir_hash": "6c885f7411fb4286f78c2107eae2da26fe3763d06d4eb13bac95346b893db11f",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "fd253309cd1c2811de040527b1c746893fc7cecd0bd57160a7baa2f1629f8797",
+        "type": "gantt"
+      },
+      {
+        "case_id": "E2-T21",
+        "ir_hash": "c0bab80881716b20b7decc8702edcd32133f8e44cf89ff455f93c680331c8af7",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "2a199a3b80be5b8ba383bfbe2d3ba9d08d3195a68cb570f9201063c995e2462c",
+        "type": "scatter-plot"
+      },
+      {
+        "case_id": "E2-T21",
+        "ir_hash": "c0bab80881716b20b7decc8702edcd32133f8e44cf89ff455f93c680331c8af7",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "be2c41bb742c46964e17fc05f77395b953a574d778de73a5949444d4d04740b7",
+        "type": "scatter-plot"
+      },
+      {
+        "case_id": "E2-T21",
+        "ir_hash": "c0bab80881716b20b7decc8702edcd32133f8e44cf89ff455f93c680331c8af7",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "2216c2cbcf6fc24597792c5699f536a2e07a1fd4310b383962d3452cbbdc5168",
+        "type": "scatter-plot"
+      },
+      {
+        "case_id": "E2-T22",
+        "ir_hash": "181d4b331886ef374f4a61c70c8fce204c239f94030611de0ce96873ad9ab982",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "6f48c57a0c3de303d06c82d99a0975bd6ee025e6fc49c468f7313c7c5e10922b",
+        "type": "high-level"
+      },
+      {
+        "case_id": "E2-T22",
+        "ir_hash": "181d4b331886ef374f4a61c70c8fce204c239f94030611de0ce96873ad9ab982",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "ad4e64ed0d4aa581b76133baef0b710ebd72396482097f25461b030321d45559",
+        "type": "high-level"
+      },
+      {
+        "case_id": "E2-T22",
+        "ir_hash": "181d4b331886ef374f4a61c70c8fce204c239f94030611de0ce96873ad9ab982",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "6cab7b8cc175f7b96aecc20144f68671104589d6395b15aebd40332f788c1775",
+        "type": "high-level"
+      },
+      {
+        "case_id": "E2-T23",
+        "ir_hash": "5ab76e1bd56557472724882235f10fc252d92bd85d3d70251a049c9de832d174",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "8b0da76aea5cbef0f960b1980ca04750056a296c0afeb14d1667eadb5b39eda7",
+        "type": "process"
+      },
+      {
+        "case_id": "E2-T23",
+        "ir_hash": "5ab76e1bd56557472724882235f10fc252d92bd85d3d70251a049c9de832d174",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "2329f0a6504b30cfc3749602dcfebc32a3a8035eab514a54dcff70f23a6633b3",
+        "type": "process"
+      },
+      {
+        "case_id": "E2-T23",
+        "ir_hash": "5ab76e1bd56557472724882235f10fc252d92bd85d3d70251a049c9de832d174",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "2ae25d14ac9f8f924ff53e56cb23c4bfb32c67db3fe873e2c733e91bb86db2e9",
+        "type": "process"
+      },
+      {
+        "case_id": "E2-T24",
+        "ir_hash": "2691175918a913f67902ac93ad7cf509450e854b2c8a89c435632e4419310286",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "585528e7ed5e085c45f972c71aa41678fdbb8f70d711cd3de5804b0c13b9c73a",
+        "type": "medallion"
+      },
+      {
+        "case_id": "E2-T24",
+        "ir_hash": "2691175918a913f67902ac93ad7cf509450e854b2c8a89c435632e4419310286",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "56f057355b4e650f109c32aca79a4c2391528cc05a65679cdd90611937d64a20",
+        "type": "medallion"
+      },
+      {
+        "case_id": "E2-T24",
+        "ir_hash": "2691175918a913f67902ac93ad7cf509450e854b2c8a89c435632e4419310286",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "a07a06290e8ee63cccb1486176d5fd2df4d07207c32b7075e0cc1147dbaaa557",
+        "type": "medallion"
+      },
+      {
+        "case_id": "E2-T25",
+        "ir_hash": "3dc2f0406115a96c2b2ae8d48d653ff37bc2f626e0e730d20ca429fbdbf79176",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "c3bfce7e9f711ab6ce2321b9bb82b503d05f53c2d6900ac05122bcc6c835c93d",
+        "type": "data-flow"
+      },
+      {
+        "case_id": "E2-T25",
+        "ir_hash": "3dc2f0406115a96c2b2ae8d48d653ff37bc2f626e0e730d20ca429fbdbf79176",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "e49fd085392e485eeb4f98a9158198c11b6491c84c438993b9f829fa757c49d0",
+        "type": "data-flow"
+      },
+      {
+        "case_id": "E2-T25",
+        "ir_hash": "3dc2f0406115a96c2b2ae8d48d653ff37bc2f626e0e730d20ca429fbdbf79176",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "64ce41276b215f0d37fb02fc895883baf590d193f5c01925a6e9ce8bf83f17c8",
+        "type": "data-flow"
+      },
+      {
+        "case_id": "E2-T26",
+        "ir_hash": "daf8369a801db1389be8820dc31b60664ca2a7c6a519fdb4e9e83310f0c79f67",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "f623b39e003d88d92dce86de874ef3df20615cd5d4ef6c8d6ec256cf400aebd5",
+        "type": "dp-integration"
+      },
+      {
+        "case_id": "E2-T26",
+        "ir_hash": "daf8369a801db1389be8820dc31b60664ca2a7c6a519fdb4e9e83310f0c79f67",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "29434a8767277f2b507638ee6a50253cd16515de2d55f383fc2fe1f9a9ed4744",
+        "type": "dp-integration"
+      },
+      {
+        "case_id": "E2-T26",
+        "ir_hash": "daf8369a801db1389be8820dc31b60664ca2a7c6a519fdb4e9e83310f0c79f67",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "1dd6329fb10366839c20fee6871ca4c358d1a23b846a0d4d5e78f7dc6580bf27",
+        "type": "dp-integration"
+      },
+      {
+        "case_id": "E2-T27",
+        "ir_hash": "50f223637f732111d9fa58e6fd9ee41609be2d6955f30676fe95d5b207fdea7b",
+        "mode": "neutral-light",
+        "status": "pass",
+        "svg_sha256": "ef7d510802228c1b1335134314e8ff8e4f74f272ec59c480d6b73e413b688bf7",
+        "type": "dp-security-matrix"
+      },
+      {
+        "case_id": "E2-T27",
+        "ir_hash": "50f223637f732111d9fa58e6fd9ee41609be2d6955f30676fe95d5b207fdea7b",
+        "mode": "neutral-dark",
+        "status": "pass",
+        "svg_sha256": "be6e8db737916da59fbdcab0bb12ff548cc06e9dab4bedc0091b1047fdfd7bab",
+        "type": "dp-security-matrix"
+      },
+      {
+        "case_id": "E2-T27",
+        "ir_hash": "50f223637f732111d9fa58e6fd9ee41609be2d6955f30676fe95d5b207fdea7b",
+        "mode": "editorial",
+        "status": "pass",
+        "svg_sha256": "e24c29a3b53cf14923d6acf24056477ba7bc7d374289624b411311da15b1a4ac",
+        "type": "dp-security-matrix"
+      }
+    ]
+  },
+  "date": "2026-08-15",
+  "hard_failures": [],
+  "imports": {
+    "cases": 12,
+    "rows": [
+      {
+        "case_id": "drawio-normal",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 3,
+        "status": "pass"
+      },
+      {
+        "case_id": "drawio-multipage",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 6,
+        "status": "pass"
+      },
+      {
+        "case_id": "drawio-malformed",
+        "expected_success": false,
+        "failure": "xml-malformed",
+        "observed": "rejected",
+        "status": "pass"
+      },
+      {
+        "case_id": "drawio-xxe",
+        "expected_success": false,
+        "failure": "xml-external-feature",
+        "observed": "rejected",
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-flowchart",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 3,
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-sequence",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 3,
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-state",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 5,
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-er",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 3,
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-multiblock",
+        "expected_success": true,
+        "observed": "parsed",
+        "record_count": 3,
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-click",
+        "expected_success": false,
+        "failure": "mermaid-executable-feature",
+        "observed": "rejected",
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-html",
+        "expected_success": false,
+        "failure": "mermaid-executable-feature",
+        "observed": "rejected",
+        "status": "pass"
+      },
+      {
+        "case_id": "mermaid-malformed",
+        "expected_success": false,
+        "failure": "mermaid-node-unsupported",
+        "observed": "rejected",
+        "status": "pass"
+      }
+    ]
+  },
+  "manifest_id": "P02-E2-1",
+  "motion": {
+    "cases": 5,
+    "rows": [
+      {
+        "case_id": "motion-none",
+        "noscript": true,
+        "print": true,
+        "reduced_motion": true,
+        "sha256": "cce8982dfc26954c29765610a6724e800fb20574739b6275e7b1d42a06f2b8a8",
+        "status": "pass"
+      },
+      {
+        "case_id": "motion-reveal",
+        "noscript": true,
+        "print": true,
+        "reduced_motion": true,
+        "sha256": "5a5f3ed9f0faf534724668119dc2287efb60a7dc2b40c5f7da480f1e2eac9b60",
+        "status": "pass"
+      },
+      {
+        "case_id": "motion-step",
+        "noscript": true,
+        "print": true,
+        "reduced_motion": true,
+        "sha256": "0a54a2f7bcfd164d8318e4fcdc41ed85e11eab3630e421bfbdeed4ade382de9c",
+        "status": "pass"
+      },
+      {
+        "case_id": "motion-loop",
+        "noscript": true,
+        "print": true,
+        "reduced_motion": true,
+        "sha256": "0cd44404c3ef9d4c44607a92c833a9635d3e0c39e1aeac7f19a120f1e5c61c67",
+        "status": "pass"
+      },
+      {
+        "case_id": "motion-static-export",
+        "png_fallback": [
+          "svg"
+        ],
+        "status": "pass",
+        "svg_delivered": true,
+        "warnings": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ]
+      }
+    ]
+  },
+  "must_pass": {
+    "case_id": "REF-SWIMLANE-CASH-RECEIPTS-001",
+    "modes": [
+      "neutral-light",
+      "neutral-dark",
+      "editorial"
+    ],
+    "png": "fallback-to-html-svg-no-install",
+    "reference_packaged": false,
+    "semantic_source": "owner-approved R2 inventory only",
+    "visual_approval": "owner-approved"
+  },
+  "pairwise": {
+    "pair_count": 161,
+    "rows": [
+      {
+        "case_id": "E2-X01",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html",
+          "language": "vi",
+          "size": "doc-inline"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-X02",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "balanced",
+          "format": "svg",
+          "language": "en",
+          "size": "doc-inline"
+        },
+        "fallback": [
+          "Motion mode reveal is unavailable for SVG; delivered a complete static frame."
+        ],
+        "status": "pass",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-X03",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "faithful",
+          "format": "png",
+          "language": "en",
+          "size": "doc-wide"
+        },
+        "fallback": [
+          "Motion mode step is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-X04",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "simplified",
+          "format": "html+png",
+          "language": "vi",
+          "size": "doc-wide"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-X05",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "balanced",
+          "format": "png",
+          "language": "vi",
+          "size": "slide-16x9"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-X06",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "simplified",
+          "format": "html",
+          "language": "en",
+          "size": "slide-16x9"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-X07",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "en",
+          "size": "slide-4x3"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-X08",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "balanced",
+          "format": "svg",
+          "language": "vi",
+          "size": "slide-4x3"
+        },
+        "fallback": [
+          "Motion mode loop is unavailable for SVG; delivered a complete static frame."
+        ],
+        "status": "pass",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-X09",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "simplified",
+          "format": "svg",
+          "language": "vi",
+          "size": "social-og"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "quadrant"
+      },
+      {
+        "case_id": "E2-X10",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "faithful",
+          "format": "html",
+          "language": "en",
+          "size": "social-og"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "radar"
+      },
+      {
+        "case_id": "E2-X11",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "balanced",
+          "format": "html+png",
+          "language": "vi",
+          "size": "social-square"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "loop-flywheel"
+      },
+      {
+        "case_id": "E2-X12",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "simplified",
+          "format": "png",
+          "language": "en",
+          "size": "social-square"
+        },
+        "fallback": [
+          "Motion mode loop is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "nested"
+      },
+      {
+        "case_id": "E2-X13",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "svg",
+          "language": "vi",
+          "size": "print-a4-landscape"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "tree"
+      },
+      {
+        "case_id": "E2-X14",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "balanced",
+          "format": "html",
+          "language": "en",
+          "size": "print-a4-landscape"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "org-chart"
+      },
+      {
+        "case_id": "E2-X15",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html",
+          "language": "vi",
+          "size": "print-letter-landscape"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "layer-stack"
+      },
+      {
+        "case_id": "E2-X16",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "balanced",
+          "format": "svg",
+          "language": "en",
+          "size": "print-letter-landscape"
+        },
+        "fallback": [
+          "Motion mode loop is unavailable for SVG; delivered a complete static frame."
+        ],
+        "status": "pass",
+        "type": "venn"
+      },
+      {
+        "case_id": "E2-X17",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html",
+          "language": "vi",
+          "size": "fit"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "pyramid-funnel"
+      },
+      {
+        "case_id": "E2-X18",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "balanced",
+          "format": "svg",
+          "language": "en",
+          "size": "fit"
+        },
+        "fallback": [
+          "Motion mode reveal is unavailable for SVG; delivered a complete static frame."
+        ],
+        "status": "pass",
+        "type": "bar-chart"
+      },
+      {
+        "case_id": "E2-X19",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "simplified",
+          "format": "png",
+          "language": "vi",
+          "size": "doc-inline"
+        },
+        "fallback": [
+          "Motion mode step is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "line-chart"
+      },
+      {
+        "case_id": "E2-X20",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "balanced",
+          "format": "html",
+          "language": "vi",
+          "size": "doc-wide"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "gantt"
+      },
+      {
+        "case_id": "E2-X21",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "faithful",
+          "format": "svg",
+          "language": "vi",
+          "size": "slide-16x9"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "scatter-plot"
+      },
+      {
+        "case_id": "E2-X22",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "mixed",
+          "detail": "simplified",
+          "format": "html",
+          "language": "vi",
+          "size": "slide-4x3"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "high-level"
+      },
+      {
+        "case_id": "E2-X23",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "balanced",
+          "format": "png",
+          "language": "vi",
+          "size": "social-og"
+        },
+        "fallback": [
+          "Motion mode step is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "process"
+      },
+      {
+        "case_id": "E2-X24",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html",
+          "language": "vi",
+          "size": "social-square"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "medallion"
+      },
+      {
+        "case_id": "E2-X25",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "simplified",
+          "format": "png",
+          "language": "vi",
+          "size": "print-a4-landscape"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "data-flow"
+      },
+      {
+        "case_id": "E2-X26",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "simplified",
+          "format": "png",
+          "language": "vi",
+          "size": "print-letter-landscape"
+        },
+        "fallback": [
+          "Motion mode reveal is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "dp-integration"
+      },
+      {
+        "case_id": "E2-X27",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "executive",
+          "detail": "simplified",
+          "format": "png",
+          "language": "vi",
+          "size": "fit"
+        },
+        "fallback": [
+          "Motion mode step is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "dp-security-matrix"
+      },
+      {
+        "case_id": "E2-X28",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "doc-inline"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "architecture"
+      },
+      {
+        "case_id": "E2-X29",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "svg",
+          "language": "vi",
+          "size": "doc-wide"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "it-current-state"
+      },
+      {
+        "case_id": "E2-X30",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "slide-16x9"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "flowchart"
+      },
+      {
+        "case_id": "E2-X31",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "png",
+          "language": "vi",
+          "size": "slide-4x3"
+        },
+        "fallback": [
+          "Motion mode step is unavailable for PNG; delivered a complete static frame.",
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "sequence"
+      },
+      {
+        "case_id": "E2-X32",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "social-og"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "state-machine"
+      },
+      {
+        "case_id": "E2-X33",
+        "delivered": [
+          "svg"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "svg",
+          "language": "vi",
+          "size": "social-square"
+        },
+        "fallback": [],
+        "status": "pass",
+        "type": "er-data-model"
+      },
+      {
+        "case_id": "E2-X34",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "print-a4-landscape"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "timeline"
+      },
+      {
+        "case_id": "E2-X35",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "print-letter-landscape"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "swimlane"
+      },
+      {
+        "case_id": "E2-X36",
+        "delivered": [
+          "html"
+        ],
+        "dials": {
+          "audience": "engineer",
+          "detail": "faithful",
+          "format": "html+png",
+          "language": "vi",
+          "size": "fit"
+        },
+        "fallback": [
+          "PNG is unavailable because no approved preinstalled rasterizer was detected; no installation was attempted."
+        ],
+        "status": "pass",
+        "type": "quadrant"
+      }
+    ],
+    "uncovered_pairs": 0
+  },
+  "quantitative": {
+    "cases": 6,
+    "rows": [
+      {
+        "carrier_hash": "4775f8fec445da87026e38b2a080159bdafdda1e546d0bbbb73fb601342705b8",
+        "case_id": "E2-Q01",
+        "status": "pass",
+        "svg_sha256": "173f631885836d2167c2d028843bef9ab031e40e2d9d914f73cb7e49ac8332a4"
+      },
+      {
+        "case_id": "E2-Q02",
+        "duplicate_dates": 1,
+        "missing": 1,
+        "points": 4,
+        "status": "pass",
+        "svg_sha256": "f0a300dbc5a7c97abb8741f6d64ae2e7a1d2f095fdd6b330efe4d97f4b1a9286"
+      },
+      {
+        "case_id": "E2-Q03",
+        "duplicate_coordinates": true,
+        "points": 250,
+        "status": "pass",
+        "svg_sha256": "78880602e15f4f62e57998ab686eb268109cc36117f621d53951a8258e2434be"
+      },
+      {
+        "case_id": "E2-Q04",
+        "failure": "incompatible-axis-domain",
+        "rejected": true,
+        "status": "pass"
+      },
+      {
+        "case_id": "E2-Q05",
+        "status": "pass",
+        "svg_sha256": "d82b43441493a2555837b00d47f29b1650d5b1d9ae490cd22e0d837ec04d9d79",
+        "timezone_values": [
+          "+07:00",
+          "Z"
+        ]
+      },
+      {
+        "case_id": "E2-Q06",
+        "missing": 1,
+        "non_monotonic": true,
+        "status": "pass",
+        "svg_sha256": "c1712f9e5ee000b59e5d821630ecc2302fc4ed2f2498ff8ebb1f9dfd2c34201b"
+      }
+    ]
+  },
+  "runner_version": "p12-benchmark-1",
+  "schema_version": "1.0",
+  "scope": "P-12 only",
+  "semantic_patterns": {
+    "cases": 7,
+    "rows": [
+      {
+        "capability_id": "CAP-P01",
+        "case_id": "E2-P01",
+        "parent": "data-flow",
+        "status": "pass",
+        "svg_sha256": "4a0cd286f62159ced040bc171e2145523084ae70c2915fe01570c220b155cc47"
+      },
+      {
+        "capability_id": "CAP-P02",
+        "case_id": "E2-P02",
+        "parent": "process",
+        "status": "pass",
+        "svg_sha256": "dd1c3cd2dfe3d0463843cc6d8587f157e680ea84e32f25db24238c1a94520bc1"
+      },
+      {
+        "capability_id": "CAP-P03",
+        "case_id": "E2-P03",
+        "parent": "data-flow",
+        "status": "pass",
+        "svg_sha256": "8e60f5fc8afef4ac1ab4e9a14ad2e588079d16fb6c06a3f994b73cca99e37e31"
+      },
+      {
+        "capability_id": "CAP-P04",
+        "case_id": "E2-P04",
+        "parent": "flowchart",
+        "status": "pass",
+        "svg_sha256": "65fb4d0e1cb57a6391c61a3468e257ec50ac2c6335e4e67b69e4fca64ca977e3"
+      },
+      {
+        "capability_id": "CAP-P05",
+        "case_id": "E2-P05",
+        "parent": "architecture",
+        "status": "pass",
+        "svg_sha256": "a33a83b3d058e7a68ceb0e7cdd5686fdffbb772735be5df0b036e2506e7ddaa1"
+      },
+      {
+        "capability_id": "CAP-P06",
+        "case_id": "E2-P06",
+        "parent": "layer-stack",
+        "status": "pass",
+        "svg_sha256": "b5fad1b4ee70e2c29cc4d5fef75feb195922544d3660aca66759d93b84409ac0"
+      },
+      {
+        "capability_id": "CAP-P07",
+        "case_id": "E2-P07",
+        "parent": "layer-stack",
+        "status": "pass",
+        "svg_sha256": "ca13ccb011cad4eeea874357a087020c6005bbf9723c040dcc60149dafad040a"
+      }
+    ]
+  },
+  "status": "pass",
+  "technical_rubric": {
+    "accessibility": "pass-static",
+    "geometry_legibility": "pass-static",
+    "quantitative_temporal_integrity": "pass",
+    "security_and_fidelity": "pass",
+    "semantic_correctness": "pass",
+    "threshold": "90/100, >=80% each applicable dimension, zero hard failure",
+    "threshold_result": "pass-owner-approved",
+    "visual_communication": "pass-owner-approved"
+  },
+  "triggers": {
+    "adjacent_negative_cases": [
+      {
+        "expected": "do-not-trigger",
+        "prompt_sha256": "bde668f62d7f4aa04929f08dc0ab52dfdfbc35b0164083ac28c08e96e347a44c",
+        "status": "contract-only"
+      },
+      {
+        "expected": "do-not-trigger",
+        "prompt_sha256": "d250872cd5d82a9c0ad97313f6cc75fb8d8bf6a11fb59653aae9e0a59e7e252f",
+        "status": "contract-only"
+      },
+      {
+        "expected": "do-not-trigger",
+        "prompt_sha256": "742b4aaf7d29ef55224b59c33468615a60e8f7975c103f9ef8b8e26ffeb0cb72",
+        "status": "contract-only"
+      },
+      {
+        "expected": "do-not-trigger",
+        "prompt_sha256": "c5ff4ccd9dd193f787681bea5a01a78fd6135bac30986b20713e699808c239cf",
+        "status": "contract-only"
+      },
+      {
+        "expected": "do-not-trigger",
+        "prompt_sha256": "5acb424ace076da2d3bdf2583d07465e36c88f075fe52cf0ab110834aadb715a",
+        "status": "contract-only"
+      }
+    ],
+    "ambiguous": {
+      "asked": true,
+      "failure": "invalid-string",
+      "status": "pass"
+    },
+    "direct_invocation": {
+      "case": "explicit skill path in fresh sessions",
+      "status": "covered-by-forward-tests"
+    },
+    "note": "Automatic host activation is not claimed; P-13 owns installed-surface discovery evidence.",
+    "positive_intents": [
+      {
+        "selected": "architecture",
+        "status": "pass",
+        "type": "architecture"
+      },
+      {
+        "selected": "it-current-state",
+        "status": "pass",
+        "type": "it-current-state"
+      },
+      {
+        "selected": "flowchart",
+        "status": "pass",
+        "type": "flowchart"
+      },
+      {
+        "selected": "sequence",
+        "status": "pass",
+        "type": "sequence"
+      },
+      {
+        "selected": "state-machine",
+        "status": "pass",
+        "type": "state-machine"
+      },
+      {
+        "selected": "er-data-model",
+        "status": "pass",
+        "type": "er-data-model"
+      },
+      {
+        "selected": "timeline",
+        "status": "pass",
+        "type": "timeline"
+      },
+      {
+        "selected": "swimlane",
+        "status": "pass",
+        "type": "swimlane"
+      },
+      {
+        "selected": "quadrant",
+        "status": "pass",
+        "type": "quadrant"
+      },
+      {
+        "selected": "radar",
+        "status": "pass",
+        "type": "radar"
+      },
+      {
+        "selected": "loop-flywheel",
+        "status": "pass",
+        "type": "loop-flywheel"
+      },
+      {
+        "selected": "nested",
+        "status": "pass",
+        "type": "nested"
+      },
+      {
+        "selected": "tree",
+        "status": "pass",
+        "type": "tree"
+      },
+      {
+        "selected": "org-chart",
+        "status": "pass",
+        "type": "org-chart"
+      },
+      {
+        "selected": "layer-stack",
+        "status": "pass",
+        "type": "layer-stack"
+      },
+      {
+        "selected": "venn",
+        "status": "pass",
+        "type": "venn"
+      },
+      {
+        "selected": "pyramid-funnel",
+        "status": "pass",
+        "type": "pyramid-funnel"
+      },
+      {
+        "selected": "bar-chart",
+        "status": "pass",
+        "type": "bar-chart"
+      },
+      {
+        "selected": "line-chart",
+        "status": "pass",
+        "type": "line-chart"
+      },
+      {
+        "selected": "gantt",
+        "status": "pass",
+        "type": "gantt"
+      },
+      {
+        "selected": "scatter-plot",
+        "status": "pass",
+        "type": "scatter-plot"
+      },
+      {
+        "selected": "high-level",
+        "status": "pass",
+        "type": "high-level"
+      },
+      {
+        "selected": "process",
+        "status": "pass",
+        "type": "process"
+      },
+      {
+        "selected": "medallion",
+        "status": "pass",
+        "type": "medallion"
+      },
+      {
+        "selected": "data-flow",
+        "status": "pass",
+        "type": "data-flow"
+      },
+      {
+        "selected": "dp-integration",
+        "status": "pass",
+        "type": "dp-integration"
+      },
+      {
+        "selected": "dp-security-matrix",
+        "status": "pass",
+        "type": "dp-security-matrix"
+      }
+    ]
+  }
+}

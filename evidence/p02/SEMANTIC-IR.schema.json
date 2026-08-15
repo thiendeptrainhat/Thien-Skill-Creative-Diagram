@@ -1,0 +1,238 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:thien-skill-creative-diagram:schema:semantic-ir:1.0",
+  "title": "Thien-Skill-Creative-Diagram semantic IR",
+  "description": "Approved provider-neutral P-02 semantic intermediate representation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "diagram",
+    "selection",
+    "nodes",
+    "edges",
+    "groups",
+    "lanes",
+    "series",
+    "axes",
+    "annotations",
+    "source_items",
+    "fidelity",
+    "accessibility"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "request_id": { "$ref": "#/$defs/id" },
+    "diagram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "language", "title", "detail", "audience"],
+      "properties": {
+        "type": { "$ref": "#/$defs/type" },
+        "variant_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^CAP-[A-Z][A-Z0-9-]+$" } },
+        "language": { "type": "string", "minLength": 2 },
+        "title": { "type": "string", "minLength": 1 },
+        "detail": { "enum": ["faithful", "balanced", "simplified"] },
+        "audience": { "enum": ["engineer", "mixed", "executive"] }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "confidence", "evidence", "alternatives"],
+      "properties": {
+        "mode": { "enum": ["auto", "manual"] },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "rejection_reason"],
+            "properties": {
+              "type": { "$ref": "#/$defs/type" },
+              "rejection_reason": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "assumption": { "type": ["string", "null"] }
+      }
+    },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "groups": { "type": "array", "items": { "$ref": "#/$defs/group" } },
+    "lanes": { "type": "array", "items": { "$ref": "#/$defs/lane" } },
+    "series": { "type": "array", "items": { "$ref": "#/$defs/series" } },
+    "axes": { "type": "array", "items": { "$ref": "#/$defs/axis" } },
+    "annotations": { "type": "array", "items": { "$ref": "#/$defs/annotation" } },
+    "source_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source_kind", "locator", "content_class"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "source_kind": { "enum": ["instruction", "natural-language", "pasted-table", "csv", "json", "drawio", "mermaid"] },
+          "locator": { "type": "string", "minLength": 1 },
+          "content_class": { "enum": ["entity", "relation", "group", "lane", "value", "date", "label", "annotation", "source-rot"] },
+          "digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "fidelity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kept", "merged", "dropped", "source_rot", "invented_count"],
+      "properties": {
+        "kept": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "merged": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "dropped": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "source_rot": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "invented_count": { "const": 0 }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "reading_order", "data_representation_required"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "reading_order": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "data_representation_required": { "type": "boolean" }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$" },
+    "type": {
+      "enum": [
+        "architecture", "it-current-state", "flowchart", "sequence", "state-machine", "er-data-model", "timeline", "swimlane", "quadrant", "radar", "loop-flywheel", "nested", "tree", "org-chart", "layer-stack", "venn", "pyramid-funnel", "bar-chart", "line-chart", "gantt", "scatter-plot", "high-level", "process", "medallion", "data-flow", "dp-integration", "dp-security-matrix"
+      ]
+    },
+    "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "label", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "secondary_label": { "type": "string" },
+        "state": { "type": "string" },
+        "value": { "type": ["number", "string", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "start": { "type": ["string", "null"], "format": "date-time" },
+        "end": { "type": ["string", "null"], "format": "date-time" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "target", "kind", "directed", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "source": { "$ref": "#/$defs/id" },
+        "target": { "$ref": "#/$defs/id" },
+        "kind": { "type": "string", "minLength": 1 },
+        "directed": { "type": "boolean" },
+        "label": { "type": "string" },
+        "order": { "type": "integer", "minimum": 0 },
+        "guard": { "type": "string" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "member_ids", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "member_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "parent_group_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "owner", "member_ids", "order", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "member_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "order": { "type": "integer", "minimum": 0 },
+        "parent_lane_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "domain", "value", "missing", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "domain": { "type": ["string", "number"] },
+        "value": { "type": ["number", "null"] },
+        "missing": { "type": "boolean" },
+        "label": { "type": "string" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "unit", "data", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "unit": { "type": ["string", "null"] },
+        "data": { "type": "array", "items": { "$ref": "#/$defs/datum" } },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "dimension", "scale", "label", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "dimension": { "enum": ["x", "y", "radial", "angular"] },
+        "scale": { "enum": ["categorical", "linear", "time", "ordinal"] },
+        "label": { "type": "string" },
+        "unit": { "type": ["string", "null"] },
+        "domain_min": { "type": ["number", "string", "null"] },
+        "domain_max": { "type": ["number", "string", "null"] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "target_ids", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string", "minLength": 1 },
+        "target_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "fidelityEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_ids", "reason"],
+      "properties": {
+        "source_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "ir_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

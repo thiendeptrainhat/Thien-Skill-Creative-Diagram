@@ -1,0 +1,33 @@
+{
+  "carriers": [
+    "natural-language",
+    "pasted-table",
+    "csv",
+    "json",
+    "drawio-xml",
+    "drawio-png-embedded-model",
+    "drawio-svg-embedded-model",
+    "mermaid-text",
+    "markdown-mermaid-fence"
+  ],
+  "mermaid_subsets": [
+    "flowchart/graph",
+    "sequenceDiagram",
+    "stateDiagram-v2/stateDiagram",
+    "erDiagram"
+  ],
+  "phase": "P-07",
+  "safety_properties": [
+    "data-only",
+    "bounded",
+    "no-fetch",
+    "no-execute",
+    "no-formula-evaluation",
+    "no-external-resource",
+    "no-write",
+    "explicit-source-backed-semantic-mapping",
+    "fidelity-reconciliation"
+  ],
+  "schema_version": "1.0",
+  "test_module": "scripts/tests/test_safe_import.py"
+}

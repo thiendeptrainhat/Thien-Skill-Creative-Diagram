@@ -1,0 +1,30 @@
+{
+  "record_id": "P14-PUBLICATION-SCOPE-SCAN-1",
+  "checked_at": "2026-08-16",
+  "selected_scope": "A_FULL_PRIVATE_AUDIT_REPOSITORY",
+  "personal_path_files": [
+    "HANDOFF-P01.md",
+    "PROJECT-CONTRACT.md",
+    "evidence/p01/SNAPSHOT-RECORD.md",
+    "evidence/p09/P-09-EVIDENCE.md",
+    "evidence/p13/verify_packages.py"
+  ],
+  "personal_path_file_count": 5,
+  "generic_security_pattern_files": [
+    "evidence/p10/verify_legal_candidate.py",
+    "thien-skill-creative-diagram/scripts/tests/test_qa_contract.py"
+  ],
+  "generic_security_pattern_file_count": 2,
+  "secret_pattern_file_count": 0,
+  "sensitive_filename_count": 0,
+  "os_metadata_files": [
+    ".DS_Store",
+    "evidence/.DS_Store"
+  ],
+  "python_cache_directory_count": 0,
+  "source_tree_publication_ready": false,
+  "sanitized_mirror_publication_ready": true,
+  "resolution_decision": "D-036",
+  "resolution": "A1 deterministic sanitized publication mirror; sanitization does not overwrite local source files; generic security regex/fixtures retained.",
+  "manifest": "evidence/p14/publication-mirror-manifest.json"
+}

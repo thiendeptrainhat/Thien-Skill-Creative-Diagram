@@ -1,0 +1,496 @@
+{
+  "approved_candidates": [
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-1024",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "21ad34d49d29c381c7d81abe14d29b29ee16a109b5f98e2113afb3659b8788b1",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-1024.png"
+    },
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-512",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "20a83423a77ac03177b244c808b83b224177ab6123061c24d2ec7415bd0dd516",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-512.png"
+    },
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-400",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "b0b93f8b523a636299465678ac47bd3a51a9e19a94fed65ebd4f8b8e2ea3512e",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-400.png"
+    },
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-256",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "5982799c7be383590e4b3d97cd25e9038ea4f4d5609ff94138c6d7f979831bdc",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-256.png"
+    },
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-128",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "088a2cf1f07da32815f973978ee510018d7a229dee2ec5fbfc31b99196a9f73a",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-128.png"
+    },
+    {
+      "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-TRANSPARENT-64",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-transparent-safe-area",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "4955305d5d6cdebe8e8cbf07d27591ea7be7ac9fc2f76c362cae7079206719c3",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-64.png"
+    },
+    {
+      "alt_text": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-LIGHT-512",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "ad17e260a194f5750b8b91c84a152a78683c1519bba13079f84a4d4301079371",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-512.png"
+    },
+    {
+      "alt_text": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-LIGHT-400",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [
+        {
+          "intended_use": "OpenAI icon candidate; P-13 must re-verify the official host field and smoke-test",
+          "package_target": "openai-plugin",
+          "path": "assets/brand/full-crest-plate-light-400.png"
+        },
+        {
+          "intended_use": "OpenAI icon candidate; P-13 must re-verify the official host field and smoke-test",
+          "package_target": "universal-raw-skill",
+          "path": "assets/brand/full-crest-plate-light-400.png"
+        }
+      ],
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [
+        "openai-plugin",
+        "universal-raw-skill"
+      ],
+      "release_eligible": false,
+      "scope": "v1.0.0-brand-presentation",
+      "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-400.png"
+    },
+    {
+      "alt_text": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-LIGHT-256",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "75d36d549af791e102d2ed21080102321100ccf53f8608d8edc45773d5413322",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-256.png"
+    },
+    {
+      "alt_text": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-LIGHT-128",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "0f14b393d3bf5cd4a90900c9ba4b08d7763221fc19ffd9166448792e700cd3a1",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-128.png"
+    },
+    {
+      "alt_text": "TDTN crest on a light rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-LIGHT-64",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [
+        {
+          "intended_use": "OpenAI icon candidate; P-13 must re-verify the official host field and smoke-test",
+          "package_target": "openai-plugin",
+          "path": "assets/brand/full-crest-plate-light-64.png"
+        },
+        {
+          "intended_use": "OpenAI icon candidate; P-13 must re-verify the official host field and smoke-test",
+          "package_target": "universal-raw-skill",
+          "path": "assets/brand/full-crest-plate-light-64.png"
+        }
+      ],
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-light-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [
+        "openai-plugin",
+        "universal-raw-skill"
+      ],
+      "release_eligible": false,
+      "scope": "v1.0.0-brand-presentation",
+      "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-64.png"
+    },
+    {
+      "alt_text": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-DARK-512",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        512,
+        512
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "6bba9325d05f9f26cf0410b0a72ad3c8247514226513493181704a2be01c6502",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-512.png"
+    },
+    {
+      "alt_text": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-DARK-400",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        400,
+        400
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "eb49f13f9fc5bd53be5942d19b9351b82a3410424575c6e45fab1f957635f004",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-400.png"
+    },
+    {
+      "alt_text": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-DARK-256",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        256,
+        256
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "b8c35974524f4620d97029563c55398d661a07afc43191a0ca46d51beb75d9cd",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-256.png"
+    },
+    {
+      "alt_text": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-DARK-128",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        128,
+        128
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "5d477309169b66de919a4574765478403097bef4e5d837fc6668c6ac1fae010a",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-128.png"
+    },
+    {
+      "alt_text": "TDTN crest on a dark rounded-square presentation plate",
+      "approval_ref": "P09-OWNER-A-2026-08-15",
+      "asset_id": "AST-TDTN-DARK-64",
+      "destination_status": "owner-approved package scope under D-028; P-13 execution and official host verification not started",
+      "destinations": [],
+      "dimensions": [
+        64,
+        64
+      ],
+      "family": "full-crest-dark-squircle-plate",
+      "kind": "brand-presentation-derivative",
+      "media_type": "image/png",
+      "minimum_approved_size_px": 64,
+      "owner_approved": true,
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "owner-approved-provenance-not-packaged-v1.0.0",
+      "sha256": "ffe7d296a75cee9b5df1f8eeba40179e87436d772f65195154b20a6469f7d256",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-64.png"
+    }
+  ],
+  "derivation": {
+    "approval_record": "evidence/p09/APPROVED-BRAND-SELECTION.json",
+    "approval_record_sha256": "b38a922d42cb21d20e9d5bc316d0d17fe368ed6080528868a3537ab691aa2437",
+    "decision": "D-027 Option A",
+    "generator": "evidence/p09/generate_brand_assets.py",
+    "generator_sha256": "ac3ef4674b44a7a7c75ddfafeeab0d3f9d5402c23eb754c1ff744b792cf6b7e9",
+    "recipe": "proportional resize, transparent safe-area padding, or separate light/dark squircle plate; no crop, recolor, trace, or vectorization"
+  },
+  "excluded_qa_only": [
+    {
+      "asset_id": "AST-TDTN-TRANSPARENT-48",
+      "dimensions": [
+        48,
+        48
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-transparent-safe-area",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "6d827db4e74360e5d51edcdc6716153d19f56ee679e9c3a60bd52902825093ce",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-48.png"
+    },
+    {
+      "asset_id": "AST-TDTN-TRANSPARENT-32",
+      "dimensions": [
+        32,
+        32
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-transparent-safe-area",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "c3da2b083a423470889f0dc150245224a4cc5b4ba05513644f91efde50378cf0",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-32.png"
+    },
+    {
+      "asset_id": "AST-TDTN-LIGHT-48",
+      "dimensions": [
+        48,
+        48
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-light-squircle-plate",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "85272ce501fae7f91544d2739d0d5264909d0a9540e3f11f2199a99f2864e416",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-48.png"
+    },
+    {
+      "asset_id": "AST-TDTN-LIGHT-32",
+      "dimensions": [
+        32,
+        32
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-light-squircle-plate",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "ea752191839952a901967b8335f3468e49df50752b24375cb81a041af1b32d52",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-32.png"
+    },
+    {
+      "asset_id": "AST-TDTN-DARK-48",
+      "dimensions": [
+        48,
+        48
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-dark-squircle-plate",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "396a2d069d111e8373e6723c628d362c6031d022cd16bf3d70d00e882a561400",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-48.png"
+    },
+    {
+      "asset_id": "AST-TDTN-DARK-32",
+      "dimensions": [
+        32,
+        32
+      ],
+      "exclusion_reason": "D-027 excludes 32px and 48px derivatives from v1.0.0",
+      "family": "full-crest-dark-squircle-plate",
+      "package_targets": [],
+      "release_eligible": false,
+      "scope": "qa-only",
+      "sha256": "c5d5daa3ad7c83b11562b5827015b496f95c7de73375d686d34d80de138d611c",
+      "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-32.png"
+    }
+  ],
+  "generated_at": "2026-08-15T00:00:00+07:00",
+  "master": {
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "mode": "RGBA",
+    "origin": "owner-provided AI-created raster; no vector source",
+    "ownership_basis": "Owner assertion recorded in PROJECT-CONTRACT.md D-016",
+    "release_payload": false,
+    "sha256": "020a47a3c831664c700c9e4491c7ae00cf5a8f330e6c3c57422ee246df56d69e",
+    "source_evidence_path": "evidence/p09/source/Logo-TDTN-master.png"
+  },
+  "package_mapping_decision": {
+    "approved_at": "2026-08-15",
+    "decision": "D-028",
+    "p13_boundary": "P-13 may verify official host fields, copy exact declared bytes, create overlays, build packages, and smoke-test; it must not change this manifest without renewed G-06 review",
+    "policy": "Use light-plate 64px and 400px only for OpenAI plugin and Universal raw skill under assets/brand; no Claude brand asset; retain all other owner-approved derivatives as provenance-only and not packaged in v1.0.0",
+    "state": "owner-approved"
+  },
+  "project": {
+    "technical_id": "thien-skill-creative-diagram",
+    "version": "1.0.0"
+  },
+  "record_id": "P10-ASSET-MANIFEST-CANDIDATE-1",
+  "rights_boundary": {
+    "independent_legal_review_required": true,
+    "owner_assertion_only": true,
+    "skill_license_grant_includes_brand_rights": false,
+    "trademark_registration_or_clearance_claimed": false
+  },
+  "schema_version": "1.0-candidate",
+  "source_manifest_id": "SRC-TDTN-LOGO-MASTER",
+  "status": "exact-candidate-awaiting-vietnamese-lawyer-review"
+}

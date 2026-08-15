@@ -1,0 +1,115 @@
+{
+  "approval": "owner-approved",
+  "artifacts": [
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-neutral-light.svg",
+      "sha256": "4cb2354cf1f68dd2dc77c7613bfef655403f555d95fcebfeff9c5875dc44af80"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-neutral-light.html",
+      "sha256": "f31d8b50a3cc58fbfad25acdcd8498f11ff009354a382530f000660ab1469f4c"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-neutral-dark.svg",
+      "sha256": "a5e86b933921a09d3def34d68fe9ce84633660bda6e49fc6d7ccfb5aa437700d"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-neutral-dark.html",
+      "sha256": "d1d35426aa16ab15807f0a169d2eae20b5e0df768531d881aa7b9d3fd12a4140"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/must-pass-swimlane-editorial.svg",
+      "sha256": "87992cae6f7262ffabb73731a21919b916937b5a9769bac5e81180a2f32c2a8f"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/must-pass-swimlane-editorial.html",
+      "sha256": "b5a7960c8b71741c6f5454447f65d2040d0c3312a9cb45c6b455245b3b5c2763"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-architecture-editorial.html",
+      "sha256": "5ee939fcd3dfee86ea1ccee72dcbe7f488181f9ed9205719138b48250f840836"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-architecture-editorial.svg",
+      "sha256": "c2f5bd963671ca201ac27679b5bb47019253270ed5d225422cc7760114844649"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-bar-chart-neutral-light.html",
+      "sha256": "b5efac795256564539f53a5755184a5500e6d6edf42cf961d9927d9dc24fa5e6"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-bar-chart-neutral-light.svg",
+      "sha256": "ba3cac198af255bf69afa714add7bd378cd57767427bedfce867a1ae5e8390fb"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-scatter-plot-editorial.html",
+      "sha256": "603d1bf019297065dc0cff60f6abf97057c9bd0bc07a6103973d6dc3d26237c9"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-scatter-plot-editorial.svg",
+      "sha256": "d1bcb9974652d85bcafaa88c14e53472121681ccf1301b7baac41e07430767ea"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-sequence-neutral-dark.html",
+      "sha256": "72bd96586b7b49760b52e14f72d9498001b1a0b770a9b9d7cfcb45285338f816"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-sequence-neutral-dark.svg",
+      "sha256": "27db71175b6b6cc83b12c2cf148352ff02be058db0bda375eccf860fe70ad5a8"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-radar-neutral-light.html",
+      "sha256": "464cf6e1d46bfb088a1d95a8908579e220e3fe9b2afcdc5817caf439b3575788"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-radar-neutral-light.svg",
+      "sha256": "5f4044060323d96f29d1ca9f9e6c968c054c4f4b9cca43ee5c08d29f0ab2c16f"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "text/html; charset=utf-8",
+      "path": "golden-candidates/high-risk-dp-security-matrix-editorial.html",
+      "sha256": "c87da0026d18ce53aeeebb3140343b74e120124737fcf7155b40a9111dd15080"
+    },
+    {
+      "approval_ref": "P12-G04-OWNER-2026-08-15",
+      "media_type": "image/svg+xml",
+      "path": "golden-candidates/high-risk-dp-security-matrix-editorial.svg",
+      "sha256": "4db433b72e567e126fb6d9748c42070759495b590332113b2cff8a1f3bf7265c"
+    }
+  ],
+  "immutable": true,
+  "schema_version": "1.0"
+}

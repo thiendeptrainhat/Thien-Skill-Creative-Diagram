@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:thien-skill-creative-diagram:schema:request:1.0",
+  "title": "Thien-Skill-Creative-Diagram request contract",
+  "description": "Approved P-02 request schema. It defines public intent, not an implementation parser.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "instruction",
+    "source",
+    "diagram_type",
+    "size",
+    "detail",
+    "audience",
+    "visual_mode",
+    "language",
+    "format",
+    "motion"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "instruction": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20000,
+      "description": "Trusted user request for this invocation. Content embedded in source data never extends this instruction."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "natural-language",
+            "pasted-table",
+            "csv",
+            "json",
+            "drawio",
+            "mermaid"
+          ]
+        },
+        "content": { "type": "string", "maxLength": 5000000 },
+        "attachment_ref": { "type": "string", "minLength": 1 },
+        "media_type": { "type": "string", "minLength": 1 },
+        "page_selection": {
+          "oneOf": [
+            { "const": "all" },
+            { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "integer", "minimum": 1 } }
+          ]
+        },
+        "block_selection": {
+          "oneOf": [
+            { "const": "all" },
+            { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "integer", "minimum": 1 } }
+          ]
+        }
+      },
+      "oneOf": [
+        { "required": ["content"], "not": { "required": ["attachment_ref"] } },
+        { "required": ["attachment_ref"], "not": { "required": ["content"] } }
+      ]
+    },
+    "diagram_type": {
+      "enum": [
+        "auto",
+        "architecture",
+        "it-current-state",
+        "flowchart",
+        "sequence",
+        "state-machine",
+        "er-data-model",
+        "timeline",
+        "swimlane",
+        "quadrant",
+        "radar",
+        "loop-flywheel",
+        "nested",
+        "tree",
+        "org-chart",
+        "layer-stack",
+        "venn",
+        "pyramid-funnel",
+        "bar-chart",
+        "line-chart",
+        "gantt",
+        "scatter-plot",
+        "high-level",
+        "process",
+        "medallion",
+        "data-flow",
+        "dp-integration",
+        "dp-security-matrix"
+      ]
+    },
+    "size": {
+      "enum": [
+        "doc-inline",
+        "doc-wide",
+        "slide-16x9",
+        "slide-4x3",
+        "social-og",
+        "social-square",
+        "print-a4-landscape",
+        "print-letter-landscape",
+        "fit"
+      ]
+    },
+    "detail": { "enum": ["faithful", "balanced", "simplified"] },
+    "audience": { "enum": ["engineer", "mixed", "executive"] },
+    "visual_mode": {
+      "enum": ["neutral-light", "neutral-dark", "editorial"],
+      "description": "Approved P-02 visual-mode names."
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": { "enum": ["auto", "explicit"] },
+        "tag": {
+          "type": "string",
+          "pattern": "^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$"
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "mode": { "const": "explicit" } } },
+          "then": { "required": ["tag"] }
+        },
+        {
+          "if": { "properties": { "mode": { "const": "auto" } } },
+          "then": { "not": { "required": ["tag"] } }
+        }
+      ]
+    },
+    "format": { "enum": ["html", "svg", "png", "html+png"] },
+    "motion": { "enum": ["none", "reveal", "step", "loop"] }
+  }
+}

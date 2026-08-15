@@ -1,0 +1,11 @@
+{
+  "contact-sheet.html": "bf19e3fefeb1c0364b9158fbc44acdfee50b50140d9402fbe0ebf307ace8e979",
+  "import-test-manifest.json": "e27c247ba06b50d80ef64524a80a14b59a07662026fb94a47ed2a537eada7cd5",
+  "qa-svg/architecture.svg": "d96264aea0c0b7919a90b2606e382297dffefcaa46617e9b322e08a8f808513f",
+  "qa-svg/bar-chart.svg": "538f042a7ffe95a74af0dd6e6e31d718a0f24a94d56eec08114d987aca580f4e",
+  "qa-svg/dp-security-matrix.svg": "bc8175f43d782b1321c7bd100263be896c1484cce0498cb542aea4777d127952",
+  "qa-svg/radar.svg": "250b8e36b16695a3656e18296cd8911120d42790cdf17294706e11489c317177",
+  "qa-svg/sequence.svg": "1af65b71d74e56607d104998a06d7aa3a109a07cdbb3092c0c8ffb3653a4ae06",
+  "qa-svg/swimlane.svg": "4e55989095158f470ccf55420d263029ba931c2f258ddf84ca323d69717877be",
+  "visual-smoke-manifest.json": "e753f4767169febf5dbd7f71735551877185d65013230e4c318c9b90d326bc41"
+}

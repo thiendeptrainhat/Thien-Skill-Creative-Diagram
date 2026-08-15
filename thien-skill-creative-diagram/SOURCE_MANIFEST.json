@@ -1,0 +1,307 @@
+{
+  "capability_mappings": [],
+  "generated_at": "2026-08-15T00:00:00+07:00",
+  "notice_projection": {
+    "sort_key": "source_id",
+    "source_selector": "sources[notice.include=true]",
+    "template_id": "third-party-notice-v1",
+    "validator_mode": "exact-projection"
+  },
+  "project": {
+    "reimplementation_model": "clean-room-oriented independent reimplementation",
+    "technical_id": "thien-skill-creative-diagram",
+    "version": "1.0.0"
+  },
+  "schema_version": "1.0-draft",
+  "sources": [
+    {
+      "authority": "reference",
+      "category": "functional-reference",
+      "files_evaluated": [
+        {
+          "path_or_url": "skills/diagram-design/SKILL.md",
+          "purpose": "Functional taxonomy and abstract behavior study only",
+          "sha256": "8366ef4d11c3a9591556deb55320ea3521c138ccdad834eb087b8062f41d93a1"
+        }
+      ],
+      "license": {
+        "evidence_locator": "LICENSE at locked commit",
+        "evidence_sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29",
+        "identifier": "MIT",
+        "status": "declared"
+      },
+      "locator": {
+        "canonical": "https://github.com/cathrynlavery/diagram-design",
+        "kind": "repository",
+        "repository": "https://github.com/cathrynlavery/diagram-design"
+      },
+      "material_transfer": {
+        "copied_bytes": false,
+        "mode": "none"
+      },
+      "name": "diagram-design",
+      "notice": {
+        "copyright": null,
+        "display_name": "diagram-design",
+        "include": true,
+        "license_label": "MIT (upstream repository declaration)",
+        "reason": "Primary functional reference; no source material is bundled or adapted",
+        "source_url": "https://github.com/cathrynlavery/diagram-design/tree/09df49d8d1a1c7fb2efdfcdc7a2a0713534350a6"
+      },
+      "role": "primary-functional",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "commit_time": "2026-08-14T14:28:44-07:00",
+        "revision": "09df49d8d1a1c7fb2efdfcdc7a2a0713534350a6",
+        "revision_kind": "git-commit",
+        "sha256": "6092dc41f39e3ff4638f783d66b75ad1a4073874f4bf540c60bd331f3e3db804",
+        "tag": null,
+        "tree": "aa59393dfabbbcbb4bcb62a7cf9f43c1ce26c9c2"
+      },
+      "source_id": "SRC-DIAGRAM-DESIGN",
+      "usage": {
+        "allowed": [
+          "Abstract taxonomy, behavior, requirements, failure modes, and test intent"
+        ],
+        "prohibited": [
+          "Code, prose, CSS, template, script, formula, coordinate, specimen, gallery design, example, icon, or asset transfer"
+        ]
+      }
+    },
+    {
+      "authority": "project-approved",
+      "category": "principle-reference",
+      "license": {
+        "evidence_locator": "PROJECT-CONTRACT.md D-006 and P-01 snapshot record",
+        "evidence_sha256": null,
+        "identifier": null,
+        "status": "owner-asserted"
+      },
+      "locator": {
+        "canonical": "Thien-UI-UX-Ultra",
+        "kind": "local-repository",
+        "repository": "Thien-UI-UX-Ultra"
+      },
+      "material_transfer": {
+        "copied_bytes": false,
+        "mode": "none"
+      },
+      "name": "Thien-UI-UX-Ultra",
+      "notice": {
+        "copyright": null,
+        "display_name": "Thien-UI-UX-Ultra",
+        "include": false,
+        "license_label": null,
+        "reason": "Owner-controlled principle source with no bundled transfer",
+        "source_url": null
+      },
+      "role": "principles-only",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "commit_time": "2026-08-10T04:32:48+07:00",
+        "revision": "fb4e57758f525827e04004737d779f4c93b9b3a0",
+        "revision_kind": "git-commit",
+        "tag": "v2.0.0",
+        "tree": "96e55f4693b81af594cfb9190fc66321a3b5fecb"
+      },
+      "source_id": "SRC-THIEN-UI-UX-ULTRA",
+      "usage": {
+        "allowed": [
+          "Design and QA principles and workflow only"
+        ],
+        "prohibited": [
+          "Code, prose, scripts, templates, data, tokens, tests, or assets"
+        ]
+      }
+    },
+    {
+      "authority": "normative-external",
+      "category": "official-platform-documentation",
+      "license": {
+        "evidence_locator": "https://agentskills.io/specification",
+        "evidence_sha256": null,
+        "identifier": null,
+        "status": "not-applicable-documentation"
+      },
+      "locator": {
+        "canonical": "https://agentskills.io/specification",
+        "kind": "url"
+      },
+      "material_transfer": {
+        "copied_bytes": false,
+        "mode": "none"
+      },
+      "name": "Agent Skills specification",
+      "notice": {
+        "copyright": null,
+        "display_name": "Agent Skills specification",
+        "include": false,
+        "license_label": null,
+        "reason": "Official specification consulted as normative evidence; no material bundled",
+        "source_url": "https://agentskills.io/specification"
+      },
+      "role": "normative-platform-evidence",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "revision": "verified-2026-08-15",
+        "revision_kind": "document-current-at-date"
+      },
+      "source_id": "SRC-AGENT-SKILLS-SPEC",
+      "usage": {
+        "allowed": [
+          "Normative skill-directory and metadata requirements"
+        ],
+        "prohibited": [
+          "Documentation prose transfer into runtime payload"
+        ]
+      }
+    },
+    {
+      "authority": "normative-external",
+      "category": "official-platform-documentation",
+      "license": {
+        "evidence_locator": "https://code.claude.com/docs/en/skills",
+        "evidence_sha256": null,
+        "identifier": null,
+        "status": "not-applicable-documentation"
+      },
+      "locator": {
+        "canonical": "https://code.claude.com/docs/en/skills",
+        "kind": "url"
+      },
+      "material_transfer": {
+        "copied_bytes": false,
+        "mode": "none"
+      },
+      "name": "Anthropic official skill and plugin documentation",
+      "notice": {
+        "copyright": null,
+        "display_name": "Anthropic documentation",
+        "include": false,
+        "license_label": null,
+        "reason": "Official documentation consulted as normative evidence; no material bundled",
+        "source_url": "https://code.claude.com/docs/en/skills"
+      },
+      "role": "normative-platform-evidence",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "revision": "verified-2026-08-15",
+        "revision_kind": "document-current-at-date"
+      },
+      "source_id": "SRC-ANTHROPIC-DOCS",
+      "usage": {
+        "allowed": [
+          "Normative Claude installation and package-structure facts"
+        ],
+        "prohibited": [
+          "Documentation prose transfer into runtime payload"
+        ]
+      }
+    },
+    {
+      "authority": "normative-external",
+      "category": "official-platform-documentation",
+      "license": {
+        "evidence_locator": "https://developers.openai.com/codex/skills",
+        "evidence_sha256": null,
+        "identifier": null,
+        "status": "not-applicable-documentation"
+      },
+      "locator": {
+        "canonical": "https://developers.openai.com/codex/skills",
+        "kind": "url"
+      },
+      "material_transfer": {
+        "copied_bytes": false,
+        "mode": "none"
+      },
+      "name": "OpenAI official skill and plugin documentation",
+      "notice": {
+        "copyright": null,
+        "display_name": "OpenAI documentation",
+        "include": false,
+        "license_label": null,
+        "reason": "Official documentation consulted as normative evidence; no material bundled",
+        "source_url": "https://developers.openai.com/codex/skills"
+      },
+      "role": "normative-platform-evidence",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "revision": "verified-2026-08-15",
+        "revision_kind": "document-current-at-date"
+      },
+      "source_id": "SRC-OPENAI-DOCS",
+      "usage": {
+        "allowed": [
+          "Normative OpenAI/Codex skill and plugin structure facts"
+        ],
+        "prohibited": [
+          "Documentation prose transfer into runtime payload"
+        ]
+      }
+    },
+    {
+      "authority": "project-approved",
+      "category": "owner-provided-material",
+      "license": {
+        "evidence_locator": "PROJECT-CONTRACT.md D-016 and evidence/p09/P-09-EVIDENCE.md",
+        "evidence_sha256": null,
+        "identifier": null,
+        "status": "owner-asserted"
+      },
+      "locator": {
+        "canonical": "evidence/p09/source/Logo-TDTN-master.png",
+        "kind": "artifact",
+        "path": "evidence/p09/source/Logo-TDTN-master.png"
+      },
+      "material_transfer": {
+        "asset_manifest_ids": [
+          "AST-TDTN-TRANSPARENT-1024",
+          "AST-TDTN-TRANSPARENT-512",
+          "AST-TDTN-TRANSPARENT-400",
+          "AST-TDTN-TRANSPARENT-256",
+          "AST-TDTN-TRANSPARENT-128",
+          "AST-TDTN-TRANSPARENT-64",
+          "AST-TDTN-LIGHT-512",
+          "AST-TDTN-LIGHT-400",
+          "AST-TDTN-LIGHT-256",
+          "AST-TDTN-LIGHT-128",
+          "AST-TDTN-LIGHT-64",
+          "AST-TDTN-DARK-512",
+          "AST-TDTN-DARK-400",
+          "AST-TDTN-DARK-256",
+          "AST-TDTN-DARK-128",
+          "AST-TDTN-DARK-64"
+        ],
+        "copied_bytes": true,
+        "mode": "modified-authorized",
+        "modification_ledger": "ASSET_MANIFEST.json"
+      },
+      "name": "TDTN logo master",
+      "notice": {
+        "copyright": null,
+        "display_name": "TDTN logo master",
+        "include": false,
+        "license_label": null,
+        "reason": "Owner-provided brand material is separately carved out in NOTICE and ASSET_MANIFEST",
+        "source_url": null
+      },
+      "role": "bundled-material-origin",
+      "snapshot": {
+        "captured_at": "2026-08-15T00:00:00+07:00",
+        "revision": "sha256:020a47a3c831664c700c9e4491c7ae00cf5a8f330e6c3c57422ee246df56d69e",
+        "revision_kind": "artifact-hash",
+        "sha256": "020a47a3c831664c700c9e4491c7ae00cf5a8f330e6c3c57422ee246df56d69e"
+      },
+      "source_id": "SRC-TDTN-LOGO-MASTER",
+      "usage": {
+        "allowed": [
+          "Deterministic owner-approved presentation derivatives under D-027"
+        ],
+        "prohibited": [
+          "Unapproved crop, recolor, vectorization, trademark-clearance claim, or grant under the skill/code license"
+        ]
+      }
+    }
+  ]
+}

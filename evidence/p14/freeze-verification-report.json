@@ -1,0 +1,114 @@
+{
+  "candidate": "TCD-RELEASE-1.0.0-RC1",
+  "checks": 26,
+  "failed": 0,
+  "passed": 26,
+  "record_id": "P14-FREEZE-VERIFICATION-1",
+  "results": [
+    {
+      "check": "release candidate identity",
+      "result": "PASS"
+    },
+    {
+      "check": "version",
+      "result": "PASS"
+    },
+    {
+      "check": "owner-approved freeze and exact release authorization",
+      "result": "PASS"
+    },
+    {
+      "check": "publication scope A sanitized mirror ready",
+      "result": "PASS"
+    },
+    {
+      "check": "repository README installation and license",
+      "result": "PASS"
+    },
+    {
+      "check": "exists: claude-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "bytes: claude-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "sha256: claude-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "exists: openai-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "bytes: openai-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "sha256: openai-plugin",
+      "result": "PASS"
+    },
+    {
+      "check": "exists: universal-raw-skill",
+      "result": "PASS"
+    },
+    {
+      "check": "bytes: universal-raw-skill",
+      "result": "PASS"
+    },
+    {
+      "check": "sha256: universal-raw-skill",
+      "result": "PASS"
+    },
+    {
+      "check": "checksum manifest",
+      "result": "PASS"
+    },
+    {
+      "check": "G-01 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "G-02 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "G-03 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "G-04 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "G-05 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "G-06 evidence",
+      "result": "PASS"
+    },
+    {
+      "check": "lawyer approval record",
+      "result": "PASS"
+    },
+    {
+      "check": "approved golden manifest",
+      "result": "PASS"
+    },
+    {
+      "check": "approved brand selection",
+      "result": "PASS"
+    },
+    {
+      "check": "surface record",
+      "result": "PASS"
+    },
+    {
+      "check": "surface counts",
+      "result": "PASS"
+    }
+  ],
+  "status": "RELEASE_AUTHORIZED_PENDING_GITHUB_AUTHENTICATION"
+}

@@ -1,0 +1,36 @@
+{
+  "candidate_count": 22,
+  "checks": {
+    "deterministic_png_serialization": "pass",
+    "embedded_srgb": "pass",
+    "light_dark_background_preview": "pass-with-dark-plate-required-for-dark-navy-context",
+    "no_crop_recolor_trace_vectorization": "pass-by-recipe-and-output-inventory",
+    "owner_selection": "pass-option-A-full-crest-families-at-64px-minimum",
+    "simplified_mark_v1.0.0": "not-created-per-owner-decision",
+    "small_size_32_48": "qa-only-excluded-from-v1.0.0",
+    "small_size_64": "pass-with-full-crest-detail-limit",
+    "source_byte_identity": "pass",
+    "square_aspect": "pass",
+    "square_circle_squircle_preview": "pass",
+    "trademark_clearance": "not-claimed",
+    "transparent_safe_area": "pass"
+  },
+  "hard_failures": [],
+  "owner_decisions_required": [],
+  "schema_version": "1.0",
+  "source": {
+    "alpha_bbox": [
+      148,
+      5,
+      952,
+      1095
+    ],
+    "dimensions": [
+      1100,
+      1100
+    ],
+    "mode": "RGBA",
+    "sha256_match": true
+  },
+  "status": "pass-owner-approved"
+}
