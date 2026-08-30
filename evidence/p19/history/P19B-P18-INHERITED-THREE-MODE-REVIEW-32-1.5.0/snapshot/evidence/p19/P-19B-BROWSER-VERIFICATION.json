@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-112, retaining D-084–D-111 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B Treemap thin-stroke remediation; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-32 changes only Treemap paint weight in three HTML files plus one neutral-light preview. Regular/focal tile outlines are 1.2/1.6; the exact D-101 allocation and D-103 complete four-edge, inset-4, gap-8 geometry is unchanged. The neutral-light 2000×1040 proof was rasterized locally and visually inspected. Eighty-seven non-target HTML artworks and 29 non-target previews are preserved. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review32-checks/type-treemap.svg.png",
+    "sha256": "7c08d256aeefb5c3dee0fce6cf0f6078f598e8d0b781c3bb57deb2e7868b73fa",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

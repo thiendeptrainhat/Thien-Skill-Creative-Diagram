@@ -1,0 +1,54 @@
+{
+  "alternative_table_rows": 12,
+  "archived_files_verified": 613,
+  "authority": "D-122",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0",
+  "canonical_parent": "bar-chart",
+  "display_identity": "dumbbell",
+  "dumbbell_measurement": {
+    "axes": 1,
+    "bands": 2,
+    "delta_labels": 12,
+    "endpoints": 24,
+    "focal": 1,
+    "mean_lines": 2,
+    "pairs": 12,
+    "series": 2,
+    "ticks": 6
+  },
+  "gallery_manifest_sha256": "f15fa7b03e0f647727cbe274d00fcda39cdafd0f5d34cde3ce6659c966446220",
+  "global_policy_declarations": 93,
+  "internal_capability_id": "CAP-V17",
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review42-checks/dumbbell.svg",
+      "sha256": "286da8ceea370ae7476535ac199cec2514f9d40aaf2ac029dcfcf6ac5d1bd59e"
+    },
+    {
+      "path": "evidence/p19/review42-checks/dumbbell.svg.png",
+      "sha256": "51fa0e1634a67ce19f3f45a7f340a9611d812ad358c2a5cf05be886e819291a1",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 18143,
+  "shared_scale": "0–100% linear; one position scale for both endpoints",
+  "statistics": {
+    "after": {
+      "mean": 78.6667,
+      "stdev": 7.6194
+    },
+    "before": {
+      "mean": 57.8333,
+      "stdev": 8.9054
+    }
+  },
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

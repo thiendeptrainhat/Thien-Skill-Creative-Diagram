@@ -1,0 +1,1240 @@
+{
+  "schema_version": "1.0",
+  "record_id": "P16-UPSTREAM-FULL-RANGE-LEDGER",
+  "captured_at": "2026-08-22",
+  "upstream_repository": "https://github.com/cathrynlavery/diagram-design",
+  "baseline_commit": "09df49d8d1a1c7fb2efdfcdc7a2a0713534350a6",
+  "candidate_commit": "648c2a597839301e06df1e7434a08bde9f42eed3",
+  "scope": "entire repository commit range",
+  "changed_path_count": 170,
+  "diff_stat": {
+    "files_changed": 170,
+    "insertions": 23895,
+    "deletions": 244
+  },
+  "skill_pathscope_count": 74,
+  "outside_skill_pathscope_count": 96,
+  "group_counts": {
+    ".claude-plugin": 2,
+    ".codex-plugin": 1,
+    ".factory-plugin": 2,
+    ".github": 3,
+    "root": 3,
+    "commands": 4,
+    "docs": 46,
+    "prompts": 1,
+    "scripts": 34,
+    "skills": 74
+  },
+  "disposition_counts": {
+    "explicitly-excluded": 41,
+    "inventory-only-expression-excluded": 88,
+    "inventory-claims-only-prose-excluded": 1,
+    "reviewed-project-contract-unchanged": 5,
+    "supplemental-abstract-context-only-expression-excluded": 3,
+    "abstract-test-lesson-only-code-excluded": 14,
+    "adopt-abstract-taxonomy-only": 1,
+    "inherited-project-behavior-no-expansion": 1,
+    "adopt-abstract-requirement-only": 16
+  },
+  "set_equality_rule": "The ordered set of status+path entries MUST equal `git diff --name-status <baseline>..<candidate>` for the pinned upstream snapshot; no omitted or extra path is permitted.",
+  "use_boundary": "Only abstract taxonomy, requirements, test lessons, and supplemental abstract context identified by an adopt-*, abstract-test-*, or supplemental-abstract-* disposition may inform P-17. Upstream prose/expression, code, CSS, templates, gallery assets, screenshots, manifests, and package expression remain excluded and must not be copied, translated closely, traced, or repackaged.",
+  "entries": [
+    {
+      "status": "M",
+      "path": ".claude-plugin/marketplace.json",
+      "top_level_group": ".claude-plugin",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": ".claude-plugin/plugin.json",
+      "top_level_group": ".claude-plugin",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": ".codex-plugin/plugin.json",
+      "top_level_group": ".codex-plugin",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": ".factory-plugin/marketplace.json",
+      "top_level_group": ".factory-plugin",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": ".factory-plugin/plugin.json",
+      "top_level_group": ".factory-plugin",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "top_level_group": ".github",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": ".github/pr-previews/editorial-diagrams-2.5.10.jpg",
+      "top_level_group": ".github",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": ".github/workflows/ci.yml",
+      "top_level_group": ".github",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": ".maintainer-policy.json",
+      "top_level_group": "root",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "CONTRIBUTING.md",
+      "top_level_group": "root",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "README.md",
+      "top_level_group": "root",
+      "disposition": "inventory-claims-only-prose-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "commands/doctor.md",
+      "top_level_group": "commands",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "commands/import-drawio.md",
+      "top_level_group": "commands",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "commands/import-mermaid.md",
+      "top_level_group": "commands",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "commands/profile.md",
+      "top_level_group": "commands",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/adr/0002-semantic-patterns-do-not-expand-the-taxonomy.md",
+      "top_level_group": "docs",
+      "disposition": "reviewed-project-contract-unchanged",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "M",
+      "path": "docs/adr/0005-label-geometry-is-verified.md",
+      "top_level_group": "docs",
+      "disposition": "reviewed-project-contract-unchanged",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "A",
+      "path": "docs/adr/0007-new-layout-grammars.md",
+      "top_level_group": "docs",
+      "disposition": "supplemental-abstract-context-only-expression-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "docs/adr/0008-native-host-manifests-share-one-plugin-root.md",
+      "top_level_group": "docs",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/architecture.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/bar.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/data-flow.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/db-schema.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/dependency.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/deployment.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/dp-integration.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/dp-security-matrix.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/er.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/fishbone.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/flowchart.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/gantt.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/high-level.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/it-state.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/journey.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/kanban.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/layers.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/line.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/loop.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/manifest.json",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/medallion.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/nested.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/org-chart.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/polar.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/process.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/pyramid.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/quadrant.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/radar.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/sankey.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/scatter.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/sequence.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/state.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/story-map.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/swimlane.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/timeline.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/tree.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/treemap.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/uml-class.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "docs/screenshots/venn.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/screenshots/wardley.png",
+      "top_level_group": "docs",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "docs/superpowers/plans/2026-08-18-polar-chart.md",
+      "top_level_group": "docs",
+      "disposition": "supplemental-abstract-context-only-expression-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "docs/superpowers/specs/2026-08-18-polar-chart-design.md",
+      "top_level_group": "docs",
+      "disposition": "supplemental-abstract-context-only-expression-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "prompts/doctor.md",
+      "top_level_group": "prompts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/bump-plugin-version.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/lint-render.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/lint-skin.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/render-canonical-screenshots.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/screenshot_catalog.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/test-lint-a11y.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/test-plugin-package.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-bubble.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "scripts/test-verify-docs-sync.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-doctor.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-drawio-import.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-dumbbell.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "scripts/test-verify-geometry.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/test-verify-motion.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-polar.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-ridgeline.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-sankey.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-slopegraph.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/test-verify-treemap.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-bubble.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-docs-sync.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-doctor.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-drawio-import.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-dumbbell.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-geometry.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-mermaid-import.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-plugin-package.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-polar.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-ridgeline.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-sankey.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-screenshot-freshness.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "scripts/verify-semantic-motion.py",
+      "top_level_group": "scripts",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-slopegraph.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "scripts/verify-treemap.py",
+      "top_level_group": "scripts",
+      "disposition": "abstract-test-lesson-only-code-excluded",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/SKILL.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-taxonomy-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-bubble-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-bubble-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-bubble.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-db-schema-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-db-schema-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-db-schema.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-dependency-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-dependency-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-dependency.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-deployment-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-deployment-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-deployment.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-fishbone-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-fishbone-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-fishbone.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-journey-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-journey-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-journey.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-kanban-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-kanban-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-kanban.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-polar-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-polar-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-polar.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-ridgeline-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-ridgeline-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-ridgeline.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-sankey-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-sankey-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-sankey.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-slopegraph-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-slopegraph-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-slopegraph.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-story-map-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-story-map-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-story-map.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-treemap-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-treemap-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-treemap.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-uml-class-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-uml-class-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-uml-class.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-wardley-dark.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-wardley-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/assets/example-wardley.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/assets/index.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/assets/template-full.html",
+      "top_level_group": "skills",
+      "disposition": "inventory-only-expression-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/doctor.md",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/export.md",
+      "top_level_group": "skills",
+      "disposition": "reviewed-project-contract-unchanged",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/import-drawio.md",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/import-mermaid.md",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/onboarding.md",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/output-spec.md",
+      "top_level_group": "skills",
+      "disposition": "reviewed-project-contract-unchanged",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/semantic-patterns.md",
+      "top_level_group": "skills",
+      "disposition": "inherited-project-behavior-no-expansion",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/type-bar.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-db-schema.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-dependency.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-deployment.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/type-er.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-fishbone.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/type-high-level.md",
+      "top_level_group": "skills",
+      "disposition": "reviewed-project-contract-unchanged",
+      "disposition_class": "inherited-unchanged"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-journey.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-kanban.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/type-line.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-polar.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-sankey.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/references/type-scatter.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-story-map.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-treemap.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-uml-class.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "A",
+      "path": "skills/diagram-design/references/type-wardley.md",
+      "top_level_group": "skills",
+      "disposition": "adopt-abstract-requirement-only",
+      "disposition_class": "adopted-abstract-only"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/scripts/drawio_extract.py",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    },
+    {
+      "status": "M",
+      "path": "skills/diagram-design/scripts/mermaid_extract.py",
+      "top_level_group": "skills",
+      "disposition": "explicitly-excluded",
+      "disposition_class": "explicitly-excluded"
+    }
+  ],
+  "disposition_class_counts": {
+    "explicitly-excluded": 130,
+    "inherited-unchanged": 6,
+    "adopted-abstract-only": 34
+  },
+  "disposition_class_rule": "Every path is classified as adopted-abstract-only, inherited-unchanged, or explicitly-excluded; adopted-abstract-only includes the three supplemental-context records but never their prose or expression, and the more specific disposition states the precise use boundary."
+}

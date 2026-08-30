@@ -1,0 +1,2492 @@
+{
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0",
+  "date": "2026-08-30",
+  "excluded_immutable_artifacts": [
+    "evidence/p18/r5/",
+    "evidence/p18/r6/",
+    "dist/",
+    ".release-staging/"
+  ],
+  "file_count": 494,
+  "files": [
+    {
+      "path": "PROJECT-CONTRACT.md",
+      "sha256": "9c9b35038a51adf031a676bdb4df558b9c2da4c5f0bd8677191628d22f39d384",
+      "size": 139410
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "2444b1358317aa9956c84c32ce88a4cb2ec276f193fb8dc8d4480e734c391345",
+      "size": 82257
+    },
+    {
+      "path": "PHASE-GATES.md",
+      "sha256": "26017ac5391cc9146b9ae3c2118e7352ce618f45d6575d7525e27d37394a53d3",
+      "size": 64450
+    },
+    {
+      "path": "HANDOFF-CURRENT.md",
+      "sha256": "64f8afc831e4579cbb28f0255155626c4f71713b3b3cb952d9d5a124073b6302",
+      "size": 49595
+    },
+    {
+      "path": "thien-skill-creative-diagram/SKILL.md",
+      "sha256": "6398fd420c73fa25ca06e0e20cc23a10c51325b006bc08d3cf1c810aba3c7f00",
+      "size": 9137
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/gallery_renderer_v15.py",
+      "sha256": "da10a4a430e9af544fe2152c7adbe4e4a8274a2ce18c9ea678d8f755d4a4cfc8",
+      "size": 84975
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_gallery_renderer_v15.py",
+      "sha256": "149cbab98cab7392a01e654a881203cd87011abfe24a41aea4d3006824bfb948",
+      "size": 13460
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+      "sha256": "66ea8a2c7d3f1e266717b9b341499eccf7015d55f53b617aa70c83b13b95bae4",
+      "size": 12549
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/visual-coverage.md",
+      "sha256": "e82cd6a17a17027234b19a6faa85f53cef5a931db3ba45fc086cf7540985366b",
+      "size": 4998
+    },
+    {
+      "path": "evidence/p19/P-19B-DESIGN-CONTRACT.md",
+      "sha256": "6096e7d0f2a493ae192ba5e2f0a38d331809c6844bb8152ad3cc43356e0ef575",
+      "size": 22185
+    },
+    {
+      "path": "evidence/p19/P-19B-EVIDENCE.md",
+      "sha256": "4f518664dbfba69dd66271eb44ab872c3b1531124399d3dbd9b203c3eee16995",
+      "size": 4331
+    },
+    {
+      "path": "evidence/p19/P-19B-PROVENANCE.json",
+      "sha256": "c015c1daddd2ce170a4667da111f0f20a2e3099dfccf5151d33556b5866e5848",
+      "size": 26288
+    },
+    {
+      "path": "evidence/p19/P-19B-BROWSER-VERIFICATION.json",
+      "sha256": "43186c50c669f875a2784f2db021740f5f3d8434df0fee17ce599e920c674a59",
+      "size": 1628
+    },
+    {
+      "path": "evidence/p19/P-19B-STATIC-VERIFICATION.json",
+      "sha256": "2efe429e11926b3beb42a3689bcfab11d53fcc3f25637685bf8674d676a239ac",
+      "size": 4781
+    },
+    {
+      "path": "evidence/p19/P-19B-PLAN-MANIFEST.json",
+      "sha256": "3fae28b52bc6a7e591ba5001acfc19936486f99505e8e62c780334cf786e04fb",
+      "size": 71142
+    },
+    {
+      "path": "evidence/p19/history/P19B-THREE-MODE-EXACT-129-HTML-1.5.0/INITIAL-CANDIDATE-LINEAGE.json",
+      "sha256": "d6dc0c4de97daf62042e2b9c28c1c017094d20ce1d33cdb5ea23a76851b03758",
+      "size": 696
+    },
+    {
+      "path": "evidence/p19/gallery/P-19B-INVENTORY.json",
+      "sha256": "37200a1d7ad3d239c0ef70f37708c92f56dd5968a31d7e14afd8ee27bc437da3",
+      "size": 70717
+    },
+    {
+      "path": "evidence/p19/gallery/P-19B-MANIFEST.json",
+      "sha256": "f15fa7b03e0f647727cbe274d00fcda39cdafd0f5d34cde3ce6659c966446220",
+      "size": 25934
+    },
+    {
+      "path": "evidence/p19/source/generate_p19b_gallery.py",
+      "sha256": "3cc2c113f3daf34c7947f7b466e28c2877656956b52b36b4e98c78e302123084",
+      "size": 16587
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b.py",
+      "sha256": "497c530bd38fc188367e5fec5d11b5fb4f1ccc125b296b8421e2b357b71da4f6",
+      "size": 13266
+    },
+    {
+      "path": "evidence/p19/source/build_p19b_manifests.py",
+      "sha256": "96ad7b74b7ef895e1a71a2d0272a69fed7548c11a0197c456feeea2b2c2b984f",
+      "size": 33355
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review01.py",
+      "sha256": "9d3f7cf62b2259651059891e6a49d7b50724d2abdad9e42c3634b82625cc7644",
+      "size": 2794
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review02.py",
+      "sha256": "f66f962f24fe5a58766a539ad3f997da426820d7492d257d321f88923ca4b14d",
+      "size": 5466
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-02-VERIFICATION.json",
+      "sha256": "7da897fd241beef9cad43c023a8efc99a8fe83ee529c59a40e07f1a78e069bb9",
+      "size": 5812
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "dee3448d692371ebed5b628bd6dfb16f0828e9772244502d9ac52f2d07853a27",
+      "size": 325529
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/gantt_layout_v15.py",
+      "sha256": "7984889f775c92d2a702cc23419e017ce24419cb5fe6f2f5276592a00fdc8aed",
+      "size": 10469
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_gantt_layout_v15.py",
+      "sha256": "57e658e411b92099c7d55f5ef823437fdb69f78ede4c00abd702cc9d62cd7c2e",
+      "size": 5870
+    },
+    {
+      "path": "evidence/p19/source/gantt_review03_fixture.py",
+      "sha256": "c3d74ba2f8524923dd018958e0b1fc2a3bbf2e07762b6220200d02f37eaca1ec",
+      "size": 1864
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review02.py",
+      "sha256": "c21a899888fb72c688fe40f6cf5659eaf07cb028fd3ce69f048eaf2f9131016f",
+      "size": 2776
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review03.py",
+      "sha256": "e3b7a281029f4956db5f52e9c288d74a925fc918d81f37012ebcadd488551c9a",
+      "size": 5710
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-03-DESIGN.md",
+      "sha256": "2a1ad1739c7d73559b77f6194fe0b9e30dfe1ad99bbcccb69438b50cb4b61b67",
+      "size": 2679
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-03-VERIFICATION.json",
+      "sha256": "9d8d224f35775ef497ff07ef81f8075ade61865857f51f4216dcb76591483d92",
+      "size": 1838
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "f0babeaf44467716b025e5f7d70a7913f357440a593a6a999ba314eacbc788d6",
+      "size": 406347
+    },
+    {
+      "path": "evidence/p19/review03-checks/owner-references/gantt-reference.png",
+      "sha256": "052a7e3294bc0695d9f2e94cc65763bb54ab5969798afa7718907f678d375fab",
+      "size": 129971
+    },
+    {
+      "path": "evidence/p19/review03-checks/rasters/type-gantt--editorial.png",
+      "sha256": "19889ee86e1feb9f79d58971430352a68a0a330b5bb6de9cca9d0e15e6d62a24",
+      "size": 146459
+    },
+    {
+      "path": "evidence/p19/review03-checks/rasters/type-gantt--neutral-dark.png",
+      "sha256": "2e1f54f607f8f5de4f21c8f29cbca97585320af44de8d34afc34bad29ff122d4",
+      "size": 147066
+    },
+    {
+      "path": "evidence/p19/review03-checks/rasters/type-gantt--neutral-light.png",
+      "sha256": "46bc6b58eb606b252319c5a607655c9e2b4fc7a7287bb4f5926aa223ad208d20",
+      "size": 149858
+    },
+    {
+      "path": "evidence/p19/review03-checks/type-gantt--editorial.svg",
+      "sha256": "c1fe386d8253b6175fbb4a47bacc12bc1b164af50774e369dc1c04cc66857bcf",
+      "size": 14333
+    },
+    {
+      "path": "evidence/p19/review03-checks/type-gantt--neutral-dark.svg",
+      "sha256": "3d3a3d16199b215fb4591456f6d9ca217673a660d466519687c0dfa2c7046978",
+      "size": 14348
+    },
+    {
+      "path": "evidence/p19/review03-checks/type-gantt--neutral-light.svg",
+      "sha256": "8af846507e61f37ed913eb80f29511a862489f7f87e72032a6e7a6a1c7a75fc5",
+      "size": 14353
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/dp-integration-defect.png",
+      "sha256": "556162f598ca56d3eefed78678cb11349faf88b2f51099dbf983821bed2f4a64",
+      "size": 188781
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/swimlane-defect.png",
+      "sha256": "5dffb2166c4ccff3ebf8bb2919201789dd53647917cec06864fc8873521161b0",
+      "size": 148853
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--editorial.png",
+      "sha256": "9f65fc64306b8cc3abebd1b9b245957402f4e405b1b22820a095f118415c3337",
+      "size": 91532
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--neutral-dark.png",
+      "sha256": "1128291672b30156f3e0d4df79db1dd431a12ca1aaf77ca2aff73e1d8bf332f9",
+      "size": 91112
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--neutral-light.png",
+      "sha256": "748fedba41d444b11883957eb9665769b5065d312d53343431bb52a2ced154b1",
+      "size": 92751
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--editorial--straight-proof.png",
+      "sha256": "785d75888ff4cfbc59fc65a49b23e3805203918cc2527369deb6b2b87f4a121e",
+      "size": 84057
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--editorial.png",
+      "sha256": "eeb66a902b1ff3f6c2e3f5fde60bcc50487ab0f50674363bbf2b9ec9f4a9a8a6",
+      "size": 86006
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-dark--straight-proof.png",
+      "sha256": "03b320c4cf83210da2cdb3020d786bbadb7a8efe782f3aee770ed3e5154e2108",
+      "size": 83067
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-dark.png",
+      "sha256": "cf1e21e6e0466ddbdf6716cbc35608fc98688fb469adcefaed9e3992953200f9",
+      "size": 85012
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-light--straight-proof.png",
+      "sha256": "7c7b8b3da22983a0eb52c239d834f0fe6458bd2f718acbb8d1b494792c94547e",
+      "size": 85001
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-light.png",
+      "sha256": "19b33948d93f5255573521ae369e507fd320df2e869b924bc9f97dcc542cfd55",
+      "size": 86909
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--editorial.svg",
+      "sha256": "bed87bbc504668219f8c4d64bf71eb80ab53da792882a9bfade7f488be68a4cd",
+      "size": 8423
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-dark.svg",
+      "sha256": "344dac30ddfcd6929980fe2ea3e30f8849bdb9981bd0113357dfd7e5c3959f27",
+      "size": 8438
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-light.svg",
+      "sha256": "72d0779e073b4b5cbded9a54351553fe8f272f033582faaa25e91f964a768d89",
+      "size": 8443
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial--straight-proof.svg",
+      "sha256": "d000bbff9174ec4b3481cf9659f912d85e7808f7974e38362bc0b8395b5c5377",
+      "size": 8181
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial.svg",
+      "sha256": "cb45ce283d8c6d95199a759480344da217ce1fed4d69c3be6396a841dbb0d265",
+      "size": 8214
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark--straight-proof.svg",
+      "sha256": "b6fb994a5cfcf888b2bf0e6b2a4e264a30dbfc88525732bed64dd77bdfb41e3c",
+      "size": 8196
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark.svg",
+      "sha256": "248c5c36fed68aedadcb21ce6076a41e932af860c852dda94c08dec72b3e645e",
+      "size": 8229
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light--straight-proof.svg",
+      "sha256": "9f592c6d2d337ec1299335cef5ea896dc265f47fa8ed33f3c196414364b1b093",
+      "size": 8201
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light.svg",
+      "sha256": "ed650f9b3e16bae65561462ec81b103f03285b591b82887083f279dc16e3ce9e",
+      "size": 8234
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/flywheel_layout_v15.py",
+      "sha256": "82244d336601cd83324f660c586a92b68914637e2638a7534c2ea54d2e50ee1a",
+      "size": 11143
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_flywheel_layout_v15.py",
+      "sha256": "c412d5650677830176c1e16e283f33a95bb3e60256958ea1b7aa7fd2debcdec9",
+      "size": 5693
+    },
+    {
+      "path": "evidence/p19/source/flywheel_review04_fixture.py",
+      "sha256": "e419c81d1b15bb49559c14818ea82815a547dbd9305f5fa5d5611e9eb9e53756",
+      "size": 2133
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review03.py",
+      "sha256": "792863c3a7b32e8613ea5653bbcb405de6659abf607ddae192bf17e0291ef997",
+      "size": 2779
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review04.py",
+      "sha256": "e635d617433499b0eda0b086d1ea1da8bceb3bd1d6f83b2f8f8dbde6aaf69caa",
+      "size": 7224
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-04-DESIGN.md",
+      "sha256": "85b84b4941aeafa91512aab2d29b0e90cca4c78ced3cfd06d7df0f2760e5b4af",
+      "size": 2857
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-04-VERIFICATION.json",
+      "sha256": "fa298cd02f5caa47ba82b4a902c9e918ea112d2921690bdce43b4e5a81d37ea9",
+      "size": 1900
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "2bdca5f7795aa8f6ef912a2d495678b32533192423e095bbb268883995d55f4c",
+      "size": 456107
+    },
+    {
+      "path": "evidence/p19/review04-checks/owner-references/flywheel-reference.png",
+      "sha256": "f3b0a401ff3290559b123c9fb60a557a865d716cf21150e3bc5c1ba88c3a06ca",
+      "size": 198523
+    },
+    {
+      "path": "evidence/p19/review04-checks/rasters/type-loop-flywheel--editorial.png",
+      "sha256": "9320de7fa5eeeb2dd2e7776f1e2ab2288dddfba8ddce31ac7efd536e08343779",
+      "size": 190748
+    },
+    {
+      "path": "evidence/p19/review04-checks/rasters/type-loop-flywheel--neutral-dark.png",
+      "sha256": "1d6bc7360c88123368351690a38ed2947339115ec3cbae6043152f572a43d180",
+      "size": 166308
+    },
+    {
+      "path": "evidence/p19/review04-checks/rasters/type-loop-flywheel--neutral-light.png",
+      "sha256": "340dac12dc10813b9cfd94a686225d0553a7b5a63c59d69a534d644e0dc23638",
+      "size": 181547
+    },
+    {
+      "path": "evidence/p19/review04-checks/type-loop-flywheel--editorial.svg",
+      "sha256": "1d8dfa51ac88de3876c8e00bb208f428f40dfb4d6e1d1d28fc9298d69d7a2911",
+      "size": 13375
+    },
+    {
+      "path": "evidence/p19/review04-checks/type-loop-flywheel--neutral-dark.svg",
+      "sha256": "12bd2f7531903b6430fb4ea243cbe387979955d5c994148bb3796a4ef9e68c3a",
+      "size": 13390
+    },
+    {
+      "path": "evidence/p19/review04-checks/type-loop-flywheel--neutral-light.svg",
+      "sha256": "54bde40db662248d4dab20196e44a868b64fc5730c13bd1e478afde511544ab3",
+      "size": 13395
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "d2ea9a2674a1c52be8daae66b77106a74944219c8a23a96e93731dbdb6b2a231",
+      "size": 5004
+    },
+    {
+      "path": "evidence/p19/source/p19_scope.py",
+      "sha256": "e5562d7d7066629efa8a43ee0b7153f0d885df56d257ecfc13bd3b86476c2e5f",
+      "size": 1980
+    },
+    {
+      "path": "evidence/p19/source/retire_p19_duplicates.py",
+      "sha256": "7fe2bf24b8b09d650f151a7cd331dd060adbaacf2ec5d6a7bb2afd0135acfcbf",
+      "size": 3272
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review04.py",
+      "sha256": "bc3703030e4a16bf4d801f56a6f7e44a99fd8085454d4b82ff57f9b128fc796a",
+      "size": 2781
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review05.py",
+      "sha256": "2ee5b67bb2b3a9b92618206af2647360b4b429bedf968369e99979256f41918b",
+      "size": 4188
+    },
+    {
+      "path": "evidence/p19/source/test_p19_scope.py",
+      "sha256": "5b84a845c588b71be73e49f74e45bc6afd2815f42792b3066bb34280354da261",
+      "size": 4174
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-05-DESIGN.md",
+      "sha256": "82ef52e08bc4f4d20db63ce1f3525dfa3f689c73261f6bf6a2197f261cb84655",
+      "size": 2333
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-05-VERIFICATION.json",
+      "sha256": "beedaa56f2329c80867b36f904ae69ae7422258a518be59200eaa69ea1811092",
+      "size": 760
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-04-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "0825bc4cb57ca9021873863047f0a00beff1ae6afd538a80020328adc48facf9",
+      "size": 509059
+    },
+    {
+      "path": "evidence/p19/withdrawn/review05-duplicates/WITHDRAWAL-RECEIPT.json",
+      "sha256": "c9665a7413485e001ccccb197209bf45f26aab0ad1c9ad0699c746287731cbde",
+      "size": 9245
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/fishbone_layout_v15.py",
+      "sha256": "908dcc753e93348472089c46e8a95be621ecfa099551c45894ad165dc14735d8",
+      "size": 8798
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_fishbone_layout_v15.py",
+      "sha256": "3dcd530957af57bcd022460815b54e48f0bab898df91f00d05097d25f7f57ddd",
+      "size": 3678
+    },
+    {
+      "path": "evidence/p19/source/fishbone_review06_fixture.py",
+      "sha256": "4e4958fd3141c2ee68cbd41a4d16c8fe4630b0820b3910974e0920b262ecfa24",
+      "size": 2169
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review05.py",
+      "sha256": "876d98a0c2f0f42fca60a3605aac0af6868cf0f040ae7def39b0f53c3fd5facd",
+      "size": 2720
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review06.py",
+      "sha256": "ff38a4e60a5aa9d9bc74027fad9af2c48206a7b15ead89d2ebc5e174a9694c28",
+      "size": 5943
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-06-DESIGN.md",
+      "sha256": "91a040e5bb6f91afd340f2b98d2c678774151e3e65b630b395e61b4053993a3a",
+      "size": 2191
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-06-VERIFICATION.json",
+      "sha256": "54912194e2aa2ca93bf5b5e6cbe2649ddb004067850fdffeb19d5d9db2b16dbb",
+      "size": 606
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-05-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "7300ff4328699f8d40a560aafec50fdbfd4087aff2b86af7ca4139d0b82e8b34",
+      "size": 568955
+    },
+    {
+      "path": "evidence/p19/review06-checks/type-fishbone.svg.png",
+      "sha256": "447b85e6ff492d85a3cb28a10e98240503111d586b17ad19c6d36b95a1d21723",
+      "size": 177338
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/dp_integration_layout_v15.py",
+      "sha256": "3a51582681e32d11289870a26b5fe6f97b8e6a3395d67b222c4b5ef2e68bbd55",
+      "size": 14277
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_dp_integration_layout_v15.py",
+      "sha256": "7ccc0ecd86d4c213d65d786fbfe7c3171d07ff342c12da176bf69df8e1565a35",
+      "size": 3837
+    },
+    {
+      "path": "evidence/p19/source/dp_integration_review07_fixture.py",
+      "sha256": "7bac8576d69f86f09f7cb0f6008ecfbbe6e2524750a181fc51c544b6dd6a441b",
+      "size": 4052
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review06.py",
+      "sha256": "d9760e55b0c52983f5019919a8f7c57a7896124d92e8e538354b9066e7e64102",
+      "size": 2937
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review07.py",
+      "sha256": "ed7aa64625fb5d4f322a354e1aa0248373cabeb66ab6400e20496e212e101bd2",
+      "size": 5651
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-07-DESIGN.md",
+      "sha256": "88fb6a1ba031651c82b846d6dfa8f3195eda6782dc7590b57183a4dcfd9670ac",
+      "size": 2977
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-07-VERIFICATION.json",
+      "sha256": "5cbd19f8a03b96fc89493539fdc0d85cfac097cdded1477c1aa4dd56dfb7b203",
+      "size": 1263
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-06-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "46c0d8c69818a62152945ed3abbed3ddf74a996733ed98edb2d092518ae49891",
+      "size": 614087
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--editorial.svg",
+      "sha256": "8b3ee298eb2355d52b917c3c9de896c1490c0a1804d35e1b6bd8d6c06527d936",
+      "size": 17119
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--editorial.svg.png",
+      "sha256": "a91869ac8ad894326432a61e85086cabe798d007f930a6a6c0b76ecaadcb0173",
+      "size": 170309
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-dark.svg",
+      "sha256": "0692389a65cea3f3d47cad7e2d70675cf3034106d6bbc332b8a53b029f7333f7",
+      "size": 17134
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-dark.svg.png",
+      "sha256": "5f3ba9640eceac759a6ba2987bc3093723bf2a71ff0054d1faaf0166d5a4f81f",
+      "size": 167164
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-light.svg",
+      "sha256": "723d9bba9445178e1d8cb5e369b86a6ff77279c7660e37cb1345705340407876",
+      "size": 17139
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-light.svg.png",
+      "sha256": "aa65f572a21503f7bee97d40507983e0d4e0ef7fb92b557768b051cbd9c7a36d",
+      "size": 174361
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/line_chart_layout_v15.py",
+      "sha256": "e88d5b99fa3eb02b38d80298175fc6bc29a91a33545e969f547b7b141fc79c3e",
+      "size": 12081
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_line_chart_layout_v15.py",
+      "sha256": "58fd24c5335c998ed8959f3db515f700bdbfc18c497cbbb7d1a65c5de789f005",
+      "size": 3743
+    },
+    {
+      "path": "evidence/p19/source/line_chart_review16_fixture.py",
+      "sha256": "246cd2b790811ccd9f9813209951e72746bc5fde8eb757d960b373a558db5024",
+      "size": 1992
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review15.py",
+      "sha256": "5f9ee93dd7c829ae3e3a918303dbd710ac01bc3b64c2e9645c4d0f38ccd0b633",
+      "size": 2967
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review16.py",
+      "sha256": "0a39bedc48975b96cd2c9a9476a2d0374b0d5164ba5b677ee75ba1d18dfc26c8",
+      "size": 6141
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-16-DESIGN.md",
+      "sha256": "b71123b695de2ae8494f4d0cdb4935192fb12e9d39df42ec8e859d1a00258774",
+      "size": 1642
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-16-VERIFICATION.json",
+      "sha256": "153d22889fccebe70d5ee711df683f6c2a064a1ef494fdbd2781d09efc898962",
+      "size": 1519
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-15-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "14f6d223113f49423f0ba27dc8c869c50176567b13c8a14a17b4cfcfefa09edc",
+      "size": 1147194
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--editorial.svg",
+      "sha256": "d8093e631e2e780c4ad7b211f24c529d6a4290e4358cf6bf438984ba883fec22",
+      "size": 18819
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-dark.svg",
+      "sha256": "8364adeea77a99884c8242254b4180cda478b95a7abb9641270893df5d429c06",
+      "size": 18834
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-light.svg",
+      "sha256": "c87b0808b4d298d35aa6824b0d7f2fb26adcceb63ba80d02051b4402b7bdaa09",
+      "size": 18839
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-light.svg.png",
+      "sha256": "9f2539683100a1a214af8534f384d800db679c3702afce5e0425277192dfb3d9",
+      "size": 179824
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/bar_chart_layout_v15.py",
+      "sha256": "bd48f9d6010ddf153627d0580131ee273730a78eb2b4944300e6ccfa4259c1a8",
+      "size": 9467
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_bar_chart_layout_v15.py",
+      "sha256": "39cd91f8a96e8f2d977fc465514f4b0f41ecbcde6da7a96b76d33af2a01fe883",
+      "size": 3032
+    },
+    {
+      "path": "evidence/p19/source/bar_chart_review08_fixture.py",
+      "sha256": "2aa0d5e8b2879c7e682bff0939a9b4b801602441adf9ea2e131c63f4227213a5",
+      "size": 1646
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review07.py",
+      "sha256": "61dd3e0d338d32b1de07a7191b2dc59706b4f63d3a3c1feedde6409a2481830d",
+      "size": 2946
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review08.py",
+      "sha256": "348c4e8de8f6ac2019a42450ccbbb7784e0ae57d290c1ffc998fa164420eb05c",
+      "size": 5437
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-08-DESIGN.md",
+      "sha256": "39dfa3e441390db964580b5ed85d19f8e7d6dc565b08c1f146c0dc3522cf37ed",
+      "size": 3238
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-08-VERIFICATION.json",
+      "sha256": "617bae26126075dcb277393ff8b9d28168a6ccc3f0eb6e522dd5a7cbc24953fb",
+      "size": 1262
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-07-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "37a27276a1594b72833c705954abdea77fed53b02027bdbac974502cc770c728",
+      "size": 661813
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--editorial.svg",
+      "sha256": "e435e518ef7d144f45ea21d581b272276c40f81dcb2d352f172bce4559845e2b",
+      "size": 13058
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--editorial.svg.png",
+      "sha256": "92173f5c3005f3367dc7bff1902fb5975103782976852f123c0a47648154af08",
+      "size": 109738
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-dark.svg",
+      "sha256": "f83f91c32905774397fdb967cead284556ab4cd314cc18bbfbd4ac4f53018381",
+      "size": 13073
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-dark.svg.png",
+      "sha256": "7ab4a74d66efe271289eee98a6278303767718820cbf46235a93ae1a26ccef08",
+      "size": 107916
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-light.svg",
+      "sha256": "7330449b6b548c810fd0342bea568a85b7567b99dc109a1fc0e44db62b9d8fc2",
+      "size": 13078
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-light.svg.png",
+      "sha256": "18d7170f36b6571e799b0cb9a3104b4f2aaacbd6b78ad2ff0b8124f9b9545317",
+      "size": 114701
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/dp_security_matrix_layout_v15.py",
+      "sha256": "82f07bd05957e242438ee7bd94750b9d8f0ca6486656382ea970eb904f14872e",
+      "size": 12547
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_dp_security_matrix_layout_v15.py",
+      "sha256": "af51d2b4c42c4299e91be7ec74d4f8aa54c17f49d3730ee5be70a096bf994f6d",
+      "size": 3129
+    },
+    {
+      "path": "evidence/p19/source/dp_security_matrix_review09_fixture.py",
+      "sha256": "a3d9fc1fed1a3f0cf6f01a6344b3f4c55326499430c0bd90a92885eb7e008772",
+      "size": 2627
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review08.py",
+      "sha256": "5bade6384e8317b6c6f2aed8681858350b63154bc24eea98d4d3f3cbe729e150",
+      "size": 2964
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review09.py",
+      "sha256": "ddb8e3b679d683d9a7e6d34d0c77ff5df06ac65ad7cc437ba5c672ec006e78cf",
+      "size": 5667
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-09-DESIGN.md",
+      "sha256": "6a5467bb3583f95f1bd8b9018c1e8edaf1be06082cddb81d124555d62f8a7b7d",
+      "size": 1841
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-09-VERIFICATION.json",
+      "sha256": "7453666d46915dc803c9f7118e0e825a48a8c223b1536fb60f66f73fa4638827",
+      "size": 1338
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-08-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "00680914ef8a54f459f35e45da7f92c708f1464bc2e49311bae29b8df519212c",
+      "size": 712493
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--editorial.svg",
+      "sha256": "b0186a83777ddfa09a4a0f2ca4923e357910eb14afb7b0148359c8515b0909a2",
+      "size": 24180
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--editorial.svg.png",
+      "sha256": "0ca3dc04325ceed9b4f9a3b8f103b6b5cdc7e5a0fe6cdf12e2b9db2d7561d3b5",
+      "size": 203653
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--neutral-dark.svg",
+      "sha256": "f76969ed46cd4cb6161aad0473247119631c8ad4c9b5d50259d4cb4ca46a82ae",
+      "size": 24195
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--neutral-dark.svg.png",
+      "sha256": "f029b230397a9a682033282a491ebe7c692ea5183d0f2619667d6bce0e4f2be2",
+      "size": 201384
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--neutral-light.svg",
+      "sha256": "4d8325b90b7a9de899a4ca5a64ec488ea6d929163d53889756dfa3372fe955f9",
+      "size": 24200
+    },
+    {
+      "path": "evidence/p19/review09-checks/type-dp-security-matrix--neutral-light.svg.png",
+      "sha256": "c1a6b2283dc178b3d90a092d7c52d9932c89ee1ea15bf7f4531e8ef334cfd4b9",
+      "size": 207974
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/er_data_model_layout_v15.py",
+      "sha256": "06e0b3bd861f348be4854386c6aa40cf643d5ada7828c802ce422783a3e7f5e3",
+      "size": 16326
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_er_data_model_layout_v15.py",
+      "sha256": "162cad01490c445947a058b5fbfa711ed6c8b1f48afba1b2c829f3aa14ae0672",
+      "size": 3593
+    },
+    {
+      "path": "evidence/p19/source/er_data_model_review10_fixture.py",
+      "sha256": "f4f1266b72849fbfc2938de1e43b35686e6ee0e3ef36301dca878b5a2b0b3dfc",
+      "size": 3771
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review09.py",
+      "sha256": "ac28e64f2334e284b75954bfe0867a66fed138249c7e48a3e2e2e97c20547619",
+      "size": 2954
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review10.py",
+      "sha256": "f7fa5e86e7c5c35415a2fe6b91936de44483b4a9d65abe2a22da209f66d56e30",
+      "size": 5534
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-10-DESIGN.md",
+      "sha256": "12ed17f525b3e1f5a033bac844544119a3d409f51bbeda7c60b483720c403ce1",
+      "size": 1916
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-10-VERIFICATION.json",
+      "sha256": "12e81e42552b1ff8720ef91bcd7293e88d681b60d3e7dc5aeeb32779c3f0e66c",
+      "size": 1315
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-09-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "566ccb19a797c12d9c3cbe3a4d585f50cec4fbae81d9e4b62b9f5109dd23f772",
+      "size": 766180
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--editorial.svg",
+      "sha256": "7f9f1b3bb35418aaa37c8ad4553c6a3a0c3e782b2525bf23f59eeb755eaa6c9a",
+      "size": 19116
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--editorial.svg.png",
+      "sha256": "a56b362deb6fa80ea205d788dd8fcd8fee9a0d88e1b3e39d80e74a99718167ff",
+      "size": 156234
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-dark.svg",
+      "sha256": "c86fc686f3a42000433d539d117879d4dbfeb1d0a3cc2de84450f691adceda0a",
+      "size": 19131
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-dark.svg.png",
+      "sha256": "d1c938d0efea256bf4b3335a9b1f7e5e6b3d0231cf8d839cc3bc08789bbad263",
+      "size": 154988
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-light.svg",
+      "sha256": "e76a267df137fa96979efe0370efd22d1dfd6da8286a0414bf9a0c323dbcd511",
+      "size": 19136
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-light.svg.png",
+      "sha256": "e693a9180bdc0fe955715aea207c33a5a78a10a89d2965eccd90f555c7bf5ed6",
+      "size": 166035
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review10.py",
+      "sha256": "7bdb6c493187169a6f1e7a4eb05ffe6340854c21d628a931c28fc23cfeb30862",
+      "size": 2978
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review11.py",
+      "sha256": "f9137a48c2baa5e918bd4c3496905b656c1a5ed4c6eaf9bc7f53515440b03cb4",
+      "size": 5547
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-11-DESIGN.md",
+      "sha256": "5b202a273944cb6137cd5176726b541fd4417c877c0b6a14276dc370d6953ab3",
+      "size": 1540
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-11-VERIFICATION.json",
+      "sha256": "0716d3534f508ad03dad0937197491eee6a5a375d0280dcc38d040b97540003c",
+      "size": 1302
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-10-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "3edfe247b4979a49f9c50f04685ac7548a9fa046919afc74397f295f7921018f",
+      "size": 822867
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--editorial.svg",
+      "sha256": "05d74e54c9ca4b82fb9291ab5970021c1d13960d022a495482e0535050d2761e",
+      "size": 23225
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--editorial.svg.png",
+      "sha256": "ff144f24d6afd8761bc00630f7b9f1d4842aa3218758210cc3114956f7839262",
+      "size": 156625
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-dark.svg",
+      "sha256": "7d74d9cd14cf7631a07baf65d1c59822c9aa75c8e5970a942f3a0cbb802c3e30",
+      "size": 23240
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-dark.svg.png",
+      "sha256": "76f6435b84f9e26214cad495b4c48ec573596c36aa8650f023cd7ee9400c6cc5",
+      "size": 155162
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-light.svg",
+      "sha256": "d05f5ca57dcd98d4500bca110eee7b99ef427c345d7d6e818f24086f34675cd1",
+      "size": 23245
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-light.svg.png",
+      "sha256": "223c9b357773d3cb3eaffd7199e0ccb83ba4cb837df19f85ea0a8e48b79680c6",
+      "size": 166314
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/high_level_layout_v15.py",
+      "sha256": "f5254471f3f6e2d4173a1d8e88f9dc37b17451ae8565ac2f24f605bd01cc6b17",
+      "size": 13068
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_high_level_layout_v15.py",
+      "sha256": "b04e0619afd74be2308617a37b5d14c0025f2abe3c611a246b17d45045284ecb",
+      "size": 4360
+    },
+    {
+      "path": "evidence/p19/source/high_level_review12_fixture.py",
+      "sha256": "ccf2b0f49dedd052cb14cf9ccd3098b9f95cb7cd3d96c01a6a0f6f7710075080",
+      "size": 3885
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review11.py",
+      "sha256": "5622720f71e7099e90af38a8832f08628877c735cafac1f4d21416d8592f5be6",
+      "size": 2658
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review12.py",
+      "sha256": "ea4fb72e50076d964912ea49310740e990b7e87f6601b6c0cc661977f529df9e",
+      "size": 6709
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-12-DESIGN.md",
+      "sha256": "5404a66544b5ba02bc7946d3f07bea063075fb549c0354224006b3c644404904",
+      "size": 2056
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-12-VERIFICATION.json",
+      "sha256": "46f53bc906ec87ef3bb5b66bc4d3eb082ff5f64d655123a4ca1b158add6cf595",
+      "size": 1905
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-11-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "192b41fcecec48682a854a326c50d6aa17b34bb900cc227a4a57e9e4965fbb11",
+      "size": 882069
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--editorial--straight-proof.svg",
+      "sha256": "b56887046e9856913a0ac328bceb42a43915d9cafb6871257792508b5955a653",
+      "size": 17329
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--editorial.svg",
+      "sha256": "bd0c680328bb3fcb6254fe3d3c007b3a3ac884b5db174f57667326ba1b2fba18",
+      "size": 17623
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--neutral-dark--straight-proof.svg",
+      "sha256": "724f8f91dcb0d8cde1f39349d160c1a9d1ea814543838a435be9ad2be141bd59",
+      "size": 17344
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--neutral-dark.svg",
+      "sha256": "1a964d34a08fb4acc75e6ea3cc955dc12a6b7e674cb31d34ceb19f0f5d341cc8",
+      "size": 17638
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--neutral-light--straight-proof.svg",
+      "sha256": "c24d32489454c0e689dc4c67480442a492835e628707c3a409016383764cf225",
+      "size": 17349
+    },
+    {
+      "path": "evidence/p19/review12-checks/type-high-level--neutral-light.svg",
+      "sha256": "8bf24825aebf2d4c079220617f367afc7d7d8b4b0be00276a7066d4030969efa",
+      "size": 17643
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/it_current_state_layout_v15.py",
+      "sha256": "dc26c152b74ee009bb8d125677a964b60c7717e8a0508b3a4831fd2d55686c54",
+      "size": 14731
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_it_current_state_layout_v15.py",
+      "sha256": "d960958a0d283ea1170a49ae69f2aad88a0e8e148d94195da584425f860aed70",
+      "size": 5060
+    },
+    {
+      "path": "evidence/p19/source/it_current_state_review13_fixture.py",
+      "sha256": "d462bd10d1de1cca388b6bb36cda3744fdae90d2ea096208459ffc8916ffb123",
+      "size": 3449
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review12.py",
+      "sha256": "5730e34f01ba1b3979fc23555a541a1c7496eb18ad570718c2160a2e411f0b43",
+      "size": 2902
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review13.py",
+      "sha256": "7f8645a3de388d0993170a2f2b8e7d6753c922d54c16d98f325fd856d3a987d1",
+      "size": 7352
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-13-DESIGN.md",
+      "sha256": "e827507e815449c24d3c15c81f8e0068ce6c20fe1a71e144166cdb31e22e5f9a",
+      "size": 1656
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-13-VERIFICATION.json",
+      "sha256": "d85a88c8fb9fb2367e77ad6da908d9620f8975c4d676033ed2122cfa3df95f23",
+      "size": 2029
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-12-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "2d56057761be04307b360ce8205c4ebbb803ec702678eb180cd7135fc8e75c1b",
+      "size": 944056
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--editorial--straight-proof.svg",
+      "sha256": "b7003e5ff1054410ff0a99968853bd99d5fc0246ceacebd867318523b81279f0",
+      "size": 18203
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--editorial.svg",
+      "sha256": "168623e365585df430d07a424432b40fce613075d56ea1d9794859211b30e20d",
+      "size": 18300
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-dark--straight-proof.svg",
+      "sha256": "720c2ce179c7a9cc9a4b836b8e8e0860927addc5b5872a8f00ebce291b6765c8",
+      "size": 18218
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-dark.svg",
+      "sha256": "dbd7d76912f6cc03b1a470353a97beba6b8b938ae03724819e1bfb6463345afc",
+      "size": 18315
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-light--straight-proof.svg",
+      "sha256": "bf5157ab1a562ce94c6d0824c794964936375cefc027c5e2ca759e4322393dce",
+      "size": 18223
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-light.svg",
+      "sha256": "9c570568d0bfab3c9e0956bd46a17248cc25b83765afab2f7090f515e04d9c6b",
+      "size": 18320
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/kanban_layout_v15.py",
+      "sha256": "3335c69f88c027942ae40691eeefcc142b3c392ce5eebcc2a42f9b06a4c70d4c",
+      "size": 11428
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_kanban_layout_v15.py",
+      "sha256": "ec2b75a7764dbb36fb75245256777b4613086d4da5807a6c8d2fe51f18ffcb76",
+      "size": 3928
+    },
+    {
+      "path": "evidence/p19/source/kanban_review14_fixture.py",
+      "sha256": "2205246162b646838f1739625f56811ecd871ec6f12b3479ca97dbfc4ba99fea",
+      "size": 2846
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review13.py",
+      "sha256": "3ae036d399a4e80a5bd3e714352d39fe6a5e981953cb38f1adb5a1435a31ee13",
+      "size": 2882
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review14.py",
+      "sha256": "084d8ea1e908224b3dd22aa3cfa68f98046296d38893b61304b5a1c5df476db6",
+      "size": 5992
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-14-DESIGN.md",
+      "sha256": "4e445662f477ce72cd978c213b31ecbd466fb8bc3173ff0ccca1ee01f296eb8a",
+      "size": 1763
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-14-VERIFICATION.json",
+      "sha256": "394c6b7f5cf9e78503029a9f07750697d14cb04232a60c6ff7cc70850a927aef",
+      "size": 1320
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-13-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "3478bae25c5e1dfbc2964085b87f37758c8fc40e88658d764e8c9f5a3b268d14",
+      "size": 1009066
+    },
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--editorial.svg",
+      "sha256": "f9204368a5cdfda1b0ee78c6620477de22b92591929087b81004f9bd1330ed5b",
+      "size": 14655
+    },
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--neutral-dark.svg",
+      "sha256": "0ae97eac89da7991b1b56c7ebf895967a5393834755d7063bdcd000bab5ef9b5",
+      "size": 14670
+    },
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--neutral-light.svg",
+      "sha256": "d344ab50a301dda64e7c9f9b0f37b0af5652261fe622e47edb6c3803de7a14cb",
+      "size": 14675
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/layers_layout_v15.py",
+      "sha256": "a1a0d88d63f8034f522db9a3ad6bed4c7aca7f311e547b86b72dea7f64336583",
+      "size": 7787
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_layers_layout_v15.py",
+      "sha256": "409f23d242895785326cd4b19817a9bd389344d3b94d083f1c38de9f539fd8fe",
+      "size": 3934
+    },
+    {
+      "path": "evidence/p19/source/layers_review15_fixture.py",
+      "sha256": "78fe3d28ef6d30f6284f4fb79a360abe3c292cf42f55acff87dc350822bcae1d",
+      "size": 2561
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review14.py",
+      "sha256": "de26822e22df83b41a30af51417da8355d0789344c731c6c6e4e63900ad901e0",
+      "size": 2956
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review15.py",
+      "sha256": "3b45f74d1182308bddb281ead10bc8e57b1e211776a6ac7cf692c4dfaac8cfa9",
+      "size": 6132
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-15-DESIGN.md",
+      "sha256": "453d067bf7aa3928a1318fd18859bb193ad0bc2ab404b5c321a5ef62b02cc896",
+      "size": 2569
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-15-VERIFICATION.json",
+      "sha256": "4d8c52edba934ec40142a0346c606f15b61efdb599041682efa56117d0f5c72d",
+      "size": 1442
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "83b08b9c9a95db36934f267e4cd66eebe472289492ae7718d3b2a6b371790c57",
+      "size": 1076712
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--editorial.svg",
+      "sha256": "9c780d430d7ad3ab67a374c3425e7d943294f8d59b79b919575fa2a2a4ba4bd6",
+      "size": 10926
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-dark.svg",
+      "sha256": "996cc38450b020b71a528a6f79c819ece34f04f7ed2fb3d18f759a1306b28b1b",
+      "size": 10941
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-light.svg",
+      "sha256": "1682378233122c0b331d033be9560f5462d1e85c6e436271735a334c962f62ec",
+      "size": 10946
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-light.svg.png",
+      "sha256": "540ef4b97439d02509497e663d91ddd92f4d4f0609bee9f770ec5433a2a39cf0",
+      "size": 158622
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/medallion_layout_v15.py",
+      "sha256": "b8c865aba94675f8bf0ebe110d8fdb5a4c6d0dafb7d20ebd8442cbfa98fd8242",
+      "size": 14683
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_medallion_layout_v15.py",
+      "sha256": "72c04da770451b435baeccc76b98e45f20b42f0a0f2d0760214d1ff14135264f",
+      "size": 4123
+    },
+    {
+      "path": "evidence/p19/source/medallion_review17_fixture.py",
+      "sha256": "22cc003c6b1148805970e0d019036041ac25474d6b5f85c228203d30bbe37f4a",
+      "size": 4144
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review16.py",
+      "sha256": "a20f92804e6763597bcd041fa3ff78645b948567bd813c17cd12375842e86433",
+      "size": 2965
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review17.py",
+      "sha256": "31e3a4f92db50b76ad48ddf91aa86e3637ef42029d182954cf0bfa2ff06c154e",
+      "size": 6425
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-17-DESIGN.md",
+      "sha256": "432010f0f3adfd1628e661f0ee0f873deec0a538e83a2fa9c092d9587bdb4a46",
+      "size": 1916
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-17-VERIFICATION.json",
+      "sha256": "f675525903c7f7412533f425392762de8249398e9aa63aaa5da7399c79ad35be",
+      "size": 1574
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-16-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "df91bedc2be00f015030072c54647541c2f1d338259ccab61dff52dc90358ea6",
+      "size": 1220488
+    },
+    {
+      "path": "evidence/p19/review17-checks/type-medallion--editorial.svg",
+      "sha256": "928945ceae141b29ee808cc00f48069d6739e4e19e190854e888a17e04e5986c",
+      "size": 17815
+    },
+    {
+      "path": "evidence/p19/review17-checks/type-medallion--neutral-dark.svg",
+      "sha256": "ac3e66ce0ce869ba0806fc029d35ab44e7ee7a97e40286f544034fd2065ae796",
+      "size": 17830
+    },
+    {
+      "path": "evidence/p19/review17-checks/type-medallion--neutral-light.svg",
+      "sha256": "6f62439879442f4cb7ff660a7648dbc17f6f2ce6840755a700e07a1b9bfc85ea",
+      "size": 17835
+    },
+    {
+      "path": "evidence/p19/review17-checks/type-medallion--neutral-light.svg.png",
+      "sha256": "3388a60fb24320fc0ec15179972d8f5cc4dd4b4580b688c2c29c437a3033a3db",
+      "size": 275359
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/polar_chart_layout_v15.py",
+      "sha256": "63ada3fe604de5d1bca9677c466967bf83233271cdacea6fb9c9f40e7a51abf6",
+      "size": 10929
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_polar_chart_layout_v15.py",
+      "sha256": "98b266a05d23babd3fbdaa5655521c2aa44cb2693eafb332134c06ce127b5896",
+      "size": 4616
+    },
+    {
+      "path": "evidence/p19/source/polar_chart_review18_fixture.py",
+      "sha256": "092a16b6df34d88a8f314f526364e4fbb1c97b6e7e0b7b9a6fdc4e52ee858cbd",
+      "size": 1986
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review17.py",
+      "sha256": "7ffe269f962a0a03eb3ba998976726278da0a48bf89688a777e7b91530da7e96",
+      "size": 3030
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review18.py",
+      "sha256": "979c57227135c5a3c251d3c1558a62c257c6900db2ff9c3beaf6740a1b7b7820",
+      "size": 6404
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-18-DESIGN.md",
+      "sha256": "b8ff5b46b3f8b813cfe7f7e56d1191eef6fdc05e6941083233e3199a6d5e9a9e",
+      "size": 1703
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-18-VERIFICATION.json",
+      "sha256": "c271119acdc0d8d01566f90e19ac0e8ed1d8ca4d20cf4e441d26a26b5fbd6bff",
+      "size": 1628
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-17-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "d908100f67a18e300e844f2a906e640fcc7ecc25291992d6a9b9559f5e424c8a",
+      "size": 1296294
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--editorial.svg",
+      "sha256": "fd102867306eba0ad1f65ac4df70c29fbe27dec00fcd6d27bff9252d637b6d1c",
+      "size": 15167
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-dark.svg",
+      "sha256": "db2a67aa42a46848c6406f45406a068fe69009427d3ff8a98b4850caa3f0b449",
+      "size": 15182
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-light.svg",
+      "sha256": "9cf7df1d57b0b777bb49033d89f021086118f5e5deb5497e85b65246262cfb0a",
+      "size": 15187
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-light.svg.png",
+      "sha256": "ec82be874c43fadc2963f73057f395bed3da6809b96553fcc13e94af125861a0",
+      "size": 168406
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/wardley_map_layout_v15.py",
+      "sha256": "fa06b1172486b3b95ed6c041a97c4057af451072003fb2d915bfe84d495f9708",
+      "size": 13297
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_wardley_map_layout_v15.py",
+      "sha256": "3674d2ed608b22bdc2820705e32e21c90f22108d78d9619508862202934c46f0",
+      "size": 4538
+    },
+    {
+      "path": "evidence/p19/source/wardley_map_review19_fixture.py",
+      "sha256": "adcc7a3adb4999fdd4f2eba6868eb7b7ade6a79992b0f839b8a385cc8ed2ed53",
+      "size": 3336
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review18.py",
+      "sha256": "14b29b1821c9cb27d5dda4b4887133daa024cef7cdda5cfc811cdfba0cfae20f",
+      "size": 3030
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review19.py",
+      "sha256": "d17d228452c9131a52c152aa03b92f1aac249a2a932ef7fb8f6f9b73a54dbc83",
+      "size": 6810
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-19-DESIGN.md",
+      "sha256": "932d7cd5de4e4baae45a7f52126acfeffefe80d741c3563cac4532eb549ec502",
+      "size": 2728
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-19-VERIFICATION.json",
+      "sha256": "257d4fbf7fb1647d91685f4249982c8301af66c466a5b8fb12366f6a223908bc",
+      "size": 1723
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-18-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "db19f3553475d66eaa651b05289be1c9b1f46c1a7493136842ed1fdc6ae0f77d",
+      "size": 1374621
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--editorial.svg",
+      "sha256": "f83d56baa87cd8c9500c5959d51e31447ab66f6db2333bc4d264d54e6d0a566c",
+      "size": 14490
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--neutral-dark.svg",
+      "sha256": "5abb42a3ec63103a8ce357b00eff6f569d2ec86fafdb5bf9c28c153e0401cd46",
+      "size": 14505
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--neutral-light.svg",
+      "sha256": "a21d7d18078b88e708f9666409eafbb289dbb33921de418c1d214c76809d931a",
+      "size": 14510
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map.svg.png",
+      "sha256": "bfb2a30aaeef3164015a050bad0dbc71ea547b6c667d298e0490ab40fdfe833e",
+      "size": 202797
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/venn_layout_v15.py",
+      "sha256": "64553cc27708636c8d63f76adf1bb31807a02e55df2fa4ac8363f17bde8361ef",
+      "size": 8595
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_venn_layout_v15.py",
+      "sha256": "829bb2bb79c451ce4f8a4223d002d93342c016a3598229152cc971d3836c1d98",
+      "size": 3346
+    },
+    {
+      "path": "evidence/p19/source/venn_review20_fixture.py",
+      "sha256": "3cf39923a018311bc862867e8c2f050e66ce0a4457e9087940004a35f9f5cb46",
+      "size": 1767
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review19.py",
+      "sha256": "ef95904e4dc57b2c77322258e05b1d06bb6dc0a01a87ede2eaea4c02e5b45cf3",
+      "size": 3016
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review20.py",
+      "sha256": "3ab3730af990f27fd62a8f43422403f1f6ce5f962a918b957f6f0ad2fc6a6aa6",
+      "size": 6309
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-20-DESIGN.md",
+      "sha256": "a22eb21ebf4b6df188b3ba0092aa848a2f9b501261747905cb8da60b94f3e3ff",
+      "size": 2068
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-20-VERIFICATION.json",
+      "sha256": "62670d645eef6942cadbcde9365e26afc8dba36af1a6e6f5884d67afea8f8a93",
+      "size": 1570
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-19-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "8eeae42d91433c0a5a48de8a81f6abb712490354c56eb4068cd7a4f8ae6ed0b9",
+      "size": 1455449
+    },
+    {
+      "path": "evidence/p19/review20-checks/type-venn--editorial.svg",
+      "sha256": "c96662ec9bfe1ae66b6a9563983323aab9fac4c36751acd58c477da2da4d9378",
+      "size": 9831
+    },
+    {
+      "path": "evidence/p19/review20-checks/type-venn--neutral-dark.svg",
+      "sha256": "b3d1b37519e5e557b3a7ea23252439f440d86ce691ac5ff96c73a3230b30b562",
+      "size": 9846
+    },
+    {
+      "path": "evidence/p19/review20-checks/type-venn--neutral-light.svg",
+      "sha256": "33d63175953a5dde2f73ea3ddfc37258168e26a05ac7ab0e396040891fa98c13",
+      "size": 9851
+    },
+    {
+      "path": "evidence/p19/review20-checks/type-venn.svg.png",
+      "sha256": "d963a430535719d8016d7a2a06665d7a413681fa6b72faef4eb4b47564dfb700",
+      "size": 145679
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/treemap_layout_v15.py",
+      "sha256": "400db25ef1e869784f5542557783cdd4794fce792b7a8f2151be3a4bb83d6f9a",
+      "size": 13223
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_treemap_layout_v15.py",
+      "sha256": "b5e17995c06196977be9ccbef5c1a6d09a40df01960639424ed36623c0e32c40",
+      "size": 5705
+    },
+    {
+      "path": "evidence/p19/source/treemap_review21_fixture.py",
+      "sha256": "777d70c2346ecf708feabe0ce16edbab529ee891b8dd4133e8fc329362ac9055",
+      "size": 1917
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review20.py",
+      "sha256": "cbac26043467dbbbb302c50eb2660be645c1dafdbee0e8ea6ec992a2eb41c049",
+      "size": 3022
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review21.py",
+      "sha256": "8fe9799ea53e9affb0012c72758abd2ec9d6925b7f0136063302888d8bc49cf0",
+      "size": 6400
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-21-DESIGN.md",
+      "sha256": "d6f0061a45a3dc0a9a501c74b1459f48f531082e70c6786f62404678b18384c1",
+      "size": 2571
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-21-VERIFICATION.json",
+      "sha256": "881c3479a32f60d2bf80c7e909e7e1e677babb3703eee131d1d3797988bd0eb6",
+      "size": 1619
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review21.py",
+      "sha256": "b69fce1caaf78986fab11c1d9a67f8c9521fcec59d88746f10c4b9b9445f87e8",
+      "size": 3040
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review22.py",
+      "sha256": "e4523a408159169b156b47a8a3b759435afa72dd6b2cb2e5f25219cc274daf9b",
+      "size": 6879
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-22-DESIGN.md",
+      "sha256": "52e430abae3eef4e5c47fa62f7dc2be55eb56657a8bb31d275f1848bcb4b645a",
+      "size": 1388
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-22-VERIFICATION.json",
+      "sha256": "b6614eded82e16b55a46e9fdb0adf176a5bfbbb6a67f5d98d81f46ab7ef214f2",
+      "size": 1631
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review22.py",
+      "sha256": "3c67f47c19910ccf071d4bfe3a16ca55554a405462affbcf5d8f38e2383f8894",
+      "size": 3047
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review23.py",
+      "sha256": "cec6f0d2e5164509e42d55fa8f802bf02ab79130a0c4aee16b34ab9be0c6f0ae",
+      "size": 7371
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-23-DESIGN.md",
+      "sha256": "c88133c34fd7f4d3a33c6198a7c36c91775dab7840585635a4eeebbf4a8d31ca",
+      "size": 1850
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-23-VERIFICATION.json",
+      "sha256": "a2c8c7d322bb570111fc699dd15ba47657b67a5fa50e86ffdd10e709e5a841d2",
+      "size": 1679
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-20-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "18f35d10d8690061837d02f340e25afc49547b2de571575f55846fa1a8e55ef3",
+      "size": 1538746
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-21-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "1007e759157814d5a93af360b71fa06cc7609678cb37789756f7a91cf8aef540",
+      "size": 1624529
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-22-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "1990c7f8978388a49e8e61f6340e85b83affbe45e263eb10bea0d34196fb37b1",
+      "size": 1712386
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/uml_class_layout_v15.py",
+      "sha256": "0d1a0a10da3730289ce872d9a3afc49a651f0b2dce4d435b31908dd629f1c716",
+      "size": 18506
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_uml_class_layout_v15.py",
+      "sha256": "ba1ae95914f94e7af8e718397c26a538af782ec9ae0413784522a8a40f779fd1",
+      "size": 4436
+    },
+    {
+      "path": "evidence/p19/source/uml_class_review24_fixture.py",
+      "sha256": "297f76a9938dfed09dfe6543baf54b359cb676d8e8ee4f54b1f51fa038430b00",
+      "size": 4708
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review23.py",
+      "sha256": "14bd4f1cd8643f193e717cef9755cd9a212e898d22417acaa2da2e3eae66243e",
+      "size": 3044
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review24.py",
+      "sha256": "783d449ef73f8f1ca01c515dc6c4e153b24df71f02941317fb228120d14d09f0",
+      "size": 6948
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-24-DESIGN.md",
+      "sha256": "e8a315ee2a1558bd1db513abdff926013476bb026c85519c984f2378ba68914b",
+      "size": 1939
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-24-VERIFICATION.json",
+      "sha256": "2d3dcbb243a92e151aff890a00b808aa36a5c7f4a5386be1811ca433f93c2770",
+      "size": 1771
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-23-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "bd3921304c75aa0bb2fe413368f747f0b9379fc6126e62355292f35e3b19d603",
+      "size": 1802085
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/connector_policy_v15.py",
+      "sha256": "5c693c1a0df27ca0e47f56e2a58eb4e828bd51ae9dc25926fefd70517189cf30",
+      "size": 1573
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_connector_policy_v15.py",
+      "sha256": "160d8d8342c6fcec6cdec005e4c4e67ed2c4b2eb67d2bee30b6fa1e6c964f269",
+      "size": 1254
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review24.py",
+      "sha256": "42e9bb39453c10f227b287c2931545862e1b92617baa95d925147963acb18fd0",
+      "size": 3047
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review25.py",
+      "sha256": "53bb838a0217fcc074e08f7fb7a32958a33a612e6b7c9676d4862ae79c496b92",
+      "size": 5707
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-25-DESIGN.md",
+      "sha256": "81e23d859c55ff6664aae33a632ad7d05b8ee89575c054bd577498a4ba7e892e",
+      "size": 1734
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-25-VERIFICATION.json",
+      "sha256": "b24454017d52ecb06afe3859a3c94424cb8d0d3b30c5d236dd35f1db2eda262c",
+      "size": 952
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-24-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "387975fa81884b102a94e962faed30285d0f0d2125a8000bcfedaa41bc159841",
+      "size": 1894058
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tree_layout_v15.py",
+      "sha256": "4a918a497ed97b742de2c232cd2ff2469c844ef5050b8c5af5a3466952a80522",
+      "size": 12666
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_tree_layout_v15.py",
+      "sha256": "4dc05003d83adcdcbb914cb0c94423e75ad943060d9d2c0f3eaec77c8beb606e",
+      "size": 3212
+    },
+    {
+      "path": "evidence/p19/source/tree_review26_fixture.py",
+      "sha256": "f7eca0aafb2bba21124d33a22c563823090944d1721eb7488b26d5e8835bc5ca",
+      "size": 2381
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review25.py",
+      "sha256": "71dc4aa49b262803d970dee23b1ebb4ffbfa6563f4a4df0127d2ae33cb0af3c7",
+      "size": 2982
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review26.py",
+      "sha256": "6971d202cc98a0128d22a26fdf890fc4e1c642e369af672436a0ec7c6f0ca323",
+      "size": 5625
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-26-DESIGN.md",
+      "sha256": "fef8004a24474b0e7f5910ece31a2202151d66af1460b757604f766b2f3f2660",
+      "size": 1942
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-26-VERIFICATION.json",
+      "sha256": "d9e6de3d4fb37bb1fe6ff78d6069922400924e28584a7ce919210efd8162325a",
+      "size": 1832
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-25-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "dec5bb8f3ba1da957f0db1fe4cf59aa1ebc09a221c342aec78fdeb0c6d620a4d",
+      "size": 1987985
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review26.py",
+      "sha256": "81d021503f51c75ede6420a42de7a6a419d678846304fe89effb12ab0ece1502",
+      "size": 2979
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review27.py",
+      "sha256": "175c3164c77e24281077d29a2137a30a71024509bfd1d0947af6e83003ccdc90",
+      "size": 6451
+    },
+    {
+      "path": "evidence/p19/source/render_review27_proof.mjs",
+      "sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94",
+      "size": 1383
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-27-DESIGN.md",
+      "sha256": "f76b2120f7d62d40eea0eeb34f744354916b4d9ad48a65680d9ff864bd77d467",
+      "size": 1233
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-27-VERIFICATION.json",
+      "sha256": "dc5020e0d56c928bd7ce4e063cc7a03f8216952f51e86397ef52cf33e1a7d04c",
+      "size": 1884
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-26-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "797e97a11c7e8a6bd314b34bd4c3df12f7f5cb7fb39b6b8ab59be96557d5401e",
+      "size": 2083918
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review27.py",
+      "sha256": "62d2896c32f1f96f9ac84200911549a567c758e67cca303b615f3b1489a719fb",
+      "size": 2977
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review28.py",
+      "sha256": "dcb215baa3a964f020c3bbd2acb48647f9b7623398d3b9010f18d9a3d5305f86",
+      "size": 6844
+    },
+    {
+      "path": "evidence/p19/source/render_review28_proof.mjs",
+      "sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31",
+      "size": 1382
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-28-DESIGN.md",
+      "sha256": "2352c540bee3995959cf05844fa5f153914225f53a9e174cb17ac0c77a16f08b",
+      "size": 926
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-28-VERIFICATION.json",
+      "sha256": "d075b0f29933549d4be9d33e4fe73d6334d10f6702f997d25550f3e879c0f1d8",
+      "size": 1983
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "e2c460174f73d6e0bf47ec8009f8fde3c99d6e7431fd84fdd3466a6c09ffcd41",
+      "size": 2181823
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/story_map_layout_v15.py",
+      "sha256": "d856273b5ec4a4be822ab95c55c9a3dde3480b0878386abc8fd175e6f60f4416",
+      "size": 10661
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_story_map_layout_v15.py",
+      "sha256": "ba5aeb66cd1edd137de355c1e4896e5499939e4c8fb1d31d0f70afec0067c20b",
+      "size": 2116
+    },
+    {
+      "path": "evidence/p19/source/story_map_review29_fixture.py",
+      "sha256": "0bd0e5f70ca8493635a6093629a1b0c151207d219a837408d0564ca7e23246e3",
+      "size": 2844
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review28.py",
+      "sha256": "a4c1f888a425e89c04e82a9277a3d621793cf86d9b2a290bf2505ada2361a728",
+      "size": 2983
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review29.py",
+      "sha256": "72de45547aa10044ac89a59086756c8301347a370528d2639336099817502033",
+      "size": 5743
+    },
+    {
+      "path": "evidence/p19/source/render_review29_proof.mjs",
+      "sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567",
+      "size": 1572
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-29-DESIGN.md",
+      "sha256": "a3b011a90cab6fc91927d5717c906ca2d7cb69f573d2bc2f0811cfa3fd3dbec1",
+      "size": 1350
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-29-VERIFICATION.json",
+      "sha256": "1d20e252837da9ccedc5414a803e6c978ca84c48339de595211b61a31daf730e",
+      "size": 1171
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-28-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "89dfd0a3bd433eaa9be53bcad678c9904601d38bdc7696d2f4a06a11b0f4d8d3",
+      "size": 2281547
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/state_machine_layout_v15.py",
+      "sha256": "f78d05891986ae01bbddc6b0d3e422592dacba093af4a801604d87948b21a983",
+      "size": 12503
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_state_machine_layout_v15.py",
+      "sha256": "68284421afa476d4be312fd18591d9c47d6bfa230a1f4c1b92761f9b3909ddfa",
+      "size": 2029
+    },
+    {
+      "path": "evidence/p19/source/state_machine_review30_fixture.py",
+      "sha256": "1bb8e0c28ed3faed93dcefa0e4043d84f7a7ddafff99c690f7e388d3e050cb27",
+      "size": 2257
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review29.py",
+      "sha256": "8751d1e3231fa10b89e613002466b6ec8c42e39f38c325d0bd1f293e4d228fe2",
+      "size": 2965
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review30.py",
+      "sha256": "62ce077247cd0d5c42f96070002cb01f53ae172a6559f34687fd042dafc3eb63",
+      "size": 5831
+    },
+    {
+      "path": "evidence/p19/source/render_review30_proof.mjs",
+      "sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48",
+      "size": 1506
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-30-DESIGN.md",
+      "sha256": "76b75d26763ccad9971c03af78c7f0cb9677d34e13f89b4935906eff41b3958e",
+      "size": 2104
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-30-VERIFICATION.json",
+      "sha256": "ae84c9584f813935d92f029990509c9b9bb2a4663c14ac7e283877e7bb03ae94",
+      "size": 1379
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "5d92e5a9496c629530e1d9b0a6b1fe09f1d155959bf1af792212a75fc08d094f",
+      "size": 2383510
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/sequence_layout_v15.py",
+      "sha256": "64a5536ef1eb748bb8ee06ebd471567d40e55084aa1a6404ad8bd133ece4dcf2",
+      "size": 15114
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_sequence_layout_v15.py",
+      "sha256": "485e9bb92b3f661da93562a1046841936071a7ffae7cab8e77231aa809ff0c40",
+      "size": 1489
+    },
+    {
+      "path": "evidence/p19/source/sequence_review31_fixture.py",
+      "sha256": "e1da7ef7c57089096fb6e610baee2612d7925039a152f11fa6270f06d4aecf1e",
+      "size": 2230
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review30.py",
+      "sha256": "34c698b4c2faec2920b19c520516a39a111a234ab5d3ba4f597a6d199a37c7bb",
+      "size": 2955
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review31.py",
+      "sha256": "f86713c6b7d03f2b77ba0a2d11cbd0d1053fe986af6e9c6f1d0b338a8b0036e5",
+      "size": 6115
+    },
+    {
+      "path": "evidence/p19/source/render_review31_proof.mjs",
+      "sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c",
+      "size": 1512
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-31-DESIGN.md",
+      "sha256": "903fbed6cad951f29d1a4a8dc955c77e39130fa71dd8b3869551b5a1cc35d700",
+      "size": 2187
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-31-VERIFICATION.json",
+      "sha256": "f9f0944c6f7c24109814bff6e6e1d6b9f0535071b0054f5afcde4a8b82f05776",
+      "size": 1264
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "4f3e23f258281e98f4c4500d88c9dc7b6d40e46c9fe4f2665a1aef4fd459731d",
+      "size": 2487954
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review31.py",
+      "sha256": "dc061e548cf8de936b511cb1188b3a88fb26d31dbbe0d7c3f0cb4e35d2d34c4b",
+      "size": 2953
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review32.py",
+      "sha256": "233b4ef8b76449c55083c170448dbfa37af03a1a541be076baf1446eee4742c7",
+      "size": 6595
+    },
+    {
+      "path": "evidence/p19/source/render_review32_proof.mjs",
+      "sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2",
+      "size": 1813
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-32-DESIGN.md",
+      "sha256": "0165078edcdf88a7440a51500f3e177c348a081cb82c8f777362deaf9ebe2b89",
+      "size": 1411
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-32-VERIFICATION.json",
+      "sha256": "0570f0984d54aa96cf0ffa960d3d9c3520719e671ea78e1afced9c0c56a471ba",
+      "size": 1387
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "78a93e98ca3b8d1933aaba676cc5481d162563bb5c619596b4f176f85c5da745",
+      "size": 2594858
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/scatter_chart_layout_v15.py",
+      "sha256": "9e7918603cc9882257685ec04d77cc56c3326d3b305d54121fcd5b71509e7245",
+      "size": 10810
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_scatter_chart_layout_v15.py",
+      "sha256": "e478defb5bfcb2cc9bd30c9f54643fb01f846f715aef0d32b3cdf8a15ef603e9",
+      "size": 2703
+    },
+    {
+      "path": "evidence/p19/source/scatter_chart_review33_fixture.py",
+      "sha256": "8844cbbf09527051e606d502f1e323f742f0da049626f95b137a19509b58cd87",
+      "size": 2013
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review32.py",
+      "sha256": "59869deb7f461ce1d9e1907138d6005d21f763764738e7dd41c433cefaf0615a",
+      "size": 2949
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review33.py",
+      "sha256": "0c4b512905fcede2441b2b6a9ef11c2f9a2d03c17ce745c98766d15e06225c8f",
+      "size": 6424
+    },
+    {
+      "path": "evidence/p19/source/render_review33_proof.mjs",
+      "sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe",
+      "size": 1355
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-33-DESIGN.md",
+      "sha256": "7190688c3cdedc7ea8173eb9b955914133b3a88dd1bfc2cd50a1f5bb33353114",
+      "size": 1189
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-33-VERIFICATION.json",
+      "sha256": "9426792ec11ab3afb639fbc27b51cb9d5b348e966c81e6c6b1dba533c1e9108a",
+      "size": 1524
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "7298e50209d193294c9c71ce17a5e96b935f90eeb216e53b835a43e8e1ae9041",
+      "size": 2703817
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/radar_layout_v15.py",
+      "sha256": "e77756bfc51d92af3de516671346282098d089cb487fd1fa63d5dcd415b78f89",
+      "size": 11729
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_radar_layout_v15.py",
+      "sha256": "a5890420f54af84090800ac558f0245d4298bf56b3626419a39afd099fd400c2",
+      "size": 3076
+    },
+    {
+      "path": "evidence/p19/source/radar_review34_fixture.py",
+      "sha256": "98cf4b780024115f8e90f71ce686d0bea75c9f97be412e936f90c4d46df8acad",
+      "size": 2394
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review33.py",
+      "sha256": "5a8967e1f7edbf8ab70ee2ab97579d067af5842613e7daa07f28c3d0a9ce2ba5",
+      "size": 2939
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review34.py",
+      "sha256": "d90aeb0b08e50ccf39596e301246b5e636047f57c3b89ad3c58ddd8939c98a62",
+      "size": 6044
+    },
+    {
+      "path": "evidence/p19/source/render_review34_proof.mjs",
+      "sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44",
+      "size": 1331
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-34-DESIGN.md",
+      "sha256": "876781f20d803c7bd8335bc47b5b8883e83ed5f52d1f83d7b867474843417cdd",
+      "size": 1729
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-34-VERIFICATION.json",
+      "sha256": "248cde5b507dae911638c1a01f1d23fcf4b31f73d91872108a83369544fdd30a",
+      "size": 1438
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "2dc29f30b0190a296d5922e7e4c029197a919c9968624c46103d5a03a629f39a",
+      "size": 2815464
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review34.py",
+      "sha256": "af99eed653c228caf54e73f0d1d7446f140e3607d602710ead25e5d5e825bba5",
+      "size": 2959
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review35.py",
+      "sha256": "b505bc316355447eac20e08904c06a5a1d8a752b49ce20befd804b57fb1b390f",
+      "size": 6437
+    },
+    {
+      "path": "evidence/p19/source/render_review35_proof.mjs",
+      "sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc",
+      "size": 1325
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-35-DESIGN.md",
+      "sha256": "cbc92940e524ed015095d2bfd5271408d62c77c64cff7b355624d51432fd13cd",
+      "size": 1290
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-35-VERIFICATION.json",
+      "sha256": "be058520144d65dd61e1b7897b8cb674acdeb39c1458f00ae5ab731816018afd",
+      "size": 1298
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "f48c5490cb3ce0f911329df00717259f5403897e9e09358c9fd127d23a1a570b",
+      "size": 2929663
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review35.py",
+      "sha256": "ad13ab2bf3a295eb87e88b8394673f9b9dcc6f4bade246d90f87b56c7bd971e8",
+      "size": 2795
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review36.py",
+      "sha256": "6f1baf60f6e3a05318a9fbd07d3656b6e9aba334868b7b1186279fda904422f1",
+      "size": 5271
+    },
+    {
+      "path": "evidence/p19/source/render_review36_proof.mjs",
+      "sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68",
+      "size": 1263
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-36-DESIGN.md",
+      "sha256": "0bfad9fddaa165436867482fde0a5ce948af5b2597c1c7a76c19350638791eda",
+      "size": 834
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-36-VERIFICATION.json",
+      "sha256": "8fb1e69bf3dee20311e9498f2eb9f90c3a338c75247a7a83850b0af8edce8c2c",
+      "size": 1277
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "4e6c69816a108fcb34666a91de08c2d8432588d9068e3d518657971f6559bec0",
+      "size": 3045690
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/process_layout_v15.py",
+      "sha256": "fa32a58791e39aa7ea4f0f8434c8d22366b1582fec2e7d96f440f4b754208635",
+      "size": 16481
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_process_layout_v15.py",
+      "sha256": "69e1e21418eacf00f7e2d73f8db3dece86051ba169ea256d246ff26aad30daad",
+      "size": 4798
+    },
+    {
+      "path": "evidence/p19/source/process_review37_fixture.py",
+      "sha256": "c54ebac2c44ad1c2b286afbb923ac5f51d331fd89ef993b203d2a33de0944bea",
+      "size": 2894
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review36.py",
+      "sha256": "61e581b8218dd6a3fd41b29aae58062008a9e8f53b9d1cc69dffe84e19cbb006",
+      "size": 2984
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review37.py",
+      "sha256": "6107d76cb5e263daf8dc0d759a41159b1525b1beeba561c506143923a10a5075",
+      "size": 6656
+    },
+    {
+      "path": "evidence/p19/source/render_review37_proof.mjs",
+      "sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568",
+      "size": 1269
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-37-DESIGN.md",
+      "sha256": "42452da5b4311dafd5de731e0e5ca8f773a2e6c9045e1264b115e96c21c65cfa",
+      "size": 1945
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-37-VERIFICATION.json",
+      "sha256": "e6792fffc7b2ba67dcb6ad99e70486832d29eab52ed54b279964cfc9fd9e987d",
+      "size": 1616
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "04923c7a3fc829a10e3e19581dd178abdfa199c962320b20773e6ab74cf410db",
+      "size": 3163325
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review37.py",
+      "sha256": "9919cb04aec523dc2cd36d6aa79753ca110b2a75e3efb02df438a8d803a7634c",
+      "size": 2990
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review38.py",
+      "sha256": "92debfc4427cb6bd8a80c5c9b304270124c4e957e19cfe9929c7d19001923a39",
+      "size": 6644
+    },
+    {
+      "path": "evidence/p19/source/render_review38_proof.mjs",
+      "sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7",
+      "size": 1269
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-38-DESIGN.md",
+      "sha256": "96ac6b49d9d3da267f57e4b3f180c50201cb98410cf6057d20d82761cd6775a6",
+      "size": 1413
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-38-VERIFICATION.json",
+      "sha256": "06921ed516a7bb36872ba00e7e1d707d50f962f3de9067ccc26eac8146fe77d2",
+      "size": 1561
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "96574893db8ecd3d2306b26a4fd563334dc3c14a135f95143434c9c8b681fadd",
+      "size": 3282982
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review38.py",
+      "sha256": "75d5b3943de33970618bd830af152e5e600d0bb475b202fb9e85b56b07a9b077",
+      "size": 2972
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review39.py",
+      "sha256": "9c1d2c2cabf61efe5d5d51d332f7967fb5fadd90caa39834d278eba1470ebadd",
+      "size": 6972
+    },
+    {
+      "path": "evidence/p19/source/render_review39_proof.mjs",
+      "sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6",
+      "size": 1269
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-39-DESIGN.md",
+      "sha256": "35a3543fb833f808e18797d451110a9021018e3893fed32d9e3c8f0043ea15dc",
+      "size": 1208
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-39-VERIFICATION.json",
+      "sha256": "5a8d0072f26de58c199724f3933c515448b47d04f6f153554b2056a282d24c30",
+      "size": 1604
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "3bc4e004941364448cad1d003218272722e127f9b8fb891aba5fefcca2cd4e62",
+      "size": 3404464
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/bubble_layout_v15.py",
+      "sha256": "d7d2049ebe2e3d2f145b4395c55c42af16bef9fb60ae3758469cbffdaf107fda",
+      "size": 11578
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_bubble_layout_v15.py",
+      "sha256": "1d7a0d199cc77649acff5765d11946f4c249a43ebd79941b05bf7f0ec1f83c75",
+      "size": 1525
+    },
+    {
+      "path": "evidence/p19/source/bubble_review40_fixture.py",
+      "sha256": "44575312e4ec202b88528085e8d23773d0bc27ee7d47de61e033fa17a3a93147",
+      "size": 2869
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review39.py",
+      "sha256": "b4ea6eca2ac12879682d432eed234625a8edf3d59c50dfd39ea9b2ee047e4a70",
+      "size": 2992
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review40.py",
+      "sha256": "8fdc85dd0ce56df1e38b433e6907b85d37afa6fc114af422a56ca1a91433abb2",
+      "size": 6735
+    },
+    {
+      "path": "evidence/p19/source/render_review40_proof.mjs",
+      "sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873",
+      "size": 1263
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-40-DESIGN.md",
+      "sha256": "52e12df42212e191e277a0104c0698356ea2f0faec3daf35758aadd34539288d",
+      "size": 2049
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-40-VERIFICATION.json",
+      "sha256": "4af84795cbb64caae72f8f774de79be68128241ffde5e763ac96497a67741c5a",
+      "size": 1408
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "2a3ea7ebf2a847ccf7b7a15599c16ccef05cb78f0c35c589ec0b0ee80c523667",
+      "size": 3527588
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/slope_graph_layout_v15.py",
+      "sha256": "b105e4ecb78210aa1368c073df8ae9ac0683c9f96e83a9d1b0639d66bcd7e7cb",
+      "size": 11023
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_slope_graph_layout_v15.py",
+      "sha256": "7a3c42056c78eec7aa490f7ad6fd1f1d0335e2ff0ac7259e3738f2b339b08e9d",
+      "size": 1901
+    },
+    {
+      "path": "evidence/p19/source/slope_graph_review41_fixture.py",
+      "sha256": "6a320317bfcb98ced50db23d14cf8e6bbc200b032b55ab3f508a2cad8e08465f",
+      "size": 2373
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review40.py",
+      "sha256": "3edd4f44e9f4d253e3d4d3084fc917837d581b4f6bb8e042afaa107fb1c5ecb1",
+      "size": 3007
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review41.py",
+      "sha256": "e5395d89be4b86f45239ec9326e596099778cd5292e5884e5455265398efd1b7",
+      "size": 7851
+    },
+    {
+      "path": "evidence/p19/source/render_review41_proof.mjs",
+      "sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3",
+      "size": 1383
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-41-DESIGN.md",
+      "sha256": "81d8543c54685a552c926c47ef3f2dca869cba168cb4d8dd964ac34f567de33a",
+      "size": 1740
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-41-VERIFICATION.json",
+      "sha256": "7235d4a76c37171123c64746814984b660da503009cf1994951dbbb80621936c",
+      "size": 1604
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "55b85407f1d5edbfe67332ef82003a85465ebd5298419f3f4afdc540dad2dc2d",
+      "size": 3652702
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/dumbbell_layout_v15.py",
+      "sha256": "8830eb4520bce5d97cc78080e970cbb13aebee6f9263ac994da232314bb52548",
+      "size": 12635
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_dumbbell_layout_v15.py",
+      "sha256": "425586c06f9e7c8a3fb59b99218546b171c38b1d570979fe3e7db8499d7ca9c8",
+      "size": 1727
+    },
+    {
+      "path": "evidence/p19/source/dumbbell_review42_fixture.py",
+      "sha256": "621ee4ea4a4727051437d7fbe13b79369f99e4f32901e6efe6c690704ad1d393",
+      "size": 2665
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review41.py",
+      "sha256": "3b47a00655dfdf547498809770f44618fe7e844421b9d8221bcf0c5261e3750d",
+      "size": 3004
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review42.py",
+      "sha256": "0ef31e22076352964ad777e7c98030a984a0cf1b6e367761ff3cc352f9c7e0c6",
+      "size": 7456
+    },
+    {
+      "path": "evidence/p19/source/render_review42_proof.mjs",
+      "sha256": "5bf445ba46cd1b2b24d0b36aad75bc59d21d1fb9ac8b0308dac27f9e70dfa153",
+      "size": 1371
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-42-DESIGN.md",
+      "sha256": "b9900fe36752fde59f061a15d63d03c09e3504e20c62786f761ee601cf68bed5",
+      "size": 2990
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-42-VERIFICATION.json",
+      "sha256": "3ff30f56226fed0109720d7c081b758e6d155f95d7359faf28c760498bb6cc90",
+      "size": 1569
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "a8030a314040ba5c884b71b99caa02b17da02fe05f902b0233eac8801099e41a",
+      "size": 3780063
+    },
+    {
+      "path": "evidence/p19/review21-checks/type-treemap--editorial.svg",
+      "sha256": "d2cbff5c96af80f2091b9ade9ada2013fbc1ce36cd9bcee4fa4a408782282263",
+      "size": 11796
+    },
+    {
+      "path": "evidence/p19/review21-checks/type-treemap--neutral-dark.svg",
+      "sha256": "bd45f64e20b98accd8ecc4f939086de812a5217d87730997b3aacf20b231d0ae",
+      "size": 11811
+    },
+    {
+      "path": "evidence/p19/review21-checks/type-treemap--neutral-light.svg",
+      "sha256": "6f947fee82404b1287232397f3aec7b2354dcc63f1592d2e278ba5e80547b76b",
+      "size": 11816
+    },
+    {
+      "path": "evidence/p19/review21-checks/type-treemap.svg.png",
+      "sha256": "3d8cd25e40f4806d9136b416921df50775d8b2b6883a609ae75cc821acd826d0",
+      "size": 136399
+    },
+    {
+      "path": "evidence/p19/review22-checks/type-treemap--editorial.svg",
+      "sha256": "2ba775b77525bf13d4e48f668aea330be4295c643f2df52433f1d38e9c65b481",
+      "size": 12527
+    },
+    {
+      "path": "evidence/p19/review22-checks/type-treemap--neutral-dark.svg",
+      "sha256": "238328a9ce73b60ef5d775ff643b8df6b42450f7fe50ae4aefc3b9c136163e36",
+      "size": 12542
+    },
+    {
+      "path": "evidence/p19/review22-checks/type-treemap--neutral-light.svg",
+      "sha256": "7bca7e4b3b7cf5c0122219860be2d9d5b0e3850fdd3da2aea877ed2677ad441e",
+      "size": 12547
+    },
+    {
+      "path": "evidence/p19/review22-checks/type-treemap.svg.png",
+      "sha256": "34adb490092da7495eea3bcae9cb22923c227c0a1613677b9033b570aebb6f80",
+      "size": 184774
+    },
+    {
+      "path": "evidence/p19/review23-checks/type-treemap--editorial.svg",
+      "sha256": "22e5637999d00e3e4a7c048537993605ae2fe45098953c0bcb01f38dfd4651e9",
+      "size": 13048
+    },
+    {
+      "path": "evidence/p19/review23-checks/type-treemap--neutral-dark.svg",
+      "sha256": "9caab67fbf47bf6adc76a578a9c3618ae8f0c598b50fc59ce5e93ea99e6c5b04",
+      "size": 13063
+    },
+    {
+      "path": "evidence/p19/review23-checks/type-treemap--neutral-light.svg",
+      "sha256": "dcce451789c04fa92d4568a967e6ed193ff6e6cc617a925fdfc4b0fcdb23becd",
+      "size": 13068
+    },
+    {
+      "path": "evidence/p19/review23-checks/type-treemap.svg.png",
+      "sha256": "c8fd115b5d42e47cce3882fc2d04013e4163db5238809b8f352a95f412562fbc",
+      "size": 185773
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--editorial.svg",
+      "sha256": "433ad1c625d8bd98be330e6da5b3be12d20e3e75fa5168c29d184e97bd305ed4",
+      "size": 20487
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--neutral-dark.svg",
+      "sha256": "2ed9d482119d056a87f0b784ab9d40dc50fd9a92fe11189a9e2155c9814e6719",
+      "size": 20502
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--neutral-light.svg",
+      "sha256": "78cbc6eb7a6f19e14902e902df20e2d7a093bd0ba3d5023879b7cc6424666a85",
+      "size": 20507
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class.svg.png",
+      "sha256": "ccb2540c8e6a3ad7eee80a9844252f6209062a834ceee968a976ba84498a36f5",
+      "size": 283746
+    },
+    {
+      "path": "evidence/p19/review25-checks/type-uml-class.svg.png",
+      "sha256": "12fb6e50399b6b4ae1647631a5293a442497e933ac40104aa0a44a9958e9b62a",
+      "size": 189587
+    },
+    {
+      "path": "evidence/p19/review26-checks/type-tree--visual-proof.svg",
+      "sha256": "b54a73abf118c9431745d7c9d15f23ccbc7cff2a34bd3eaf501a9a4056981cf8",
+      "size": 17268
+    },
+    {
+      "path": "evidence/p19/review26-checks/type-tree.svg",
+      "sha256": "48226f1a2a7973d43b7170eae8617e4065ce072b3ddeec92005bee6afaa9d122",
+      "size": 17860
+    },
+    {
+      "path": "evidence/p19/review26-checks/type-tree.svg.png",
+      "sha256": "8980caf126cf8b2020f5e7d44a82d8ae473441ddd0afca74b85803e34f0e7817",
+      "size": 100896
+    },
+    {
+      "path": "evidence/p19/review27-checks/type-tree--visual-proof.svg",
+      "sha256": "11e3e52135844a09839dcf82300404ee34fd009f1b042a079f372fd6b5bf4f29",
+      "size": 17261
+    },
+    {
+      "path": "evidence/p19/review27-checks/type-tree.svg",
+      "sha256": "b30ce4e9d1ba62ed5a7fef717168ff17230b40f343cbc8098ec98ce77de1acd4",
+      "size": 17862
+    },
+    {
+      "path": "evidence/p19/review27-checks/type-tree.svg.png",
+      "sha256": "3663df2899e87996e53f71cde3a1f1e34d58057eded494c9f64a4d5d8367c1af",
+      "size": 100300
+    },
+    {
+      "path": "evidence/p19/review28-checks/type-tree--visual-proof.svg",
+      "sha256": "2adcdeeb7e9145394c9e42db00a81014cca4e241c9d7fcd9107eeb770b705dcd",
+      "size": 17260
+    },
+    {
+      "path": "evidence/p19/review28-checks/type-tree.svg",
+      "sha256": "d736185a9d0326de09d4d56d50abc0c777a3bbc4a67e4569a743424935f757c5",
+      "size": 17861
+    },
+    {
+      "path": "evidence/p19/review28-checks/type-tree.svg.png",
+      "sha256": "a64d48fee64ae4535ca15a467d0bfa383fd75b1170c054d7d64ab6eb3186c494",
+      "size": 100104
+    },
+    {
+      "path": "evidence/p19/review29-checks/type-story-map--visual-proof.svg",
+      "sha256": "196b923406ec46d23998e62e8475153c798cd22c9e819f485c815e5a75de128e",
+      "size": 15358
+    },
+    {
+      "path": "evidence/p19/review29-checks/type-story-map.svg",
+      "sha256": "2997d56c5fb09337589275c855cc09557ba28b22426fcebfb8c2f2c56484697e",
+      "size": 16032
+    },
+    {
+      "path": "evidence/p19/review29-checks/type-story-map.svg.png",
+      "sha256": "3375d21c23fc9f0138df2ea2e1b406dbf21e806483ff70377c8551fec4b5ebc7",
+      "size": 112797
+    },
+    {
+      "path": "evidence/p19/review30-checks/type-state-machine--visual-proof.svg",
+      "sha256": "9bb605ec8b31fd6b117a6764b854da88f20d4b8613ec850e32e99797d909603e",
+      "size": 14268
+    },
+    {
+      "path": "evidence/p19/review30-checks/type-state-machine.svg",
+      "sha256": "8f9f61a757f844316061afe8cbe4e8ff8ca99c17a40bb468caf4a2487b3a7f9d",
+      "size": 14940
+    },
+    {
+      "path": "evidence/p19/review30-checks/type-state-machine.svg.png",
+      "sha256": "5350d537970f26dafe1db1d066e2638f837a955d2b5f3f0806dffe38bbfc3f3f",
+      "size": 87440
+    },
+    {
+      "path": "evidence/p19/review31-checks/type-sequence--visual-proof.svg",
+      "sha256": "d8dbf6ecee1fb39005aa8fa019e90f21a6f3c3dd7bee84b19ce41ec6441b165f",
+      "size": 15786
+    },
+    {
+      "path": "evidence/p19/review31-checks/type-sequence.svg",
+      "sha256": "9fcbff77c7d8eee228e31b25b5fe13abc0302b8f96d1344d1312d46fd76d9b4c",
+      "size": 16552
+    },
+    {
+      "path": "evidence/p19/review31-checks/type-sequence.svg.png",
+      "sha256": "7603c228ccfb5cd5d414a02aa9b3d78812084ebc249a0732f5238c047e055759",
+      "size": 101959
+    },
+    {
+      "path": "evidence/p19/review32-checks/type-treemap--visual-proof.svg",
+      "sha256": "a11f242160821ae256885569f6f534d8a2fe2db82555f9f66206c8cc4bedef9b",
+      "size": 12873
+    },
+    {
+      "path": "evidence/p19/review32-checks/type-treemap.svg",
+      "sha256": "560240666a6d4127a6c7ace66497ef279fea2108f43fad9d0f07b4db353645fa",
+      "size": 13660
+    },
+    {
+      "path": "evidence/p19/review32-checks/type-treemap.svg.png",
+      "sha256": "7c08d256aeefb5c3dee0fce6cf0f6078f598e8d0b781c3bb57deb2e7868b73fa",
+      "size": 93563
+    },
+    {
+      "path": "evidence/p19/review33-checks/type-scatter-chart.svg",
+      "sha256": "40912ed58313ebd02838e4a34caa3ca4418bcf67db8b123ff0d847e60d04a88c",
+      "size": 13811
+    },
+    {
+      "path": "evidence/p19/review33-checks/type-scatter-chart.svg.png",
+      "sha256": "fb55d951adb96f56b7b20245f45c9311c9d8b999d7c0cd5e92cbc230ca3df2e8",
+      "size": 299190
+    },
+    {
+      "path": "evidence/p19/review34-checks/type-radar.svg",
+      "sha256": "d69053fe5a8d8c019f905ba7944a32311bde560a3d0929a5f3de9503ac9781ea",
+      "size": 18429
+    },
+    {
+      "path": "evidence/p19/review34-checks/type-radar.svg.png",
+      "sha256": "d10f640506bb66585c19daf2c103f8e839f2758cb584cb9de9647bd6c99cbbb4",
+      "size": 413981
+    },
+    {
+      "path": "evidence/p19/review35-checks/type-radar.svg",
+      "sha256": "aba6e99029317fed87405658c16b9ad9061100829a3526bcbc29a54ba146ef1e",
+      "size": 18474
+    },
+    {
+      "path": "evidence/p19/review35-checks/type-radar.svg.png",
+      "sha256": "6ebe8db9f2dc4dec04460fb4ec7a46fc469d2c9dde7e1e954330d2e0e62767a6",
+      "size": 415604
+    },
+    {
+      "path": "evidence/p19/review36-checks/type-radar.svg",
+      "sha256": "46362e77ac0424ff32c74dbfcd99ed648dae345af1bcbcbc837da1c27538a4fc",
+      "size": 14168
+    },
+    {
+      "path": "evidence/p19/review36-checks/type-radar.svg.png",
+      "sha256": "6985520e374ead8f8262511211e27e8004a65a06d26cfbeb9f880ef85f245db4",
+      "size": 416743
+    },
+    {
+      "path": "evidence/p19/review37-checks/type-process.svg",
+      "sha256": "8ed618ede9d27e900a3bbf5a51145a56c1ca0c942a42152a7a06243d9d19a87e",
+      "size": 18371
+    },
+    {
+      "path": "evidence/p19/review37-checks/type-process.svg.png",
+      "sha256": "d31db3d96639e73c8a32083feb353270e26de2629db18e2c349002dd75c021f6",
+      "size": 423606
+    },
+    {
+      "path": "evidence/p19/review38-checks/type-process.svg",
+      "sha256": "6c81129a615a0f3a6de7aa95defe714c3d074dd4bcd4c600e14a64c4a809dafb",
+      "size": 19965
+    },
+    {
+      "path": "evidence/p19/review38-checks/type-process.svg.png",
+      "sha256": "2c5373b08e0be85e45bbe69fc94ca0800019a5d40fb026fb4ed7b1504b8c9a4c",
+      "size": 426577
+    },
+    {
+      "path": "evidence/p19/review39-checks/type-process.svg",
+      "sha256": "a9cefe4e4892a006144d0e34d1e48d0f819ca1c06f630a3a83b5da5249e779a6",
+      "size": 19964
+    },
+    {
+      "path": "evidence/p19/review39-checks/type-process.svg.png",
+      "sha256": "1bca1ff6f5731a7e481d34da9cfd6de779d40633afd4186577765f23b9f14d65",
+      "size": 423849
+    },
+    {
+      "path": "evidence/p19/review40-checks/bubble.svg",
+      "sha256": "b090e252855e297205e5924756656a7a5ddb1ac7946a50a3d1704d8b53f4967f",
+      "size": 15762
+    },
+    {
+      "path": "evidence/p19/review40-checks/bubble.svg.png",
+      "sha256": "b7106df87e50e3fe67c45e70e5ac57c728fdd0be4bbd65278b5d312b8a755d0a",
+      "size": 339069
+    },
+    {
+      "path": "evidence/p19/review41-checks/slope-graph.svg",
+      "sha256": "3be3e5ed95f38ce6e332f3c1702f8367473efbc6915af22ba4f399a7b169c6b8",
+      "size": 16277
+    },
+    {
+      "path": "evidence/p19/review41-checks/slope-graph.svg.png",
+      "sha256": "a1b2ca507f003f757c778eb26e6ca8cf9efa2de7ada1587cc3cf99a8b93b865e",
+      "size": 330425
+    },
+    {
+      "path": "evidence/p19/review42-checks/dumbbell.svg",
+      "sha256": "286da8ceea370ae7476535ac199cec2514f9d40aaf2ac029dcfcf6ac5d1bd59e",
+      "size": 21492
+    },
+    {
+      "path": "evidence/p19/review42-checks/dumbbell.svg.png",
+      "sha256": "51fa0e1634a67ce19f3f45a7f340a9611d812ad358c2a5cf05be886e819291a1",
+      "size": 397858
+    }
+  ],
+  "generated_gallery": {
+    "gallery_manifest_sha256": "f15fa7b03e0f647727cbe274d00fcda39cdafd0f5d34cde3ce6659c966446220",
+    "preview_svg_count": 31,
+    "specimen_html_count": 93
+  },
+  "schema_version": "1.1",
+  "status": "in-progress-owner-review-pending",
+  "visual_parent_candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+  "visual_parent_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a"
+}

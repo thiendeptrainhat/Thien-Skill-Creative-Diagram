@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-17",
+  "target_version": "1.5.0",
+  "implementation_model": "clean-room-oriented independent reimplementation",
+  "authority": "PROJECT-CONTRACT.md D-048",
+  "contract_source": "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md",
+  "upstream_snapshot": "diagram-design@648c2a597839301e06df1e7434a08bde9f42eed3",
+  "policy": {
+    "abstract_inputs_only": [
+      "taxonomy",
+      "behavioral requirement",
+      "input/output contract",
+      "failure mode",
+      "design lesson"
+    ],
+    "excluded_transfer": [
+      "upstream code",
+      "upstream prose",
+      "upstream CSS",
+      "upstream templates",
+      "upstream specimens",
+      "upstream gallery",
+      "upstream assets",
+      "upstream formulas"
+    ],
+    "copied_bytes": false,
+    "visual_implementation": "deferred-to-P-18-or-P-19"
+  },
+  "shared_project_implementation": [
+    "thien-skill-creative-diagram/scripts/diagram_core.py",
+    "thien-skill-creative-diagram/scripts/semantic_catalog.py",
+    "thien-skill-creative-diagram/scripts/semantic_grammars.py",
+    "thien-skill-creative-diagram/scripts/tests/semantic_fixtures.py",
+    "thien-skill-creative-diagram/scripts/tests/test_semantic_v15.py"
+  ],
+  "receipts": [
+    {"capability_id": "CAP-T28", "canonical_type": "polar-chart", "reference": "thien-skill-creative-diagram/references/type-polar-chart.md", "test_prefix": "T-TYPE-28", "fixture": "fixtures()['polar-chart']"},
+    {"capability_id": "CAP-T29", "canonical_type": "treemap", "reference": "thien-skill-creative-diagram/references/type-treemap.md", "test_prefix": "T-TYPE-29", "fixture": "fixtures()['treemap']"},
+    {"capability_id": "CAP-T30", "canonical_type": "sankey", "reference": "thien-skill-creative-diagram/references/type-sankey.md", "test_prefix": "T-TYPE-30", "fixture": "fixtures()['sankey']"},
+    {"capability_id": "CAP-T31", "canonical_type": "fishbone", "reference": "thien-skill-creative-diagram/references/type-fishbone.md", "test_prefix": "T-TYPE-31", "fixture": "fixtures()['fishbone']"},
+    {"capability_id": "CAP-T32", "canonical_type": "wardley-map", "reference": "thien-skill-creative-diagram/references/type-wardley-map.md", "test_prefix": "T-TYPE-32", "fixture": "fixtures()['wardley-map']"},
+    {"capability_id": "CAP-T33", "canonical_type": "kanban", "reference": "thien-skill-creative-diagram/references/type-kanban.md", "test_prefix": "T-TYPE-33", "fixture": "fixtures()['kanban']"},
+    {"capability_id": "CAP-T34", "canonical_type": "user-journey", "reference": "thien-skill-creative-diagram/references/type-user-journey.md", "test_prefix": "T-TYPE-34", "fixture": "fixtures()['user-journey']"},
+    {"capability_id": "CAP-T35", "canonical_type": "deployment", "reference": "thien-skill-creative-diagram/references/type-deployment.md", "test_prefix": "T-TYPE-35", "fixture": "fixtures()['deployment']"},
+    {"capability_id": "CAP-T36", "canonical_type": "dependency-graph", "reference": "thien-skill-creative-diagram/references/type-dependency-graph.md", "test_prefix": "T-TYPE-36", "fixture": "fixtures()['dependency-graph']"},
+    {"capability_id": "CAP-T37", "canonical_type": "uml-class", "reference": "thien-skill-creative-diagram/references/type-uml-class.md", "test_prefix": "T-TYPE-37", "fixture": "fixtures()['uml-class']"},
+    {"capability_id": "CAP-T38", "canonical_type": "story-map", "reference": "thien-skill-creative-diagram/references/type-story-map.md", "test_prefix": "T-TYPE-38", "fixture": "fixtures()['story-map']"},
+    {"capability_id": "CAP-T39", "canonical_type": "database-schema", "reference": "thien-skill-creative-diagram/references/type-database-schema.md", "test_prefix": "T-TYPE-39", "fixture": "fixtures()['database-schema']"},
+    {"capability_id": "CAP-V17", "parent": "bar-chart", "reference": "thien-skill-creative-diagram/references/variants-v15.md", "test_prefix": "T-VAR-CAP-V17", "fixture": "variant_fixtures()['CAP-V17']"},
+    {"capability_id": "CAP-V18", "parent": "line-chart", "reference": "thien-skill-creative-diagram/references/variants-v15.md", "test_prefix": "T-VAR-CAP-V18", "fixture": "variant_fixtures()['CAP-V18']"},
+    {"capability_id": "CAP-V19", "parent": "line-chart", "reference": "thien-skill-creative-diagram/references/variants-v15.md", "test_prefix": "T-VAR-CAP-V19", "fixture": "variant_fixtures()['CAP-V19']"},
+    {"capability_id": "CAP-V20", "parent": "scatter-plot", "reference": "thien-skill-creative-diagram/references/variants-v15.md", "test_prefix": "T-VAR-CAP-V20", "fixture": "variant_fixtures()['CAP-V20']"}
+  ],
+  "receipt_count": 16,
+  "assertion": "Every P-17 capability is implemented from the owner-approved abstract contract using original project code, prose, fixtures, schema expression and tests; no visual expression is implemented in P-17."
+}

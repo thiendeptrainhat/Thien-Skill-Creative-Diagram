@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "event_id": "P16-CLOSE-D047-2026-08-23",
+  "engagement_id": "TCD-V1.5-P16-2026-08-22",
+  "approval_id": "D-047",
+  "actor": "Tran Ngoc Thien",
+  "actor_role": "owner",
+  "timestamp": "2026-08-22T17:33:11Z",
+  "local_date": "2026-08-23",
+  "reason": "Owner explicitly approved G-01@1.5.0 and G-02@1.5.0 and authorized P-16 closure after final independent agent re-review reported zero open findings.",
+  "source_reference": "Project conversation: 'Tôi phê duyệt G-01@1.5.0 và G-02@1.5.0; cho phép đóng P-16. Chưa triển khai P-17.'",
+  "transitions": [
+    {
+      "object_id": "G-01@1.5.0",
+      "from_status": "NOT-EVALUATED",
+      "to_status": "PASS"
+    },
+    {
+      "object_id": "G-02@1.5.0",
+      "from_status": "NOT-EVALUATED",
+      "to_status": "PASS"
+    },
+    {
+      "object_id": "P-16",
+      "from_status": "in-progress",
+      "to_status": "passed"
+    }
+  ],
+  "approved_scope": [
+    "exact diagram-design snapshot 648c2a597839301e06df1e7434a08bde9f42eed3 and P-16 provenance disposition",
+    "39 canonical types plus CAP-V17..CAP-V20 under their approved parents",
+    "exact 12-family P-18 pilot contract and inherited rubric",
+    "QA-only three-mode gallery workflow"
+  ],
+  "withheld_scope": [
+    "P-17 implementation",
+    "P-18 or P-19 gallery execution",
+    "runtime or canonical source edits",
+    "gallery HTML creation",
+    "package build or rebuild",
+    "commit, push, tag, GitHub Release mutation or release"
+  ],
+  "approved_artifacts": [
+    {
+      "path": "evidence/p16/UPSTREAM-DELTA.json",
+      "sha256": "1ddb0a317fd89bd9fb0b02fd698f41dc7f734e5a9a696015c007c09ab208a0fb"
+    },
+    {
+      "path": "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md",
+      "sha256": "eb6e3b972c3dde9abc97dbdb20d21bd146e214d445282f4af0435076e21fa705"
+    },
+    {
+      "path": "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md",
+      "sha256": "30fbb3209add27eed964747a71a0e65fb0e39e2df9801d45346c47a3ab17639b"
+    },
+    {
+      "path": "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json",
+      "sha256": "4ddbddca31c9e3526723cb0b1cec4a91a410641e671f35cc9a7e3342494460eb"
+    },
+    {
+      "path": "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md",
+      "sha256": "fcb2ad0e920c6dc751b93750d5c34e58e779e366c5d39c1162fd5818851b50e4"
+    },
+    {
+      "path": "evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json",
+      "sha256": "f298abd61d941c32d968bd1995782248092284d5dab6ff6d343fefb0ea45243d"
+    }
+  ],
+  "technical_review_record": {
+    "path": "evidence/p16/REMEDIATION-REVIEW-NOTES.md",
+    "sha256": "d582300911e09399e0ae30b332c7e0ba840af38bb810a614ff93bb413fb33645",
+    "remaining_findings": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "artifact_status_note": "The approved G02 manifest is preserved byte-for-byte as the candidate presented for approval. Its embedded pre-approval status is historical metadata; PLAN.md is the sole current status authority.",
+  "implementation_authorized": false,
+  "gallery_execution_authorized": false,
+  "package_or_release_authorized": false
+}

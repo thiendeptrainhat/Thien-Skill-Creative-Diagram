@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-111, retaining D-084–D-110 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B detailed sequence remediation; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-31 changes only three sequence HTML files plus one neutral-light sequence preview. The independent interaction has four evenly spaced participant cards, four lifelines centered to the cards, two centered activations, six chronologically ordered messages, five straight cross-participant messages and one rounded-orthogonal self-call with a documented exception. The neutral-light 2000×1140 proof was rasterized locally and visually inspected. Eighty-seven non-target HTML artworks and 29 non-target previews are preserved. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review31-checks/type-sequence.svg.png",
+    "sha256": "7603c228ccfb5cd5d414a02aa9b3d78812084ebc249a0732f5238c047e055759",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

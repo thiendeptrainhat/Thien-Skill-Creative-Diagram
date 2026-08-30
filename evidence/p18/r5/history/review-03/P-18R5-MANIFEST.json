@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "P18R5-MASTER-KERNEL-SWIMLANE-ANCHOR-REVIEW-03-1.5.0",
+  "date": "2026-08-24",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-054",
+    "D-055",
+    "D-056"
+  ],
+  "status": "technical_ready_owner_review_pending",
+  "scope": {
+    "specimen_count": 1,
+    "serializer_count": 2,
+    "layout_engine_count": 1,
+    "layout_engine": "lane-interaction",
+    "type": "swimlane",
+    "mode": "neutral-light",
+    "qa_only": true,
+    "p18r6_authorized": false,
+    "p19_authorized": false,
+    "package_or_release_authorized": false
+  },
+  "source": [
+    {
+      "path": "evidence/p18/r5/source/master_visual_kernel.py",
+      "sha256": "93174d41f758345fc41c05e64892773f92735e8cffc30edb35af205a93cfe5bd",
+      "bytes": 40333
+    },
+    {
+      "path": "evidence/p18/r5/source/swimlane_anchor.py",
+      "sha256": "e96da4d8107cea483566fd96011c1fd149ae8ea946de6ae2bd530ec05a91c376",
+      "bytes": 27960
+    },
+    {
+      "path": "evidence/p18/r5/source/generate_p18r5.py",
+      "sha256": "ffcad517adfae8e8f1e805d64336bbab252e6366a4c1994c0009e109f2eea0dc",
+      "bytes": 4998
+    },
+    {
+      "path": "evidence/p18/r5/source/p18r5_qa.py",
+      "sha256": "eb2754bb45e9275ad939413bcd136a76baae0f4c61590d4972e545bafa7d1e00",
+      "bytes": 18880
+    },
+    {
+      "path": "evidence/p18/r5/source/p18r5_browser_qa.js",
+      "sha256": "28a1cf4d02c19d1ac3386c24f45fb651c993aa06534a7896a9fb4081bf5368b1",
+      "bytes": 13944
+    },
+    {
+      "path": "evidence/p18/r5/source/freeze_p18r5.py",
+      "sha256": "25d310b48e8896497369e39bfe9fb3e3b1e51dfecb5285a4663f1a17574d318d",
+      "bytes": 4957
+    }
+  ],
+  "source_bundle_sha256": "fb809e3899625857f954830f44ce4e1330194186487cb89f2c4df2ada3f2fa4c",
+  "artifacts": [
+    {
+      "path": "evidence/p18/r5/anchor/swimlane--neutral-light.html",
+      "sha256": "e304e256e807c7e1cb93c274098d75f50a9fdca74ccc0cc86334e661a8fb1fcc",
+      "bytes": 27409
+    },
+    {
+      "path": "evidence/p18/r5/anchor/swimlane--neutral-light.svg",
+      "sha256": "f0a45ca78e7220544e60c135a95eb96c1ab6014da0d06d15707adb42889d6c04",
+      "bytes": 23075
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-BUILD-RECEIPT.json",
+      "sha256": "e126a8dcd908bfa17693be68fbdc1c8823ab34b5af0568601b8fdd659d61a0ef",
+      "bytes": 5042
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-VERIFICATION.json",
+      "sha256": "f0cbfe926e08585e5c584cc739b6fe242af8220545245307c1983bbc5eeb026a",
+      "bytes": 4869
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-VISUAL-REVIEW.md",
+      "sha256": "cf6512c7f69cc614f780a9fd0fd7c3da1e774d5321b032549eb6203db2b96941",
+      "bytes": 6142
+    },
+    {
+      "path": "evidence/p18/r5/review/browser-verification.json",
+      "sha256": "279717fe3c5a22da804d8da16683591c4122a6b8804d72183c75035ada7d4073",
+      "bytes": 3391
+    },
+    {
+      "path": "evidence/p18/r5/review/swimlane--neutral-light.png",
+      "sha256": "c0c55750c469c27db0bd04552e33a9d2994c1d8935387e1c3d84fc2caca883d7",
+      "bytes": 246456
+    }
+  ],
+  "artifact_bundle_sha256": "546525d78380a935d0652b8d70c77045f00c11fd681ca81a6ceffc024203906f",
+  "contracts": [
+    {
+      "path": "evidence/p18/r5/P-18R5-DESIGN-CONTRACT.md",
+      "sha256": "98120335e1ce10ec483c6bd640dc706d66a15e9d16ccde436a1b2b06fe1a0bf5",
+      "bytes": 7937
+    },
+    {
+      "path": "evidence/p18/P-18R4-VISUAL-FOUNDATION-CONTRACT.md",
+      "sha256": "addf6793a9670d5a76b48c3835f2e2e08750b0bfca7cc27b210210acaa9f95a5",
+      "bytes": 12542
+    },
+    {
+      "path": "evidence/p18/P-18R4-VISUAL-FOUNDATION.json",
+      "sha256": "37e0c955cc814d10dc393f148a4a55c2d5ef141e547c370171d176cc2efd7be9",
+      "bytes": 5871
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "evidence/p18/source/p18_cases.py",
+      "sha256": "f67c377327d6690fe1b740ef587209c980dcb7bb5a74319a7323b13d300a3be3",
+      "bytes": 19199
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/type-swimlane.md",
+      "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f",
+      "bytes": 1625
+    }
+  ],
+  "lineage": [
+    {
+      "path": "evidence/p18/r5/history/review-01/P-18R5-MANIFEST.json",
+      "sha256": "519aad808b0123a6f809403f0d6678f44e9633c99ce3ceed1397be9f69efe6e1",
+      "bytes": 4796
+    },
+    {
+      "path": "evidence/p18/r5/history/review-01/REVIEW-01-LINEAGE.json",
+      "sha256": "0ab31dd2c78473525e53aee7d3b217dabd5c95e90fa8ba4202a3bf27d2bacb23",
+      "bytes": 811
+    },
+    {
+      "path": "evidence/p18/r5/history/review-02/P-18R5-MANIFEST.json",
+      "sha256": "3d4caf5336e1ab7b087d7c03074f645c47aad197b50b2a4ebddca6c820035bf0",
+      "bytes": 5312
+    },
+    {
+      "path": "evidence/p18/r5/history/review-02/REVIEW-02-LINEAGE.json",
+      "sha256": "76a6c0af8c18a03853f41a511ac00fcc30c60cee7f16449ba37fd1df17ef7da6",
+      "bytes": 1082
+    }
+  ],
+  "lineage_bundle_sha256": "997319b9235a03a7a208128f95029103ebe779ce51d256ef23e6f10b08dde895",
+  "provenance": {
+    "implementation_model": "clean-room-oriented independent reimplementation",
+    "semantic_ir_reused": true,
+    "rejected_p18r3_visual_source_reused": false,
+    "upstream_code_css_svg_template_asset_font_reused": false,
+    "upstream_comparison_method": "abstract_rubric_only"
+  },
+  "verification": {
+    "focused_result": "PASS",
+    "focused_pass_count": 16,
+    "focused_fail_count": 0,
+    "browser_result": "PASS",
+    "browser_viewports": [
+      "canonical",
+      "desktop",
+      "mobile"
+    ],
+    "full_regression": "148/148 PASS",
+    "engineering_visual_precheck": "95.5/100; every dimension >=4/5",
+    "independent_visual_gate": "PENDING",
+    "owner_visual_approval": "PENDING",
+    "g03_1_5_0": "NOT-EVALUATED"
+  }
+}

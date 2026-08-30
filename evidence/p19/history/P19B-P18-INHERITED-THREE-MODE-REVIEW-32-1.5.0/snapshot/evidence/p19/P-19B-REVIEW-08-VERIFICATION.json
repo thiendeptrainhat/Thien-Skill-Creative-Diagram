@@ -1,0 +1,36 @@
+{
+  "alternative_exact_value_table": "PASS",
+  "archived_files_verified": 230,
+  "authority": "D-088",
+  "axis_count": 2,
+  "bar_chart_html_changed": 3,
+  "bar_count": 8,
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-08-1.5.0",
+  "direct_labels_and_legend": "PASS",
+  "focal_count": 1,
+  "gallery_manifest_sha256": "62afdf10cedaae2ac48883d7f1bf72b691a9d0d5bdc63a64c53302047c3f2d34",
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-light.svg",
+      "sha256": "7330449b6b548c810fd0342bea568a85b7567b99dc109a1fc0e44db62b9d8fc2"
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--neutral-dark.svg",
+      "sha256": "f83f91c32905774397fdb967cead284556ab4cd314cc18bbfbd4ac4f53018381"
+    },
+    {
+      "path": "evidence/p19/review08-checks/type-bar-chart--editorial.svg",
+      "sha256": "e435e518ef7d144f45ea21d581b272276c40f81dcb2d352f172bce4559845e2b"
+    }
+  ],
+  "protected_files_verified": 3553,
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "tick_count": 6,
+  "zero_baseline": "PASS"
+}

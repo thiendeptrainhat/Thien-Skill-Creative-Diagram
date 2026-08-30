@@ -1,0 +1,40 @@
+{
+  "abstraction_axis": 1,
+  "alternative_exact_layers_table": "PASS",
+  "archived_files_verified": 322,
+  "authority": "D-095",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-15-1.5.0",
+  "dependencies": 4,
+  "focal_layers": 1,
+  "gallery_manifest_sha256": "ed0ce516a20ad7d7ac62a5cec34a22a602f0e4d2fb0c933a53725862999ce2db",
+  "layers": 5,
+  "layers_html_added": 3,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "prior_html_artwork_preserved": 87,
+  "prior_preview_svg_byte_identical": 29,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-light.svg",
+      "sha256": "1682378233122c0b331d033be9560f5462d1e85c6e436271735a334c962f62ec"
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-dark.svg",
+      "sha256": "996cc38450b020b71a528a6f79c819ece34f04f7ed2fb3d18f759a1306b28b1b"
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--editorial.svg",
+      "sha256": "9c780d430d7ad3ab67a374c3425e7d943294f8d59b79b919575fa2a2a4ba4bd6"
+    },
+    {
+      "path": "evidence/p19/review15-checks/type-layers--neutral-light.svg.png",
+      "sha256": "540ef4b97439d02509497e663d91ddd92f4d4f0609bee9f770ec5433a2a39cf0",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 5456,
+  "status": "PASS",
+  "three_mode_geometry": "PASS"
+}

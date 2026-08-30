@@ -1,0 +1,89 @@
+{
+  "candidate_id": "P19A-THIRTY-NINE-PLUS-FOUR-ADAPTERS-1.5.0",
+  "date": "2026-08-27",
+  "excluded_immutable_artifacts": [
+    "evidence/p18/r5/",
+    "evidence/p18/r6/",
+    "dist/",
+    ".release-staging/"
+  ],
+  "file_count": 15,
+  "files": [
+    {
+      "path": "PROJECT-CONTRACT.md",
+      "sha256": "31e6450a8f985d3733da704d1d696cb2dec68f89f231cb855d3b7f326fa4f026",
+      "size": 83026
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "4a711ec2ec9394f7ff5e5d3384b4b6a9ec1634689ede5c6855d96cc41dd01c38",
+      "size": 59097
+    },
+    {
+      "path": "PHASE-GATES.md",
+      "sha256": "9b293f92952a0504625e0fb6fc7730a4f7c5ee21e581aaef7acf91e0dfcf3f4d",
+      "size": 38724
+    },
+    {
+      "path": "HANDOFF-CURRENT.md",
+      "sha256": "017a3dec3ee747b6bb05f65b0f0f6b97c9b18e815077e942c1693e045e67f987",
+      "size": 21804
+    },
+    {
+      "path": "thien-skill-creative-diagram/SKILL.md",
+      "sha256": "1073e3ed052cbbf980024005ae6cd72daee5dedcf3a517e5a26a0d69e30a0c4d",
+      "size": 8907
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/visual_adapters_v15.py",
+      "sha256": "01a0c439cdd109a2c20b8430bb1f4a3a19641f64f4c9cea5f95bcc3378295f31",
+      "size": 30821
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_visual_adapters_v15.py",
+      "sha256": "a412c80cff9df2180736f65c341e07903e62c544c0ca13a92e9597a3b38f9c04",
+      "size": 9265
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/visual-adapters-v15.json",
+      "sha256": "aa31d6dc96b4934414ca7786fe8a4dd1f84c691d709c73f8007dd86dab6c685b",
+      "size": 23904
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/visual-coverage.md",
+      "sha256": "a6a26f2f2850a7eacad26a044d7f702519f33df0f200482aec3679c645e673e1",
+      "size": 2530
+    },
+    {
+      "path": "evidence/p19/P-19A-DESIGN-CONTRACT.md",
+      "sha256": "2bbee1a7f2f096928dd0a775d644a52bb21d9e699aa38fb6279860803623fe12",
+      "size": 3584
+    },
+    {
+      "path": "evidence/p19/P-19A-EVIDENCE.md",
+      "sha256": "c5307d448d8a6d9d1f0a3095290e0616667824f7564af7775c596f870ee4f3d3",
+      "size": 3881
+    },
+    {
+      "path": "evidence/p19/P-19A-PROVENANCE.json",
+      "sha256": "c83298753719d3a592705467c5e6b0baa9ec911c140745984402da3fdeb573ab",
+      "size": 1990
+    },
+    {
+      "path": "evidence/p19/P-19A-PLAN-MANIFEST.json",
+      "sha256": "c47a66f9555492207c3676ffd8d3f66c4d6688571d63c77b9284afcf0ebc6361",
+      "size": 17924
+    },
+    {
+      "path": "evidence/p19/source/build_p19a_reference.py",
+      "sha256": "e3fa88249dc2b75a19193c9c573588bd3822e1fcd49c9c3c093d614ba0989de9",
+      "size": 753
+    },
+    {
+      "path": "evidence/p19/source/verify_p19a.py",
+      "sha256": "bbaa091ecbca671acebc9034a60faeab3c956cb923a518a9821330807942314d",
+      "size": 10305
+    }
+  ],
+  "schema_version": "1.0"
+}

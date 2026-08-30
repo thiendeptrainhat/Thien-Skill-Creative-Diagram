@@ -1,0 +1,25 @@
+{
+  "record_id": "P21-PREFLIGHT-2.0.0-1",
+  "decision": "D-132",
+  "checked_at": "2026-08-31T00:00:00+07:00",
+  "repository": {
+    "name_with_owner": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "visibility": "PRIVATE",
+    "default_branch": "main",
+    "remote_main_sha": "164281ca166da1cf60134edcb9f2534664d6ef70",
+    "local_parent_sha": "164281ca166da1cf60134edcb9f2534664d6ef70"
+  },
+  "release_target": {
+    "tag": "v2.0.0",
+    "tag_preflight": "ABSENT_HTTP_404",
+    "release_preflight": "ABSENT_HTTP_404"
+  },
+  "local_mirror": {
+    "source_worktree": ".release-staging/TCD-RELEASE-1.0.0-RC1",
+    "branch": "main",
+    "worktree_clean": true,
+    "remote_url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram.git"
+  },
+  "result": "PASS"
+}

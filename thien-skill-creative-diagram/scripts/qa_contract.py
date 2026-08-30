@@ -98,13 +98,13 @@ def validate_type_coverage(reference_dir: Path) -> dict[str, Any]:
     if type_files != expected_files:
         missing = sorted(expected_files - type_files)
         extra = sorted(type_files - expected_files)
-        _fail("type-coverage-mismatch", f"Type references differ from the 27-type contract; missing={missing}, extra={extra}.", str(reference_dir))
+        _fail("type-coverage-mismatch", f"Type references differ from the 39-type contract; missing={missing}, extra={extra}.", str(reference_dir))
     capabilities = index.get("capabilities") if set(index) == {"schema_version", "capabilities"} else index
     if not isinstance(capabilities, Mapping):
         _fail("capability-map-invalid", "Capability map needs a capability object.", str(reference_dir / "capability-map.json"))
     type_parents = {str(parent) for item in capabilities.values() if isinstance(item, Mapping) and str(item.get("class")) == "canonical-type" for parent in item.get("parents", [])}
     if type_parents != set(CANONICAL_TYPES):
-        _fail("type-capability-mismatch", "Canonical capability parents do not cover exactly 27 types.", str(reference_dir / "capability-map.json"))
+        _fail("type-capability-mismatch", "Canonical capability parents do not cover exactly 39 types.", str(reference_dir / "capability-map.json"))
     return {"status": "pass", "type_count": len(type_files), "capability_count": len(capabilities)}
 
 

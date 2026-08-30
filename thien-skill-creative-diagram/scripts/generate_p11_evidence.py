@@ -31,7 +31,7 @@ from qa_contract import (
     validate_quantitative_ir,
     validate_svg_contract,
 )
-from semantic_fixtures import fixtures
+from semantic_fixtures import legacy_fixtures
 
 
 def _write_json(path: Path, value: Any) -> None:
@@ -87,7 +87,7 @@ def generate() -> None:
     golden_report = compare(golden_path, REPO_ROOT)
     _write_json(EVIDENCE_DIR / "golden-review-report.json", {**golden_report, "baseline_updated": False})
 
-    cases = fixtures()
+    cases = legacy_fixtures()
     svg_report: list[dict[str, Any]] = []
     for diagram_type, ir in cases.items():
         bundle = export_artifacts(ir, _request(diagram_type), auto_detect_rasterizer=False)
@@ -146,4 +146,3 @@ def generate() -> None:
 
 if __name__ == "__main__":
     generate()
-

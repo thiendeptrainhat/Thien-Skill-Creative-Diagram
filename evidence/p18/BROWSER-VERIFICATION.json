@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18",
+  "date": "2026-08-23",
+  "browser": {
+    "name": "Google Chrome",
+    "engine": "chromium",
+    "version": "151.0.7922.173"
+  },
+  "viewports": [
+    {"id": "desktop", "width": 1440, "height": 1100},
+    {"id": "tablet", "width": 1024, "height": 900},
+    {"id": "mobile", "width": 390, "height": 844}
+  ],
+  "assertions_per_run": [
+    "document scrollWidth is not greater than clientWidth",
+    "exactly one inline SVG is present",
+    "at least one visible semantic/data table is present",
+    "all local links have href values",
+    "one visible outer HTML title and no duplicate visible SVG title/evidence rail",
+    "semantic field plus type legend occupies at least 75% of artboard height",
+    "display title remains within the locked 40-48px role",
+    "zero clipped text or text overlap",
+    "zero connector through an unrelated node",
+    "zero wrong semantic endpoint",
+    "zero console or page errors",
+    "zero non-file network requests"
+  ],
+  "batch_bindings": [
+    {
+      "path": "evidence/p18/browser-runs/browser-batch-00.json",
+      "sha256": "d332a3bcab8eff068e0bdc913c1db46ec5479438eb6b2e937767155ed5b53bfa",
+      "runs": 54,
+      "passed": 54
+    },
+    {
+      "path": "evidence/p18/browser-runs/browser-batch-18.json",
+      "sha256": "a186003e2903485149e2adadf54db1ed06ae0e5caf247463bb76f67505f0c8c2",
+      "runs": 54,
+      "passed": 54
+    }
+  ],
+  "summary": {
+    "batch_count": 2,
+    "file_count": 36,
+    "viewport_count": 3,
+    "run_count": 108,
+    "pass_count": 108,
+    "fail_count": 0,
+    "desktop_screenshot_count": 36,
+    "status": "PASS"
+  },
+  "specimens": [
+    {"file": "architecture--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "architecture--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "architecture--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "bubble--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "bubble--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "bubble--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "deployment--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "deployment--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "deployment--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "dumbbell--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "dumbbell--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "dumbbell--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "fishbone--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "fishbone--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "fishbone--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "ridgeline--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "ridgeline--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "ridgeline--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "sankey--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "sankey--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "sankey--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "slopegraph--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "slopegraph--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "slopegraph--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "swimlane--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "swimlane--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "swimlane--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "treemap--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "treemap--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "treemap--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "user-journey--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "user-journey--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "user-journey--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "wardley-map--editorial.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "wardley-map--neutral-dark.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"},
+    {"file": "wardley-map--neutral-light.html", "desktop": "PASS", "tablet": "PASS", "mobile": "PASS"}
+  ],
+  "visual_geometry_summary": {
+    "semantic_field_legend_height_ratio": 0.9133333333333333,
+    "clipped_text_count": 0,
+    "text_overlap_count": 0,
+    "route_through_unrelated_node_count": 0,
+    "wrong_endpoint_count": 0,
+    "duplicate_visible_svg_title_count": 0,
+    "visible_svg_evidence_rail_count": 0
+  },
+  "evidence_boundary": "The two exact batch reports are retained. Raw screenshots were transient QA material; their 36 artifact-frame crops were consolidated into the three retained contact sheets.",
+  "owner_visual_approval": "PENDING"
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-1.5.0",
+  "status": "PASS",
+  "renderer": "macOS Quick Look local SVG thumbnail renderer",
+  "network_used": false,
+  "canonical_preview_count": 14,
+  "previews": [
+    {
+      "path": "evidence/p18/r6/review/previews/01-topology-and-zones--neutral-light.png",
+      "bytes": 93383,
+      "sha256": "806b734efcab31300b7473b85356530847cafee6ec8e53137828178ef61be56b",
+      "width": 2000,
+      "height": 1119
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/02-integration-pipeline--neutral-light.png",
+      "bytes": 106652,
+      "sha256": "423dadb385b99a3ced37df9c95a6ec54b105aff07ffdf493e31a3234749f7d0e",
+      "width": 2000,
+      "height": 1119
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/03-runtime-deployment--neutral-light.png",
+      "bytes": 113230,
+      "sha256": "ed92854cbd285c4472c64051648ca9267acfaf5bf301a0fc3682f27180ad5dc2",
+      "width": 2000,
+      "height": 1273
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/04-dependency-dag--neutral-light.png",
+      "bytes": 126160,
+      "sha256": "22c4cae4df0a5f0742099b5d66ba2190c5b376ad8ead50a3998a02c7ba3acb95",
+      "width": 2000,
+      "height": 1558
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/05-directed-flow-state--neutral-light.png",
+      "bytes": 145548,
+      "sha256": "7697c06a1a9aa78e75427a6041ca56ee98fd95d426f177eb698323feafebf1f8",
+      "width": 2000,
+      "height": 1871
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/06-lane-interaction--neutral-light.png",
+      "bytes": 124653,
+      "sha256": "75c6193aa447330644a563baaf8559c52fdcdf17b4e2805556420755f049f634",
+      "width": 2000,
+      "height": 901
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/07-time-planning--neutral-light.png",
+      "bytes": 72395,
+      "sha256": "9e765519d0d567fca7840d250ab8b96360b30d04dae57c60a7dc0b192c9e929a",
+      "width": 2000,
+      "height": 1024
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/08-work-experience--neutral-light.png",
+      "bytes": 119155,
+      "sha256": "af6e9dfab4a0587b5e4a46eb93624f4823a12a7bdb5c9623d9bd64405a95d6d5",
+      "width": 2000,
+      "height": 1181
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/09-hierarchy--neutral-light.png",
+      "bytes": 97791,
+      "sha256": "c9a103150545a17e26a2d177b0827cd101e8d264c2a939d60497af3baf59a961",
+      "width": 2000,
+      "height": 1200
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/10-containment-stack--neutral-light.png",
+      "bytes": 116364,
+      "sha256": "7b98aa6fa2a24cde88c69c15d6560ce79123a92071a3e3fdb556598c1a190285",
+      "width": 2000,
+      "height": 1408
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/11-compartment-model--neutral-light.png",
+      "bytes": 118561,
+      "sha256": "f0e839388547362cb5ae42ffb36be932096aa7600f111e066bd1b38fdeb85941",
+      "width": 2000,
+      "height": 1146
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/12-spatial-matrix--neutral-light.png",
+      "bytes": 77617,
+      "sha256": "d7b52bc790f509427f7e58ecb9416c592671121ddc59b04a3d0bb00269f83caf",
+      "width": 2000,
+      "height": 1307
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/13-quantitative--neutral-light.png",
+      "bytes": 87422,
+      "sha256": "95cfd729da772c887d8b3de20ad26f961495c070f52f80f7e7f68dea598759d4",
+      "width": 2000,
+      "height": 1307
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/14-special-geometry--neutral-light.png",
+      "bytes": 118093,
+      "sha256": "460c719f7707d8ca183ad8e9898caf6ca8600834469f3779e7493b4c8d7f652c",
+      "width": 2000,
+      "height": 1171
+    }
+  ],
+  "labeled_contact_sheet": {
+    "path": "evidence/p18/r6/review/contact-sheet-labeled.png",
+    "bytes": 1046188,
+    "sha256": "3a0277bd4734a1816feb40e9f9056e77eb76f95fe149fd705b9d13ae9d930191"
+  },
+  "masked_contact_sheet": {
+    "path": "evidence/p18/r6/review/contact-sheet-masked.png",
+    "bytes": 1022277,
+    "sha256": "058c1ee456114421cadb3483d26038d33d0c29c123f5a6c2a6dd43d017617497"
+  },
+  "implementer_visual_review": "PASS_AFTER_DEPENDENCY_CORRIDOR_REMEDIATION",
+  "independent_visual_gate": "PENDING"
+}

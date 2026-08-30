@@ -17,7 +17,7 @@ from datetime import datetime
 from typing import Any, Iterable, Mapping, Sequence
 
 
-SCHEMA_VERSION = "1.0"
+SCHEMA_VERSION = "1.5"
 
 CANONICAL_TYPES = (
     "architecture",
@@ -30,6 +30,7 @@ CANONICAL_TYPES = (
     "swimlane",
     "quadrant",
     "radar",
+    "polar-chart",
     "loop-flywheel",
     "nested",
     "tree",
@@ -38,6 +39,7 @@ CANONICAL_TYPES = (
     "venn",
     "pyramid-funnel",
     "bar-chart",
+    "treemap",
     "line-chart",
     "gantt",
     "scatter-plot",
@@ -47,7 +49,44 @@ CANONICAL_TYPES = (
     "data-flow",
     "dp-integration",
     "dp-security-matrix",
+    "sankey",
+    "fishbone",
+    "wardley-map",
+    "kanban",
+    "user-journey",
+    "deployment",
+    "dependency-graph",
+    "uml-class",
+    "story-map",
+    "database-schema",
 )
+
+LEGACY_CANONICAL_TYPES = tuple(
+    diagram_type
+    for diagram_type in CANONICAL_TYPES
+    if diagram_type
+    not in {
+        "polar-chart",
+        "treemap",
+        "sankey",
+        "fishbone",
+        "wardley-map",
+        "kanban",
+        "user-journey",
+        "deployment",
+        "dependency-graph",
+        "uml-class",
+        "story-map",
+        "database-schema",
+    }
+)
+
+NEW_VARIANT_PARENTS = {
+    "CAP-V17": "bar-chart",
+    "CAP-V18": "line-chart",
+    "CAP-V19": "line-chart",
+    "CAP-V20": "scatter-plot",
+}
 
 SOURCE_KINDS = (
     "natural-language",
@@ -89,6 +128,7 @@ CONTENT_CLASSES = (
 REQUEST_DEFAULTS = {
     "schema_version": SCHEMA_VERSION,
     "diagram_type": "auto",
+    "variant_ids": [],
     "size": "fit",
     "detail": "balanced",
     "audience": "mixed",
@@ -104,6 +144,7 @@ REQUEST_FIELDS = frozenset(
         "instruction",
         "source",
         "diagram_type",
+        "variant_ids",
         "size",
         "detail",
         "audience",
@@ -329,6 +370,26 @@ def normalize_request(raw_request: Mapping[str, Any]) -> dict[str, Any]:
         ("auto",) + CANONICAL_TYPES,
         "diagram_type",
     )
+    variant_ids = _require_list(normalized["variant_ids"], "variant_ids", "request")
+    if (
+        len(variant_ids) > 1
+        or len(variant_ids) != len(set(variant_ids))
+        or any(item not in NEW_VARIANT_PARENTS for item in variant_ids)
+    ):
+        _fail(
+            "invalid-variant-id",
+            "request",
+            "Request variant_ids accepts at most one approved 1.5 capability.",
+            field="variant_ids",
+        )
+    if variant_ids and normalized["diagram_type"] not in {"auto", NEW_VARIANT_PARENTS[variant_ids[0]]}:
+        _fail(
+            "variant-parent-mismatch",
+            "request",
+            "The requested capability is incompatible with the requested canonical type.",
+            field="variant_ids",
+        )
+    normalized["variant_ids"] = list(variant_ids)
     _require_enum(normalized["size"], SIZES, "size")
     _require_enum(normalized["detail"], DETAILS, "detail")
     _require_enum(normalized["audience"], AUDIENCES, "audience")
@@ -583,12 +644,23 @@ def build_ir(normalized_request: Mapping[str, Any], parsed_model: Mapping[str, A
     language = detect_language(request)
     decision = select_type(request, parsed)
 
+    request_variants = request["variant_ids"]
+    parsed_variants = parsed["variant_ids"]
+    if request_variants and parsed_variants and request_variants != parsed_variants:
+        _fail(
+            "variant-selection-conflict",
+            "normalizer",
+            "Parsed variants conflict with the explicit request capability.",
+            field="parsed_model.variant_ids",
+        )
+    selected_variants = request_variants or parsed_variants
+
     ir = {
         "schema_version": SCHEMA_VERSION,
         "request_id": f"req-{semantic_hash(request)[:20]}",
         "diagram": {
             "type": decision["type"],
-            "variant_ids": copy.deepcopy(parsed["variant_ids"]),
+            "variant_ids": copy.deepcopy(selected_variants),
             "language": language,
             "title": parsed["title"],
             "detail": request["detail"],
@@ -619,15 +691,26 @@ def build_ir(normalized_request: Mapping[str, Any], parsed_model: Mapping[str, A
 COLLECTION_SPECS: dict[str, tuple[set[str], set[str]]] = {
     "nodes": (
         {"id", "role", "label", "source_refs"},
-        {"id", "role", "label", "secondary_label", "state", "value", "unit", "start", "end", "source_refs"},
+        {
+            "id", "role", "label", "secondary_label", "state", "value", "unit",
+            "parent_group_id", "start", "end", "members", "placement", "work",
+            "journey", "strategy", "story", "source_refs",
+        },
     ),
     "edges": (
         {"id", "source", "target", "kind", "directed", "source_refs"},
-        {"id", "source", "target", "kind", "directed", "label", "order", "guard", "source_refs"},
+        {
+            "id", "source", "target", "kind", "directed", "label", "order", "guard",
+            "amount", "unit", "relation_kind", "source_member", "target_member",
+            "source_multiplicity", "target_multiplicity", "source_refs",
+        },
     ),
     "groups": (
         {"id", "label", "member_ids", "source_refs"},
-        {"id", "label", "member_ids", "parent_group_id", "source_refs"},
+        {
+            "id", "label", "member_ids", "parent_group_id", "declared_total", "unit",
+            "wip_limit", "release_slice", "cause_category", "source_refs",
+        },
     ),
     "lanes": (
         {"id", "label", "owner", "member_ids", "order", "source_refs"},
@@ -635,7 +718,7 @@ COLLECTION_SPECS: dict[str, tuple[set[str], set[str]]] = {
     ),
     "series": (
         {"id", "label", "unit", "data", "source_refs"},
-        {"id", "label", "unit", "data", "source_refs"},
+        {"id", "label", "unit", "distribution", "data", "source_refs"},
     ),
     "axes": (
         {"id", "dimension", "scale", "label", "source_refs"},
@@ -686,6 +769,21 @@ def _validate_finite(value: Any, field: str, *, allow_string: bool = False, allo
     if allow_string and isinstance(value, str):
         return
     _fail("invalid-number", "ir", "Expected a finite number.", field=field)
+
+
+def _validate_nullable_string(value: Any, field: str) -> None:
+    if value is not None:
+        _require_string(value, field, stage="ir")
+
+
+def _validate_non_negative_int(value: Any, field: str) -> None:
+    if isinstance(value, bool) or not isinstance(value, int) or value < 0:
+        _fail("invalid-order", "ir", "Expected a non-negative integer.", field=field)
+
+
+def _validate_positive_int(value: Any, field: str) -> None:
+    if isinstance(value, bool) or not isinstance(value, int) or value < 1:
+        _fail("invalid-positive-integer", "ir", "Expected a positive integer.", field=field)
 
 
 def _check_cycle(items: Sequence[Mapping[str, Any]], parent_field: str, label: str) -> None:
@@ -753,8 +851,12 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
     collection_by_id: dict[str, str] = {}
     source_refs_to_check: list[tuple[str, list[str]]] = []
     entities: dict[str, list[dict[str, Any]]] = {}
+    member_owner: dict[str, str] = {}
+    member_kind: dict[str, str] = {}
+    index_members: list[tuple[str, dict[str, Any]]] = []
 
     datum_count = 0
+    distribution_sample_count = 0
     for collection, (required, allowed) in COLLECTION_SPECS.items():
         values = _require_list(ir[collection], f"ir.{collection}")
         normalized_items: list[dict[str, Any]] = []
@@ -778,8 +880,122 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
         _require_string(node["label"], f"ir.nodes[{index}].label", stage="ir")
         if "value" in node:
             _validate_finite(node["value"], f"ir.nodes[{index}].value", allow_string=True)
+        if "unit" in node:
+            _validate_nullable_string(node["unit"], f"ir.nodes[{index}].unit")
+        if node.get("parent_group_id") is not None:
+            _validate_id(node["parent_group_id"], f"ir.nodes[{index}].parent_group_id")
         _validate_datetime(node.get("start"), f"ir.nodes[{index}].start")
         _validate_datetime(node.get("end"), f"ir.nodes[{index}].end")
+        if "members" in node:
+            members = _require_list(node["members"], f"ir.nodes[{index}].members")
+            for member_index, raw_member in enumerate(members):
+                field = f"ir.nodes[{index}].members[{member_index}]"
+                member = dict(_require_mapping(raw_member, field, "ir"))
+                required = {"id", "kind", "name", "source_refs"}
+                allowed = required | {
+                    "data_type", "visibility", "signature", "constraints",
+                    "indexed_member_ids", "index_unique",
+                }
+                _reject_unknown(member, allowed, field, "ir")
+                if not required <= set(member):
+                    _fail("missing-field", "ir", "Member is incomplete.", field=field)
+                member_id = _validate_id(member["id"], f"{field}.id")
+                if member_id in all_ids:
+                    _fail("duplicate-id", "ir", "All IR, member, and source IDs must be globally unique.", field=f"{field}.id")
+                all_ids[member_id] = "members"
+                collection_by_id[member_id] = "members"
+                member_owner[member_id] = node["id"]
+                _require_enum(member["kind"], ("attribute", "operation", "column", "index"), f"{field}.kind", "ir")
+                member_kind[member_id] = member["kind"]
+                _require_string(member["name"], f"{field}.name", stage="ir")
+                for string_field in ("data_type", "signature"):
+                    if string_field in member:
+                        _validate_nullable_string(member[string_field], f"{field}.{string_field}")
+                if "visibility" in member:
+                    _require_enum(member["visibility"], ("public", "protected", "private", "package", "unspecified"), f"{field}.visibility", "ir")
+                if "constraints" in member:
+                    constraints = _require_list(member["constraints"], f"{field}.constraints")
+                    if len(constraints) != len(set(constraints)) or any(not isinstance(value, str) or not value for value in constraints):
+                        _fail("invalid-constraints", "ir", "Constraints must be unique non-empty strings.", field=f"{field}.constraints")
+                has_index_fields = "indexed_member_ids" in member or "index_unique" in member
+                if member["kind"] == "index":
+                    if not {"indexed_member_ids", "index_unique"} <= set(member):
+                        _fail("index-structure-missing", "ir", "Index members require ordered column IDs and uniqueness.", field=field)
+                    _validate_string_list(member["indexed_member_ids"], f"{field}.indexed_member_ids", minimum=1)
+                    if not isinstance(member["index_unique"], bool):
+                        _fail("invalid-boolean", "ir", "Expected a boolean.", field=f"{field}.index_unique")
+                    index_members.append((node["id"], member))
+                elif has_index_fields:
+                    _fail("index-fields-on-non-index", "ir", "Only index members may declare index fields.", field=field)
+                member_refs = _validate_string_list(member["source_refs"], f"{field}.source_refs", minimum=1)
+                source_refs_to_check.append((f"{field}.source_refs", member_refs))
+        if "placement" in node:
+            field = f"ir.nodes[{index}].placement"
+            placement = dict(_require_mapping(node["placement"], field, "ir"))
+            allowed = {"zone", "host", "artifact", "replicas", "ports"}
+            _reject_unknown(placement, allowed, field, "ir")
+            if not placement:
+                _fail("placement-empty", "ir", "Placement needs at least one supplied field.", field=field)
+            for string_field in ("zone", "host", "artifact"):
+                if string_field in placement:
+                    _require_string(placement[string_field], f"{field}.{string_field}", stage="ir")
+            if "replicas" in placement:
+                _validate_positive_int(placement["replicas"], f"{field}.replicas")
+            if "ports" in placement:
+                ports = _require_list(placement["ports"], f"{field}.ports")
+                if len(ports) != len(set(ports)) or any(not isinstance(value, str) or not value for value in ports):
+                    _fail("invalid-ports", "ir", "Ports must be unique non-empty strings.", field=f"{field}.ports")
+        if "work" in node:
+            field = f"ir.nodes[{index}].work"
+            work = dict(_require_mapping(node["work"], field, "ir"))
+            required = {"column_order", "item_order", "blocked"}
+            _reject_unknown(work, required | {"wip_limit"}, field, "ir")
+            if not required <= set(work):
+                _fail("missing-field", "ir", "Work metadata is incomplete.", field=field)
+            _validate_non_negative_int(work["column_order"], f"{field}.column_order")
+            _validate_non_negative_int(work["item_order"], f"{field}.item_order")
+            if not isinstance(work["blocked"], bool):
+                _fail("invalid-boolean", "ir", "Expected a boolean.", field=f"{field}.blocked")
+            if work.get("wip_limit") is not None:
+                _validate_positive_int(work["wip_limit"], f"{field}.wip_limit")
+        if "journey" in node:
+            field = f"ir.nodes[{index}].journey"
+            journey = dict(_require_mapping(node["journey"], field, "ir"))
+            required = {"stage_order", "action", "touchpoint"}
+            _reject_unknown(journey, required | {"sentiment"}, field, "ir")
+            if not required <= set(journey):
+                _fail("missing-field", "ir", "Journey metadata is incomplete.", field=field)
+            _validate_non_negative_int(journey["stage_order"], f"{field}.stage_order")
+            _require_string(journey["action"], f"{field}.action", stage="ir")
+            _require_string(journey["touchpoint"], f"{field}.touchpoint", stage="ir")
+            if journey.get("sentiment") is not None:
+                _validate_finite(journey["sentiment"], f"{field}.sentiment", allow_null=False)
+                if not -1 <= journey["sentiment"] <= 1:
+                    _fail("sentiment-out-of-domain", "ir", "Sentiment must be within -1..1.", field=f"{field}.sentiment")
+        if "strategy" in node:
+            field = f"ir.nodes[{index}].strategy"
+            strategy = dict(_require_mapping(node["strategy"], field, "ir"))
+            required = {"evolution", "value_chain_position"}
+            _reject_unknown(strategy, required, field, "ir")
+            if set(strategy) != required:
+                _fail("missing-field", "ir", "Strategy coordinates are incomplete.", field=field)
+            for coordinate in required:
+                _validate_finite(strategy[coordinate], f"{field}.{coordinate}", allow_null=False)
+                if not 0 <= strategy[coordinate] <= 1:
+                    _fail("strategy-coordinate-out-of-domain", "ir", "Strategy coordinates must be within 0..1.", field=f"{field}.{coordinate}")
+        if "story" in node:
+            field = f"ir.nodes[{index}].story"
+            story = dict(_require_mapping(node["story"], field, "ir"))
+            required = {"backbone_order", "story_order", "release_slice", "cut_status"}
+            _reject_unknown(story, required, field, "ir")
+            if set(story) != required:
+                _fail("missing-field", "ir", "Story metadata is incomplete.", field=field)
+            _validate_non_negative_int(story["backbone_order"], f"{field}.backbone_order")
+            _validate_non_negative_int(story["story_order"], f"{field}.story_order")
+            _validate_nullable_string(story["release_slice"], f"{field}.release_slice")
+            _require_enum(story["cut_status"], ("above", "below", "at", "unassigned"), f"{field}.cut_status", "ir")
+            if (story["release_slice"] is None) != (story["cut_status"] == "unassigned"):
+                _fail("story-unassigned-pairing", "ir", "Unassigned cut status and null release slice must occur together.", field=field)
 
     for index, edge in enumerate(entities["edges"]):
         _validate_id(edge["source"], f"ir.edges[{index}].source")
@@ -789,12 +1005,38 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
             _fail("invalid-boolean", "ir", "Expected a boolean.", field=f"ir.edges[{index}].directed")
         if "order" in edge and (isinstance(edge["order"], bool) or not isinstance(edge["order"], int) or edge["order"] < 0):
             _fail("invalid-order", "ir", "Order must be a non-negative integer.", field=f"ir.edges[{index}].order")
+        if "amount" in edge:
+            _validate_finite(edge["amount"], f"ir.edges[{index}].amount")
+        if "unit" in edge:
+            _validate_nullable_string(edge["unit"], f"ir.edges[{index}].unit")
+        if "relation_kind" in edge:
+            _require_enum(
+                edge["relation_kind"],
+                ("association", "aggregation", "composition", "inheritance", "realization", "dependency", "foreign-key", "runtime", "flow", "other"),
+                f"ir.edges[{index}].relation_kind",
+                "ir",
+            )
+        for member_field in ("source_member", "target_member"):
+            if edge.get(member_field) is not None:
+                _validate_id(edge[member_field], f"ir.edges[{index}].{member_field}")
+        for multiplicity_field in ("source_multiplicity", "target_multiplicity"):
+            if multiplicity_field in edge:
+                _validate_nullable_string(edge[multiplicity_field], f"ir.edges[{index}].{multiplicity_field}")
 
     for index, group in enumerate(entities["groups"]):
         _require_string(group["label"], f"ir.groups[{index}].label", stage="ir")
         _validate_string_list(group["member_ids"], f"ir.groups[{index}].member_ids", minimum=1)
         if group.get("parent_group_id") is not None:
             _validate_id(group["parent_group_id"], f"ir.groups[{index}].parent_group_id")
+        if "declared_total" in group:
+            _validate_finite(group["declared_total"], f"ir.groups[{index}].declared_total")
+        if "unit" in group:
+            _validate_nullable_string(group["unit"], f"ir.groups[{index}].unit")
+        if group.get("wip_limit") is not None:
+            _validate_positive_int(group["wip_limit"], f"ir.groups[{index}].wip_limit")
+        for string_field in ("release_slice", "cause_category"):
+            if string_field in group:
+                _validate_nullable_string(group[string_field], f"ir.groups[{index}].{string_field}")
 
     for index, lane in enumerate(entities["lanes"]):
         _require_string(lane["label"], f"ir.lanes[{index}].label", stage="ir")
@@ -807,34 +1049,93 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
 
     for index, series in enumerate(entities["series"]):
         _require_string(series["label"], f"ir.series[{index}].label", stage="ir")
+        _validate_nullable_string(series["unit"], f"ir.series[{index}].unit")
+        if "distribution" in series:
+            field = f"ir.series[{index}].distribution"
+            distribution = dict(_require_mapping(series["distribution"], field, "ir"))
+            required = {
+                "method", "domain_min", "domain_max", "bin_count", "bin_edges",
+                "bandwidth", "amplitude_normalization", "shared_domain", "shared_bins",
+            }
+            _reject_unknown(distribution, required, field, "ir")
+            if set(distribution) != required:
+                _fail("missing-field", "ir", "Distribution metadata is incomplete.", field=field)
+            _require_enum(distribution["method"], ("histogram", "kde-gaussian"), f"{field}.method", "ir")
+            _validate_finite(distribution["domain_min"], f"{field}.domain_min", allow_null=False)
+            _validate_finite(distribution["domain_max"], f"{field}.domain_max", allow_null=False)
+            _validate_positive_int(distribution["bin_count"], f"{field}.bin_count")
+            if distribution["bin_count"] < 2:
+                _fail("distribution-bin-count", "ir", "A distribution needs at least two bins.", field=f"{field}.bin_count")
+            edges = _require_list(distribution["bin_edges"], f"{field}.bin_edges")
+            if len(edges) < 3 or len(edges) != len(set(edges)):
+                _fail("distribution-bin-edges", "ir", "Distribution bin edges must contain at least three unique values.", field=f"{field}.bin_edges")
+            for edge_index, value in enumerate(edges):
+                _validate_finite(value, f"{field}.bin_edges[{edge_index}]", allow_null=False)
+            if distribution["method"] == "histogram":
+                if distribution["bandwidth"] is not None:
+                    _fail("distribution-bandwidth", "ir", "Histogram bandwidth must be null.", field=f"{field}.bandwidth")
+            else:
+                _validate_finite(distribution["bandwidth"], f"{field}.bandwidth", allow_null=False)
+                if distribution["bandwidth"] <= 0:
+                    _fail("distribution-bandwidth", "ir", "KDE bandwidth must be positive.", field=f"{field}.bandwidth")
+            if distribution["amplitude_normalization"] != "global-max":
+                _fail("distribution-normalization", "ir", "Ridgeline amplitude normalization must be global-max.", field=f"{field}.amplitude_normalization")
+            if distribution["shared_domain"] is not True or distribution["shared_bins"] is not True:
+                _fail("distribution-sharing", "ir", "Distribution domain and bins must be explicitly shared.", field=field)
         data = _require_list(series["data"], f"ir.series[{index}].data")
         for datum_index, raw_datum in enumerate(data):
             datum_count += 1
             datum = dict(_require_mapping(raw_datum, f"ir.series[{index}].data[{datum_index}]", "ir"))
-            datum_required = {"id", "domain", "value", "missing", "source_refs"}
-            datum_allowed = datum_required | {"label"}
+            datum_required = {"id", "missing", "source_refs"}
+            datum_allowed = datum_required | {
+                "domain", "value", "x_value", "y_value", "size_value", "size_unit",
+                "distribution_samples", "label",
+            }
             _reject_unknown(datum, datum_allowed, f"ir.series[{index}].data[{datum_index}]", "ir")
             if not datum_required <= set(datum):
                 _fail("missing-field", "ir", "Datum is incomplete.", field=f"ir.series[{index}].data[{datum_index}]")
+            has_domain_value = {"domain", "value"} <= set(datum)
+            has_xy = {"x_value", "y_value"} <= set(datum)
+            has_distribution = "distribution_samples" in datum
+            if not any((has_domain_value, has_xy, has_distribution)):
+                _fail("datum-shape-invalid", "ir", "Datum needs domain/value, x/y, or distribution samples.", field=f"ir.series[{index}].data[{datum_index}]")
             datum_id = _validate_id(datum["id"], f"ir.series[{index}].data[{datum_index}].id")
             if datum_id in all_ids:
                 _fail("duplicate-id", "ir", "All IR and source IDs must be globally unique.", field=f"ir.series[{index}].data[{datum_index}].id")
             all_ids[datum_id] = "data"
             collection_by_id[datum_id] = "data"
-            if not isinstance(datum["domain"], (str, int, float)) or isinstance(datum["domain"], bool):
-                _fail("invalid-domain", "ir", "Datum domain must be text or a finite number.", field=f"ir.series[{index}].data[{datum_index}].domain")
-            if isinstance(datum["domain"], (int, float)):
-                _validate_finite(datum["domain"], f"ir.series[{index}].data[{datum_index}].domain", allow_null=False)
             if not isinstance(datum["missing"], bool):
                 _fail("invalid-boolean", "ir", "Expected a boolean.", field=f"ir.series[{index}].data[{datum_index}].missing")
-            _validate_finite(datum["value"], f"ir.series[{index}].data[{datum_index}].value")
-            if datum["missing"] != (datum["value"] is None):
-                _fail("missingness-mismatch", "ir", "Missing status must agree with a null value.", field=f"ir.series[{index}].data[{datum_index}]")
+            missing_from_shape = False
+            if has_domain_value:
+                if not isinstance(datum["domain"], (str, int, float)) or isinstance(datum["domain"], bool):
+                    _fail("invalid-domain", "ir", "Datum domain must be text or a finite number.", field=f"ir.series[{index}].data[{datum_index}].domain")
+                if isinstance(datum["domain"], (int, float)):
+                    _validate_finite(datum["domain"], f"ir.series[{index}].data[{datum_index}].domain", allow_null=False)
+                _validate_finite(datum["value"], f"ir.series[{index}].data[{datum_index}].value")
+                missing_from_shape = datum["value"] is None
+            if has_xy:
+                _validate_finite(datum["x_value"], f"ir.series[{index}].data[{datum_index}].x_value")
+                _validate_finite(datum["y_value"], f"ir.series[{index}].data[{datum_index}].y_value")
+                missing_from_shape = missing_from_shape or datum["x_value"] is None or datum["y_value"] is None
+            if "size_value" in datum:
+                _validate_finite(datum["size_value"], f"ir.series[{index}].data[{datum_index}].size_value")
+            if "size_unit" in datum:
+                _validate_nullable_string(datum["size_unit"], f"ir.series[{index}].data[{datum_index}].size_unit")
+            if has_distribution:
+                samples = _require_list(datum["distribution_samples"], f"ir.series[{index}].data[{datum_index}].distribution_samples")
+                if not samples:
+                    _fail("distribution-samples-empty", "ir", "Distribution samples cannot be empty.", field=f"ir.series[{index}].data[{datum_index}].distribution_samples")
+                for sample_index, sample in enumerate(samples):
+                    _validate_finite(sample, f"ir.series[{index}].data[{datum_index}].distribution_samples[{sample_index}]", allow_null=False)
+                distribution_sample_count += len(samples)
+            if datum["missing"] != missing_from_shape:
+                _fail("missingness-mismatch", "ir", "Missing status must agree with null quantitative fields.", field=f"ir.series[{index}].data[{datum_index}]")
             datum_refs = _validate_string_list(datum["source_refs"], f"ir.series[{index}].data[{datum_index}].source_refs", minimum=1)
             source_refs_to_check.append((f"ir.series[{index}].data[{datum_index}].source_refs", datum_refs))
 
     for index, axis in enumerate(entities["axes"]):
-        _require_enum(axis["dimension"], ("x", "y", "radial", "angular"), f"ir.axes[{index}].dimension", "ir")
+        _require_enum(axis["dimension"], ("x", "y", "radial", "angular", "size"), f"ir.axes[{index}].dimension", "ir")
         _require_enum(axis["scale"], ("categorical", "linear", "time", "ordinal"), f"ir.axes[{index}].scale", "ir")
         if not isinstance(axis["label"], str):
             _fail("invalid-string", "ir", "Expected a string.", field=f"ir.axes[{index}].label")
@@ -871,9 +1172,16 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
     for index, edge in enumerate(entities["edges"]):
         if edge["source"] not in endpoint_ids or edge["target"] not in endpoint_ids:
             _fail("dangling-endpoint", "ir", "Edge endpoint does not reference a node, group, or lane.", field=f"ir.edges[{index}]")
+        for member_field in ("source_member", "target_member"):
+            if edge.get(member_field) is not None and edge[member_field] not in member_owner:
+                _fail("dangling-member-reference", "ir", "Edge member endpoint does not exist.", field=f"ir.edges[{index}].{member_field}")
 
     node_group_ids = {item_id for item_id, collection in collection_by_id.items() if collection in {"nodes", "groups"}}
     node_ids = {item_id for item_id, collection in collection_by_id.items() if collection == "nodes"}
+    group_ids = {item_id for item_id, collection in collection_by_id.items() if collection == "groups"}
+    for index, node in enumerate(entities["nodes"]):
+        if node.get("parent_group_id") is not None and node["parent_group_id"] not in group_ids:
+            _fail("dangling-reference", "ir", "Node parent group does not exist.", field=f"ir.nodes[{index}].parent_group_id")
     for index, group in enumerate(entities["groups"]):
         if any(member not in node_group_ids for member in group["member_ids"]):
             _fail("dangling-membership", "ir", "Group membership references an unsupported or missing item.", field=f"ir.groups[{index}].member_ids")
@@ -883,6 +1191,13 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
     for index, annotation in enumerate(entities["annotations"]):
         if any(target not in collection_by_id for target in annotation["target_ids"]):
             _fail("dangling-reference", "ir", "Annotation target does not exist.", field=f"ir.annotations[{index}].target_ids")
+
+    for owner_id, index_member in index_members:
+        for indexed_id in index_member["indexed_member_ids"]:
+            if indexed_id not in member_owner:
+                _fail("index-member-missing", "ir", "Index references a missing member.", field="ir.nodes.members.indexed_member_ids")
+            if member_owner[indexed_id] != owner_id or member_kind[indexed_id] != "column":
+                _fail("index-member-invalid", "ir", "Index references must be columns of the same node.", field="ir.nodes.members.indexed_member_ids")
 
     _check_cycle(entities["groups"], "parent_group_id", "Group")
     _check_cycle(entities["lanes"], "parent_lane_id", "Lane")
@@ -942,7 +1257,12 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
     if set(reading_order) != material_ids:
         _fail("reading-order-incomplete", "ir", "Reading order must cover every material common-IR element exactly once.", field="ir.accessibility.reading_order")
 
-    semantic_item_count = sum(len(entities[name]) for name in COLLECTION_SPECS) + datum_count
+    semantic_item_count = (
+        sum(len(entities[name]) for name in COLLECTION_SPECS)
+        + datum_count
+        + len(member_owner)
+        + distribution_sample_count
+    )
     if semantic_item_count > SECURITY_LIMITS["semantic_items"]:
         _fail("semantic-items-over-limit", "ir", "Semantic item count exceeds the approved security ceiling.", field="ir")
     if len(entities["nodes"]) > SECURITY_LIMITS["nodes"]:
@@ -1162,6 +1482,9 @@ def orchestrate(
 
 __all__ = [
     "CANONICAL_TYPES",
+    "LEGACY_CANONICAL_TYPES",
+    "NEW_VARIANT_PARENTS",
+    "SCHEMA_VERSION",
     "CoreError",
     "build_ir",
     "canonical_json",

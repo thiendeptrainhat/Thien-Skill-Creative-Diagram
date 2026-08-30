@@ -1,0 +1,255 @@
+{
+  "archive_sha256": {
+    "claude-plugin": "7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6",
+    "openai-plugin": "65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315",
+    "universal-raw-skill": "88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93"
+  },
+  "candidate_id": "TCD-PACKAGES-2.0.0-RC1",
+  "checks": [
+    {
+      "check_id": "V-P20-001",
+      "detail": "All three v2 candidate archives exist",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-002",
+      "detail": "Candidate archives are byte-identical to deterministic regeneration",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-003",
+      "detail": "Candidate checksum file matches exact archive bytes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-004",
+      "detail": "No undeclared ZIP exists in candidate-dist",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-005",
+      "detail": "Historical v1.0.0 dist remains exact and contains no v2 artifact",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-006",
+      "detail": "P17/P18/P19 frozen source-gallery lineage hashes remain exact",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-007",
+      "detail": "Exact source-gallery evidence still proves separate 14 P18 + 93 P19 = 107",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-008",
+      "detail": "ZIP order, timestamp, compression, unique path, and one-root invariants pass",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-009",
+      "detail": "No traversal, evidence, tests, cache, secrets, or development-only payload is packaged",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-010",
+      "detail": "No personal/development absolute path appears in packaged text",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-011",
+      "detail": "Every archive member and byte matches the declared target mapping",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-012",
+      "detail": "Every packaged JSON file parses",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-013",
+      "detail": "Every packaged relative Markdown link resolves",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-014",
+      "detail": "Runtime core aggregate is identical across all targets",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-015",
+      "detail": "Exact six-file v2 legal/provenance candidate is identical across all targets",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-016",
+      "detail": "Package binding matches the pending exact v2 legal candidate",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-017",
+      "detail": "Claude candidate contains no brand asset",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-018",
+      "detail": "OpenAI and Universal contain only exact 64/400 light-plate bytes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-019",
+      "detail": "All extracted candidates render Vietnamese HTML/SVG and keep transparent PNG fallback",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-020",
+      "detail": "Installed Claude CLI validates the extracted v2 plugin",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-021",
+      "detail": "OpenAI v2 manifest identity, skill path, interface, and asset references resolve",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-022",
+      "detail": "Packaged skill explicitly enforces D-128 sample-not-fixed and user-request flexibility",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-023",
+      "detail": "Frozen gallery, masked review, and evidence artifacts are excluded from packages",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-024",
+      "detail": "Full canonical unittest regression passes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-025",
+      "detail": "Platform revalidation uses exactly three current official sources",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P20-026",
+      "detail": "Bundled plugin-creator/skill-creator validator availability recorded without installing dependencies",
+      "result": "PASS"
+    }
+  ],
+  "claude_validation": {
+    "command": [
+      "claude",
+      "plugin",
+      "validate",
+      "<TEMP>/claude-plugin/thien-skill-creative-diagram"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Validating plugin manifest: <TEMP>/claude-plugin/thien-skill-creative-diagram/.claude-plugin/plugin.json\n\n✔ Validation passed"
+  },
+  "external_skill_plugin_validator": {
+    "available": false,
+    "limitation": "PyYAML is absent; dependency installation was not attempted. Equivalent dependency-free manifest/path/frontmatter checks ran in V-P20-008 through V-P20-023.",
+    "result": {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "<OWNER_HOME>/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py",
+        "--help"
+      ],
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<OWNER_HOME>/.codex/skills/.system/plugin-creator/scripts/validate_plugin.py\", line 14, in <module>\n    import yaml\nModuleNotFoundError: No module named 'yaml'",
+      "stdout": ""
+    }
+  },
+  "full_regression": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-c",
+      "import sys,unittest; sys.path.insert(0,'evidence/p19/source'); sys.path.insert(0,'thien-skill-creative-diagram/scripts/tests'); sys.path.insert(0,'thien-skill-creative-diagram/scripts'); suite=unittest.defaultTestLoader.discover('thien-skill-creative-diagram/scripts/tests', pattern='test_*.py'); result=unittest.TextTestRunner(verbosity=1).run(suite); raise SystemExit(0 if result.wasSuccessful() else 1)"
+    ],
+    "returncode": 0,
+    "stderr": "..............................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 414 tests in <DURATION>\n\nOK",
+    "stdout": ""
+  },
+  "gate_state": {
+    "G-00@2.0.0": "NOT-EVALUATED",
+    "G-01@2.0.0": "NOT-EVALUATED",
+    "G-02@2.0.0": "NOT-EVALUATED",
+    "G-03@2.0.0": "NOT-EVALUATED",
+    "G-04@2.0.0": "NOT-EVALUATED",
+    "G-05@2.0.0": "NOT-EVALUATED",
+    "G-06@2.0.0": "NOT-EVALUATED",
+    "G-07@2.0.0": "NOT-EVALUATED"
+  },
+  "legal_bundle_aggregate_sha256": "93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0",
+  "limits": [
+    "Candidate ZIPs remain under evidence/p20/candidate-dist and are not release artifacts.",
+    "Historical dist v1.0.0 remains unchanged.",
+    "No owner/lawyer gate approval, publication, Git commit/push/tag, or Release was performed."
+  ],
+  "openai_validation": {
+    "detail": "OpenAI v2 manifest identity, skill path, interface, and asset references resolve",
+    "passed": true
+  },
+  "record_id": "P20-VERIFICATION-1",
+  "runtime_core_aggregate_sha256": "adea9c1a2004a9fdcc7df1c03d2112ca6f7b6eb75ad80e0a7566bf88b4dd27e6",
+  "smoke_results": {
+    "claude-plugin": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    },
+    "openai-plugin": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    },
+    "universal-raw-skill": {
+      "assertions": {
+        "html": true,
+        "png_absent_fallback": true,
+        "semantic_validation": true,
+        "svg": true
+      },
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, sys\nfrom pathlib import Path\nroot = Path.cwd()\nsys.path.insert(0, str(root / \"scripts\"))\nfrom pilot_cases import swimlane_pilot\nfrom output_pipeline import export_artifacts\nrequest = {\n    \"instruction\": \"Tạo sơ đồ quy trình thu tiền chuyên nghiệp.\",\n    \"source\": {\"kind\": \"natural-language\", \"content\": \"Luồng đã chuẩn hóa.\"},\n    \"diagram_type\": \"swimlane\", \"size\": \"fit\", \"detail\": \"faithful\", \"audience\": \"mixed\",\n    \"visual_mode\": \"neutral-light\", \"language\": {\"mode\": \"explicit\", \"tag\": \"vi\"},\n    \"format\": \"html\", \"motion\": \"none\"\n}\nir = swimlane_pilot()\nhtml_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nhtml = html_bundle.artifacts[\"html\"].content.decode(\"utf-8\")\nrequest[\"format\"] = \"svg\"\nsvg_bundle = export_artifacts(ir, request, auto_detect_rasterizer=False)\nrequest[\"format\"] = \"png\"\nfallback = export_artifacts(ir, request, auto_detect_rasterizer=False)\nresult = {\n    \"html\": set(html_bundle.artifacts) == {\"html\"} and \"Thủ quỹ\" in html and \"Kế toán trưởng\" in html,\n    \"svg\": set(svg_bundle.artifacts) == {\"svg\"},\n    \"png_absent_fallback\": set(fallback.artifacts) == {\"svg\"} and any(\"no installation was attempted\" in w for w in fallback.ledger[\"warnings\"]),\n    \"semantic_validation\": html_bundle.ledger[\"validation\"][\"semantic\"] == \"pass\",\n}\nprint(json.dumps(result, sort_keys=True))\nraise SystemExit(0 if all(result.values()) else 1)\n"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"html\": true, \"png_absent_fallback\": true, \"semantic_validation\": true, \"svg\": true}"
+    }
+  },
+  "status": "P20-TECHNICAL-CANDIDATE-PASS-AWAITING-GATES",
+  "summary": {
+    "checks": 26,
+    "failed": 0,
+    "passed": 26
+  },
+  "verified_at": "2026-08-30T00:00:00+07:00",
+  "version": "2.0.0"
+}

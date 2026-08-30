@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from html import escape
 from typing import Any, Iterable, Mapping, Sequence
 
-from diagram_core import CANONICAL_TYPES, canonical_json
+from diagram_core import LEGACY_CANONICAL_TYPES, canonical_json
 from semantic_grammars import validate_semantics
 from visual_system import Rect, VisualError, load_visual_system, rects_overlap, validate_contrast
 
@@ -435,7 +435,8 @@ def _validate_svg(svg: str, boxes: Mapping[str, Rect], ir: Mapping[str, Any]) ->
 
 def render_static(ir_value: Mapping[str, Any], mode: str = "neutral-light", *, coverage_badge: bool = True) -> CoverageRender:
     ir=validate_semantics(ir_value)
-    if ir["diagram"]["type"] not in CANONICAL_TYPES: raise VisualError("type-unsupported","Type is outside the canonical inventory.")
+    if set(ir["diagram"].get("variant_ids", [])) & {"CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"}: raise VisualError("variant-visual-not-implemented","P-17 provides semantic coverage only; visual implementation is not yet authorized for this capability.")
+    if ir["diagram"]["type"] not in LEGACY_CANONICAL_TYPES: raise VisualError("type-visual-not-implemented","P-17 provides semantic coverage only; visual implementation is not yet authorized for this type.")
     system=load_visual_system();validate_contrast(system)
     if mode not in system["modes"]: raise VisualError("mode-unsupported","Mode is outside the approved three-mode system.")
     tokens=system["modes"][mode];prefix=_id(f"p07-{ir['diagram']['type']}-{mode}")

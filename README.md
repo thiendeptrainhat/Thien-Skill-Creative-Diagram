@@ -4,11 +4,21 @@
   <img src="evidence/p09/candidates/full-crest-plate-light-400.png" alt="TDTN crest with sword, lion, letterforms and open book in navy and gold" width="180">
 </p>
 
-`Thien-Skill-Creative-Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. Phiên bản `1.0.0` cung cấp một canonical runtime với ba artifact phát hành xác định: Claude Code plugin, OpenAI plugin và Universal raw skill.
+`Thien-Skill-Creative-Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. Phiên bản hiện hành `2.0.0` cung cấp một canonical runtime với ba artifact phát hành xác định: Claude Code plugin, OpenAI plugin và Universal raw skill.
 
 Repository này là **private audit repository**. Quyền truy cập, xem, tải xuống hoặc clone repository **không tự cấp quyền sử dụng**. Xem mục [Giấy phép](#giấy-phép) trước khi cài đặt hoặc thực thi.
 
-## Artifact v1.0.0
+## Artifact v2.0.0
+
+| Mục tiêu | File | SHA-256 |
+|---|---|---|
+| Claude Code plugin | `thien-skill-creative-diagram-2.0.0-claude-plugin.zip` | `7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6` |
+| OpenAI plugin | `thien-skill-creative-diagram-2.0.0-openai-plugin.zip` | `65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315` |
+| Universal raw skill | `thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip` | `88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93` |
+
+Tải ba ZIP và `SHA256SUMS.txt` từ GitHub Release `v2.0.0`, sau đó để chúng trong cùng một thư mục.
+
+## Artifact lịch sử v1.0.0
 
 | Mục tiêu | File | SHA-256 |
 |---|---|---|
@@ -16,7 +26,7 @@ Repository này là **private audit repository**. Quyền truy cập, xem, tải
 | OpenAI plugin | `thien-skill-creative-diagram-1.0.0-openai-plugin.zip` | `7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c` |
 | Universal raw skill | `thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip` | `4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f` |
 
-Tải ba ZIP và `SHA256SUMS.txt` từ GitHub Release `v1.0.0`, sau đó để chúng trong cùng một thư mục.
+Release `v1.0.0` và checksum lịch sử được giữ nguyên; không dùng checksum v1.0.0 để xác minh ZIP v2.0.0.
 
 ## Kiểm tra checksum trước khi cài đặt
 
@@ -35,9 +45,9 @@ sha256sum -c SHA256SUMS.txt
 Windows PowerShell:
 
 ```powershell
-Get-FileHash .\thien-skill-creative-diagram-1.0.0-claude-plugin.zip -Algorithm SHA256
-Get-FileHash .\thien-skill-creative-diagram-1.0.0-openai-plugin.zip -Algorithm SHA256
-Get-FileHash .\thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip -Algorithm SHA256
+Get-FileHash .\thien-skill-creative-diagram-2.0.0-claude-plugin.zip -Algorithm SHA256
+Get-FileHash .\thien-skill-creative-diagram-2.0.0-openai-plugin.zip -Algorithm SHA256
+Get-FileHash .\thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -Algorithm SHA256
 ```
 
 Chỉ tiếp tục nếu hash khớp hoàn toàn với bảng trên và `SHA256SUMS.txt`.
@@ -49,7 +59,7 @@ Chỉ tiếp tục nếu hash khớp hoàn toàn với bảng trên và `SHA256S
 Yêu cầu Claude Code hiện hành có hỗ trợ `--plugin-dir` với ZIP. Từ thư mục chứa artifact:
 
 ```bash
-claude --plugin-dir ./thien-skill-creative-diagram-1.0.0-claude-plugin.zip
+claude --plugin-dir ./thien-skill-creative-diagram-2.0.0-claude-plugin.zip
 ```
 
 Trong phiên Claude Code, yêu cầu tự nhiên một diagram hoặc gọi skill theo namespace plugin nếu host hiển thị lệnh đó:
@@ -64,7 +74,7 @@ Nếu lệnh không xuất hiện, chạy `/help`, kiểm tra log nạp plugin v
 
 ```bash
 mkdir -p ./tcd-claude-plugin
-unzip ./thien-skill-creative-diagram-1.0.0-claude-plugin.zip -d ./tcd-claude-plugin
+unzip ./thien-skill-creative-diagram-2.0.0-claude-plugin.zip -d ./tcd-claude-plugin
 claude plugin validate ./tcd-claude-plugin/thien-skill-creative-diagram
 claude --plugin-dir ./tcd-claude-plugin/thien-skill-creative-diagram
 ```
@@ -83,7 +93,7 @@ Chạy tại repository đích:
 
 ```bash
 mkdir -p ./.agents/skills
-unzip /path/to/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip -d ./.agents/skills
+unzip /path/to/thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -d ./.agents/skills
 test -f ./.agents/skills/thien-skill-creative-diagram/SKILL.md
 ```
 
@@ -105,7 +115,7 @@ Khởi động hoặc khởi động lại Codex trong repository đó. Codex s�
 
 ```bash
 mkdir -p "$HOME/.agents/skills"
-unzip /path/to/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip -d "$HOME/.agents/skills"
+unzip /path/to/thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -d "$HOME/.agents/skills"
 test -f "$HOME/.agents/skills/thien-skill-creative-diagram/SKILL.md"
 ```
 
@@ -123,7 +133,7 @@ OpenAI plugin ZIP là delivery archive có `.codex-plugin/plugin.json`; đây **
 
 ```bash
 mkdir -p ./plugins
-unzip /path/to/thien-skill-creative-diagram-1.0.0-openai-plugin.zip -d ./plugins
+unzip /path/to/thien-skill-creative-diagram-2.0.0-openai-plugin.zip -d ./plugins
 test -f ./plugins/thien-skill-creative-diagram/.codex-plugin/plugin.json
 mkdir -p ./.agents/plugins
 ```
@@ -179,7 +189,8 @@ Kết quả mong đợi:
 
 ## Phạm vi và giới hạn đã xác minh
 
-- Runtime hỗ trợ taxonomy 27 canonical diagram type và bảy semantic pattern.
+- Runtime hỗ trợ 39 canonical diagram type, bốn capability variant và bảy semantic pattern.
+- Bộ 31 masked silhouette chỉ là sample QA, không phải template/catalog/output cố định; yêu cầu rõ ràng, an toàn và phù hợp ngữ nghĩa của người dùng có precedence.
 - Ba package đã qua deterministic build, parity, hygiene và extracted-runtime smoke checks.
 - Ma trận host tại thời điểm phát hành giữ `0 supported`, `13 conditional`, `2 unsupported`; repository không quảng bá surface conditional thành supported.
 - Browser/cross-browser execution không được tuyên bố PASS do local `file://` policy trong môi trường QA.
@@ -205,7 +216,7 @@ Phiên bản này chịu sự điều chỉnh của **Tran Ngoc Thien's Skill Co
 - [`thien-skill-creative-diagram/SOURCE_MANIFEST.json`](thien-skill-creative-diagram/SOURCE_MANIFEST.json)
 - [`thien-skill-creative-diagram/ASSET_MANIFEST.json`](thien-skill-creative-diagram/ASSET_MANIFEST.json)
 
-Legal package bytes là exact candidate `TCD-LEGAL-1.0.0-RC2` đã được owner/Vietnamese-lawyer approval và G-06/G-07 ràng buộc trong evidence phát hành. Các câu trạng thái candidate bên trong legal files phản ánh thời điểm freeze; evidence gate sau đó ghi nhận quyết định phê duyệt mà không sửa lại legal bytes đã khóa.
+Legal package bytes là exact candidate `TCD-LEGAL-2.0.0-RC1`, aggregate SHA-256 `93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0`, đã được owner phê duyệt theo D-131. Owner miễn independent Vietnamese-lawyer review cho đúng version/hash này và chấp nhận rủi ro; đây không phải tuyên bố lawyer sign-off.
 
 ## Provenance
 
@@ -217,7 +228,7 @@ Chi tiết nằm trong `SOURCE_MANIFEST.json`, `THIRD_PARTY_NOTICES.md` và evid
 
 Release hợp lệ phải có:
 
-- tag `v1.0.0`;
+- tag `v2.0.0`;
 - ba ZIP đúng hash ở đầu README;
 - `SHA256SUMS.txt`;
 - G-00 đến G-07 `PASS` trong private audit records;

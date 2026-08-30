@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-1.5.0",
+  "date": "2026-08-24",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059"
+  ],
+  "scope": "QA-only evidence/p18/r6; no runtime/package/dist/publication/Git/Release mutation",
+  "generator": {
+    "path": "evidence/p18/r6/source/generate_p18r6.py",
+    "bytes": 7894,
+    "sha256": "e8b63e0173fabd48a73b6a9341cd13a62c1c0464e8a2209d8147398388fa8b8a"
+  },
+  "kernel": {
+    "path": "evidence/p18/r6/source/gallery_kernel.py",
+    "bytes": 42020,
+    "sha256": "ec0c3d315954ff4c00d06b3e48d88d9002ae6bbf081c46bd957055c9974c6f37"
+  },
+  "parent_kernel": {
+    "path": "evidence/p18/r5/source/master_visual_kernel.py",
+    "bytes": 43031,
+    "sha256": "dad5b26039fbeb9df9aa02d58f21d8a084d96973491802617bcddb47da800311"
+  },
+  "engine_count": 14,
+  "html_anchor_count": 14,
+  "svg_anchor_count": 14,
+  "visual_mode": "neutral-light",
+  "deterministic_regeneration": true,
+  "r5_parent_manifest_sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+  "r5_swimlane_preserved_exactly": true,
+  "font_receipt": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed"
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    }
+  },
+  "network_or_install_action": false
+}

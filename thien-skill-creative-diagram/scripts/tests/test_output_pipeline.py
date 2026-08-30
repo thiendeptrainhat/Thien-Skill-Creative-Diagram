@@ -28,7 +28,7 @@ from output_pipeline import (
     write_bundle,
 )
 from p08_coverage import P08_COVERAGE
-from semantic_fixtures import fixtures
+from semantic_fixtures import fixtures, legacy_fixtures
 
 
 def request(diagram_type: str, *, format: str = "html", motion: str = "none", size: str = "fit") -> dict[str, object]:
@@ -55,7 +55,7 @@ def png(width: int, height: int) -> bytes:
 
 class PortableOutputTests(unittest.TestCase):
     def test_all_27_types_export_html_svg_and_all_motion_modes(self) -> None:
-        cases = fixtures()
+        cases = legacy_fixtures()
         for diagram_type, ir in cases.items():
             with self.subTest(diagram_type=diagram_type, format="svg"):
                 self.assertEqual(set(export_artifacts(ir, request(diagram_type, format="svg"), auto_detect_rasterizer=False).artifacts), {"svg"})
@@ -197,7 +197,7 @@ class MotionInventoryTests(unittest.TestCase):
         self.assertEqual(len(P08_COVERAGE), 25)
 
     def test_all_motion_specializations_are_selected_on_original_fixtures(self) -> None:
-        cases = fixtures()
+        cases = legacy_fixtures()
         selected = set()
         for diagram_type, mode in (("architecture", "reveal"), ("architecture", "loop"), ("data-flow", "step"), ("flowchart", "step"), ("timeline", "step")):
             selected.update(select_motion_capabilities(cases[diagram_type], mode))

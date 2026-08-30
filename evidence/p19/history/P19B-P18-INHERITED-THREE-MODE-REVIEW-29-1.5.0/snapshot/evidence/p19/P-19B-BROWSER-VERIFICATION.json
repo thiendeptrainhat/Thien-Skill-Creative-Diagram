@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-109, retaining D-084–D-108 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B detailed story-map remediation; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-29 changes only three story-map HTML files plus one neutral-light story-map preview. The independent composition contains four activities, six backbone steps, nine stories, three release slices, one labeled MVP cut and one high-risk story. The neutral-light 2000×1040 proof was rasterized locally and visually inspected. Eighty-seven non-target HTML artworks and 29 non-target previews are preserved. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review29-checks/type-story-map.svg.png",
+    "sha256": "3375d21c23fc9f0138df2ea2e1b406dbf21e806483ff70377c8551fec4b5ebc7",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

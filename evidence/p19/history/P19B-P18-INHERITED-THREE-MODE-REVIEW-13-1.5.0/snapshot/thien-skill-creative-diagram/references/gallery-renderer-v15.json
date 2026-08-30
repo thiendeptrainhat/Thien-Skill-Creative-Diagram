@@ -1,0 +1,358 @@
+{
+  "adapter_count": 43,
+  "bindings": [
+    {
+      "adapter_id": "type:architecture",
+      "layout_engine": "topology-and-zones",
+      "renderer": "_topology",
+      "silhouette": "trust-zone-topology"
+    },
+    {
+      "adapter_id": "type:it-current-state",
+      "layout_engine": "topology-and-zones",
+      "renderer": "_topology",
+      "silhouette": "health-layer-topology"
+    },
+    {
+      "adapter_id": "type:flowchart",
+      "layout_engine": "directed-flow-state",
+      "renderer": "_directed",
+      "silhouette": "start-decision-terminal-flow"
+    },
+    {
+      "adapter_id": "type:sequence",
+      "layout_engine": "lane-interaction",
+      "renderer": "_lane",
+      "silhouette": "lifeline-message-sequence"
+    },
+    {
+      "adapter_id": "type:state-machine",
+      "layout_engine": "directed-flow-state",
+      "renderer": "_directed",
+      "silhouette": "initial-state-terminal-flow"
+    },
+    {
+      "adapter_id": "type:er-data-model",
+      "layout_engine": "compartment-model",
+      "renderer": "_compartment",
+      "silhouette": "entity-cardinality-compartments"
+    },
+    {
+      "adapter_id": "type:timeline",
+      "layout_engine": "time-planning",
+      "renderer": "_time",
+      "silhouette": "proportional-event-time-rail"
+    },
+    {
+      "adapter_id": "type:swimlane",
+      "layout_engine": "lane-interaction",
+      "renderer": "_lane",
+      "silhouette": "ownership-lane-handoff"
+    },
+    {
+      "adapter_id": "type:quadrant",
+      "layout_engine": "spatial-matrix",
+      "renderer": "_spatial",
+      "silhouette": "two-axis-quadrant-field"
+    },
+    {
+      "adapter_id": "type:radar",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "radial-multi-axis-profile"
+    },
+    {
+      "adapter_id": "type:loop-flywheel",
+      "layout_engine": "special-geometry",
+      "renderer": "_special",
+      "silhouette": "cyclic-station-ring"
+    },
+    {
+      "adapter_id": "type:nested",
+      "layout_engine": "containment-stack",
+      "renderer": "_containment",
+      "silhouette": "nested-boundary-containment"
+    },
+    {
+      "adapter_id": "type:tree",
+      "layout_engine": "hierarchy",
+      "renderer": "_hierarchy",
+      "silhouette": "root-branch-leaf-tree"
+    },
+    {
+      "adapter_id": "type:org-chart",
+      "layout_engine": "hierarchy",
+      "renderer": "_hierarchy",
+      "silhouette": "primary-reporting-tree"
+    },
+    {
+      "adapter_id": "type:layer-stack",
+      "layout_engine": "containment-stack",
+      "renderer": "_containment",
+      "silhouette": "ordered-control-layer-stack"
+    },
+    {
+      "adapter_id": "type:venn",
+      "layout_engine": "spatial-matrix",
+      "renderer": "_spatial",
+      "silhouette": "set-overlap-field"
+    },
+    {
+      "adapter_id": "type:pyramid-funnel",
+      "layout_engine": "containment-stack",
+      "renderer": "_containment",
+      "silhouette": "continuous-tiered-silhouette"
+    },
+    {
+      "adapter_id": "type:bar-chart",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "zero-baseline-category-bars"
+    },
+    {
+      "adapter_id": "type:line-chart",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "ordered-series-lines"
+    },
+    {
+      "adapter_id": "type:gantt",
+      "layout_engine": "time-planning",
+      "renderer": "_time",
+      "silhouette": "task-duration-rail"
+    },
+    {
+      "adapter_id": "type:scatter-plot",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "xy-observation-field"
+    },
+    {
+      "adapter_id": "type:high-level",
+      "layout_engine": "topology-and-zones",
+      "renderer": "_topology",
+      "silhouette": "bounded-stage-overview"
+    },
+    {
+      "adapter_id": "type:process",
+      "layout_engine": "directed-flow-state",
+      "renderer": "_directed",
+      "silhouette": "activity-artifact-process"
+    },
+    {
+      "adapter_id": "type:medallion",
+      "layout_engine": "containment-stack",
+      "renderer": "_containment",
+      "silhouette": "tiered-promotion-stack"
+    },
+    {
+      "adapter_id": "type:data-flow",
+      "layout_engine": "integration-pipeline",
+      "renderer": "_pipeline",
+      "silhouette": "source-transform-sink-pipeline"
+    },
+    {
+      "adapter_id": "type:dp-integration",
+      "layout_engine": "integration-pipeline",
+      "renderer": "_pipeline",
+      "silhouette": "source-platform-consumer-pipeline"
+    },
+    {
+      "adapter_id": "type:dp-security-matrix",
+      "layout_engine": "spatial-matrix",
+      "renderer": "_spatial",
+      "silhouette": "actor-resource-permission-grid"
+    },
+    {
+      "adapter_id": "type:polar-chart",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "angular-radius-cycle"
+    },
+    {
+      "adapter_id": "type:treemap",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "hierarchical-area-tiling"
+    },
+    {
+      "adapter_id": "type:sankey",
+      "layout_engine": "special-geometry",
+      "renderer": "_special",
+      "silhouette": "conserved-flow-ribbons"
+    },
+    {
+      "adapter_id": "type:fishbone",
+      "layout_engine": "special-geometry",
+      "renderer": "_special",
+      "silhouette": "cause-category-spine"
+    },
+    {
+      "adapter_id": "type:wardley-map",
+      "layout_engine": "spatial-matrix",
+      "renderer": "_spatial",
+      "silhouette": "value-chain-evolution-field"
+    },
+    {
+      "adapter_id": "type:kanban",
+      "layout_engine": "work-experience",
+      "renderer": "_work",
+      "silhouette": "wip-columns-and-cards"
+    },
+    {
+      "adapter_id": "type:user-journey",
+      "layout_engine": "work-experience",
+      "renderer": "_work",
+      "silhouette": "moments-action-thought-emotion-grid"
+    },
+    {
+      "adapter_id": "type:deployment",
+      "layout_engine": "runtime-deployment",
+      "renderer": "_deployment",
+      "silhouette": "zone-host-artifact-containment"
+    },
+    {
+      "adapter_id": "type:dependency-graph",
+      "layout_engine": "dependency-dag",
+      "renderer": "_dependency",
+      "silhouette": "ranked-dag-with-cycle-backedge"
+    },
+    {
+      "adapter_id": "type:uml-class",
+      "layout_engine": "compartment-model",
+      "renderer": "_compartment",
+      "silhouette": "class-member-relationship-compartments"
+    },
+    {
+      "adapter_id": "type:story-map",
+      "layout_engine": "work-experience",
+      "renderer": "_work",
+      "silhouette": "backbone-stories-release-cut"
+    },
+    {
+      "adapter_id": "type:database-schema",
+      "layout_engine": "compartment-model",
+      "renderer": "_compartment",
+      "silhouette": "table-column-index-compartments"
+    },
+    {
+      "adapter_id": "capability:CAP-V17",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "paired-values-gap-dumbbell"
+    },
+    {
+      "adapter_id": "capability:CAP-V18",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "two-state-rank-slopegraph"
+    },
+    {
+      "adapter_id": "capability:CAP-V19",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "shared-domain-distribution-ridgeline"
+    },
+    {
+      "adapter_id": "capability:CAP-V20",
+      "layout_engine": "quantitative",
+      "renderer": "_quantitative",
+      "silhouette": "xy-area-observation-bubble"
+    }
+  ],
+  "boundary": {
+    "external_resources": false,
+    "p19c_full_qa_freeze_owner_review": false,
+    "package_asset": false,
+    "standalone_html": true
+  },
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-13-1.5.0",
+  "engine_renderer_count": 14,
+  "modes": [
+    "neutral-light",
+    "neutral-dark",
+    "editorial"
+  ],
+  "schema_version": "1.1",
+  "viewbox": [
+    0,
+    0,
+    1200,
+    760
+  ],
+  "viewbox_overrides": {
+    "bar-chart": "content-fit eight-category zero-baseline comparison; 1800×940",
+    "dp-integration": "content-fit sources/platform/consumers/shared-services topology; 1800×1040",
+    "dp-security-matrix": "content-fit five-role by five-component permission matrix; 2000×820",
+    "er-data-model": "content-fit four-entity aggregate/join model; 2000×940",
+    "fishbone": "content-fit 5-category cause spine; exact category and label clearance",
+    "gantt": "content-fit calendar; width >=1600; height from phase and row content",
+    "high-level": "content-fit end-to-end data-platform overview; 2000×1040; rounded 90-degree corners by default",
+    "it-current-state": "content-fit collection/processing/dissemination landscape; 2000×1040; rounded 90-degree corners by default",
+    "loop-flywheel": "content-fit circle; width >=1600; card and shared-state clearance"
+  },
+  "visual_mode_tokens": {
+    "editorial": {
+      "accent": "#f26a32",
+      "accent_soft": "#f8e7dd",
+      "accent_text": "#c84c1f",
+      "amber": "#a87d45",
+      "blue": "#365f96",
+      "border": "#c9c1b4",
+      "canvas": "#f7f3ea",
+      "connector": "#4f5e76",
+      "danger": "#a8443c",
+      "green": "#748765",
+      "grid": "#d8d0c2",
+      "muted": "#6d685f",
+      "on_accent": "#ffffff",
+      "paper": "#e9e3d8",
+      "plum": "#71697a",
+      "surface": "#fffdf8",
+      "surface_alt": "#e9e3d8",
+      "text": "#252b3c"
+    },
+    "neutral-dark": {
+      "accent": "#f26a32",
+      "accent_soft": "#4c2d25",
+      "accent_text": "#ff9a74",
+      "amber": "#d5aa70",
+      "blue": "#78a5e8",
+      "border": "#596475",
+      "canvas": "#1c2230",
+      "connector": "#c9d1de",
+      "danger": "#ef7d73",
+      "green": "#a5b98c",
+      "grid": "#414a58",
+      "muted": "#b8c0cf",
+      "on_accent": "#171b24",
+      "paper": "#171b24",
+      "plum": "#a89bb3",
+      "surface": "#252c3a",
+      "surface_alt": "#303746",
+      "text": "#f4f0e8"
+    },
+    "neutral-light": {
+      "accent": "#f26a32",
+      "accent_soft": "#f8e7dd",
+      "accent_text": "#df5522",
+      "amber": "#b9894b",
+      "blue": "#2f65af",
+      "border": "#c7ccd2",
+      "canvas": "#f7f6f2",
+      "connector": "#4f5e76",
+      "danger": "#b9473f",
+      "green": "#7c9167",
+      "grid": "#d9d7d2",
+      "muted": "#687286",
+      "on_accent": "#ffffff",
+      "paper": "#eeece7",
+      "plum": "#756b7f",
+      "surface": "#ffffff",
+      "surface_alt": "#eeece7",
+      "text": "#252b3c"
+    }
+  },
+  "visual_parent_candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+  "visual_parent_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a"
+}

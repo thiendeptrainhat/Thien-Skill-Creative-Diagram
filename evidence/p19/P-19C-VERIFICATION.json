@@ -1,0 +1,171 @@
+{
+  "authority": "D-127",
+  "candidate_id": "P19C-FULL-QA-FREEZE-REVIEW-01-1.5.0",
+  "check_count": 23,
+  "checks": [
+    {
+      "category": "coexistence",
+      "detail": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+      "name": "p18-exact-manifest",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "14 HTML + 14 SVG",
+      "name": "p18-exact-anchor-pairs",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "ae95aca927ec69904483441db6b85de0381c1c1d85f4f01ee07a21a40aed0ba2",
+      "name": "p19-exact-gallery-manifest",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "93 HTML + 31 preview",
+      "name": "p19-exact-counts",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "P-18 and P-19 paths are disjoint",
+      "name": "separate-artifact-paths",
+      "status": "PASS"
+    },
+    {
+      "category": "governance",
+      "detail": "OWNER_APPROVED_ALL_P19_DIAGRAMS",
+      "name": "owner-approved-p19b-review45",
+      "status": "PASS"
+    },
+    {
+      "category": "semantic",
+      "detail": "25 canonical + 4 capability + 2 variants × 3 modes",
+      "name": "inventory-shape",
+      "status": "PASS"
+    },
+    {
+      "category": "semantic",
+      "detail": "{'neutral-light': 31, 'neutral-dark': 31, 'editorial': 31}",
+      "name": "mode-balance",
+      "status": "PASS"
+    },
+    {
+      "category": "semantic",
+      "detail": "14 P-18 + 25 P-19 = 39 unique canonical types",
+      "name": "canonical-union",
+      "status": "PASS"
+    },
+    {
+      "category": "semantic",
+      "detail": "31 unique fixture and silhouette identifiers",
+      "name": "silhouette-coverage",
+      "status": "PASS"
+    },
+    {
+      "category": "determinism",
+      "detail": "records=127 failures=0",
+      "name": "p19-gallery-manifest-integrity",
+      "status": "PASS"
+    },
+    {
+      "category": "accessibility",
+      "detail": "93 pages; failures=0",
+      "name": "html-svg-accessibility-anatomy",
+      "status": "PASS"
+    },
+    {
+      "category": "security",
+      "detail": "scriptless/network-independent; failures=0",
+      "name": "standalone-security",
+      "status": "PASS"
+    },
+    {
+      "category": "typography",
+      "detail": "replacement/control/receipt failures=0",
+      "name": "utf8-vietnamese-typography-receipts",
+      "status": "PASS"
+    },
+    {
+      "category": "geometry",
+      "detail": "31 identities; failures=0",
+      "name": "three-mode-geometry-invariance",
+      "status": "PASS"
+    },
+    {
+      "category": "determinism",
+      "detail": "hashes=93",
+      "name": "deterministic-memory-regeneration",
+      "status": "PASS"
+    },
+    {
+      "category": "regression",
+      "detail": "archive=646 protected=20018",
+      "name": "review45-exact-and-protected-corpus",
+      "status": "PASS"
+    },
+    {
+      "category": "regression",
+      "detail": "tests=414",
+      "name": "full-regression",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "tests=8",
+      "name": "p18-p19-scope-lock",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "phase_counts={'p18': 14, 'p19': 93}",
+      "name": "combined-comparison-107",
+      "status": "PASS"
+    },
+    {
+      "category": "browser",
+      "detail": "PASS",
+      "name": "browser-qa",
+      "status": "PASS"
+    },
+    {
+      "category": "visual-review",
+      "detail": "records=31; owner recognition pending",
+      "name": "masked-review-pack",
+      "status": "PASS"
+    },
+    {
+      "category": "coexistence",
+      "detail": "bound_artifacts=152",
+      "name": "source-artwork-preservation-during-p19c-qa",
+      "status": "PASS"
+    }
+  ],
+  "failure_count": 0,
+  "hard_boundaries": {
+    "combined_count": 107,
+    "g04_1_5_0": "NOT-EVALUATED",
+    "p18_replaced_by_p19": false,
+    "p19c_owner_approved": false,
+    "package_dist_publication_git_release_authorized": false
+  },
+  "owner_actions_required": [
+    "Complete the 31-card masked recognition/five-second review without opening MASKED-KEY.json first.",
+    "Approve or reject this exact P-19C freeze candidate.",
+    "Record the separate G-04@1.5.0 gate decision."
+  ],
+  "pass_count": 23,
+  "schema_version": "1.0",
+  "status": "TECHNICAL_PASS_READY_FOR_OWNER_REVIEW",
+  "test_receipts": {
+    "full_regression": {
+      "count": 414,
+      "tail": "..............................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 414 tests in 1.181s\n\nOK\n"
+    },
+    "scope_lock": {
+      "count": 8,
+      "tail": "........\n----------------------------------------------------------------------\nRan 8 tests in 2.510s\n\nOK\n"
+    }
+  }
+}

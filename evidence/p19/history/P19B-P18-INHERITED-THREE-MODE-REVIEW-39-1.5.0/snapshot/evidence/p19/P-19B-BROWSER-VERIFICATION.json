@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-119, retaining D-084–D-118 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B process thin-stroke repair; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-39 preserves the D-118 process geometry and connector continuity while reducing paint weight to route/node/focal 1.0/1.2/1.6. The neutral-light 2000×1340 proof was rasterized locally and visually inspected; borders and connectors now match the thin hierarchy of adjacent diagrams while arrowheads remain clear. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review39-checks/type-process.svg.png",
+    "sha256": "1bca1ff6f5731a7e481d34da9cfd6de779d40633afd4186577765f23b9f14d65",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-07-1.5.0",
+  "date": "2026-08-24",
+  "status": "FROZEN_OWNER_REVIEW_CANDIDATE_WITH_BROWSER_AND_INDEPENDENT_GATES_PENDING",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059",
+    "D-060",
+    "D-061",
+    "D-062",
+    "D-063",
+    "D-064",
+    "D-065"
+  ],
+  "lineage": {
+    "review": "review-07",
+    "review_01_manifest_sha256": "fcdec11e49a00d89d82a3fafaba7cae2ac8e7c58908fa76cc2fa6eba383aad37",
+    "review_01_archive": "evidence/p18/r6/history/review-01",
+    "review_02_manifest_sha256": "2f9c7aad3a2dd9d43d575ddfb864effa915df909134d5401dbb075ed6ea2cf7b",
+    "review_02_archive": "evidence/p18/r6/history/review-02",
+    "review_03_manifest_sha256": "572de899399755268d63fa5cb49c598a6ee6c5d509418ed8d07484a750c62e54",
+    "review_03_archive": "evidence/p18/r6/history/review-03",
+    "review_04_manifest_sha256": "6be1aa8894cf62d252c9cd890f14b4e825497b811046df57ccb301e84054f185",
+    "review_04_archive": "evidence/p18/r6/history/review-04",
+    "review_05_manifest_sha256": "20b8f257b44d7f6c9fc0cbf7eed9b710778bdcebb142978b8f47aad61eab393b",
+    "review_05_archive": "evidence/p18/r6/history/review-05",
+    "review_06_manifest_sha256": "b1f934b5542079a93763b5ac0237dbdc2871dc6f97e8e4ea14adeb05536f844d",
+    "review_06_archive": "evidence/p18/r6/history/review-06"
+  },
+  "engine_count": 14,
+  "mode": "neutral-light",
+  "full_regression": "148/148 PASS",
+  "file_count": 60,
+  "files": [
+    {
+      "path": "evidence/p18/r6/P-18R6-BUILD-RECEIPT.json",
+      "bytes": 3929,
+      "sha256": "2fac66fbf65a093204e1495efe0036f1e167615f8d038ad6061b4b547f9dd463"
+    },
+    {
+      "path": "evidence/p18/r6/P-18R6-DESIGN-CONTRACT.md",
+      "bytes": 8995,
+      "sha256": "821b873feac9a74e200a3d046f1636ae8de9b10926ebf6dec1d6b69da46bde49"
+    },
+    {
+      "path": "evidence/p18/r6/P-18R6-INVENTORY.json",
+      "bytes": 8998,
+      "sha256": "0b5013854cfe5fdd7387c5f634996e66963083d906876cc8973e2d89d684ef7f"
+    },
+    {
+      "path": "evidence/p18/r6/P-18R6-VERIFICATION.json",
+      "bytes": 1006,
+      "sha256": "0bd55700b0969ca6314e551859091b3973268e402c9871634e18f2c15067ddfe"
+    },
+    {
+      "path": "evidence/p18/r6/P-18R6-VISUAL-REVIEW.md",
+      "bytes": 6659,
+      "sha256": "2d978237b98af981febae20181966f559e0fc709e877c8206d7da0e75d73991a"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/01-topology-and-zones--neutral-light.html",
+      "bytes": 13386,
+      "sha256": "b6f92ee0a1c0045230155b4ed0cf0a12a60d5d01090074badef26cc49fd69739"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/01-topology-and-zones--neutral-light.svg",
+      "bytes": 10468,
+      "sha256": "3c1f213fb33c582b8715c6739de0b420e66668e658a1cf446ff6b81ab97bc091"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/02-integration-pipeline--neutral-light.html",
+      "bytes": 13677,
+      "sha256": "ed9c47bb7f01755a8a998f66fc7f47929aa7ee9835799322c5d60f2d72bd3c5d"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/02-integration-pipeline--neutral-light.svg",
+      "bytes": 10759,
+      "sha256": "81c93bdf771a0c2c2141c32d8db54ca89623d5ecaa9f650050556c5f1f2a3ec8"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/03-runtime-deployment--neutral-light.html",
+      "bytes": 13429,
+      "sha256": "ded439787a7ac90913124a02ab4421179f73591ad4914ccc53240efb878b3bbe"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/03-runtime-deployment--neutral-light.svg",
+      "bytes": 10483,
+      "sha256": "cfe5dcff4afe2800564220ab26d6f8508ad3f7e4398bba5171594168e97c41f9"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/04-dependency-dag--neutral-light.html",
+      "bytes": 18380,
+      "sha256": "8942ecbc57ec71e034b3e8e718a58c5f1e3e0515dedeb4c9f02f14cf0620a7b0"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/04-dependency-dag--neutral-light.svg",
+      "bytes": 15494,
+      "sha256": "4994bca1b432beb8b83fd5663df6b8cccda9af78a41818e18e50d96ad476ff07"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/05-directed-flow-state--neutral-light.html",
+      "bytes": 10788,
+      "sha256": "381ac05e98144a5ca35065a358c7201f2ee8d5c98212bd5e37a85ff35c39166b"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/05-directed-flow-state--neutral-light.svg",
+      "bytes": 7852,
+      "sha256": "600fe21460d47382bac035d6c385f186cc0cb8e6898bcdec98bea74b6c3d08ad"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/06-lane-interaction--neutral-light.html",
+      "bytes": 26389,
+      "sha256": "c63fb28bd1347bd5f9b0c8a8ddb7ac2e7951adcd5ecd08b787634eaf94a27982"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/06-lane-interaction--neutral-light.svg",
+      "bytes": 23255,
+      "sha256": "a0d3949d177daebca0c84070b18d8366a025025261d03a7e03896550beb8253c"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/07-time-planning--neutral-light.html",
+      "bytes": 9861,
+      "sha256": "f25e584c176c403265ba1cdcf35b157f713892117d9d65ced97f226706fed908"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/07-time-planning--neutral-light.svg",
+      "bytes": 7014,
+      "sha256": "caae088e6537c3bde11f1a874f7f2776d887379cfbf6cbf3c15245be0548c2c3"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/08-work-experience--neutral-light.html",
+      "bytes": 11135,
+      "sha256": "fae2eeb92648faa062f7d0dbecff934742bb6fdd1aea7fc23e9b0501b53d8b6a"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/08-work-experience--neutral-light.svg",
+      "bytes": 8226,
+      "sha256": "5d15af66d63ad45b2ed28a21ad797e081f8a8a906250cb54d5a131212e578016"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/09-hierarchy--neutral-light.html",
+      "bytes": 15011,
+      "sha256": "3302fb4c31a8c7a2ccdaedc75e805f3c9071bf7cbed3e74bf92c13494f6c0689"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/09-hierarchy--neutral-light.svg",
+      "bytes": 12093,
+      "sha256": "7a5dda243b60254d6bada90fc740ff024239d0c15152ebfdaad3b3e40f2b53c6"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/10-containment-stack--neutral-light.html",
+      "bytes": 14466,
+      "sha256": "3d15da35220dba28619bb3319de7e07b1c97f13dc0c152de3f8aa2ae959b6fa4"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/10-containment-stack--neutral-light.svg",
+      "bytes": 11555,
+      "sha256": "52905b1a8d4cd80bca585c187b964e68adbbabb8d3bc4f5e403575c79015dc52"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/11-compartment-model--neutral-light.html",
+      "bytes": 10891,
+      "sha256": "5f49ce1e8e027a2af040b6e312a45c08d677c6aad54b1b9f53dfe452b6e85c8c"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/11-compartment-model--neutral-light.svg",
+      "bytes": 7992,
+      "sha256": "6b22cfd733e448f20fc02905508f5d1d25b43ea81fafe74cae02ca0e09059147"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/12-spatial-matrix--neutral-light.html",
+      "bytes": 9148,
+      "sha256": "0e18c1665905e25a18049770d766c6f6f5f6bffe20f3b7c04d202dd8b1b72b2c"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/12-spatial-matrix--neutral-light.svg",
+      "bytes": 6270,
+      "sha256": "e860acad1e97a6a5982fe95606dc20605d08182be5255ddffdb9a40a48d9d14a"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/13-quantitative--neutral-light.html",
+      "bytes": 10801,
+      "sha256": "c37dd4922bf9caa77ced2ea639396b5a2d52cf41e0732199024f9ae7d9bc53dc"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/13-quantitative--neutral-light.svg",
+      "bytes": 7675,
+      "sha256": "433d33e52e20a62af5c369ae72ca0e2ecd7d044cbb23e4bbcb651cb004593528"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/14-special-geometry--neutral-light.html",
+      "bytes": 10419,
+      "sha256": "b7526bfdde44bafef962ca883362dd47036489074d922a5bda4c3635bdecf0f8"
+    },
+    {
+      "path": "evidence/p18/r6/anchors/14-special-geometry--neutral-light.svg",
+      "bytes": 7478,
+      "sha256": "7506ead19793271b447d83e2be1f3eebc1918f5f7491a09e205431ab10e09c65"
+    },
+    {
+      "path": "evidence/p18/r6/blind-review.html",
+      "bytes": 6203,
+      "sha256": "e9c89bcfb62b437223de3688cc6b9607f51572d7d57b8fbe7681de7e29b0526b"
+    },
+    {
+      "path": "evidence/p18/r6/index.html",
+      "bytes": 7264,
+      "sha256": "e8eaf9da944fd613e81c2e80635f43ba2e3ca8f83d091b641535ef81b67bf856"
+    },
+    {
+      "path": "evidence/p18/r6/review/P-18R5-parent-manifest.json",
+      "bytes": 6100,
+      "sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8"
+    },
+    {
+      "path": "evidence/p18/r6/review/contact-sheet-labeled.png",
+      "bytes": 1046216,
+      "sha256": "5f5e79c52f9fbbb355387a5f8baac9e8c59166ee8281e6018bafe6b2dbd6fead"
+    },
+    {
+      "path": "evidence/p18/r6/review/contact-sheet-masked.png",
+      "bytes": 1022106,
+      "sha256": "878059aafe05d7174be7662eac3e8f4b3661c244d834570a57009163640add9a"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/01-topology-and-zones--neutral-light.png",
+      "bytes": 92699,
+      "sha256": "b9719354e80bd8e0fc7da933387575544b3e931464832176cd225544439c6289"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/02-integration-pipeline--neutral-light.png",
+      "bytes": 104343,
+      "sha256": "c09e6d61876d602459f870f7bc82a5705089ef18b19bc8f23d0974f050172a9d"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/03-runtime-deployment--neutral-light.png",
+      "bytes": 109807,
+      "sha256": "61e2d44b20f2912c198ad60ca57c857c4b03eb591f37e819f0eed37062c25b35"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/04-dependency-dag--neutral-light.png",
+      "bytes": 131271,
+      "sha256": "cfff502ae7cc354632410f63be38d230f39de55a51984dffda7c7daa81b79694"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/05-directed-flow-state--neutral-light.png",
+      "bytes": 147353,
+      "sha256": "ef8df3f502a8adbe0e80c88995a661035381f05f69e9fba40d18f8c201af4b68"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/06-lane-interaction--neutral-light.png",
+      "bytes": 124653,
+      "sha256": "75c6193aa447330644a563baaf8559c52fdcdf17b4e2805556420755f049f634"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/07-time-planning--neutral-light.png",
+      "bytes": 66231,
+      "sha256": "8bf1fd26867d2799047855c854222c2389be5a5845ee707d9f8583ddaa94cf8e"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/08-work-experience--neutral-light.png",
+      "bytes": 119155,
+      "sha256": "af6e9dfab4a0587b5e4a46eb93624f4823a12a7bdb5c9623d9bd64405a95d6d5"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/09-hierarchy--neutral-light.png",
+      "bytes": 101713,
+      "sha256": "9a8840819011043e5bd3d2b8c37ea71aad573e5641e8acd5cb6478b58869a3c9"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/10-containment-stack--neutral-light.png",
+      "bytes": 128221,
+      "sha256": "92f3005d788adaa9c43013474497a3a434b119d2affe4304e1eea3e7c56ee13d"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/11-compartment-model--neutral-light.png",
+      "bytes": 118561,
+      "sha256": "f0e839388547362cb5ae42ffb36be932096aa7600f111e066bd1b38fdeb85941"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/12-spatial-matrix--neutral-light.png",
+      "bytes": 77617,
+      "sha256": "d7b52bc790f509427f7e58ecb9416c592671121ddc59b04a3d0bb00269f83caf"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/13-quantitative--neutral-light.png",
+      "bytes": 87422,
+      "sha256": "95cfd729da772c887d8b3de20ad26f961495c070f52f80f7e7f68dea598759d4"
+    },
+    {
+      "path": "evidence/p18/r6/review/previews/14-special-geometry--neutral-light.png",
+      "bytes": 118093,
+      "sha256": "460c719f7707d8ca183ad8e9898caf6ca8600834469f3779e7493b4c8d7f652c"
+    },
+    {
+      "path": "evidence/p18/r6/review/quicklook-verification.json",
+      "bytes": 4296,
+      "sha256": "8526e6ad8bf33b1e14289f251347a769d180487fafa15ffb56c9d17b0d95728a"
+    },
+    {
+      "path": "evidence/p18/r6/review/static-verification.json",
+      "bytes": 41658,
+      "sha256": "06777bd43ad9f537d90df3652a675b1a37361a3885528ea554bd287ac1896cda"
+    },
+    {
+      "path": "evidence/p18/r6/source/freeze_p18r6.py",
+      "bytes": 8602,
+      "sha256": "611587663b76f280ca97f896684d019630d95e1f8087771f885bf0d96efa0821"
+    },
+    {
+      "path": "evidence/p18/r6/source/gallery_kernel.py",
+      "bytes": 63142,
+      "sha256": "c041bd2dfdec1b0b5ae6b996ca2274e6ab17570283a4fd9e7a948b60549906a5"
+    },
+    {
+      "path": "evidence/p18/r6/source/generate_p18r6.py",
+      "bytes": 9943,
+      "sha256": "2e803b4a61cbb776544535c7a4ac0d24134bb46d7f518a46bf6c66799a3aeda8"
+    },
+    {
+      "path": "evidence/p18/r6/source/p18r6_browser_qa.js",
+      "bytes": 9269,
+      "sha256": "9c43dc26e57790c13ee19f88d108303d8bd0ed931a6548b5a1043d9218847d0b"
+    },
+    {
+      "path": "evidence/p18/r6/source/p18r6_qa.py",
+      "bytes": 43051,
+      "sha256": "2891b05201c193da6d8ea989db2b18453c9ca22bf4cf45c79b45734aea1d225f"
+    },
+    {
+      "path": "evidence/p18/r6/source/render_previews.py",
+      "bytes": 4265,
+      "sha256": "3087abf50ccf56e38caf3cf3b958e60255354a2c3f1c5bfe63b9514e80172826"
+    }
+  ],
+  "open_conditions": [
+    "browser QA execution and PASS",
+    "masked blind recognition >=12/14",
+    "five-second takeaway review PASS",
+    "independent visual-craft >=85/100 with every dimension >=4/5",
+    "owner approval and separate G-03@1.5.0 decision"
+  ],
+  "scope_exclusions": [
+    "P-19A",
+    "P-19B",
+    "P-19C",
+    "runtime",
+    "package",
+    "dist",
+    "publication mirror",
+    "commit",
+    "push",
+    "tag",
+    "Release"
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-10-1.5.0",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059",
+    "D-060",
+    "D-061",
+    "D-062",
+    "D-063",
+    "D-064",
+    "D-065",
+    "D-066",
+    "D-067",
+    "D-068"
+  ],
+  "mode": "neutral-light",
+  "engine_count": 14,
+  "engines": [
+    {
+      "order": 1,
+      "engine": "topology-and-zones",
+      "canonical_type": "architecture",
+      "html": "anchors/01-topology-and-zones--neutral-light.html",
+      "svg": "anchors/01-topology-and-zones--neutral-light.svg",
+      "takeaway": "Origin là điểm hội tụ và ranh giới tin cậy chính."
+    },
+    {
+      "order": 2,
+      "engine": "integration-pipeline",
+      "canonical_type": "data-flow",
+      "html": "anchors/02-integration-pipeline--neutral-light.html",
+      "svg": "anchors/02-integration-pipeline--neutral-light.svg",
+      "takeaway": "Chuẩn hóa hợp đồng là nút kiểm soát trung tâm."
+    },
+    {
+      "order": 3,
+      "engine": "runtime-deployment",
+      "canonical_type": "deployment",
+      "html": "anchors/03-runtime-deployment--neutral-light.html",
+      "svg": "anchors/03-runtime-deployment--neutral-light.svg",
+      "takeaway": "API public nằm trong cluster và phụ thuộc managed data ngoài cluster."
+    },
+    {
+      "order": 4,
+      "engine": "dependency-dag",
+      "canonical_type": "dependency-graph",
+      "html": "anchors/04-dependency-dag--neutral-light.html",
+      "svg": "anchors/04-dependency-dag--neutral-light.svg",
+      "takeaway": "shared-types là điểm hội tụ; cycle tokens → utils phải được phá."
+    },
+    {
+      "order": 5,
+      "engine": "directed-flow-state",
+      "canonical_type": "flowchart",
+      "html": "anchors/05-directed-flow-state--neutral-light.html",
+      "svg": "anchors/05-directed-flow-state--neutral-light.svg",
+      "takeaway": "Chỉ ngoại lệ trọng yếu với kiểm soát hiệu lực mới đi đến release."
+    },
+    {
+      "order": 6,
+      "engine": "lane-interaction",
+      "canonical_type": "swimlane",
+      "html": "anchors/06-lane-interaction--neutral-light.html",
+      "svg": "anchors/06-lane-interaction--neutral-light.svg",
+      "takeaway": "Sáu major phase phủ đủ workflow từ Chuẩn bị đến Đăng sổ; nhánh cập nhật công nợ vẫn là focal handoff."
+    },
+    {
+      "order": 7,
+      "engine": "time-planning",
+      "canonical_type": "timeline",
+      "html": "anchors/07-time-planning--neutral-light.html",
+      "svg": "anchors/07-time-planning--neutral-light.svg",
+      "takeaway": "Anchor review là mốc chuyển từ foundation sang coverage."
+    },
+    {
+      "order": 8,
+      "engine": "work-experience",
+      "canonical_type": "user-journey",
+      "html": "anchors/08-work-experience--neutral-light.html",
+      "svg": "anchors/08-work-experience--neutral-light.svg",
+      "takeaway": "Khâu so sánh lựa chọn là thời điểm cần hỗ trợ rõ nhất."
+    },
+    {
+      "order": 9,
+      "engine": "hierarchy",
+      "canonical_type": "org-chart",
+      "html": "anchors/09-hierarchy--neutral-light.html",
+      "svg": "anchors/09-hierarchy--neutral-light.svg",
+      "takeaway": "Operating lead là front door duy nhất; domain ownership phân nhánh rõ."
+    },
+    {
+      "order": 10,
+      "engine": "containment-stack",
+      "canonical_type": "pyramid-funnel",
+      "html": "anchors/10-containment-stack--neutral-light.html",
+      "svg": "anchors/10-containment-stack--neutral-light.svg",
+      "takeaway": "Quy trình khối lượng lớn ở đáy tài trợ cho quyết định đòn bẩy cao ở đỉnh."
+    },
+    {
+      "order": 11,
+      "engine": "compartment-model",
+      "canonical_type": "database-schema",
+      "html": "anchors/11-compartment-model--neutral-light.html",
+      "svg": "anchors/11-compartment-model--neutral-light.svg",
+      "takeaway": "ORDER là aggregate root nối khách hàng, thanh toán và line item."
+    },
+    {
+      "order": 12,
+      "engine": "spatial-matrix",
+      "canonical_type": "quadrant",
+      "html": "anchors/12-spatial-matrix--neutral-light.html",
+      "svg": "anchors/12-spatial-matrix--neutral-light.svg",
+      "takeaway": "Freeze contract là hành động high-impact/low-effort cần làm trước."
+    },
+    {
+      "order": 13,
+      "engine": "quantitative",
+      "canonical_type": "scatter-plot",
+      "html": "anchors/13-quantitative--neutral-light.html",
+      "svg": "anchors/13-quantitative--neutral-light.svg",
+      "takeaway": "Hybrid cân bằng automation 62, confidence 78 và volume 46."
+    },
+    {
+      "order": 14,
+      "engine": "special-geometry",
+      "canonical_type": "sankey",
+      "html": "anchors/14-special-geometry--neutral-light.html",
+      "svg": "anchors/14-special-geometry--neutral-light.svg",
+      "takeaway": "Flaked reruns tiêu tốn 1,000 trên 12,000 CI minutes."
+    }
+  ],
+  "typography": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed"
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    }
+  },
+  "connector_corner_style": {
+    "scope": "whole-chart",
+    "engines": [
+      "topology-and-zones",
+      "integration-pipeline",
+      "runtime-deployment",
+      "dependency-dag"
+    ],
+    "default": "rounded",
+    "allowed": [
+      "rounded",
+      "straight"
+    ],
+    "explicit_user_choice_precedence": true,
+    "rounded_example": "M 0.00 0.00 L 0.00 26.00 Q 0.00 40.00 14.00 40.00 L 40.00 40.00",
+    "straight_example": "M 0.00 0.00 L 0.00 40.00 L 40.00 40.00"
+  },
+  "diagram_10_annotation_gap": {
+    "metric": "bbox-left-at-vertical-center-to-outer-triangle-right-edge",
+    "target_px": 72.0,
+    "maximum_tolerance_px": 0.01,
+    "note_count": 4,
+    "x_source": "outer-triangle geometry plus one shared target"
+  },
+  "diagram_06_phase_coverage": {
+    "authority": "D-066",
+    "phase_count": 6,
+    "phase_order": [
+      "CHUẨN BỊ",
+      "NHẬN BỘ",
+      "PHÂN LOẠI",
+      "GỬI NGÂN HÀNG",
+      "CẬP NHẬT NỢ",
+      "ĐĂNG SỔ"
+    ],
+    "r5_source_preserved_exactly": true,
+    "r6_local_extension": true
+  },
+  "diagram_11_schema_geometry": {
+    "authority": "D-066",
+    "top_row_center_alignment": true,
+    "order_item_centered_under_order": true,
+    "minimum_bottom_padding_px": 24,
+    "minimum_relationship_label_node_clearance_px": 8
+  },
+  "diagram_12_axis_annotations": {
+    "authority": "D-067",
+    "note_count": 4,
+    "notes": [
+      "↑ HIGH IMPACT",
+      "← LOW EFFORT",
+      "↓ LOW IMPACT",
+      "HIGH EFFORT →"
+    ],
+    "vertical_note_offset_x_px": 24,
+    "horizontal_note_offset_y_px": 42,
+    "minimum_axis_clearance_px": 16,
+    "measured_bbox_required": true,
+    "review_08_semantic_field_preserved": true
+  },
+  "diagram_12_focal_region": {
+    "authority": "D-068",
+    "fill_role": "accent-soft",
+    "stroke": "none",
+    "transparent_or_zero_opacity_stroke_allowed": false,
+    "geometry_preserved_from_review_09": true,
+    "d067_axis_annotations_preserved": true
+  },
+  "r5_parent": {
+    "manifest": "review/P-18R5-parent-manifest.json",
+    "manifest_sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+    "swimlane_svg_sha256": "a0d3949d177daebca0c84070b18d8366a025025261d03a7e03896550beb8253c",
+    "source_preserved_exactly": true,
+    "r6_lane_svg_byte_identical_to_r5": false,
+    "r6_local_extension_authority": "D-066"
+  },
+  "lineage": {
+    "review": "review-10",
+    "supersedes_for_owner_review": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-09-1.5.0",
+    "review_01_manifest_sha256": "fcdec11e49a00d89d82a3fafaba7cae2ac8e7c58908fa76cc2fa6eba383aad37",
+    "review_01_archive": "history/review-01",
+    "review_02_manifest_sha256": "2f9c7aad3a2dd9d43d575ddfb864effa915df909134d5401dbb075ed6ea2cf7b",
+    "review_02_archive": "history/review-02",
+    "review_03_manifest_sha256": "572de899399755268d63fa5cb49c598a6ee6c5d509418ed8d07484a750c62e54",
+    "review_03_archive": "history/review-03",
+    "review_04_manifest_sha256": "6be1aa8894cf62d252c9cd890f14b4e825497b811046df57ccb301e84054f185",
+    "review_04_archive": "history/review-04",
+    "review_05_manifest_sha256": "20b8f257b44d7f6c9fc0cbf7eed9b710778bdcebb142978b8f47aad61eab393b",
+    "review_05_archive": "history/review-05",
+    "review_06_manifest_sha256": "b1f934b5542079a93763b5ac0237dbdc2871dc6f97e8e4ea14adeb05536f844d",
+    "review_06_archive": "history/review-06",
+    "review_07_manifest_sha256": "da2d8840b8bf009c54c10b72ccc7e9fbd2aedf6422acd2c822548f63a29b5290",
+    "review_07_archive": "history/review-07",
+    "review_08_manifest_sha256": "a5e58ccb47ea63b6904e84859aace63fb3f09b2cb3147e4a3a96ce41617eb7ec",
+    "review_08_archive": "history/review-08",
+    "review_09_manifest_sha256": "d7f7e9653d02b0b156c2aa144643047edb09fb970a5ae07e58f7b1cecbc44703",
+    "review_09_archive": "history/review-09"
+  },
+  "review": {
+    "owner_status": "PENDING",
+    "g03_1_5_0": "NOT-EVALUATED",
+    "p19_authorized": false
+  }
+}

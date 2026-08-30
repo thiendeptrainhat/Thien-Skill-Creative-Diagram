@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-03-1.5.0",
+  "date": "2026-08-24",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059",
+    "D-060",
+    "D-061"
+  ],
+  "scope": "QA-only evidence/p18/r6; no runtime/package/dist/publication/Git/Release mutation",
+  "generator": {
+    "path": "evidence/p18/r6/source/generate_p18r6.py",
+    "bytes": 8835,
+    "sha256": "6420bd760bf8948e213d51637b4f6434a393041668c31c5d413096949e81d3a3"
+  },
+  "kernel": {
+    "path": "evidence/p18/r6/source/gallery_kernel.py",
+    "bytes": 51983,
+    "sha256": "13a4bb277af37d535d90c44b7c4f04a5a0da0e1dca52c19b29cec3e3bcac7c85"
+  },
+  "parent_kernel": {
+    "path": "evidence/p18/r5/source/master_visual_kernel.py",
+    "bytes": 43031,
+    "sha256": "dad5b26039fbeb9df9aa02d58f21d8a084d96973491802617bcddb47da800311"
+  },
+  "engine_count": 14,
+  "html_anchor_count": 14,
+  "svg_anchor_count": 14,
+  "visual_mode": "neutral-light",
+  "deterministic_regeneration": true,
+  "r5_parent_manifest_sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+  "r5_swimlane_preserved_exactly": true,
+  "font_receipt": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed"
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    }
+  },
+  "connector_corner_style_receipt": {
+    "scope": "whole-chart",
+    "default": "rounded",
+    "allowed": [
+      "rounded",
+      "straight"
+    ],
+    "explicit_user_choice_precedence": true,
+    "rounded_example": "M 0.00 0.00 L 0.00 26.00 Q 0.00 40.00 14.00 40.00 L 40.00 40.00",
+    "straight_example": "M 0.00 0.00 L 0.00 40.00 L 40.00 40.00"
+  },
+  "full_regression": "148/148 PASS",
+  "network_or_install_action": false
+}

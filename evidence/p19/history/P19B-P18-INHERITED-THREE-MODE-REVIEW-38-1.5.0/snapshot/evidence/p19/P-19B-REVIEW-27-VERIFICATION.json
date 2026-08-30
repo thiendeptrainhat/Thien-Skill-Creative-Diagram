@@ -1,0 +1,72 @@
+{
+  "archived_files_verified": 459,
+  "authority": "D-107",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0",
+  "gallery_manifest_sha256": "bbee55c7f980e164fe4cdb89305b684960eac956d40d66eff4bcdce202da3f71",
+  "geometry_vs_review26": "BYTE_EQUIVALENT_GEOMETRY_ELEMENTS",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 87,
+  "non_target_previews_byte_identical": 29,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "parent_span_center_proofs": {
+    "branch-experience": {
+      "child_centers_x": [
+        210.0,
+        510.0
+      ],
+      "parent_center_x": 360.0
+    },
+    "branch-insight": {
+      "child_centers_x": [
+        1640.0
+      ],
+      "parent_center_x": 1640.0
+    },
+    "branch-operations": {
+      "child_centers_x": [
+        850.0,
+        1150.0
+      ],
+      "parent_center_x": 1000.0
+    },
+    "capability-product": {
+      "child_centers_x": [
+        360.0,
+        1000.0,
+        1640.0
+      ],
+      "parent_center_x": 1000.0
+    }
+  },
+  "proof_files": [
+    {
+      "path": "evidence/p19/review27-checks/type-tree.svg",
+      "sha256": "b30ce4e9d1ba62ed5a7fef717168ff17230b40f343cbc8098ec98ce77de1acd4"
+    },
+    {
+      "path": "evidence/p19/review27-checks/type-tree.svg.png",
+      "sha256": "3663df2899e87996e53f71cde3a1f1e34d58057eded494c9f64a4d5d8367c1af",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 10143,
+  "status": "PASS",
+  "stroke_contract": {
+    "card": "1.8",
+    "connector": "1.6",
+    "root": "2.2"
+  },
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS",
+  "tree_measurement": {
+    "centered_parents": 4,
+    "connector_primitives": 14,
+    "edges": 8,
+    "nodes": 9,
+    "single_child_straight": 1,
+    "tiers": 3
+  }
+}

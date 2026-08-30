@@ -1,12 +1,12 @@
-# Kế hoạch thực hiện — Thien-Skill-Creative-Diagram v1.0.0
+# Kế hoạch thực hiện — Thien-Skill-Creative-Diagram v1.0.0 baseline / v2.0.0 release candidate
 
 File này là nguồn sự thật duy nhất cho **cách thực hiện, quyền thực hiện và trạng thái phase**.
 
-**Cập nhật:** 2026-08-16  
-**Phạm vi được phép trong yêu cầu hiện tại:** P-15 publication patch theo D-039 đã hoàn tất và được đóng theo D-040
-**Phase tiếp theo đã được phép:** không có; maintenance scope khác chưa được phép
-**Quyền triển khai skill:** không có triển khai mới được phép
-**Quyền build/package/push/release:** publication patch đã push; không có quyền rebuild package, retag, thay GitHub Release/asset hoặc push thay đổi khác
+**Cập nhật:** 2026-08-31
+**Phạm vi được phép trong yêu cầu hiện tại:** D-132: thực thi private release cho exact `TCD-RELEASE-2.0.0-RC1` trên target đã xác minh `PRIVATE`; D-128 và owner waiver D-131 tiếp tục có hiệu lực.
+**Phase đang thực hiện:** P-21 private v2.0.0 release execution `in-progress`; toàn bộ `G-00…G-07@2.0.0` `PASS`
+**Quyền triển khai skill/gallery:** chỉ được cập nhật package-facing guidance/metadata cho v2.0.0 và tạo evidence/candidate; không đổi frozen P-18/P-19 artwork, comparison 107 hoặc sample-not-fixed flexibility.
+**Quyền build/package/commit/push/tag/release:** D-132 cho phép promote exact v2 approved bytes, refresh sanitized private mirror, commit `main`, tạo/push annotated tag `v2.0.0` và tạo private GitHub Release với exact assets; v1.0.0, target, visibility và approved bytes phải giữ nguyên
 
 Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`, `passed`.
 
@@ -21,17 +21,23 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 | P-04 | Router, orchestration & IR contract | passed | G-03 | Exit criteria kỹ thuật đạt ngày 2026-08-15. |
 | P-05 | Semantic grammars for 27 types | passed | G-03 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; tại thời điểm đóng phase chưa mở P-06. |
 | P-06 | Original visual system & pilot | passed | G-03 | Đóng theo quyết định D-025 ngày 2026-08-15. |
-| P-07 | Full visual coverage & safe input/import | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; P-08 không được bắt đầu. |
-| P-08 | Renderer, export & motion | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; P-09/P-11 không được bắt đầu. |
+| P-07 | Full visual coverage & safe input/import | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; restriction về P-08 tại thời điểm đóng P-07 chỉ là hồ sơ lịch sử. |
+| P-08 | Renderer, export & motion | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; restriction về P-09/P-11 tại thời điểm đóng P-08 chỉ là hồ sơ lịch sử. |
 | P-09 | Brand asset derivatives | passed | G-06 | Đóng theo D-027 ngày 2026-08-15: Option A, ba full-crest family, minimum 64px; 32/48px QA-only; không simplified mark v1.0.0. |
-| P-10 | License, notices & provenance manifests | passed | G-06 | Exact RC2 được owner duyệt theo D-029 và được Tran Ngoc Thien duyệt không điều kiện ở tư cách luật sư Việt Nam tự xác nhận theo D-030; candidate/version/hash và sáu artifact đều được khóa. P-13 không được bắt đầu. |
-| P-11 | Automated QA & golden infrastructure | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; P-09/P-12 không được bắt đầu. |
+| P-10 | License, notices & provenance manifests | passed | G-06 | Exact RC2 được owner duyệt theo D-029 và được Tran Ngoc Thien duyệt không điều kiện ở tư cách luật sư Việt Nam tự xác nhận theo D-030; candidate/version/hash và sáu artifact đều được khóa. Restriction về P-13 tại thời điểm đóng P-10 chỉ là hồ sơ lịch sử. |
+| P-11 | Automated QA & golden infrastructure | passed | G-04 | Exit criteria kỹ thuật đạt ngày 2026-08-15; evidence đã ghi; restriction về P-09/P-12 tại thời điểm đóng P-11 chỉ là hồ sơ lịch sử. |
 | P-12 | E2 benchmarks & independent forward tests | passed | G-04 | Đóng theo quyết định D-026 ngày 2026-08-15; exact fixtures/goldens và visual rubric đã được chủ sở hữu duyệt. |
-| P-13 | Deterministic three-package build | passed | G-05 | Ba ZIP RC1 được sinh xác định từ một canonical source; 23/23 package checks và 127 regression test `PASS`; G-05 `PASS` theo D-033. P-14 đang chuẩn bị release candidate theo D-034. |
+| P-13 | Deterministic three-package build | passed | G-05 | Ba ZIP RC1 được sinh xác định từ một canonical source; 23/23 package checks và 127 regression test `PASS`; G-05 `PASS` theo D-033; P-14/P-15 sau đó đã hoàn tất. |
 | P-14 | Owner release approval & private release | passed | G-07 | D-038: sanitized mirror commit/tag/push và private GitHub Release v1.0.0 hoàn tất; exact asset digests khớp; audit-closure commit không di chuyển tag. |
 | P-15 | Maintenance & controlled updates | passed | Lặp gate theo release | Publication patch hoàn tất theo D-039/D-040; root license được GitHub nhận diện là custom `Other`, README hiển thị logo đã duyệt; package/tag/Release/version/legal wording/brand bytes không đổi. |
+| P-16 | Upstream delta & contract lock | passed | G-01, G-02 repeat for v1.5.0 | Đóng theo D-047 ngày 2026-08-23; G-01@1.5.0 và G-02@1.5.0 `PASS`; P-17 sau đó được phép riêng theo D-048. |
+| P-17 | Semantic expansion to 39 types | passed | G-04 repeat | Hoàn tất theo D-048 ngày 2026-08-23: 39 canonical type, bốn capability mới, 148/148 regression `PASS`; không gallery/build/Git/release. |
+| P-18 | Visual vNext pilot & gallery approval | passed | G-03 repeat | Exact review-17 `P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0`, manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`, đạt static `366/366`, browser `42/42`, regression `148/148`, masked recognition/five-second `14/14` và independent visual-craft `93/100`, minimum dimension `4/5`. Owner phê duyệt exact candidate, `G-03@1.5.0 PASS` và cho phép đóng P-18 theo D-077. |
+| P-19 | Full 39-type source/gallery coverage | passed | G-04 repeat PASS | P-19A `passed`; exact P-19B review-45 `passed-owner-approved` theo D-126; exact P-19C review-01 `passed-owner-approved` theo D-128; `G-04@1.5.0 PASS` theo D-129. Bộ 31 silhouette chỉ là sample QA; user-request flexibility là bắt buộc. Không package/release. |
+| P-20 | v2.0.0 package/release preparation | passed | G-00…G-07@2.0.0 PASS | Technical preparation complete; D-131 owner-approved exact legal/brand, ba ZIP và `TCD-RELEASE-2.0.0-RC1`, đồng thời miễn independent lawyer review cho exact G-06. Historical execution hold được gỡ riêng bởi D-132/P-21. |
+| P-21 | Private v2.0.0 release execution | in-progress | G-07@2.0.0 execution | Authorized by D-132 for exact private target/candidate: promote approved bytes, sanitized mirror, preflight/QA, commit/tag/push/Release and remote digest verification. |
 
-## 2. Bảng trạng thái gate có thẩm quyền
+## 2. Bảng trạng thái gate có thẩm quyền — historical v1.0.0
 
 | Gate | Result | Evidence/artifact | Approver/date |
 |---|---|---|---|
@@ -46,6 +52,35 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 
 Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và ngày trong bảng này. Tiêu chí của từng gate chỉ nằm trong `PHASE-GATES.md`.
 
+### 2.1. Gate repeat cho target v1.5.0
+
+Historical `PASS` của v1.0.0 không tự chuyển sang target v1.5.0. Mỗi dòng dưới đây là một gate instance version-scoped.
+
+| Gate instance | Result | Evidence/artifact | Approver/date |
+|---|---|---|---|
+| G-01@1.5.0 | PASS | Gate record: `evidence/p16/G-01-1.5.0-EVIDENCE.md`, SHA-256 `d2adb35d8f60d925e2869236a473f6f41a0a4161c92f79d24b97bd8af436c0d7`; exact P-16 snapshot/provenance packet và 170-path ledger được duyệt theo D-047. | Tran Ngoc Thien / 2026-08-23 |
+| G-02@1.5.0 | PASS | Gate record: `evidence/p16/G-02-1.5.0-EVIDENCE.md`, SHA-256 `ca43ab807eb6e70229b6be4ac2d6ec2b5868f526b3186240ea2652f99152830f`; frozen byte-bound candidate manifest `evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json` cùng exact 39+4/pilot/rubric/gallery workflow được duyệt theo D-047. | Tran Ngoc Thien / 2026-08-23 |
+| G-03@1.5.0 | PASS | Exact review-17 manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`; static `366/366`, browser `42/42`, regression `148/148`, exactness `75/75`, masked recognition/five-second `14/14`, independent visual-craft `93/100`, minimum dimension `4/5`, owner approval theo D-077. Gate record: `evidence/p18/G-03-1.5.0-EVIDENCE.md`. | Tran Ngoc Thien / 2026-08-27 |
+| G-04@1.5.0 | PASS | Gate record: `evidence/p19/G-04-1.5.0-EVIDENCE.md`, SHA-256 `0d3720f9ff9bfc658a1477fa6d487bdabb32e99aa7a9a0e42f0ebd02869c5d63`. Exact source/gallery candidate gồm P-17 semantic source, exact P-18 review-17, P-19B review-45 và P-19C review-01; 23/23 hard checks, 414/414 regression, 8/8 scope lock và browser 107/107 PASS. D-128 sample-not-fixed/user-request flexibility tiếp tục có hiệu lực. | Tran Ngoc Thien / 2026-08-30 |
+| G-05@1.5.0 | NOT-EVALUATED | Ngoài source/gallery scope hiện tại; không có quyền build/rebuild package. | Chưa có |
+| G-06@1.5.0 | NOT-EVALUATED | Ngoài source/gallery scope hiện tại; legal/brand v1.0.0 không đổi. | Chưa có |
+| G-07@1.5.0 | NOT-EVALUATED | Ngoài source/gallery scope hiện tại; không có commit/push/tag/Release/release authorization. | Chưa có |
+
+### 2.2. Gate instances cho target v2.0.0
+
+Các gate dưới đây là version-scoped. Exact v1.5.0 source/gallery evidence là lineage đầu vào, không tự chuyển thành `PASS@2.0.0`.
+
+| Gate instance | Result | Evidence/artifact | Approver/date |
+|---|---|---|---|
+| G-00@2.0.0 | PASS | D-130/D-131 governance/version/scope lock; gate record `evidence/p20/GATE-READINESS-2.0.0.md`. | Tran Ngoc Thien / 2026-08-31 |
+| G-01@2.0.0 | PASS | Exact P-16 provenance/upstream packet rebind, source snapshot unchanged; D-131. | Tran Ngoc Thien / 2026-08-31 |
+| G-02@2.0.0 | PASS | Exact approved 39+4 product/test contract rebind; D-131. | Tran Ngoc Thien / 2026-08-31 |
+| G-03@2.0.0 | PASS | Exact P-18 review-17 immutable visual lineage manifest `7925c1ab…a03a`; D-131. | Tran Ngoc Thien / 2026-08-31 |
+| G-04@2.0.0 | PASS | Exact P-17/P-18/P-19 lineage, `14+93=107` và D-128 preserved; D-131. | Tran Ngoc Thien / 2026-08-31 |
+| G-05@2.0.0 | PASS | Exact `TCD-PACKAGES-2.0.0-RC1`: Claude `7ef52b21…99f6`, OpenAI `65c2d6fb…4315`, Universal `88e22cae…5f93`; 26/26 package QA và 414/414 regression PASS; D-131. | Tran Ngoc Thien / 2026-08-31 |
+| G-06@2.0.0 | PASS | Exact `TCD-LEGAL-2.0.0-RC1`, aggregate `93643da0…f29c0`; owner approved brand/legal and expressly waived independent Vietnamese-lawyer review. This is not lawyer sign-off. | Tran Ngoc Thien / 2026-08-31, owner waiver D-131 |
+| G-07@2.0.0 | PASS | Exact `TCD-RELEASE-2.0.0-RC1`, manifest SHA-256 `2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72`; execution hold remains. | Tran Ngoc Thien / 2026-08-31 |
+
 ## 3. Quy tắc thẩm quyền và trạng thái phase
 
 - Một yêu cầu sau này có thể cho phép thực hiện một hoặc nhiều phase liên tiếp; agent không phải hỏi lại ở mỗi phase nếu thẩm quyền đã rõ và không phát sinh quyết định vật chất mới.
@@ -54,6 +89,8 @@ Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và 
 - Chỉ `PLAN.md` được cập nhật trạng thái. `ROADMAP.md` không quản lý tiến độ.
 - Mỗi phase có exit criteria riêng trong mục `Verification`; đạt exit criteria mới được đổi sang `passed`.
 - Gate trong `PHASE-GATES.md` đóng milestone tổng hợp từ nhiều phase; một phase có thể `passed` trước khi gate mà nó đóng góp được xét.
+
+Các đoạn `Evidence hiện tại` trong P-00 đến P-15 dưới đây là **historical-at-phase-close**: chúng ghi trạng thái và restriction ở thời điểm phase đó đóng, không phải authority hiện hành. Bảng mục 1 và chỉ dẫn mới nhất của chủ sở hữu mới quyết định trạng thái/quyền hiện tại.
 
 ## P-00 — Governance lock
 
@@ -436,6 +473,236 @@ Khi xét gate, cập nhật result, artifact/version/hash, người duyệt và 
 **Verification:** mọi thay đổi có decision, source mapping, test và approval tương ứng; mỗi maintenance release lặp G-01 đến G-07 theo phần bị ảnh hưởng và luôn lặp G-05 đến G-07.
 
 **Publication patch đã hoàn tất:** D-039/D-040 giới hạn và đóng workstream ở root `LICENSE.md` byte-identical với exact legal candidate, logo 400px đã duyệt trên root `README.md`, evidence/governance và commit/push private `main`. Không có upstream capability delta, runtime/package rebuild, semantic-version change, retag hoặc GitHub Release mutation. Evidence: `evidence/p15/P-15-EVIDENCE.md`.
+
+## P-16 — Upstream delta & contract lock
+
+**Mục tiêu:** khóa một exact upstream snapshot, phân loại delta 27→39 và tạo contract/gate candidate cho target v1.5.0 trước khi sửa source hoặc gallery.
+
+**Dependency:** v1.0.0/P-15 đã đóng; D-041–D-047; chỉ dẫn triển khai P-16 ngày 2026-08-22 và owner gate approval/closure ngày 2026-08-23.
+
+**Công việc được phép:**
+
+1. Xác minh read-only exact `diagram-design` commit/tag/version/date và license.
+2. Đối chiếu với snapshot P-01, khóa 12 canonical addition và bốn capability mới ở mức taxonomy/hành vi trừu tượng.
+3. Ghi provenance/copying boundary, upstream file hashes và gallery inventory factual.
+4. Cập nhật `PROJECT-CONTRACT.md`, `PLAN.md`, `PHASE-GATES.md`, `ROADMAP.md` và evidence P-16.
+5. Trình owner review cho gate instances G-01@1.5.0/G-02@1.5.0.
+
+**Không được phép:** sửa bất kỳ file nào dưới `thien-skill-creative-diagram/`; tạo gallery HTML; build/rebuild ZIP; sửa `dist/`; thay golden/benchmark/license/logo/release; commit, push, tag hoặc tạo/sửa Release.
+
+**Deliverable:** dưới `evidence/p16/`: factual manifest `UPSTREAM-DELTA.json`; 16-row capability/provenance matrix; exact 170-path whole-repository delta ledger plus 74-path skill-subset analysis; official platform revalidation; exact request/IR/product-test/pilot candidate; byte-bound `G02-1.5.0-CONTRACT-MANIFEST.json`; remediation/review/verification records. Các governance/handoff candidate được cập nhật tại đúng file root `PROJECT-CONTRACT.md`, `PLAN.md`, `PHASE-GATES.md`, `ROADMAP.md`, `HANDOFF-CURRENT.md`.
+
+**Verification:**
+
+- exact upstream `main` trỏ tới commit đã ghi và snapshot file hashes khớp;
+- `27 + 12 = 39`; bốn capability mới có parent và không bị đếm thành type;
+- 12 canonical addition + bốn capability có requirement → exact abstract source/hash → independent implementation plan → stable test family;
+- toàn bộ 170 changed upstream path khớp exact Git diff và được disposition; subset 74 skill path/96 ngoài skill cùng cross-cutting import/output/motion/pattern delta không tạo scope ngầm;
+- request/IR 1.5 schema hợp lệ, có 39 type; Sankey amount/unit, Bubble x/y/size, Treemap hierarchy totals, Ridgeline transformation, Story-map unassigned và DB index structure có binding trực tiếp; numeric/unit/geometry/boundary policy cùng stable test IDs đã khóa; P-02 inheritance + P-16 delta được hash-bound;
+- platform matrix được revalidate từ official docs nhưng không có support-status promotion;
+- exact 12-family/36-HTML pilot contract và rubric inheritance được khóa để owner xét, chưa tạo gallery;
+- target/version/name/gallery boundary khớp D-041–D-047;
+- runtime canonical aggregate, 82 runtime file và aggregate của `dist/` giữ nguyên trước/sau P-16;
+- không có HTML/gallery/runtime/package/release artifact mới ngoài evidence/governance scope;
+- owner và technical reviewer chưa được thay thế bằng self-approval.
+
+**Gate đóng góp:** G-01@1.5.0 và G-02@1.5.0.
+**Trạng thái hiện tại:** `passed` theo D-047 ngày 2026-08-23; remediation và independent agent re-review hoàn tất với zero open finding, owner phê duyệt `G-01@1.5.0`/`G-02@1.5.0` `PASS` và cho phép đóng P-16. P-17 sau đó đã được phép riêng theo D-048 và hoàn tất.
+
+## P-17 — Semantic expansion to 39 types
+
+**Mục tiêu:** mở rộng canonical source từ 27 lên 39 type và implement contract cho `Dumbbell`, `Slopegraph`, `Ridgeline`, `Bubble` mà chưa nhân rộng gallery.
+
+**Dependency:** P-16 `passed`, G-01@1.5.0 và G-02@1.5.0 `PASS`, cùng authorization riêng.
+
+**Workstream đã hoàn tất:**
+
+1. Cập nhật một canonical taxonomy/router/IR/schema duy nhất cho 12 type mới.
+2. Tạo semantic grammar/reference nguyên bản và validator/test mapping cho 12 type cùng bốn capability mới.
+3. Giữ numeric/date/category integrity đặc thù: polar radius, treemap area, Sankey flow conservation, bubble area, dumbbell shared scale, slopegraph two-state consistency và ridgeline shared domain/amplitude.
+4. Mở rộng security, accessibility, Vietnamese, fidelity, coverage registry và mutation tests; giữ mọi regression v1.0.0.
+5. Không copy upstream prose/code/formula/template/specimen hoặc dữ liệu ví dụ.
+
+**Deliverable:** source/reference/schema/test update cho 39 canonical type và bốn capability, chưa có full gallery.
+
+**Verification:** 39/39 grammar/router/schema coverage; bốn capability có parent/disposition/test riêng; 148/148 full regression và 20/20 focused P-17 test `PASS`; v1.0.0 golden, legal, brand, package và release artifact không đổi. Evidence: `evidence/p17/P-17-EVIDENCE.md`, SHA-256 `506cbd0603f38f90200c807d1c14a4ef554bba05583ea0bef582f537f3a4890b`.
+
+**Gate đóng góp:** chỉ G-04@1.5.0 readiness. G-02@1.5.0 phải được khóa và duyệt xong trong P-16 trước khi phase này có thể bắt đầu.
+**Trạng thái:** `passed` ngày 2026-08-23 theo D-048. Tại thời điểm đóng P-17, P-18/P-19 chưa được phép; P-18 sau đó được phép riêng theo D-049.
+
+## P-18 — Visual vNext pilot & gallery approval
+
+**Mục tiêu:** chứng minh visual quality v1.5.0 bằng HTML gallery nguyên bản trước khi mở rộng renderer/gallery ra toàn bộ inventory.
+
+**Dependency:** P-17 `passed` và authorization riêng.
+
+**Pilot contract đã được owner duyệt tại G-02@1.5.0 và được phép triển khai riêng theo D-049:**
+
+Exact case/data/assertion/rubric nằm duy nhất tại `evidence/p16/PILOT-GALLERY-CONTRACT.md` và được duyệt theo D-047; danh sách dưới đây chỉ là summary, không phải nguồn quyết định song song.
+
+- tám canonical family đại diện: Architecture, Swimlane, Sankey, Treemap, Wardley map, Deployment, User journey và Fishbone;
+- bốn capability mới: Dumbbell, Slopegraph, Ridgeline và Bubble;
+- ba mode `neutral-light`, `neutral-dark`, `editorial` cho mỗi family, tức 36 standalone HTML candidate, cộng một `index.html`/contact sheet không tính là specimen;
+- scenario/data/prose/layout/CSS/SVG nguyên bản; gồm benchmark tiếng Việt, connector-heavy, quantitative, strategic, technical và human-experience cases.
+
+**Workstream remediation lịch sử theo D-050:**
+
+1. `P-18R0` — amend design contract, acceptance rubric và candidate lineage; không đổi exact case/data matrix.
+2. `P-18R1` — xây renderer foundation, semantic primitives, measured text, connector routing/anchor/bridge và chứng minh trên Architecture, Swimlane, Sankey; khóa `neutral-light` trước khi derive hai mode còn lại.
+3. `P-18R2` — tái sinh exact 12 family × ba mode = 36 standalone HTML cùng index/contact sheets; không dùng anchor proof để tăng specimen count.
+4. `P-18R3` — lặp semantic/quantitative/security/geometry/browser/regression QA, chấm visual-craft độc lập, chạy blind silhouette và five-second takeaway review, freeze replacement manifest để owner duyệt.
+
+P-18R0→P-18R3 đã hoàn tất về mặt kỹ thuật, nhưng owner từ chối replacement visual direction theo D-051. Kết quả/score cũ chỉ là historical evidence và không đáp ứng owner-approval condition của G-03@1.5.0.
+
+**Structural remediation sequence đã khóa theo D-051/D-052:**
+
+1. `P-18R4` — relock contract và visual foundation cho toàn bộ 39 canonical type + bốn capability: typography precedence/default, real-font measurement, intrinsic sizing, content-fit artboard, 14 layout engine, primitive/node/interface contract, obstacle-aware connector routing và QA protocol. Exact contract nằm tại `evidence/p18/P-18R4-VISUAL-FOUNDATION-CONTRACT.md` và machine binding cùng basename `.json`.
+2. `P-18R5` — implement canonical visual kernel và một Swimlane `neutral-light` anchor; review-01/review-02/review-03 được bảo toàn lịch sử, exact review-04 đã frozen sau khi sửa continuity giữa straight shoulder và shared-geometry hop theo D-057, được owner phê duyệt và phase `passed` theo D-058.
+3. `P-18R6` — implement 14-engine `neutral-light` anchor gallery; review-01→review-16 được bảo toàn lịch sử byte-bound. Exact review-17 đã frozen theo D-076 sau remediation five-second cho hierarchy/Sankey; static/browser/regression, masked recognition, five-second và independent visual-craft đều `PASS`. Owner phê duyệt exact review-17 và `G-03@1.5.0 PASS` theo D-077; P-18 đã đóng.
+4. `P-19A` — 39+4 type/capability adapters, đã hoàn tất theo D-078; exact `P-19B` review-45 đã owner-approved theo D-126 và giữ riêng 93 HTML/31 preview bên cạnh 14 exact P-18 anchor; exact `P-19C` review-01 đã owner-approved theo D-128 với điều kiện sample-not-fixed/user-request flexibility; chỉ G-04 decision còn riêng.
+
+**P-18R4 verification:** exactly 14 engine assignments cover 39 unique canonical type + four unique capability; eventual count `39×3 + 4×3 = 129`; default font direction and explicit-user-font precedence are machine-bound; retired foundation choices and no-global-transform/no-shrink/no-silent-font-substitution rules are explicit; governance/handoff agree that only P-18R4 was authorized; no runtime/renderer/gallery/package/`dist/`/Git/release mutation.
+
+**Future candidate verification:** zero hard failure; all inherited technical gates `PASS`; real requested/default font and glyph/containment checks `PASS`; visual-craft ≥85/100 and no dimension below 4/5; masked blind review and uncontaminated five-second review `PASS`; exact manifest owner-approved before P-19.
+
+**Gate đóng góp:** G-03@1.5.0.
+**Trạng thái:** P-18 `passed` ngày 2026-08-27 theo D-077. P-18R4 `passed` theo D-053; exact P-18R5 review-04 được owner phê duyệt và P-18R5 `passed` theo D-058. Review-16 manifest SHA-256 `abdc0e9d7413b65f715c12a535b12abfaf33793e97f8f221e70a8d3ac58cc835` được archive byte-bound trước D-076 remediation. Exact review-17 `P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0`, manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`, đạt toàn bộ technical/independent gate và được owner phê duyệt; `G-03@1.5.0 PASS`. D-078 đóng P-19A; exact P-19B review-45 đã owner-approved theo D-126; exact P-19C review-01 đã owner-approved theo D-128 với điều kiện sample-not-fixed/user-request flexibility; G-04 vẫn cần decision riêng.
+
+## P-19 — Full 39-type source/gallery coverage
+
+**Mục tiêu:** nhân visual implementation đã duyệt ra toàn bộ target và bàn giao full HTML gallery để owner duyệt, vẫn dừng trước packaging/release.
+
+**Dependency:** P-18 `passed`, G-03@1.5.0 `PASS`, cùng authorization riêng.
+
+**Workstream chia theo D-051/D-078:**
+
+1. `P-19A` — `passed`: hoàn thiện type/capability adapters cho đủ 39 canonical type và bốn capability mới trên foundation đã được owner duyệt. Canonical module `scripts/visual_adapters_v15.py`, generated registry `references/visual-adapters-v15.json`, exact 43 plan hashes và evidence nằm tại `evidence/p19/`; focused `14/14 PASS`, full regression `162/162 PASS`, zero HTML/SVG/CSS.
+2. `P-19B` — `passed-owner-approved` theo D-126: exact review-45 giữ toàn bộ remediation D-084–D-125; dùng trực tiếp nhưng không thay thế 14 exact P-18R6 review-17 anchor, đồng thời giữ riêng 25 canonical type, bốn capability và hai presentation variant `layers`/`scatter-chart` của P-19 ở ba mode, tổng 93 HTML/31 preview. Combined comparison có đúng `14 P-18 + 93 P-19 = 107` diagram; hai nguồn phải tiếp tục truy nguyên độc lập.
+3. `P-19C`: chạy full semantic, typography/glyph/containment, geometry, accessibility, quantitative, security, determinism, pairwise và regression checks; thực hiện masked visual review.
+4. So sánh visual quality bằng rubric đã được owner duyệt, không bằng pixel similarity với upstream.
+5. Freeze exact source/gallery candidate bằng manifest/hash cho owner review; không build package.
+
+**Verification hiện hành:** theo D-085/D-095–D-126, union 14 P-18 canonical + 25 P-19 canonical đúng 39 và không trùng; P-19 có 75 canonical + 12 capability + 3 `layers` + 3 `scatter-chart` variant HTML, 31 preview, đủ ba mode cho 31 identity. Đủ 93 SVG khai báo D-105; mọi detailed artifact D-086–D-125 được giữ. P-18 giữ exact bytes/hash ở neutral-light và tồn tại tách biệt với P-19. D-126 đã owner-approve exact P-19B review-45; combined comparison phải tiếp tục chứng minh đúng `14 P-18 + 93 P-19 = 107`, không có substitution.
+
+**Checkpoint D-081:** exact `P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0`, gallery manifest SHA-256 `6bd265fbfe1bb06b7d2d15ea1f432b3282e03efa838b8ce10773b09025046df1`. Focused `24/24`, static `29/29`, regression `186/186`, sáu target mode geometry và ba straight proof đạt; chín local SVG raster đã inspect đúng hai lỗi. Review-01 archive `199/199`, protected corpus `1954/1954` hash khớp; 123 non-target HTML chỉ đổi candidate ID, 41 non-target preview SVG byte-identical. Browser vẫn `blocked / not executable`; không mang forward broad visual PASS của review-01 sau khi owner chỉ ra hai lỗi bị bỏ sót. P-19B giữ `in-progress`, chưa owner-approved. Evidence chi tiết: `evidence/p19/P-19B-EVIDENCE.md` và `evidence/p19/P-19B-REVIEW-02-VERIFICATION.json`.
+
+**Gate đóng góp:** G-04@1.5.0.
+**Trạng thái:** P-19 `passed`; P-19A `passed` theo D-078; P-19B exact review-45 `passed-owner-approved` theo D-126; P-19C exact review-01 `passed-owner-approved` theo D-128; `G-04@1.5.0 PASS` theo D-129 với sample-not-fixed/user-request flexibility tiếp tục có hiệu lực. G-05/G-06/G-07@1.5.0 và mọi packaging/release phase nằm ngoài current scope.
+
+**Checkpoint D-082:** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0`; Gantt-only three-mode remediation, 38/38 focused tests, 29/29 static checks, 200/200 canonical regression. Ba local Gantt raster đã inspect; 126 non-Gantt HTML chỉ khác candidate ID, 42 non-Gantt preview byte-identical; 223 archived và 2345 protected files khớp hash. Exact hashes theo `evidence/p19/P-19B-PLAN-MANIFEST.json` và `P-19B-SOURCE-MANIFEST.json`; chi tiết `P-19B-REVIEW-03-VERIFICATION.json`. Browser vẫn blocked; owner approval pending, P-19C unauthorized, G-04 chưa đánh giá.
+
+**Checkpoint D-083:** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-04-1.5.0`; 52/52 focused tests, 29/29 static checks, 214/214 regression; ba local flywheel raster đã inspect. 126 non-target HTML chỉ khác candidate ID, 42 non-target preview byte-identical, gồm Gantt. Archive 238 files và protected corpus 2569 files khớp hash. Exact hashes theo plan/source manifests; chi tiết `evidence/p19/P-19B-REVIEW-04-VERIFICATION.json`. Browser vẫn blocked, owner approval pending; P-19C unauthorized và G-04 NOT-EVALUATED.
+
+**Checkpoint D-084/D-085:** active candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-05-1.5.0`. 42 duplicate HTML và 14 preview đã chuyển vào `evidence/p19/withdrawn/review05-duplicates/`, có receipt để khôi phục. Exact review-04 được archive 253 files; 2808 protected hashes khớp. P-19 còn 87 HTML/29 preview; 87 HTML chỉ đổi candidate ID, 29 preview byte-identical. Dùng trực tiếp 14 P-18 anchor pairs theo hash gốc. Focused static 32/32, scope tests 8/8; chi tiết `evidence/p19/P-19B-REVIEW-05-VERIFICATION.json`. Exact hashes tại active plan/source manifests. Browser blocked; owner approval pending, P-19C unauthorized, G-04 NOT-EVALUATED.
+
+**Checkpoint D-086:** active candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-06-1.5.0`. Review-05 đã archive 207 files; protected corpus 3128 files khớp hash. Chỉ 3 Fishbone HTML và preview Fishbone thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. Fishbone có đúng 5 nhóm/10 nguyên nhân/1 hệ quả, alternating bones, continuous tick→bone→spine→effect geometry, đủ semantic table và bất biến hình học qua ba mode. Focused renderer/Fishbone/Gantt/Flywheel tests 60/60, gallery-scope 8/8, static 32/32 và full regression 222/222; local neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-06-VERIFICATION.json`; browser vẫn blocked, owner approval pending, P-19C unauthorized, G-04 NOT-EVALUATED.
+
+**Checkpoint D-087 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-07-1.5.0`. Review-06 đã archive 216 files; protected corpus 3336 files khớp hash. Chỉ 3 dp-integration HTML và preview dp-integration thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. DP integration có đúng 11 node/11 directed edge/1 platform group, core containment, source/consumer fan-in/out, continuous routes, semantic table và geometry bất biến ba mode. Focused tests 68/68, gallery-scope 8/8, static 32/32 và full regression 230/230; ba local raster đã inspect và sửa clipping trước PASS. Chi tiết `evidence/p19/P-19B-REVIEW-07-VERIFICATION.json`; browser vẫn blocked; candidate này đã chuyển historical trước D-088.
+
+**Checkpoint D-088 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-08-1.5.0`. Review-07 đã archive 230 files; protected corpus 3553 files khớp hash. Chỉ 3 bar-chart HTML và preview bar-chart thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. Bar chart có đúng 8 bar/2 axis/6 tick/1 focal, zero-baseline 0–120, direct labels, redundant record-high legend/table encoding và geometry bất biến ba mode. Focused tests 75/75, gallery-scope 8/8, static 32/32 và full regression 237/237; ba local raster đã inspect trước PASS. Chi tiết `evidence/p19/P-19B-REVIEW-08-VERIFICATION.json`; candidate này đã chuyển historical trước D-089.
+
+**Checkpoint D-089 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-09-1.5.0`. Review-08 đã archive 244 files; protected corpus 3784 files khớp hash. Chỉ 3 dp-security-matrix HTML và preview dp-security-matrix thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. Security matrix có đúng 25 cell/5 role/5 component/1 focal partner-BI boundary, direct Admin/Write/Read/None labels, codes, legend, exact alternative table và geometry bất biến ba mode. Focused tests 82/82, gallery-scope 8/8, static 32/32 và full regression 244/244; ba local raster đã inspect trước PASS. Chi tiết `evidence/p19/P-19B-REVIEW-09-VERIFICATION.json`; candidate này đã chuyển historical trước D-090.
+
+**Checkpoint D-090 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-10-1.5.0`. Review-09 đã archive 258 files; protected corpus 4029 files khớp hash. Chỉ 3 er-data-model HTML và preview er-data-model thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. ER data model có đúng 4 entity/19 member/3 relationship/1 aggregate root/1 associative entity, direct PK/FK/cardinality labels, legend, exact alternative table và geometry bất biến ba mode. Focused 89/89, gallery-scope 8/8, static 32/32 và full regression 251/251 PASS; candidate này đã chuyển historical trước D-091.
+
+**Checkpoint D-091:** active candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-11-1.5.0`. Review-10 đã archive 272 files; protected corpus 4288 files khớp hash. Chỉ 3 er-data-model HTML và preview er-data-model thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. Sáu cardinality nằm inline trên connector axis sát endpoint, có sáu canvas knockout đúng P-18 padding/binding; D-090 model và geometry ba mode được giữ. Focused 90/90, scope 8/8, static 32/32 và full regression 252/252 PASS; ba raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-11-VERIFICATION.json`; browser blocked, owner approval pending, P-19C unauthorized, G-04 NOT-EVALUATED.
+
+**Checkpoint D-126:** exact candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-45-1.5.0` được owner phê duyệt cho toàn bộ P-19. P-19B chuyển `passed-owner-approved`. Điều kiện bất biến: 14 exact P-18 anchor theo manifest `7925c1…a03a` và 93 P-19 HTML/31 preview phải cùng tồn tại như hai tập riêng; combined comparison giữ đúng 107 diagram, P-19 không được thay thế P-18. P-19C unauthorized, G-04 NOT-EVALUATED.
+
+**Checkpoint D-127:** chủ sở hữu authorize riêng P-19C. Technical candidate `P19C-FULL-QA-FREEZE-REVIEW-01-1.5.0` đạt 23/23 hard check, regression 414/414, scope-lock 8/8; browser comparison desktop/mobile tải đủ 107/107 với phase split 14/93, zero broken image/console warning-error/page overflow; six representative standalone pages đạt desktop/mobile containment/accessibility/UTF-8. Bộ masked review 31 text-free silhouette đã sẵn sàng. Freeze manifest có 250 record, aggregate record SHA-256 `2c02bc27091022df270e65921bf54c60afcf56a6168d37d76d7afe54ed6d5f46`, file SHA-256 `5c98b8f56987ed69e65a93e01ca05dc2fd95c6d4e288007ffaa7fd615c8180ed`. Exact P-18/P-19B artwork vẫn giữ nguyên và comparison đúng 107. P-19C tiếp tục `in-progress` vì owner masked review/approval và `G-04@1.5.0` decision là bước riêng; package/`dist`/publication/Git/Release không được phép.
+
+**Checkpoint D-128:** owner phê duyệt exact P-19C review-01 và đóng P-19C/P-19. Approval bắt buộc coi 31 masked silhouette là sample QA, không phải fixed registry/catalog/template/output; explicit user request có precedence và implementation phải thích ứng diagram/content/structure/layout/visual/presentation theo yêu cầu nếu an toàn và phù hợp ngữ nghĩa. `G-04@1.5.0` vẫn `NOT-EVALUATED`; package/`dist`/publication/commit/push/tag/Release vẫn không được phép.
+
+**Checkpoint D-129:** owner xác nhận technical/QA evidence đầy đủ và phê duyệt `G-04@1.5.0 PASS`; gate record SHA-256 `0d3720f9ff9bfc658a1477fa6d487bdabb32e99aa7a9a0e42f0ebd02869c5d63`. D-128 tiếp tục có hiệu lực. Không authorize G-05/G-06/G-07, package/`dist`/publication/commit/push/tag/Release.
+
+**Checkpoint D-125 (historical implementation):** review-45 canonical `nested` đã exact-verifier PASS trước owner approval D-126.
+
+**Checkpoint D-124 (historical):** candidate review-44 layer-stack đã archive trước nested remediation D-125.
+
+**Checkpoint D-123 (historical):** candidate review-43 ridgeline đã archive trước layer-stack remediation D-124.
+
+**Checkpoint D-122 (historical):** candidate review-42 dumbbell đã archive trước ridgeline remediation D-123.
+
+**Checkpoint D-121 (historical):** candidate review-41 slope-graph đã archive trước dumbbell remediation D-122.
+
+**Checkpoint D-120 (historical):** candidate review-40 Bubble đã archive trước slope-graph remediation D-121.
+
+**Checkpoint D-119 (historical):** candidate review-39 thin-stroke process đã archive trước Bubble remediation D-120.
+
+**Checkpoint D-118 (historical):** candidate review-38 continuous process connectors đã archive trước thin-stroke repair D-119.
+
+**Checkpoint D-117 (historical):** candidate review-37 five-shape process đã archive trước connector-continuity repair D-118.
+
+**Checkpoint D-116 (historical):** candidate review-36 marker-free radar đã archive trước detailed-process correction D-117.
+
+**Checkpoint D-115 (historical):** candidate review-35 solid-line radar đã archive trước marker-free correction D-116.
+
+**Checkpoint D-114 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0`; detailed radar dùng dashed comparison profiles đã bị owner yêu cầu sửa tại D-115. Candidate đã archive trước review-35.
+
+**Checkpoint D-113 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0`; scatter-chart addition PASS. Candidate đã chuyển historical trước D-114.
+
+**Checkpoint D-112 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0`; thin-stroke Treemap PASS. Candidate đã chuyển historical trước D-113.
+
+**Checkpoint D-111 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0`; detailed sequence PASS. Candidate đã chuyển historical trước D-112 theo yêu cầu giảm viền `treemap`.
+
+**Checkpoint D-110 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0`; detailed state machine PASS. Candidate đã chuyển historical trước D-111 theo yêu cầu thay `sequence`.
+
+**Checkpoint D-109 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0`; detailed story map PASS. Candidate đã chuyển historical trước D-110 theo yêu cầu thay `state-machine`.
+
+**Checkpoint D-108 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-28-1.5.0`; ultra-thin centered tree pass. Candidate đã chuyển historical trước D-109 theo yêu cầu thay `story-map`.
+
+**Checkpoint D-107 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0`; first thin-stroke pass. Candidate đã chuyển historical trước D-108 vì owner xác định vẫn còn đậm.
+
+**Checkpoint D-106 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-26-1.5.0`. Tree có 9 node/8 relation/3 tầng/14 straight connector primitive; root và bốn parent đúng midpoint child span, branch interval `640/640`, two-child offset `−150/+150`, single-child direct centered. Candidate đã chuyển historical trước D-107.
+
+**Checkpoint D-105 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-25-1.5.0`. Review-24 đã archive 440 files; protected corpus 9253 files khớp hash. Đủ 90 P-19 SVG khai báo policy `D-105-centered-even-straight-first`. UML proof có dependency đơn vào exact center, hai realization port chia cạnh interface thành ba khoảng `360/360/360`, bốn straight relation và một documented rounded-orthogonal exception. Candidate đã chuyển historical trước D-106.
+
+**Checkpoint D-104 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-24-1.5.0`. Review-23 đã archive 428 files; protected corpus 8824 files khớp hash. Chỉ 3 UML-class HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. UML-class có đúng 7 container/17 member/5 continuous relationship; kind mix 1 dependency, 2 realization, 1 composition, 1 association; 4 cardinality inline, one rounded association route và legend đủ 6 loại. Focused 183/183, scope 8/8, static 34/34 và full regression 345/345 PASS; candidate đã chuyển historical trước D-105.
+
+**Checkpoint D-103 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-23-1.5.0`. Review-22 đã archive 419 files; protected corpus 8404 files khớp hash. Chỉ 3 Treemap HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Treemap giữ đúng 6 leaf/6 exact allocation-area tile; sáu visible rectangle inset 4 unit ở đủ bốn cạnh nên mọi shared boundary có real gap 8 unit và mọi outline hiện đủ. Focused 176/176, scope 8/8, static 34/34 và full regression 338/338 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-23-VERIFICATION.json`; candidate đã chuyển historical trước D-104.
+
+**Checkpoint D-102 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-22-1.5.0`. Review-21 đã archive 410 files; protected corpus 7993 files khớp hash. Chỉ 3 Treemap HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Treemap giữ đúng 6 leaf/6 exact-area tile và có 6 visible outline/6 separation gutter ở cả ba mode; focal coral outline, compact label, legend và exact table vẫn nguyên. Focused 175/175, scope 8/8, static 34/34 và full regression 337/337 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-22-VERIFICATION.json`; candidate đã chuyển historical trước D-103.
+
+**Checkpoint D-101 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-21-1.5.0`. Review-20 đã archive 398 files; protected corpus 7594 files khớp hash. Chỉ 3 Treemap HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Treemap có đúng 6 leaf/6 exact-area tile, exact hierarchy total, một focal tile, một compact-label tile, direct/legend/table redundancy và geometry ba mode. Focused 174/174, scope 8/8, static 34/34 và full regression 336/336 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-21-VERIFICATION.json`; candidate đã chuyển historical trước D-102.
+
+**Checkpoint D-100 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-20-1.5.0`. Review-19 đã archive 386 files; protected corpus 7207 files khớp hash. Chỉ 3 Venn HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Venn có đúng 3 equal-radius set/4 member/1 exact nested-clipped triple intersection, lower-pair geometry cân đối, direct set/core labels, exact membership table và geometry ba mode. Focused 166/166, scope 8/8, static 34/34 và full regression 328/328 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-20-VERIFICATION.json`; candidate đã chuyển historical trước D-101.
+
+**Checkpoint D-099 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-19-1.5.0`. Review-18 đã archive 374 files; protected corpus 6832 files khớp hash. Chỉ 3 wardley-map HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Wardley map có đúng 8 component/9 dependency/2 normalized axis/4 stage/3 boundary/1 evolving component, arrow-free axis/dependency, một dashed evolution arrow, direct labels, exact component/dependency table và geometry ba mode. Focused 158/158, scope 8/8, static 34/34 và full regression 320/320 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-19-VERIFICATION.json`; candidate đã chuyển historical trước D-100.
+
+**Checkpoint D-098 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-18-1.5.0`. Review-17 đã archive 362 files; protected corpus 6469 files khớp hash. Chỉ 3 polar-chart HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Polar chart có đúng 1 series/8 UTC window/8 common-origin spoke/8 endpoint/5 radial ring/1 unique peak, arrow-free proportional geometry, non-color peak redundancy, exact eight-window table và geometry ba mode. Focused 149/149, scope 8/8, static 34/34 và full regression 311/311 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-18-VERIFICATION.json`; candidate đã chuyển historical trước D-099.
+
+**Checkpoint D-097 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-17-1.5.0`. Review-16 đã archive 350 files; protected corpus 6118 files khớp hash. Chỉ 3 medallion HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Medallion có đúng 5 stage/4 continuous directed promotion/2 processing path/1 focal/1 archive, per-stage tool/format/writer/examples, non-color state redundancy, exact five-stage table và geometry ba mode. Focused 140/140, scope 8/8, static 34/34 và full regression 302/302 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-17-VERIFICATION.json`; candidate đã chuyển historical trước D-098.
+
+**Checkpoint D-096 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-16-1.5.0`. Review-15 đã archive 338 files; protected corpus 5779 files khớp hash. Chỉ 3 line-chart HTML và một preview thay artwork; 87 non-target HTML giữ nguyên sau candidate-ID normalization, 29 non-target preview byte-identical. Line chart có đúng 3 series/24 điểm/2 arrow-free axis/6 tick/1 focal area, non-color line+marker redundancy, direct endpoint labels, exact 24-value table và geometry ba mode. Focused 132/132, scope 8/8, static 34/34 và full regression 294/294 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-16-VERIFICATION.json`; candidate đã chuyển historical trước D-097.
+
+**Checkpoint D-095 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-15-1.5.0`. Review-14 đã archive 322 files; protected corpus 5456 files khớp hash. Thêm đúng 3 Layers HTML và một preview; 87 prior HTML giữ nguyên sau candidate-ID normalization, 29 prior preview byte-identical. Layers có đúng 5 dải L5→L1, một abstraction axis, một focal layer được encode bằng coral boundary/fill + nhãn `TRỌNG TÂM` + note chữ, exact alternative table và geometry ba mode được giữ. Focused 124/124, scope 8/8, static 34/34 và full regression 286/286 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-15-VERIFICATION.json`; candidate đã chuyển historical trước D-096.
+
+**Checkpoint D-094 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0`. Review-13 đã archive 311 files; protected corpus 5143 files khớp hash. Chỉ 3 Kanban HTML và preview Kanban thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. Kanban có đúng 4 cột/11 item theo 3/4/2/2, một WIP breach `4/3`, một blocked, một waiting-external và hai done; state có non-color encoding, card containment và exact alternative table; geometry ba mode được giữ. Focused 116/116, scope 8/8, static 32/32 và full regression 278/278 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-14-VERIFICATION.json`; candidate đã chuyển historical trước D-095.
+
+**Checkpoint D-093 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-13-1.5.0`. Review-12 đã archive 297 files; protected corpus 4845 files khớp hash. Chỉ 3 it-current-state HTML và preview it-current-state thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. It-current-state có đúng 9 node/8 directed edge/3 boundary group, 8 direct format label, 2 bottleneck, 2 pain path và 2 external path; mỗi connector là một path liên tục, mọi bend 90° dùng rounded join theo mặc định và straight chỉ qua explicit override; geometry ba mode được giữ. Focused 108/108, scope 8/8, static 32/32 và full regression 270/270 PASS; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-13-VERIFICATION.json`; candidate đã chuyển historical trước D-094.
+
+**Checkpoint D-092 (historical):** candidate `P19B-P18-INHERITED-THREE-MODE-REVIEW-12-1.5.0`. Review-11 đã archive 283 files; protected corpus 4561 files khớp hash. Chỉ 3 high-level HTML và preview high-level thay artwork; 84 non-target HTML giữ nguyên sau candidate-ID normalization, 28 non-target preview byte-identical. High-level có đúng 11 node/13 directed edge/2 boundary group; cả 13 connector là một path liên tục, mọi bend 90° dùng quadratic rounded join theo mặc định và straight chỉ qua explicit override; geometry ba mode được giữ. Focused 99/99, scope 8/8, static 32/32 và full regression 261/261 PASS sau transient-cache cleanup; neutral-light raster đã inspect. Chi tiết `evidence/p19/P-19B-REVIEW-12-VERIFICATION.json`; candidate đã chuyển historical trước D-093.
+
+## P-20 — v2.0.0 package/release preparation
+
+**Mục tiêu:** chuẩn bị exact local-only release candidate inputs cho target `2.0.0` mà không phát hành hoặc làm thay đổi frozen source/gallery lineage và historical `dist/`.
+
+**Authorization:** D-130.
+
+**Trạng thái:** `passed`. D-131 đặt tất cả `G-00…G-07@2.0.0` thành `PASS` và owner-approve exact `TCD-RELEASE-2.0.0-RC1`; release execution vẫn hold.
+
+**Kết quả:**
+
+- exact legal/provenance/brand candidate `TCD-LEGAL-2.0.0-RC1`, logical aggregate SHA-256 `93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0`;
+- exact package candidate `TCD-PACKAGES-2.0.0-RC1` gồm Claude `7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6`, OpenAI `65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315`, Universal `88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93`;
+- 26/26 package checks, 414/414 full regression, deterministic regeneration, three extracted smoke tests, Claude manifest validation và dependency-free OpenAI manifest/path validation `PASS`;
+- exact P-17/P-18/P-19 hashes giữ nguyên, P-18/P-19 tách riêng và comparison đúng `14 + 93 = 107`;
+- package-facing instruction khóa D-128: 31 silhouette chỉ là sample QA và user-request flexibility bắt buộc;
+- historical `dist/` v1.0.0 giữ exact bốn file/hash; v2 ZIP chỉ nằm trong `evidence/p20/candidate-dist/`.
+
+**Evidence:** technical record `evidence/p20/P-20-EVIDENCE.md` SHA-256 `a262beb120365e0917f0b378470df4b0e59b8c0d0f565acfce29c033c6f728d2`; gate decision record `evidence/p20/GATE-READINESS-2.0.0.md` SHA-256 `7511b8c4cc320cb276255b666e9140e0a932b7d4485bc752a4e938a8d21aff46`; exact release manifest `evidence/p20/RELEASE-CANDIDATE-2.0.0.json` SHA-256 `2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72`.
+
+**Pending action:** không còn gate approval pending. Independent lawyer review đã được owner miễn riêng cho exact G-06 candidate theo D-131. Mọi thao tác `dist`/publication/commit/push/tag/Release vẫn chờ lệnh thực thi riêng, rõ ràng.
 
 ## 3. Change-control record
 

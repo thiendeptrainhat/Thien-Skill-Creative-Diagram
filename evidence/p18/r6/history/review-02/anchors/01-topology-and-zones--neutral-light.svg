@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 940" width="1680" height="940"
+      role="img" aria-labelledby="anchor-title anchor-desc" data-layout-engine="topology-and-zones"
+      data-canonical-type="architecture" data-mode="neutral-light" data-semantic-ratio="0.84"
+      data-min-label-clearance="8" data-font-measured="true" data-no-global-transform="true"
+      data-takeaway-node="focal" data-resolved-human-font="Avenir Next" data-resolved-mono-font="Menlo">
+      <title id="anchor-title">Kiến trúc nội dung tại edge</title>
+      <desc id="anchor-desc">Ba vùng tin cậy; origin là điểm hội tụ giữa edge và hai nguồn nội dung.</desc>
+      <defs>
+        <pattern id="dot-field" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#d9d7d2" opacity=".34"/></pattern>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#4f5e76"/></marker>
+        <marker id="arrow-accent" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#f26a32"/></marker>
+        <style>
+      text{font-family:'Avenir Next';fill:#252b3c;text-rendering:geometricPrecision}
+      .display{font-family:'Georgia';font-size:48px;font-weight:400}
+      .node-title{font-size:24px;font-weight:650}
+      .material{font-size:16px;font-weight:500}
+      .material-strong{font-size:18px;font-weight:650}
+      .mono,.badge-text,.kicker,.legend-note{font-family:'Menlo';font-size:16px}
+      .mono{fill:#53627b}
+      .kicker{font-size:14px;font-weight:700;letter-spacing:2.1px;fill:#778194}
+      .badge-text{font-size:14px;font-weight:700;letter-spacing:1px;fill:#53627b}
+      .node-boundary{fill:#ffffff;stroke:#4f5e76;stroke-width:2.2}
+      .node-card.focal .node-boundary{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.8}
+      .node-card.muted .node-boundary{fill:#eeece7;stroke:#c7ccd2}
+      .badge{fill:#eeece7;stroke:#c7ccd2;stroke-width:1.2}
+      .focal .badge{fill:#fff3ec;stroke:#f26a32}
+      .focal .badge-text{fill:#df5522}
+      .wire{fill:none;stroke:#4f5e76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .wire.soft{stroke:#c7ccd2;stroke-width:2}
+      .wire.accent{stroke:#f26a32;stroke-width:3.6}
+      .wire.blue{stroke:#2f65af}
+      .wire.green{stroke:#7c9167}
+      .wire.dashed{stroke-dasharray:9 9}
+      .bridge-hop-underlay{fill:none;stroke:#f7f6f2;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}
+      .bridge-hop{fill:none;stroke:#4f5e76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .zone{fill:none;stroke:#c7ccd2;stroke-width:1.6}
+      .zone-fill{fill:#eeece7;fill-opacity:.55;stroke:#c7ccd2;stroke-width:1.6}
+      .grid{stroke:#d9d7d2;stroke-width:1.4}
+      .dot{fill:#252b3c}
+      .accent-dot{fill:#f26a32}
+      .legend-rule{stroke:#d9d7d2;stroke-width:1.5}
+      .legend-accent{fill:#f8e7dd;stroke:#f26a32;stroke-width:2}
+      .legend-text{font-size:16px;fill:#53627b}
+      .legend-note{font-size:14px;font-style:italic;fill:#53627b}
+      .band{fill:#e8ebee;stroke:#c7ccd2;stroke-width:1.5}
+      .band.focal{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.3}
+      .label-mask{fill:#f7f6f2}
+      .axis{stroke:#4f5e76;stroke-width:2.2}
+    </style>
+      </defs>
+      <rect width="1680" height="940" fill="#f7f6f2"/>
+      <rect width="1680" height="940" fill="url(#dot-field)"/>
+      <rect class="zone-fill" x="60" y="90" width="310" height="590" rx="20"/><text class="kicker" x="88.0" y="130.0" text-anchor="start">EDGE</text><rect class="zone-fill" x="430" y="90" width="560" height="590" rx="20"/><text class="kicker" x="458.0" y="130.0" text-anchor="start">APPLICATION</text><rect class="zone-fill" x="1050" y="90" width="570" height="590" rx="20"/><text class="kicker" x="1078.0" y="130.0" text-anchor="start">CONTENT</text><g class="node-card muted" data-measured-title-width="80.00" data-card-width="246.00"><rect class="node-boundary" x="92" y="235" width="246" height="124" rx="14"/><rect class="badge" x="110" y="251" width="54" height="28" rx="6"/><text class="badge-text" x="137.0" y="271.0" text-anchor="middle">EXT</text><text class="node-title" x="215.0" y="311.0" text-anchor="middle">Reader</text><text class="mono" x="215.0" y="340.0" text-anchor="middle">browser · public</text></g><g class="node-card" data-measured-title-width="131.00" data-card-width="260.00"><rect class="node-boundary" x="462" y="235" width="260" height="124" rx="14"/><rect class="badge" x="480" y="251" width="62.0" height="28" rx="6"/><text class="badge-text" x="511.0" y="271.0" text-anchor="middle">EDGE</text><text class="node-title" x="592.0" y="311.0" text-anchor="middle">Cloud edge</text><text class="mono" x="592.0" y="340.0" text-anchor="middle">cache · TLS</text></g><g class="node-card focal" data-measured-title-width="132.00" data-card-width="280.00"><rect class="node-boundary" x="760" y="235" width="280" height="124" rx="14"/><rect class="badge" x="778" y="251" width="62.0" height="28" rx="6"/><text class="badge-text" x="809.0" y="271.0" text-anchor="middle">ORIG</text><text class="node-title" x="900.0" y="311.0" text-anchor="middle">Astro origin</text><text class="mono" x="900.0" y="340.0" text-anchor="middle">SSR · MDX</text></g><g class="node-card" data-measured-title-width="140.00" data-card-width="300.00"><rect class="node-boundary" x="1102" y="180" width="300" height="124" rx="14"/><rect class="badge" x="1120" y="196" width="54" height="28" rx="6"/><text class="badge-text" x="1147.0" y="216.0" text-anchor="middle">BUN</text><text class="node-title" x="1252.0" y="256.0" text-anchor="middle">MDX bundle</text><text class="mono" x="1252.0" y="285.0" text-anchor="middle">content/*.mdx</text></g><g class="node-card" data-measured-title-width="133.00" data-card-width="300.00"><rect class="node-boundary" x="1102" y="420" width="300" height="124" rx="14"/><rect class="badge" x="1120" y="436" width="72.0" height="28" rx="6"/><text class="badge-text" x="1156.0" y="456.0" text-anchor="middle">STORE</text><text class="node-title" x="1252.0" y="496.0" text-anchor="middle">Media store</text><text class="mono" x="1252.0" y="525.0" text-anchor="middle">assets · OG</text></g><path class="wire blue" d="M338 297 H462" marker-end="url(#arrow)"/><path class="wire accent" d="M722 297 H760" marker-end="url(#arrow-accent)"/><path class="wire" d="M 1040.00 272.00 L 1058.00 272.00 Q 1072.00 272.00 1072.00 258.00 L 1072.00 256.00 Q 1072.00 242.00 1086.00 242.00 L 1102.00 242.00" data-route-style="rounded-orthogonal" data-remediation="D-060-01" marker-end="url(#arrow)"/><path class="wire" d="M 1040.00 322.00 L 1058.00 322.00 Q 1072.00 322.00 1072.00 336.00 L 1072.00 468.00 Q 1072.00 482.00 1086.00 482.00 L 1102.00 482.00" data-route-style="rounded-orthogonal" data-remediation="D-060-01" marker-end="url(#arrow)"/><text class="kicker" x="392.0" y="280.0" text-anchor="middle">HTTPS</text><text class="kicker" x="741.0" y="280.0" text-anchor="middle">SSR</text><text class="kicker" x="1080.0" y="256.0" text-anchor="end">READ</text><text class="kicker" x="1080.0" y="458.0" text-anchor="end">QUERY</text><line class="legend-rule" x1="52" y1="748" x2="1628" y2="748"/><text class="kicker" x="56.0" y="786.0" text-anchor="start">LEGEND</text><rect class="legend-accent" x="210.0" y="768" width="28" height="24" rx="5"/><text class="legend-text" x="252.0" y="787.0" text-anchor="start">focal origin</text><line class="wire" x1="415.0" y1="782" x2="457.0" y2="782"/><text class="legend-text" x="473.0" y="787.0" text-anchor="start">request / dependency</text><line class="wire dashed" x1="693.0" y1="782" x2="735.0" y2="782"/><text class="legend-text" x="751.0" y="787.0" text-anchor="start">external / async</text><text class="legend-note" x="1624.0" y="787.0" text-anchor="end">Boundary carries trust context.</text>
+    </svg>

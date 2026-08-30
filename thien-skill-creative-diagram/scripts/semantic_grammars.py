@@ -1,9 +1,12 @@
-"""P-05 semantic selectors and validators for the 27 canonical types."""
+"""Semantic selectors and validators for the 39 canonical types."""
 
 from __future__ import annotations
 
 from collections import Counter, defaultdict, deque
 from datetime import datetime
+from decimal import Decimal
+import math
+import unicodedata
 from typing import Any, Callable, Iterable, Mapping
 
 from diagram_core import CoreError, validate_common_ir
@@ -13,6 +16,7 @@ from semantic_catalog import TYPE_GRAMMARS
 PERMISSION_STATES = {"allow", "deny", "conditional", "unknown"}
 CARDINALITY_KINDS = {"one-to-one", "one-to-many", "many-to-one", "many-to-many"}
 MESSAGE_KINDS = {"message", "request", "response", "async", "return"}
+UML_RELATION_KINDS = {"association", "aggregation", "composition", "inheritance", "realization", "dependency"}
 
 
 def _error(code: str, message: str, field: str = "ir") -> None:
@@ -74,6 +78,38 @@ def _parse_time(value: str) -> datetime:
 
 def _axes(ir: Mapping[str, Any], dimension: str) -> list[Mapping[str, Any]]:
     return [axis for axis in ir["axes"] if axis["dimension"] == dimension]
+
+
+def normalize_unit(value: str | None) -> str | None:
+    """Apply the locked NFC plus outer-trim unit normalization only."""
+
+    if value is None:
+        return None
+    return unicodedata.normalize("NFC", value).strip()
+
+
+def numeric_tolerance(expected: int | float | Decimal) -> Decimal:
+    expected_decimal = expected if isinstance(expected, Decimal) else Decimal(str(expected))
+    return max(Decimal("1e-12"), Decimal("1e-9") * max(Decimal(1), abs(expected_decimal)))
+
+
+def numerically_equal(actual: int | float | Decimal, expected: int | float | Decimal) -> bool:
+    actual_decimal = actual if isinstance(actual, Decimal) else Decimal(str(actual))
+    expected_decimal = expected if isinstance(expected, Decimal) else Decimal(str(expected))
+    return abs(actual_decimal - expected_decimal) <= numeric_tolerance(expected_decimal)
+
+
+def _same_unit(values: Iterable[str | None], field: str) -> str | None:
+    units = {normalize_unit(value) for value in values}
+    if len(units) != 1:
+        _error("unit-mismatch", "Units must match after NFC normalization and outer trimming; no conversion is implicit.", field)
+    return next(iter(units))
+
+
+def _finite_decimal(value: Any, code: str, field: str) -> Decimal:
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+        _error(code, "A finite numeric value is required.", field)
+    return Decimal(str(value))
 
 
 def _require_role(ir: Mapping[str, Any], role: str, code: str | None = None) -> None:
@@ -248,9 +284,11 @@ def _validate_numeric_coordinate_series(ir: Mapping[str, Any]) -> None:
         _error("coordinate-series-required", "At least one coordinate series is required.", "ir.series")
     for series in ir["series"]:
         for datum in series["data"]:
-            if isinstance(datum["domain"], bool) or not isinstance(datum["domain"], (int, float)):
+            x_value = datum.get("x_value") if "CAP-V20" in ir["diagram"].get("variant_ids", []) else datum.get("domain")
+            y_value = datum.get("y_value") if "CAP-V20" in ir["diagram"].get("variant_ids", []) else datum.get("value")
+            if isinstance(x_value, bool) or not isinstance(x_value, (int, float)):
                 _error("numeric-x-required", "Coordinate x/domain values must be numeric.", "ir.series")
-            if datum["value"] is not None and not isinstance(datum["value"], (int, float)):
+            if y_value is not None and (isinstance(y_value, bool) or not isinstance(y_value, (int, float))):
                 _error("numeric-y-required", "Coordinate y values must be numeric or explicitly missing.", "ir.series")
 
 
@@ -384,13 +422,16 @@ def _validate_series_domain_consistency(ir: Mapping[str, Any]) -> None:
 def _validate_requires_ordered_x_linear_y(ir: Mapping[str, Any]) -> None:
     x_axes = _axes(ir, "x")
     y_axes = _axes(ir, "y")
-    if len(x_axes) != 1 or x_axes[0]["scale"] not in {"time", "ordinal"}:
-        _error("ordered-x-required", "Line charts need one time or ordinal x axis.", "ir.axes")
+    allowed_x_scales = {"linear"} if "CAP-V19" in ir["diagram"].get("variant_ids", []) else {"time", "ordinal"}
+    if len(x_axes) != 1 or x_axes[0]["scale"] not in allowed_x_scales:
+        _error("ordered-x-required", "Line charts need one compatible ordered x axis.", "ir.axes")
     if len(y_axes) != 1 or y_axes[0]["scale"] != "linear":
         _error("linear-y-required", "Line charts need one linear y axis.", "ir.axes")
 
 
 def _validate_domain_order_valid(ir: Mapping[str, Any]) -> None:
+    if set(ir["diagram"].get("variant_ids", [])) & {"CAP-V18", "CAP-V19"}:
+        return
     for series in ir["series"]:
         domains = [datum["domain"] for datum in series["data"]]
         if domains != sorted(domains):
@@ -398,6 +439,8 @@ def _validate_domain_order_valid(ir: Mapping[str, Any]) -> None:
 
 
 def _validate_missing_values_explicit(ir: Mapping[str, Any]) -> None:
+    if "CAP-V19" in ir["diagram"].get("variant_ids", []):
+        return
     for series in ir["series"]:
         for datum in series["data"]:
             if datum["missing"] != (datum["value"] is None):
@@ -422,6 +465,8 @@ def _validate_dependency_acyclic(ir: Mapping[str, Any]) -> None:
 
 
 def _validate_scatter_missingness_valid(ir: Mapping[str, Any]) -> None:
+    if "CAP-V20" in ir["diagram"].get("variant_ids", []):
+        return
     _validate_missing_values_explicit(ir)
 
 
@@ -522,6 +567,372 @@ def _validate_requires_accessible_data(ir: Mapping[str, Any]) -> None:
         _error("accessible-data-required", "This quantitative or matrix grammar requires an accessible data representation.", "ir.accessibility")
 
 
+def _validate_requires_polar_axes(ir: Mapping[str, Any]) -> None:
+    angular = _axes(ir, "angular")
+    radial = _axes(ir, "radial")
+    if len(angular) != 1 or angular[0]["scale"] != "categorical" or len(radial) != 1 or radial[0]["scale"] != "linear":
+        _error("polar-axes-invalid", "Polar charts require one categorical angular axis and one linear radial axis.", "ir.axes")
+    lower = radial[0].get("domain_min")
+    upper = radial[0].get("domain_max")
+    if lower is None or upper is None or lower < 0 or upper < lower:
+        _error("polar-domain-invalid", "The radial domain must be declared, ordered, and non-negative.", "ir.axes")
+
+
+def _validate_polar_series_valid(ir: Mapping[str, Any]) -> None:
+    _validate_requires_series(ir)
+    radial = _axes(ir, "radial")[0]
+    _same_unit([series.get("unit") for series in ir["series"]] + [radial.get("unit")], "ir.series")
+    domains: list[list[Any]] = []
+    for series in ir["series"]:
+        domains.append([datum.get("domain") for datum in series["data"]])
+        for datum in series["data"]:
+            value = datum.get("value")
+            if value is None:
+                if not datum["missing"]:
+                    _error("polar-missingness", "A null polar value must remain an explicit gap.", "ir.series")
+                continue
+            value_decimal = _finite_decimal(value, "polar-value-invalid", "ir.series")
+            if value_decimal < 0 or value < radial["domain_min"] or value > radial["domain_max"]:
+                _error("polar-value-out-of-domain", "Polar radius values must be non-negative and inside the radial domain.", "ir.series")
+    if domains and any(domain != domains[0] for domain in domains[1:]):
+        _error("polar-category-order-mismatch", "Polar series must share the same cyclic category order.", "ir.series")
+
+
+def _validate_treemap_hierarchy_reconciles(ir: Mapping[str, Any]) -> None:
+    groups = {group["id"]: group for group in ir["groups"]}
+    if not groups:
+        _error("treemap-group-required", "Treemap requires a declared hierarchy.", "ir.groups")
+    roots = [group for group in groups.values() if group.get("parent_group_id") is None]
+    if len(roots) != 1:
+        _error("treemap-root-count", "Treemap hierarchy requires exactly one root group.", "ir.groups")
+    leaves = {node["id"]: node for node in ir["nodes"]}
+    if not leaves:
+        _error("treemap-leaf-required", "Treemap requires at least one quantitative leaf.", "ir.nodes")
+    for node in leaves.values():
+        if node.get("parent_group_id") not in groups:
+            _error("treemap-leaf-parent", "Every treemap leaf needs exactly one valid parent group.", "ir.nodes")
+        value = node.get("value")
+        if value is None or _finite_decimal(value, "treemap-value-invalid", "ir.nodes") < 0:
+            _error("treemap-value-invalid", "Treemap leaf values must be finite and non-negative.", "ir.nodes")
+        if normalize_unit(node.get("unit")) is None:
+            _error("treemap-unit-missing", "Treemap leaves require an explicit unit.", "ir.nodes")
+    for group in groups.values():
+        total = group.get("declared_total")
+        if total is None or _finite_decimal(total, "treemap-total-invalid", "ir.groups") < 0:
+            _error("treemap-total-invalid", "Every treemap group needs a finite non-negative declared total.", "ir.groups")
+        if normalize_unit(group.get("unit")) is None:
+            _error("treemap-unit-missing", "Every treemap group needs an explicit unit.", "ir.groups")
+        expected_members = {
+            child["id"] for child in groups.values() if child.get("parent_group_id") == group["id"]
+        } | {
+            leaf["id"] for leaf in leaves.values() if leaf.get("parent_group_id") == group["id"]
+        }
+        if set(group["member_ids"]) != expected_members:
+            _error("treemap-membership-mismatch", "Group members and child parent bindings must agree exactly.", "ir.groups")
+        child_items = [groups[item_id] if item_id in groups else leaves[item_id] for item_id in group["member_ids"]]
+        _same_unit([group.get("unit")] + [item.get("unit") for item in child_items], "ir.groups")
+        child_sum = sum(
+            (_finite_decimal(item.get("declared_total") if item["id"] in groups else item.get("value"), "treemap-value-invalid", "ir.groups") for item in child_items),
+            Decimal(0),
+        )
+        if not numerically_equal(child_sum, total):
+            _error("treemap-total-mismatch", "Treemap child values do not reconcile to the declared parent total.", "ir.groups")
+
+
+def _validate_sankey_flow_conservation(ir: Mapping[str, Any]) -> None:
+    _same_unit([edge.get("unit") for edge in ir["edges"]], "ir.edges")
+    incoming: defaultdict[str, Decimal] = defaultdict(Decimal)
+    outgoing: defaultdict[str, Decimal] = defaultdict(Decimal)
+    incoming_nodes: set[str] = set()
+    outgoing_nodes: set[str] = set()
+    for edge in ir["edges"]:
+        amount = edge.get("amount")
+        if amount is None or _finite_decimal(amount, "sankey-amount-invalid", "ir.edges") < 0:
+            _error("sankey-amount-invalid", "Sankey amounts must be finite, present, and non-negative.", "ir.edges")
+        amount_decimal = Decimal(str(amount))
+        outgoing[edge["source"]] += amount_decimal
+        incoming[edge["target"]] += amount_decimal
+        outgoing_nodes.add(edge["source"])
+        incoming_nodes.add(edge["target"])
+    for node in ir["nodes"]:
+        node_id = node["id"]
+        if node_id in incoming_nodes and node_id in outgoing_nodes and not numerically_equal(incoming[node_id], outgoing[node_id]):
+            _error("sankey-conservation-failure", "Incoming and outgoing amounts do not conserve at an internal node.", "ir.edges")
+
+
+def _validate_fishbone_structure_valid(ir: Mapping[str, Any]) -> None:
+    effects = [node for node in ir["nodes"] if node["role"] == "effect"]
+    causes = [node for node in ir["nodes"] if node["role"] == "cause"]
+    if len(effects) != 1 or not causes:
+        _error("fishbone-role-count", "Fishbone requires one effect and at least one cause.", "ir.nodes")
+    cause_ids = {cause["id"] for cause in causes}
+    membership = Counter(
+        member
+        for group in ir["groups"]
+        if normalize_unit(group.get("cause_category")) is not None
+        for member in group["member_ids"]
+    )
+    if set(membership) != cause_ids or any(count != 1 for count in membership.values()):
+        _error("fishbone-category-membership", "Every cause must belong to exactly one declared cause category.", "ir.groups")
+    effect_id = effects[0]["id"]
+    edges_by_cause = Counter(edge["source"] for edge in ir["edges"] if edge["target"] == effect_id and edge["directed"])
+    if set(edges_by_cause) != cause_ids or any(count != 1 for count in edges_by_cause.values()) or len(ir["edges"]) != len(causes):
+        _error("fishbone-direction-invalid", "Each cause must converge exactly once on the declared effect.", "ir.edges")
+
+
+def _validate_wardley_coordinates_valid(ir: Mapping[str, Any]) -> None:
+    x_axes, y_axes = _axes(ir, "x"), _axes(ir, "y")
+    if len(x_axes) != 1 or len(y_axes) != 1 or any(axis["scale"] != "linear" for axis in x_axes + y_axes):
+        _error("wardley-axes-invalid", "Wardley maps require one linear evolution axis and one linear value-chain axis.", "ir.axes")
+    if any(axis.get("domain_min") != 0 or axis.get("domain_max") != 1 for axis in x_axes + y_axes):
+        _error("wardley-domain-invalid", "Wardley axes must disclose normalized 0..1 bounds.", "ir.axes")
+    if not ir["nodes"] or any("strategy" not in node for node in ir["nodes"]):
+        _error("wardley-strategy-missing", "Every Wardley component requires both strategy coordinates.", "ir.nodes")
+    if any(edge["kind"] != "dependency" for edge in ir["edges"]):
+        _error("wardley-edge-kind", "Wardley relationships must be explicit dependencies.", "ir.edges")
+
+
+def _validate_kanban_board_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["groups"] or not ir["nodes"]:
+        _error("kanban-board-empty", "Kanban requires columns and work items.", "ir")
+    counts = Counter(member for group in ir["groups"] for member in group["member_ids"])
+    node_ids = {node["id"] for node in ir["nodes"]}
+    if set(counts) != node_ids or any(count != 1 for count in counts.values()):
+        _error("kanban-membership-invalid", "Every work item must belong to exactly one column.", "ir.groups")
+    column_orders: list[int] = []
+    for group in ir["groups"]:
+        items = [node for node in ir["nodes"] if node["id"] in group["member_ids"]]
+        if not items or any("work" not in node for node in items):
+            _error("kanban-work-missing", "Every Kanban member requires structured work metadata.", "ir.nodes")
+        orders = {node["work"]["column_order"] for node in items}
+        if len(orders) != 1:
+            _error("kanban-column-order", "All items in one column must share one column order.", "ir.nodes")
+        column_orders.append(next(iter(orders)))
+        item_orders = [node["work"]["item_order"] for node in items]
+        if len(item_orders) != len(set(item_orders)):
+            _error("kanban-item-order", "Work-item order must be unique within each column.", "ir.nodes")
+        limit = group.get("wip_limit")
+        if limit is not None and len(items) > limit:
+            _error("kanban-wip-exceeded", "Column item count exceeds its declared WIP limit.", "ir.groups")
+        for node in items:
+            if node["work"].get("wip_limit") not in {None, limit}:
+                _error("kanban-wip-mismatch", "Item and column WIP declarations conflict.", "ir.nodes")
+    if len(column_orders) != len(set(column_orders)):
+        _error("kanban-column-order", "Kanban column order must be unique.", "ir.nodes")
+
+
+def _validate_user_journey_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["nodes"] or any("journey" not in node for node in ir["nodes"]):
+        _error("journey-stage-missing", "Every journey stage requires action and touchpoint metadata.", "ir.nodes")
+    orders = [node["journey"]["stage_order"] for node in ir["nodes"]]
+    if len(orders) != len(set(orders)) or orders != sorted(orders):
+        _error("journey-order-invalid", "Journey stages must have unique non-decreasing order.", "ir.nodes")
+
+
+def _validate_deployment_placement_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["nodes"] or any("placement" not in node for node in ir["nodes"]):
+        _error("deployment-placement-missing", "Every deployment node requires explicit placement metadata.", "ir.nodes")
+    if any(edge.get("relation_kind") not in {"runtime", "dependency"} for edge in ir["edges"]):
+        _error("deployment-relation-invalid", "Deployment edges require runtime or dependency relation kind.", "ir.edges")
+
+
+def _validate_dependency_graph_valid(ir: Mapping[str, Any]) -> None:
+    _minimum(ir, "nodes", 2, "dependency-node-count")
+    _minimum(ir, "edges", 1, "dependency-edge-count")
+    if any(edge["kind"] != "dependency" or not edge["directed"] for edge in ir["edges"]):
+        _error("dependency-edge-invalid", "Dependency graphs require directed dependency edges.", "ir.edges")
+
+
+def _node_members(ir: Mapping[str, Any]) -> tuple[dict[str, Mapping[str, Any]], dict[str, str]]:
+    members: dict[str, Mapping[str, Any]] = {}
+    owners: dict[str, str] = {}
+    for node in ir["nodes"]:
+        for member in node.get("members", []):
+            members[member["id"]] = member
+            owners[member["id"]] = node["id"]
+    return members, owners
+
+
+def _validate_uml_class_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["nodes"] or any(node["role"] != "class" or not node.get("members") for node in ir["nodes"]):
+        _error("uml-class-members-missing", "Every UML class requires structured attributes or operations.", "ir.nodes")
+    members, owners = _node_members(ir)
+    if any(member["kind"] not in {"attribute", "operation"} for member in members.values()):
+        _error("uml-member-kind", "UML class members must be attributes or operations.", "ir.nodes")
+    for edge in ir["edges"]:
+        if edge.get("relation_kind") not in UML_RELATION_KINDS:
+            _error("uml-relation-kind", "Every UML relation needs an approved typed relation kind.", "ir.edges")
+        if edge.get("source_member") is not None and owners.get(edge["source_member"]) != edge["source"]:
+            _error("uml-member-endpoint", "Source member must belong to the source class.", "ir.edges")
+        if edge.get("target_member") is not None and owners.get(edge["target_member"]) != edge["target"]:
+            _error("uml-member-endpoint", "Target member must belong to the target class.", "ir.edges")
+
+
+def _validate_story_map_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["nodes"] or any("story" not in node for node in ir["nodes"]):
+        _error("story-metadata-missing", "Every story-map item needs structured story metadata.", "ir.nodes")
+    order_pairs = [(node["story"]["backbone_order"], node["story"]["story_order"]) for node in ir["nodes"]]
+    if len(order_pairs) != len(set(order_pairs)) or order_pairs != sorted(order_pairs):
+        _error("story-order-invalid", "Backbone and story order pairs must be unique and non-decreasing.", "ir.nodes")
+    assigned_groups = {group["id"]: group for group in ir["groups"] if group.get("release_slice") is not None}
+    memberships = Counter(member for group in assigned_groups.values() for member in group["member_ids"])
+    for node in ir["nodes"]:
+        story = node["story"]
+        if story["release_slice"] is None:
+            if memberships[node["id"]] != 0:
+                _error("story-unassigned-membership", "An unassigned story cannot belong to a release group.", "ir.groups")
+            continue
+        matching = [group for group in assigned_groups.values() if node["id"] in group["member_ids"] and group["release_slice"] == story["release_slice"]]
+        if len(matching) != 1 or memberships[node["id"]] != 1:
+            _error("story-release-membership", "Each assigned story must belong to exactly one matching release slice.", "ir.groups")
+
+
+def _validate_database_schema_valid(ir: Mapping[str, Any]) -> None:
+    if not ir["nodes"] or any(node["role"] != "table" or not node.get("members") for node in ir["nodes"]):
+        _error("database-table-members-missing", "Every physical table requires structured columns or indexes.", "ir.nodes")
+    members, owners = _node_members(ir)
+    columns = {member_id: member for member_id, member in members.items() if member["kind"] == "column"}
+    if not columns or any(normalize_unit(member.get("data_type")) is None for member in columns.values()):
+        _error("database-column-type-missing", "Every physical column requires an explicit data type.", "ir.nodes")
+    if any(member["kind"] not in {"column", "index"} for member in members.values()):
+        _error("database-member-kind", "Physical schema members must be columns or indexes.", "ir.nodes")
+    for edge in ir["edges"]:
+        if edge.get("relation_kind") != "foreign-key":
+            _error("database-relation-kind", "Database schema relations must be column-level foreign keys.", "ir.edges")
+        source_member, target_member = edge.get("source_member"), edge.get("target_member")
+        if source_member not in columns or target_member not in columns:
+            _error("database-foreign-key-member", "Foreign keys require source and target column endpoints.", "ir.edges")
+        if owners[source_member] != edge["source"] or owners[target_member] != edge["target"]:
+            _error("database-foreign-key-owner", "Foreign-key columns must belong to their endpoint tables.", "ir.edges")
+
+
+def _linear_axis(ir: Mapping[str, Any], dimension: str, field: str) -> Mapping[str, Any]:
+    axes = _axes(ir, dimension)
+    if len(axes) != 1 or axes[0]["scale"] != "linear" or axes[0].get("domain_min") is None or axes[0].get("domain_max") is None:
+        _error("shared-linear-axis-required", "A single declared linear axis is required.", field)
+    return axes[0]
+
+
+def _validate_dumbbell(ir: Mapping[str, Any]) -> None:
+    if len(ir["series"]) != 2:
+        _error("dumbbell-cardinality", "Dumbbell requires exactly two series values per category.", "ir.series")
+    y_axis = _linear_axis(ir, "y", "ir.axes")
+    _same_unit([series.get("unit") for series in ir["series"]] + [y_axis.get("unit")], "ir.series")
+    domains = [[datum.get("domain") for datum in series["data"]] for series in ir["series"]]
+    if not domains[0] or domains[0] != domains[1]:
+        _error("dumbbell-category-mismatch", "Both dumbbell endpoints must share one category order.", "ir.series")
+    for series in ir["series"]:
+        for datum in series["data"]:
+            value = datum.get("value")
+            if value is None or datum["missing"] or not y_axis["domain_min"] <= value <= y_axis["domain_max"]:
+                _error("dumbbell-endpoint-invalid", "Dumbbell endpoints must be finite, present, and inside the shared domain.", "ir.series")
+
+
+def _validate_slopegraph(ir: Mapping[str, Any]) -> None:
+    if not ir["series"]:
+        _error("slopegraph-series-missing", "Slopegraph requires at least one series.", "ir.series")
+    y_axis = _linear_axis(ir, "y", "ir.axes")
+    _same_unit([series.get("unit") for series in ir["series"]] + [y_axis.get("unit")], "ir.series")
+    state_domains: list[list[Any]] = []
+    for series in ir["series"]:
+        if len(series["data"]) != 2:
+            _error("slopegraph-state-cardinality", "Every slopegraph series requires exactly two states.", "ir.series")
+        state_domains.append([datum.get("domain") for datum in series["data"]])
+        for datum in series["data"]:
+            value = datum.get("value")
+            if value is None or datum["missing"] or not y_axis["domain_min"] <= value <= y_axis["domain_max"]:
+                _error("slopegraph-endpoint-invalid", "Slopegraph endpoints must be finite, present, and inside the shared domain.", "ir.series")
+    if any(domains != state_domains[0] for domains in state_domains[1:]) or len(set(state_domains[0])) != 2:
+        _error("slopegraph-state-mismatch", "Slopegraph series must share the same two distinct states.", "ir.series")
+
+
+def derive_ridgeline_profiles(ir: Mapping[str, Any]) -> dict[str, Any]:
+    """Derive locked histogram/KDE profiles and global-max display amplitudes."""
+
+    raw_profiles: dict[str, list[float]] = {}
+    grid: list[float] | None = None
+    common_signature: tuple[Any, ...] | None = None
+    for series in ir["series"]:
+        distribution = series.get("distribution")
+        if distribution is None or len(series["data"]) != 1 or "distribution_samples" not in series["data"][0]:
+            _error("ridgeline-structure", "Each ridgeline series needs one sample set and complete distribution metadata.", "ir.series")
+        edges = [float(value) for value in distribution["bin_edges"]]
+        if any(right <= left for left, right in zip(edges, edges[1:])):
+            _error("ridgeline-bin-order", "Ridgeline bin edges must be strictly increasing.", "ir.series")
+        if distribution["bin_count"] != len(edges) - 1 or not numerically_equal(edges[0], distribution["domain_min"]) or not numerically_equal(edges[-1], distribution["domain_max"]):
+            _error("ridgeline-domain-grid", "Bin count and edges must match the declared common domain.", "ir.series")
+        signature = (
+            distribution["method"], tuple(edges), distribution["bin_count"], distribution["bandwidth"],
+            distribution["domain_min"], distribution["domain_max"], distribution["amplitude_normalization"],
+            distribution["shared_domain"], distribution["shared_bins"],
+        )
+        if common_signature is None:
+            common_signature = signature
+        elif signature != common_signature:
+            _error("ridgeline-grid-mismatch", "All ridgeline series must use the identical method, domain, bins, and bandwidth.", "ir.series")
+        samples = [float(value) for value in series["data"][0]["distribution_samples"]]
+        if any(value < edges[0] or value > edges[-1] for value in samples):
+            _error("ridgeline-sample-out-of-domain", "Every sample must lie inside the common domain.", "ir.series")
+        centers = [(left + right) / 2 for left, right in zip(edges, edges[1:])]
+        if grid is None:
+            grid = centers
+        if distribution["method"] == "histogram":
+            counts = [0] * (len(edges) - 1)
+            for sample in samples:
+                bin_index = len(counts) - 1 if sample == edges[-1] else next(
+                    index for index, (left, right) in enumerate(zip(edges, edges[1:])) if left <= sample < right
+                )
+                counts[bin_index] += 1
+            densities = [count / (len(samples) * (right - left)) for count, left, right in zip(counts, edges, edges[1:])]
+        else:
+            bandwidth = float(distribution["bandwidth"])
+            factor = len(samples) * bandwidth * math.sqrt(2 * math.pi)
+            densities = [sum(math.exp(-0.5 * ((point - sample) / bandwidth) ** 2) for sample in samples) / factor for point in centers]
+        if any(not math.isfinite(value) or value < 0 for value in densities):
+            _error("ridgeline-density-invalid", "Derived density must be finite and non-negative.", "ir.series")
+        raw_profiles[series["id"]] = densities
+    peak = max((value for profile in raw_profiles.values() for value in profile), default=0.0)
+    if peak <= 0:
+        _error("ridgeline-global-peak", "Ridgeline global maximum density must be positive.", "ir.series")
+    return {
+        "grid": grid or [],
+        "densities": raw_profiles,
+        "global_max": peak,
+        "amplitudes": {series_id: [value / peak for value in profile] for series_id, profile in raw_profiles.items()},
+    }
+
+
+def _validate_ridgeline(ir: Mapping[str, Any]) -> None:
+    if not ir["series"]:
+        _error("ridgeline-series-missing", "Ridgeline requires at least one series.", "ir.series")
+    x_axis = _linear_axis(ir, "x", "ir.axes")
+    _same_unit([series.get("unit") for series in ir["series"]] + [x_axis.get("unit")], "ir.series")
+    derive_ridgeline_profiles(ir)
+
+
+def _validate_bubble(ir: Mapping[str, Any]) -> None:
+    x_axis = _linear_axis(ir, "x", "ir.axes")
+    y_axis = _linear_axis(ir, "y", "ir.axes")
+    size_axis = _linear_axis(ir, "size", "ir.axes")
+    if size_axis["domain_min"] < 0:
+        _error("bubble-size-domain", "Bubble size domain cannot include negative magnitude.", "ir.axes")
+    _same_unit(
+        [datum.get("size_unit") for series in ir["series"] for datum in series["data"]] + [size_axis.get("unit")],
+        "ir.series",
+    )
+    for series in ir["series"]:
+        _same_unit([series.get("unit"), y_axis.get("unit")], "ir.series")
+        for datum in series["data"]:
+            values = (datum.get("x_value"), datum.get("y_value"), datum.get("size_value"))
+            if any(value is None for value in values) or datum["missing"]:
+                _error("bubble-value-missing", "Bubble x, y, and size values are all required.", "ir.series")
+            x_value, y_value, size_value = values
+            if size_value < 0:
+                _error("bubble-size-negative", "Bubble size magnitude cannot be negative.", "ir.series")
+            if not x_axis["domain_min"] <= x_value <= x_axis["domain_max"] or not y_axis["domain_min"] <= y_value <= y_axis["domain_max"] or not size_axis["domain_min"] <= size_value <= size_axis["domain_max"]:
+                _error("bubble-value-out-of-domain", "Bubble values must lie inside all three declared domains.", "ir.series")
+
+
 NO_RESTRICTION_INVARIANTS = {
     "allows-multi-group-membership",
     "group-membership-complete",
@@ -534,6 +945,13 @@ INVARIANT_HANDLERS: dict[str, Callable[[Mapping[str, Any]], None]] = {
     name.removeprefix("_validate_").replace("_", "-"): value
     for name, value in list(globals().items())
     if name.startswith("_validate_") and callable(value)
+}
+
+VARIANT_HANDLERS: dict[str, Callable[[Mapping[str, Any]], None]] = {
+    "CAP-V17": _validate_dumbbell,
+    "CAP-V18": _validate_slopegraph,
+    "CAP-V19": _validate_ridgeline,
+    "CAP-V20": _validate_bubble,
 }
 
 
@@ -604,6 +1022,9 @@ def validate_variant_ids(ir: Mapping[str, Any]) -> None:
             _error("variant-unmapped", f"Variant is outside the locked inventory: {capability_id}.", "ir.diagram.variant_ids")
         if "all" not in variant["parents"] and diagram_type not in variant["parents"]:
             _error("variant-parent-mismatch", f"Variant {capability_id} is incompatible with {diagram_type}.", "ir.diagram.variant_ids")
+        handler = VARIANT_HANDLERS.get(capability_id)
+        if handler is not None:
+            handler(ir)
 
 
 def validate_semantics(ir_value: Mapping[str, Any]) -> dict[str, Any]:
@@ -619,7 +1040,11 @@ def missing_invariant_handlers() -> set[str]:
 
 __all__ = [
     "DATA_LAKE_SIGNAL_MAP",
+    "derive_ridgeline_profiles",
     "missing_invariant_handlers",
+    "normalize_unit",
+    "numeric_tolerance",
+    "numerically_equal",
     "select_data_lake_profile",
     "validate_semantics",
     "validate_typed_ir",

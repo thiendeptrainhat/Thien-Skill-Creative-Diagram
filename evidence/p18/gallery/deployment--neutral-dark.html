@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi" data-case-id="P18-C06-DEPLOY" data-mode="neutral-dark" data-source-hash="d30f67b71e5e743070e46f04cdfce7394d7b37b9108b1d6ac93d632b626e2687" data-source-bundle-hash="30fc0ce7c5721a21fbe42cf5dd742ef3b23895e6f45070069cfa7dc34c3388c2">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Triển khai dịch vụ phê duyệt · Neutral dark · P-18</title>
+  <style>
+    :root{--canvas:#111722;--panel:#1A2332;--panel-alt:#222E40;--ink:#F1F5FA;--quiet:#B7C2D0;--border:#66758B;--accent:#74A9FF;--focus:#74A9FF;color-scheme:dark;}
+    *{box-sizing:border-box} html{background:var(--canvas);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{margin:0;background:var(--canvas);color:var(--ink)}
+    a{color:var(--accent);text-underline-offset:3px} a:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:4px}
+    main,footer{width:min(1536px,100%);margin-inline:auto;padding-inline:clamp(16px,3vw,48px)}
+    .artifact-frame{width:min(1504px,100%);margin:0 auto;padding:34px clamp(22px,4vw,64px) 0;background:var(--canvas)}
+    .artifact-header{min-height:142px;padding:0 14px 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,520px);align-items:end;gap:48px;border-bottom:1px solid var(--border)}
+    .kicker{margin:0 0 10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;font-weight:760;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+    h1{font-size:clamp(40px,3.2vw,48px);line-height:1.02;margin:0;letter-spacing:-.035em} .meta{margin:12px 0 0;color:var(--quiet);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px}
+    .reading-copy{margin:0;font-size:18px;line-height:1.55;color:var(--quiet)}
+    .gallery-link{justify-self:end;align-self:start;font-size:15px}
+    figure{margin:0;background:var(--canvas);overflow:hidden}
+    figure svg{display:block;width:100%;height:auto;background:var(--canvas)}
+    .evidence{margin-top:28px;border-top:1px solid var(--border);background:var(--canvas);padding:clamp(22px,3vw,34px) 14px}
+    .evidence h2{margin:0 0 14px;font-size:22px} .table-wrap{overflow-x:auto;margin-block:12px}
+    table{width:100%;border-collapse:collapse;font-size:.92rem} th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top} th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--quiet)}
+    .hypothesis{padding:12px 14px;border-left:5px solid var(--accent);background:var(--panel-alt)}
+    footer{padding-top:22px;padding-bottom:44px;color:var(--quiet);font-size:.84rem;line-height:1.65} footer code{overflow-wrap:anywhere;color:var(--ink)}
+    @media(max-width:800px){.artifact-header{grid-template-columns:1fr;gap:16px}.gallery-link{justify-self:start}th,td{padding:8px;font-size:.8rem}}
+    @media print{main,footer{width:100%;padding-inline:0}.artifact-frame{padding-inline:0}figure,.evidence{break-inside:avoid}a{color:inherit}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <main>
+    <article class="artifact-frame">
+      <header class="artifact-header">
+        <div><p class="kicker">deployment · CAP-T35</p><h1>Triển khai dịch vụ phê duyệt</h1><p class="meta">Neutral dark · motion=none · network-field</p></div>
+        <div><a class="gallery-link" href="../index.html">← Gallery index</a><p class="reading-copy">Đọc theo vùng, host, artifact và quan hệ runtime.</p></div>
+      </header>
+      <figure aria-label="Triển khai dịch vụ phê duyệt"><svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="p18-p18-c06-deploy-neutral-dark-title p18-p18-c06-deploy-neutral-dark-desc" lang="vi" data-case-id="P18-C06-DEPLOY" data-mode="neutral-dark">
+  <title id="p18-p18-c06-deploy-neutral-dark-title">Triển khai dịch vụ phê duyệt</title>
+  <desc id="p18-p18-c06-deploy-neutral-dark-desc">Đọc theo vùng, host, artifact và quan hệ runtime. Exact values and relations are repeated in the visible HTML ledger.</desc>
+  <style>
+    text { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; fill: #F1F5FA; }
+    .case { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; font-weight: 760; letter-spacing: 1.6px; fill: #74A9FF; }
+    .title { font-size: 44px; font-weight: 760; letter-spacing: -1px; }
+    .reading { font-size: 18px; font-weight: 500; fill: #B7C2D0; }
+    .section { font-size: 22px; font-weight: 750; }
+    .label { font-size: 20px; font-weight: 700; }
+    .small { font-size: 16px; font-weight: 560; fill: #B7C2D0; }
+    .tiny { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; font-weight: 620; fill: #B7C2D0; letter-spacing: .2px; }
+    .number { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 16px; font-weight: 760; font-variant-numeric: tabular-nums; }
+    .legend-heading { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 15px; font-weight: 760; letter-spacing: 2.3px; fill: #B7C2D0; }
+    .legend-label { font-size: 16px; font-weight: 620; fill: #B7C2D0; }
+    .legend-insight { font-size: 16px; font-style: italic; font-weight: 540; fill: #B7C2D0; }
+    .axis { stroke: #66758B; stroke-width: 1.5; }
+    .grid { stroke: #344155; stroke-width: 1; }
+    .route { fill: none; stroke: #A7B9CE; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; marker-end: url(#p18-p18-c06-deploy-neutral-dark-arrow); }
+    .route-accent { fill: none; stroke: #74A9FF; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; marker-end: url(#p18-p18-c06-deploy-neutral-dark-arrow-accent); }
+    .panel { fill: #1A2332; stroke: #66758B; stroke-width: 1.5; }
+    .panel-alt { fill: #222E40; stroke: #66758B; stroke-width: 1.2; }
+    .node { fill: #1A2332; stroke: #A7B9CE; stroke-width: 1.8; }
+    .node-accent { fill: #1A2332; stroke: #74A9FF; stroke-width: 2.4; }
+    </style>
+  
+    <defs>
+      <marker id="p18-p18-c06-deploy-neutral-dark-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 Z" fill="#A7B9CE"/></marker>
+      <marker id="p18-p18-c06-deploy-neutral-dark-arrow-accent" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 Z" fill="#74A9FF"/></marker>
+      <pattern id="p18-p18-c06-deploy-neutral-dark-hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="9" height="9" fill="#222E40"/><line x1="0" y1="0" x2="0" y2="9" stroke="#F0B86B" stroke-width="3" opacity=".55"/></pattern>
+      <pattern id="p18-p18-c06-deploy-neutral-dark-dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.35" fill="#344155" opacity=".34"/></pattern>
+    </defs>
+  <rect x="0" y="0" width="1440" height="900" fill="#111722"/>
+  <rect x="0" y="0" width="1440" height="900" fill="url(#p18-p18-c06-deploy-neutral-dark-dots)"/>
+  <rect x="28" y="34" width="1384" height="714" fill="none" stroke="none" data-semantic-field="true" data-profile="network-field"/>
+  <g class="semantic-composition" data-visual-intent="Gateway dẫn vào cụm ứng dụng rồi fan-out sang hai kho dữ liệu." transform="matrix(1.03 0 0 1.03 -21.6 -112)"><rect x="58" y="208" width="340" height="520" rx="24" class="panel-alt"/><text x="78.00" y="242.00" class="case" text-anchor="start" >EDGE</text><rect x="428" y="208" width="480" height="520" rx="24" class="panel-alt"/><text x="448.00" y="242.00" class="case" text-anchor="start" >APP</text><rect x="938" y="208" width="444" height="520" rx="24" class="panel-alt"/><text x="958.00" y="242.00" class="case" text-anchor="start" >DATA</text><path id="p18-p18-c06-deploy-neutral-dark-deploy-e01" class="route" d="M336 456 H455 V378 H485" data-edge-id="deploy-e01" data-source="deploy-gateway" data-target="deploy-approval"/><path id="p18-p18-c06-deploy-neutral-dark-deploy-e02" class="route" d="M675 360 H990" data-edge-id="deploy-e02" data-source="deploy-approval" data-target="deploy-postgres"/><path id="p18-p18-c06-deploy-neutral-dark-deploy-e03" class="route" d="M675 395 H920 V608 H1150" data-edge-id="deploy-e03" data-source="deploy-approval" data-target="deploy-store"/><path id="p18-p18-c06-deploy-neutral-dark-deploy-e04" class="route" d="M580 446 V520 H745 V540" data-edge-id="deploy-e04" data-source="deploy-approval" data-target="deploy-worker"/><path id="p18-p18-c06-deploy-neutral-dark-deploy-e05" class="route" d="M840 608 H1150" data-edge-id="deploy-e05" data-source="deploy-worker" data-target="deploy-store"/><g id="p18-p18-c06-deploy-neutral-dark-deploy-gateway" data-node-id="deploy-gateway"><rect x="126" y="390" width="210" height="132" rx="18" class="node"/><rect x="140" y="404" width="44" height="44" rx="12" fill="#74A9FF" fill-opacity=".16" stroke="#74A9FF"/><text x="162" y="433" class="number" text-anchor="middle">×2</text><text x="196.00" y="424.00" class="label" text-anchor="start" >gateway-a</text><text x="196.00" y="446.00" class="small" text-anchor="start" >api-gateway</text><text x="142.00" y="482.00" class="tiny" text-anchor="start" >Artifact: api-gateway</text><text x="142.00" y="506.00" class="tiny" text-anchor="start" >Port: 443</text></g><g id="p18-p18-c06-deploy-neutral-dark-deploy-approval" data-node-id="deploy-approval"><rect x="485" y="310" width="190" height="136" rx="18" class="node-accent"/><rect x="499" y="324" width="44" height="44" rx="12" fill="#74A9FF" fill-opacity=".16" stroke="#74A9FF"/><text x="521" y="353" class="number" text-anchor="middle">×3</text><text x="555.00" y="344.00" class="label" text-anchor="start" >app-a</text><text x="555.00" y="366.00" class="small" text-anchor="start" >approval-service</text><text x="501.00" y="402.00" class="tiny" text-anchor="start" >Artifact: approval-service</text><text x="501.00" y="426.00" class="tiny" text-anchor="start" >Port: 8443</text></g><g id="p18-p18-c06-deploy-neutral-dark-deploy-worker" data-node-id="deploy-worker"><rect x="650" y="540" width="190" height="136" rx="18" class="node"/><rect x="664" y="554" width="44" height="44" rx="12" fill="#74A9FF" fill-opacity=".16" stroke="#74A9FF"/><text x="686" y="583" class="number" text-anchor="middle">×2</text><text x="720.00" y="574.00" class="label" text-anchor="start" >worker-a</text><text x="720.00" y="596.00" class="small" text-anchor="start" >document-worker</text><text x="666.00" y="632.00" class="tiny" text-anchor="start" >Artifact: document-worker</text><text x="666.00" y="656.00" class="tiny" text-anchor="start" >Port: —</text></g><g id="p18-p18-c06-deploy-neutral-dark-deploy-postgres" data-node-id="deploy-postgres"><rect x="990" y="300" width="180" height="136" rx="18" class="node"/><rect x="1004" y="314" width="44" height="44" rx="12" fill="#74A9FF" fill-opacity=".16" stroke="#74A9FF"/><text x="1026" y="343" class="number" text-anchor="middle">×1</text><text x="1060.00" y="334.00" class="label" text-anchor="start" >db-a</text><text x="1060.00" y="356.00" class="small" text-anchor="start" >postgres</text><text x="1006.00" y="392.00" class="tiny" text-anchor="start" >Artifact: postgres</text><text x="1006.00" y="416.00" class="tiny" text-anchor="start" >Port: 5432</text></g><g id="p18-p18-c06-deploy-neutral-dark-deploy-store" data-node-id="deploy-store"><rect x="1150" y="540" width="180" height="136" rx="18" class="node"/><rect x="1164" y="554" width="44" height="44" rx="12" fill="#74A9FF" fill-opacity=".16" stroke="#74A9FF"/><text x="1186" y="583" class="number" text-anchor="middle">×2</text><text x="1220.00" y="574.00" class="label" text-anchor="start" >store-a</text><text x="1220.00" y="596.00" class="small" text-anchor="start" >object-store</text><text x="1166.00" y="632.00" class="tiny" text-anchor="start" >Artifact: object-store</text><text x="1166.00" y="656.00" class="tiny" text-anchor="start" >Port: 9000</text></g></g>
+  <g class="type-legend" data-type-legend="true" data-legend-top="770" data-legend-bottom="878"><line x1="54" y1="770" x2="1386" y2="770" stroke="#344155" stroke-width="1.5"/><text x="54" y="804" class="legend-heading">LEGEND</text><rect x="156" y="790" width="42" height="22" rx="7" fill="none" stroke="#66758B" stroke-width="2" stroke-dasharray="7 5"/><text x="212" y="807" class="legend-label">Zone / host</text><rect x="498" y="789" width="42" height="24" rx="7" fill="#1A2332" stroke="#A7B9CE" stroke-width="2"/><text x="554" y="807" class="legend-label">Runtime artifact</text><line x1="840" y1="801" x2="882" y2="801" stroke="#A7B9CE" stroke-width="3"/><path d="M882,801 L873,796 L873,806 Z" fill="#A7B9CE"/><text x="896" y="807" class="legend-label">Quan hệ runtime</text><text x="1386" y="852" class="legend-insight" text-anchor="end">Gateway dẫn vào cụm ứng dụng rồi fan-out sang hai kho dữ liệu.</text></g>
+</svg></figure>
+    </article>
+    <section class="evidence" aria-labelledby="ledger-title"><h2 id="ledger-title">Exact semantic and data ledger</h2><div class="table-wrap"><table><thead><tr><th scope="col">Zone</th><th scope="col">Host</th><th scope="col">Artifact</th><th scope="col">Replicas</th><th scope="col">Ports</th></tr></thead><tbody><tr><td>Edge</td><td>gateway-a</td><td>api-gateway</td><td>2</td><td>443</td></tr><tr><td>App</td><td>app-a</td><td>approval-service</td><td>3</td><td>8443</td></tr><tr><td>App</td><td>worker-a</td><td>document-worker</td><td>2</td><td>—</td></tr><tr><td>Data</td><td>db-a</td><td>postgres</td><td>1</td><td>5432</td></tr><tr><td>Data</td><td>store-a</td><td>object-store</td><td>2</td><td>9000</td></tr></tbody></table></div></section>
+  </main>
+  <footer>
+    <strong>QA-only owner-review candidate.</strong> Clean-room-oriented independent reimplementation; no upstream gallery, code, CSS, template or asset used.<br>
+    Case source SHA-256: <code>d30f67b71e5e743070e46f04cdfce7394d7b37b9108b1d6ac93d632b626e2687</code><br>
+    Source bundle SHA-256: <code>30fc0ce7c5721a21fbe42cf5dd742ef3b23895e6f45070069cfa7dc34c3388c2</code><br>
+    File identity: <code>gallery/deployment--neutral-dark.html</code>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,247 @@
+{
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0",
+  "date": "2026-08-27",
+  "excluded_immutable_artifacts": [
+    "evidence/p18/r5/",
+    "evidence/p18/r6/",
+    "dist/",
+    ".release-staging/"
+  ],
+  "file_count": 45,
+  "files": [
+    {
+      "path": "PROJECT-CONTRACT.md",
+      "sha256": "9d5e9c2d5556b3c43c69cf448926d43dc1a7fd48cde0bd977932e001d449ba2a",
+      "size": 88459
+    },
+    {
+      "path": "PLAN.md",
+      "sha256": "232bc714cbd782188f7e88e0b59905ea982b48446bea8e7c45ea184c2a2228a7",
+      "size": 61012
+    },
+    {
+      "path": "PHASE-GATES.md",
+      "sha256": "c7b178058826cb94c06faa883ceddd6794df6679b569d7981a886b6a756f4f0a",
+      "size": 40432
+    },
+    {
+      "path": "HANDOFF-CURRENT.md",
+      "sha256": "388016349ab49530a8e6d8c207d42612aa912e6a86ed33fd797b9f4e7fcb1399",
+      "size": 23455
+    },
+    {
+      "path": "thien-skill-creative-diagram/SKILL.md",
+      "sha256": "025b73b7e78ec04f3d6f42f4c1e745007708e758c1eb940367db3a144716aa20",
+      "size": 9206
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/gallery_renderer_v15.py",
+      "sha256": "a8cb0d71589652100ca0dc4953eb37a982c82a973a9a29b10e493e7edce6c36c",
+      "size": 50190
+    },
+    {
+      "path": "thien-skill-creative-diagram/scripts/tests/test_gallery_renderer_v15.py",
+      "sha256": "b20d19a1466908848d8fe6cdf4221d50965eb669e973d888651e57797f143bce",
+      "size": 13342
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+      "sha256": "3f97163543570c038f9d55b40b23e69daaf1bfafe498b36e4d229eaab6a9f44a",
+      "size": 9745
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/visual-coverage.md",
+      "sha256": "0dfc1b50a6db5868ad19e48257d754ee5433a13dae319f852d12b17b273a328f",
+      "size": 3916
+    },
+    {
+      "path": "evidence/p19/P-19B-DESIGN-CONTRACT.md",
+      "sha256": "623f183c80fd17fe70fd9dc0456417f70f0b94075e8481dbb3fa3618b5be55f1",
+      "size": 5806
+    },
+    {
+      "path": "evidence/p19/P-19B-EVIDENCE.md",
+      "sha256": "3cd3723122d586d59149a6ce2367eeeb4fbd4bedd106e8b307af6849f7e931d8",
+      "size": 6928
+    },
+    {
+      "path": "evidence/p19/P-19B-PROVENANCE.json",
+      "sha256": "76da17f02ad1740e65ffe0c12faefcdbc98f0db1fb3af4242fbccf71d6ede87e",
+      "size": 3460
+    },
+    {
+      "path": "evidence/p19/P-19B-BROWSER-VERIFICATION.json",
+      "sha256": "e39995cb6aa85496346ae471d62d7ff5585ef0fa00a567af4eb07cf2e4616903",
+      "size": 1768
+    },
+    {
+      "path": "evidence/p19/P-19B-STATIC-VERIFICATION.json",
+      "sha256": "e431b8a40cf5ac425bb881ece590952837b077a53cc081966d2489d5c73024c9",
+      "size": 4144
+    },
+    {
+      "path": "evidence/p19/P-19B-PLAN-MANIFEST.json",
+      "sha256": "264e69976ecf6b641bf319da1863b440aa6789f13c8a3413d279757aeb439724",
+      "size": 82761
+    },
+    {
+      "path": "evidence/p19/history/P19B-THREE-MODE-EXACT-129-HTML-1.5.0/INITIAL-CANDIDATE-LINEAGE.json",
+      "sha256": "d6dc0c4de97daf62042e2b9c28c1c017094d20ce1d33cdb5ea23a76851b03758",
+      "size": 696
+    },
+    {
+      "path": "evidence/p19/gallery/P-19B-INVENTORY.json",
+      "sha256": "40535bf3d25c5b9ac14ab5f4d97a9aefee2d9fa1548d8ba6db2b1bac900dde88",
+      "size": 82237
+    },
+    {
+      "path": "evidence/p19/gallery/P-19B-MANIFEST.json",
+      "sha256": "6bd265fbfe1bb06b7d2d15ea1f432b3282e03efa838b8ce10773b09025046df1",
+      "size": 35164
+    },
+    {
+      "path": "evidence/p19/source/generate_p19b_gallery.py",
+      "sha256": "882635611bfb202af48ac9dd79324c18a53d3ddd21838882340448639ca3849a",
+      "size": 10848
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b.py",
+      "sha256": "03181e5450d82058d906260e0e5f2e85937f0b4b5d239b563fda53b511a18378",
+      "size": 12127
+    },
+    {
+      "path": "evidence/p19/source/build_p19b_manifests.py",
+      "sha256": "fa7456a3707ac98e0b6f59b1a8b68d15a91b487dca165bc5bbdd0642fa17b3b3",
+      "size": 5552
+    },
+    {
+      "path": "evidence/p19/source/archive_p19b_review01.py",
+      "sha256": "9d3f7cf62b2259651059891e6a49d7b50724d2abdad9e42c3634b82625cc7644",
+      "size": 2794
+    },
+    {
+      "path": "evidence/p19/source/verify_p19b_review02.py",
+      "sha256": "f66f962f24fe5a58766a539ad3f997da426820d7492d257d321f88923ca4b14d",
+      "size": 5466
+    },
+    {
+      "path": "evidence/p19/P-19B-REVIEW-02-VERIFICATION.json",
+      "sha256": "7da897fd241beef9cad43c023a8efc99a8fe83ee529c59a40e07f1a78e069bb9",
+      "size": 5812
+    },
+    {
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0/ARCHIVE-RECEIPT.json",
+      "sha256": "dee3448d692371ebed5b628bd6dfb16f0828e9772244502d9ac52f2d07853a27",
+      "size": 325529
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/dp-integration-defect.png",
+      "sha256": "556162f598ca56d3eefed78678cb11349faf88b2f51099dbf983821bed2f4a64",
+      "size": 188781
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/swimlane-defect.png",
+      "sha256": "5dffb2166c4ccff3ebf8bb2919201789dd53647917cec06864fc8873521161b0",
+      "size": 148853
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--editorial.png",
+      "sha256": "9f65fc64306b8cc3abebd1b9b245957402f4e405b1b22820a095f118415c3337",
+      "size": 91532
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--neutral-dark.png",
+      "sha256": "1128291672b30156f3e0d4df79db1dd431a12ca1aaf77ca2aff73e1d8bf332f9",
+      "size": 91112
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-dp-integration--neutral-light.png",
+      "sha256": "748fedba41d444b11883957eb9665769b5065d312d53343431bb52a2ced154b1",
+      "size": 92751
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--editorial--straight-proof.png",
+      "sha256": "785d75888ff4cfbc59fc65a49b23e3805203918cc2527369deb6b2b87f4a121e",
+      "size": 84057
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--editorial.png",
+      "sha256": "eeb66a902b1ff3f6c2e3f5fde60bcc50487ab0f50674363bbf2b9ec9f4a9a8a6",
+      "size": 86006
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-dark--straight-proof.png",
+      "sha256": "03b320c4cf83210da2cdb3020d786bbadb7a8efe782f3aee770ed3e5154e2108",
+      "size": 83067
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-dark.png",
+      "sha256": "cf1e21e6e0466ddbdf6716cbc35608fc98688fb469adcefaed9e3992953200f9",
+      "size": 85012
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-light--straight-proof.png",
+      "sha256": "7c7b8b3da22983a0eb52c239d834f0fe6458bd2f718acbb8d1b494792c94547e",
+      "size": 85001
+    },
+    {
+      "path": "evidence/p19/review02-checks/rasters/type-swimlane--neutral-light.png",
+      "sha256": "19b33948d93f5255573521ae369e507fd320df2e869b924bc9f97dcc542cfd55",
+      "size": 86909
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--editorial.svg",
+      "sha256": "bed87bbc504668219f8c4d64bf71eb80ab53da792882a9bfade7f488be68a4cd",
+      "size": 8423
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-dark.svg",
+      "sha256": "344dac30ddfcd6929980fe2ea3e30f8849bdb9981bd0113357dfd7e5c3959f27",
+      "size": 8438
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-light.svg",
+      "sha256": "72d0779e073b4b5cbded9a54351553fe8f272f033582faaa25e91f964a768d89",
+      "size": 8443
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial--straight-proof.svg",
+      "sha256": "d000bbff9174ec4b3481cf9659f912d85e7808f7974e38362bc0b8395b5c5377",
+      "size": 8181
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial.svg",
+      "sha256": "cb45ce283d8c6d95199a759480344da217ce1fed4d69c3be6396a841dbb0d265",
+      "size": 8214
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark--straight-proof.svg",
+      "sha256": "b6fb994a5cfcf888b2bf0e6b2a4e264a30dbfc88525732bed64dd77bdfb41e3c",
+      "size": 8196
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark.svg",
+      "sha256": "248c5c36fed68aedadcb21ce6076a41e932af860c852dda94c08dec72b3e645e",
+      "size": 8229
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light--straight-proof.svg",
+      "sha256": "9f592c6d2d337ec1299335cef5ea896dc265f47fa8ed33f3c196414364b1b093",
+      "size": 8201
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light.svg",
+      "sha256": "ed650f9b3e16bae65561462ec81b103f03285b591b82887083f279dc16e3ce9e",
+      "size": 8234
+    }
+  ],
+  "generated_gallery": {
+    "gallery_manifest_sha256": "6bd265fbfe1bb06b7d2d15ea1f432b3282e03efa838b8ce10773b09025046df1",
+    "preview_svg_count": 43,
+    "specimen_html_count": 129
+  },
+  "schema_version": "1.1",
+  "status": "in-progress-owner-review-pending",
+  "visual_parent_candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+  "visual_parent_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a"
+}

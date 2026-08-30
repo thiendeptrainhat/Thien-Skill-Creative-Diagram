@@ -72,7 +72,7 @@ Use semantic evidence only. Candidate order is an explicit upstream decision, no
 - Ask when another viable candidate is marked `materially_distinct`.
 - Select a `medium` candidate only when alternatives preserve the same relations; record a bounded assumption.
 - Record all rejected alternatives and their supplied rejection reasons.
-- Never create a type outside the canonical 27-type enum.
+- Never create a type outside the canonical 39-type enum. `CAP-V17..V20` remain variants under Bar, Line, and Scatter rather than types 40–43.
 
 For data-lake requests, the upstream semantic adapter must distinguish Medallion tier promotion, DP-integration topology, and High-Level stage/layer overview. If more than one story remains viable and materially distinct, return clarification rather than inventing another type.
 
@@ -98,6 +98,7 @@ Validate both structure and these common invariants before type-specific work:
 - every route evidence entry begins with `request:` or identifies an existing source item as `source:<id>:`;
 - every variant ID matches the approved `CAP-*` identifier form;
 - numeric values are finite, and supplied date-time strings are parseable;
+- structured P-17 members, placement, work, journey, strategy, story, distribution, flow amount/unit, and member-level relation fields are validated as inert data;
 - unknown fields fail rather than being ignored.
 
 Type-specific direction, cardinality, reachability, domain, scale, and semantic-role checks belong to P-05 grammars and are not implemented here.

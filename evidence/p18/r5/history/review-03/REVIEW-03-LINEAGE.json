@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R5",
+  "review": "review-03",
+  "status": "historical-superseded-for-owner-approval",
+  "authority": "D-057",
+  "original_manifest": {
+    "path": "evidence/p18/r5/history/review-03/P-18R5-MANIFEST.json",
+    "sha256": "0e4c047c0254228a9e43ce98f87901b4d6e7a4e1bf845bd6d3906684cfae031e"
+  },
+  "owner_finding": {
+    "summary": "The crossing silhouette is accepted, but a visible hairline gap remains where each open hop meets its straight connector shoulders.",
+    "cause": "The wide round-capped underlay covered the base route beyond both hop endpoints while the narrower repaint ended at the mathematical endpoints."
+  },
+  "review_04_repair": [
+    "Use one shared path generator for the route-integrated hop and its repaint layer.",
+    "Restrict the underlay to the central crown so it cannot erase either shoulder-to-hop join.",
+    "Add structural and browser assertions for shared geometry and endpoint continuity."
+  ],
+  "immutability": "This directory preserves the exact frozen review-03 candidate and is not an active output surface."
+}

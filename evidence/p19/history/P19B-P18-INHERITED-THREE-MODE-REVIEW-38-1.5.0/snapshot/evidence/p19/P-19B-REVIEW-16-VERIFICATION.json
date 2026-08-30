@@ -1,0 +1,42 @@
+{
+  "alternative_exact_24_value_table": "PASS",
+  "archived_files_verified": 338,
+  "arrow_free_axes": "PASS",
+  "authority": "D-096",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-16-1.5.0",
+  "focus_areas": 1,
+  "gallery_manifest_sha256": "36ab7a7e3d21820ef6a11ec92ff4bb52f13eaf7a2b22d2ba3cb05ca2f6f35a7f",
+  "line_chart_html_changed": 3,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_color_series_redundancy": "PASS",
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "points": 24,
+  "prior_html_artwork_preserved": 87,
+  "prior_preview_svg_byte_identical": 29,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-light.svg",
+      "sha256": "c87b0808b4d298d35aa6824b0d7f2fb26adcceb63ba80d02051b4402b7bdaa09"
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-dark.svg",
+      "sha256": "8364adeea77a99884c8242254b4180cda478b95a7abb9641270893df5d429c06"
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--editorial.svg",
+      "sha256": "d8093e631e2e780c4ad7b211f24c529d6a4290e4358cf6bf438984ba883fec22"
+    },
+    {
+      "path": "evidence/p19/review16-checks/type-line-chart--neutral-light.svg.png",
+      "sha256": "9f2539683100a1a214af8534f384d800db679c3702afce5e0425277192dfb3d9",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 5779,
+  "series": 3,
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "ticks": 6
+}

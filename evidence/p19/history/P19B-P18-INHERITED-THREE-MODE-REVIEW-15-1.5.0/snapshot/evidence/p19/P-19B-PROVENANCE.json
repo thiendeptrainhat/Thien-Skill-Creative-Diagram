@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.1",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-15-1.5.0",
+  "authority": "D-084/D-085/D-086/D-087/D-088/D-089/D-090/D-091/D-092/D-093/D-094/D-095",
+  "implementation_description": "clean-room-oriented independent reimplementation with direct inheritance from the project's owner-approved P-18 artifact",
+  "historical_predecessor": {
+    "candidate_id": "P19B-THREE-MODE-EXACT-129-HTML-1.5.0",
+    "disposition": "owner-rejected visual direction; historical technical evidence only",
+    "archive": "evidence/p19/history/P19B-THREE-MODE-EXACT-129-HTML-1.5.0/",
+    "gallery_manifest_sha256": "ed6a14521a1277143bece89deac732cec607a9c5d1738d593e52498191a3b106"
+  },
+  "visual_parent": {
+    "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+    "manifest_path": "evidence/p18/r6/P-18R6-MANIFEST.json",
+    "manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+    "inheritance": [
+      "semantic visual roles",
+      "warm-paper/coral/navy palette grammar",
+      "Georgia/Avenir Next/Menlo typography roles",
+      "spacing, radii, frame, node, connector, grid and legend grammar"
+    ],
+    "copied_external_asset": false
+  },
+  "functional_source": {
+    "repository": "cathrynlavery/diagram-design",
+    "exact_snapshot": "648c2a597839301e06df1e7434a08bde9f42eed3",
+    "use": "taxonomy, abstract behavior and failure-mode learning only",
+    "copied_code_prose_css_template_gallery_asset": false
+  },
+  "design_process_source": {
+    "name": "Thien-UI-UX-Ultra",
+    "use": "routing, reference analysis, design contract, design judgment and verification workflow only",
+    "copied_code_script_template_asset": false
+  },
+  "canonical_inputs": [
+    "thien-skill-creative-diagram/scripts/visual_adapters_v15.py",
+    "thien-skill-creative-diagram/scripts/tests/semantic_fixtures.py",
+    "evidence/p18/r6/P-18R6-MANIFEST.json",
+    "evidence/p18/r6/source/gallery_kernel.py",
+    "evidence/p19/source/gantt_review03_fixture.py",
+    "evidence/p19/source/flywheel_review04_fixture.py",
+    "evidence/p19/source/bar_chart_review08_fixture.py",
+    "evidence/p19/source/dp_security_matrix_review09_fixture.py",
+    "evidence/p19/source/er_data_model_review10_fixture.py",
+    "evidence/p19/source/high_level_review12_fixture.py",
+    "evidence/p19/source/it_current_state_review13_fixture.py",
+    "evidence/p19/source/kanban_review14_fixture.py",
+    "evidence/p19/source/layers_review15_fixture.py",
+    "evidence/p19/source/p19_scope.py"
+  ],
+  "original_outputs": [
+    "thien-skill-creative-diagram/scripts/gallery_renderer_v15.py",
+    "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+    "evidence/p19/gallery/specimens/",
+    "evidence/p19/gallery/previews/",
+    "evidence/p19/gallery/index.html",
+    "thien-skill-creative-diagram/scripts/gantt_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/flywheel_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/bar_chart_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/dp_security_matrix_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/er_data_model_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/high_level_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/it_current_state_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/kanban_layout_v15.py",
+    "thien-skill-creative-diagram/scripts/layers_layout_v15.py"
+  ],
+  "boundary": {
+    "qa_only": true,
+    "package_asset": false,
+    "p19c_freeze": false,
+    "owner_review": "pending",
+    "g04_evaluated": false,
+    "release_authorized": false
+  },
+  "review01_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0/snapshot/",
+    "gallery_manifest_sha256": "e866fb915a09973bb3a035b6659a0b98d66eeda4701031a4d5868cbaea803eec",
+    "plan_manifest_sha256": "b2f28352a6aa596880e07c9f34ff911b7bba8ac3a62710b3e8d38335eac8f1a2",
+    "source_manifest_sha256": "6c6b4fad02fdcfa2fa766d96a5b0407ac17da3a2e8f52130eb6cd8a44a83eca5",
+    "disposition": "historical; two owner-reported geometry defects"
+  },
+  "owner_reference_images": [
+    {
+      "path": "evidence/p19/review02-checks/owner-references/dp-integration-defect.png",
+      "sha256": "556162f598ca56d3eefed78678cb11349faf88b2f51099dbf983821bed2f4a64"
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/swimlane-defect.png",
+      "sha256": "5dffb2166c4ccff3ebf8bb2919201789dd53647917cec06864fc8873521161b0"
+    },
+    {
+      "path": "evidence/p19/review03-checks/owner-references/gantt-reference.png",
+      "sha256": "052a7e3294bc0695d9f2e94cc65763bb54ab5969798afa7718907f678d375fab",
+      "use": "abstract grouped-calendar hierarchy; no image embedding or content copying"
+    },
+    {
+      "path": "evidence/p19/review04-checks/owner-references/flywheel-reference.png",
+      "sha256": "f3b0a401ff3290559b123c9fb60a557a865d716cf21150e3bc5c1ba88c3a06ca",
+      "use": "abstract cyclic/shared-state hierarchy only; original text and geometry, no image embedding"
+    }
+  ],
+  "owner_reference_use": "QA-only references; no embedded instruction execution or package inclusion; D-082/D-083/D-087/D-088/D-089/D-090/D-092/D-093/D-094/D-095 illustrative data and geometry independently authored; D-091 inherits exact P-18 cardinality behavior; D-092/D-093 inherit exact P-18 connector policy; D-094 preserves frozen P-17 grammar and uses a targeted semantic annotation for the illustrative WIP breach; D-095 uses only ordered-band, abstraction-axis and focal-emphasis principles while keeping P-17/P-19A frozen; no reference logos, product names, prose, coordinates, CSS, SVG, template or assets copied",
+  "review02_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0/",
+    "gallery_manifest_sha256": "6bd265fbfe1bb06b7d2d15ea1f432b3282e03efa838b8ce10773b09025046df1",
+    "plan_manifest_sha256": "264e69976ecf6b641bf319da1863b440aa6789f13c8a3413d279757aeb439724",
+    "source_manifest_sha256": "005ac2a733313e826ebe34379af4088ed2419e6fd478dab53b91e23b1e023b69",
+    "disposition": "historical before authorized Gantt-only redesign"
+  },
+  "review03_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0/",
+    "gallery_manifest_sha256": "4ef32cfa8667c501e9449be67deb08dcd7074b27454fb9162b1e5855106d90c4",
+    "plan_manifest_sha256": "8e46a1be17835da76dbcac38a70e97a323283f5e33df4acf084eb661dffd9849",
+    "source_manifest_sha256": "d23b602b75e1849229f9718a06ba9abcd455c5e00247429d6cdbd6cb88f157af",
+    "disposition": "historical before authorized flywheel-only redesign"
+  },
+  "review04_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-04-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-04-1.5.0/",
+    "gallery_manifest_sha256": "976e57bb40524c3d1b9546babf02b473a0bfce03074eca58a8245c296564716c",
+    "plan_manifest_sha256": "3622ad185ccf880e100fc38d5c32b2ccf1ff2674dbbb2db1cf294e1a06a27fe9",
+    "source_manifest_sha256": "c07f482d876f85d58c277f08947faf8d9e06bf791c060e7c1c76a92eae1136d8"
+  },
+  "review14_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0/",
+    "gallery_manifest_sha256": "1ee5be8ff832fd19725270be8349479048d92662ceb69cd3437116f9e09acef6",
+    "plan_manifest_sha256": "64dd5516498bb70910ad8cb3397958f00d8c03214c31733a0e236d8231de992a",
+    "source_manifest_sha256": "a79cce1a9609bcb7729dc18fae6cdd92d117c596b42ec0c6dfd2dbda365b1cab",
+    "disposition": "historical before authorized Layers addition; not owner approval"
+  },
+  "approved_reuse": {
+    "policy": "14 exact P-18 originals, no duplicate P-19 render and no extra mode derivation",
+    "binding": "evidence/p19/gallery/P-19B-INVENTORY.json#reused_p18_anchors",
+    "withdrawal_receipt": "evidence/p19/withdrawn/review05-duplicates/WITHDRAWAL-RECEIPT.json",
+    "interrupted_sankey_draft": "retained in custody, not a complete or approved candidate"
+  }
+}

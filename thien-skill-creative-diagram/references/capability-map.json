@@ -947,6 +947,150 @@
     "status": "implemented-semantic-grammar",
     "test_id": "T-TYPE-27-SEM"
   },
+  "CAP-T28": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[polar-chart] plus validate_typed_ir",
+    "parents": [
+      "polar-chart"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-28-POS-01"
+  },
+  "CAP-T29": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[treemap] plus validate_typed_ir",
+    "parents": [
+      "treemap"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-29-POS-01"
+  },
+  "CAP-T30": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[sankey] plus validate_typed_ir",
+    "parents": [
+      "sankey"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-30-POS-01"
+  },
+  "CAP-T31": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[fishbone] plus validate_typed_ir",
+    "parents": [
+      "fishbone"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-31-POS-01"
+  },
+  "CAP-T32": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[wardley-map] plus validate_typed_ir",
+    "parents": [
+      "wardley-map"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-32-POS-01"
+  },
+  "CAP-T33": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[kanban] plus validate_typed_ir",
+    "parents": [
+      "kanban"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-33-POS-01"
+  },
+  "CAP-T34": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[user-journey] plus validate_typed_ir",
+    "parents": [
+      "user-journey"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-34-POS-01"
+  },
+  "CAP-T35": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[deployment] plus validate_typed_ir",
+    "parents": [
+      "deployment"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-35-POS-01"
+  },
+  "CAP-T36": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[dependency-graph] plus validate_typed_ir",
+    "parents": [
+      "dependency-graph"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-36-POS-01"
+  },
+  "CAP-T37": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[uml-class] plus validate_typed_ir",
+    "parents": [
+      "uml-class"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-37-POS-01"
+  },
+  "CAP-T38": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[story-map] plus validate_typed_ir",
+    "parents": [
+      "story-map"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-38-POS-01"
+  },
+  "CAP-T39": {
+    "class": "canonical-type",
+    "fallback": "needs-clarification or invalid; never substitute another type",
+    "implementation": "TYPE_GRAMMARS[database-schema] plus validate_typed_ir",
+    "parents": [
+      "database-schema"
+    ],
+    "phase_owner": "P-17",
+    "selector": "semantic route candidate",
+    "status": "implemented-semantic-grammar",
+    "test_id": "T-TYPE-39-POS-01"
+  },
   "CAP-V01": {
     "class": "variant",
     "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
@@ -1140,5 +1284,53 @@
     "selector": "explicit capability CAP-V16 or matching semantic profile",
     "status": "implemented-semantic-contract",
     "test_id": "T-VAR-CAP-V16-MAP"
+  },
+  "CAP-V17": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "two-value category and signed-gap semantic validator",
+    "parents": [
+      "bar-chart"
+    ],
+    "phase_owner": "P-17",
+    "selector": "explicit capability CAP-V17 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V17-POS-01"
+  },
+  "CAP-V18": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "two-state direction, rank, tie, and crossing validator",
+    "parents": [
+      "line-chart"
+    ],
+    "phase_owner": "P-17",
+    "selector": "explicit capability CAP-V18 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V18-POS-01"
+  },
+  "CAP-V19": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "shared-domain histogram or explicit-bandwidth Gaussian KDE validator",
+    "parents": [
+      "line-chart"
+    ],
+    "phase_owner": "P-17",
+    "selector": "explicit capability CAP-V19 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V19-POS-01"
+  },
+  "CAP-V20": {
+    "class": "variant",
+    "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
+    "implementation": "x/y/size and area-magnitude semantic validator",
+    "parents": [
+      "scatter-plot"
+    ],
+    "phase_owner": "P-17",
+    "selector": "explicit capability CAP-V20 or matching semantic profile",
+    "status": "implemented-semantic-contract",
+    "test_id": "T-VAR-CAP-V20-POS-01"
   }
 }

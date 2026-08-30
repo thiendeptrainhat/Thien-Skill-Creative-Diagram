@@ -1,0 +1,664 @@
+{
+  "adapters": [
+    {
+      "accessible_alternative": "ordered component and dependency list",
+      "adapter_id": "type:architecture",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "architecture",
+      "capability_id": null,
+      "connector_policy": "boundary ports with obstacle-aware orthogonal routes",
+      "layout_engine": "topology-and-zones",
+      "primary_mark": "bounded service node",
+      "semantic_focus": "trust boundaries and dependencies",
+      "silhouette": "trust-zone-topology"
+    },
+    {
+      "accessible_alternative": "system state and dependency table",
+      "adapter_id": "type:it-current-state",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "it-current-state",
+      "capability_id": null,
+      "connector_policy": "orthogonal integration routes",
+      "layout_engine": "topology-and-zones",
+      "primary_mark": "state-coded system node",
+      "semantic_focus": "current-state health and integration",
+      "silhouette": "health-layer-topology"
+    },
+    {
+      "accessible_alternative": "ordered step and branch list",
+      "adapter_id": "type:flowchart",
+      "artboard_profile": "tall_directed_flow",
+      "canonical_type": "flowchart",
+      "capability_id": null,
+      "connector_policy": "directed orthogonal branches with guard labels",
+      "layout_engine": "directed-flow-state",
+      "primary_mark": "semantic process shape",
+      "semantic_focus": "decision guards and terminal outcomes",
+      "silhouette": "start-decision-terminal-flow"
+    },
+    {
+      "accessible_alternative": "chronological message transcript",
+      "adapter_id": "type:sequence",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "sequence",
+      "capability_id": null,
+      "connector_policy": "ordered horizontal message routes",
+      "layout_engine": "lane-interaction",
+      "primary_mark": "lifeline with message rail",
+      "semantic_focus": "participant order and message chronology",
+      "silhouette": "lifeline-message-sequence"
+    },
+    {
+      "accessible_alternative": "state and transition table",
+      "adapter_id": "type:state-machine",
+      "artboard_profile": "tall_directed_flow",
+      "canonical_type": "state-machine",
+      "capability_id": null,
+      "connector_policy": "directed transition routes",
+      "layout_engine": "directed-flow-state",
+      "primary_mark": "state capsule",
+      "semantic_focus": "states and transitions",
+      "silhouette": "initial-state-terminal-flow"
+    },
+    {
+      "accessible_alternative": "entity and relationship table",
+      "adapter_id": "type:er-data-model",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "er-data-model",
+      "capability_id": null,
+      "connector_policy": "relationship lines with endpoint cardinality",
+      "layout_engine": "compartment-model",
+      "primary_mark": "entity compartment",
+      "semantic_focus": "entities and cardinalities",
+      "silhouette": "entity-cardinality-compartments"
+    },
+    {
+      "accessible_alternative": "chronological event list",
+      "adapter_id": "type:timeline",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "timeline",
+      "capability_id": null,
+      "connector_policy": "leader lines off a proportional rail",
+      "layout_engine": "time-planning",
+      "primary_mark": "event marker",
+      "semantic_focus": "chronology and event spacing",
+      "silhouette": "proportional-event-time-rail"
+    },
+    {
+      "accessible_alternative": "lane-by-step handoff table",
+      "adapter_id": "type:swimlane",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "swimlane",
+      "capability_id": null,
+      "connector_policy": "rounded orthogonal routes with integrated hops",
+      "layout_engine": "lane-interaction",
+      "primary_mark": "lane-owned activity",
+      "semantic_focus": "ownership, phase, and handoff",
+      "silhouette": "ownership-lane-handoff"
+    },
+    {
+      "accessible_alternative": "exact point coordinate table",
+      "adapter_id": "type:quadrant",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "quadrant",
+      "capability_id": null,
+      "connector_policy": "leaders only for direct labels",
+      "layout_engine": "spatial-matrix",
+      "primary_mark": "positioned point",
+      "semantic_focus": "relative position on two scales",
+      "silhouette": "two-axis-quadrant-field"
+    },
+    {
+      "accessible_alternative": "axis-by-series value table",
+      "adapter_id": "type:radar",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "radar",
+      "capability_id": null,
+      "connector_policy": "closed profile perimeter",
+      "layout_engine": "quantitative",
+      "primary_mark": "radial polygon",
+      "semantic_focus": "multivariate profile on disclosed scales",
+      "silhouette": "radial-multi-axis-profile"
+    },
+    {
+      "accessible_alternative": "category radius table",
+      "adapter_id": "type:polar-chart",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "polar-chart",
+      "capability_id": null,
+      "connector_policy": "closed only when the data contract requires it",
+      "layout_engine": "quantitative",
+      "primary_mark": "radial mark",
+      "semantic_focus": "cyclical category magnitude",
+      "silhouette": "angular-radius-cycle"
+    },
+    {
+      "accessible_alternative": "ordered cycle station list",
+      "adapter_id": "type:loop-flywheel",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "loop-flywheel",
+      "capability_id": null,
+      "connector_policy": "single-direction ring routes",
+      "layout_engine": "special-geometry",
+      "primary_mark": "cycle station",
+      "semantic_focus": "closed reinforcing cycle",
+      "silhouette": "cyclic-station-ring"
+    },
+    {
+      "accessible_alternative": "containment tree",
+      "adapter_id": "type:nested",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "nested",
+      "capability_id": null,
+      "connector_policy": "no connector unless semantics requires one",
+      "layout_engine": "containment-stack",
+      "primary_mark": "nested boundary",
+      "semantic_focus": "parent-child containment",
+      "silhouette": "nested-boundary-containment"
+    },
+    {
+      "accessible_alternative": "indented hierarchy",
+      "adapter_id": "type:tree",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "tree",
+      "capability_id": null,
+      "connector_policy": "ranked parent-child routes",
+      "layout_engine": "hierarchy",
+      "primary_mark": "hierarchy node",
+      "semantic_focus": "parent-child hierarchy",
+      "silhouette": "root-branch-leaf-tree"
+    },
+    {
+      "accessible_alternative": "reporting hierarchy",
+      "adapter_id": "type:org-chart",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "org-chart",
+      "capability_id": null,
+      "connector_policy": "straight parent-child reporting routes",
+      "layout_engine": "hierarchy",
+      "primary_mark": "role card",
+      "semantic_focus": "primary reporting structure",
+      "silhouette": "primary-reporting-tree"
+    },
+    {
+      "accessible_alternative": "ordered layer inventory",
+      "adapter_id": "type:layer-stack",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "layer-stack",
+      "capability_id": null,
+      "connector_policy": "cross-layer routes only",
+      "layout_engine": "containment-stack",
+      "primary_mark": "horizontal layer band",
+      "semantic_focus": "layer order and enforcement",
+      "silhouette": "ordered-control-layer-stack"
+    },
+    {
+      "accessible_alternative": "set membership matrix",
+      "adapter_id": "type:venn",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "venn",
+      "capability_id": null,
+      "connector_policy": "no connector; enclosure carries meaning",
+      "layout_engine": "spatial-matrix",
+      "primary_mark": "set region",
+      "semantic_focus": "set membership and overlap",
+      "silhouette": "set-overlap-field"
+    },
+    {
+      "accessible_alternative": "stage value table",
+      "adapter_id": "type:pyramid-funnel",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "pyramid-funnel",
+      "capability_id": null,
+      "connector_policy": "no connector; shared boundaries carry order",
+      "layout_engine": "containment-stack",
+      "primary_mark": "continuous triangular tier",
+      "semantic_focus": "ordered magnitude tiers",
+      "silhouette": "continuous-tiered-silhouette"
+    },
+    {
+      "accessible_alternative": "category value table",
+      "adapter_id": "type:bar-chart",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "bar-chart",
+      "capability_id": null,
+      "connector_policy": "no connector",
+      "layout_engine": "quantitative",
+      "primary_mark": "aligned bar",
+      "semantic_focus": "category magnitude on a shared baseline",
+      "silhouette": "zero-baseline-category-bars"
+    },
+    {
+      "accessible_alternative": "hierarchy and exact value table",
+      "adapter_id": "type:treemap",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "treemap",
+      "capability_id": null,
+      "connector_policy": "no connector; enclosure and area carry meaning",
+      "layout_engine": "quantitative",
+      "primary_mark": "area tile",
+      "semantic_focus": "hierarchical part-to-whole",
+      "silhouette": "hierarchical-area-tiling"
+    },
+    {
+      "accessible_alternative": "domain-by-series value table",
+      "adapter_id": "type:line-chart",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "line-chart",
+      "capability_id": null,
+      "connector_policy": "ordered series path",
+      "layout_engine": "quantitative",
+      "primary_mark": "series line",
+      "semantic_focus": "change over an ordered domain",
+      "silhouette": "ordered-series-lines"
+    },
+    {
+      "accessible_alternative": "task schedule table",
+      "adapter_id": "type:gantt",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "gantt",
+      "capability_id": null,
+      "connector_policy": "dependency routes outside bars",
+      "layout_engine": "time-planning",
+      "primary_mark": "time bar",
+      "semantic_focus": "task duration and dependency",
+      "silhouette": "task-duration-rail"
+    },
+    {
+      "accessible_alternative": "exact x-y table",
+      "adapter_id": "type:scatter-plot",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "scatter-plot",
+      "capability_id": null,
+      "connector_policy": "leaders only for selected labels",
+      "layout_engine": "quantitative",
+      "primary_mark": "positioned observation",
+      "semantic_focus": "relationship and outliers",
+      "silhouette": "xy-observation-field"
+    },
+    {
+      "accessible_alternative": "stage and governance summary",
+      "adapter_id": "type:high-level",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "high-level",
+      "capability_id": null,
+      "connector_policy": "simple left-to-right progression routes",
+      "layout_engine": "topology-and-zones",
+      "primary_mark": "bounded stage",
+      "semantic_focus": "stage progression with cross-cutting concerns",
+      "silhouette": "bounded-stage-overview"
+    },
+    {
+      "accessible_alternative": "ordered process record",
+      "adapter_id": "type:process",
+      "artboard_profile": "tall_directed_flow",
+      "canonical_type": "process",
+      "capability_id": null,
+      "connector_policy": "ordered directed routes",
+      "layout_engine": "directed-flow-state",
+      "primary_mark": "activity or artifact shape",
+      "semantic_focus": "activity-to-artifact progression",
+      "silhouette": "activity-artifact-process"
+    },
+    {
+      "accessible_alternative": "tier and promotion table",
+      "adapter_id": "type:medallion",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "medallion",
+      "capability_id": null,
+      "connector_policy": "promotion routes between tiers",
+      "layout_engine": "containment-stack",
+      "primary_mark": "tier band",
+      "semantic_focus": "data promotion through ordered tiers",
+      "silhouette": "tiered-promotion-stack"
+    },
+    {
+      "accessible_alternative": "lineage table",
+      "adapter_id": "type:data-flow",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "data-flow",
+      "capability_id": null,
+      "connector_policy": "left-to-right transfer routes",
+      "layout_engine": "integration-pipeline",
+      "primary_mark": "pipeline stage",
+      "semantic_focus": "source-transform-sink lineage",
+      "silhouette": "source-transform-sink-pipeline"
+    },
+    {
+      "accessible_alternative": "integration endpoint table",
+      "adapter_id": "type:dp-integration",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "dp-integration",
+      "capability_id": null,
+      "connector_policy": "boundary-aware integration routes",
+      "layout_engine": "integration-pipeline",
+      "primary_mark": "platform service stage",
+      "semantic_focus": "platform integration boundary",
+      "silhouette": "source-platform-consumer-pipeline"
+    },
+    {
+      "accessible_alternative": "permission matrix",
+      "adapter_id": "type:dp-security-matrix",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "dp-security-matrix",
+      "capability_id": null,
+      "connector_policy": "no connector; row-column position carries meaning",
+      "layout_engine": "spatial-matrix",
+      "primary_mark": "permission cell",
+      "semantic_focus": "permission state by actor and resource",
+      "silhouette": "actor-resource-permission-grid"
+    },
+    {
+      "accessible_alternative": "source-target-value flow table",
+      "adapter_id": "type:sankey",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "sankey",
+      "capability_id": null,
+      "connector_policy": "contiguous source-target ribbon",
+      "layout_engine": "special-geometry",
+      "primary_mark": "scaled ribbon",
+      "semantic_focus": "quantitative flow conservation",
+      "silhouette": "conserved-flow-ribbons"
+    },
+    {
+      "accessible_alternative": "cause category and effect list",
+      "adapter_id": "type:fishbone",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "fishbone",
+      "capability_id": null,
+      "connector_policy": "angled branches terminating on a shared spine",
+      "layout_engine": "special-geometry",
+      "primary_mark": "cause branch",
+      "semantic_focus": "grouped causes converging on one effect",
+      "silhouette": "cause-category-spine"
+    },
+    {
+      "accessible_alternative": "component coordinate and dependency table",
+      "adapter_id": "type:wardley-map",
+      "artboard_profile": "balanced_matrix_hierarchy",
+      "canonical_type": "wardley-map",
+      "capability_id": null,
+      "connector_policy": "dependency routes between positioned components",
+      "layout_engine": "spatial-matrix",
+      "primary_mark": "positioned component",
+      "semantic_focus": "value-chain position and evolution",
+      "silhouette": "value-chain-evolution-field"
+    },
+    {
+      "accessible_alternative": "column, WIP, and item table",
+      "adapter_id": "type:kanban",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "kanban",
+      "capability_id": null,
+      "connector_policy": "no connector by default",
+      "layout_engine": "work-experience",
+      "primary_mark": "work item card",
+      "semantic_focus": "work state, WIP, and blocked status",
+      "silhouette": "wip-columns-and-cards"
+    },
+    {
+      "accessible_alternative": "journey stage table",
+      "adapter_id": "type:user-journey",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "user-journey",
+      "capability_id": null,
+      "connector_policy": "stage progression rail",
+      "layout_engine": "work-experience",
+      "primary_mark": "journey moment",
+      "semantic_focus": "stage, action, touchpoint, and sentiment",
+      "silhouette": "moments-action-thought-emotion-grid"
+    },
+    {
+      "accessible_alternative": "zone-host-artifact table",
+      "adapter_id": "type:deployment",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "deployment",
+      "capability_id": null,
+      "connector_policy": "runtime routes between exact boundaries",
+      "layout_engine": "runtime-deployment",
+      "primary_mark": "deployed artifact",
+      "semantic_focus": "runtime placement and replicas",
+      "silhouette": "zone-host-artifact-containment"
+    },
+    {
+      "accessible_alternative": "dependency adjacency list",
+      "adapter_id": "type:dependency-graph",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "dependency-graph",
+      "capability_id": null,
+      "connector_policy": "ranked routes with cycle back-edge separation",
+      "layout_engine": "dependency-dag",
+      "primary_mark": "dependency node",
+      "semantic_focus": "rank, fan-in, and explicit cycles",
+      "silhouette": "ranked-dag-with-cycle-backedge"
+    },
+    {
+      "accessible_alternative": "class member and relationship table",
+      "adapter_id": "type:uml-class",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "uml-class",
+      "capability_id": null,
+      "connector_policy": "typed relationship routes with multiplicity",
+      "layout_engine": "compartment-model",
+      "primary_mark": "class compartment",
+      "semantic_focus": "classes, members, and typed relationships",
+      "silhouette": "class-member-relationship-compartments"
+    },
+    {
+      "accessible_alternative": "backbone and release-slice table",
+      "adapter_id": "type:story-map",
+      "artboard_profile": "wide_rail_lane",
+      "canonical_type": "story-map",
+      "capability_id": null,
+      "connector_policy": "no connector; row and cut position carry meaning",
+      "layout_engine": "work-experience",
+      "primary_mark": "story card",
+      "semantic_focus": "backbone order and release slices",
+      "silhouette": "backbone-stories-release-cut"
+    },
+    {
+      "accessible_alternative": "table, column, index, and key table",
+      "adapter_id": "type:database-schema",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "database-schema",
+      "capability_id": null,
+      "connector_policy": "column-bound foreign-key routes",
+      "layout_engine": "compartment-model",
+      "primary_mark": "table compartment",
+      "semantic_focus": "physical tables, columns, indexes, and foreign keys",
+      "silhouette": "table-column-index-compartments"
+    }
+  ],
+  "boundary": {
+    "creates_gallery": false,
+    "derives_visual_modes": false,
+    "emits_html_or_svg": false,
+    "next_authority_required": "P-19B"
+  },
+  "canonical_type_count": 39,
+  "capability_adapters": [
+    {
+      "accessible_alternative": "category, endpoint, and gap table",
+      "adapter_id": "capability:CAP-V17",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "bar-chart",
+      "capability_id": "CAP-V17",
+      "connector_policy": "one connector segment per category",
+      "layout_engine": "quantitative",
+      "primary_mark": "paired endpoint dots",
+      "semantic_focus": "two values and signed gap per category",
+      "silhouette": "paired-values-gap-dumbbell"
+    },
+    {
+      "accessible_alternative": "series endpoint, delta, and rank table",
+      "adapter_id": "capability:CAP-V18",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "line-chart",
+      "capability_id": "CAP-V18",
+      "connector_policy": "one segment per series",
+      "layout_engine": "quantitative",
+      "primary_mark": "direct-labeled slope",
+      "semantic_focus": "direction, rank, ties, and crossing between two states",
+      "silhouette": "two-state-rank-slopegraph"
+    },
+    {
+      "accessible_alternative": "series profile and exact sample table",
+      "adapter_id": "capability:CAP-V19",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "line-chart",
+      "capability_id": "CAP-V19",
+      "connector_policy": "no semantic connector",
+      "layout_engine": "quantitative",
+      "primary_mark": "offset density ridge",
+      "semantic_focus": "comparable distributions on one domain and amplitude contract",
+      "silhouette": "shared-domain-distribution-ridgeline"
+    },
+    {
+      "accessible_alternative": "exact x-y-size table",
+      "adapter_id": "capability:CAP-V20",
+      "artboard_profile": "landscape_network_data",
+      "canonical_type": "scatter-plot",
+      "capability_id": "CAP-V20",
+      "connector_policy": "leaders only for selected direct labels",
+      "layout_engine": "quantitative",
+      "primary_mark": "area-scaled bubble",
+      "semantic_focus": "x, y, and area-encoded magnitude",
+      "silhouette": "xy-area-observation-bubble"
+    }
+  ],
+  "capability_count": 4,
+  "layout_engine_count": 14,
+  "layout_engines": [
+    {
+      "canonical_types": [
+        "architecture",
+        "it-current-state",
+        "high-level"
+      ],
+      "capabilities": [],
+      "id": "topology-and-zones"
+    },
+    {
+      "canonical_types": [
+        "data-flow",
+        "dp-integration"
+      ],
+      "capabilities": [],
+      "id": "integration-pipeline"
+    },
+    {
+      "canonical_types": [
+        "deployment"
+      ],
+      "capabilities": [],
+      "id": "runtime-deployment"
+    },
+    {
+      "canonical_types": [
+        "dependency-graph"
+      ],
+      "capabilities": [],
+      "id": "dependency-dag"
+    },
+    {
+      "canonical_types": [
+        "flowchart",
+        "process",
+        "state-machine"
+      ],
+      "capabilities": [],
+      "id": "directed-flow-state"
+    },
+    {
+      "canonical_types": [
+        "swimlane",
+        "sequence"
+      ],
+      "capabilities": [],
+      "id": "lane-interaction"
+    },
+    {
+      "canonical_types": [
+        "timeline",
+        "gantt"
+      ],
+      "capabilities": [],
+      "id": "time-planning"
+    },
+    {
+      "canonical_types": [
+        "kanban",
+        "user-journey",
+        "story-map"
+      ],
+      "capabilities": [],
+      "id": "work-experience"
+    },
+    {
+      "canonical_types": [
+        "tree",
+        "org-chart"
+      ],
+      "capabilities": [],
+      "id": "hierarchy"
+    },
+    {
+      "canonical_types": [
+        "nested",
+        "layer-stack",
+        "medallion",
+        "pyramid-funnel"
+      ],
+      "capabilities": [],
+      "id": "containment-stack"
+    },
+    {
+      "canonical_types": [
+        "er-data-model",
+        "database-schema",
+        "uml-class"
+      ],
+      "capabilities": [],
+      "id": "compartment-model"
+    },
+    {
+      "canonical_types": [
+        "quadrant",
+        "dp-security-matrix",
+        "wardley-map",
+        "venn"
+      ],
+      "capabilities": [],
+      "id": "spatial-matrix"
+    },
+    {
+      "canonical_types": [
+        "bar-chart",
+        "line-chart",
+        "scatter-plot",
+        "radar",
+        "polar-chart",
+        "treemap"
+      ],
+      "capabilities": [
+        "CAP-V17",
+        "CAP-V18",
+        "CAP-V19",
+        "CAP-V20"
+      ],
+      "id": "quantitative"
+    },
+    {
+      "canonical_types": [
+        "loop-flywheel",
+        "sankey",
+        "fishbone"
+      ],
+      "capabilities": [],
+      "id": "special-geometry"
+    }
+  ],
+  "phase": "P-19A",
+  "schema_version": "1.0",
+  "target_version": "1.5.0"
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R5",
+  "anchor_id": "P18R5-SWIMLANE-NEUTRAL-LIGHT",
+  "browser": "Google Chrome",
+  "engine": "Chromium via existing Playwright runtime",
+  "status": "PASS",
+  "run_count": 3,
+  "pass_count": 3,
+  "fail_count": 0,
+  "console_errors": [],
+  "external_requests": [],
+  "screenshot": "review/swimlane--neutral-light.png",
+  "artifact_sha256": "e304e256e807c7e1cb93c274098d75f50a9fdca74ccc0cc86334e661a8fb1fcc",
+  "results": [
+    {
+      "viewport": "canonical",
+      "width": 3700,
+      "height": 1900,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 3186,
+        "svgHeight": 1435.09375,
+        "scale": 0.9993977509090408,
+        "humanFont": "Avenir Next",
+        "monoFont": "Menlo",
+        "titleSize": 24,
+        "materialSize": 16,
+        "monoSize": 14,
+        "nodeCount": 7,
+        "edgeCount": 7,
+        "labelCount": 4,
+        "bridgeCount": 3,
+        "bridgeGapCount": 0,
+        "bridgeUnderlayCount": 3,
+        "bridgeHopCount": 3,
+        "integratedRouteCount": 7,
+        "bridgePitchMin": null,
+        "portDotCount": 0,
+        "adaptiveTitleLines": {
+          "card-cash": [
+            "Kiểm đếm và đối chiếu"
+          ],
+          "card-ledger-post": [
+            "Đăng bảng kê tổng hợp"
+          ]
+        },
+        "externalResourceElements": 0
+      }
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 626.109375,
+        "scale": 0.4360209898818477,
+        "humanFont": "Avenir Next",
+        "monoFont": "Menlo",
+        "titleSize": 24,
+        "materialSize": 16,
+        "monoSize": 14,
+        "nodeCount": 7,
+        "edgeCount": 7,
+        "labelCount": 4,
+        "bridgeCount": 3,
+        "bridgeGapCount": 0,
+        "bridgeUnderlayCount": 3,
+        "bridgeHopCount": 3,
+        "integratedRouteCount": 7,
+        "bridgePitchMin": null,
+        "portDotCount": 0,
+        "adaptiveTitleLines": {
+          "card-cash": [
+            "Kiểm đếm và đối chiếu"
+          ],
+          "card-ledger-post": [
+            "Đăng bảng kê tổng hợp"
+          ]
+        },
+        "externalResourceElements": 0
+      }
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 163.953125,
+        "scale": 0.11418103619927522,
+        "humanFont": "Avenir Next",
+        "monoFont": "Menlo",
+        "titleSize": 24,
+        "materialSize": 16,
+        "monoSize": 14,
+        "nodeCount": 7,
+        "edgeCount": 7,
+        "labelCount": 4,
+        "bridgeCount": 3,
+        "bridgeGapCount": 0,
+        "bridgeUnderlayCount": 3,
+        "bridgeHopCount": 3,
+        "integratedRouteCount": 7,
+        "bridgePitchMin": null,
+        "portDotCount": 0,
+        "adaptiveTitleLines": {
+          "card-cash": [
+            "Kiểm đếm và đối chiếu"
+          ],
+          "card-ledger-post": [
+            "Đăng bảng kê tổng hợp"
+          ]
+        },
+        "externalResourceElements": 0
+      }
+    }
+  ]
+}

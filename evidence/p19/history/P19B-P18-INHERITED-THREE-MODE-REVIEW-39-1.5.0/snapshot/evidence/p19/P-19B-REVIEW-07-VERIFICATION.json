@@ -1,0 +1,34 @@
+{
+  "alternative_semantic_table": "PASS",
+  "archived_files_verified": 216,
+  "authority": "D-087",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-07-1.5.0",
+  "containment_and_endpoint_bindings": "PASS",
+  "directed_edge_count": 11,
+  "dp_integration_html_changed": 3,
+  "gallery_manifest_sha256": "c14b60885655ae859b6a44c735a91428029aac716ce23d8852281e4ade247fad",
+  "node_count": 11,
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "platform_group_count": 1,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-light.svg",
+      "sha256": "723d9bba9445178e1d8cb5e369b86a6ff77279c7660e37cb1345705340407876"
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--neutral-dark.svg",
+      "sha256": "0692389a65cea3f3d47cad7e2d70675cf3034106d6bbc332b8a53b029f7333f7"
+    },
+    {
+      "path": "evidence/p19/review07-checks/type-dp-integration--editorial.svg",
+      "sha256": "8b3ee298eb2355d52b917c3c9de896c1490c0a1804d35e1b6bd8d6c06527d936"
+    }
+  ],
+  "protected_files_verified": 3336,
+  "status": "PASS",
+  "three_mode_geometry": "PASS"
+}

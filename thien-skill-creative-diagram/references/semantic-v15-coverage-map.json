@@ -1,0 +1,370 @@
+{
+  "canonical_additions": 12,
+  "capabilities": {
+    "CAP-T28": {
+      "parents": [
+        "polar-chart"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-28-POS-01",
+        "T-TYPE-28-BOUND-01",
+        "T-TYPE-28-HARD-01",
+        "T-TYPE-28-RENDER-01",
+        "T-TYPE-28-A11Y-01",
+        "T-QUANT-POLAR-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-POLAR-QUANT-01": "implemented-p17",
+        "T-TYPE-28-A11Y-01": "implemented-p17",
+        "T-TYPE-28-BOUND-01": "implemented-p17",
+        "T-TYPE-28-HARD-01": "implemented-p17",
+        "T-TYPE-28-POS-01": "implemented-p17",
+        "T-TYPE-28-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T29": {
+      "parents": [
+        "treemap"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-29-POS-01",
+        "T-TYPE-29-BOUND-01",
+        "T-TYPE-29-HARD-01",
+        "T-TYPE-29-RENDER-01",
+        "T-TYPE-29-A11Y-01",
+        "T-QUANT-TREEMAP-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-TREEMAP-QUANT-01": "implemented-p17",
+        "T-TYPE-29-A11Y-01": "implemented-p17",
+        "T-TYPE-29-BOUND-01": "implemented-p17",
+        "T-TYPE-29-HARD-01": "implemented-p17",
+        "T-TYPE-29-POS-01": "implemented-p17",
+        "T-TYPE-29-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T30": {
+      "parents": [
+        "sankey"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-30-POS-01",
+        "T-TYPE-30-BOUND-01",
+        "T-TYPE-30-HARD-01",
+        "T-TYPE-30-RENDER-01",
+        "T-TYPE-30-A11Y-01",
+        "T-QUANT-SANKEY-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-SANKEY-QUANT-01": "implemented-p17",
+        "T-TYPE-30-A11Y-01": "implemented-p17",
+        "T-TYPE-30-BOUND-01": "implemented-p17",
+        "T-TYPE-30-HARD-01": "implemented-p17",
+        "T-TYPE-30-POS-01": "implemented-p17",
+        "T-TYPE-30-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T31": {
+      "parents": [
+        "fishbone"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-31-POS-01",
+        "T-TYPE-31-BOUND-01",
+        "T-TYPE-31-HARD-01",
+        "T-TYPE-31-RENDER-01",
+        "T-TYPE-31-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-31-A11Y-01": "implemented-p17",
+        "T-TYPE-31-BOUND-01": "implemented-p17",
+        "T-TYPE-31-HARD-01": "implemented-p17",
+        "T-TYPE-31-POS-01": "implemented-p17",
+        "T-TYPE-31-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T32": {
+      "parents": [
+        "wardley-map"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-32-POS-01",
+        "T-TYPE-32-BOUND-01",
+        "T-TYPE-32-HARD-01",
+        "T-TYPE-32-RENDER-01",
+        "T-TYPE-32-A11Y-01",
+        "T-QUANT-WARDLEY-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-WARDLEY-QUANT-01": "implemented-p17",
+        "T-TYPE-32-A11Y-01": "implemented-p17",
+        "T-TYPE-32-BOUND-01": "implemented-p17",
+        "T-TYPE-32-HARD-01": "implemented-p17",
+        "T-TYPE-32-POS-01": "implemented-p17",
+        "T-TYPE-32-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T33": {
+      "parents": [
+        "kanban"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-33-POS-01",
+        "T-TYPE-33-BOUND-01",
+        "T-TYPE-33-HARD-01",
+        "T-TYPE-33-RENDER-01",
+        "T-TYPE-33-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-33-A11Y-01": "implemented-p17",
+        "T-TYPE-33-BOUND-01": "implemented-p17",
+        "T-TYPE-33-HARD-01": "implemented-p17",
+        "T-TYPE-33-POS-01": "implemented-p17",
+        "T-TYPE-33-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T34": {
+      "parents": [
+        "user-journey"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-34-POS-01",
+        "T-TYPE-34-BOUND-01",
+        "T-TYPE-34-HARD-01",
+        "T-TYPE-34-RENDER-01",
+        "T-TYPE-34-A11Y-01",
+        "T-QUANT-JOURNEY-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-JOURNEY-QUANT-01": "implemented-p17",
+        "T-TYPE-34-A11Y-01": "implemented-p17",
+        "T-TYPE-34-BOUND-01": "implemented-p17",
+        "T-TYPE-34-HARD-01": "implemented-p17",
+        "T-TYPE-34-POS-01": "implemented-p17",
+        "T-TYPE-34-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T35": {
+      "parents": [
+        "deployment"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-35-POS-01",
+        "T-TYPE-35-BOUND-01",
+        "T-TYPE-35-HARD-01",
+        "T-TYPE-35-RENDER-01",
+        "T-TYPE-35-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-35-A11Y-01": "implemented-p17",
+        "T-TYPE-35-BOUND-01": "implemented-p17",
+        "T-TYPE-35-HARD-01": "implemented-p17",
+        "T-TYPE-35-POS-01": "implemented-p17",
+        "T-TYPE-35-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T36": {
+      "parents": [
+        "dependency-graph"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-36-POS-01",
+        "T-TYPE-36-BOUND-01",
+        "T-TYPE-36-HARD-01",
+        "T-TYPE-36-RENDER-01",
+        "T-TYPE-36-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-36-A11Y-01": "implemented-p17",
+        "T-TYPE-36-BOUND-01": "implemented-p17",
+        "T-TYPE-36-HARD-01": "implemented-p17",
+        "T-TYPE-36-POS-01": "implemented-p17",
+        "T-TYPE-36-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T37": {
+      "parents": [
+        "uml-class"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-37-POS-01",
+        "T-TYPE-37-BOUND-01",
+        "T-TYPE-37-HARD-01",
+        "T-TYPE-37-RENDER-01",
+        "T-TYPE-37-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-37-A11Y-01": "implemented-p17",
+        "T-TYPE-37-BOUND-01": "implemented-p17",
+        "T-TYPE-37-HARD-01": "implemented-p17",
+        "T-TYPE-37-POS-01": "implemented-p17",
+        "T-TYPE-37-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T38": {
+      "parents": [
+        "story-map"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-38-POS-01",
+        "T-TYPE-38-BOUND-01",
+        "T-TYPE-38-HARD-01",
+        "T-TYPE-38-RENDER-01",
+        "T-TYPE-38-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-38-A11Y-01": "implemented-p17",
+        "T-TYPE-38-BOUND-01": "implemented-p17",
+        "T-TYPE-38-HARD-01": "implemented-p17",
+        "T-TYPE-38-POS-01": "implemented-p17",
+        "T-TYPE-38-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-T39": {
+      "parents": [
+        "database-schema"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-TYPE-39-POS-01",
+        "T-TYPE-39-BOUND-01",
+        "T-TYPE-39-HARD-01",
+        "T-TYPE-39-RENDER-01",
+        "T-TYPE-39-A11Y-01"
+      ],
+      "test_status": {
+        "T-TYPE-39-A11Y-01": "implemented-p17",
+        "T-TYPE-39-BOUND-01": "implemented-p17",
+        "T-TYPE-39-HARD-01": "implemented-p17",
+        "T-TYPE-39-POS-01": "implemented-p17",
+        "T-TYPE-39-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-V17": {
+      "parents": [
+        "bar-chart"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-VAR-CAP-V17-POS-01",
+        "T-VAR-CAP-V17-BOUND-01",
+        "T-VAR-CAP-V17-HARD-01",
+        "T-VAR-CAP-V17-RENDER-01",
+        "T-VAR-CAP-V17-A11Y-01",
+        "T-VAR-CAP-V17-HARD-PARENT-01",
+        "T-QUANT-DUMBBELL-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-DUMBBELL-QUANT-01": "implemented-p17",
+        "T-VAR-CAP-V17-A11Y-01": "implemented-p17",
+        "T-VAR-CAP-V17-BOUND-01": "implemented-p17",
+        "T-VAR-CAP-V17-HARD-01": "implemented-p17",
+        "T-VAR-CAP-V17-HARD-PARENT-01": "implemented-p17",
+        "T-VAR-CAP-V17-POS-01": "implemented-p17",
+        "T-VAR-CAP-V17-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-V18": {
+      "parents": [
+        "line-chart"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-VAR-CAP-V18-POS-01",
+        "T-VAR-CAP-V18-BOUND-01",
+        "T-VAR-CAP-V18-HARD-01",
+        "T-VAR-CAP-V18-RENDER-01",
+        "T-VAR-CAP-V18-A11Y-01",
+        "T-VAR-CAP-V18-HARD-PARENT-01",
+        "T-QUANT-SLOPE-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-SLOPE-QUANT-01": "implemented-p17",
+        "T-VAR-CAP-V18-A11Y-01": "implemented-p17",
+        "T-VAR-CAP-V18-BOUND-01": "implemented-p17",
+        "T-VAR-CAP-V18-HARD-01": "implemented-p17",
+        "T-VAR-CAP-V18-HARD-PARENT-01": "implemented-p17",
+        "T-VAR-CAP-V18-POS-01": "implemented-p17",
+        "T-VAR-CAP-V18-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-V19": {
+      "parents": [
+        "line-chart"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-VAR-CAP-V19-POS-01",
+        "T-VAR-CAP-V19-BOUND-01",
+        "T-VAR-CAP-V19-HARD-01",
+        "T-VAR-CAP-V19-RENDER-01",
+        "T-VAR-CAP-V19-A11Y-01",
+        "T-VAR-CAP-V19-HARD-PARENT-01",
+        "T-QUANT-RIDGE-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-RIDGE-QUANT-01": "implemented-p17",
+        "T-VAR-CAP-V19-A11Y-01": "implemented-p17",
+        "T-VAR-CAP-V19-BOUND-01": "implemented-p17",
+        "T-VAR-CAP-V19-HARD-01": "implemented-p17",
+        "T-VAR-CAP-V19-HARD-PARENT-01": "implemented-p17",
+        "T-VAR-CAP-V19-POS-01": "implemented-p17",
+        "T-VAR-CAP-V19-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    },
+    "CAP-V20": {
+      "parents": [
+        "scatter-plot"
+      ],
+      "render_status": "deferred-to-p18-or-p19",
+      "semantic_status": "implemented-p17",
+      "test_ids": [
+        "T-VAR-CAP-V20-POS-01",
+        "T-VAR-CAP-V20-BOUND-01",
+        "T-VAR-CAP-V20-HARD-01",
+        "T-VAR-CAP-V20-RENDER-01",
+        "T-VAR-CAP-V20-A11Y-01",
+        "T-VAR-CAP-V20-HARD-PARENT-01",
+        "T-QUANT-BUBBLE-QUANT-01"
+      ],
+      "test_status": {
+        "T-QUANT-BUBBLE-QUANT-01": "implemented-p17",
+        "T-VAR-CAP-V20-A11Y-01": "implemented-p17",
+        "T-VAR-CAP-V20-BOUND-01": "implemented-p17",
+        "T-VAR-CAP-V20-HARD-01": "implemented-p17",
+        "T-VAR-CAP-V20-HARD-PARENT-01": "implemented-p17",
+        "T-VAR-CAP-V20-POS-01": "implemented-p17",
+        "T-VAR-CAP-V20-RENDER-01": "deferred-to-p18-or-p19"
+      }
+    }
+  },
+  "new_variants": 4,
+  "schema_version": "1.0",
+  "target_version": "1.5.0"
+}

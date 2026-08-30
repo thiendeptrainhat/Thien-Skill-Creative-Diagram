@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+  "date": "2026-08-27",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059",
+    "D-060",
+    "D-061",
+    "D-062",
+    "D-063",
+    "D-064",
+    "D-065",
+    "D-066",
+    "D-067",
+    "D-068",
+    "D-069",
+    "D-070",
+    "D-071",
+    "D-072",
+    "D-073",
+    "D-074",
+    "D-075",
+    "D-076"
+  ],
+  "scope": "QA-only evidence/p18/r6; no runtime/package/dist/publication/Git/Release mutation",
+  "generator": {
+    "path": "evidence/p18/r6/source/generate_p18r6.py",
+    "bytes": 21420,
+    "sha256": "750f258d5d3f728ebdf7693b7c6ab5d5a7bc6f0f19022c499064513377cf8cd6"
+  },
+  "kernel": {
+    "path": "evidence/p18/r6/source/gallery_kernel.py",
+    "bytes": 92304,
+    "sha256": "5a175cbc78c969cbaa36fc66ebaa1a3d3bb6b0efedd33aa4f20f2804d61b0811"
+  },
+  "parent_kernel": {
+    "path": "evidence/p18/r5/source/master_visual_kernel.py",
+    "bytes": 43031,
+    "sha256": "dad5b26039fbeb9df9aa02d58f21d8a084d96973491802617bcddb47da800311"
+  },
+  "engine_count": 14,
+  "html_anchor_count": 14,
+  "svg_anchor_count": 14,
+  "visual_mode": "neutral-light",
+  "deterministic_regeneration": true,
+  "r5_parent_manifest_sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+  "r5_swimlane_source_sha256": "a0d3949d177daebca0c84070b18d8366a025025261d03a7e03896550beb8253c",
+  "r5_parent_and_swimlane_source_preserved_exactly": true,
+  "r6_lane_svg_byte_identical_to_r5": false,
+  "r6_lane_local_extension_D066": true,
+  "font_receipt": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed"
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    }
+  },
+  "connector_corner_style_receipt": {
+    "scope": "whole-chart",
+    "engines": [
+      "topology-and-zones",
+      "integration-pipeline",
+      "runtime-deployment",
+      "dependency-dag"
+    ],
+    "default": "rounded",
+    "allowed": [
+      "rounded",
+      "straight"
+    ],
+    "explicit_user_choice_precedence": true,
+    "rounded_example": "M 0.00 0.00 L 0.00 26.00 Q 0.00 40.00 14.00 40.00 L 40.00 40.00",
+    "straight_example": "M 0.00 0.00 L 0.00 40.00 L 40.00 40.00"
+  },
+  "diagram_10_annotation_gap_receipt": {
+    "metric": "bbox-left-at-vertical-center-to-outer-triangle-right-edge",
+    "target_px": 72.0,
+    "maximum_tolerance_px": 0.01,
+    "note_count": 4,
+    "x_source": "outer-triangle geometry plus one shared target"
+  },
+  "diagram_06_phase_coverage_receipt": {
+    "authority": "D-066",
+    "phase_count": 6,
+    "phase_order": [
+      "CHUẨN BỊ",
+      "NHẬN BỘ",
+      "PHÂN LOẠI",
+      "GỬI NGÂN HÀNG",
+      "CẬP NHẬT NỢ",
+      "ĐĂNG SỔ"
+    ],
+    "r5_source_preserved_exactly": true,
+    "r6_local_extension": true
+  },
+  "diagram_11_schema_geometry_receipt": {
+    "authority": [
+      "D-066",
+      "D-069",
+      "D-070"
+    ],
+    "top_row_center_alignment": true,
+    "order_item_centered_under_order": true,
+    "minimum_bottom_padding_px": 24,
+    "minimum_relationship_label_node_clearance_px": 8,
+    "relationship_names": [
+      "PLACES",
+      "PAID BY",
+      "CONTAINS"
+    ],
+    "relationship_name_placement": {
+      "horizontal": "above",
+      "vertical": "right"
+    },
+    "cardinality_labels_separate_from_relationship_names": true,
+    "cardinality_per_relationship": {
+      "source": "1",
+      "target": "N"
+    },
+    "cardinality_placement": "inline-on-connector-axis",
+    "cardinality_knockout": {
+      "fill_role": "canvas",
+      "stroke": "none",
+      "along_line_padding_px": 8,
+      "perpendicular_padding_px": 4,
+      "minimum_node_clearance_px": 8,
+      "paint_order": "connector then knockout then label"
+    },
+    "maximum_axis_alignment_error_px": 0.06
+  },
+  "diagram_12_axis_annotation_receipt": {
+    "authority": "D-067",
+    "note_count": 4,
+    "notes": [
+      "↑ HIGH IMPACT",
+      "← LOW EFFORT",
+      "↓ LOW IMPACT",
+      "HIGH EFFORT →"
+    ],
+    "vertical_note_offset_x_px": 24,
+    "horizontal_note_offset_y_px": 42,
+    "minimum_axis_clearance_px": 16,
+    "measured_bbox_required": true,
+    "review_08_semantic_field_preserved": true
+  },
+  "diagram_12_focal_region_receipt": {
+    "authority": "D-068",
+    "fill_role": "accent-soft",
+    "stroke": "none",
+    "transparent_or_zero_opacity_stroke_allowed": false,
+    "geometry_preserved_from_review_09": true,
+    "d067_axis_annotations_preserved": true
+  },
+  "diagram_14_sankey_geometry_receipt": {
+    "authority": "D-072",
+    "inherited_authority": "D-071",
+    "total_minutes": 12000,
+    "scale_px_per_minute": 0.025,
+    "node_interface_occupancy": "100%",
+    "ribbon_interval_policy": "gapless and non-overlapping on every applicable node interface",
+    "node_label_placement": "above",
+    "node_label_alignment": "centered on node bar",
+    "node_corner_style": "square",
+    "rounded_bar_allowed": false,
+    "top_row_alignment": "top",
+    "top_row_y_px": 210.0,
+    "top_row_node_ids": [
+      "budget",
+      "unit",
+      "passed"
+    ],
+    "top_row_max_spread_px": 0.01,
+    "conservation": {
+      "stages": "5200 + 4000 + 2800 = 12000",
+      "outcomes": "9400 + 1600 + 1000 = 12000"
+    }
+  },
+  "diagram_14_sankey_five_second_receipt": {
+    "authority": "D-076",
+    "focal_ribbon": "unit-flaked",
+    "focal_value_minutes": 1000,
+    "total_value_minutes": 12000,
+    "focal_share_percent": 8.3,
+    "direct_annotation": "FLAKED RERUNS · 1,000 / 12,000 MIN · 8.3% OF BUDGET",
+    "quantitative_geometry_preserved_from_review_16": true,
+    "focal_ribbon_minimum_opacity": 0.8,
+    "non_focal_ribbon_maximum_opacity": 0.5
+  },
+  "diagram_04_08_09_band_alignment_receipt": {
+    "authority": "D-073",
+    "engines": [
+      "dependency-dag",
+      "work-experience",
+      "hierarchy"
+    ],
+    "separator_role": "semantic band boundary",
+    "member_alignment": "card/icon bbox center-y equals owning band midpoint",
+    "maximum_static_center_error_px": 0.01,
+    "maximum_browser_center_error_px": 0.75,
+    "separator_member_intersection_allowed": false,
+    "minimum_separator_clearance_px": {
+      "dependency-dag": 22,
+      "work-experience": 27,
+      "hierarchy": 58
+    },
+    "diagram_04_bands": [
+      "RANK 0",
+      "RANK 1",
+      "RANK 2",
+      "RANK 3"
+    ],
+    "diagram_08_bands": [
+      "ACTION",
+      "THOUGHT",
+      "EMOTION"
+    ],
+    "diagram_09_bands": [
+      "1 FRONT DOOR",
+      "4 DOMAINS",
+      "5 SPECIALIST PODS"
+    ],
+    "non_target_anchor_pairs_byte_identical_to_review_14": true
+  },
+  "diagram_09_hierarchy_five_second_receipt": {
+    "authority": "D-076",
+    "visible_count_hierarchy": [
+      "1 FRONT DOOR",
+      "4 DOMAINS",
+      "5 SPECIALIST PODS"
+    ],
+    "front_door_count": 1,
+    "domain_count": 4,
+    "specialist_pod_count": 5,
+    "node_and_connector_geometry_preserved_from_review_16": true
+  },
+  "diagram_13_axis_origin_receipt": {
+    "authority": "D-074",
+    "engine": "quantitative",
+    "canonical_type": "scatter-plot",
+    "axis_ids": [
+      "automation",
+      "control-confidence"
+    ],
+    "origin_arrowhead": "none",
+    "svg_marker_attributes_allowed_on_axes": false,
+    "data_points_preserved": true,
+    "scales_labels_bubbles_legend_preserved": true,
+    "non_target_anchor_pairs_byte_identical_to_review_15": true
+  },
+  "full_regression": "148/148 PASS",
+  "network_or_install_action": false
+}

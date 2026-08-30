@@ -1,0 +1,45 @@
+{
+  "alternative_exact_eight_window_table": "PASS",
+  "archived_files_verified": 362,
+  "arrow_free_spokes": "PASS",
+  "authority": "D-098",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-18-1.5.0",
+  "endpoint_markers": 8,
+  "gallery_manifest_sha256": "76efaa1ae64ca8ffcdaf7245de173e215065c263d66613cc762c4524919dd865",
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_color_peak_redundancy": "PASS",
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "polar_chart_html_changed": 3,
+  "prior_html_artwork_preserved": 87,
+  "prior_preview_svg_byte_identical": 29,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-light.svg",
+      "sha256": "9cf7df1d57b0b777bb49033d89f021086118f5e5deb5497e85b65246262cfb0a"
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-dark.svg",
+      "sha256": "db2a67aa42a46848c6406f45406a068fe69009427d3ff8a98b4850caa3f0b449"
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--editorial.svg",
+      "sha256": "fd102867306eba0ad1f65ac4df70c29fbe27dec00fcd6d27bff9252d637b6d1c"
+    },
+    {
+      "path": "evidence/p19/review18-checks/type-polar-chart--neutral-light.svg.png",
+      "sha256": "ec82be874c43fadc2963f73057f395bed3da6809b96553fcc13e94af125861a0",
+      "visually_inspected": true
+    }
+  ],
+  "proportional_radial_geometry": "PASS",
+  "protected_files_verified": 6469,
+  "radial_spokes": 8,
+  "radial_ticks": 5,
+  "series": 1,
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "unique_peak": 1,
+  "utc_windows": 8
+}

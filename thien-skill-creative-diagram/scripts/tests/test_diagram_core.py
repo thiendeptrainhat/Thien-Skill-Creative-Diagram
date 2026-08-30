@@ -215,9 +215,9 @@ class RequestTests(unittest.TestCase):
 
 
 class RoutingTests(unittest.TestCase):
-    def test_router_accepts_exactly_the_27_canonical_type_ids(self):
-        self.assertEqual(len(CANONICAL_TYPES), 27)
-        self.assertEqual(len(set(CANONICAL_TYPES)), 27)
+    def test_router_accepts_exactly_the_39_canonical_type_ids(self):
+        self.assertEqual(len(CANONICAL_TYPES), 39)
+        self.assertEqual(len(set(CANONICAL_TYPES)), 39)
         for diagram_type in CANONICAL_TYPES:
             parsed = base_parsed()
             parsed["route_candidates"] = [

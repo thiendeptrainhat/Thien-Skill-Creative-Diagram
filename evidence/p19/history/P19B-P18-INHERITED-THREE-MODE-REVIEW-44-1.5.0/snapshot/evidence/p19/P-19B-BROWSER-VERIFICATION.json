@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-122, retaining D-084–D-121 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B dumbbell identity and detailed paired-comparison repair; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-42 preserves the approved template while replacing only CAP-V17 with a detailed twelve-row dumbbell chart. The neutral-light 2000×1160 proof was rasterized locally and visually inspected; all 12 straight pair connectors and 24 endpoints are visible, statistical bands remain subordinate, the focal pair is explicit, and no label is clipped. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review42-checks/dumbbell.svg.png",
+    "sha256": "51fa0e1634a67ce19f3f45a7f340a9611d812ad358c2a5cf05be886e819291a1",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

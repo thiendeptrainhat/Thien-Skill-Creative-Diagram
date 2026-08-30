@@ -1,0 +1,81 @@
+{
+  "candidate_binding": {
+    "aggregate_sha256": "4a3f4aa4a6a740a706cc1389a1f25d4257f3d32d25cda3736d581a351de9f577",
+    "plan_manifest_sha256": "c47a66f9555492207c3676ffd8d3f66c4d6688571d63c77b9284afcf0ebc6361",
+    "reference_sha256": "aa31d6dc96b4934414ca7786fe8a4dd1f84c691d709c73f8007dd86dab6c685b",
+    "source_manifest_sha256": "87a5ef0fdb7f2903490f67be757662139eb9dffe8ffd6a111547583fba6d8ae0"
+  },
+  "candidate_id": "P19A-THIRTY-NINE-PLUS-FOUR-ADAPTERS-1.5.0",
+  "date": "2026-08-27",
+  "immutable_integrity": {
+    "actual": {
+      "dist/SHA256SUMS.txt": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596",
+      "dist/thien-skill-creative-diagram-1.0.0-claude-plugin.zip": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+      "dist/thien-skill-creative-diagram-1.0.0-openai-plugin.zip": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+      "dist/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f",
+      "p18r5_review04_manifest": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+      "p18r6_review17_manifest": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a"
+    },
+    "expected": {
+      "dist/SHA256SUMS.txt": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596",
+      "dist/thien-skill-creative-diagram-1.0.0-claude-plugin.zip": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+      "dist/thien-skill-creative-diagram-1.0.0-openai-plugin.zip": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+      "dist/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f",
+      "p18r5_review04_manifest": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+      "p18r6_review17_manifest": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a"
+    },
+    "status": "PASS"
+  },
+  "phase_boundary": {
+    "p19a": "passed",
+    "p19b": "not-started / unauthorized",
+    "p19c": "not-started / unauthorized",
+    "package_git_release": "not authorized and not performed"
+  },
+  "plan_manifest": {
+    "canonical_plan_count": 39,
+    "capability_plan_count": 4,
+    "plan_count": 43
+  },
+  "registry": {
+    "canonical_adapters": 39,
+    "capability_adapters": 4,
+    "layout_engines": 14,
+    "unique_silhouettes": 43
+  },
+  "schema_version": "1.0",
+  "source_file_count": 15,
+  "static_checks": {
+    "browser": {
+      "reason": "P-19A emits no executable web artifact; this is not a browser PASS.",
+      "status": "not run (out of scope)"
+    },
+    "json_parse": {
+      "count": 3,
+      "status": "PASS"
+    },
+    "p19a_emitted_html_svg_css": {
+      "count": 0,
+      "status": "PASS"
+    },
+    "python_ast": {
+      "count": 4,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS",
+  "tests": {
+    "focused": {
+      "returncode": 0,
+      "status": "PASS",
+      "summary": "OK",
+      "test_count": 14
+    },
+    "full_regression": {
+      "returncode": 0,
+      "status": "PASS",
+      "summary": "OK",
+      "test_count": 162
+    }
+  }
+}

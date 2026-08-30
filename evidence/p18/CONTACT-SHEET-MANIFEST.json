@@ -1,0 +1,82 @@
+{
+  "candidate_manifest_id": "P18-PILOT-1.5.0-VISUAL-CRAFT-REPLACEMENT",
+  "candidate_source_bundle_sha256": "30fc0ce7c5721a21fbe42cf5dd742ef3b23895e6f45070069cfa7dc34c3388c2",
+  "layout": "3 columns × 4 rows; artifact-frame crop; ledger/provenance excluded",
+  "phase": "P-18R2",
+  "schema_version": "2.0",
+  "sheet_count": 3,
+  "sheets": [
+    {
+      "columns": 3,
+      "height": 2350,
+      "mode": "neutral-light",
+      "path": "evidence/p18/contact-sheets/neutral-light.jpg",
+      "rows": 4,
+      "sha256": "aac72fe3128d1dfb37f0e4b10124b72312ed6d3f963587135b6b9a8ca9f2a471",
+      "source_capture_count": 12,
+      "source_files": [
+        "architecture--neutral-light.png",
+        "swimlane--neutral-light.png",
+        "sankey--neutral-light.png",
+        "treemap--neutral-light.png",
+        "wardley-map--neutral-light.png",
+        "deployment--neutral-light.png",
+        "user-journey--neutral-light.png",
+        "fishbone--neutral-light.png",
+        "dumbbell--neutral-light.png",
+        "slopegraph--neutral-light.png",
+        "ridgeline--neutral-light.png",
+        "bubble--neutral-light.png"
+      ],
+      "width": 2400
+    },
+    {
+      "columns": 3,
+      "height": 2350,
+      "mode": "neutral-dark",
+      "path": "evidence/p18/contact-sheets/neutral-dark.jpg",
+      "rows": 4,
+      "sha256": "dcec583160fdd93885fe03ad14ef4b7fb5c6e489835ae0823533a0caf1e553d6",
+      "source_capture_count": 12,
+      "source_files": [
+        "architecture--neutral-dark.png",
+        "swimlane--neutral-dark.png",
+        "sankey--neutral-dark.png",
+        "treemap--neutral-dark.png",
+        "wardley-map--neutral-dark.png",
+        "deployment--neutral-dark.png",
+        "user-journey--neutral-dark.png",
+        "fishbone--neutral-dark.png",
+        "dumbbell--neutral-dark.png",
+        "slopegraph--neutral-dark.png",
+        "ridgeline--neutral-dark.png",
+        "bubble--neutral-dark.png"
+      ],
+      "width": 2400
+    },
+    {
+      "columns": 3,
+      "height": 2350,
+      "mode": "editorial",
+      "path": "evidence/p18/contact-sheets/editorial.jpg",
+      "rows": 4,
+      "sha256": "63c2c64edc9b0b43b67c53bfe40fed16e08bc0eb0831e1b43ba54e052cf01661",
+      "source_capture_count": 12,
+      "source_files": [
+        "architecture--editorial.png",
+        "swimlane--editorial.png",
+        "sankey--editorial.png",
+        "treemap--editorial.png",
+        "wardley-map--editorial.png",
+        "deployment--editorial.png",
+        "user-journey--editorial.png",
+        "fishbone--editorial.png",
+        "dumbbell--editorial.png",
+        "slopegraph--editorial.png",
+        "ridgeline--editorial.png",
+        "bubble--editorial.png"
+      ],
+      "width": 2400
+    }
+  ]
+}

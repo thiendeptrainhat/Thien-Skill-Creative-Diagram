@@ -1,0 +1,21 @@
+{
+  "approved_p18_anchor_pairs_hash_verified": 14,
+  "archived_files_verified": 253,
+  "authority": "D-084/D-085",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-05-1.5.0",
+  "capabilities_retained": 4,
+  "combined_canonical_type_count": 39,
+  "gallery_manifest_sha256": "fe8d1ec697c140f867ae476774373b0194f7c851004734e57aa2f285eb960e11",
+  "owner_approval": "pending",
+  "p18_extra_mode_derivation": "not-performed",
+  "p19_mode_count": 3,
+  "p19c": "not-performed",
+  "protected_files_verified": 2808,
+  "retained_html_unchanged_except_candidate_id": 87,
+  "retained_preview_svg_byte_identical": 29,
+  "status": "PASS",
+  "withdrawn_files_recoverable": 56,
+  "withdrawn_html": 42,
+  "withdrawn_previews": 14
+}

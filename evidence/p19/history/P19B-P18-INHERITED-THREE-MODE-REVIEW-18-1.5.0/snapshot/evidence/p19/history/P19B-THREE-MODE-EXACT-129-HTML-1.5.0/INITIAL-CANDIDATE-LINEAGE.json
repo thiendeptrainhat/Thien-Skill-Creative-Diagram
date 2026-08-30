@@ -1,0 +1,13 @@
+{
+  "candidate_id": "P19B-THREE-MODE-EXACT-129-HTML-1.5.0",
+  "disposition": "owner-rejected-visual-direction; superseded-for-owner-approval-and-golden-purpose",
+  "authority": "D-080",
+  "date": "2026-08-27",
+  "gallery_manifest_sha256": "ed6a14521a1277143bece89deac732cec607a9c5d1738d593e52498191a3b106",
+  "plan_manifest_sha256": "59edd733dc180d8274a31ab91bc5f89b3450fefe9dc80c2101aa2ebee204b40f",
+  "source_manifest_sha256": "44cdbe31b7aa715ff88d617274cf0e49cd6c9eb1aac8cb11fa46ce753fa3188c",
+  "technical_evidence_status": "historical-pass",
+  "owner_visual_approval_status": "FAIL",
+  "successor_candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0",
+  "mutation_allowed": false
+}

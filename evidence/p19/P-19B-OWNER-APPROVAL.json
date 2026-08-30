@@ -1,0 +1,25 @@
+{
+  "authority": "D-126",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-45-1.5.0",
+  "date": "2026-08-30",
+  "decision": "OWNER_APPROVED_ALL_P19_DIAGRAMS",
+  "p18_coexistence": {
+    "disposition": "RETAIN_EXACT_AND_SEPARATE",
+    "manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+    "neutral_light_anchor_count": 14,
+    "replacement_by_p19_forbidden": true
+  },
+  "p19_gallery": {
+    "html_count": 93,
+    "preview_count": 31,
+    "gallery_manifest_sha256": "ae95aca927ec69904483441db6b85de0381c1c1d85f4f01ee07a21a40aed0ba2"
+  },
+  "combined_view": {
+    "p18_count": 14,
+    "p19_count": 93,
+    "total_count": 107
+  },
+  "p19b_status": "passed-owner-approved",
+  "p19c_authorized": false,
+  "package_or_release_authorized": false
+}

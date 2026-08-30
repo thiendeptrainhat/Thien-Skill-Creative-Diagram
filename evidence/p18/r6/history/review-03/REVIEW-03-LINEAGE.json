@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "review": "review-03",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-03-1.5.0",
+  "disposition": "HISTORICAL_SUPERSEDED_BY_OWNER_DIRECTED_P18R6_REVIEW_04_CONTAINMENT_REMEDIATION",
+  "authority": [
+    "D-059",
+    "D-060",
+    "D-061",
+    "D-062"
+  ],
+  "source_manifest_sha256": "572de899399755268d63fa5cb49c598a6ee6c5d509418ed8d07484a750c62e54",
+  "archived_manifest_sha256": "572de899399755268d63fa5cb49c598a6ee6c5d509418ed8d07484a750c62e54",
+  "manifest_file_count": 60,
+  "all_manifest_bound_bytes_verified": true,
+  "scope": "QA-only historical evidence; never a golden or package asset"
+}

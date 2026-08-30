@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-107, retaining D-084–D-106 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B thin-stroke centered tree remediation; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-27 changes only the stroke weight in three tree HTML files plus one neutral-light tree preview. Connector 1.6, regular card 1.8 and focal root 2.2 are locked; all emitted geometry elements remain byte-equivalent to archived review-26. The neutral-light proof was rasterized locally and visually inspected. Eighty-seven non-target HTML artworks and 29 non-target previews are preserved. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review27-checks/type-tree.svg.png",
+    "sha256": "3663df2899e87996e53f71cde3a1f1e34d58057eded494c9f64a4d5d8367c1af",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

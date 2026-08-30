@@ -1,0 +1,2705 @@
+{
+  "aggregate_excludes_generated_manifest": true,
+  "candidate": "TCD-RELEASE-2.0.0-RC1",
+  "changed_file_count": 241,
+  "changed_files": [
+    {
+      "mirror_sha256": "b87a5c02b38533d911dcd09b242406d8c02bd9fd11575ecd9c9c5338f061e792",
+      "path": "HANDOFF-P01.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "workspace"
+        },
+        {
+          "count": 1,
+          "replacement_id": "ui_ux_reference"
+        },
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        }
+      ],
+      "source_sha256": "e3648b4d8273ca3f7bf88557842897978bf3f527b838eef66c57ad84cc27b06f"
+    },
+    {
+      "mirror_sha256": "5af3714f306c9d1e095b574a712320a9bf9caa340f3fcc242767446c64b885cc",
+      "path": "PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        },
+        {
+          "count": 1,
+          "replacement_id": "owner_license_template"
+        }
+      ],
+      "source_sha256": "e5ee859e247e9c54addd93262efba2f1a30b2ac4525b4eb7050627fa99453bc9"
+    },
+    {
+      "mirror_sha256": "3d8558b97ee0fa639dccc8c69bad14e9a200daeab3d0f45517047bfd0cee8e58",
+      "path": "evidence/p01/SNAPSHOT-RECORD.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "ui_ux_reference"
+        }
+      ],
+      "source_sha256": "f6544d36e078a0dae784fd1b63881df907d484b9bd79f8a2a3ee8ecea2480a6f"
+    },
+    {
+      "mirror_sha256": "ec956a8507c532917ab7226ba2a44bc0a050ffa1d5c3adc0344167675e4ba732",
+      "path": "evidence/p09/P-09-EVIDENCE.md",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_logo_source"
+        }
+      ],
+      "source_sha256": "89ac01ae05b4ac541598510b52b486a099928215d0d10ac9462237eea4204eec"
+    },
+    {
+      "mirror_sha256": "63d6c2aa1d914ea868b984f2dcda2307c40daf26a03fa53265ad09159c860c5f",
+      "path": "evidence/p13/verify_packages.py",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "local_plugin_validator"
+        }
+      ],
+      "source_sha256": "02646a0bc42acb96ff8e40ab9d4e61d1da0c3080a9b8de103dc46fe41cf4d925"
+    },
+    {
+      "mirror_sha256": "eacf83cd453b5a09b46607293edf4cdb4524e1ad59f34f891d7555edb08f46cf",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "66881d775cfb4e71b7d626c238ec92ebcce0decf26530dfbb22208d6f151dd80"
+    },
+    {
+      "mirror_sha256": "85089be32f4bab9ad7fafc41b25f4535c17efa1fd355d293274f0a67c4371f95",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "9d5e9c2d5556b3c43c69cf448926d43dc1a7fd48cde0bd977932e001d449ba2a"
+    },
+    {
+      "mirror_sha256": "acafb1a1b2813ea6b3391348f71de705b1da83b75d5a1967721f7ca7f1feb86d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "79e62565cfbcf168142c339c78fd8b397355b40dd7f3bcd7783bbf60d0ca5671"
+    },
+    {
+      "mirror_sha256": "d6216f8ab5250e746df6a57a441fbb3c0a22bc81a0992d9671cdd718bfb2a841",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-04-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "35bcb8e2fb0781c80723c312e141b8460dac5eb733219317085f860bc3f1cef3"
+    },
+    {
+      "mirror_sha256": "d84ae0c14079946bb575227868410c6ad955768e6a208698d5d8d505a3239c9a",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-05-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "26eddee2b8fc901529f9516d510a1b1f331587bef4f0ebc72323b9219bde772b"
+    },
+    {
+      "mirror_sha256": "d39bc8f2eaf49a27bd11d7226084d03eee2bc6211d8392ac0a441b4c5839fc82",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-06-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6fac0eda1e2c1a51961ad9907887b3910c13fd41f11110cfd781ad3dd2a536ea"
+    },
+    {
+      "mirror_sha256": "08e459b746f2bf9080e4ddcf5ec1784c15fce1c5acf90523a6e6f8ac69778c58",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-07-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0233db0d8a3fd98b7a9ff683cbff2bbab83f04ca09330b8bfc256a224814f4dd"
+    },
+    {
+      "mirror_sha256": "725ef97a058e3e47cdf4d1b121f67a93f889379c2b4391a09715502e3f3b7d5e",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-08-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f2374184de1b80c44e5d968926384ea37b01fb0d5f9db483993c0d4423e9934e"
+    },
+    {
+      "mirror_sha256": "347cd5d039927df23604f7d289616baffc867085fa4451506ab688a401d1f7bc",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-09-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "41e1184686ee36b7499e1dc6b56ae6d04a0f56b86d4311ff9ebc976025f14ef4"
+    },
+    {
+      "mirror_sha256": "7eea0fa2c16ae0e44adb008063bb21b5e44f6ccee784db99c58450e9f9ef7db3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-10-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "cac26ac4f5509e3741ee912cce4516eb31966205d9416bca8db2e74095fca518"
+    },
+    {
+      "mirror_sha256": "4971eacf4ce9b4154ccbd2ae429ea4d4e1cd010a780a2b847f7e8809ca14e774",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-11-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "d93abf30f98bbe045a0df4cf7c49ed79ad9a236e3c37c51af6ae35631646f242"
+    },
+    {
+      "mirror_sha256": "db747c52fb25e7822eecc39593909f59d515c0986a0648e378fa7638088489c1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-12-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "ea471ff5a38d280c227886b5bd71b7c0a0fd7b4d44c196f6e36de1f077b8f481"
+    },
+    {
+      "mirror_sha256": "1e4ef89957feec0614677a2410edbfdd8485a6e38f96762d83389fcd47f188be",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-13-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "79af24880e8db129691a155ca6472a71e854759a98c737fc30e4b41fe9f4370f"
+    },
+    {
+      "mirror_sha256": "41f582bcb9a6c5b374cd364e7a5d5cd817e3e6409b746d0a1ffa2f896534d505",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "ea311d2f1f6623268797b9913e6fc0035fa4a14e6d9109debdee6775b484d568"
+    },
+    {
+      "mirror_sha256": "61f91cf9dfdce9364f3093ac879349a09b68f10d3ee2829db6a1ae17f3bf6b9a",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-15-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4868313a97cb8c922b0310c4662615a64e7d21ffbc82fb5a1ce9bd54f08fae91"
+    },
+    {
+      "mirror_sha256": "0975cad063158f43111af395391230ed2905b87d916aa9aa6566a5ce03b312b4",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-16-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5d78e64d09e88078110d84ddc2fffcf5ac11ae287a893ff2e2dcc240594d0ebd"
+    },
+    {
+      "mirror_sha256": "0cefe9e6076d15862eff91829aff9349637d67364528fe8a494e1af422861293",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-17-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "000642925346c215fcb533b91c0f97dc6594ff33bd6486bc6a83560ded5d2cb3"
+    },
+    {
+      "mirror_sha256": "b483d1481e8c3eaeae1a3bdd1e7dd93055c7beb47ca8b0bed47442056cc83173",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-18-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "43508f47749f7314798d36cb88e7ad1c3b4ec3ab882cc3dd03f01724ce19a639"
+    },
+    {
+      "mirror_sha256": "cb6c0e77d552e835eea239caaadbbd10c80ce61782e9070f0196b7c07a2ffbc5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-19-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "9e85e3ec35741d94d204aa39aa6ed38e12676a7f2d479d39fe969ac214dbaff1"
+    },
+    {
+      "mirror_sha256": "2f94d44ffb3ebb909d4abce2872b9c7ca305a8f0fb1d5f379be7f4295c1a0803",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-20-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "73ce3b1c0b829ae118c4b2ef225c81139fa40753e3f7092c08f43301c98188fe"
+    },
+    {
+      "mirror_sha256": "b6115dc2c3ca15736dcf05fe477087aafcd602e98e3a66d98c85d346930578c5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-21-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "149d19e6da7ff04c6fe7c472b42f6ae7a1678121e652164351e15f99cdae0e2b"
+    },
+    {
+      "mirror_sha256": "cbf6ec38af7637d4d6b1a5c769be9162e3f4fae04b0af04e68bb4f7c3f570fd3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-22-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "ed0adf1eeb72a13a136a38b4bfa215c5f29b52d4d9c6b01ae875a0ad01585e27"
+    },
+    {
+      "mirror_sha256": "d5e1479c2df16383f0aa2ca713b5746af4af44aceba006a1110127d091d79469",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-23-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "b5ae7bfecb3ee5a15b34f9f0403dc594db5a38360745a8822e530c26788c15c3"
+    },
+    {
+      "mirror_sha256": "c0474fc1f6de66224e89691ca4fe577885ff8644ec28645827bb9438153bc556",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-24-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "e992656a34b71557f66f37aee53127fb75c572023b4cdca84d5f21b305de1362"
+    },
+    {
+      "mirror_sha256": "92aa422ff255e4a44af0f5372ed96d9e989ae2197db07a61af9de6943c179e9d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-25-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bf1956b2a24aeccfa3b561fc4e10c8cd7972c509a95d845272ec2c70aa770ace"
+    },
+    {
+      "mirror_sha256": "39037fcfb4ac073a8d9181b3561d9518faef90093b7963a24e4eac380589ac92",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-26-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5d80ab9f8933c301cae0a599965eff26a98eba42ac7c82d750570b4519366068"
+    },
+    {
+      "mirror_sha256": "64e664cca0d9ce8185968bad854ba45386602ec5b75eddc2e3656eb65985e595",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "d03fe6d13b1e3428e4d58a0ddc852ff303d5a8b5c1c74e9f0f814fe4b19d8bf1"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-27-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "2fded462e3a7f95985e0df743d1dc2c16ba43b54ea741e1055f715b83da83b71",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-28-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a22c109223a677241070ea1c8ef183f3ca20562f853171ea23f8b10305dd1906"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-28-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-28-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "67da9175a201f4fef0e70bc6a4e3b9c7fe149006a97e4ab94c2d7698abaead6e",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "55f3f3cb00eb45ab9aa6562fd522c71eb94dd999f880973103b4eb92d477a759"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-29-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "28699037acf8c07f09999a16fd7fe4a5f5126b06cdc2fd2918a478e297ef570d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "975ea7504a358383d58a6994e262b5bbb011d2db70fc6a456e6dac51b6b6df0b"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a8c0df2229ab030917e1a8c4c1f86bd97625211a99e89264d90a827fe450fb0c",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "ed0c0d36f8035f92272375d1e87468fc66419a1fb8aa86ce03736599065dae3a"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "a9d54a360280ab62cffae8d57e4bd976bf8a2c5736ac93ac5927ba4e3c01064b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "b83733e83f69daac46f6aa7a430bc6cbe7bc991788db33dca54af19f56da1935"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "c5148128d05f0f39f378cff7ad3ccb455d34c55e66388452c2dc9753173086aa",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "60bf5be0c462d6433d9d82b70c78b1d7cb673a5bf23660d31b5028026e20f468"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-33-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "c5caff7b556190d4bd627ff0b01f420a9d922b252ef5be1c31fd970bff532776",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "11c166fe4b0a92275c4de747ef34dacbb634feeb31416f77e83b69c5310fe6b4"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-34-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "22d5181bb75679bc99567c8d0d2709049ddf4ed06274f486c735b5d0aebc5a31",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "dc2ad8be620d7f202f8c8ad242cd75256c0e357dbaadc0f063c4c8ec64b1c4bf"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-35-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "e43e6bb9562b9f0ed6d3eac5196ef08c6a7204db32f52a68351c174b0f7d1a7e",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "da2f2db8734eca65c0ba9ee49ca319d4541982327dc258d59daf001ce873b7c9"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "cfabd0e943bfd21975a2e220ef8e96410651f020ca8c6ca3612f19f5db54dac7",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "947a4a2e5a7a605463eb9437df853a9c0bee9a99f9867f80f188d325ae050d1d"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-37-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "b11119e70ab1c8f63a402ce7e2936d75ea60e673107e3083d193c8c935389731",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "35c248fc9c59e3986b985a29e0e16ec0eed70651e6d72e4a6f527938f0a4b650"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "290122a3767d00e858dc5b37c8be87eb6a609fefa1cc1b3510562f8f95f8c6f8",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f6ff484b549c0a53b1662732cac276fd33a5f7f4addb96d5dde9d981325632ae"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "a5413088c81defdf17a6f327aff33d4abd2b9e0b0fd55374608133dd1b8ec2cf",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "035dd0b065ab0010f1937985d275bfad51bf523e8a5f4664a999289e57706b65"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-40-1.5.0/snapshot/evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "26e7365c37d2481b8b9472e9c97c09c95e26fd6bc1602be6675e12725914b23a",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "fd52f458e94ff9bb18b44ff632fbe468eb8160e89a1400c786f0bf413d76c793"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "ed24d4e1d9dac12e7fb54248c1e5413bc3598ce38cbfe553f65c98640049026f",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0/snapshot/evidence/p19/source/render_review41_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3"
+    },
+    {
+      "mirror_sha256": "b3883d3141185582aa68d6fb239c0c197de8a5bfacfdf053cff73263daf98ddd",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "9c9b35038a51adf031a676bdb4df558b9c2da4c5f0bd8677191628d22f39d384"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "ed24d4e1d9dac12e7fb54248c1e5413bc3598ce38cbfe553f65c98640049026f",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review41_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3"
+    },
+    {
+      "mirror_sha256": "82e5190295d1547754c6b227cd0ee445a5d24d16c30e876dbc42ce875831ce0d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-42-1.5.0/snapshot/evidence/p19/source/render_review42_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5bf445ba46cd1b2b24d0b36aad75bc59d21d1fb9ac8b0308dac27f9e70dfa153"
+    },
+    {
+      "mirror_sha256": "ad1182cae67d6786b0db14e70c188298df39a73bebdf91c38f998d01975b7e68",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2b90fc98e08d2da0e307a8c2393054952eadd31a66311371d2e32194d15a0d1b"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "ed24d4e1d9dac12e7fb54248c1e5413bc3598ce38cbfe553f65c98640049026f",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review41_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3"
+    },
+    {
+      "mirror_sha256": "82e5190295d1547754c6b227cd0ee445a5d24d16c30e876dbc42ce875831ce0d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review42_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5bf445ba46cd1b2b24d0b36aad75bc59d21d1fb9ac8b0308dac27f9e70dfa153"
+    },
+    {
+      "mirror_sha256": "6dd2a7155c403df04909ce3f56ca685f31bdaaeb4bb2e8e792b0a17f8074a498",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-43-1.5.0/snapshot/evidence/p19/source/render_review43_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "c45230bd05120e5520357a19c51f6b087d04e03fbb0e41bc0a0c894c19d8e012"
+    },
+    {
+      "mirror_sha256": "3b97c9d3b14e639495307e1f23c93667e1e1bcd3a4228a5d0c90c541725d6b64",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/PROJECT-CONTRACT.md",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5479da6af921b01fdf981eda54752dbde4c7618278b9715f805923ec5499a610"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "ed24d4e1d9dac12e7fb54248c1e5413bc3598ce38cbfe553f65c98640049026f",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review41_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3"
+    },
+    {
+      "mirror_sha256": "82e5190295d1547754c6b227cd0ee445a5d24d16c30e876dbc42ce875831ce0d",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review42_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5bf445ba46cd1b2b24d0b36aad75bc59d21d1fb9ac8b0308dac27f9e70dfa153"
+    },
+    {
+      "mirror_sha256": "6dd2a7155c403df04909ce3f56ca685f31bdaaeb4bb2e8e792b0a17f8074a498",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review43_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "c45230bd05120e5520357a19c51f6b087d04e03fbb0e41bc0a0c894c19d8e012"
+    },
+    {
+      "mirror_sha256": "2173e7cc2493a8f2c673d1cce2ef03c9d7ee0612244e1672ebbcf0c6234b9072",
+      "path": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0/snapshot/evidence/p19/source/render_review44_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6311df64a109a88be417615835c93fff7bd51d977583e71ce20c3618783e932c"
+    },
+    {
+      "mirror_sha256": "aea6ec54aea6efc7bd0fa35ed05bd58d14d27d920902f0eebaecadfe6088aad1",
+      "path": "evidence/p19/source/render_review27_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6412c38fad7be19868d993a74bbe00169f09b3c3a50cb3d2816575344df17f94"
+    },
+    {
+      "mirror_sha256": "3970cab4c204b5f09a2f5ccc3d8ccf6be3a92960541b66dfcfe3f004a32a8f90",
+      "path": "evidence/p19/source/render_review28_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "19667e88b6d513d2d3f0c2bb07c5766dbdfeb45c6d99f28597eca31e3ed42c31"
+    },
+    {
+      "mirror_sha256": "b8f4d6e9cddb6558813cbcbb1f6a2c97784333fda5cdd0fe7c5a297f1d71f4d5",
+      "path": "evidence/p19/source/render_review29_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "3030e9427709f8e7f3d6a02af094d857e53a0505f95664bb26b14417e927d567"
+    },
+    {
+      "mirror_sha256": "876059fa5c8c7b3bd24a167e95dedfebb7576a9f5b46fa4bd8a4ae7afd2f3638",
+      "path": "evidence/p19/source/render_review30_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1c612d989743d9333f6f304fe65b9008bc6c49fbe9eddd407814cc9db07d6f48"
+    },
+    {
+      "mirror_sha256": "a7feb098d0e2aa48a2d0fc796d4dc6b7124ca6c65288983ec7b23d16d088be40",
+      "path": "evidence/p19/source/render_review31_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "bde9614676cb3fe7de9f48da4fd395e2450d39ad1a78aebafc28916d07cbf18c"
+    },
+    {
+      "mirror_sha256": "ac63f5c100b0b5fbed158541f31dde66d11cae7951aadf27df317630e838c82b",
+      "path": "evidence/p19/source/render_review32_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "f163c9e1a6ced27f893791776758d037809ec8cc0887bc25c0ec2f4850d6cfc2"
+    },
+    {
+      "mirror_sha256": "522559482518936b1fb10a2e98ad2bd5c033973868bbd3d10ea8c975cb329e87",
+      "path": "evidence/p19/source/render_review33_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "a6dd369bc16e999cf6a02b7af1a1c1fa9fb8ab0b3adaa63050dffea5133ecebe"
+    },
+    {
+      "mirror_sha256": "feb361418270fbd5e2b084fee71b0b9708fc765bb00151f3333039aa1ff16625",
+      "path": "evidence/p19/source/render_review34_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "1d095ed8ecd65659aed89a2ec00b6ba79a2c12e2b8a8aaae537c314c4176db44"
+    },
+    {
+      "mirror_sha256": "a2b2dc93237ca83bf1f8a679adeb13b2679a9e1ee7e743cd2950b4e16c3a63e3",
+      "path": "evidence/p19/source/render_review35_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "46dfbec6668469e5651fe34cec73bf77113a2b5c564370e550bc2f39a283fefc"
+    },
+    {
+      "mirror_sha256": "8487cd6951af10ffdb3eb12b757909ba0941ea5224b183e4a4d8fcb4960f6427",
+      "path": "evidence/p19/source/render_review36_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "557691e5267bee0b738b3eb7119912ff13a852b68183aaad329c51f4aabeeb68"
+    },
+    {
+      "mirror_sha256": "08b3ecc4ce18936e0147b0adafd295cd407845dce6c33cd3bb3e884630881200",
+      "path": "evidence/p19/source/render_review37_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "4980652d14fe355983d195454871f601389c2f939af6dd57ecd8ca257d9cb568"
+    },
+    {
+      "mirror_sha256": "214c2109cadc7f916c606a52745e5db80088dcb4626735c24fcb9d76b7280882",
+      "path": "evidence/p19/source/render_review38_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "0831ac8a8f4509369146c7222bce8940d24cac0f00b47d16937c79c32fea09b7"
+    },
+    {
+      "mirror_sha256": "1f51f32c7748b1012659102b581c57d372a1cdae8c0a72a8cae66ab66a0f27e3",
+      "path": "evidence/p19/source/render_review39_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "88e2a3bfc025d481db4fcd6e83445530086f0d697424b7ec6eb9dccb136b34f6"
+    },
+    {
+      "mirror_sha256": "2d639d09a23716ceb99f8d3eb3b708f5fb289bca0e1fef651fb19bacb4438374",
+      "path": "evidence/p19/source/render_review40_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "7db875971e45940bd7029ba765b822db60d85c8f20a8581fcec2b7d121f4b873"
+    },
+    {
+      "mirror_sha256": "ed24d4e1d9dac12e7fb54248c1e5413bc3598ce38cbfe553f65c98640049026f",
+      "path": "evidence/p19/source/render_review41_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "2c23e1e68c38c3a0c8b0fdfb8043da39d29ebe27f3051568c59a36161906dde3"
+    },
+    {
+      "mirror_sha256": "82e5190295d1547754c6b227cd0ee445a5d24d16c30e876dbc42ce875831ce0d",
+      "path": "evidence/p19/source/render_review42_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "5bf445ba46cd1b2b24d0b36aad75bc59d21d1fb9ac8b0308dac27f9e70dfa153"
+    },
+    {
+      "mirror_sha256": "6dd2a7155c403df04909ce3f56ca685f31bdaaeb4bb2e8e792b0a17f8074a498",
+      "path": "evidence/p19/source/render_review43_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "c45230bd05120e5520357a19c51f6b087d04e03fbb0e41bc0a0c894c19d8e012"
+    },
+    {
+      "mirror_sha256": "2173e7cc2493a8f2c673d1cce2ef03c9d7ee0612244e1672ebbcf0c6234b9072",
+      "path": "evidence/p19/source/render_review44_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "6311df64a109a88be417615835c93fff7bd51d977583e71ce20c3618783e932c"
+    },
+    {
+      "mirror_sha256": "181e2c535df7cb4f67061d2bf05c6b288be490e8f1aa6ffca82f5a343a40437a",
+      "path": "evidence/p19/source/render_review45_proof.mjs",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "58b01ee524666ce57bd240b55d400953350afbbb48d43fe23c67e03e2b240866"
+    },
+    {
+      "mirror_sha256": "4d36316d15c7c7157c27eb7a446af82ada7319ad12e25aebb8bd9fa1db46b98f",
+      "path": "evidence/p20/verification-report.json",
+      "replacements": [
+        {
+          "count": 2,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "8d147d5affb25597125771bf15c458fb5563d2828294e531c49d0f14eb91bc44"
+    },
+    {
+      "mirror_sha256": "f65b8bb28f8a4bb1ee0c350d4cc59fbaf2dafed690d96ff7808c8e0de838059f",
+      "path": "evidence/p20/verify_packages_v2.py",
+      "replacements": [
+        {
+          "count": 1,
+          "replacement_id": "owner_home_global_v2"
+        }
+      ],
+      "source_sha256": "8570ea6ab1192a52d0aaea3f88a1ed5029aeb899d0b250f1b593080d5e014e4a"
+    }
+  ],
+  "decision": "D-132",
+  "excluded_classes": [
+    ".DS_Store",
+    ".git",
+    ".mypy_cache",
+    ".pyc",
+    ".pyo",
+    ".pytest_cache",
+    ".release-staging",
+    ".ruff_cache",
+    ".swp",
+    ".tmp",
+    "__pycache__",
+    "node_modules"
+  ],
+  "generated_manifest_path": "evidence/p21/publication-mirror-manifest.json",
+  "generic_security_patterns_preserved": [
+    "validator regex for absolute paths",
+    "generic /Users/example test fixture"
+  ],
+  "git_or_release_mutation_performed": false,
+  "mirror_file_count_including_manifest": 21009,
+  "mirror_root": "<LOCAL_RELEASE_STAGING>/TCD-RELEASE-2.0.0-RC1",
+  "personal_machine_path_scan": {
+    "forbidden_token": "/Users/<owner>",
+    "matches": 0,
+    "result": "PASS"
+  },
+  "publication_scope": "A_FULL_PRIVATE_AUDIT_REPOSITORY_SANITIZED_MIRROR_V2",
+  "record_id": "P21-PUBLICATION-MIRROR-2.0.0-1",
+  "sanitization_note": "Exact owner-home paths are replaced in UTF-8 audit text; generic security fixtures remain unchanged.",
+  "sanitization_version": "2.0.0",
+  "source_file_count": 21008,
+  "source_root": "<LOCAL_WORKSPACE>",
+  "tree_aggregate_sha256": "0183b9679f9340f5e94bd75cbf7bbab5d7ba12db50a8dbccf2047ed33796ceb9"
+}

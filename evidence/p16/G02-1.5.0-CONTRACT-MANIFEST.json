@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "contract_packet_id": "G02-1.5.0-CANDIDATE-2026-08-22",
+  "target_version": "1.5.0",
+  "status": "candidate-awaiting-owner-and-technical-review",
+  "composition_rule": "The exact candidate is the byte-bound inherited P-02 packet plus the byte-bound P-16 delta packet. Historical P-02 files remain unchanged.",
+  "gate_result": "NOT-EVALUATED",
+  "implementation_authorized": false,
+  "inherited_p02_contracts": [
+    {
+      "path": "evidence/p02/PRODUCT-SPEC.md",
+      "sha256": "fb9c9cf550f0187000d8baf52cf9f1ff724f88f5d461a0e57915564a3348b971"
+    },
+    {
+      "path": "evidence/p02/DESIGN-CONTRACT.md",
+      "sha256": "36178574aef4d4b4d5c4085dc2b022dc1284a27e4114aa41efa12dc54d02b444"
+    },
+    {
+      "path": "evidence/p02/ARCHITECTURE-IR-CONTRACT.md",
+      "sha256": "bcc2a5de095037a094fc2fd1c5fe9e375d2d076a3be78c2f98dd8471184b08af"
+    },
+    {
+      "path": "evidence/p02/REQUEST.schema.json",
+      "sha256": "b884ecc3543cda6722a3671e279b279808461bcc13447510ea44d784d86b66f8"
+    },
+    {
+      "path": "evidence/p02/SEMANTIC-IR.schema.json",
+      "sha256": "748f9668b53b2f42fcaa31ee1ed2b74b039b902e13a10df6d0335bd59c5a2c81"
+    },
+    {
+      "path": "evidence/p02/SECURITY-FIDELITY-CONTRACT.md",
+      "sha256": "9f3f8409cd34ebed432676f48b32c341f03578141ae52b28bdd1c114c225e026"
+    },
+    {
+      "path": "evidence/p02/SURFACE-SUPPORT-MATRIX.md",
+      "sha256": "69a826cf6b9c5e6324b3ce77193301e03b05a1517d1ffa6090e80c1dc7e237b7"
+    },
+    {
+      "path": "evidence/p02/BENCHMARK-MANIFEST.md",
+      "sha256": "333afc1b66c238e41276274dfc4317a1b1d472e27b0a9be0bdfd38073cbebc0b"
+    },
+    {
+      "path": "evidence/p02/TEST-CONTRACT.md",
+      "sha256": "6b86af372a3ed877596008d8c1b44e9d40c4a87879d79591480033a137240e64"
+    },
+    {
+      "path": "evidence/p02/G-02-EVIDENCE.md",
+      "sha256": "899b5058b7a9205f3badadb9c75384748d446c5bc451d2c6e23d069d8a764fd8"
+    }
+  ],
+  "p16_delta_contracts": [
+    {
+      "path": "evidence/p16/UPSTREAM-DELTA.json",
+      "sha256": "1ddb0a317fd89bd9fb0b02fd698f41dc7f734e5a9a696015c007c09ab208a0fb"
+    },
+    {
+      "path": "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md",
+      "sha256": "eb6e3b972c3dde9abc97dbdb20d21bd146e214d445282f4af0435076e21fa705"
+    },
+    {
+      "path": "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md",
+      "sha256": "30fbb3209add27eed964747a71a0e65fb0e39e2df9801d45346c47a3ab17639b"
+    },
+    {
+      "path": "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json",
+      "sha256": "4ddbddca31c9e3526723cb0b1cec4a91a410641e671f35cc9a7e3342494460eb"
+    },
+    {
+      "path": "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md",
+      "sha256": "fcb2ad0e920c6dc751b93750d5c34e58e779e366c5d39c1162fd5818851b50e4"
+    },
+    {
+      "path": "evidence/p16/PRODUCT-ARCHITECTURE-TEST-DELTA.md",
+      "sha256": "524ad83ee0a221068497026434c84f6f6f7a61bc2c9e7f4b9080b77fbe9e8947"
+    },
+    {
+      "path": "evidence/p16/REQUEST-1.5.schema.json",
+      "sha256": "7e323d1bb845954b712e27dc89aba2db3a93b8d0d77665db610a6c717c7529a2"
+    },
+    {
+      "path": "evidence/p16/SEMANTIC-IR-1.5.schema.json",
+      "sha256": "e4a8ee6c48482f221ee578398d1eea2645700772d6e1b44a7acf34a9c103c70f"
+    },
+    {
+      "path": "evidence/p16/PILOT-GALLERY-CONTRACT.md",
+      "sha256": "8f12d158f1982f5a00c5cfe986adda54d1738f26a655548f6842837469175dce"
+    }
+  ],
+  "required_owner_decisions": [
+    "approve exact 39-type plus four-capability product/test scope",
+    "approve exact 12-family P-18 pilot case set and inherited rubric",
+    "approve QA-only three-mode gallery workflow"
+  ],
+  "required_technical_review": [
+    "request and semantic IR schema adequacy",
+    "type-specific semantic and quantitative testability, including exact numeric/unit/geometry/boundary policies",
+    "security/fidelity inheritance",
+    "platform no-promotion disposition",
+    "whole-repository upstream path-set completeness and provenance disposition"
+  ],
+  "scope_stop": "source/gallery before packaging; P-17, P-18 and P-19 require separate authorization",
+  "inherited_contract_count": 10,
+  "p16_delta_contract_count": 9
+}

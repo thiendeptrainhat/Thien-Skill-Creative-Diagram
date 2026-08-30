@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:thien-skill-creative-diagram:schema:request:1.0",
-  "title": "Thien-Skill-Creative-Diagram request contract",
-  "description": "Portable request envelope consumed by the provider-neutral core.",
+  "$id": "urn:thien-skill-creative-diagram:schema:request:1.5",
+  "title": "Thien-Skill-Creative-Diagram request contract 1.5",
+  "description": "Portable request envelope for 39 canonical types and four explicit 1.5 capability variants.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -19,7 +19,7 @@
     "motion"
   ],
   "properties": {
-    "schema_version": { "const": "1.0" },
+    "schema_version": { "const": "1.5" },
     "instruction": {
       "type": "string",
       "minLength": 1,
@@ -75,6 +75,7 @@
         "swimlane",
         "quadrant",
         "radar",
+        "polar-chart",
         "loop-flywheel",
         "nested",
         "tree",
@@ -83,6 +84,7 @@
         "venn",
         "pyramid-funnel",
         "bar-chart",
+        "treemap",
         "line-chart",
         "gantt",
         "scatter-plot",
@@ -91,8 +93,25 @@
         "medallion",
         "data-flow",
         "dp-integration",
-        "dp-security-matrix"
+        "dp-security-matrix",
+        "sankey",
+        "fishbone",
+        "wardley-map",
+        "kanban",
+        "user-journey",
+        "deployment",
+        "dependency-graph",
+        "uml-class",
+        "story-map",
+        "database-schema"
       ]
+    },
+    "variant_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 1,
+      "items": { "enum": ["CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"] },
+      "description": "Optional explicit selection of a new 1.5 capability. Existing v1.0 variants remain selected by the approved routing behavior and are not changed by this candidate."
     },
     "size": {
       "enum": [
@@ -110,7 +129,8 @@
     "detail": { "enum": ["faithful", "balanced", "simplified"] },
     "audience": { "enum": ["engineer", "mixed", "executive"] },
     "visual_mode": {
-      "enum": ["neutral-light", "neutral-dark", "editorial"]
+      "enum": ["neutral-light", "neutral-dark", "editorial"],
+      "description": "Approved P-02 visual-mode names inherited unchanged."
     },
     "language": {
       "type": "object",
@@ -136,5 +156,23 @@
     },
     "format": { "enum": ["html", "svg", "png", "html+png"] },
     "motion": { "enum": ["none", "reveal", "step", "loop"] }
-  }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "variant_ids": { "contains": { "const": "CAP-V17" } } }, "required": ["variant_ids"] },
+      "then": { "properties": { "diagram_type": { "enum": ["auto", "bar-chart"] } } }
+    },
+    {
+      "if": { "properties": { "variant_ids": { "contains": { "const": "CAP-V18" } } }, "required": ["variant_ids"] },
+      "then": { "properties": { "diagram_type": { "enum": ["auto", "line-chart"] } } }
+    },
+    {
+      "if": { "properties": { "variant_ids": { "contains": { "const": "CAP-V19" } } }, "required": ["variant_ids"] },
+      "then": { "properties": { "diagram_type": { "enum": ["auto", "line-chart"] } } }
+    },
+    {
+      "if": { "properties": { "variant_ids": { "contains": { "const": "CAP-V20" } } }, "required": ["variant_ids"] },
+      "then": { "properties": { "diagram_type": { "enum": ["auto", "scatter-plot"] } } }
+    }
+  ]
 }

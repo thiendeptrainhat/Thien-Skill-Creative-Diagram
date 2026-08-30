@@ -1,0 +1,119 @@
+{
+  "candidate_id": "TCD-RELEASE-2.0.0-RC1",
+  "checks": [
+    {
+      "check_id": "V-P21-001",
+      "detail": "Exact D-131 release manifest hash matches",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-002",
+      "detail": "All eight v2.0.0 gate results are PASS",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-003",
+      "detail": "Dist contains exact v1 and v2 inventories only",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-004",
+      "detail": "Historical v1.0.0 dist bytes remain exact",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-005",
+      "detail": "Promoted v2.0.0 dist bytes match approved candidate",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-006",
+      "detail": "Dist promotion is byte-identical to candidate-dist",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-007",
+      "detail": "Canonical legal/provenance files match exact approved v2 candidate",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-008",
+      "detail": "Frozen P-20 package verification remains exact at 26/26 PASS",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-009",
+      "detail": "Exact legal candidate regenerates without drift",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-010",
+      "detail": "All three package candidates regenerate without drift",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-011",
+      "detail": "Full canonical regression is 414/414 PASS",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-012",
+      "detail": "Exact remote target/private preflight passes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-013",
+      "detail": "v2.0.0 tag and Release were absent at preflight",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-014",
+      "detail": "README binds all exact v2 archive names and hashes",
+      "result": "PASS"
+    },
+    {
+      "check_id": "V-P21-015",
+      "detail": "README preserves D-128 sample-not-fixed flexibility",
+      "result": "PASS"
+    }
+  ],
+  "full_regression": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "-c",
+      "import sys,unittest; sys.path.insert(0,'evidence/p19/source'); sys.path.insert(0,'thien-skill-creative-diagram/scripts/tests'); sys.path.insert(0,'thien-skill-creative-diagram/scripts'); suite=unittest.defaultTestLoader.discover('thien-skill-creative-diagram/scripts/tests', pattern='test_*.py'); result=unittest.TextTestRunner(verbosity=1).run(suite); raise SystemExit(0 if result.wasSuccessful() else 1)"
+    ],
+    "returncode": 0,
+    "stderr": "..............................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 414 tests in <DURATION>\n\nOK",
+    "stdout": ""
+  },
+  "legal_regeneration": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "evidence/p20/build_legal_candidate_v2.py",
+      "--check"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"drift\": []\n}"
+  },
+  "package_regeneration": {
+    "command": [
+      "/opt/homebrew/opt/python@3.14/bin/python3.14",
+      "evidence/p20/build_packages_v2.py",
+      "--check"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"drift\": [],\n  \"candidate_id\": \"TCD-PACKAGES-2.0.0-RC1\"\n}"
+  },
+  "record_id": "P21-PRE-RELEASE-VERIFICATION-1",
+  "status": "PASS",
+  "summary": {
+    "checks": 15,
+    "failed": 0,
+    "passed": 15
+  },
+  "verified_at": "2026-08-31T00:00:00+07:00",
+  "version": "2.0.0"
+}

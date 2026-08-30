@@ -1,0 +1,47 @@
+{
+  "alternative_exact_component_and_dependency_tables": "PASS",
+  "archived_files_verified": 374,
+  "arrow_free_axes": "PASS",
+  "arrow_free_dependencies": "PASS",
+  "authority": "D-099",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-19-1.5.0",
+  "components": 8,
+  "dependencies": 9,
+  "direct_component_labels": "PASS",
+  "evolution_stages": 4,
+  "evolving_components": 1,
+  "gallery_manifest_sha256": "340ad05f24456560980426e82b0ff8a146fa3ec83bd45229715332e77e2b33d5",
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_color_evolution_redundancy": "PASS",
+  "normalized_axes": 2,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "prior_html_artwork_preserved": 87,
+  "prior_preview_svg_byte_identical": 29,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--neutral-light.svg",
+      "sha256": "a21d7d18078b88e708f9666409eafbb289dbb33921de418c1d214c76809d931a"
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--neutral-dark.svg",
+      "sha256": "5abb42a3ec63103a8ce357b00eff6f569d2ec86fafdb5bf9c28c153e0401cd46"
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map--editorial.svg",
+      "sha256": "f83d56baa87cd8c9500c5959d51e31447ab66f6db2333bc4d264d54e6d0a566c"
+    },
+    {
+      "path": "evidence/p19/review19-checks/type-wardley-map.svg.png",
+      "sha256": "bfb2a30aaeef3164015a050bad0dbc71ea547b6c667d298e0490ab40fdfe833e",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 6832,
+  "single_dashed_evolution_arrow": "PASS",
+  "stage_boundaries": 3,
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "wardley_map_html_changed": 3
+}

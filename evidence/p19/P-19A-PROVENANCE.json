@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P19A-THIRTY-NINE-PLUS-FOUR-ADAPTERS-1.5.0",
+  "date": "2026-08-27",
+  "reimplementation_model": "clean-room-oriented independent reimplementation",
+  "implementation": {
+    "authorship": "independently authored for this repository",
+    "copied_upstream_bytes": false,
+    "copied_ui_ux_skill_bytes": false,
+    "pixel_or_template_derivation": false,
+    "network_or_dependency_action": false
+  },
+  "sources": [
+    {
+      "source_id": "PROJECT-P17-SEMANTIC",
+      "role": "validated semantic IR and fixtures",
+      "allowed_use": "canonical project source reuse",
+      "material_transfer": "project-owned source integration"
+    },
+    {
+      "source_id": "PROJECT-P18R4-FOUNDATION",
+      "role": "locked 39+4 to fourteen-engine mapping and abstract geometry/typography contract",
+      "allowed_use": "implement approved project contract",
+      "material_transfer": "mapping and requirements only"
+    },
+    {
+      "source_id": "PROJECT-P18R5-R6-GOLDEN-DIRECTION",
+      "role": "owner-approved visual direction and engine silhouettes",
+      "allowed_use": "preserve project-owned foundation without mutating frozen candidates",
+      "material_transfer": "no frozen file copied or edited"
+    },
+    {
+      "source_id": "SRC-DIAGRAM-DESIGN",
+      "role": "primary functional reference at the exact P-16 snapshot",
+      "allowed_use": "abstract taxonomy, behavior, invariants, and failure modes",
+      "material_transfer": "none"
+    },
+    {
+      "source_id": "SRC-THIEN-UI-UX-ULTRA",
+      "role": "design and QA principles/workflow only",
+      "allowed_use": "preserve/extend contract, accessibility and verification process",
+      "material_transfer": "none"
+    }
+  ],
+  "forbidden_material_absent": [
+    "upstream code",
+    "upstream prose",
+    "upstream CSS or SVG",
+    "upstream templates or specimens",
+    "upstream font or asset",
+    "Thien-UI-UX-Ultra code, prose, template, token, test, or asset"
+  ]
+}

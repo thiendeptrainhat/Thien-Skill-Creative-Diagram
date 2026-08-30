@@ -1,0 +1,42 @@
+{
+  "archived_files_verified": 489,
+  "authority": "D-110",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-30-1.5.0",
+  "closing_checks": {
+    "focused_state_machine": "3/3 PASS",
+    "full_regression": "363/363 PASS",
+    "scope": "8/8 PASS",
+    "static": "34/34 PASS"
+  },
+  "gallery_manifest_sha256": "89965bb94d597ec54148cc0c98481fc69898ca516ade69ef11ea861835a8fbbf",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 87,
+  "non_target_previews_byte_identical": 29,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review30-checks/type-state-machine.svg",
+      "sha256": "8f9f61a757f844316061afe8cbe4e8ff8ca99c17a40bb468caf4a2487b3a7f9d"
+    },
+    {
+      "path": "evidence/p19/review30-checks/type-state-machine.svg.png",
+      "sha256": "5350d537970f26dafe1db1d066e2638f837a955d2b5f3f0806dffe38bbfc3f3f",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 11550,
+  "state_machine_measurement": {
+    "centered_attachments": 12,
+    "initial_markers": 1,
+    "return_transitions": 1,
+    "states": 4,
+    "straight_transitions": 5,
+    "terminal_markers": 1
+  },
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

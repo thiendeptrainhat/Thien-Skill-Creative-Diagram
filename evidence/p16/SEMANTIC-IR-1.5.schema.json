@@ -1,0 +1,424 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:thien-skill-creative-diagram:schema:semantic-ir:1.5",
+  "title": "Thien-Skill-Creative-Diagram semantic IR 1.5 candidate",
+  "description": "P-16 candidate provider-neutral IR for 39 canonical types and four new capability variants. Type-specific semantic validators remain mandatory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "diagram",
+    "selection",
+    "nodes",
+    "edges",
+    "groups",
+    "lanes",
+    "series",
+    "axes",
+    "annotations",
+    "source_items",
+    "fidelity",
+    "accessibility"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.5" },
+    "request_id": { "$ref": "#/$defs/id" },
+    "diagram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "language", "title", "detail", "audience"],
+      "properties": {
+        "type": { "$ref": "#/$defs/type" },
+        "variant_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "CAP-V01", "CAP-V02", "CAP-V03", "CAP-V04", "CAP-V05",
+              "CAP-V06", "CAP-V07", "CAP-V08", "CAP-V09", "CAP-V10",
+              "CAP-V11", "CAP-V12", "CAP-V13", "CAP-V14", "CAP-V15",
+              "CAP-V16", "CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"
+            ]
+          }
+        },
+        "language": { "type": "string", "minLength": 2 },
+        "title": { "type": "string", "minLength": 1 },
+        "detail": { "enum": ["faithful", "balanced", "simplified"] },
+        "audience": { "enum": ["engineer", "mixed", "executive"] }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "confidence", "evidence", "alternatives"],
+      "properties": {
+        "mode": { "enum": ["auto", "manual"] },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["type", "rejection_reason"],
+            "properties": {
+              "type": { "$ref": "#/$defs/type" },
+              "rejection_reason": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "assumption": { "type": ["string", "null"] }
+      }
+    },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "groups": { "type": "array", "items": { "$ref": "#/$defs/group" } },
+    "lanes": { "type": "array", "items": { "$ref": "#/$defs/lane" } },
+    "series": { "type": "array", "items": { "$ref": "#/$defs/series" } },
+    "axes": { "type": "array", "items": { "$ref": "#/$defs/axis" } },
+    "annotations": { "type": "array", "items": { "$ref": "#/$defs/annotation" } },
+    "source_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "source_kind", "locator", "content_class"],
+        "properties": {
+          "id": { "$ref": "#/$defs/id" },
+          "source_kind": { "enum": ["instruction", "natural-language", "pasted-table", "csv", "json", "drawio", "mermaid"] },
+          "locator": { "type": "string", "minLength": 1 },
+          "content_class": { "enum": ["entity", "relation", "group", "lane", "value", "date", "label", "annotation", "source-rot"] },
+          "digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+        }
+      }
+    },
+    "fidelity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kept", "merged", "dropped", "source_rot", "invented_count"],
+      "properties": {
+        "kept": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "merged": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "dropped": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "source_rot": { "type": "array", "items": { "$ref": "#/$defs/fidelityEntry" } },
+        "invented_count": { "const": 0 }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "description", "reading_order", "data_representation_required"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "reading_order": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "data_representation_required": { "type": "boolean" }
+      }
+    }
+  },
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$" },
+    "type": {
+      "enum": [
+        "architecture", "it-current-state", "flowchart", "sequence", "state-machine",
+        "er-data-model", "timeline", "swimlane", "quadrant", "radar", "polar-chart",
+        "loop-flywheel", "nested", "tree", "org-chart", "layer-stack", "venn",
+        "pyramid-funnel", "bar-chart", "treemap", "line-chart", "gantt", "scatter-plot",
+        "high-level", "process", "medallion", "data-flow", "dp-integration",
+        "dp-security-matrix", "sankey", "fishbone", "wardley-map", "kanban",
+        "user-journey", "deployment", "dependency-graph", "uml-class", "story-map",
+        "database-schema"
+      ]
+    },
+    "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "label", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "role": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "secondary_label": { "type": "string" },
+        "state": { "type": "string" },
+        "value": { "type": ["number", "string", "null"] },
+        "unit": { "type": ["string", "null"] },
+        "parent_group_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "start": { "type": ["string", "null"], "format": "date-time" },
+        "end": { "type": ["string", "null"], "format": "date-time" },
+        "members": { "type": "array", "items": { "$ref": "#/$defs/member" } },
+        "placement": { "$ref": "#/$defs/placement" },
+        "work": { "$ref": "#/$defs/work" },
+        "journey": { "$ref": "#/$defs/journey" },
+        "strategy": { "$ref": "#/$defs/strategy" },
+        "story": { "$ref": "#/$defs/story" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "member": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "name", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["attribute", "operation", "column", "index"] },
+        "name": { "type": "string", "minLength": 1 },
+        "data_type": { "type": ["string", "null"] },
+        "visibility": { "enum": ["public", "protected", "private", "package", "unspecified"] },
+        "signature": { "type": ["string", "null"] },
+        "constraints": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "indexed_member_ids": {
+          "description": "Ordered column/member IDs in the physical index; array order is index-column order.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "index_unique": { "type": "boolean" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "index" } }, "required": ["kind"] },
+          "then": { "required": ["indexed_member_ids", "index_unique"] }
+        }
+      ]
+    },
+    "placement": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "zone": { "type": "string", "minLength": 1 },
+        "host": { "type": "string", "minLength": 1 },
+        "artifact": { "type": "string", "minLength": 1 },
+        "replicas": { "type": "integer", "minimum": 1 },
+        "ports": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["column_order", "item_order", "blocked"],
+      "properties": {
+        "column_order": { "type": "integer", "minimum": 0 },
+        "item_order": { "type": "integer", "minimum": 0 },
+        "wip_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "blocked": { "type": "boolean" }
+      }
+    },
+    "journey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage_order", "action", "touchpoint"],
+      "properties": {
+        "stage_order": { "type": "integer", "minimum": 0 },
+        "action": { "type": "string", "minLength": 1 },
+        "touchpoint": { "type": "string", "minLength": 1 },
+        "sentiment": { "type": ["number", "null"], "minimum": -1, "maximum": 1 }
+      }
+    },
+    "strategy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evolution", "value_chain_position"],
+      "properties": {
+        "evolution": { "type": "number", "minimum": 0, "maximum": 1 },
+        "value_chain_position": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["backbone_order", "story_order", "release_slice", "cut_status"],
+      "properties": {
+        "backbone_order": { "type": "integer", "minimum": 0 },
+        "story_order": { "type": "integer", "minimum": 0 },
+        "release_slice": { "type": ["string", "null"], "minLength": 1 },
+        "cut_status": { "enum": ["above", "below", "at", "unassigned"] }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "release_slice": { "type": "null" },
+            "cut_status": { "const": "unassigned" }
+          }
+        },
+        {
+          "properties": {
+            "release_slice": { "type": "string", "minLength": 1 },
+            "cut_status": { "enum": ["above", "below", "at"] }
+          }
+        }
+      ]
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "target", "kind", "directed", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "source": { "$ref": "#/$defs/id" },
+        "target": { "$ref": "#/$defs/id" },
+        "kind": { "type": "string", "minLength": 1 },
+        "directed": { "type": "boolean" },
+        "label": { "type": "string" },
+        "order": { "type": "integer", "minimum": 0 },
+        "guard": { "type": "string" },
+        "amount": { "type": ["number", "null"], "minimum": 0 },
+        "unit": { "type": ["string", "null"] },
+        "relation_kind": { "enum": ["association", "aggregation", "composition", "inheritance", "realization", "dependency", "foreign-key", "runtime", "flow", "other"] },
+        "source_member": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "target_member": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "source_multiplicity": { "type": ["string", "null"] },
+        "target_multiplicity": { "type": ["string", "null"] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "member_ids", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "member_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "parent_group_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "declared_total": { "type": ["number", "null"], "minimum": 0 },
+        "unit": { "type": ["string", "null"] },
+        "wip_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "release_slice": { "type": ["string", "null"] },
+        "cause_category": { "type": ["string", "null"] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "owner", "member_ids", "order", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "member_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "order": { "type": "integer", "minimum": 0 },
+        "parent_lane_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "datum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "missing", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "domain": { "type": ["string", "number"] },
+        "value": { "type": ["number", "null"] },
+        "x_value": { "type": ["number", "null"] },
+        "y_value": { "type": ["number", "null"] },
+        "size_value": { "type": ["number", "null"] },
+        "size_unit": { "type": ["string", "null"] },
+        "distribution_samples": { "type": "array", "minItems": 1, "items": { "type": "number" } },
+        "missing": { "type": "boolean" },
+        "label": { "type": "string" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      },
+      "anyOf": [
+        { "required": ["domain", "value"] },
+        { "required": ["x_value", "y_value"] },
+        { "required": ["distribution_samples"] }
+      ]
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "unit", "data", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "label": { "type": "string", "minLength": 1 },
+        "unit": { "type": ["string", "null"] },
+        "distribution": { "$ref": "#/$defs/distribution" },
+        "data": { "type": "array", "items": { "$ref": "#/$defs/datum" } },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "domain_min",
+        "domain_max",
+        "bin_count",
+        "bin_edges",
+        "bandwidth",
+        "amplitude_normalization",
+        "shared_domain",
+        "shared_bins"
+      ],
+      "properties": {
+        "method": { "enum": ["histogram", "kde-gaussian"] },
+        "domain_min": { "type": "number" },
+        "domain_max": { "type": "number" },
+        "bin_count": { "type": "integer", "minimum": 2 },
+        "bin_edges": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "type": "number" }
+        },
+        "bandwidth": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "amplitude_normalization": { "const": "global-max" },
+        "shared_domain": { "const": true },
+        "shared_bins": { "const": true }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "method": { "const": "histogram" } }, "required": ["method"] },
+          "then": { "properties": { "bandwidth": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "method": { "const": "kde-gaussian" } }, "required": ["method"] },
+          "then": { "properties": { "bandwidth": { "type": "number", "exclusiveMinimum": 0 } } }
+        }
+      ]
+    },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "dimension", "scale", "label", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "dimension": { "enum": ["x", "y", "radial", "angular", "size"] },
+        "scale": { "enum": ["categorical", "linear", "time", "ordinal"] },
+        "label": { "type": "string" },
+        "unit": { "type": ["string", "null"] },
+        "domain_min": { "type": ["number", "string", "null"] },
+        "domain_max": { "type": ["number", "string", "null"] },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "target_ids", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string", "minLength": 1 },
+        "target_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      }
+    },
+    "fidelityEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_ids", "reason"],
+      "properties": {
+        "source_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "ir_ids": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "reason": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "archived_files_verified": 199,
+  "authority": "D-081",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "byte_identical_non_target_preview_svg": 41,
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0",
+  "gallery_manifest_sha256": "6bd265fbfe1bb06b7d2d15ea1f432b3282e03efa838b8ce10773b09025046df1",
+  "limits": "Focused serialized geometry/immutability checks, not browser, full P-19C QA or owner approval.",
+  "proof_svg_files": [
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light.svg",
+      "sha256": "ed650f9b3e16bae65561462ec81b103f03285b591b82887083f279dc16e3ce9e",
+      "source_html_sha256": "1cb073f9a41d3870ebb2344518f3ede4642cf28daf3b3af478a1b9e96632de34"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark.svg",
+      "sha256": "248c5c36fed68aedadcb21ce6076a41e932af860c852dda94c08dec72b3e645e",
+      "source_html_sha256": "19f15eaf4bb8057be99add9aab929bf6e88c859f56b1f76b02bb2c82a5fe298a"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial.svg",
+      "sha256": "cb45ce283d8c6d95199a759480344da217ce1fed4d69c3be6396a841dbb0d265",
+      "source_html_sha256": "bc7d016e612b0decc8be483cc32da7c3a26fe8560007ebcb694df1496460b774"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-light.svg",
+      "sha256": "72d0779e073b4b5cbded9a54351553fe8f272f033582faaa25e91f964a768d89",
+      "source_html_sha256": "1cd36697fe9fea3b1ee101852b32ebb6ed2a88b55836208d528d58e649cccd77"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--neutral-dark.svg",
+      "sha256": "344dac30ddfcd6929980fe2ea3e30f8849bdb9981bd0113357dfd7e5c3959f27",
+      "source_html_sha256": "cfb66c34f187a8007fcc6ae1781040146414b1eb398721d1c9806441f5528a25"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-dp-integration--editorial.svg",
+      "sha256": "bed87bbc504668219f8c4d64bf71eb80ab53da792882a9bfade7f488be68a4cd",
+      "source_html_sha256": "57a7f9fbeda9d2339c01c847a0bfedabcdf853ac1a7c1254f3fca0e21c0037b7"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-light--straight-proof.svg",
+      "scope": "QA-only straight override proof; not a gallery specimen",
+      "sha256": "9f592c6d2d337ec1299335cef5ea896dc265f47fa8ed33f3c196414364b1b093"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--neutral-dark--straight-proof.svg",
+      "scope": "QA-only straight override proof; not a gallery specimen",
+      "sha256": "b6fb994a5cfcf888b2bf0e6b2a4e264a30dbfc88525732bed64dd77bdfb41e3c"
+    },
+    {
+      "path": "evidence/p19/review02-checks/type-swimlane--editorial--straight-proof.svg",
+      "scope": "QA-only straight override proof; not a gallery specimen",
+      "sha256": "d000bbff9174ec4b3481cf9659f912d85e7808f7974e38362bc0b8395b5c5377"
+    }
+  ],
+  "protected_files_verified": 1954,
+  "status": "PASS",
+  "straight_override_proofs": [
+    {
+      "mode": "neutral-light",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "straight",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      }
+    },
+    {
+      "mode": "neutral-dark",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "straight",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      }
+    },
+    {
+      "mode": "editorial",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "straight",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      }
+    }
+  ],
+  "target_measurements": [
+    {
+      "mode": "neutral-light",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "rounded",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      },
+      "type": "swimlane"
+    },
+    {
+      "mode": "neutral-dark",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "rounded",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      },
+      "type": "swimlane"
+    },
+    {
+      "mode": "editorial",
+      "result": {
+        "continuous_subpaths": 1,
+        "corner_style": "rounded",
+        "end": [
+          740,
+          445
+        ],
+        "erase_overlays": 0,
+        "semantic_paths": 1,
+        "start": [
+          460,
+          265
+        ]
+      },
+      "type": "swimlane"
+    },
+    {
+      "mode": "neutral-light",
+      "result": {
+        "center_error_xy": [
+          0.0,
+          0.0
+        ],
+        "padding_ltrb": [
+          24.0,
+          85.0,
+          24.0,
+          85.0
+        ]
+      },
+      "type": "dp-integration"
+    },
+    {
+      "mode": "neutral-dark",
+      "result": {
+        "center_error_xy": [
+          0.0,
+          0.0
+        ],
+        "padding_ltrb": [
+          24.0,
+          85.0,
+          24.0,
+          85.0
+        ]
+      },
+      "type": "dp-integration"
+    },
+    {
+      "mode": "editorial",
+      "result": {
+        "center_error_xy": [
+          0.0,
+          0.0
+        ],
+        "padding_ltrb": [
+          24.0,
+          85.0,
+          24.0,
+          85.0
+        ]
+      },
+      "type": "dp-integration"
+    }
+  ],
+  "unchanged_non_target_html_after_candidate_id_normalization": 123
+}

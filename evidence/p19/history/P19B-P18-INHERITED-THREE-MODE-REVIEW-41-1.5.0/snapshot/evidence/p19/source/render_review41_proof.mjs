@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const sharp = require('<OWNER_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const root = process.cwd();
+const source = path.join(root, 'evidence/p19/gallery/previews/cap-cap-v18-slope-graph.svg');
+const out = path.join(root, 'evidence/p19/review41-checks');
+fs.mkdirSync(out, { recursive: true });
+const svg = fs.readFileSync(source);
+fs.writeFileSync(path.join(out, 'slope-graph.svg'), svg);
+const colors = {paper:'#eeece7',canvas:'#f7f6f2',surface:'#ffffff','surface-alt':'#eeece7',text:'#252b3c',muted:'#687286',border:'#c7ccd2',accent:'#f26a32','accent-soft':'#f8e7dd','accent-text':'#df5522','on-accent':'#ffffff',connector:'#4f5e76',grid:'#d9d7d2','series-1':'#2f65af','series-2':'#f26a32','series-3':'#7c9167','series-4':'#b9894b',success:'#7c9167',danger:'#b9473f'};
+let rasterSvg = svg.toString('utf8');
+for (const [name,value] of Object.entries(colors)) rasterSvg = rasterSvg.replaceAll(`var(--${name})`,value);
+if (/var\(--[^)]+\)/.test(rasterSvg)) throw new Error('Unresolved template token in slope-graph proof');
+await sharp(Buffer.from(rasterSvg),{density:120}).png().toFile(path.join(out,'slope-graph.svg.png'));
+console.log(JSON.stringify({source,output:out}));

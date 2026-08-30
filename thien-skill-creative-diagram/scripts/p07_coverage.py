@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from semantic_catalog import CAPABILITY_MAP, SPECIMEN_GROUPS, expected_capability_ids
+from semantic_catalog import CAPABILITY_MAP, SPECIMEN_GROUPS, historical_capability_ids
 
 
 def _disposition(capability_id: str, item: dict[str, Any]) -> tuple[str, str, str]:
@@ -39,10 +39,12 @@ def _disposition(capability_id: str, item: dict[str, Any]) -> tuple[str, str, st
 
 
 def build_p07_coverage() -> dict[str, dict[str, Any]]:
-    if set(CAPABILITY_MAP) != expected_capability_ids():
-        raise AssertionError("P-05 capability inventory drifted")
+    historical_ids = historical_capability_ids()
+    if not historical_ids <= set(CAPABILITY_MAP):
+        raise AssertionError("Historical P-05 capability inventory drifted")
     coverage: dict[str, dict[str, Any]] = {}
-    for capability_id, item in CAPABILITY_MAP.items():
+    for capability_id in sorted(historical_ids):
+        item = CAPABILITY_MAP[capability_id]
         disposition, test_id, boundary = _disposition(capability_id, item)
         coverage[capability_id] = {
             "class": item["class"],

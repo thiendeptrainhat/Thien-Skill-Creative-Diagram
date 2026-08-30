@@ -21,7 +21,7 @@ for path in (SCRIPT_DIR, TEST_DIR):
 from motion_catalog import MOTION_CAPABILITIES
 from output_pipeline import OUTPUT_VERSION, detect_rasterizer, export_artifacts
 from p08_coverage import P08_COVERAGE
-from semantic_fixtures import fixtures
+from semantic_fixtures import legacy_fixtures
 
 
 def _request(diagram_type: str, *, format: str = "html", motion: str = "none", size: str = "fit") -> dict[str, Any]:
@@ -52,7 +52,7 @@ def generate() -> None:
         "capabilities": P08_COVERAGE,
         "p09_p11_boundary": "P-09 brand assets and P-11 automated QA/golden infrastructure remain not started.",
     })
-    cases = fixtures()
+    cases = legacy_fixtures()
     matrix: list[dict[str, str]] = []
     for diagram_type, ir in cases.items():
         svg = export_artifacts(ir, _request(diagram_type, format="svg"), auto_detect_rasterizer=False)

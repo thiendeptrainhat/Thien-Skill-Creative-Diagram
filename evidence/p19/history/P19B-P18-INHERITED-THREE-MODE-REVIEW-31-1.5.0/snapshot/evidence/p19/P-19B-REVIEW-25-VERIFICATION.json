@@ -1,0 +1,30 @@
+{
+  "archived_files_verified": 440,
+  "authority": "D-105",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-25-1.5.0",
+  "documented_orthogonal_exceptions": 1,
+  "gallery_manifest_sha256": "f9d5ecb8a408bb677d92e27975a1ac0c8d6307ad813450f1156427d573912360",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_artwork_preserved_after_policy_normalization": 87,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review25-checks/type-uml-class.svg.png",
+      "sha256": "12fb6e50399b6b4ae1647631a5293a442497e933ac40104aa0a44a9958e9b62a",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 9253,
+  "single_port_centered": "PASS",
+  "status": "PASS",
+  "straight_relations": 4,
+  "three_mode_geometry": "PASS",
+  "two_ports_equal_intervals": [
+    360,
+    360,
+    360
+  ]
+}

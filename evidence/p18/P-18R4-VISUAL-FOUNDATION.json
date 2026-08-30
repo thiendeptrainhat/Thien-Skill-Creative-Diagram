@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "P18R4-VISUAL-FOUNDATION-1.5.0",
+  "date": "2026-08-24",
+  "authority": ["D-051", "D-052", "D-053"],
+  "status": "locked_for_p18r5",
+  "scope": {
+    "canonical_type_count": 39,
+    "capability_variant_count": 4,
+    "visual_modes": ["neutral-light", "neutral-dark", "editorial"],
+    "eventual_standalone_html_count": 129,
+    "current_authorized_subphase": "P-18R4"
+  },
+  "rejected_candidate": {
+    "manifest_id": "P18-PILOT-1.5.0-VISUAL-CRAFT-REPLACEMENT",
+    "manifest_sha256": "4fb00b7f1b898a4a59b6fd4092b8f15f35ddd5b4a51c14124911b42a145ed5a7",
+    "effect": "historical_evidence_only_not_golden"
+  },
+  "pipeline": [
+    "locked_semantic_ir",
+    "visual_intent_and_focal_path",
+    "typography_resolution",
+    "font_and_glyph_validation",
+    "real_font_measurement_and_line_breaking",
+    "intrinsic_primitive_and_node_sizing",
+    "family_layout_engine",
+    "content_fit_artboard",
+    "port_allocation_and_obstacle_map",
+    "connector_routing_labels_and_bridges",
+    "technical_and_visual_validation",
+    "standalone_html_svg_emission",
+    "owner_review"
+  ],
+  "retired_foundation_choices": [
+    "fixed_1440x900_for_all_families",
+    "global_transform_as_layout",
+    "character_count_or_heuristic_only_text_measurement",
+    "fixed_card_size_with_text_compression_or_overflow",
+    "generic_template_for_unrelated_families",
+    "manual_connector_coordinates_without_obstacle_routing",
+    "review_answer_leakage_from_legend_or_intent_prose",
+    "internal_score_as_owner_acceptance"
+  ],
+  "typography": {
+    "precedence": [
+      "explicit_user_role_or_all_font",
+      "user_selected_brand_profile",
+      "explicit_source_font_fidelity",
+      "skill_default_profile",
+      "disclosed_system_fallback"
+    ],
+    "default_profile": {
+      "display": "Instrument Serif",
+      "human_sans": "Geist",
+      "technical_mono": "Geist Mono"
+    },
+    "canonical_px": {
+      "display": 48,
+      "node_title": 24,
+      "material": 16,
+      "technical_mono": 16
+    },
+    "hard_ranges_px": {
+      "display": [40, 48],
+      "node_title": [20, 24],
+      "material_min": 16,
+      "technical_mono": [14, 16]
+    },
+    "requirements": [
+      "resolve_before_layout",
+      "load_before_measurement",
+      "verify_computed_family",
+      "verify_required_glyphs",
+      "measure_real_metrics",
+      "wrap_by_measured_width",
+      "rerun_geometry_after_font_change",
+      "no_silent_user_font_replacement",
+      "no_shrink_to_fit_below_minimum"
+    ],
+    "p18r4_network_or_install_action": false
+  },
+  "artboard": {
+    "global_post_layout_transform_allowed": false,
+    "minimum_safe_area_px": 48,
+    "minimum_semantic_field_plus_legend_height_ratio": 0.75,
+    "profiles": {
+      "wide_rail_lane": [2.2, 2.45],
+      "landscape_network_data": [1.75, 2.1],
+      "balanced_matrix_hierarchy": [1.45, 1.75],
+      "tall_directed_flow": [1.0, 1.35]
+    }
+  },
+  "layout_engines": [
+    {"id": "topology-and-zones", "canonical_types": ["architecture", "it-current-state", "high-level"], "capabilities": []},
+    {"id": "integration-pipeline", "canonical_types": ["data-flow", "dp-integration"], "capabilities": []},
+    {"id": "runtime-deployment", "canonical_types": ["deployment"], "capabilities": []},
+    {"id": "dependency-dag", "canonical_types": ["dependency-graph"], "capabilities": []},
+    {"id": "directed-flow-state", "canonical_types": ["flowchart", "process", "state-machine"], "capabilities": []},
+    {"id": "lane-interaction", "canonical_types": ["swimlane", "sequence"], "capabilities": []},
+    {"id": "time-planning", "canonical_types": ["timeline", "gantt"], "capabilities": []},
+    {"id": "work-experience", "canonical_types": ["kanban", "user-journey", "story-map"], "capabilities": []},
+    {"id": "hierarchy", "canonical_types": ["tree", "org-chart"], "capabilities": []},
+    {"id": "containment-stack", "canonical_types": ["nested", "layer-stack", "medallion", "pyramid-funnel"], "capabilities": []},
+    {"id": "compartment-model", "canonical_types": ["er-data-model", "database-schema", "uml-class"], "capabilities": []},
+    {"id": "spatial-matrix", "canonical_types": ["quadrant", "dp-security-matrix", "wardley-map", "venn"], "capabilities": []},
+    {"id": "quantitative", "canonical_types": ["bar-chart", "line-chart", "scatter-plot", "radar", "polar-chart", "treemap"], "capabilities": ["dumbbell", "slopegraph", "ridgeline", "bubble"]},
+    {"id": "special-geometry", "canonical_types": ["loop-flywheel", "sankey", "fishbone"], "capabilities": []}
+  ],
+  "geometry": {
+    "minimum_label_connector_clearance_px": 8,
+    "ports_before_routing": true,
+    "obstacle_aware_routing": true,
+    "bridge_or_hop_for_unavoidable_crossing": true,
+    "wrong_endpoint_allowed": false,
+    "connector_through_unrelated_obstacle_allowed": false,
+    "material_text_outside_owner_allowed": false
+  },
+  "review": {
+    "visual_craft_minimum": 85,
+    "dimension_minimum_out_of_5": 4,
+    "pilot_blind_minimum_correct": "10/12",
+    "engine_anchor_blind_minimum_correct": "12/14",
+    "full_coverage_within_cluster_minimum": 0.85,
+    "five_second_answer_leakage_allowed": false,
+    "owner_approval_required": true,
+    "pixel_similarity_allowed": false
+  },
+  "sequence": [
+    {"phase": "P-18R4", "authorized": true, "outcome": "contract_and_visual_foundation_relock"},
+    {"phase": "P-18R5", "authorized": false, "outcome": "canonical_kernel_and_swimlane_neutral_light_anchor"},
+    {"phase": "P-18R6", "authorized": false, "outcome": "fourteen_engine_neutral_light_anchor_gallery"},
+    {"phase": "P-19A", "authorized": false, "outcome": "thirty_nine_plus_four_adapters"},
+    {"phase": "P-19B", "authorized": false, "outcome": "three_mode_derivation_and_129_html"},
+    {"phase": "P-19C", "authorized": false, "outcome": "full_qa_freeze_and_owner_review"}
+  ]
+}

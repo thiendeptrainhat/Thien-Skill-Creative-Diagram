@@ -1,0 +1,48 @@
+{
+  "alternative_table_rows": 5,
+  "archived_files_verified": 646,
+  "authority": "D-125",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-45-1.5.0",
+  "display_identity": "nested",
+  "gallery_manifest_sha256": "ae95aca927ec69904483441db6b85de0381c1c1d85f4f01ee07a21a40aed0ba2",
+  "global_policy_declarations": 93,
+  "inset_per_depth": {
+    "x": 65,
+    "y": 75
+  },
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "nested_measurement": {
+    "annotation_leaders": 1,
+    "artifacts": 5,
+    "focal_scopes": 1,
+    "max_depth": 4,
+    "scopes": 5
+  },
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "APPROVED_D-126_WITH_P18_P19_COEXISTENCE",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review45-checks/nested.svg",
+      "sha256": "118309c2118c9a6c0a15cb9ce994057e3babe962315724f06dc62675a8838fcb"
+    },
+    {
+      "path": "evidence/p19/review45-checks/nested.svg.png",
+      "sha256": "3d2f111e3b8482887c746dd94e0d3c0a1632d4f2dac03251b53f3fab2968805c",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 20018,
+  "scope_order": [
+    "scope-enterprise",
+    "scope-data",
+    "scope-analytics",
+    "scope-operations",
+    "scope-project"
+  ],
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

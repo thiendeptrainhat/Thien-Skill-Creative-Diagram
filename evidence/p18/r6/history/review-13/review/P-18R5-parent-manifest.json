@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "P18R5-MASTER-KERNEL-SWIMLANE-ANCHOR-REVIEW-04-1.5.0",
+  "date": "2026-08-24",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-054",
+    "D-055",
+    "D-056",
+    "D-057"
+  ],
+  "status": "technical_ready_owner_review_pending",
+  "scope": {
+    "specimen_count": 1,
+    "serializer_count": 2,
+    "layout_engine_count": 1,
+    "layout_engine": "lane-interaction",
+    "type": "swimlane",
+    "mode": "neutral-light",
+    "qa_only": true,
+    "p18r6_authorized": false,
+    "p19_authorized": false,
+    "package_or_release_authorized": false
+  },
+  "source": [
+    {
+      "path": "evidence/p18/r5/source/master_visual_kernel.py",
+      "sha256": "dad5b26039fbeb9df9aa02d58f21d8a084d96973491802617bcddb47da800311",
+      "bytes": 43031
+    },
+    {
+      "path": "evidence/p18/r5/source/swimlane_anchor.py",
+      "sha256": "ca3cd5e55be3c168626865564f3cf3eff820c3ef80f2f45ca506f68c0008d843",
+      "bytes": 28060
+    },
+    {
+      "path": "evidence/p18/r5/source/generate_p18r5.py",
+      "sha256": "b0782ea631582f047972b9cfe8c44902f55128fe6ec2152ef6982f70d7b361ec",
+      "bytes": 5188
+    },
+    {
+      "path": "evidence/p18/r5/source/p18r5_qa.py",
+      "sha256": "793df23509ea4ff84aa147ef1c6ffd9ee1e6bcf11e27370d404ea96782af08bf",
+      "bytes": 20599
+    },
+    {
+      "path": "evidence/p18/r5/source/p18r5_browser_qa.js",
+      "sha256": "bf67eacda3b88a8ed93ecfa17511a651b2b4f3e5d9e45fe6566c197d3b2ef1c7",
+      "bytes": 15601
+    },
+    {
+      "path": "evidence/p18/r5/source/freeze_p18r5.py",
+      "sha256": "a5398f4246491576ef4347a03f2b7c7ea618429b3afba1f4fef92270fdaa86bd",
+      "bytes": 5100
+    }
+  ],
+  "source_bundle_sha256": "45da46ef6fc80982c83cb63b7212f11c06973d093f4a317b236e782df738e10b",
+  "artifacts": [
+    {
+      "path": "evidence/p18/r5/anchor/swimlane--neutral-light.html",
+      "sha256": "8ef26083752d829017abca9e162261ed4a1579cc7e8a604dc6e11cc77b96421f",
+      "bytes": 27589
+    },
+    {
+      "path": "evidence/p18/r5/anchor/swimlane--neutral-light.svg",
+      "sha256": "a0d3949d177daebca0c84070b18d8366a025025261d03a7e03896550beb8253c",
+      "bytes": 23255
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-BUILD-RECEIPT.json",
+      "sha256": "fa7d4c6bc9cabe020546fc4d4d0bf5079926a51457c38251e59aa8be4cfddc05",
+      "bytes": 5208
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-VERIFICATION.json",
+      "sha256": "334de3d12b0a3a9d787be9d19f1ea1f7203cfb331b49311caf70f522b6d8f662",
+      "bytes": 5805
+    },
+    {
+      "path": "evidence/p18/r5/P-18R5-VISUAL-REVIEW.md",
+      "sha256": "15c2b97763aff7d52637b66a29d6be8c585cd22ca6e25e67902c6be90aa0013a",
+      "bytes": 6693
+    },
+    {
+      "path": "evidence/p18/r5/review/browser-verification.json",
+      "sha256": "b6183bf9cd3ffec3dfbb33dbfd390369db56c4435d731109c5e2fce0bd19b553",
+      "bytes": 3547
+    },
+    {
+      "path": "evidence/p18/r5/review/swimlane--neutral-light.png",
+      "sha256": "f16d30a070f34e9a6e3601b0ef06dd070e8fc3995ec58b6c94537ecd7c4c6e54",
+      "bytes": 246097
+    }
+  ],
+  "artifact_bundle_sha256": "0113f957e24776fd5b70e08873a791c722993a0c00bd015aa6612a5b5089f004",
+  "contracts": [
+    {
+      "path": "evidence/p18/r5/P-18R5-DESIGN-CONTRACT.md",
+      "sha256": "8613ad721cc4212053104ca504b4601bf99df67b1f2e33bf853cae76e350e094",
+      "bytes": 8929
+    },
+    {
+      "path": "evidence/p18/P-18R4-VISUAL-FOUNDATION-CONTRACT.md",
+      "sha256": "addf6793a9670d5a76b48c3835f2e2e08750b0bfca7cc27b210210acaa9f95a5",
+      "bytes": 12542
+    },
+    {
+      "path": "evidence/p18/P-18R4-VISUAL-FOUNDATION.json",
+      "sha256": "37e0c955cc814d10dc393f148a4a55c2d5ef141e547c370171d176cc2efd7be9",
+      "bytes": 5871
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "evidence/p18/source/p18_cases.py",
+      "sha256": "f67c377327d6690fe1b740ef587209c980dcb7bb5a74319a7323b13d300a3be3",
+      "bytes": 19199
+    },
+    {
+      "path": "thien-skill-creative-diagram/references/type-swimlane.md",
+      "sha256": "4d08dfcba9d270478ada9fb74ec0e1766072b93b31fc3808277aec44cd5d724f",
+      "bytes": 1625
+    }
+  ],
+  "lineage": [
+    {
+      "path": "evidence/p18/r5/history/review-01/P-18R5-MANIFEST.json",
+      "sha256": "519aad808b0123a6f809403f0d6678f44e9633c99ce3ceed1397be9f69efe6e1",
+      "bytes": 4796
+    },
+    {
+      "path": "evidence/p18/r5/history/review-01/REVIEW-01-LINEAGE.json",
+      "sha256": "0ab31dd2c78473525e53aee7d3b217dabd5c95e90fa8ba4202a3bf27d2bacb23",
+      "bytes": 811
+    },
+    {
+      "path": "evidence/p18/r5/history/review-02/P-18R5-MANIFEST.json",
+      "sha256": "3d4caf5336e1ab7b087d7c03074f645c47aad197b50b2a4ebddca6c820035bf0",
+      "bytes": 5312
+    },
+    {
+      "path": "evidence/p18/r5/history/review-02/REVIEW-02-LINEAGE.json",
+      "sha256": "76a6c0af8c18a03853f41a511ac00fcc30c60cee7f16449ba37fd1df17ef7da6",
+      "bytes": 1082
+    },
+    {
+      "path": "evidence/p18/r5/history/review-03/P-18R5-MANIFEST.json",
+      "sha256": "0e4c047c0254228a9e43ce98f87901b4d6e7a4e1bf845bd6d3906684cfae031e",
+      "bytes": 5707
+    },
+    {
+      "path": "evidence/p18/r5/history/review-03/REVIEW-03-LINEAGE.json",
+      "sha256": "0e7d3da8370b53b2717c7ae277b73f61b6e463d6d5804809697d2973df7d7e02",
+      "bytes": 1097
+    }
+  ],
+  "lineage_bundle_sha256": "1956483c362072ade76e9fde85da3cf38061b7f3d9ac06f9f3007b612b1ba36f",
+  "provenance": {
+    "implementation_model": "clean-room-oriented independent reimplementation",
+    "semantic_ir_reused": true,
+    "rejected_p18r3_visual_source_reused": false,
+    "upstream_code_css_svg_template_asset_font_reused": false,
+    "upstream_comparison_method": "abstract_rubric_only"
+  },
+  "verification": {
+    "focused_result": "PASS",
+    "focused_pass_count": 16,
+    "focused_fail_count": 0,
+    "browser_result": "PASS",
+    "browser_viewports": [
+      "canonical",
+      "desktop",
+      "mobile"
+    ],
+    "full_regression": "148/148 PASS",
+    "engineering_visual_precheck": "95.5/100; every dimension >=4/5",
+    "independent_visual_gate": "PENDING",
+    "owner_visual_approval": "PENDING",
+    "g03_1_5_0": "NOT-EVALUATED"
+  }
+}

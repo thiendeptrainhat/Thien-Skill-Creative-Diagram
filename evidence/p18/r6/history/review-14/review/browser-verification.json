@@ -1,0 +1,726 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-14-1.5.0",
+  "status": "PASS",
+  "case_count": 42,
+  "pass_count": 42,
+  "fail_count": 0,
+  "console_errors": [],
+  "external_requests": [],
+  "results": [
+    {
+      "engine": "topology-and-zones",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 961.25,
+        "textCount": 27,
+        "engine": "topology-and-zones",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "topology-and-zones",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 777.734375,
+        "textCount": 27,
+        "engine": "topology-and-zones",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "topology-and-zones",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 203.65625,
+        "textCount": 27,
+        "engine": "topology-and-zones",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "integration-pipeline",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 961.25,
+        "textCount": 27,
+        "engine": "integration-pipeline",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "integration-pipeline",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 777.734375,
+        "textCount": 27,
+        "engine": "integration-pipeline",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "integration-pipeline",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 203.65625,
+        "textCount": 27,
+        "engine": "integration-pipeline",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "runtime-deployment",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1093.265625,
+        "textCount": 24,
+        "engine": "runtime-deployment",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "runtime-deployment",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 884.53125,
+        "textCount": 24,
+        "engine": "runtime-deployment",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "runtime-deployment",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 231.625,
+        "textCount": 24,
+        "engine": "runtime-deployment",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "dependency-dag",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1338.6875,
+        "textCount": 36,
+        "engine": "dependency-dag",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "dependency-dag",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 1083.109375,
+        "textCount": 36,
+        "engine": "dependency-dag",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "dependency-dag",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 283.625,
+        "textCount": 36,
+        "engine": "dependency-dag",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "directed-flow-state",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1607.15625,
+        "textCount": 19,
+        "engine": "directed-flow-state",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "directed-flow-state",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 1300.3125,
+        "textCount": 19,
+        "engine": "directed-flow-state",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "directed-flow-state",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 340.515625,
+        "textCount": 19,
+        "engine": "directed-flow-state",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "lane-interaction",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 773.84375,
+        "textCount": 92,
+        "engine": "lane-interaction",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "lane-interaction",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 626.109375,
+        "textCount": 92,
+        "engine": "lane-interaction",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "lane-interaction",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 163.953125,
+        "textCount": 92,
+        "engine": "lane-interaction",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "time-planning",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 879.4375,
+        "textCount": 19,
+        "engine": "time-planning",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "time-planning",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 711.546875,
+        "textCount": 19,
+        "engine": "time-planning",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "time-planning",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 186.328125,
+        "textCount": 19,
+        "engine": "time-planning",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "work-experience",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1014.234375,
+        "textCount": 28,
+        "engine": "work-experience",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "work-experience",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 820.59375,
+        "textCount": 28,
+        "engine": "work-experience",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "work-experience",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 214.890625,
+        "textCount": 28,
+        "engine": "work-experience",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "hierarchy",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1030.796875,
+        "textCount": 38,
+        "engine": "hierarchy",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "hierarchy",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 834,
+        "textCount": 38,
+        "engine": "hierarchy",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "hierarchy",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 218.390625,
+        "textCount": 38,
+        "engine": "hierarchy",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "containment-stack",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1209.84375,
+        "textCount": 17,
+        "engine": "containment-stack",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "containment-stack",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 978.859375,
+        "textCount": 17,
+        "engine": "containment-stack",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "containment-stack",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 256.328125,
+        "textCount": 17,
+        "engine": "containment-stack",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "compartment-model",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1010.578125,
+        "textCount": 40,
+        "engine": "compartment-model",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "compartment-model",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 817.640625,
+        "textCount": 40,
+        "engine": "compartment-model",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "compartment-model",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 214.109375,
+        "textCount": 40,
+        "engine": "compartment-model",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "spatial-matrix",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1122.421875,
+        "textCount": 18,
+        "engine": "spatial-matrix",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "spatial-matrix",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 908.125,
+        "textCount": 18,
+        "engine": "spatial-matrix",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "spatial-matrix",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 237.8125,
+        "textCount": 18,
+        "engine": "spatial-matrix",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "quantitative",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1122.421875,
+        "textCount": 23,
+        "engine": "quantitative",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "quantitative",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 908.125,
+        "textCount": 23,
+        "engine": "quantitative",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "quantitative",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 237.8125,
+        "textCount": 23,
+        "engine": "quantitative",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "special-geometry",
+      "viewport": "canonical",
+      "width": 2200,
+      "height": 1600,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1718,
+        "svgHeight": 1005.65625,
+        "textCount": 22,
+        "engine": "special-geometry",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "special-geometry",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 1390,
+        "svgHeight": 813.65625,
+        "textCount": 22,
+        "engine": "special-geometry",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    },
+    {
+      "engine": "special-geometry",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": {
+        "failures": [],
+        "documentOverflow": false,
+        "svgWidth": 364,
+        "svgHeight": 213.0625,
+        "textCount": 22,
+        "engine": "special-geometry",
+        "resolvedHumanFont": "Avenir Next",
+        "resolvedMonoFont": "Menlo"
+      }
+    }
+  ]
+}

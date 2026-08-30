@@ -10,12 +10,12 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from p07_coverage import P07_COVERAGE, SPECIMEN_TOTAL
-from semantic_catalog import expected_capability_ids
+from semantic_catalog import historical_capability_ids
 
 
 class P07CoverageTests(unittest.TestCase):
     def test_exact_capability_inventory_is_covered(self) -> None:
-        self.assertEqual(set(P07_COVERAGE), expected_capability_ids())
+        self.assertEqual(set(P07_COVERAGE), historical_capability_ids())
         self.assertEqual(len(P07_COVERAGE), 95)
         for capability_id, entry in P07_COVERAGE.items():
             with self.subTest(capability_id=capability_id):

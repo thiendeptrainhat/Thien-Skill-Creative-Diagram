@@ -36,7 +36,7 @@ from qa_contract import (
     validate_svg_contract,
     validate_type_coverage,
 )
-from semantic_fixtures import fixtures
+from semantic_fixtures import fixtures, legacy_fixtures
 from safe_import import ImportFailure, parse_drawio, parse_json_text, parse_mermaid_text, parse_pasted_table
 from visual_system import Rect, Route, load_visual_system
 
@@ -73,8 +73,8 @@ class RepositoryQATests(unittest.TestCase):
     def test_canonical_tree_passes_schema_link_type_hygiene_and_contrast_audit(self) -> None:
         report = audit_skill_tree(SKILL_ROOT)
         self.assertEqual(report["status"], "pass")
-        self.assertEqual(report["coverage"]["type_count"], 27)
-        self.assertEqual(report["coverage"]["capability_count"], 95)
+        self.assertEqual(report["coverage"]["type_count"], 39)
+        self.assertEqual(report["coverage"]["capability_count"], 111)
         self.assertEqual(report["contrast_pairs"], 27)
 
     def test_invalid_json_mutation_is_detected(self) -> None:
@@ -150,7 +150,7 @@ class GeometryMutationTests(unittest.TestCase):
 class SVGAccessibilityTypographyTests(unittest.TestCase):
     def test_valid_svg_and_all_27_generated_svgs_pass_static_contract(self) -> None:
         self.assertEqual(validate_svg_contract(minimal_svg())["status"], "pass")
-        for diagram_type, ir in fixtures().items():
+        for diagram_type, ir in legacy_fixtures().items():
             with self.subTest(diagram_type=diagram_type):
                 svg = render_static(ir).svg
                 self.assertEqual(validate_svg_contract(svg, ir)["status"], "pass")

@@ -1,0 +1,48 @@
+{
+  "alternative_table_rows": {
+    "nodes": 11,
+    "routes": 11
+  },
+  "archived_files_verified": 575,
+  "authority": "D-118",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-38-1.5.0",
+  "connector_policy": "nine straight routes; two symmetric rounded-orthogonal merge routes; five continuous document-boundary contacts",
+  "gallery_manifest_sha256": "e5a0dfd7dc5c1a033f2cf0827627e6e98c67f0bc4868d4b6b60acc4783108956",
+  "global_policy_declarations": 93,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "process_measurement": {
+    "document_boundary_contacts": 5,
+    "edges": 11,
+    "multiple_document_inlets": 2,
+    "nodes": 11,
+    "rounded_orthogonal_exceptions": 2,
+    "shape_counts": {
+      "decision": 2,
+      "document": 1,
+      "multiple-document": 1,
+      "process": 4,
+      "terminator": 3
+    },
+    "straight_routes": 9
+  },
+  "proof_files": [
+    {
+      "path": "evidence/p19/review38-checks/type-process.svg",
+      "sha256": "6c81129a615a0f3a6de7aa95defe714c3d074dd4bcd4c600e14a64c4a809dafb"
+    },
+    {
+      "path": "evidence/p19/review38-checks/type-process.svg.png",
+      "sha256": "2c5373b08e0be85e45bbe69fc94ca0800019a5d40fb026fb4ed7b1504b8c9a4c",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 15788,
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

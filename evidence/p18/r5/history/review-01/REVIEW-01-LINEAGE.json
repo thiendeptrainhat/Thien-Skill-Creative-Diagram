@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R5",
+  "candidate": "review-01",
+  "preservation_reason": "Owner review found two blocking visual-craft issues before remediation.",
+  "authority": "D-055",
+  "original_manifest": "evidence/p18/r5/history/review-01/P-18R5-MANIFEST.json",
+  "original_manifest_sha256": "519aad808b0123a6f809403f0d6678f44e9633c99ce3ceed1397be9f69efe6e1",
+  "owner_findings": [
+    "Unavoidable crossings read as bubble-like junctions instead of true bridge/hops.",
+    "Node titles wrapped into awkward short terminal lines even when horizontal space remained available."
+  ],
+  "status": "historical-superseded-for-owner-approval",
+  "mutation_policy": "The copied review-01 source, artifact, verification, receipt, visual review and manifest remain immutable historical evidence."
+}

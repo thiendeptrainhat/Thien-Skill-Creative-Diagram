@@ -365,6 +365,150 @@ TYPE_GRAMMARS: dict[str, dict[str, Any]] = {
         ("requires-rectangular-permission-matrix", "permission-state-enum", "requires-accessible-data"),
         "remove-permission-cell",
     ),
+    "polar-chart": _grammar(
+        "CAP-T28", "Polar chart", "cyclic-quantitative",
+        "Use for non-negative magnitudes arranged across a supplied cyclic category order.",
+        ("series", "category"),
+        ("Preserve category order, value, unit, zero, and explicit missingness.", "Declare one angular category axis and one non-negative radial domain."),
+        ("Use no semantic connectors between radial marks.", "A missing observation remains a disclosed gap."),
+        ("Use exact category, series, axis, and unit labels.", "Provide an accessible value ledger including zero and missing entries."),
+        ("Split dense category sets before labels collide.", "Never reorder categories to improve the silhouette."),
+        ("Do not map category to radius.", "Do not coerce missing values to zero or interpolate them."),
+        ("requires-polar-axes", "polar-series-valid", "requires-accessible-data"),
+        "make-polar-radius-negative",
+    ),
+    "treemap": _grammar(
+        "CAP-T29", "Treemap", "hierarchical-quantitative",
+        "Use for a rooted part-to-whole hierarchy whose leaf magnitude is encoded by area.",
+        ("leaf", "group"),
+        ("Bind every quantitative leaf to exactly one parent group.", "Reconcile every group child sum to its declared total and unit."),
+        ("Use containment rather than relationship edges for hierarchy.", "Keep cross-hierarchy relations outside the area encoding."),
+        ("Use exact group, leaf, value, and unit labels.", "Keep zero leaves in the accessible hierarchy."),
+        ("Split deep or dense branches without flattening ancestry.", "Never drop a zero-valued leaf to save space."),
+        ("Do not accept a cyclic or multi-root hierarchy.", "Do not infer a missing total or unit conversion."),
+        ("treemap-hierarchy-reconciles", "requires-accessible-data"),
+        "break-treemap-total",
+    ),
+    "sankey": _grammar(
+        "CAP-T30", "Sankey", "quantitative-flow",
+        "Use for directed stage-to-stage flows where band width represents an exact non-negative amount.",
+        ("source", "stage", "sink"),
+        ("Preserve source, target, amount, unit, and zero flows.", "Conserve same-unit totals at every node with both incoming and outgoing flow."),
+        ("Use directed flow edges with direct amount fields.", "Keep zero flows in the ledger while assigning zero data-bearing width."),
+        ("Use supplied stage, flow, amount, and unit labels.", "Provide an exact accessible flow ledger."),
+        ("Split large stage sets without changing conservation.", "Never aggregate flows unless the source authorizes it."),
+        ("Do not accept negative or missing flow amounts.", "Do not mix or convert units implicitly."),
+        ("minimum-two-nodes", "minimum-one-edge", "directed-edges", "sankey-flow-conservation", "requires-accessible-data"),
+        "break-sankey-conservation",
+    ),
+    "fishbone": _grammar(
+        "CAP-T31", "Fishbone", "cause-analysis",
+        "Use to organize supplied cause categories and causes that converge on one declared effect.",
+        ("cause", "effect", "cause-category"),
+        ("Declare exactly one effect.", "Assign every cause to exactly one explicit cause category."),
+        ("Direct every cause relation toward the effect.", "Do not encode an unprovided causal strength."),
+        ("Use supplied cause, category, and effect labels.", "Distinguish analysis structure from proof of causation."),
+        ("Split long cause lists within their category.", "Never merge categories to simplify geometry."),
+        ("Do not leave orphan causes.", "Do not present the arrangement as causal proof."),
+        ("fishbone-structure-valid",),
+        "orphan-fishbone-cause",
+    ),
+    "wardley-map": _grammar(
+        "CAP-T32", "Wardley map", "strategy-map",
+        "Use for components placed by supplied value-chain position and evolution coordinates with explicit dependencies.",
+        ("component", "dependency"),
+        ("Preserve both normalized coordinates for every component.", "Retain dependency endpoints and direction."),
+        ("Use directed dependency edges.", "Treat coordinates as supplied strategic evidence, not layout suggestions."),
+        ("Use exact component and annotation labels.", "Disclose both axis meanings and bounds."),
+        ("Use labels or callouts for collisions without moving data positions.", "Split annotations before changing coordinates."),
+        ("Do not infer build, buy, or move decisions.", "Do not clamp an out-of-domain coordinate."),
+        ("wardley-coordinates-valid", "directed-edges"),
+        "move-wardley-coordinate-outside-domain",
+    ),
+    "kanban": _grammar(
+        "CAP-T33", "Kanban", "work-state",
+        "Use for work items assigned to ordered state columns with WIP limits and explicit blocked state.",
+        ("work-item", "column"),
+        ("Assign every work item to one column and stable item order.", "Enforce supplied WIP limits and preserve blocked state."),
+        ("Use no connector to imply column membership.", "Represent workflow relations separately when supplied."),
+        ("Use exact column and work-item labels.", "Expose blocked state through structured semantics, not color alone."),
+        ("Split or scroll dense boards without hiding cards.", "Do not move a card to satisfy a limit."),
+        ("Do not infer work state from horizontal position.", "Do not silently accept WIP overflow."),
+        ("kanban-board-valid",),
+        "exceed-kanban-wip-limit",
+    ),
+    "user-journey": _grammar(
+        "CAP-T34", "User journey", "experience-sequence",
+        "Use for an ordered journey whose stages retain actions, touchpoints, and optional declared sentiment.",
+        ("stage", "action", "touchpoint"),
+        ("Preserve stage order, action, and touchpoint.", "Keep sentiment within its declared normalized scale and separate from factual narrative."),
+        ("Use progression edges only when explicitly supplied.", "Do not infer causality from sentiment changes."),
+        ("Use exact stage, action, and touchpoint labels.", "Provide a text equivalent for sentiment."),
+        ("Split long narratives by stage without reordering them.", "Never replace narrative facts with a sentiment curve."),
+        ("Do not invent a missing touchpoint.", "Do not encode sentiment only by color."),
+        ("user-journey-valid",),
+        "duplicate-journey-stage-order",
+    ),
+    "deployment": _grammar(
+        "CAP-T35", "Deployment", "runtime-topology",
+        "Use for runtime artifacts placed on supplied zones and hosts with replicas, ports, and runtime relations.",
+        ("artifact", "host", "zone"),
+        ("Preserve every supplied placement field.", "Keep positive replica counts, port labels, and cross-zone relations exact."),
+        ("Use directed runtime or dependency edges.", "Keep logical architecture distinct from runtime placement."),
+        ("Use exact zone, host, artifact, replica, and port labels.", "Disclose unknown placement rather than guessing."),
+        ("Split dense zones while retaining placement identity.", "Do not duplicate one runtime artifact for presentation."),
+        ("Do not substitute a logical component map.", "Do not invent ports, hosts, or replicas."),
+        ("deployment-placement-valid", "directed-edges"),
+        "remove-deployment-placement",
+    ),
+    "dependency-graph": _grammar(
+        "CAP-T36", "Dependency graph", "general-dependency",
+        "Use for general directed dependencies where fan-in, disconnected components, rank, or cycles may be material.",
+        ("component", "dependency"),
+        ("Preserve every dependency endpoint and direction.", "Retain cycles and fan-in rather than coercing the graph to a tree."),
+        ("Use directed dependency edges.", "Keep strongly connected components explicit when present."),
+        ("Use supplied item and relationship labels.", "Disclose cycles without treating them as invalid by default."),
+        ("Split disconnected components without dropping relations.", "Never duplicate a multi-parent node to imitate a tree."),
+        ("Do not reject a supplied cycle merely for layout convenience.", "Do not infer dependency rank as business priority."),
+        ("dependency-graph-valid",),
+        "remove-dependency-edge",
+    ),
+    "uml-class": _grammar(
+        "CAP-T37", "UML class", "typed-structure",
+        "Use for classes with structured attributes, operations, visibility, signatures, multiplicities, and typed relationships.",
+        ("class", "attribute", "operation"),
+        ("Preserve every supplied class member and signature.", "Retain relation kind, endpoint, direction, and multiplicity."),
+        ("Use typed UML relations only when supplied.", "Anchor member-level relations to declared members."),
+        ("Use exact class, member, type, signature, and multiplicity labels.", "Do not shorten a signature by changing meaning."),
+        ("Split large class compartments while preserving member ownership.", "Do not merge homonymous members."),
+        ("Do not infer inheritance from naming.", "Do not replace a typed relation with an unlabeled line."),
+        ("uml-class-valid",),
+        "remove-uml-relation-kind",
+    ),
+    "story-map": _grammar(
+        "CAP-T38", "Story map", "narrative-backlog",
+        "Use for a narrative backbone with ordered stories, release slices, and an explicit cut status.",
+        ("backbone", "story", "release-slice"),
+        ("Preserve backbone and story order.", "Represent unassigned stories with a null release slice and unassigned cut status."),
+        ("Use containment for release-slice membership.", "Keep cut-line status distinct from story priority."),
+        ("Use exact backbone, story, and release labels.", "Name unassigned status explicitly."),
+        ("Split dense slices without reassigning stories.", "Do not force an unassigned story into a release."),
+        ("Do not accept inconsistent null/slice status pairs.", "Do not infer release scope from position."),
+        ("story-map-valid",),
+        "mismatch-story-release-pairing",
+    ),
+    "database-schema": _grammar(
+        "CAP-T39", "Database schema", "physical-data-model",
+        "Use for physical tables with columns, SQL data types, constraints, ordered indexes, and column-level foreign keys.",
+        ("table", "column", "index"),
+        ("Preserve column and index membership under each table.", "Keep ordered index column IDs, uniqueness, and foreign-key member endpoints exact."),
+        ("Use foreign-key edges anchored to source and target columns.", "Keep physical schema semantics distinct from conceptual ER relationships."),
+        ("Use exact table, column, data type, constraint, and index labels.", "Expose index order in accessible text."),
+        ("Split dense schemas by bounded context while retaining cross-schema keys.", "Do not hide composite index order."),
+        ("Do not infer a key from a naming convention.", "Do not accept a foreign or non-column index member."),
+        ("database-schema-valid",),
+        "reorder-database-index",
+    ),
 }
 
 
@@ -396,6 +540,10 @@ VARIANT_MAPPINGS: dict[str, dict[str, Any]] = {
     "CAP-V14": {"name": "linked annotation", "parents": ["all"], "phase": "P-05", "implementation": "annotation target and reading-order validation", "status": "implemented-common-ir"},
     "CAP-V15": {"name": "semantic icon", "parents": ["all"], "phase": "P-09", "implementation": "approved manifest-tracked symbol with text equivalent", "status": "deferred-to-authorized-phase"},
     "CAP-V16": {"name": "sequence refresh branch", "parents": ["sequence"], "phase": "P-05", "implementation": "original combined-fragment semantic fixture", "status": "implemented-semantic-contract"},
+    "CAP-V17": {"name": "dumbbell", "parents": ["bar-chart"], "phase": "P-17", "implementation": "two-value category and signed-gap semantic validator", "status": "implemented-semantic-contract"},
+    "CAP-V18": {"name": "slopegraph", "parents": ["line-chart"], "phase": "P-17", "implementation": "two-state direction, rank, tie, and crossing validator", "status": "implemented-semantic-contract"},
+    "CAP-V19": {"name": "ridgeline", "parents": ["line-chart"], "phase": "P-17", "implementation": "shared-domain histogram or explicit-bandwidth Gaussian KDE validator", "status": "implemented-semantic-contract"},
+    "CAP-V20": {"name": "bubble", "parents": ["scatter-plot"], "phase": "P-17", "implementation": "x/y/size and area-magnitude semantic validator", "status": "implemented-semantic-contract"},
 }
 
 
@@ -475,11 +623,11 @@ def build_capability_map() -> dict[str, dict[str, Any]]:
         mapping[capability_id] = {
             "class": "canonical-type",
             "parents": [diagram_type],
-            "phase_owner": "P-05",
+            "phase_owner": "P-17" if int(capability_id[-2:]) >= 28 else "P-05",
             "implementation": f"TYPE_GRAMMARS[{diagram_type}] plus validate_typed_ir",
             "selector": "semantic route candidate",
             "fallback": "needs-clarification or invalid; never substitute another type",
-            "test_id": f"T-TYPE-{int(capability_id[-2:]):02d}-SEM",
+            "test_id": f"T-TYPE-{int(capability_id[-2:]):02d}-POS-01" if int(capability_id[-2:]) >= 28 else f"T-TYPE-{int(capability_id[-2:]):02d}-SEM",
             "status": "implemented-semantic-grammar",
         }
     for capability_id, variant in VARIANT_MAPPINGS.items():
@@ -490,7 +638,7 @@ def build_capability_map() -> dict[str, dict[str, Any]]:
             "implementation": variant["implementation"],
             "selector": f"explicit capability {capability_id} or matching semantic profile",
             "fallback": "preserve parent semantics and disclose unavailable presentation behavior",
-            "test_id": f"T-VAR-{capability_id}-MAP",
+            "test_id": f"T-VAR-{capability_id}-POS-01" if capability_id in {"CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"} else f"T-VAR-{capability_id}-MAP",
             "status": variant["status"],
         }
     for capability_id, pattern in PATTERNS.items():
@@ -526,6 +674,17 @@ CAPABILITY_MAP = build_capability_map()
 
 
 def expected_capability_ids() -> set[str]:
+    result = {f"CAP-T{i:02d}" for i in range(1, 40)}
+    result.update(f"CAP-V{i:02d}" for i in range(1, 21))
+    result.update(f"CAP-P{i:02d}" for i in range(1, 8))
+    result.update(f"CAP-I{i:02d}" for i in range(1, 13))
+    result.update(f"CAP-O{i:02d}" for i in range(1, 8))
+    result.update(f"CAP-M{i:02d}" for i in range(1, 13))
+    result.update(f"CAP-F{i:02d}" for i in range(1, 15))
+    return result
+
+
+def historical_capability_ids() -> set[str]:
     result = {f"CAP-T{i:02d}" for i in range(1, 28)}
     result.update(f"CAP-V{i:02d}" for i in range(1, 17))
     result.update(f"CAP-P{i:02d}" for i in range(1, 8))
@@ -543,4 +702,5 @@ __all__ = [
     "TYPE_GRAMMARS",
     "VARIANT_MAPPINGS",
     "expected_capability_ids",
+    "historical_capability_ids",
 ]

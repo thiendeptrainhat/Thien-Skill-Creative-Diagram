@@ -1,0 +1,53 @@
+{
+  "alternative_exact_current_state_table": "PASS",
+  "archived_files_verified": 297,
+  "authority": "D-093",
+  "bottlenecks": 2,
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-13-1.5.0",
+  "continuous_routes": 8,
+  "directed_edges": 8,
+  "edge_labels": 8,
+  "external_paths": 2,
+  "gallery_manifest_sha256": "5687519fc416d1689c6fa7c3c1a900611641af1faf8b844e05d87ead6a850b84",
+  "groups": 3,
+  "it_current_state_html_changed": 3,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "nodes": 9,
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "pain_paths": 2,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-light.svg",
+      "sha256": "9c570568d0bfab3c9e0956bd46a17248cc25b83765afab2f7090f515e04d9c6b"
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-light--straight-proof.svg",
+      "sha256": "bf5157ab1a562ce94c6d0824c794964936375cefc027c5e2ca759e4322393dce"
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-dark.svg",
+      "sha256": "dbd7d76912f6cc03b1a470353a97beba6b8b938ae03724819e1bfb6463345afc"
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--neutral-dark--straight-proof.svg",
+      "sha256": "720c2ce179c7a9cc9a4b836b8e8e0860927addc5b5872a8f00ebce291b6765c8"
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--editorial.svg",
+      "sha256": "168623e365585df430d07a424432b40fce613075d56ea1d9794859211b30e20d"
+    },
+    {
+      "path": "evidence/p19/review13-checks/type-it-current-state--editorial--straight-proof.svg",
+      "sha256": "b7003e5ff1054410ff0a99968853bd99d5fc0246ceacebd867318523b81279f0"
+    }
+  ],
+  "protected_files_verified": 4845,
+  "rounded_default": "PASS",
+  "status": "PASS",
+  "straight_explicit_override": "PASS",
+  "three_mode_geometry": "PASS"
+}

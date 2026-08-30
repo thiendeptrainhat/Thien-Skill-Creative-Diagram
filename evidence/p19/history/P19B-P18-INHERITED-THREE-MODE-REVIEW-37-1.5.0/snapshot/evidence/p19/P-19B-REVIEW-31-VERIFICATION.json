@@ -1,0 +1,39 @@
+{
+  "archived_files_verified": 501,
+  "authority": "D-111",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-31-1.5.0",
+  "gallery_manifest_sha256": "8d27b7a6b75094384d0501d4fb48c5487084a7fb344a655bbeba1398aff30eda",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 87,
+  "non_target_previews_byte_identical": 29,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review31-checks/type-sequence.svg",
+      "sha256": "9fcbff77c7d8eee228e31b25b5fe13abc0302b8f96d1344d1312d46fd76d9b4c"
+    },
+    {
+      "path": "evidence/p19/review31-checks/type-sequence.svg.png",
+      "sha256": "7603c228ccfb5cd5d414a02aa9b3d78812084ebc249a0732f5238c047e055759",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 12040,
+  "sequence_measurement": {
+    "activations": 2,
+    "centered_card_lifelines": 4,
+    "dashed_messages": 2,
+    "focal_messages": 1,
+    "lifelines": 4,
+    "messages": 6,
+    "participants": 4,
+    "self_messages": 1,
+    "straight_messages": 5
+  },
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

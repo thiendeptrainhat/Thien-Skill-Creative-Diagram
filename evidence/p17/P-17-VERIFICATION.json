@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-17",
+  "target_version": "1.5.0",
+  "status": "PASS",
+  "verified_at": "2026-08-23",
+  "authority": "PROJECT-CONTRACT.md D-048",
+  "checks": [
+    {
+      "id": "P17-V01",
+      "assertion": "full regression remains green",
+      "result": "PASS",
+      "tests_run": 148,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "id": "P17-V02",
+      "assertion": "P-17-specific semantic, schema, router, quantitative, accessibility and render-boundary tests pass",
+      "result": "PASS",
+      "tests_run": 20,
+      "failures": 0,
+      "errors": 0,
+      "module": "thien-skill-creative-diagram/scripts/tests/test_semantic_v15.py"
+    },
+    {
+      "id": "P17-V03",
+      "assertion": "canonical and capability inventories match the owner-approved G-02@1.5.0 contract",
+      "result": "PASS",
+      "canonical_type_count": 39,
+      "legacy_type_count": 27,
+      "new_type_count": 12,
+      "capability_count": 111,
+      "variant_count": 20,
+      "new_variant_count": 4
+    },
+    {
+      "id": "P17-V04",
+      "assertion": "canonical semantic references are deterministic and free of generator drift",
+      "result": "PASS",
+      "command": "python3 thien-skill-creative-diagram/scripts/generate_semantic_references.py --check"
+    },
+    {
+      "id": "P17-V05",
+      "assertion": "repository QA audit passes after semantic expansion",
+      "result": "PASS",
+      "type_count": 39,
+      "capability_count": 111,
+      "checked_links": 96,
+      "json_file_count": 11,
+      "contrast_pair_count": 27,
+      "package_inventory_path_count": 97
+    },
+    {
+      "id": "P17-V06",
+      "assertion": "all canonical Python and JSON sources parse",
+      "result": "PASS",
+      "python_ast_file_count": 33,
+      "json_file_count": 11
+    },
+    {
+      "id": "P17-V07",
+      "assertion": "the exact P-17 canonical source delta is hash-bound",
+      "result": "PASS",
+      "changed_file_count": 39,
+      "manifest": "evidence/p17/P-17-SOURCE-MANIFEST.json",
+      "manifest_hash_errors": 0
+    },
+    {
+      "id": "P17-V08",
+      "assertion": "historical v1.0 semantic and visual baselines are preserved",
+      "result": "PASS",
+      "legacy_type_references_byte_identical": 27,
+      "specimen_map_byte_identical": true,
+      "approved_p06_golden_directory_byte_identical": true,
+      "historical_generator_scope_locked_to_27_types_and_16_variants": true
+    },
+    {
+      "id": "P17-V09",
+      "assertion": "P-17 does not implement a misleading generic visual fallback for the new semantics",
+      "result": "PASS",
+      "new_canonical_render_deferrals": 12,
+      "new_variant_render_deferrals": 4,
+      "failure_codes": [
+        "type-visual-not-implemented",
+        "variant-visual-not-implemented"
+      ]
+    },
+    {
+      "id": "P17-V10",
+      "assertion": "no gallery or HTML artifact was created",
+      "result": "PASS",
+      "canonical_html_file_count": 0,
+      "evidence_p17_html_file_count": 0
+    },
+    {
+      "id": "P17-V11",
+      "assertion": "v1.0.0 distribution artifacts remain byte-identical",
+      "result": "PASS",
+      "dist_file_count": 4,
+      "baseline_aggregate_sha256": "188526fdf60b53183723bb231a6940896a42cf90db5df71094eebc66ac45c065",
+      "current_aggregate_sha256": "188526fdf60b53183723bb231a6940896a42cf90db5df71094eebc66ac45c065"
+    },
+    {
+      "id": "P17-V12",
+      "assertion": "legal and brand bytes remain unchanged",
+      "result": "PASS",
+      "license_sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31",
+      "notice_sha256": "f834519493b5393bd2ae43be7389813c3c72f9bf6e236c5f60f48a2bfda63cb0",
+      "license_application_sha256": "b791650dbf143e6f5aac9144e9c69b1f44ce62aface1ebe3a7e7e61bba999381",
+      "approved_logo_sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453"
+    },
+    {
+      "id": "P17-V13",
+      "assertion": "P-17 source has no exact-byte collision with the capability-bearing upstream files hash-bound in P-16",
+      "result": "PASS",
+      "exact_hash_collision_count": 0,
+      "interpretation": "This is supporting contamination evidence, not a claim of absolute clean-room separation; provenance receipts and the independent-reimplementation policy remain controlling."
+    },
+    {
+      "id": "P17-V14",
+      "assertion": "the skill-creator quick validator was attempted without silently installing a dependency",
+      "result": "BLOCKED-ENVIRONMENT-DEPENDENCY",
+      "missing_dependency": "PyYAML (import name yaml)",
+      "reported_as_pass": false,
+      "compensating_checks": [
+        "repository QA audit PASS",
+        "96 local links checked",
+        "11 JSON files parsed",
+        "33 Python files AST-parsed",
+        "full regression 148/148 PASS"
+      ]
+    },
+    {
+      "id": "P17-V15",
+      "assertion": "P-17 respected the authorization boundary",
+      "result": "PASS",
+      "not_performed": [
+        "P-18",
+        "P-19",
+        "gallery generation",
+        "build or package rebuild",
+        "dist modification",
+        "commit",
+        "push",
+        "tag",
+        "Release modification",
+        "publication"
+      ]
+    }
+  ],
+  "limitations": [
+    "The skill-creator quick validator cannot start in the available environment because PyYAML is absent; no dependency was installed and no PASS claim is made for that command.",
+    "Visual correctness and visual quality for the 12 new types and four new variants are intentionally not evaluated in P-17; those checks require separately authorized P-18/P-19 work.",
+    "The audit-source root is not a Git worktree; local source-delta completeness is established against the unchanged sanitized v1.0.0 publication mirror and the exact P-17 source manifest."
+  ]
+}

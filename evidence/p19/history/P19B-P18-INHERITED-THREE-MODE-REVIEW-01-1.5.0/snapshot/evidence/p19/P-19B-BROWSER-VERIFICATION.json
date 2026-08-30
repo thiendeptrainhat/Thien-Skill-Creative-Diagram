@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.1",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0",
+  "visual_parent_candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+  "visual_parent_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+  "date": "2026-08-27",
+  "status": "BLOCKED_NOT_EXECUTABLE",
+  "scope": "P-19B D-080 focused browser verification; not P-19C or owner review",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "target": "file:///.../evidence/p19/gallery/index.html",
+    "result": "Browser URL policy rejected local file reload",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "contact_sheet": "NOT_RUN",
+    "desktop_specimens": "NOT_RUN",
+    "mobile_engine_mode_matrix": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "strongest_safe_alternative": {
+    "method": "Quick Look local SVG raster inspection",
+    "representative_engine_count": 14,
+    "mode": "neutral-light",
+    "render_status": "PASS",
+    "visual_inspection_status": "PASS",
+    "inspected_engines": [
+      "topology-and-zones",
+      "integration-pipeline",
+      "runtime-deployment",
+      "dependency-dag",
+      "directed-flow-state",
+      "lane-interaction",
+      "time-planning",
+      "work-experience",
+      "hierarchy",
+      "containment-stack",
+      "compartment-model",
+      "spatial-matrix",
+      "quantitative",
+      "special-geometry"
+    ],
+    "observations": [
+      "warm-paper/canvas, navy structure and coral focal signal match P-18 review-17 visual grammar",
+      "P-18 typography roles, dot field, restrained grouping surfaces and legend rail are visible",
+      "no clipping, overlap or out-of-canvas mark was observed in the 14 representative rasters"
+    ]
+  },
+  "limitations": [
+    "This report is not a browser pass; file URL policy prevented execution and no workaround was used.",
+    "Dark/editorial live-render inspection, narrow responsive behavior, console, focus and computed-style checks remain unverified in browser.",
+    "P-19C full QA/freeze/masked review and owner approval remain unauthorized or pending."
+  ]
+}

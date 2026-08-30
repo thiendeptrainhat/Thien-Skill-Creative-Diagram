@@ -16,7 +16,7 @@ from diagram_core import CoreError, plan_complexity  # noqa: E402
 from semantic_catalog import CAPABILITY_MAP, PATTERNS, SPECIMEN_GROUPS, TYPE_GRAMMARS, VARIANT_MAPPINGS, expected_capability_ids  # noqa: E402
 from semantic_grammars import missing_invariant_handlers, select_data_lake_profile, validate_semantics  # noqa: E402
 from semantic_patterns import TRANSFORMS, apply_pattern  # noqa: E402
-from semantic_fixtures import COLLECTIONS, finalize, fixtures, negative_fixture  # noqa: E402
+from semantic_fixtures import COLLECTIONS, finalize, fixtures, negative_fixture, variant_fixtures  # noqa: E402
 
 
 def materialize_pattern(fragment):
@@ -29,13 +29,13 @@ class SemanticGrammarTests(unittest.TestCase):
     def setUpClass(cls):
         cls.cases = fixtures()
 
-    def test_all_27_positive_fixtures(self):
+    def test_all_39_positive_fixtures(self):
         self.assertEqual(set(self.cases), set(TYPE_GRAMMARS))
         for diagram_type, ir in self.cases.items():
             with self.subTest(diagram_type=diagram_type):
                 self.assertEqual(validate_semantics(ir)["diagram"]["type"], diagram_type)
 
-    def test_all_27_boundary_mutations_fail(self):
+    def test_all_39_boundary_mutations_fail(self):
         for diagram_type, ir in self.cases.items():
             with self.subTest(diagram_type=diagram_type):
                 with self.assertRaises(CoreError):
@@ -46,7 +46,7 @@ class SemanticGrammarTests(unittest.TestCase):
 
     def test_capability_inventory_is_exact_and_actionable(self):
         self.assertEqual(set(CAPABILITY_MAP), expected_capability_ids())
-        self.assertEqual(len(CAPABILITY_MAP), 95)
+        self.assertEqual(len(CAPABILITY_MAP), 111)
         for capability_id, entry in CAPABILITY_MAP.items():
             with self.subTest(capability_id=capability_id):
                 self.assertTrue(entry["implementation"])
@@ -61,7 +61,7 @@ class SemanticGrammarTests(unittest.TestCase):
             self.assertTrue(set(group["capabilities"]) <= set(CAPABILITY_MAP))
 
     def test_variants_have_parent_phase_and_status(self):
-        self.assertEqual(len(VARIANT_MAPPINGS), 16)
+        self.assertEqual(len(VARIANT_MAPPINGS), 20)
         for capability_id, variant in VARIANT_MAPPINGS.items():
             with self.subTest(capability_id=capability_id):
                 self.assertTrue(variant["parents"])
@@ -86,6 +86,13 @@ class SemanticGrammarTests(unittest.TestCase):
         with self.assertRaises(CoreError) as caught:
             validate_semantics(ir)
         self.assertEqual(caught.exception.code, "variant-parent-mismatch")
+
+    def test_all_four_v15_variants_validate_under_their_locked_parents(self):
+        cases = variant_fixtures()
+        self.assertEqual(set(cases), {"CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"})
+        for capability_id, ir in cases.items():
+            with self.subTest(capability_id=capability_id):
+                self.assertEqual(validate_semantics(ir)["diagram"]["variant_ids"], [capability_id])
 
     def test_vietnamese_long_label_is_preserved(self):
         ir = copy.deepcopy(self.cases["process"])

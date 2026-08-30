@@ -1,0 +1,54 @@
+{
+  "archived_files_verified": 583,
+  "authority": "D-119",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-39-1.5.0",
+  "d118_geometry_preserved": "PASS",
+  "gallery_manifest_sha256": "b2d8fd30720b13b6079c2add4697cce65507ea5cc4b3ff826eaf7c117daff153",
+  "global_policy_declarations": 93,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "process_measurement": {
+    "document_boundary_contacts": 5,
+    "edges": 11,
+    "multiple_document_inlets": 2,
+    "nodes": 11,
+    "rounded_orthogonal_exceptions": 2,
+    "shape_counts": {
+      "decision": 2,
+      "document": 1,
+      "multiple-document": 1,
+      "process": 4,
+      "terminator": 3
+    },
+    "straight_routes": 9
+  },
+  "proof_files": [
+    {
+      "path": "evidence/p19/review39-checks/type-process.svg",
+      "sha256": "a9cefe4e4892a006144d0e34d1e48d0f819ca1c06f630a3a83b5da5249e779a6"
+    },
+    {
+      "path": "evidence/p19/review39-checks/type-process.svg.png",
+      "sha256": "1bca1ff6f5731a7e481d34da9cfd6de779d40633afd4186577765f23b9f14d65",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 16364,
+  "status": "PASS",
+  "stroke_hierarchy": {
+    "badge": 0.8,
+    "focal_layer": 1.2,
+    "focal_node": 1.6,
+    "merge_route": 1.2,
+    "regular_layer": 1.0,
+    "regular_node": 1.2,
+    "rule": 0.8,
+    "straight_route": 1.0
+  },
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

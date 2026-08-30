@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P19B-THREE-MODE-EXACT-129-HTML-1.5.0",
+  "authority": "D-079",
+  "implementation_description": "clean-room-oriented independent reimplementation",
+  "functional_source": {
+    "repository": "cathrynlavery/diagram-design",
+    "exact_snapshot": "648c2a597839301e06df1e7434a08bde9f42eed3",
+    "use": "taxonomy, abstract behavior and failure-mode learning only",
+    "copied_code_prose_css_template_gallery_asset": false
+  },
+  "design_process_source": {
+    "name": "Thien-UI-UX-Ultra",
+    "use": "principles, routing, design contract and verification workflow only",
+    "copied_code_script_template_asset": false
+  },
+  "canonical_inputs": [
+    "thien-skill-creative-diagram/scripts/visual_adapters_v15.py",
+    "thien-skill-creative-diagram/references/visual-system.json",
+    "thien-skill-creative-diagram/scripts/tests/semantic_fixtures.py",
+    "evidence/p18/r6/P-18R6-MANIFEST.json"
+  ],
+  "original_outputs": [
+    "thien-skill-creative-diagram/scripts/gallery_renderer_v15.py",
+    "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+    "evidence/p19/gallery/specimens/",
+    "evidence/p19/gallery/previews/",
+    "evidence/p19/gallery/index.html"
+  ],
+  "boundary": {
+    "qa_only": true,
+    "package_asset": false,
+    "p19c_freeze_or_owner_review": false,
+    "g04_evaluated": false,
+    "release_authorized": false
+  }
+}

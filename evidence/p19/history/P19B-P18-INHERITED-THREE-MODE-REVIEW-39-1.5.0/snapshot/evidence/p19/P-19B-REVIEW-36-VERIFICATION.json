@@ -1,0 +1,40 @@
+{
+  "alternative_table_rows": 20,
+  "archived_files_verified": 556,
+  "authority": "D-116",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-36-1.5.0",
+  "gallery_manifest_sha256": "289c28a07a42ae49bc82ede07d8d884ead63f796591b8029dc022a04d6228c36",
+  "global_policy_declarations": 93,
+  "interior_center_marker": "removed",
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "plot_marker_policy": "none",
+  "profile_line_style": "solid-only",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review36-checks/type-radar.svg",
+      "sha256": "46362e77ac0424ff32c74dbfcd99ed648dae345af1bcbcbc837da1c27538a4fc"
+    },
+    {
+      "path": "evidence/p19/review36-checks/type-radar.svg.png",
+      "sha256": "6985520e374ead8f8262511211e27e8004a65a06d26cfbeb9f880ef85f245db4",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 14666,
+  "radar_measurement": {
+    "axes": 5,
+    "focal": 1,
+    "markers": 0,
+    "profiles": 4,
+    "rings": 5,
+    "values": 20
+  },
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

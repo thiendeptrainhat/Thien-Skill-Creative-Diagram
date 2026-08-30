@@ -1,0 +1,51 @@
+{
+  "alternative_table_rows": 23,
+  "archived_files_verified": 635,
+  "authority": "D-124",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-44-1.5.0",
+  "dependency_routing": "4 straight centered adjacent-layer arrows",
+  "display_identity": "layer-stack",
+  "gallery_manifest_sha256": "08ae8dc25615673369b4f44b123d5d4b764f34fd489496f0c931373c5ef43c2b",
+  "global_policy_declarations": 93,
+  "intelligence_domains": [
+    "Mô hình",
+    "Dữ liệu & tri thức"
+  ],
+  "layer_distribution": [
+    4,
+    5,
+    6,
+    4,
+    4
+  ],
+  "layer_stack_measurement": {
+    "abstraction_axes": 1,
+    "dependencies": 4,
+    "domains": 2,
+    "focal_layers": 1,
+    "layers": 5,
+    "modules": 23
+  },
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "presentation_layers_variant": "PRESERVED_AS_NON_TARGET",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review44-checks/layer-stack.svg",
+      "sha256": "b082b0818e9d9fb4c2c104d8d6e5f90e42e5924e53344ea0c9cfa9e7e558a27c"
+    },
+    {
+      "path": "evidence/p19/review44-checks/layer-stack.svg.png",
+      "sha256": "0042ba6faffcf6605dae641cb7e661815366e992b16532a3f35793d9aea2edcd",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 19382,
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

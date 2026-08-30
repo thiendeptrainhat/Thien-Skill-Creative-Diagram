@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P19C-FULL-QA-FREEZE-REVIEW-01-1.5.0",
+  "authority": "D-127",
+  "date": "2026-08-30",
+  "status": "PASS",
+  "transport": {
+    "kind": "read-only-localhost-http",
+    "origin": "http://127.0.0.1:8765",
+    "reason": "The in-app browser rejects file:// navigation; localhost exercises the same local bytes without changing source artifacts."
+  },
+  "comparison": {
+    "path": "evidence/p19/comparison/index.html",
+    "desktop": {
+      "viewport": "1440x1100",
+      "figures": 107,
+      "images": 107,
+      "broken_images": 0,
+      "phase_counts": {
+        "p18": 14,
+        "p19": 93
+      },
+      "document_horizontal_overflow_px": 0,
+      "body_horizontal_overflow_px": 0,
+      "accessible_checkbox_name": "Phóng lớn diagram để đọc chi tiết",
+      "console_warning_error_count": 0,
+      "visual_inspection": "PASS"
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "figures": 107,
+      "images": 107,
+      "broken_images": 0,
+      "phase_counts": {
+        "p18": 14,
+        "p19": 93
+      },
+      "document_horizontal_overflow_px": 0,
+      "body_horizontal_overflow_px": 0,
+      "source_strip_columns": 1,
+      "comparison_columns": 1,
+      "mode_columns": 1,
+      "console_warning_error_count": 0,
+      "visual_inspection": "PASS"
+    }
+  },
+  "representative_standalone_pages": {
+    "desktop_viewport": "1440x1100",
+    "mobile_viewport": "390x844",
+    "paths": [
+      "evidence/p18/r6/anchors/01-topology-and-zones--neutral-light.html",
+      "evidence/p19/gallery/specimens/073-type-process--neutral-light.html",
+      "evidence/p19/gallery/specimens/037-type-nested--neutral-light.html",
+      "evidence/p19/gallery/specimens/125-cap-cap-v19-ridgeline--neutral-dark.html",
+      "evidence/p19/gallery/specimens/129-cap-cap-v20-bubble--editorial.html",
+      "evidence/p19/gallery/specimens/133-type-scatter-chart--neutral-light.html"
+    ],
+    "desktop": {
+      "pages_checked": 6,
+      "single_svg": "PASS",
+      "role_img_and_labelledby": "PASS",
+      "title_desc": "PASS",
+      "alternative_table": "PASS",
+      "duplicate_ids": 0,
+      "replacement_glyphs": 0,
+      "page_horizontal_overflow_px": 0,
+      "console_warning_error_count": 0
+    },
+    "mobile": {
+      "pages_checked": 6,
+      "page_horizontal_overflow_px": 0,
+      "replacement_glyphs": 0,
+      "console_warning_error_count": 0,
+      "p18_responsive_svg_containment": "PASS",
+      "p19_detail_containment": "PASS_LOCAL_HORIZONTAL_SCROLLER",
+      "p19_artifact_frame_client_width_px": 349,
+      "p19_artifact_frame_svg_width_px": 760,
+      "p19_artifact_frame_overflow_x": "auto",
+      "note": "The detailed P-19 pages intentionally preserve a 760px readable SVG inside a local overflow:auto figure; the document itself has zero horizontal overflow."
+    }
+  },
+  "limitations": [
+    "This browser run is a local QA execution, not owner approval and not G-04@1.5.0 PASS.",
+    "No browser screenshot is frozen into the exact candidate; observations and measured DOM/browser results are recorded here."
+  ]
+}

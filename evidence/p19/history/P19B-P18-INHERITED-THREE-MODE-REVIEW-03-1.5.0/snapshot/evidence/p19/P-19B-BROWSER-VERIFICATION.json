@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-03-1.5.0",
+  "date": "2026-08-29",
+  "authority": "D-082",
+  "status": "BLOCKED_NOT_EXECUTABLE",
+  "scope": "Focused Gantt-only P-19B redesign; not P-19C or owner approval",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Earlier local-file reload rejected by URL policy; no bypass or repeated blocked operation attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "local_svg_render": {
+    "method": "macOS Quick Look, 1600px thumbnails",
+    "rendered_and_visually_inspected": 3,
+    "status": "PASS_FOR_GANTT_REFERENCE_LAYOUT",
+    "scope": [
+      "Gantt neutral-light",
+      "Gantt neutral-dark",
+      "Gantt editorial"
+    ],
+    "raster_directory": "evidence/p19/review03-checks/rasters/",
+    "observations": [
+      "Three enclosed phase bands, six ordinary tasks and one coral approval window.",
+      "Vietnamese labels fit the left rail; month labels and legend are readable.",
+      "All bars fit their owning bands; no observed clipping/overlap in these renders.",
+      "Quick Look square padding is renderer output padding; SVG viewBox is 1600x900."
+    ],
+    "rasters": [
+      {
+        "path": "evidence/p19/review03-checks/rasters/type-gantt--neutral-light.png",
+        "sha256": "46bc6b58eb606b252319c5a607655c9e2b4fc7a7287bb4f5926aa223ad208d20",
+        "visually_inspected": true
+      },
+      {
+        "path": "evidence/p19/review03-checks/rasters/type-gantt--neutral-dark.png",
+        "sha256": "2e1f54f607f8f5de4f21c8f29cbca97585320af44de8d34afc34bad29ff122d4",
+        "visually_inspected": true
+      },
+      {
+        "path": "evidence/p19/review03-checks/rasters/type-gantt--editorial.png",
+        "sha256": "19889ee86e1feb9f79d58971430352a68a0a330b5bb6de9cca9d0e15e6d62a24",
+        "visually_inspected": true
+      }
+    ]
+  },
+  "superseded_claim": "The review-01 broad no-overlap/no-clipping observation missed the owner-reported defects and is not carried forward.",
+  "limitations": [
+    "Quick Look raster inspection is not browser execution or a full visual/typography/accessibility audit.",
+    "Responsive behavior, computed fonts, focus and console remain unverified.",
+    "P-19C remains unauthorized and owner approval pending."
+  ]
+}

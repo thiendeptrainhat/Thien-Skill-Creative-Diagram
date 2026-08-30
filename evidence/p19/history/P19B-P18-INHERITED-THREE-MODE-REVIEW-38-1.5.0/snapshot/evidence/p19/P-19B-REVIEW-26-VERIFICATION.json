@@ -1,0 +1,74 @@
+{
+  "archived_files_verified": 448,
+  "authority": "D-106",
+  "branch_center_intervals": [
+    640,
+    640
+  ],
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-26-1.5.0",
+  "gallery_manifest_sha256": "452bc3c0eb53003cffe3bc811ca0f92f96603487141e3253bfc88299cf196d48",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 87,
+  "non_target_previews_byte_identical": 29,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "parent_span_center_proofs": {
+    "branch-experience": {
+      "child_centers_x": [
+        210.0,
+        510.0
+      ],
+      "parent_center_x": 360.0
+    },
+    "branch-insight": {
+      "child_centers_x": [
+        1640.0
+      ],
+      "parent_center_x": 1640.0
+    },
+    "branch-operations": {
+      "child_centers_x": [
+        850.0,
+        1150.0
+      ],
+      "parent_center_x": 1000.0
+    },
+    "capability-product": {
+      "child_centers_x": [
+        360.0,
+        1000.0,
+        1640.0
+      ],
+      "parent_center_x": 1000.0
+    }
+  },
+  "proof_files": [
+    {
+      "path": "evidence/p19/review26-checks/type-tree.svg",
+      "sha256": "48226f1a2a7973d43b7170eae8617e4065ce072b3ddeec92005bee6afaa9d122"
+    },
+    {
+      "path": "evidence/p19/review26-checks/type-tree.svg.png",
+      "sha256": "8980caf126cf8b2020f5e7d44a82d8ae473441ddd0afca74b85803e34f0e7817",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 9694,
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS",
+  "tree_measurement": {
+    "centered_parents": 4,
+    "connector_primitives": 14,
+    "edges": 8,
+    "nodes": 9,
+    "single_child_straight": 1,
+    "tiers": 3
+  },
+  "two_child_offsets": [
+    -150,
+    150
+  ]
+}

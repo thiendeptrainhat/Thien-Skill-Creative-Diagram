@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-07-1.5.0",
+  "date": "2026-08-24",
+  "authority": [
+    "D-051",
+    "D-052",
+    "D-058",
+    "D-059",
+    "D-060",
+    "D-061",
+    "D-062",
+    "D-063",
+    "D-064",
+    "D-065"
+  ],
+  "scope": "QA-only evidence/p18/r6; no runtime/package/dist/publication/Git/Release mutation",
+  "generator": {
+    "path": "evidence/p18/r6/source/generate_p18r6.py",
+    "bytes": 9943,
+    "sha256": "2e803b4a61cbb776544535c7a4ac0d24134bb46d7f518a46bf6c66799a3aeda8"
+  },
+  "kernel": {
+    "path": "evidence/p18/r6/source/gallery_kernel.py",
+    "bytes": 63142,
+    "sha256": "c041bd2dfdec1b0b5ae6b996ca2274e6ab17570283a4fd9e7a948b60549906a5"
+  },
+  "parent_kernel": {
+    "path": "evidence/p18/r5/source/master_visual_kernel.py",
+    "bytes": 43031,
+    "sha256": "dad5b26039fbeb9df9aa02d58f21d8a084d96973491802617bcddb47da800311"
+  },
+  "engine_count": 14,
+  "html_anchor_count": 14,
+  "svg_anchor_count": 14,
+  "visual_mode": "neutral-light",
+  "deterministic_regeneration": true,
+  "r5_parent_manifest_sha256": "7725a03c82c370f6d9bb984b0d6e50c585efb07529a47f2c3dfad45877c1cca8",
+  "r5_swimlane_preserved_exactly": true,
+  "font_receipt": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed"
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed"
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "precedence": "disclosed_system_fallback",
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed"
+    }
+  },
+  "connector_corner_style_receipt": {
+    "scope": "whole-chart",
+    "engines": [
+      "topology-and-zones",
+      "integration-pipeline",
+      "runtime-deployment",
+      "dependency-dag"
+    ],
+    "default": "rounded",
+    "allowed": [
+      "rounded",
+      "straight"
+    ],
+    "explicit_user_choice_precedence": true,
+    "rounded_example": "M 0.00 0.00 L 0.00 26.00 Q 0.00 40.00 14.00 40.00 L 40.00 40.00",
+    "straight_example": "M 0.00 0.00 L 0.00 40.00 L 40.00 40.00"
+  },
+  "diagram_10_annotation_gap_receipt": {
+    "metric": "bbox-left-at-vertical-center-to-outer-triangle-right-edge",
+    "target_px": 72.0,
+    "maximum_tolerance_px": 0.01,
+    "note_count": 4,
+    "x_source": "outer-triangle geometry plus one shared target"
+  },
+  "full_regression": "148/148 PASS",
+  "network_or_install_action": false
+}

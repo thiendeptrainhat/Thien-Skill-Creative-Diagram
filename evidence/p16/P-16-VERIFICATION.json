@@ -1,0 +1,338 @@
+{
+  "schema_version": "1.3",
+  "record_id": "P16-VERIFICATION-2026-08-23-OWNER-CLOSURE",
+  "verified_at": "2026-08-22T17:35:36Z",
+  "local_verification_date": "2026-08-23",
+  "overall_result": "PASS-OWNER-APPROVED-P16-CLOSED",
+  "phase_status_after_verification": "passed",
+  "gate_results": {
+    "G-01@1.5.0": "PASS",
+    "G-02@1.5.0": "PASS"
+  },
+  "checks": [
+    {
+      "id": "P16-V01",
+      "assertion": "live upstream main resolved to the locked exact candidate commit at the recorded verification time",
+      "result": "PASS",
+      "observed": "648c2a597839301e06df1e7434a08bde9f42eed3",
+      "verified_at": "2026-08-22T16:39:11Z"
+    },
+    {
+      "id": "P16-V02",
+      "assertion": "candidate commit tree, recursive tree digest and file count match the manifest",
+      "result": "PASS",
+      "observed": {
+        "git_tree": "614419398b69ca9d4dfbd6681b259304dfd0fe62",
+        "recursive_tree_sha256": "c36ef92b3e1eb1ba486a331bfad357a9435b699a93c96adb7075d6134d22bf17",
+        "file_count": 422
+      }
+    },
+    {
+      "id": "P16-V03",
+      "assertion": "all 27 candidate source-file hashes plus five baseline/candidate cross-cutting pairs match exact Git bytes",
+      "result": "PASS",
+      "checked_candidate_file_count": 27,
+      "crosscut_pair_count": 5,
+      "mismatch_count": 0
+    },
+    {
+      "id": "P16-V04",
+      "assertion": "taxonomy is exactly 39 canonical types, 12 appended canonical additions and four parented capabilities",
+      "result": "PASS",
+      "observed": {
+        "canonical": 39,
+        "additions": 12,
+        "capabilities": 4,
+        "arithmetic": "27 + 12 = 39"
+      }
+    },
+    {
+      "id": "P16-V05",
+      "assertion": "the exact ordered whole-repository status+path ledger equals the pinned upstream Git diff without omitted or extra paths",
+      "result": "PASS",
+      "observed": {
+        "git_diff_paths": 170,
+        "ledger_paths": 170,
+        "exact_ordered_set": true,
+        "insertions": 23895,
+        "deletions": 244,
+        "ledger": "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json"
+      }
+    },
+    {
+      "id": "P16-V06",
+      "assertion": "whole-range partition, group counts and three-class provenance dispositions recompute from all ledger entries",
+      "result": "PASS",
+      "observed": {
+        "skill_pathscope": 74,
+        "outside_skill_pathscope": 96,
+        "top_level_groups": 10,
+        "disposition_classes": {
+          "adopted-abstract-only": 34,
+          "inherited-unchanged": 6,
+          "explicitly-excluded": 130
+        }
+      }
+    },
+    {
+      "id": "P16-V07",
+      "assertion": "upstream gallery factual counts match the exact candidate snapshot",
+      "result": "PASS",
+      "observed": {
+        "all_html": 149,
+        "example_html": 142,
+        "new_variant_examples": 9,
+        "dumbbell_examples": 0
+      }
+    },
+    {
+      "id": "P16-V08",
+      "assertion": "version-scoped capability matrix covers all 12 additions and four variants with stable IDs, exact source bindings and planned tests",
+      "result": "PASS",
+      "observed": {
+        "canonical_rows": 12,
+        "variant_rows": 4,
+        "canonical_id_range": "CAP-T28..CAP-T39",
+        "variant_id_range": "CAP-V17..CAP-V20"
+      }
+    },
+    {
+      "id": "P16-V09",
+      "assertion": "G-02@1.5.0 manifest hash-binds every inherited and delta contract artifact",
+      "result": "PASS",
+      "observed": {
+        "inherited_p02_files": 10,
+        "p16_delta_files": 9,
+        "hash_mismatch_count": 0
+      }
+    },
+    {
+      "id": "P16-V10",
+      "assertion": "candidate request and semantic IR files are syntactically valid JSON and expose the required target structure",
+      "result": "PASS",
+      "observed": {
+        "request_enum_entries_including_auto": 40,
+        "ir_canonical_type_entries": 39,
+        "variant_parent_conditionals": 4,
+        "sankey_direct_amount_unit": true,
+        "bubble_direct_xy_size": true,
+        "treemap_parent_total_unit": true,
+        "ridgeline_structured_transformation": true,
+        "story_unassigned_pair": true,
+        "database_index_order_unique": true
+      },
+      "validation_boundary": "JSON syntax and explicit structural assertions passed; an external JSON-Schema metaschema library was unavailable and was not installed"
+    },
+    {
+      "id": "P16-V11",
+      "assertion": "numeric, unit, SVG geometry, zero/negative/missing, Ridgeline transformation and stable test-ID policies are explicit",
+      "result": "PASS",
+      "observed": {
+        "semantic_epsilon": true,
+        "no_implicit_unit_conversion": true,
+        "coordinate_tolerance_css_px": 0.5,
+        "length_ratio_tolerance_percent": 1,
+        "area_ratio_tolerance_percent": 2,
+        "stable_id_families": true
+      }
+    },
+    {
+      "id": "P16-V12",
+      "assertion": "exact pilot and full gallery count contracts are internally consistent",
+      "result": "PASS",
+      "observed": {
+        "pilot_case_families": 12,
+        "visual_modes": 3,
+        "pilot_standalone_html_target": 36,
+        "full_canonical_html_target": 117,
+        "full_new_capability_html_target": 12,
+        "full_minimum_html_target": 129
+      }
+    },
+    {
+      "id": "P16-V13",
+      "assertion": "current Agent Skills, Claude and OpenAI official documentation was revalidated without support-status promotion",
+      "result": "PASS",
+      "official_url_count": 5,
+      "http_200_count": 5,
+      "support_status_promotions": 0,
+      "record": "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md"
+    },
+    {
+      "id": "P16-V14",
+      "assertion": "license, upstream third-party ledger and principle-source inheritance are bound",
+      "result": "PASS",
+      "observed": {
+        "upstream_license_sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29",
+        "upstream_third_party_ledger_sha256": "22f5afcea56373e84d7f7eff93d8d4d6e4b81c5375bb1c996e78b91e53fa0b37",
+        "thien_ui_ux_ultra_commit": "fb4e57758f525827e04004737d779f4c93b9b3a0",
+        "principle_only": true
+      }
+    },
+    {
+      "id": "P16-V15",
+      "assertion": "no non-empty project regular file is byte-identical to a non-empty file in the exact upstream tree",
+      "result": "PASS",
+      "common_sha256_count": 0,
+      "scan_exclusions": [
+        ".git internals",
+        "zero-byte files"
+      ],
+      "interpretation": "zero common hashes are contamination evidence, not proof of absolute clean-room separation"
+    },
+    {
+      "id": "P16-V16",
+      "assertion": "canonical runtime is byte-aggregate identical before and after P-16 remediation",
+      "result": "PASS",
+      "file_count": 82,
+      "before_sha256": "27ccde0a1b5ee97d2943fa58166f513ec697dcfbe58750c155148e0f34e4cc22",
+      "after_sha256": "27ccde0a1b5ee97d2943fa58166f513ec697dcfbe58750c155148e0f34e4cc22"
+    },
+    {
+      "id": "P16-V17",
+      "assertion": "dist artifacts are byte-aggregate identical before and after P-16 remediation",
+      "result": "PASS",
+      "file_count": 4,
+      "before_sha256": "188526fdf60b53183723bb231a6940896a42cf90db5df71094eebc66ac45c065",
+      "after_sha256": "188526fdf60b53183723bb231a6940896a42cf90db5df71094eebc66ac45c065"
+    },
+    {
+      "id": "P16-V18",
+      "assertion": "P-16 remediation did not create HTML/gallery artifacts",
+      "result": "PASS",
+      "evidence_p16_html_file_count": 0
+    },
+    {
+      "id": "P16-V19",
+      "assertion": "governance consistently records P-16 passed, G-01/G-02@1.5.0 PASS, P-17 not-started and P-17 still unauthorized",
+      "result": "PASS"
+    },
+    {
+      "id": "P16-V20",
+      "assertion": "HANDOFF-CURRENT reflects D-001..D-047, P-16/gate closure and the unchanged downstream authorization boundary",
+      "result": "PASS"
+    },
+    {
+      "id": "P16-V21",
+      "assertion": "the P-16 evidence directory contains the expected 16 governance/evidence files and no unclassified artifact",
+      "result": "PASS",
+      "evidence_p16_file_count": 16
+    },
+    {
+      "id": "P16-V22",
+      "assertion": "no build, package, commit, push, tag or release action was executed",
+      "result": "PASS",
+      "workspace_is_git_worktree": false
+    },
+    {
+      "id": "P16-V23",
+      "assertion": "owner approval event records the attributable D-047 decision, exact three transitions and all withheld downstream/runtime/gallery/package/Git/release scope",
+      "result": "PASS",
+      "observed": {
+        "actor": "Tran Ngoc Thien",
+        "local_date": "2026-08-23",
+        "transitions": [
+          "G-01@1.5.0 NOT-EVALUATED -> PASS",
+          "G-02@1.5.0 NOT-EVALUATED -> PASS",
+          "P-16 in-progress -> passed"
+        ],
+        "closure_record_sha256": "21f8a71772c96d9ab3f4409c8d87c7dbddd966cff75d8b64c993dbde483bf081",
+        "downstream_authorized": false
+      }
+    }
+  ],
+  "summary": {
+    "passed": 23,
+    "failed": 0,
+    "total": 23
+  },
+  "independent_agent_re_review": {
+    "completed": true,
+    "review_roles": [
+      "G-01/provenance",
+      "G-02/product-architecture-test",
+      "cross-document consistency"
+    ],
+    "remaining_findings": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "recommendation": "READY for owner decision",
+    "authority_boundary": "technical challenge evidence only; not owner approval, not external assurance, and not a gate PASS"
+  },
+  "final_file_sha256": {
+    "HANDOFF-CURRENT.md": "c0135484af4a748ca13ecdaec79477829d00fa7e2b374d98fb45eac1152c5f35",
+    "PROJECT-CONTRACT.md": "eed7b15047a153c0cebe9e53df9a9d55231a3c54ea4752bb10e2966e58dcc1da",
+    "PLAN.md": "93e8a957d5f3cc1a199dfc7dbd48dda04d056b820844b16f8c6926b05543e129",
+    "PHASE-GATES.md": "f3243fb7219e03edbc0651ce72d96b8581c627e84ea03b505d288d9eedd6e2ae",
+    "ROADMAP.md": "5f4532d1285974f7851b8e3ea69bae47fa24f753e4d348f95a865563ffb9bdf5",
+    "evidence/p16/UPSTREAM-DELTA.json": "1ddb0a317fd89bd9fb0b02fd698f41dc7f734e5a9a696015c007c09ab208a0fb",
+    "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json": "4ddbddca31c9e3526723cb0b1cec4a91a410641e671f35cc9a7e3342494460eb",
+    "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md": "eb6e3b972c3dde9abc97dbdb20d21bd146e214d445282f4af0435076e21fa705",
+    "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md": "30fbb3209add27eed964747a71a0e65fb0e39e2df9801d45346c47a3ab17639b",
+    "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md": "fcb2ad0e920c6dc751b93750d5c34e58e779e366c5d39c1162fd5818851b50e4",
+    "evidence/p16/PRODUCT-ARCHITECTURE-TEST-DELTA.md": "524ad83ee0a221068497026434c84f6f6f7a61bc2c9e7f4b9080b77fbe9e8947",
+    "evidence/p16/REQUEST-1.5.schema.json": "7e323d1bb845954b712e27dc89aba2db3a93b8d0d77665db610a6c717c7529a2",
+    "evidence/p16/SEMANTIC-IR-1.5.schema.json": "e4a8ee6c48482f221ee578398d1eea2645700772d6e1b44a7acf34a9c103c70f",
+    "evidence/p16/PILOT-GALLERY-CONTRACT.md": "8f12d158f1982f5a00c5cfe986adda54d1738f26a655548f6842837469175dce",
+    "evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json": "f298abd61d941c32d968bd1995782248092284d5dab6ff6d343fefb0ea45243d",
+    "evidence/p16/REMEDIATION-REVIEW-NOTES.md": "d582300911e09399e0ae30b332c7e0ba840af38bb810a614ff93bb413fb33645",
+    "evidence/p16/P-16-EVIDENCE.md": "5bd452384d47a7e2eb6d5bd837032f8ef53941d7a25b2055e2e0c0d127c51041",
+    "evidence/p16/P-16-GATE-CLOSURE.json": "21f8a71772c96d9ab3f4409c8d87c7dbddd966cff75d8b64c993dbde483bf081",
+    "evidence/p16/G-01-1.5.0-EVIDENCE.md": "d2adb35d8f60d925e2869236a473f6f41a0a4161c92f79d24b97bd8af436c0d7",
+    "evidence/p16/G-02-1.5.0-EVIDENCE.md": "ca43ab807eb6e70229b6be4ac2d6ec2b5868f526b3186240ea2652f99152830f"
+  },
+  "changed_paths_in_p16": [
+    "HANDOFF-CURRENT.md",
+    "PHASE-GATES.md",
+    "PLAN.md",
+    "PROJECT-CONTRACT.md",
+    "ROADMAP.md",
+    "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md",
+    "evidence/p16/G-01-1.5.0-EVIDENCE.md",
+    "evidence/p16/G-02-1.5.0-EVIDENCE.md",
+    "evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json",
+    "evidence/p16/P-16-EVIDENCE.md",
+    "evidence/p16/P-16-GATE-CLOSURE.json",
+    "evidence/p16/P-16-VERIFICATION.json",
+    "evidence/p16/PILOT-GALLERY-CONTRACT.md",
+    "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md",
+    "evidence/p16/PRODUCT-ARCHITECTURE-TEST-DELTA.md",
+    "evidence/p16/REMEDIATION-REVIEW-NOTES.md",
+    "evidence/p16/REQUEST-1.5.schema.json",
+    "evidence/p16/SEMANTIC-IR-1.5.schema.json",
+    "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md",
+    "evidence/p16/UPSTREAM-DELTA.json",
+    "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json"
+  ],
+  "limitations": [
+    "The audit-source root is not a Git worktree, so local changed-path completeness relies on the explicit P-16 path inventory plus unchanged runtime/dist aggregates; upstream-range completeness is independently set-equal to the pinned Git diff.",
+    "External JSON-Schema metaschema validation was not run because the library was unavailable and dependency installation was outside scope; JSON syntax and required structural assertions passed.",
+    "Official documentation body hashes are retrieval receipts and may change; packaging, if ever authorized, requires fresh official revalidation.",
+    "Upstream main may move after the recorded verification time; the exact commit and permanent commit URLs remain the candidate binding."
+  ],
+  "owner_approval": {
+    "approval_id": "D-047",
+    "actor": "Tran Ngoc Thien",
+    "role": "owner",
+    "local_date": "2026-08-23",
+    "source_reference": "Project conversation: explicit approval of G-01@1.5.0 and G-02@1.5.0 plus permission to close P-16; explicit instruction not to implement P-17.",
+    "approved_gate_records": {
+      "G-01@1.5.0": {
+        "path": "evidence/p16/G-01-1.5.0-EVIDENCE.md",
+        "sha256": "d2adb35d8f60d925e2869236a473f6f41a0a4161c92f79d24b97bd8af436c0d7"
+      },
+      "G-02@1.5.0": {
+        "path": "evidence/p16/G-02-1.5.0-EVIDENCE.md",
+        "sha256": "ca43ab807eb6e70229b6be4ac2d6ec2b5868f526b3186240ea2652f99152830f"
+      }
+    },
+    "closure_record": {
+      "path": "evidence/p16/P-16-GATE-CLOSURE.json",
+      "sha256": "21f8a71772c96d9ab3f4409c8d87c7dbddd966cff75d8b64c993dbde483bf081"
+    },
+    "p17_authorized": false
+  }
+}

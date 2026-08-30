@@ -1,6 +1,6 @@
 # Semantic grammar index
 
-Load only the selected canonical type reference. The registry contains exactly 27 types; variants and patterns never add another type.
+Load only the selected canonical type reference. The registry contains exactly 39 types; variants and patterns never add another type.
 
 | Type | Capability | Family | Reference |
 |---|---|---|---|
@@ -31,5 +31,19 @@ Load only the selected canonical type reference. The registry contains exactly 2
 | `data-flow` | `CAP-T25` | `data-movement` | [type-data-flow.md](type-data-flow.md) |
 | `dp-integration` | `CAP-T26` | `integration-topology` | [type-dp-integration.md](type-dp-integration.md) |
 | `dp-security-matrix` | `CAP-T27` | `permission-matrix` | [type-dp-security-matrix.md](type-dp-security-matrix.md) |
+| `polar-chart` | `CAP-T28` | `cyclic-quantitative` | [type-polar-chart.md](type-polar-chart.md) |
+| `treemap` | `CAP-T29` | `hierarchical-quantitative` | [type-treemap.md](type-treemap.md) |
+| `sankey` | `CAP-T30` | `quantitative-flow` | [type-sankey.md](type-sankey.md) |
+| `fishbone` | `CAP-T31` | `cause-analysis` | [type-fishbone.md](type-fishbone.md) |
+| `wardley-map` | `CAP-T32` | `strategy-map` | [type-wardley-map.md](type-wardley-map.md) |
+| `kanban` | `CAP-T33` | `work-state` | [type-kanban.md](type-kanban.md) |
+| `user-journey` | `CAP-T34` | `experience-sequence` | [type-user-journey.md](type-user-journey.md) |
+| `deployment` | `CAP-T35` | `runtime-topology` | [type-deployment.md](type-deployment.md) |
+| `dependency-graph` | `CAP-T36` | `general-dependency` | [type-dependency-graph.md](type-dependency-graph.md) |
+| `uml-class` | `CAP-T37` | `typed-structure` | [type-uml-class.md](type-uml-class.md) |
+| `story-map` | `CAP-T38` | `narrative-backlog` | [type-story-map.md](type-story-map.md) |
+| `database-schema` | `CAP-T39` | `physical-data-model` | [type-database-schema.md](type-database-schema.md) |
+
+The four P-17 quantitative variants remain capabilities under existing parents; see [variants-v15.md](variants-v15.md).
 
 Use `scripts/semantic_grammars.py` for deterministic validation and `scripts/semantic_patterns.py` for pattern transformation. Use `capability-map.json` to resolve phase ownership, selector, fallback, implementation mapping, and test ID for every locked capability.

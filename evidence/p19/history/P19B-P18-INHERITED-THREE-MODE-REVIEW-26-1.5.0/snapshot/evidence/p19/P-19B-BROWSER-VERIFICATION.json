@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-26-1.5.0",
+  "date": "2026-08-30",
+  "authority": "D-106, retaining D-084–D-105 scope",
+  "status": "BLOCKED_URL_POLICY",
+  "scope": "P-19B centered three-tier tree remediation; no P-19C",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Local-file navigation rejected by URL policy; no bypass or alternate browser workaround attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "current_artwork_verification": "Review-26 changes only three tree HTML files plus one neutral-light tree preview. Exact proofs cover all three modes and show 9 nodes, 8 parent relations, 3 tiers and 14 straight connector primitives. Root and multi-child parents are centered over their child spans; same-tier branches are evenly spaced; the single-child branch is directly centered. The neutral-light proof was rasterized locally with Sharp and visually inspected. Eighty-seven non-target HTML artworks and 29 non-target previews are preserved. This is not a browser PASS.",
+  "current_local_raster": {
+    "path": "evidence/p19/review26-checks/type-tree.svg.png",
+    "sha256": "8980caf126cf8b2020f5e7d44a82d8ae473441ddd0afca74b85803e34f0e7817",
+    "visually_inspected": true,
+    "renderer": "Sharp using a proof-only SVG with resolved CSS variables"
+  },
+  "limitations": [
+    "Local raster inspection is not browser execution or a full responsive, typography or accessibility audit.",
+    "Computed fonts, focus behavior and console output remain unverified.",
+    "P-19C remains unauthorized and owner approval is pending."
+  ]
+}

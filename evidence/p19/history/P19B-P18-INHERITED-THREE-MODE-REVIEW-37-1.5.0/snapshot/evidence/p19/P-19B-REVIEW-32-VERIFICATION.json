@@ -1,0 +1,45 @@
+{
+  "archived_files_verified": 513,
+  "authority": "D-112",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-32-1.5.0",
+  "gallery_manifest_sha256": "73467d6edb8697065552614a37c69425ea955d1617ed32b5c9e6bdf663a147c1",
+  "global_policy_declarations": 90,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 87,
+  "non_target_previews_byte_identical": 29,
+  "old_current_geometry": "PASS",
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review32-checks/type-treemap.svg",
+      "sha256": "560240666a6d4127a6c7ace66497ef279fea2108f43fad9d0f07b4db353645fa"
+    },
+    {
+      "path": "evidence/p19/review32-checks/type-treemap.svg.png",
+      "sha256": "7c08d256aeefb5c3dee0fce6cf0f6078f598e8d0b781c3bb57deb2e7868b73fa",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 12542,
+  "status": "PASS",
+  "stroke_contract": {
+    "focal_swatch": 1.6,
+    "focal_tile": 1.6,
+    "regular_swatch": 1.2,
+    "regular_tile": 1.2,
+    "rule": 1.0
+  },
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS",
+  "treemap_measurement": {
+    "compact_labels": 1,
+    "complete_borders": 6,
+    "direct_labels": 5,
+    "exact_area_encoding": 6,
+    "focal_tiles": 1,
+    "tiles": 6,
+    "uniform_insets": 6
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "record_id": "TCD-RELEASE-2.0.0-RC1",
+  "version": "2.0.0",
+  "approval_authority": "D-131",
+  "approval_date": "2026-08-31",
+  "approved_by": "Tran Ngoc Thien",
+  "status": "OWNER_APPROVED_EXECUTION_HOLD",
+  "source_gallery_lineage": {
+    "p17_source_manifest_sha256": "efabfb7e9e485449947ce98bc8e2fc5078a4c7d2593521c115b309c9aef24c57",
+    "p18_review17_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+    "p19b_review45_manifest_sha256": "ae95aca927ec69904483441db6b85de0381c1c1d85f4f01ee07a21a40aed0ba2",
+    "p19c_freeze_manifest_sha256": "5c98b8f56987ed69e65a93e01ca05dc2fd95c6d4e288007ffaa7fd615c8180ed",
+    "separate_p18_count": 14,
+    "separate_p19_count": 93,
+    "combined_count": 107,
+    "substitution": false
+  },
+  "legal_brand_candidate": {
+    "candidate_id": "TCD-LEGAL-2.0.0-RC1",
+    "logical_aggregate_sha256": "93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0",
+    "independent_vietnamese_lawyer_review": "WAIVED_BY_OWNER_FOR_2.0.0",
+    "risk_acceptance": "Owner explicitly approved the exact legal and brand candidate without a separate lawyer review. This is an owner waiver, not a claim of lawyer review."
+  },
+  "package_candidate": {
+    "candidate_id": "TCD-PACKAGES-2.0.0-RC1",
+    "sha256sums_file_sha256": "96246d4d62153b82c9e3505ebe904433225f15b106e002d026fa069e8a4a8f17",
+    "archives": {
+      "claude_plugin": "7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6",
+      "openai_plugin": "65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315",
+      "universal_raw_skill": "88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93"
+    },
+    "package_checks": "26/26 PASS",
+    "full_regression": "414/414 PASS"
+  },
+  "flexibility_condition": {
+    "decision": "D-128",
+    "masked_silhouettes": 31,
+    "classification": "QA_SAMPLES_NOT_FIXED_OUTPUTS",
+    "explicit_safe_semantically_valid_user_request_has_precedence": true
+  },
+  "gate_results": {
+    "G-00@2.0.0": "PASS",
+    "G-01@2.0.0": "PASS",
+    "G-02@2.0.0": "PASS",
+    "G-03@2.0.0": "PASS",
+    "G-04@2.0.0": "PASS",
+    "G-05@2.0.0": "PASS",
+    "G-06@2.0.0": "PASS",
+    "G-07@2.0.0": "PASS"
+  },
+  "execution_authority": {
+    "copy_or_promote_to_dist": false,
+    "publication": false,
+    "commit": false,
+    "push": false,
+    "tag": false,
+    "create_or_modify_release": false,
+    "note": "Gate and exact candidate approval do not execute or authorize external/repository mutations without a separate explicit command."
+  }
+}

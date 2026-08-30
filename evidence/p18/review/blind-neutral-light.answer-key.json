@@ -1,0 +1,65 @@
+{
+  "protocol": "fixed shuffled order; metadata-free thumbnails",
+  "entries": [
+    {
+      "slot": 1,
+      "family": "wardley-map",
+      "source_sha256": "9db50d71662610612d9422ff962839c67367bf51c9ececad1d2599bc1b2695a6"
+    },
+    {
+      "slot": 2,
+      "family": "sankey",
+      "source_sha256": "d40167f99f67464247ec42cdebbca8bba54e72b287f02ec6319f04e901a54a26"
+    },
+    {
+      "slot": 3,
+      "family": "bubble",
+      "source_sha256": "877cf95fa1012ed1e22d1c81060900562dc3a22c4a520298e74011b91de5025c"
+    },
+    {
+      "slot": 4,
+      "family": "swimlane",
+      "source_sha256": "beafe77f87febee34b9b7f39158d6c177fd36ba0ec09c4bf2cf40a17f3907528"
+    },
+    {
+      "slot": 5,
+      "family": "fishbone",
+      "source_sha256": "96536ae087b087f091deb63f678fc3506dae5a0222b700cfe5564f4fad530255"
+    },
+    {
+      "slot": 6,
+      "family": "architecture",
+      "source_sha256": "918175eff90d118ac58e96054a612c28228bf1a272ce65aa07ca53162de5752c"
+    },
+    {
+      "slot": 7,
+      "family": "ridgeline",
+      "source_sha256": "f8d667cdaaaaa28f39191357a0df6a7bbda8630f70caea352b9aacf496444f6b"
+    },
+    {
+      "slot": 8,
+      "family": "user-journey",
+      "source_sha256": "6eedfea33bf34658bc5c096e7940f172e2af551a7cf66826ca63f4ce456e23ae"
+    },
+    {
+      "slot": 9,
+      "family": "treemap",
+      "source_sha256": "dc19f34e490c767a3ee3499514f199c33b885e9a0d95ab27594c4ab16624c3ee"
+    },
+    {
+      "slot": 10,
+      "family": "slopegraph",
+      "source_sha256": "efe5ed4d381b87ea50cfc26c267549a15a247f2a970fe29b307f38544b8df4e6"
+    },
+    {
+      "slot": 11,
+      "family": "deployment",
+      "source_sha256": "ea49a9a39dc722045610caf94d7d24d32e309ca7913ddc8f55f2213097809df6"
+    },
+    {
+      "slot": 12,
+      "family": "dumbbell",
+      "source_sha256": "3068a1b5496df53ba1a82c076f75046bb7378f08cae7b0f8be4ca5a93cc20307"
+    }
+  ]
+}

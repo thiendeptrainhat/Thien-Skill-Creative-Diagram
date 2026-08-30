@@ -1,4 +1,4 @@
-"""Original minimal semantic fixtures for P-05 tests."""
+"""Original minimal semantic fixtures for 39-type semantic tests."""
 
 from __future__ import annotations
 
@@ -33,8 +33,20 @@ def datum(item_id: str, domain: str | int | float, value: float | int | None, **
     return {"id": item_id, "domain": domain, "value": value, "missing": value is None, **extra}
 
 
-def series(item_id: str, label: str, data: list[dict[str, Any]], unit: str | None = None) -> dict[str, Any]:
-    return {"id": item_id, "label": label, "unit": unit, "data": data}
+def xy_datum(item_id: str, x: float, y: float, size: float, size_unit: str) -> dict[str, Any]:
+    return {"id": item_id, "x_value": x, "y_value": y, "size_value": size, "size_unit": size_unit, "missing": False}
+
+
+def distribution_datum(item_id: str, samples: list[float]) -> dict[str, Any]:
+    return {"id": item_id, "distribution_samples": samples, "missing": False}
+
+
+def member(item_id: str, kind: str, name: str, **extra: Any) -> dict[str, Any]:
+    return {"id": item_id, "kind": kind, "name": name, **extra}
+
+
+def series(item_id: str, label: str, data: list[dict[str, Any]], unit: str | None = None, **extra: Any) -> dict[str, Any]:
+    return {"id": item_id, "label": label, "unit": unit, "data": data, **extra}
 
 
 def annotation(item_id: str, text: str, targets: list[str]) -> dict[str, Any]:
@@ -50,7 +62,7 @@ def _content_class(collection: str) -> str:
 
 def finalize(diagram_type: str, **collections: list[dict[str, Any]]) -> dict[str, Any]:
     ir: dict[str, Any] = {
-        "schema_version": "1.0",
+        "schema_version": "1.5",
         "request_id": f"request-{diagram_type}",
         "diagram": {"type": diagram_type, "variant_ids": [], "language": "vi", "title": f"Fixture {diagram_type}", "detail": "faithful", "audience": "mixed"},
         "selection": {"mode": "auto", "confidence": "high", "evidence": [f"request:fixture {diagram_type}"], "alternatives": [], "assumption": None},
@@ -66,6 +78,13 @@ def finalize(diagram_type: str, **collections: list[dict[str, Any]]) -> dict[str
             reading_order.append(item["id"])
             source_items.append({"id": source_id, "source_kind": "natural-language", "locator": f"fixture:{item['id']}", "content_class": _content_class(collection)})
             kept.append({"source_ids": [source_id], "ir_ids": [item["id"]], "reason": "Supplied semantic item retained."})
+            if collection == "nodes":
+                for nested_member in item.get("members", []):
+                    member_source_id = f"source-{nested_member['id']}"
+                    nested_member["source_refs"] = [member_source_id]
+                    reading_order.append(nested_member["id"])
+                    source_items.append({"id": member_source_id, "source_kind": "natural-language", "locator": f"fixture:{nested_member['id']}", "content_class": "entity"})
+                    kept.append({"source_ids": [member_source_id], "ir_ids": [nested_member["id"]], "reason": "Supplied structured member retained."})
             if collection == "series":
                 for point in item["data"]:
                     point_source_id = f"source-{point['id']}"
@@ -74,7 +93,8 @@ def finalize(diagram_type: str, **collections: list[dict[str, Any]]) -> dict[str
                     kept.append({"source_ids": [point_source_id], "ir_ids": [point["id"]], "reason": "Supplied quantitative datum retained."})
     ir["source_items"] = source_items
     ir["fidelity"] = {"kept": kept, "merged": [], "dropped": [], "source_rot": [], "invented_count": 0}
-    ir["accessibility"] = {"name": f"Fixture {diagram_type}", "description": "Original minimal semantic fixture.", "reading_order": reading_order, "data_representation_required": bool(ir["series"] or diagram_type == "dp-security-matrix")}
+    requires_data = bool(ir["series"] or diagram_type in {"dp-security-matrix", "treemap", "sankey"})
+    ir["accessibility"] = {"name": f"Fixture {diagram_type}", "description": "Original minimal semantic fixture.", "reading_order": reading_order, "data_representation_required": requires_data}
     return ir
 
 
@@ -107,7 +127,80 @@ def fixtures() -> dict[str, dict[str, Any]]:
         "data-flow": finalize("data-flow", nodes=[n("source-events", "source", "Sự kiện"), n("transform-clean", "transform", "Làm sạch"), n("sink-warehouse", "sink", "Kho dữ liệu")], edges=[e("transfer-clean", "source-events", "transform-clean", "transfer"), e("transfer-store", "transform-clean", "sink-warehouse", "transfer")]),
         "dp-integration": finalize("dp-integration", nodes=[n("source-erp", "source", "ERP"), n("platform-api", "platform-service", "API nền tảng"), n("consumer-report", "consumer", "Báo cáo")], edges=[e("integration-platform", "source-erp", "platform-api", "integration"), e("integration-consumer", "platform-api", "consumer-report", "integration")], groups=[g("boundary-platform", "Nền tảng dữ liệu", ["platform-api"])]),
         "dp-security-matrix": finalize("dp-security-matrix", nodes=[n("cell-reader-store", "permission-cell", "Đọc / Kho", secondary_label="reader|store", state="allow"), n("cell-reader-api", "permission-cell", "Đọc / API", secondary_label="reader|api", state="conditional"), n("cell-admin-store", "permission-cell", "Quản trị / Kho", secondary_label="admin|store", state="allow"), n("cell-admin-api", "permission-cell", "Quản trị / API", secondary_label="admin|api", state="deny")]),
+        "polar-chart": finalize("polar-chart", series=[series("series-season", "Chu kỳ", [datum("polar-spring", "Xuân", 4), datum("polar-summer", "Hạ", 7), datum("polar-autumn", "Thu", 0), datum("polar-winter", "Đông", None)], "điểm")], axes=[axis("axis-angle", "angular", "categorical", "Mùa"), axis("axis-radius", "radial", "linear", "Mức độ", domain_min=0, domain_max=10, unit="điểm")]),
+        "treemap": finalize("treemap", nodes=[n("leaf-a", "leaf", "Hạng mục A", value=60, unit="triệu đồng", parent_group_id="group-region"), n("leaf-b", "leaf", "Hạng mục B", value=40, unit="triệu đồng", parent_group_id="group-region")], groups=[g("group-root", "Tổng danh mục", ["group-region"], parent_group_id=None, declared_total=100, unit="triệu đồng"), g("group-region", "Khu vực", ["leaf-a", "leaf-b"], parent_group_id="group-root", declared_total=100, unit="triệu đồng")]),
+        "sankey": finalize("sankey", nodes=[n("flow-source", "source", "Nguồn"), n("flow-stage", "stage", "Xử lý"), n("flow-sink", "sink", "Đích")], edges=[e("flow-in", "flow-source", "flow-stage", "flow", amount=25, unit="hồ sơ"), e("flow-out", "flow-stage", "flow-sink", "flow", amount=25, unit="hồ sơ")]),
+        "fishbone": finalize("fishbone", nodes=[n("cause-process", "cause", "Quy trình thiếu bước kiểm tra"), n("cause-system", "cause", "Hệ thống cảnh báo chậm"), n("effect-delay", "effect", "Hồ sơ xử lý trễ")], edges=[e("cause-process-effect", "cause-process", "effect-delay", "cause"), e("cause-system-effect", "cause-system", "effect-delay", "cause")], groups=[g("category-method", "Phương pháp", ["cause-process"], cause_category="Phương pháp"), g("category-technology", "Công nghệ", ["cause-system"], cause_category="Công nghệ")]),
+        "wardley-map": finalize("wardley-map", nodes=[n("wardley-need", "component", "Nhu cầu", strategy={"evolution": 0.2, "value_chain_position": 0.9}), n("wardley-service", "component", "Dịch vụ", strategy={"evolution": 0.65, "value_chain_position": 0.55})], edges=[e("wardley-dependency", "wardley-need", "wardley-service", "dependency")], axes=[axis("wardley-evolution", "x", "linear", "Tiến hóa", domain_min=0, domain_max=1), axis("wardley-value", "y", "linear", "Chuỗi giá trị", domain_min=0, domain_max=1)]),
+        "kanban": finalize("kanban", nodes=[n("work-ready", "work-item", "Sẵn sàng", work={"column_order": 0, "item_order": 0, "wip_limit": 2, "blocked": False}), n("work-review", "work-item", "Đang rà soát", work={"column_order": 1, "item_order": 0, "wip_limit": 1, "blocked": True})], groups=[g("column-ready", "Chờ xử lý", ["work-ready"], wip_limit=2), g("column-review", "Đang xử lý", ["work-review"], wip_limit=1)]),
+        "user-journey": finalize("user-journey", nodes=[n("journey-discover", "stage", "Khám phá", journey={"stage_order": 0, "action": "Tìm thông tin", "touchpoint": "Trang hướng dẫn", "sentiment": 0.2}), n("journey-submit", "stage", "Nộp hồ sơ", journey={"stage_order": 1, "action": "Gửi biểu mẫu", "touchpoint": "Cổng dịch vụ", "sentiment": -0.1})]),
+        "deployment": finalize("deployment", nodes=[n("deploy-api", "artifact", "API", placement={"zone": "Vùng ứng dụng", "host": "node-a", "artifact": "api.jar", "replicas": 2, "ports": ["8443"]}), n("deploy-db", "artifact", "Cơ sở dữ liệu", placement={"zone": "Vùng dữ liệu", "host": "db-a", "artifact": "postgres", "replicas": 1, "ports": ["5432"]})], edges=[e("runtime-db", "deploy-api", "deploy-db", "runtime", relation_kind="runtime")]),
+        "dependency-graph": finalize("dependency-graph", nodes=[n("dependency-a", "component", "A"), n("dependency-b", "component", "B"), n("dependency-c", "component", "C")], edges=[e("dependency-ab", "dependency-a", "dependency-b", "dependency"), e("dependency-bc", "dependency-b", "dependency-c", "dependency"), e("dependency-ca", "dependency-c", "dependency-a", "dependency")]),
+        "uml-class": finalize("uml-class", nodes=[n("class-customer", "class", "Customer", members=[member("attribute-customer-id", "attribute", "id", data_type="UUID", visibility="private"), member("operation-submit", "operation", "submit", signature="submit(): void", visibility="public")]), n("class-order", "class", "Order", members=[member("attribute-order-id", "attribute", "id", data_type="UUID", visibility="private")])], edges=[e("uml-association", "class-customer", "class-order", "association", relation_kind="association", source_multiplicity="1", target_multiplicity="0..*")]),
+        "story-map": finalize("story-map", nodes=[n("story-login", "story", "Đăng nhập", story={"backbone_order": 0, "story_order": 0, "release_slice": "R1", "cut_status": "above"}), n("story-export", "story", "Xuất dữ liệu", story={"backbone_order": 1, "story_order": 0, "release_slice": None, "cut_status": "unassigned"})], groups=[g("release-r1", "Release 1", ["story-login"], release_slice="R1")]),
+        "database-schema": finalize("database-schema", nodes=[n("table-customer", "table", "customer", members=[member("column-customer-id", "column", "id", data_type="uuid", constraints=["primary-key", "not-null"]), member("index-customer-id", "index", "pk_customer", indexed_member_ids=["column-customer-id"], index_unique=True)]), n("table-order", "table", "sales_order", members=[member("column-order-id", "column", "id", data_type="uuid", constraints=["primary-key"]), member("column-order-customer", "column", "customer_id", data_type="uuid", constraints=["not-null"]), member("index-order-customer", "index", "ix_order_customer", indexed_member_ids=["column-order-customer", "column-order-id"], index_unique=False)])], edges=[e("foreign-key-order-customer", "table-order", "table-customer", "foreign-key", relation_kind="foreign-key", source_member="column-order-customer", target_member="column-customer-id")]),
     }
+
+
+def legacy_fixtures() -> dict[str, dict[str, Any]]:
+    """Return the historical 27-type visual fixtures without implying v1.5 render coverage."""
+
+    return dict(list(fixtures().items())[:27])
+
+
+def variant_fixtures() -> dict[str, dict[str, Any]]:
+    dumbbell = finalize(
+        "bar-chart",
+        series=[
+            series("series-before", "Trước", [datum("before-a", "A", -2), datum("before-b", "B", 0)], "điểm"),
+            series("series-after", "Sau", [datum("after-a", "A", 4), datum("after-b", "B", 6)], "điểm"),
+        ],
+        axes=[axis("axis-dumbbell-category", "x", "categorical", "Nhóm"), axis("axis-dumbbell-value", "y", "linear", "Điểm", domain_min=-5, domain_max=10, unit="điểm")],
+    )
+    dumbbell["diagram"]["variant_ids"] = ["CAP-V17"]
+
+    slopegraph = finalize(
+        "line-chart",
+        series=[
+            series("series-alpha", "Alpha", [datum("alpha-before", "Trước", 2), datum("alpha-after", "Sau", 8)], "điểm"),
+            series("series-beta", "Beta", [datum("beta-before", "Trước", 7), datum("beta-after", "Sau", 4)], "điểm"),
+        ],
+        axes=[axis("axis-slope-state", "x", "ordinal", "Trạng thái"), axis("axis-slope-value", "y", "linear", "Điểm", domain_min=0, domain_max=10, unit="điểm")],
+    )
+    slopegraph["diagram"]["variant_ids"] = ["CAP-V18"]
+
+    distribution = {
+        "method": "histogram",
+        "domain_min": -2,
+        "domain_max": 2,
+        "bin_count": 4,
+        "bin_edges": [-2, -1, 0, 1, 2],
+        "bandwidth": None,
+        "amplitude_normalization": "global-max",
+        "shared_domain": True,
+        "shared_bins": True,
+    }
+    ridgeline = finalize(
+        "line-chart",
+        series=[
+            series("series-north", "Miền Bắc", [distribution_datum("samples-north", [-1.5, -0.5, 0.2, 1.2, 2.0])], "điểm", distribution=copy.deepcopy(distribution)),
+            series("series-south", "Miền Nam", [distribution_datum("samples-south", [-1.2, -0.2, 0.4, 0.8, 1.6])], "điểm", distribution=copy.deepcopy(distribution)),
+        ],
+        axes=[axis("axis-ridge-domain", "x", "linear", "Giá trị", domain_min=-2, domain_max=2, unit="điểm"), axis("axis-ridge-amplitude", "y", "linear", "Mật độ chuẩn hóa", domain_min=0, domain_max=1, unit=None)],
+    )
+    ridgeline["diagram"]["variant_ids"] = ["CAP-V19"]
+
+    bubble = finalize(
+        "scatter-plot",
+        series=[series("series-bubble", "Danh mục", [xy_datum("bubble-a", -2, 3, 0, "triệu đồng"), xy_datum("bubble-b", 6, -1, 25, "triệu đồng")], "điểm")],
+        axes=[
+            axis("axis-bubble-x", "x", "linear", "Trục X", domain_min=-5, domain_max=10, unit="điểm x"),
+            axis("axis-bubble-y", "y", "linear", "Trục Y", domain_min=-5, domain_max=10, unit="điểm"),
+            axis("axis-bubble-size", "size", "linear", "Quy mô", domain_min=0, domain_max=30, unit="triệu đồng"),
+        ],
+    )
+    bubble["diagram"]["variant_ids"] = ["CAP-V20"]
+    return {"CAP-V17": dumbbell, "CAP-V18": slopegraph, "CAP-V19": ridgeline, "CAP-V20": bubble}
 
 
 def remove_material(ir: dict[str, Any], collection: str, item_id: str) -> None:
@@ -150,5 +243,16 @@ def negative_fixture(diagram_type: str, source: dict[str, Any]) -> dict[str, Any
     elif diagram_type == "data-flow": ir["nodes"][2]["role"] = "store"
     elif diagram_type == "dp-integration": ir["nodes"][2]["role"] = "store"
     elif diagram_type == "dp-security-matrix": remove_material(ir, "nodes", "cell-admin-api")
+    elif diagram_type == "polar-chart": ir["series"][0]["data"][0]["value"] = -1
+    elif diagram_type == "treemap": ir["groups"][1]["declared_total"] = 99
+    elif diagram_type == "sankey": ir["edges"][1]["amount"] = 24
+    elif diagram_type == "fishbone": ir["edges"][1]["target"] = "cause-process"
+    elif diagram_type == "wardley-map": ir["nodes"][0]["strategy"]["evolution"] = 1.1
+    elif diagram_type == "kanban": ir["nodes"][1]["work"]["column_order"] = 0
+    elif diagram_type == "user-journey": ir["nodes"].reverse()
+    elif diagram_type == "deployment": ir["nodes"][0].pop("placement")
+    elif diagram_type == "dependency-graph": ir["edges"][0]["kind"] = "association"
+    elif diagram_type == "uml-class": ir["edges"][0].pop("relation_kind")
+    elif diagram_type == "story-map": ir["nodes"][1]["story"]["release_slice"] = "R2"
+    elif diagram_type == "database-schema": ir["nodes"][0]["members"][1]["indexed_member_ids"] = ["column-order-id"]
     return ir
-

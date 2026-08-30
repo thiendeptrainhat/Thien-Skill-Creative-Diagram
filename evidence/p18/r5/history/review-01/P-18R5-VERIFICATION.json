@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R5",
+  "contract_id": "P18R5-KERNEL-SWIMLANE-ANCHOR-1.5.0",
+  "result": "PASS",
+  "check_count": 14,
+  "pass_count": 14,
+  "fail_count": 0,
+  "deferred_count": 0,
+  "checks": [
+    {
+      "id": "P18R5-QA-SEMANTIC-PROJECTION",
+      "status": "PASS",
+      "detail": {
+        "nodes": 12,
+        "edges": 10
+      }
+    },
+    {
+      "id": "P18R5-QA-FONT-PRECEDENCE",
+      "status": "PASS",
+      "detail": {
+        "default_preferred": "Geist",
+        "default_resolved": "Avenir Next",
+        "explicit_resolved": "Avenir Next",
+        "missing_explicit_rejected": true
+      }
+    },
+    {
+      "id": "P18R5-QA-GLYPHS",
+      "status": "PASS",
+      "detail": "all active roles cover stress string"
+    },
+    {
+      "id": "P18R5-QA-CONTRAST",
+      "status": "PASS",
+      "detail": {
+        "ink-on-surface": 14.113,
+        "soft-ink-on-surface": 6.358,
+        "faint-ink-on-canvas": 4.6,
+        "accent-text-on-canvas": 4.815,
+        "tag-check": 5.206,
+        "tag-notice": 6.195,
+        "tag-listing": 5.127,
+        "tag-ar": 5.331,
+        "tag-ledger": 4.618
+      }
+    },
+    {
+      "id": "P18R5-QA-NODE-OVERLAP",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "P18R5-QA-INTRINSIC-CONTAINMENT",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "P18R5-QA-ROUTING",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "P18R5-QA-LABEL-CLEARANCE",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "P18R5-QA-BRIDGE",
+      "status": "PASS",
+      "detail": [
+        {
+          "point": {
+            "x": 50,
+            "y": 50
+          },
+          "orientation": "vertical"
+        }
+      ]
+    },
+    {
+      "id": "P18R5-QA-ARTBOARD",
+      "status": "PASS",
+      "detail": {
+        "width": 3587.52,
+        "height": 1616.0,
+        "aspect": 2.22,
+        "occupancy": 0.8824257425742574
+      }
+    },
+    {
+      "id": "P18R5-QA-STANDALONE-SECURITY",
+      "status": "PASS",
+      "detail": {
+        "html_count": 1,
+        "svg_count": 1,
+        "external": [],
+        "unsafe": [],
+        "global_transform": []
+      }
+    },
+    {
+      "id": "P18R5-QA-INTERFACE-CONTENT",
+      "status": "PASS",
+      "detail": {
+        "duplicate_visible_title": false,
+        "evidence_rail": false
+      }
+    },
+    {
+      "id": "P18R5-QA-DETERMINISM",
+      "status": "PASS",
+      "detail": {
+        "deterministic": true,
+        "hashes_match": true
+      }
+    },
+    {
+      "id": "P18R5-QA-BROWSER",
+      "status": "PASS",
+      "detail": {
+        "runs": 3,
+        "failures": 0,
+        "artifact_hash_match": true
+      }
+    }
+  ],
+  "artifact_hashes": {
+    "evidence/p18/r5/anchor/swimlane--neutral-light.svg": "ba037e941d5fa3e0529c44e60d6dc5936d0f76f54a4028e45c5804d9f6cdec97",
+    "evidence/p18/r5/anchor/swimlane--neutral-light.html": "1d95441f70c8f828aa7fd1a4bb05f99ee6fecac5da1b9cfdabde339e3cf8afc2",
+    "evidence/p18/r5/P-18R5-BUILD-RECEIPT.json": "5d4b5d8ea15cc38fc2725d3e0cda8002a6baee0877c113489dc3d459a3bade25"
+  }
+}

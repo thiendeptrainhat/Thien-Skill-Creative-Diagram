@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0",
+  "authority": "D-080 / D-081",
+  "implementation_description": "clean-room-oriented independent reimplementation with direct inheritance from the project's owner-approved P-18 artifact",
+  "historical_predecessor": {
+    "candidate_id": "P19B-THREE-MODE-EXACT-129-HTML-1.5.0",
+    "disposition": "owner-rejected visual direction; historical technical evidence only",
+    "archive": "evidence/p19/history/P19B-THREE-MODE-EXACT-129-HTML-1.5.0/",
+    "gallery_manifest_sha256": "ed6a14521a1277143bece89deac732cec607a9c5d1738d593e52498191a3b106"
+  },
+  "visual_parent": {
+    "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0",
+    "manifest_path": "evidence/p18/r6/P-18R6-MANIFEST.json",
+    "manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
+    "inheritance": [
+      "semantic visual roles",
+      "warm-paper/coral/navy palette grammar",
+      "Georgia/Avenir Next/Menlo typography roles",
+      "spacing, radii, frame, node, connector, grid and legend grammar"
+    ],
+    "copied_external_asset": false
+  },
+  "functional_source": {
+    "repository": "cathrynlavery/diagram-design",
+    "exact_snapshot": "648c2a597839301e06df1e7434a08bde9f42eed3",
+    "use": "taxonomy, abstract behavior and failure-mode learning only",
+    "copied_code_prose_css_template_gallery_asset": false
+  },
+  "design_process_source": {
+    "name": "Thien-UI-UX-Ultra",
+    "use": "routing, reference analysis, design contract, design judgment and verification workflow only",
+    "copied_code_script_template_asset": false
+  },
+  "canonical_inputs": [
+    "thien-skill-creative-diagram/scripts/visual_adapters_v15.py",
+    "thien-skill-creative-diagram/scripts/tests/semantic_fixtures.py",
+    "evidence/p18/r6/P-18R6-MANIFEST.json",
+    "evidence/p18/r6/source/gallery_kernel.py"
+  ],
+  "original_outputs": [
+    "thien-skill-creative-diagram/scripts/gallery_renderer_v15.py",
+    "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+    "evidence/p19/gallery/specimens/",
+    "evidence/p19/gallery/previews/",
+    "evidence/p19/gallery/index.html"
+  ],
+  "boundary": {
+    "qa_only": true,
+    "package_asset": false,
+    "p19c_freeze": false,
+    "owner_review": "pending",
+    "g04_evaluated": false,
+    "release_authorized": false
+  },
+  "review01_predecessor": {
+    "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0",
+    "archive": "evidence/p19/history/P19B-P18-INHERITED-THREE-MODE-REVIEW-01-1.5.0/snapshot/",
+    "gallery_manifest_sha256": "e866fb915a09973bb3a035b6659a0b98d66eeda4701031a4d5868cbaea803eec",
+    "plan_manifest_sha256": "b2f28352a6aa596880e07c9f34ff911b7bba8ac3a62710b3e8d38335eac8f1a2",
+    "source_manifest_sha256": "6c6b4fad02fdcfa2fa766d96a5b0407ac17da3a2e8f52130eb6cd8a44a83eca5",
+    "disposition": "historical; two owner-reported geometry defects"
+  },
+  "owner_reference_images": [
+    {
+      "path": "evidence/p19/review02-checks/owner-references/dp-integration-defect.png",
+      "sha256": "556162f598ca56d3eefed78678cb11349faf88b2f51099dbf983821bed2f4a64"
+    },
+    {
+      "path": "evidence/p19/review02-checks/owner-references/swimlane-defect.png",
+      "sha256": "5dffb2166c4ccff3ebf8bb2919201789dd53647917cec06864fc8873521161b0"
+    }
+  ],
+  "owner_reference_use": "QA-only defect evidence; no embedded instruction execution and no package inclusion"
+}

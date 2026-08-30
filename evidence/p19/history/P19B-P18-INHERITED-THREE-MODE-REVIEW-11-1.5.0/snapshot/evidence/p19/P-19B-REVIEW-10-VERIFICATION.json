@@ -1,0 +1,36 @@
+{
+  "aggregate_root_count": 1,
+  "alternative_exact_er_table": "PASS",
+  "archived_files_verified": 258,
+  "associative_entity_count": 1,
+  "authority": "D-090",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-10-1.5.0",
+  "entity_count": 4,
+  "er_data_model_html_changed": 3,
+  "explicit_pk_fk_cardinality_encoding": "PASS",
+  "gallery_manifest_sha256": "1732ffbdd426a77956d6e93a23a12dbe7eb800a725a48dca383dfa83a9c574c3",
+  "member_count": 19,
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-light.svg",
+      "sha256": "e76a267df137fa96979efe0370efd22d1dfd6da8286a0414bf9a0c323dbcd511"
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--neutral-dark.svg",
+      "sha256": "c86fc686f3a42000433d539d117879d4dbfeb1d0a3cc2de84450f691adceda0a"
+    },
+    {
+      "path": "evidence/p19/review10-checks/type-er-data-model--editorial.svg",
+      "sha256": "7f9f1b3bb35418aaa37c8ad4553c6a3a0c3e782b2525bf23f59eeb755eaa6c9a"
+    }
+  ],
+  "protected_files_verified": 4029,
+  "relationship_count": 3,
+  "status": "PASS",
+  "three_mode_geometry": "PASS"
+}

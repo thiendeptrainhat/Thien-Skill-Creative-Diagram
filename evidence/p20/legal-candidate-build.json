@@ -1,0 +1,55 @@
+{
+  "aggregate_sha256": "93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0",
+  "artifacts": [
+    {
+      "bytes": 20501,
+      "path": "ASSET_MANIFEST.json",
+      "sha256": "fc44df90567318102c62046106794f6d7c563403bbe6375bd78fc69af92f9396"
+    },
+    {
+      "bytes": 8899,
+      "path": "LICENSE-APPLICATION.md",
+      "sha256": "122a5880fa8b788cb72658da63ce30c6dcaadca6494cd8bae3cc422b20674627"
+    },
+    {
+      "bytes": 51371,
+      "path": "LICENSE.md",
+      "sha256": "64d88634fe7ad212049799d7febdbe574bd64574c1f75cfe065f2952a2906f31"
+    },
+    {
+      "bytes": 2218,
+      "path": "NOTICE",
+      "sha256": "19ace5beddd34662f48898522b5d8efba7fa42123895a062bbed74c9d7152d60"
+    },
+    {
+      "bytes": 11564,
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "a3cec7004faa246f8b27e95e17f98031f338805d9b5a7910436f2b8692789fae"
+    },
+    {
+      "bytes": 832,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "6b89ecddda5b7aecee3cf5d1203cdf9ada12da90d794f3a86af16cffabab14d0"
+    }
+  ],
+  "authorization": "D-130",
+  "candidate_id": "TCD-LEGAL-2.0.0-RC1",
+  "changed_candidate_bytes": [
+    "LICENSE-APPLICATION.md",
+    "NOTICE",
+    "SOURCE_MANIFEST.json",
+    "ASSET_MANIFEST.json"
+  ],
+  "generated_at": "2026-08-30T00:00:00+07:00",
+  "limits": [
+    "No file is release-eligible before exact G-06@2.0.0 owner and Vietnamese-lawyer approval.",
+    "The candidate does not authorize dist, publication, Git, tag, Release, or release actions."
+  ],
+  "record_id": "P20-LEGAL-CANDIDATE-BUILD-1",
+  "status": "CANDIDATE-AWAITING-G06-2.0.0-OWNER-AND-VIETNAMESE-LAWYER-APPROVAL",
+  "unchanged_legal_bytes": [
+    "LICENSE.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "version": "2.0.0"
+}

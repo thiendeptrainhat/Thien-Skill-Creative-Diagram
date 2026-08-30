@@ -1,0 +1,43 @@
+{
+  "alternative_exact_kanban_table": "PASS",
+  "archived_files_verified": 311,
+  "authority": "D-094",
+  "blocked": 1,
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-14-1.5.0",
+  "column_counts": [
+    3,
+    4,
+    2,
+    2
+  ],
+  "columns": 4,
+  "done": 2,
+  "gallery_manifest_sha256": "1ee5be8ff832fd19725270be8349479048d92662ceb69cd3437116f9e09acef6",
+  "items": 11,
+  "kanban_html_changed": 3,
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--neutral-light.svg",
+      "sha256": "d344ab50a301dda64e7c9f9b0f37b0af5652261fe622e47edb6c3803de7a14cb"
+    },
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--neutral-dark.svg",
+      "sha256": "0ae97eac89da7991b1b56c7ebf895967a5393834755d7063bdcd000bab5ef9b5"
+    },
+    {
+      "path": "evidence/p19/review14-checks/type-kanban--editorial.svg",
+      "sha256": "f9204368a5cdfda1b0ee78c6620477de22b92591929087b81004f9bd1330ed5b"
+    }
+  ],
+  "protected_files_verified": 5143,
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "waiting_external": 1,
+  "wip_breaches": 1
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.2",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-02-1.5.0",
+  "date": "2026-08-27",
+  "authority": "D-081",
+  "status": "BLOCKED_NOT_EXECUTABLE",
+  "scope": "Focused P-19B repair; not P-19C or owner approval",
+  "environment": {
+    "browser": "Codex In-app Browser",
+    "result": "Earlier local-file reload rejected by URL policy; no bypass or repeated blocked operation attempted",
+    "workaround_attempted": false
+  },
+  "browser_checks": {
+    "desktop": "NOT_RUN",
+    "mobile": "NOT_RUN",
+    "computed_style": "NOT_RUN",
+    "console_and_focus": "NOT_RUN"
+  },
+  "local_svg_render": {
+    "method": "macOS Quick Look, 1600px thumbnails",
+    "rendered_and_visually_inspected": 9,
+    "status": "PASS_FOR_TWO_TARGET_DEFECTS",
+    "scope": [
+      "dp-integration in three modes",
+      "swimlane rounded in three modes",
+      "swimlane straight override proof in three modes"
+    ],
+    "raster_directory": "evidence/p19/review02-checks/rasters/",
+    "observations": [
+      "API card is fully inside its outer zone, with symmetric left/right and top/bottom spacing.",
+      "Swimlane connector is visible and continuous through both bends in rounded and straight variants.",
+      "Color and typography roles remain unchanged from the P-19B review-01 style; no visual approval is inferred."
+    ]
+  },
+  "superseded_claim": "The review-01 broad no-overlap/no-clipping observation missed the owner-reported defects and is not carried forward.",
+  "limitations": [
+    "Quick Look raster inspection is not browser execution or a full visual/typography/accessibility audit.",
+    "Responsive behavior, computed fonts, focus and console remain unverified.",
+    "P-19C remains unauthorized and owner approval pending."
+  ]
+}

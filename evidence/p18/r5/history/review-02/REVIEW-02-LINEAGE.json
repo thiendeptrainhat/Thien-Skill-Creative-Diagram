@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R5",
+  "review": "review-02",
+  "status": "historical-superseded-for-owner-approval",
+  "authority": "D-056",
+  "original_manifest": {
+    "path": "evidence/p18/r5/history/review-02/P-18R5-MANIFEST.json",
+    "sha256": "3d4caf5336e1ab7b087d7c03074f645c47aad197b50b2a4ebddca6c820035bf0"
+  },
+  "owner_finding": {
+    "summary": "Crossing treatment remained below the requested visual standard.",
+    "causes": [
+      "Two nearby hops could read as one compound wave instead of two unambiguous overpasses.",
+      "The route retained a straight base chord and relied on mask/overlay paint to simulate its removal."
+    ]
+  },
+  "review_03_repair": [
+    "Integrate each open hop directly into the connector path geometry.",
+    "Separate nearby routing corridors and reject insufficient same-segment hop pitch.",
+    "Preserve accepted typography, adaptive node width, semantic projection and visual hierarchy."
+  ],
+  "immutability": "This directory preserves the exact frozen review-02 candidate and is not an active output surface."
+}

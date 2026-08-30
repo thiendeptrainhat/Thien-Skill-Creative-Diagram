@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 1000" width="1420" height="1000"
+      role="img" aria-labelledby="anchor-title anchor-desc" data-layout-engine="containment-stack"
+      data-canonical-type="pyramid-funnel" data-mode="neutral-light" data-semantic-ratio="0.89"
+      data-min-label-clearance="8" data-font-measured="true" data-no-global-transform="true"
+      data-takeaway-node="focal" data-resolved-human-font="Avenir Next" data-resolved-mono-font="Menlo">
+      <title id="anchor-title">Tháp vận hành từ thủ tục đến quyết định</title>
+      <desc id="anchor-desc">Bốn lớp thu hẹp theo độ hiếm và đòn bẩy; apex là focal layer.</desc>
+      <defs>
+        <pattern id="dot-field" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#d9d7d2" opacity=".34"/></pattern>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#4f5e76"/></marker>
+        <marker id="arrow-accent" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#f26a32"/></marker>
+        <style>
+      text{font-family:'Avenir Next';fill:#252b3c;text-rendering:geometricPrecision}
+      .display{font-family:'Georgia';font-size:48px;font-weight:400}
+      .node-title{font-size:24px;font-weight:650}
+      .material{font-size:16px;font-weight:500}
+      .material-strong{font-size:18px;font-weight:650}
+      .mono,.badge-text,.kicker,.legend-note{font-family:'Menlo';font-size:16px}
+      .mono{fill:#53627b}
+      .kicker{font-size:14px;font-weight:700;letter-spacing:2.1px;fill:#778194}
+      .badge-text{font-size:14px;font-weight:700;letter-spacing:1px;fill:#53627b}
+      .node-boundary{fill:#ffffff;stroke:#4f5e76;stroke-width:2.2}
+      .node-card.focal .node-boundary{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.8}
+      .node-card.muted .node-boundary{fill:#eeece7;stroke:#c7ccd2}
+      .badge{fill:#eeece7;stroke:#c7ccd2;stroke-width:1.2}
+      .focal .badge{fill:#fff3ec;stroke:#f26a32}
+      .focal .badge-text{fill:#df5522}
+      .wire{fill:none;stroke:#4f5e76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .wire.soft{stroke:#c7ccd2;stroke-width:2}
+      .wire.accent{stroke:#f26a32;stroke-width:3.6}
+      .wire.blue{stroke:#2f65af}
+      .wire.green{stroke:#7c9167}
+      .wire.dashed{stroke-dasharray:9 9}
+      .zone{fill:none;stroke:#c7ccd2;stroke-width:1.6}
+      .zone-fill{fill:#eeece7;fill-opacity:.55;stroke:#c7ccd2;stroke-width:1.6}
+      .grid{stroke:#d9d7d2;stroke-width:1.4}
+      .dot{fill:#252b3c}
+      .accent-dot{fill:#f26a32}
+      .legend-rule{stroke:#d9d7d2;stroke-width:1.5}
+      .legend-accent{fill:#f8e7dd;stroke:#f26a32;stroke-width:2}
+      .legend-text{font-size:16px;fill:#53627b}
+      .legend-note{font-size:14px;font-style:italic;fill:#53627b}
+      .band{fill:#e8ebee;stroke:#c7ccd2;stroke-width:1.5}
+      .band.focal{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.3}
+      .label-mask{fill:#f7f6f2}
+      .axis{stroke:#4f5e76;stroke-width:2.2}
+    </style>
+      </defs>
+      <rect width="1420" height="1000" fill="#f7f6f2"/>
+      <rect width="1420" height="1000" fill="url(#dot-field)"/>
+      <polygon class="band focal" points="612,130 808,130 900,236 520,236"/><text class="node-title" x="710.0" y="176.0" text-anchor="middle">Flagship decision</text><text class="mono" x="710.0" y="208.0" text-anchor="middle">rare · highest leverage</text><polygon class="band" points="472,236 948,236 1040,342 380,342"/><text class="node-title" x="710.0" y="282.0" text-anchor="middle">Operating principles</text><text class="mono" x="710.0" y="314.0" text-anchor="middle">quarterly · durable</text><polygon class="band" points="332,342 1088,342 1180,448 240,448"/><text class="node-title" x="710.0" y="388.0" text-anchor="middle">Reusable playbooks</text><text class="mono" x="710.0" y="420.0" text-anchor="middle">monthly · repeatable</text><polygon class="band" points="192,448 1228,448 1320,554 100,554"/><text class="node-title" x="710.0" y="494.0" text-anchor="middle">Daily procedures</text><text class="mono" x="710.0" y="526.0" text-anchor="middle">daily · volume work</text><line class="axis" x1="108" y1="756" x2="108" y2="136" marker-end="url(#arrow)"/><text class="kicker" x="72.0" y="446.0" text-anchor="middle" transform="rotate(-90 72 446)">RARER · HIGHER LEVERAGE</text><text class="kicker" x="1120.0" y="180.0" text-anchor="start">APEX</text><text class="mono" x="1120.0" y="214.0" text-anchor="start">defines direction</text><line class="legend-rule" x1="52" y1="882" x2="1368" y2="882"/><text class="kicker" x="56.0" y="920.0" text-anchor="start">LEGEND</text><rect class="legend-accent" x="210.0" y="902" width="28" height="24" rx="5"/><text class="legend-text" x="252.0" y="921.0" text-anchor="start">apex</text><line class="wire" x1="415.0" y1="916" x2="457.0" y2="916"/><text class="legend-text" x="473.0" y="921.0" text-anchor="start">supporting layer</text><text class="legend-note" x="1364.0" y="921.0" text-anchor="end">The base funds the apex; the apex defines the base.</text>
+    </svg>

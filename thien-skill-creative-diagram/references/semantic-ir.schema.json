@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:thien-skill-creative-diagram:schema:semantic-ir:1.0",
-  "title": "Thien-Skill-Creative-Diagram semantic IR",
-  "description": "Provider-neutral semantic intermediate representation used before type-specific grammar, layout, and rendering.",
+  "$id": "urn:thien-skill-creative-diagram:schema:semantic-ir:1.5",
+  "title": "Thien-Skill-Creative-Diagram semantic IR 1.5",
+  "description": "Provider-neutral IR for 39 canonical types and four 1.5 capability variants. Type-specific semantic validators remain mandatory.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -22,7 +22,7 @@
     "accessibility"
   ],
   "properties": {
-    "schema_version": { "const": "1.0" },
+    "schema_version": { "const": "1.5" },
     "request_id": { "$ref": "#/$defs/id" },
     "diagram": {
       "type": "object",
@@ -30,7 +30,18 @@
       "required": ["type", "language", "title", "detail", "audience"],
       "properties": {
         "type": { "$ref": "#/$defs/type" },
-        "variant_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^CAP-[A-Z][A-Z0-9-]+$" } },
+        "variant_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "CAP-V01", "CAP-V02", "CAP-V03", "CAP-V04", "CAP-V05",
+              "CAP-V06", "CAP-V07", "CAP-V08", "CAP-V09", "CAP-V10",
+              "CAP-V11", "CAP-V12", "CAP-V13", "CAP-V14", "CAP-V15",
+              "CAP-V16", "CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"
+            ]
+          }
+        },
         "language": { "type": "string", "minLength": 2 },
         "title": { "type": "string", "minLength": 1 },
         "detail": { "enum": ["faithful", "balanced", "simplified"] },
@@ -110,7 +121,14 @@
     "id": { "type": "string", "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$" },
     "type": {
       "enum": [
-        "architecture", "it-current-state", "flowchart", "sequence", "state-machine", "er-data-model", "timeline", "swimlane", "quadrant", "radar", "loop-flywheel", "nested", "tree", "org-chart", "layer-stack", "venn", "pyramid-funnel", "bar-chart", "line-chart", "gantt", "scatter-plot", "high-level", "process", "medallion", "data-flow", "dp-integration", "dp-security-matrix"
+        "architecture", "it-current-state", "flowchart", "sequence", "state-machine",
+        "er-data-model", "timeline", "swimlane", "quadrant", "radar", "polar-chart",
+        "loop-flywheel", "nested", "tree", "org-chart", "layer-stack", "venn",
+        "pyramid-funnel", "bar-chart", "treemap", "line-chart", "gantt", "scatter-plot",
+        "high-level", "process", "medallion", "data-flow", "dp-integration",
+        "dp-security-matrix", "sankey", "fishbone", "wardley-map", "kanban",
+        "user-journey", "deployment", "dependency-graph", "uml-class", "story-map",
+        "database-schema"
       ]
     },
     "sourceRefs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
@@ -126,10 +144,114 @@
         "state": { "type": "string" },
         "value": { "type": ["number", "string", "null"] },
         "unit": { "type": ["string", "null"] },
+        "parent_group_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
         "start": { "type": ["string", "null"], "format": "date-time" },
         "end": { "type": ["string", "null"], "format": "date-time" },
+        "members": { "type": "array", "items": { "$ref": "#/$defs/member" } },
+        "placement": { "$ref": "#/$defs/placement" },
+        "work": { "$ref": "#/$defs/work" },
+        "journey": { "$ref": "#/$defs/journey" },
+        "strategy": { "$ref": "#/$defs/strategy" },
+        "story": { "$ref": "#/$defs/story" },
         "source_refs": { "$ref": "#/$defs/sourceRefs" }
       }
+    },
+    "member": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "name", "source_refs"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["attribute", "operation", "column", "index"] },
+        "name": { "type": "string", "minLength": 1 },
+        "data_type": { "type": ["string", "null"] },
+        "visibility": { "enum": ["public", "protected", "private", "package", "unspecified"] },
+        "signature": { "type": ["string", "null"] },
+        "constraints": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "indexed_member_ids": {
+          "description": "Ordered column/member IDs in the physical index; array order is index-column order.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/id" }
+        },
+        "index_unique": { "type": "boolean" },
+        "source_refs": { "$ref": "#/$defs/sourceRefs" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "index" } }, "required": ["kind"] },
+          "then": { "required": ["indexed_member_ids", "index_unique"] }
+        }
+      ]
+    },
+    "placement": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "zone": { "type": "string", "minLength": 1 },
+        "host": { "type": "string", "minLength": 1 },
+        "artifact": { "type": "string", "minLength": 1 },
+        "replicas": { "type": "integer", "minimum": 1 },
+        "ports": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["column_order", "item_order", "blocked"],
+      "properties": {
+        "column_order": { "type": "integer", "minimum": 0 },
+        "item_order": { "type": "integer", "minimum": 0 },
+        "wip_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "blocked": { "type": "boolean" }
+      }
+    },
+    "journey": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stage_order", "action", "touchpoint"],
+      "properties": {
+        "stage_order": { "type": "integer", "minimum": 0 },
+        "action": { "type": "string", "minLength": 1 },
+        "touchpoint": { "type": "string", "minLength": 1 },
+        "sentiment": { "type": ["number", "null"], "minimum": -1, "maximum": 1 }
+      }
+    },
+    "strategy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evolution", "value_chain_position"],
+      "properties": {
+        "evolution": { "type": "number", "minimum": 0, "maximum": 1 },
+        "value_chain_position": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["backbone_order", "story_order", "release_slice", "cut_status"],
+      "properties": {
+        "backbone_order": { "type": "integer", "minimum": 0 },
+        "story_order": { "type": "integer", "minimum": 0 },
+        "release_slice": { "type": ["string", "null"], "minLength": 1 },
+        "cut_status": { "enum": ["above", "below", "at", "unassigned"] }
+      },
+      "oneOf": [
+        {
+          "properties": {
+            "release_slice": { "type": "null" },
+            "cut_status": { "const": "unassigned" }
+          }
+        },
+        {
+          "properties": {
+            "release_slice": { "type": "string", "minLength": 1 },
+            "cut_status": { "enum": ["above", "below", "at"] }
+          }
+        }
+      ]
     },
     "edge": {
       "type": "object",
@@ -144,6 +266,13 @@
         "label": { "type": "string" },
         "order": { "type": "integer", "minimum": 0 },
         "guard": { "type": "string" },
+        "amount": { "type": ["number", "null"], "minimum": 0 },
+        "unit": { "type": ["string", "null"] },
+        "relation_kind": { "enum": ["association", "aggregation", "composition", "inheritance", "realization", "dependency", "foreign-key", "runtime", "flow", "other"] },
+        "source_member": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "target_member": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "source_multiplicity": { "type": ["string", "null"] },
+        "target_multiplicity": { "type": ["string", "null"] },
         "source_refs": { "$ref": "#/$defs/sourceRefs" }
       }
     },
@@ -156,6 +285,11 @@
         "label": { "type": "string", "minLength": 1 },
         "member_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
         "parent_group_id": { "oneOf": [{ "$ref": "#/$defs/id" }, { "type": "null" }] },
+        "declared_total": { "type": ["number", "null"], "minimum": 0 },
+        "unit": { "type": ["string", "null"] },
+        "wip_limit": { "type": ["integer", "null"], "minimum": 1 },
+        "release_slice": { "type": ["string", "null"] },
+        "cause_category": { "type": ["string", "null"] },
         "source_refs": { "$ref": "#/$defs/sourceRefs" }
       }
     },
@@ -176,15 +310,25 @@
     "datum": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "domain", "value", "missing", "source_refs"],
+      "required": ["id", "missing", "source_refs"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "domain": { "type": ["string", "number"] },
         "value": { "type": ["number", "null"] },
+        "x_value": { "type": ["number", "null"] },
+        "y_value": { "type": ["number", "null"] },
+        "size_value": { "type": ["number", "null"] },
+        "size_unit": { "type": ["string", "null"] },
+        "distribution_samples": { "type": "array", "minItems": 1, "items": { "type": "number" } },
         "missing": { "type": "boolean" },
         "label": { "type": "string" },
         "source_refs": { "$ref": "#/$defs/sourceRefs" }
-      }
+      },
+      "anyOf": [
+        { "required": ["domain", "value"] },
+        { "required": ["x_value", "y_value"] },
+        { "required": ["distribution_samples"] }
+      ]
     },
     "series": {
       "type": "object",
@@ -194,9 +338,51 @@
         "id": { "$ref": "#/$defs/id" },
         "label": { "type": "string", "minLength": 1 },
         "unit": { "type": ["string", "null"] },
+        "distribution": { "$ref": "#/$defs/distribution" },
         "data": { "type": "array", "items": { "$ref": "#/$defs/datum" } },
         "source_refs": { "$ref": "#/$defs/sourceRefs" }
       }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "domain_min",
+        "domain_max",
+        "bin_count",
+        "bin_edges",
+        "bandwidth",
+        "amplitude_normalization",
+        "shared_domain",
+        "shared_bins"
+      ],
+      "properties": {
+        "method": { "enum": ["histogram", "kde-gaussian"] },
+        "domain_min": { "type": "number" },
+        "domain_max": { "type": "number" },
+        "bin_count": { "type": "integer", "minimum": 2 },
+        "bin_edges": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": { "type": "number" }
+        },
+        "bandwidth": { "type": ["number", "null"], "exclusiveMinimum": 0 },
+        "amplitude_normalization": { "const": "global-max" },
+        "shared_domain": { "const": true },
+        "shared_bins": { "const": true }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "method": { "const": "histogram" } }, "required": ["method"] },
+          "then": { "properties": { "bandwidth": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "method": { "const": "kde-gaussian" } }, "required": ["method"] },
+          "then": { "properties": { "bandwidth": { "type": "number", "exclusiveMinimum": 0 } } }
+        }
+      ]
     },
     "axis": {
       "type": "object",
@@ -204,7 +390,7 @@
       "required": ["id", "dimension", "scale", "label", "source_refs"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
-        "dimension": { "enum": ["x", "y", "radial", "angular"] },
+        "dimension": { "enum": ["x", "y", "radial", "angular", "size"] },
         "scale": { "enum": ["categorical", "linear", "time", "ordinal"] },
         "label": { "type": "string" },
         "unit": { "type": ["string", "null"] },

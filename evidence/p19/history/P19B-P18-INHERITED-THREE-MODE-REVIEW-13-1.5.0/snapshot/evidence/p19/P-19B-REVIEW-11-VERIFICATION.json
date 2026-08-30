@@ -1,0 +1,34 @@
+{
+  "alternative_exact_er_table": "PASS",
+  "archived_files_verified": 272,
+  "authority": "D-091",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-11-1.5.0",
+  "canvas_knockout_count": 6,
+  "endpoint_proximity_and_axis_placement": "PASS",
+  "er_data_model_html_changed": 3,
+  "gallery_manifest_sha256": "85ba48b7b66d985bc39dd5ffc5ca30212248899ae9d454cc6b7ff3834229c54a",
+  "inline_cardinality_count": 6,
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p18_database_schema_cardinality_contract": "PASS",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-light.svg",
+      "sha256": "d05f5ca57dcd98d4500bca110eee7b99ef427c345d7d6e818f24086f34675cd1"
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--neutral-dark.svg",
+      "sha256": "7d74d9cd14cf7631a07baf65d1c59822c9aa75c8e5970a942f3a0cbb802c3e30"
+    },
+    {
+      "path": "evidence/p19/review11-checks/type-er-data-model--editorial.svg",
+      "sha256": "05d74e54c9ca4b82fb9291ab5970021c1d13960d022a495482e0535050d2761e"
+    }
+  ],
+  "protected_files_verified": 4288,
+  "status": "PASS",
+  "three_mode_geometry": "PASS"
+}

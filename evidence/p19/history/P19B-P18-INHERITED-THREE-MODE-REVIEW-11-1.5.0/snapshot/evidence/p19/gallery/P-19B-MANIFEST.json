@@ -1,0 +1,603 @@
+{
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-11-1.5.0",
+  "note": "D-091: er-data-model inline-cardinality-only remediation matching the approved P-18 database-schema endpoint/knockout contract; retaining D-090 entity model and D-089–D-085 scope; 87 P-19 HTML, no owner approval or P-19C claim.",
+  "record_count": 119,
+  "records": [
+    {
+      "bytes": 62962,
+      "path": "evidence/p19/gallery/P-19B-INVENTORY.json",
+      "sha256": "e03f87f26d726e926bbd79c0840838c9806b0b52ec9b1537ce07cb0d822c6be9"
+    },
+    {
+      "bytes": 25411,
+      "path": "evidence/p19/gallery/index.html",
+      "sha256": "c6ee251c678f29f910b5453d31fa32fe0216cade7c8e031326ffa962f38a2328"
+    },
+    {
+      "bytes": 8598,
+      "path": "evidence/p19/gallery/previews/cap-cap-v17-dumbbell.svg",
+      "sha256": "c1f668653571684ccd0721d874e994d673a256b9d087f32fa1979f32d4b61e26"
+    },
+    {
+      "bytes": 8680,
+      "path": "evidence/p19/gallery/previews/cap-cap-v18-slopegraph.svg",
+      "sha256": "71b9bc4325e82e75f46cbdd57d1ffb2cae8ad10b3f54de163d97bc68df9998fa"
+    },
+    {
+      "bytes": 8459,
+      "path": "evidence/p19/gallery/previews/cap-cap-v19-ridgeline.svg",
+      "sha256": "62e607311cfe198b92d75d1e31f49d996f7f56ef9005006bcbfc5742bbce6d19"
+    },
+    {
+      "bytes": 8453,
+      "path": "evidence/p19/gallery/previews/cap-cap-v20-bubble.svg",
+      "sha256": "f1fef91f40d9717352f3113fbdc93a80cd108b4b193fda310b88a14594d6ea01"
+    },
+    {
+      "bytes": 13528,
+      "path": "evidence/p19/gallery/previews/type-bar-chart.svg",
+      "sha256": "6af5483aad4ba3ac0860f71d530d1c6177161835a0cb966e401635b6a4105dda"
+    },
+    {
+      "bytes": 17588,
+      "path": "evidence/p19/gallery/previews/type-dp-integration.svg",
+      "sha256": "c841adc79118def830ffa7306794b55bcb97a3a782074ca044fb0a7ffc84e271"
+    },
+    {
+      "bytes": 24650,
+      "path": "evidence/p19/gallery/previews/type-dp-security-matrix.svg",
+      "sha256": "5e42b321f39adfed3389c465e7755302c3bad9077f94711608278ee4cbc353e0"
+    },
+    {
+      "bytes": 23695,
+      "path": "evidence/p19/gallery/previews/type-er-data-model.svg",
+      "sha256": "1c39971ff469e4872c85471c571c526df34610aba90246d89561cbd9866d9dc9"
+    },
+    {
+      "bytes": 14696,
+      "path": "evidence/p19/gallery/previews/type-fishbone.svg",
+      "sha256": "29c86b2ab7c3d773c26ab7c54722fa1e591fa795e4be2be20aa902c37ee485c1"
+    },
+    {
+      "bytes": 14803,
+      "path": "evidence/p19/gallery/previews/type-gantt.svg",
+      "sha256": "94b49b6824c011225c054b13b1ec07cf1e7521d056f5be166b145f866bcb4c8d"
+    },
+    {
+      "bytes": 8841,
+      "path": "evidence/p19/gallery/previews/type-high-level.svg",
+      "sha256": "666402270404e551943fc81a8edc759cfef189e11183b9394b368a62128331d7"
+    },
+    {
+      "bytes": 8653,
+      "path": "evidence/p19/gallery/previews/type-it-current-state.svg",
+      "sha256": "3b206b6b15b6d9de8ddb5be0524ab5e30bf8dcfd3b40b0813a3eb3dd8f835017"
+    },
+    {
+      "bytes": 8853,
+      "path": "evidence/p19/gallery/previews/type-kanban.svg",
+      "sha256": "7369b1546f317f2587fb0b139bae9b4d12b80e8bad1c31492677df403a03a6ed"
+    },
+    {
+      "bytes": 8300,
+      "path": "evidence/p19/gallery/previews/type-layer-stack.svg",
+      "sha256": "17fec29eb773dd9d4845364af39c277a76eee05d7f9b2d2a99c0048c084e79ad"
+    },
+    {
+      "bytes": 8333,
+      "path": "evidence/p19/gallery/previews/type-line-chart.svg",
+      "sha256": "d292cd4f6e210358fd48acf99d474167ad23cc284822e959a857bbb52e427169"
+    },
+    {
+      "bytes": 13844,
+      "path": "evidence/p19/gallery/previews/type-loop-flywheel.svg",
+      "sha256": "5f4162d548c524dee55841c9ca2a3eb0f1a7a1963bc19353702e8f53ac9443a9"
+    },
+    {
+      "bytes": 8319,
+      "path": "evidence/p19/gallery/previews/type-medallion.svg",
+      "sha256": "1e9d2d59ed6843ad6fe3cb4171d7bc1c7ac7bb3f6685af943ddf8056a50514f8"
+    },
+    {
+      "bytes": 8310,
+      "path": "evidence/p19/gallery/previews/type-nested.svg",
+      "sha256": "255a1d6a4d615b1754d42985982c44410daf9a5ab973aad9d8378ce66484c711"
+    },
+    {
+      "bytes": 8165,
+      "path": "evidence/p19/gallery/previews/type-polar-chart.svg",
+      "sha256": "e8a95c7fc421feeeeab5efc1eee8b92ccb76b072e6b36ec0501979384fd25a32"
+    },
+    {
+      "bytes": 8372,
+      "path": "evidence/p19/gallery/previews/type-process.svg",
+      "sha256": "23f090e315b77bf3c4bc64263375102e849280e761c2717db817e82b2a34e167"
+    },
+    {
+      "bytes": 8225,
+      "path": "evidence/p19/gallery/previews/type-radar.svg",
+      "sha256": "4243ac68515ef3cccf42345d79a8691c806e7e972dc8d4c2f026a15f159c6051"
+    },
+    {
+      "bytes": 8693,
+      "path": "evidence/p19/gallery/previews/type-sequence.svg",
+      "sha256": "5d5afbb8d71f0a2fc23cbd5fa0901b67394629a604f16f845a39aa9534a08687"
+    },
+    {
+      "bytes": 8677,
+      "path": "evidence/p19/gallery/previews/type-state-machine.svg",
+      "sha256": "033ca4ec656126d85d3ed389a76a49ff3ac70983382f4649de7373db127e87f5"
+    },
+    {
+      "bytes": 9077,
+      "path": "evidence/p19/gallery/previews/type-story-map.svg",
+      "sha256": "40ce5a3695380b620001ed38d49533f68304da265c7f44db85e8f436e103c483"
+    },
+    {
+      "bytes": 8755,
+      "path": "evidence/p19/gallery/previews/type-tree.svg",
+      "sha256": "d80011a1a18ee4202b8ec72501bedff5c541f2fd1bddd8bd683cc7e9cdb98d2f"
+    },
+    {
+      "bytes": 8320,
+      "path": "evidence/p19/gallery/previews/type-treemap.svg",
+      "sha256": "8c387f712e5834f84d7c67d551202ffce4696cbb4a84f1ef87ecdcf53d8d13a3"
+    },
+    {
+      "bytes": 8933,
+      "path": "evidence/p19/gallery/previews/type-uml-class.svg",
+      "sha256": "2bacd19eb27b649afb54c187594fd635ce93257afd04d9f03fd943b8145e9ef8"
+    },
+    {
+      "bytes": 8157,
+      "path": "evidence/p19/gallery/previews/type-venn.svg",
+      "sha256": "523a09daf7e1abdd549a3f8a55c2a64d4bccce9897c52587a91abbdc032382c6"
+    },
+    {
+      "bytes": 8583,
+      "path": "evidence/p19/gallery/previews/type-wardley-map.svg",
+      "sha256": "2913d8c139de55db87b1ea0ad09342f11057f932b6051e5857ab9eb00b8a8a6b"
+    },
+    {
+      "bytes": 11491,
+      "path": "evidence/p19/gallery/specimens/004-type-it-current-state--neutral-light.html",
+      "sha256": "7a39427d943f9f9f96b6bc2d76e35638fb8edc58a1e8e98f59b41af8628264e3"
+    },
+    {
+      "bytes": 11481,
+      "path": "evidence/p19/gallery/specimens/005-type-it-current-state--neutral-dark.html",
+      "sha256": "93898e8c5c7738f6b45bdb2711e452da64496b917520693b2c026d1c85c1d292"
+    },
+    {
+      "bytes": 11455,
+      "path": "evidence/p19/gallery/specimens/006-type-it-current-state--editorial.html",
+      "sha256": "2a329c0f5ea6edc4489ed84391f0f3641d2bc3108c423b1ceb0604a0f69fc971"
+    },
+    {
+      "bytes": 11420,
+      "path": "evidence/p19/gallery/specimens/010-type-sequence--neutral-light.html",
+      "sha256": "4fc55c59b26fa1045c29de7417a2a2279a7beafe3c0c111eadae983d5c5361b8"
+    },
+    {
+      "bytes": 11410,
+      "path": "evidence/p19/gallery/specimens/011-type-sequence--neutral-dark.html",
+      "sha256": "c5fa6a8cfd0116374ba3d13462b7c9be9fbf59bd6cc44c7777079d6ac38a9eca"
+    },
+    {
+      "bytes": 11384,
+      "path": "evidence/p19/gallery/specimens/012-type-sequence--editorial.html",
+      "sha256": "ac19664018c9fd9d8aaa73409f0f098f980d2bad13a3ddd0d7125e2adf7926b9"
+    },
+    {
+      "bytes": 11442,
+      "path": "evidence/p19/gallery/specimens/013-type-state-machine--neutral-light.html",
+      "sha256": "602ff5be9ca8f6275d5620afe264467fc4b7a0977478ee62bbf38fa52cda9f89"
+    },
+    {
+      "bytes": 11432,
+      "path": "evidence/p19/gallery/specimens/014-type-state-machine--neutral-dark.html",
+      "sha256": "73c778b510f3ff7bcdd9ed3397e02ae4fa77537dfcf7a39e47a40a45c32d5c2f"
+    },
+    {
+      "bytes": 11406,
+      "path": "evidence/p19/gallery/specimens/015-type-state-machine--editorial.html",
+      "sha256": "12e85e0e12f49ed53098825e0ba643018343afd3f3bb9986f1d3275ef7b96683"
+    },
+    {
+      "bytes": 29320,
+      "path": "evidence/p19/gallery/specimens/016-type-er-data-model--neutral-light.html",
+      "sha256": "9d0049cfde710b225830042a38cb962ea7d11c482fa7114db770f38d2a39f196"
+    },
+    {
+      "bytes": 29310,
+      "path": "evidence/p19/gallery/specimens/017-type-er-data-model--neutral-dark.html",
+      "sha256": "6e985e023375077fd91dddcf958f158e784bfa3f772056946f806db9d54567ad"
+    },
+    {
+      "bytes": 29284,
+      "path": "evidence/p19/gallery/specimens/018-type-er-data-model--editorial.html",
+      "sha256": "cd3b25cea492d8262299cb9bc5ed12fa6cb5d128c824290a337b2bb2fc5361ce"
+    },
+    {
+      "bytes": 10886,
+      "path": "evidence/p19/gallery/specimens/028-type-radar--neutral-light.html",
+      "sha256": "40caf7d5c566f32972f75f3551968607b7ceac2c085bffcc36145fcfdc86cad1"
+    },
+    {
+      "bytes": 10876,
+      "path": "evidence/p19/gallery/specimens/029-type-radar--neutral-dark.html",
+      "sha256": "d7fbb22b76f38aba1c26fe6932227a776241b3cc3b348952f4c608d1a9283ad5"
+    },
+    {
+      "bytes": 10850,
+      "path": "evidence/p19/gallery/specimens/030-type-radar--editorial.html",
+      "sha256": "880dbb3b114d234bdcf009d0f23630d1e0db411a437920550baabf369263a3bf"
+    },
+    {
+      "bytes": 10837,
+      "path": "evidence/p19/gallery/specimens/031-type-polar-chart--neutral-light.html",
+      "sha256": "794407851cd828e068c4eb33ba78f72b77641c7d10ecfcd39102a2615712a35f"
+    },
+    {
+      "bytes": 10827,
+      "path": "evidence/p19/gallery/specimens/032-type-polar-chart--neutral-dark.html",
+      "sha256": "410941f8adf6411acef04b2f36583e0a408a2343db8148538a76cb30fbb9bf58"
+    },
+    {
+      "bytes": 10801,
+      "path": "evidence/p19/gallery/specimens/033-type-polar-chart--editorial.html",
+      "sha256": "8003f0ca2f47a965e4d9c23866eaeab7ec192bff268e6ae7015c48fac137b7e5"
+    },
+    {
+      "bytes": 19208,
+      "path": "evidence/p19/gallery/specimens/034-type-loop-flywheel--neutral-light.html",
+      "sha256": "eccc8fefa103ddd0fa8f3034e5d623e611a9412f21a10874e05430061f806876"
+    },
+    {
+      "bytes": 19198,
+      "path": "evidence/p19/gallery/specimens/035-type-loop-flywheel--neutral-dark.html",
+      "sha256": "a66368bb94d9a3a96ec1e97adb27bf777da40632989de94e8e8d96c8983566d4"
+    },
+    {
+      "bytes": 19172,
+      "path": "evidence/p19/gallery/specimens/036-type-loop-flywheel--editorial.html",
+      "sha256": "9b578533aebc764de5a7354fcc8bd8c5b7d04b2ee93642eed4009ceee1e4cb70"
+    },
+    {
+      "bytes": 10968,
+      "path": "evidence/p19/gallery/specimens/037-type-nested--neutral-light.html",
+      "sha256": "7a0bef8e001746378f0ba05c2061609f9f2b6cb529dfbbff45cff368f4bdff07"
+    },
+    {
+      "bytes": 10958,
+      "path": "evidence/p19/gallery/specimens/038-type-nested--neutral-dark.html",
+      "sha256": "d71280866bdf0de158b3431457fe6e5c7cd1a4c93a55aacd648f5be3a699a7ba"
+    },
+    {
+      "bytes": 10932,
+      "path": "evidence/p19/gallery/specimens/039-type-nested--editorial.html",
+      "sha256": "6522d74612f8b9ef90e6c709a420d74a9cbd52e281bcddc4e0da68a0c4760804"
+    },
+    {
+      "bytes": 11380,
+      "path": "evidence/p19/gallery/specimens/040-type-tree--neutral-light.html",
+      "sha256": "9191ae8a7182f355664631cfbd3ae29a2efa2d3c9b6682d61858aa24f8b7c585"
+    },
+    {
+      "bytes": 11370,
+      "path": "evidence/p19/gallery/specimens/041-type-tree--neutral-dark.html",
+      "sha256": "40b1fbda9476c2c563f825a28e966bca94e5edecb91d35caeae078a4970945d7"
+    },
+    {
+      "bytes": 11344,
+      "path": "evidence/p19/gallery/specimens/042-type-tree--editorial.html",
+      "sha256": "6f06af97682ef546f153bc25e0df304647b8651d14733ad0167b6c5aa97e0343"
+    },
+    {
+      "bytes": 11086,
+      "path": "evidence/p19/gallery/specimens/046-type-layer-stack--neutral-light.html",
+      "sha256": "11c544a871c5604161e21c994555cad42b1a53aeda234b7d2aa56038175220b5"
+    },
+    {
+      "bytes": 11076,
+      "path": "evidence/p19/gallery/specimens/047-type-layer-stack--neutral-dark.html",
+      "sha256": "164fd64f088f56d3921656d6b81839d41447067e0d7538d943fd00c52340c15d"
+    },
+    {
+      "bytes": 11050,
+      "path": "evidence/p19/gallery/specimens/048-type-layer-stack--editorial.html",
+      "sha256": "0f89ad81e20ae33e837239d3d2e1569647592aae09226395f14c6591cde93054"
+    },
+    {
+      "bytes": 10773,
+      "path": "evidence/p19/gallery/specimens/049-type-venn--neutral-light.html",
+      "sha256": "ec7d0546d9138a7744ad28222057e3e899a3d43c9b14128b21574cc3b65c8303"
+    },
+    {
+      "bytes": 10763,
+      "path": "evidence/p19/gallery/specimens/050-type-venn--neutral-dark.html",
+      "sha256": "cd0583c38168be1c22a4f12b654c8cb55b91dd652a4ade0d8ed76b4edc446143"
+    },
+    {
+      "bytes": 10737,
+      "path": "evidence/p19/gallery/specimens/051-type-venn--editorial.html",
+      "sha256": "768c5ac671f483f48877390768337ce090a3e86b91c07317dad5f2d89fc831bf"
+    },
+    {
+      "bytes": 17003,
+      "path": "evidence/p19/gallery/specimens/055-type-bar-chart--neutral-light.html",
+      "sha256": "41830e24c51a0e4938ab1e759adc31f43bc5764f526b83374f8a89134395b9da"
+    },
+    {
+      "bytes": 16993,
+      "path": "evidence/p19/gallery/specimens/056-type-bar-chart--neutral-dark.html",
+      "sha256": "f304d7c2487c06bb21b5c19fc9f19f1574ec779fc2a8fa6dac3f3be6182b98ec"
+    },
+    {
+      "bytes": 16967,
+      "path": "evidence/p19/gallery/specimens/057-type-bar-chart--editorial.html",
+      "sha256": "2326d1258263d609b147f12fe424b8f1b0c865113f04b2e485f1b4dd42d01058"
+    },
+    {
+      "bytes": 10976,
+      "path": "evidence/p19/gallery/specimens/058-type-treemap--neutral-light.html",
+      "sha256": "3110216d5aad849e2e0f63415df8edccc916b64e423c143bb73b35a9405186ca"
+    },
+    {
+      "bytes": 10966,
+      "path": "evidence/p19/gallery/specimens/059-type-treemap--neutral-dark.html",
+      "sha256": "6a596e9328ed3a24db09b86bedf5891558887f8983eee49926304ca38586a998"
+    },
+    {
+      "bytes": 10940,
+      "path": "evidence/p19/gallery/specimens/060-type-treemap--editorial.html",
+      "sha256": "416e5120c4ae65cdcdd78d21aaf6328b85f22bc4c891de3576ea2566d7a63057"
+    },
+    {
+      "bytes": 11004,
+      "path": "evidence/p19/gallery/specimens/061-type-line-chart--neutral-light.html",
+      "sha256": "565b8250528fd66ca566343045610f1e667bdecd18ecc9f9eb2f95c3c8835b96"
+    },
+    {
+      "bytes": 10994,
+      "path": "evidence/p19/gallery/specimens/062-type-line-chart--neutral-dark.html",
+      "sha256": "cca5d0de92e2350c284726aaaf4138c294105356031144bdad1fd863669c1dfa"
+    },
+    {
+      "bytes": 10968,
+      "path": "evidence/p19/gallery/specimens/063-type-line-chart--editorial.html",
+      "sha256": "261ce9d136f0f1a8b83424f281aab351b538b3ca4656b9ec1c7a686c9e14c83c"
+    },
+    {
+      "bytes": 18989,
+      "path": "evidence/p19/gallery/specimens/064-type-gantt--neutral-light.html",
+      "sha256": "afb3bcc1e9531017cc40adee5cef178f0cb705662d7f2113bc52c68b4a0d5002"
+    },
+    {
+      "bytes": 18979,
+      "path": "evidence/p19/gallery/specimens/065-type-gantt--neutral-dark.html",
+      "sha256": "d96cec76d63f59c1886db044548c858b33c2fbb3554849b4199fb1f33d170103"
+    },
+    {
+      "bytes": 18953,
+      "path": "evidence/p19/gallery/specimens/066-type-gantt--editorial.html",
+      "sha256": "42a5ed7779e4d77184c013d9d0656d2e383a015227d30035aa49d78d34a29754"
+    },
+    {
+      "bytes": 11724,
+      "path": "evidence/p19/gallery/specimens/070-type-high-level--neutral-light.html",
+      "sha256": "e3e8a79bdd7e0edf42e3b9980b9ded3c7bc9956d81e0ac7b32e2f7043d0b3c63"
+    },
+    {
+      "bytes": 11714,
+      "path": "evidence/p19/gallery/specimens/071-type-high-level--neutral-dark.html",
+      "sha256": "54a16f08936cbd13bf3a36e47e2af2b2d3599a79bd54494f6a8ee9895a1dbb8c"
+    },
+    {
+      "bytes": 11688,
+      "path": "evidence/p19/gallery/specimens/072-type-high-level--editorial.html",
+      "sha256": "135fe6b9bcc3aaad2600818aeefe7a84e8c1776c96abf7a302b7b923e035f95e"
+    },
+    {
+      "bytes": 11058,
+      "path": "evidence/p19/gallery/specimens/073-type-process--neutral-light.html",
+      "sha256": "2b32a7a50b044a2f0cb6e805b912d851f68d594d1eee3d0a40be484e4e68e6cd"
+    },
+    {
+      "bytes": 11048,
+      "path": "evidence/p19/gallery/specimens/074-type-process--neutral-dark.html",
+      "sha256": "e59a1fa720dd792757c4fb9c931e6b4f23fe9d8be1265ce9b61f422aa507bc5f"
+    },
+    {
+      "bytes": 11022,
+      "path": "evidence/p19/gallery/specimens/075-type-process--editorial.html",
+      "sha256": "619d905edfcf113137658e8485ff093e1402599813659fa9798ebadc525a017f"
+    },
+    {
+      "bytes": 11094,
+      "path": "evidence/p19/gallery/specimens/076-type-medallion--neutral-light.html",
+      "sha256": "bef19edfdd20334f9b6b255e19230aab336089eb6fe717202cfcf84bb6df93bd"
+    },
+    {
+      "bytes": 11084,
+      "path": "evidence/p19/gallery/specimens/077-type-medallion--neutral-dark.html",
+      "sha256": "a63777940cd3d5a15b9f7d842d8c8252448807d2ab286ce5135796398af9e095"
+    },
+    {
+      "bytes": 11058,
+      "path": "evidence/p19/gallery/specimens/078-type-medallion--editorial.html",
+      "sha256": "24c8062bc16b53043e67cb3ad268a4d7c277b0428b80eedef64bd9af85719fd9"
+    },
+    {
+      "bytes": 23462,
+      "path": "evidence/p19/gallery/specimens/082-type-dp-integration--neutral-light.html",
+      "sha256": "f786b552f888d231743108b2f15f63b20522745a6428953551aa428924649e8a"
+    },
+    {
+      "bytes": 23452,
+      "path": "evidence/p19/gallery/specimens/083-type-dp-integration--neutral-dark.html",
+      "sha256": "09dcc24bbb3a539a9fe5a26f105928f324c65ab6c6230826220f6526b0b0df7f"
+    },
+    {
+      "bytes": 23426,
+      "path": "evidence/p19/gallery/specimens/084-type-dp-integration--editorial.html",
+      "sha256": "44ef8cb83d091309124e5cf06a9537cfe66444643e6ac40dc92a52587fd15c56"
+    },
+    {
+      "bytes": 31588,
+      "path": "evidence/p19/gallery/specimens/085-type-dp-security-matrix--neutral-light.html",
+      "sha256": "8ea7ccedb547deca2f4a690dd3d9ad686fab180c83cecd994c7c630500263104"
+    },
+    {
+      "bytes": 31578,
+      "path": "evidence/p19/gallery/specimens/086-type-dp-security-matrix--neutral-dark.html",
+      "sha256": "3e5ea47fc07dec0f7cfccc30c01af3c6017fcbbbf1d64aca98215a8816e87452"
+    },
+    {
+      "bytes": 31552,
+      "path": "evidence/p19/gallery/specimens/087-type-dp-security-matrix--editorial.html",
+      "sha256": "5f0ebb2997f188ceacebf88f9fa62315a65fc1dff317091ade8b5a092a04a6a2"
+    },
+    {
+      "bytes": 19241,
+      "path": "evidence/p19/gallery/specimens/091-type-fishbone--neutral-light.html",
+      "sha256": "95628664d3f1caa844892070b57ea99e82a97e85fecd7ff4727624c6b9be8c21"
+    },
+    {
+      "bytes": 19231,
+      "path": "evidence/p19/gallery/specimens/092-type-fishbone--neutral-dark.html",
+      "sha256": "b48c307eb0dfe7ac78b2748d93aae9bc0de102472db18d482f28622043cc3d9c"
+    },
+    {
+      "bytes": 19205,
+      "path": "evidence/p19/gallery/specimens/093-type-fishbone--editorial.html",
+      "sha256": "c675ecc4e4df05ccb7da15dae622f5839d60801cd7744f6a6ed4e4ebf41edbbe"
+    },
+    {
+      "bytes": 11400,
+      "path": "evidence/p19/gallery/specimens/094-type-wardley-map--neutral-light.html",
+      "sha256": "e8b8d95fb0cc0c333aec2508d5e2bfe20a441474c347e707b5fa1c88eb179a6b"
+    },
+    {
+      "bytes": 11390,
+      "path": "evidence/p19/gallery/specimens/095-type-wardley-map--neutral-dark.html",
+      "sha256": "f7c15b5275e36400527503f3fb7afa31d14e79d8424ba4f509260fb8d9f8dc10"
+    },
+    {
+      "bytes": 11364,
+      "path": "evidence/p19/gallery/specimens/096-type-wardley-map--editorial.html",
+      "sha256": "7a9785a944179a988ef2382f481ba70c9e7203631964ff10586a743e3f6a3169"
+    },
+    {
+      "bytes": 11523,
+      "path": "evidence/p19/gallery/specimens/097-type-kanban--neutral-light.html",
+      "sha256": "e53aacecb4ff8c1cc012ac61afb8c5b6b7c1487a6b6d93e5be878c6857549d64"
+    },
+    {
+      "bytes": 11513,
+      "path": "evidence/p19/gallery/specimens/098-type-kanban--neutral-dark.html",
+      "sha256": "88bfa0a1394e5df1456345c9a1b3f89f4618852330465f77b95a4017935a0ba5"
+    },
+    {
+      "bytes": 11487,
+      "path": "evidence/p19/gallery/specimens/099-type-kanban--editorial.html",
+      "sha256": "9230a8e5233fca1e32d5ed4c1bd07658f4447082dde2ef55e588f386bbbff31d"
+    },
+    {
+      "bytes": 11677,
+      "path": "evidence/p19/gallery/specimens/109-type-uml-class--neutral-light.html",
+      "sha256": "52d0de21ff14486d2d8b1f83bd08f33139b1f58f8bd0860160d152648c7f120c"
+    },
+    {
+      "bytes": 11667,
+      "path": "evidence/p19/gallery/specimens/110-type-uml-class--neutral-dark.html",
+      "sha256": "638bbb02ca71b24dfde45d5c189e8249a692bebd5bd820ef2d5005b97da4b943"
+    },
+    {
+      "bytes": 11641,
+      "path": "evidence/p19/gallery/specimens/111-type-uml-class--editorial.html",
+      "sha256": "92cce0668d2ac45b564b43e809f7256a5367ef9a46b54e4ba668698150d8b1d2"
+    },
+    {
+      "bytes": 11776,
+      "path": "evidence/p19/gallery/specimens/112-type-story-map--neutral-light.html",
+      "sha256": "e9ec56e7540119e50a36688d34a9300163bbfdbc682ac18a6fd9508792df1a87"
+    },
+    {
+      "bytes": 11766,
+      "path": "evidence/p19/gallery/specimens/113-type-story-map--neutral-dark.html",
+      "sha256": "c3948d588665c19612dc53b8830aa2cfdaec3b24d44299c1abecbcd732f10ed7"
+    },
+    {
+      "bytes": 11740,
+      "path": "evidence/p19/gallery/specimens/114-type-story-map--editorial.html",
+      "sha256": "159d568435833b18066041752ba48b9a722bed993cebead08adee8176305bc6b"
+    },
+    {
+      "bytes": 11343,
+      "path": "evidence/p19/gallery/specimens/118-cap-cap-v17-dumbbell--neutral-light.html",
+      "sha256": "58c64c76711df005acd9c768a543bd55dc976a5697844575773e9a540d61b6ae"
+    },
+    {
+      "bytes": 11333,
+      "path": "evidence/p19/gallery/specimens/119-cap-cap-v17-dumbbell--neutral-dark.html",
+      "sha256": "8c0fddacac52662072f4aae98dfa6049705355966603a7c6a0868e56858896b7"
+    },
+    {
+      "bytes": 11307,
+      "path": "evidence/p19/gallery/specimens/120-cap-cap-v17-dumbbell--editorial.html",
+      "sha256": "3744054c275da67bbd430c78a32889936dd0e577c5fcc3131b9bae60f02098ac"
+    },
+    {
+      "bytes": 11442,
+      "path": "evidence/p19/gallery/specimens/121-cap-cap-v18-slopegraph--neutral-light.html",
+      "sha256": "6f0d2250d3338bd47eb4b634e8d4b8ce127fdaeef4348a3f9b998850c29c38e3"
+    },
+    {
+      "bytes": 11432,
+      "path": "evidence/p19/gallery/specimens/122-cap-cap-v18-slopegraph--neutral-dark.html",
+      "sha256": "6bcd959dffb1b7c6dd46e44e7690f49f7c40051ef68575b5e4b9f1b96766311b"
+    },
+    {
+      "bytes": 11406,
+      "path": "evidence/p19/gallery/specimens/123-cap-cap-v18-slopegraph--editorial.html",
+      "sha256": "0c248fb1dee59661476ca6943df455caf071d79b9aef694bbf56c0be8bd08377"
+    },
+    {
+      "bytes": 11253,
+      "path": "evidence/p19/gallery/specimens/124-cap-cap-v19-ridgeline--neutral-light.html",
+      "sha256": "3ae9dde5843c75646a351bf283700d0c2e367a145ea769c722af154f77e7007a"
+    },
+    {
+      "bytes": 11243,
+      "path": "evidence/p19/gallery/specimens/125-cap-cap-v19-ridgeline--neutral-dark.html",
+      "sha256": "f9bb2266f721f137bd8289eba4c305638ad00056c24763ef777e0575d002e114"
+    },
+    {
+      "bytes": 11217,
+      "path": "evidence/p19/gallery/specimens/126-cap-cap-v19-ridgeline--editorial.html",
+      "sha256": "3244a2fae8dc09b3d7d99dbeb4e2ebef00700c7e0a0c9a0c865204014895c33f"
+    },
+    {
+      "bytes": 11179,
+      "path": "evidence/p19/gallery/specimens/127-cap-cap-v20-bubble--neutral-light.html",
+      "sha256": "bd65cf0f87f325342b0eb4478a2590c83dfcbfc66c6e29eea5e7e84bbadb6ee2"
+    },
+    {
+      "bytes": 11169,
+      "path": "evidence/p19/gallery/specimens/128-cap-cap-v20-bubble--neutral-dark.html",
+      "sha256": "e7a31683307f79d7b1f88653607d21ab0d092f5cfc4bc787615300b028fe51c7"
+    },
+    {
+      "bytes": 11143,
+      "path": "evidence/p19/gallery/specimens/129-cap-cap-v20-bubble--editorial.html",
+      "sha256": "55dfde3539243406f64535e57b91effb7a060cee0956cd003c0311908db5d224"
+    },
+    {
+      "bytes": 10402,
+      "path": "thien-skill-creative-diagram/references/gallery-renderer-v15.json",
+      "sha256": "0d3aec3f3e416ab689e2066fce684f6a8bfaaa33867d25bf8b8e75fd8b9b30ad"
+    }
+  ],
+  "schema_version": "1.0"
+}

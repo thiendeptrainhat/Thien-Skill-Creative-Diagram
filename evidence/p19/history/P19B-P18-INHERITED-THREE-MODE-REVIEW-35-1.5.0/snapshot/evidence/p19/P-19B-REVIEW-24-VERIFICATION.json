@@ -1,0 +1,56 @@
+{
+  "alternative_exact_table": "PASS",
+  "archived_files_verified": 428,
+  "authority": "D-104",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-24-1.5.0",
+  "containers": 7,
+  "continuous_relation_paths": 5,
+  "gallery_manifest_sha256": "692d865ace246da3c68deee9900f71c9381de69fbe01cc0cb31cb4ee547ccd98",
+  "inline_cardinalities": 4,
+  "legend_kinds": [
+    "inheritance",
+    "realization",
+    "composition",
+    "aggregation",
+    "association",
+    "dependency"
+  ],
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "members": 17,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "prior_html_artwork_preserved": 87,
+  "prior_preview_svg_byte_identical": 29,
+  "proof_files": [
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--neutral-light.svg",
+      "sha256": "78cbc6eb7a6f19e14902e902df20e2d7a093bd0ba3d5023879b7cc6424666a85"
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--neutral-dark.svg",
+      "sha256": "2ed9d482119d056a87f0b784ab9d40dc50fd9a92fe11189a9e2155c9814e6719"
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class--editorial.svg",
+      "sha256": "433ad1c625d8bd98be330e6da5b3be12d20e3e75fa5168c29d184e97bd305ed4"
+    },
+    {
+      "path": "evidence/p19/review24-checks/type-uml-class.svg.png",
+      "sha256": "ccb2540c8e6a3ad7eee80a9844252f6209062a834ceee968a976ba84498a36f5",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 8824,
+  "relationship_kind_counts": {
+    "association": 1,
+    "composition": 1,
+    "dependency": 1,
+    "realization": 2
+  },
+  "relationships": 5,
+  "rounded_association_route": "PASS",
+  "status": "PASS",
+  "three_mode_geometry": "PASS",
+  "uml_class_html_changed": 3
+}

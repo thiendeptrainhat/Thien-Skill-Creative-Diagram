@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "P18R5-KERNEL-SWIMLANE-ANCHOR-1.5.0",
+  "anchor_id": "P18R5-SWIMLANE-NEUTRAL-LIGHT",
+  "mode": "neutral-light",
+  "layout_engine": "lane-interaction",
+  "serializer_count": 2,
+  "specimen_count": 1,
+  "artboard": {
+    "width": 3587.52,
+    "height": 1616.0,
+    "aspect_ratio": 2.22,
+    "safe_area": 52.0,
+    "semantic_field_plus_legend_ratio": 0.882426
+  },
+  "typography": {
+    "display": {
+      "preferred": "Instrument Serif",
+      "resolved": "Georgia",
+      "weight": 400,
+      "size_px": 48,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Instrument Serif is not installed",
+      "font_path": "/System/Library/Fonts/Supplemental/Georgia.ttf",
+      "face_index": 0
+    },
+    "lane": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "weight": 600,
+      "size_px": 18,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed",
+      "font_path": "/System/Library/Fonts/Avenir Next.ttc",
+      "face_index": 2
+    },
+    "node_title": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "weight": 600,
+      "size_px": 24,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed",
+      "font_path": "/System/Library/Fonts/Avenir Next.ttc",
+      "face_index": 2
+    },
+    "material": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "weight": 500,
+      "size_px": 16,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed",
+      "font_path": "/System/Library/Fonts/Avenir Next.ttc",
+      "face_index": 5
+    },
+    "technical": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "weight": 400,
+      "size_px": 16,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed",
+      "font_path": "/System/Library/Fonts/Menlo.ttc",
+      "face_index": 0
+    },
+    "badge": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "weight": 700,
+      "size_px": 14,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed",
+      "font_path": "/System/Library/Fonts/Menlo.ttc",
+      "face_index": 1
+    },
+    "tag": {
+      "preferred": "Geist Mono",
+      "resolved": "Menlo",
+      "weight": 700,
+      "size_px": 14,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist Mono is not installed",
+      "font_path": "/System/Library/Fonts/Menlo.ttc",
+      "face_index": 1
+    },
+    "legend": {
+      "preferred": "Geist",
+      "resolved": "Avenir Next",
+      "weight": 500,
+      "size_px": 16,
+      "fallback_used": true,
+      "fallback_reason": "preferred default Geist is not installed",
+      "font_path": "/System/Library/Fonts/Avenir Next.ttc",
+      "face_index": 5
+    }
+  },
+  "semantic_projection": {
+    "locked_fixture_id": "P18-C02-SWIM",
+    "locked_node_count": 12,
+    "locked_edge_count": 10,
+    "display_node_count": 7,
+    "display_edge_count": 7,
+    "covered_node_ids": [
+      "sw-check-bank",
+      "sw-check-cash",
+      "sw-check-customer",
+      "sw-check-mail",
+      "sw-file-ar",
+      "sw-file-ledger",
+      "sw-listing-cash",
+      "sw-listing-ledger",
+      "sw-listing-mail",
+      "sw-notice-ar",
+      "sw-notice-customer",
+      "sw-notice-mail"
+    ],
+    "covered_edge_ids": [
+      "sw-e01",
+      "sw-e02",
+      "sw-e03",
+      "sw-e04",
+      "sw-e05",
+      "sw-e06",
+      "sw-e07",
+      "sw-e08",
+      "sw-e09",
+      "sw-e10"
+    ]
+  },
+  "routing": {
+    "ports_allocated_before_routing": true,
+    "obstacle_clearance_px": 16,
+    "minimum_label_connector_clearance_px": 8,
+    "rounded_orthogonal": true,
+    "bridge_detection_enabled": true,
+    "bridge_count": 4
+  },
+  "boundaries": {
+    "qa_only": true,
+    "external_resources": false,
+    "javascript": false,
+    "runtime_modified": false,
+    "package_modified": false,
+    "dist_modified": false,
+    "p18r6_authorized": false
+  },
+  "artifacts": {
+    "anchor/swimlane--neutral-light.svg": {
+      "sha256": "ba037e941d5fa3e0529c44e60d6dc5936d0f76f54a4028e45c5804d9f6cdec97",
+      "bytes": 21692
+    },
+    "anchor/swimlane--neutral-light.html": {
+      "sha256": "1d95441f70c8f828aa7fd1a4bb05f99ee6fecac5da1b9cfdabde339e3cf8afc2",
+      "bytes": 26026
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "alternative_table_rows": 7,
+  "archived_files_verified": 602,
+  "authority": "D-121",
+  "browser": "BLOCKED_URL_POLICY",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-41-1.5.0",
+  "canonical_parent": "line-chart",
+  "comparison_scale_line_visibility": "PASS_7_SOLID_LINES_WITH_DEFINED_TEMPLATE_TOKENS",
+  "display_identity": "slope-graph",
+  "focused_scope_tests": "11/11 PASS",
+  "full_regression": "400/400 PASS",
+  "gallery_manifest_sha256": "017dce83c1348d36e025a445fe63e10a6fe44f554cee05a7d3a8b360df180560",
+  "global_policy_declarations": 93,
+  "internal_capability_id": "CAP-V18",
+  "local_raster_inspection": "PASS_NEUTRAL_LIGHT",
+  "non_target_html_preserved_after_candidate_normalization": 90,
+  "non_target_previews_byte_identical": 30,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "proof_files": [
+    {
+      "path": "evidence/p19/review41-checks/slope-graph.svg",
+      "sha256": "3be3e5ed95f38ce6e332f3c1702f8367473efbc6915af22ba4f399a7b169c6b8"
+    },
+    {
+      "path": "evidence/p19/review41-checks/slope-graph.svg.png",
+      "sha256": "a1b2ca507f003f757c778eb26e6ca8cf9efa2de7ada1587cc3cf99a8b93b865e",
+      "visually_inspected": true
+    }
+  ],
+  "protected_files_verified": 17540,
+  "slope_graph_measurement": {
+    "axes": 2,
+    "crossings": 9,
+    "endpoints": 14,
+    "falls": 2,
+    "focal": 1,
+    "rises": 5,
+    "series": 7,
+    "ticks": 6
+  },
+  "state_contract": "exactly two shared states on a truthful 0–100% scale",
+  "static_verification": "34/34 PASS",
+  "status": "PASS",
+  "target_html_count": 3,
+  "three_mode_geometry": "PASS"
+}

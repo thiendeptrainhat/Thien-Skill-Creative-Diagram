@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-18R4",
+  "date": "2026-08-24",
+  "authority": ["D-051", "D-052", "D-053"],
+  "result": "PASS",
+  "contract": {
+    "id": "P18R4-VISUAL-FOUNDATION-1.5.0",
+    "markdown_path": "evidence/p18/P-18R4-VISUAL-FOUNDATION-CONTRACT.md",
+    "markdown_sha256": "addf6793a9670d5a76b48c3835f2e2e08750b0bfca7cc27b210210acaa9f95a5",
+    "json_path": "evidence/p18/P-18R4-VISUAL-FOUNDATION.json",
+    "json_sha256": "37e0c955cc814d10dc393f148a4a55c2d5ef141e547c370171d176cc2efd7be9"
+  },
+  "checks": [
+    {"id": "P18R4-JSON", "result": "PASS", "assertion": "machine-readable contract parses as JSON"},
+    {"id": "P18R4-ENGINE-COVERAGE", "result": "PASS", "engine_count": 14, "canonical_type_count": 39, "canonical_unique": true, "matches_request_schema": true},
+    {"id": "P18R4-CAPABILITY-COVERAGE", "result": "PASS", "capability_count": 4, "capability_unique": true},
+    {"id": "P18R4-GALLERY-FORMULA", "result": "PASS", "formula": "39*3 + 4*3", "eventual_html_count": 129},
+    {"id": "P18R4-FONT-PRECEDENCE", "result": "PASS", "highest_precedence": "explicit_user_role_or_all_font", "default_profile": {"display": "Instrument Serif", "human_sans": "Geist", "technical_mono": "Geist Mono"}},
+    {"id": "P18R4-LAYOUT-BOUNDARY", "result": "PASS", "global_post_layout_transform_allowed": false, "real_measurement_before_layout": true, "intrinsic_node_sizing": true, "obstacle_aware_routing": true},
+    {"id": "P18R4-AUTHORITY", "result": "PASS", "authorized_subphases": ["P-18R4"], "unauthorized_subphases": ["P-18R5", "P-18R6", "P-19A", "P-19B", "P-19C"]},
+    {"id": "P18R4-HISTORICAL-OUTPUT-BINDING", "result": "PASS", "manifest_sha256": "4fb00b7f1b898a4a59b6fd4092b8f15f35ddd5b4a51c14124911b42a145ed5a7", "bound_file_count": 40, "hash_mismatch_count": 0},
+    {"id": "P18R4-FULL-REGRESSION", "result": "PASS", "passed": 148, "failed": 0},
+    {"id": "P18R4-SKILL-CREATOR-QUICK-VALIDATE", "result": "DEFERRED", "reason": "The available Python runtime lacks PyYAML; no dependency installation is authorized. Full canonical regression passed 148/148."},
+    {"id": "P18R4-SCOPE", "result": "PASS", "runtime_or_renderer_modified": false, "gallery_or_anchor_regenerated": false, "package_or_dist_modified": false, "git_or_release_action": false, "font_download_install_or_embedding": false}
+  ],
+  "historical_limitation": {
+    "id": "P18R4-L01",
+    "severity": "Low",
+    "status": "RECORDED",
+    "description": "A read-only run of the rejected P-18R3 generator check recomputes source bundle 67db0772ebd4086c5115a6bc5236098a00b705a3ba5aefc4b2a312221c7f853b instead of the historical frozen 30fc0ce7c5721a21fbe42cf5dd742ef3b23895e6f45070069cfa7dc34c3388c2. The exact historical manifest and all 40 bound output/index/anchor hashes remain unchanged. Because the candidate is rejected and P-18R4 authorizes no gallery regeneration, the drift is not repaired or re-baselined in this phase.",
+    "effect_on_p18r4": "non_blocking_contract_only",
+    "required_future_handling": "The next authorized candidate must use the P-18R4 contract and a new manifest; never update the rejected candidate to make this check green."
+  },
+  "changed_paths": [
+    "PROJECT-CONTRACT.md",
+    "PLAN.md",
+    "PHASE-GATES.md",
+    "ROADMAP.md",
+    "HANDOFF-CURRENT.md",
+    "evidence/p18/CANDIDATE-LINEAGE.md",
+    "evidence/p18/P-18-EVIDENCE.md",
+    "evidence/p18/P-18R4-VISUAL-FOUNDATION-CONTRACT.md",
+    "evidence/p18/P-18R4-VISUAL-FOUNDATION.json",
+    "evidence/p18/P-18R4-EVIDENCE.md",
+    "evidence/p18/P-18R4-VERIFICATION.json"
+  ],
+  "gate": "G-03@1.5.0 NOT-EVALUATED",
+  "next_phase": "P-18R5 NOT-STARTED / UNAUTHORIZED"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "authority": "D-128",
+  "date": "2026-08-30",
+  "decision": "OWNER_APPROVED_P19C_WITH_FLEXIBLE_USER_REQUEST_CONDITION",
+  "candidate_id": "P19C-FULL-QA-FREEZE-REVIEW-01-1.5.0",
+  "freeze_manifest_sha256": "5c98b8f56987ed69e65a93e01ca05dc2fd95c6d4e288007ffaa7fd615c8180ed",
+  "p19c_status": "passed-owner-approved",
+  "p19_status": "passed",
+  "masked_review_condition": {
+    "record_count": 31,
+    "disposition": "QA_SAMPLE_SET_ONLY",
+    "fixed_runtime_registry": false,
+    "fixed_template_catalog": false,
+    "limits_user_requests": false,
+    "user_request_precedence": true,
+    "required_behavior": "Adapt diagram type, content, structure, layout, visual treatment and presentation to the user's explicit request when safe and semantically valid; do not force the 31 review samples as immutable outputs."
+  },
+  "coexistence": {
+    "p18_exact_anchor_count": 14,
+    "p19_exact_html_count": 93,
+    "combined_comparison_count": 107,
+    "p19_replaces_p18": false
+  },
+  "g04_1_5_0": "NOT-EVALUATED",
+  "package_dist_publication_commit_push_tag_release_authorized": false
+}

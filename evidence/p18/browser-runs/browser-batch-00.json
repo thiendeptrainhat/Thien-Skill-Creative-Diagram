@@ -1,0 +1,1419 @@
+{
+  "schema_version": "1.0",
+  "browser": "Google Chrome",
+  "engine": "chromium",
+  "start": 0,
+  "requested_count": 18,
+  "file_count": 18,
+  "viewport_count": 3,
+  "run_count": 54,
+  "pass_count": 54,
+  "fail_count": 0,
+  "screenshot_count": 18,
+  "results": [
+    {
+      "file": "architecture--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "architecture--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phê duyệt hồ sơ số · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "bubble--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Danh mục dự án · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "deployment--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Triển khai dịch vụ phê duyệt · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "dumbbell--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Thời gian phản hồi trung vị · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "fishbone--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Giả thuyết nguyên nhân báo cáo trễ · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--editorial.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--editorial.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--editorial.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Editorial · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-dark.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-dark.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-dark.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral dark · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-light.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1100,
+      "metrics": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 46.08,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-light.html",
+      "viewport": "tablet",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    },
+    {
+      "file": "ridgeline--neutral-light.html",
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "svgCount": 1,
+        "tableCount": 1,
+        "title": "Phân bố thời lượng cuộc gọi · Neutral light · P-18",
+        "localLinksValid": true,
+        "visual": {
+          "occupancy": 0.9133333333333333,
+          "titleSize": 40,
+          "clippedText": [],
+          "textOverlaps": [],
+          "routeFailures": [],
+          "endpointFailures": [],
+          "failures": []
+        }
+      },
+      "consoleErrors": [],
+      "externalRequests": [],
+      "status": "PASS"
+    }
+  ]
+}

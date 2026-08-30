@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "phase": "P-18",
+  "remediation_sequence": ["P-18R0", "P-18R1", "P-18R2", "P-18R3"],
+  "date": "2026-08-23",
+  "authority": ["PROJECT-CONTRACT.md D-049", "PROJECT-CONTRACT.md D-050"],
+  "candidate": {
+    "manifest_id": "P18-PILOT-1.5.0-VISUAL-CRAFT-REPLACEMENT",
+    "manifest_path": "evidence/p18/PILOT-MANIFEST.json",
+    "manifest_sha256": "4fb00b7f1b898a4a59b6fd4092b8f15f35ddd5b4a51c14124911b42a145ed5a7",
+    "source_bundle_sha256": "30fc0ce7c5721a21fbe42cf5dd742ef3b23895e6f45070069cfa7dc34c3388c2",
+    "index_path": "evidence/p18/index.html",
+    "index_sha256": "839419a4a095880c1495d698d570af3482bdacbfd2aa995900455606fd269c81",
+    "case_family_count": 12,
+    "mode_count": 3,
+    "specimen_count": 36,
+    "non_counted_anchor_count": 3,
+    "status": "REPLACEMENT-CANDIDATE-READY-FOR-OWNER-REVIEW"
+  },
+  "checks": [
+    {
+      "id": "P18-GENERATOR",
+      "command": "python3 evidence/p18/source/generate_p18_gallery.py --check",
+      "result": "PASS"
+    },
+    {
+      "id": "P18-FOCUSED",
+      "command": "python3 -m unittest discover -s evidence/p18/tests -p test_*.py",
+      "passed": 10,
+      "failed": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "P18-BROWSER",
+      "evidence": "evidence/p18/BROWSER-VERIFICATION.json",
+      "passed": 108,
+      "failed": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "P18-VISUAL-CRAFT",
+      "evidence": "evidence/p18/VISUAL-CRAFT-REVIEW.md",
+      "score": 92,
+      "minimum_dimension": 4,
+      "blind_silhouette_correct": 12,
+      "blind_silhouette_total": 12,
+      "five_second_passed": 12,
+      "five_second_total": 12,
+      "result": "PASS",
+      "owner_result": "PENDING"
+    },
+    {
+      "id": "FULL-REGRESSION",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s thien-skill-creative-diagram/scripts/tests -p test_*.py",
+      "passed": 148,
+      "failed": 0,
+      "result": "PASS"
+    },
+    {
+      "id": "SKILL-CREATOR-QUICK-VALIDATE",
+      "result": "DEFERRED",
+      "reason": "Both available Python runtimes lack PyYAML; no dependency installation was authorized. The 148-test canonical repository audit passed."
+    }
+  ],
+  "technical_summary": {
+    "semantic": "36/36 PASS",
+    "quantitative": "36/36 PASS or correctly not-applicable",
+    "geometry": "36/36 PASS",
+    "accessibility": "36/36 PASS",
+    "contrast": "36/36 PASS",
+    "security_and_standalone": "36/36 PASS",
+    "visual_contract": "36/36 PASS",
+    "determinism": "PASS",
+    "provenance_receipts": "36/36 bound one-to-one"
+  },
+  "visual_contract_summary": {
+    "semantic_field_legend_height_ratio": 0.9133,
+    "duplicate_visible_svg_title_count": 0,
+    "visible_svg_evidence_rail_count": 0,
+    "clipped_text_count": 0,
+    "text_overlap_count": 0,
+    "route_through_unrelated_node_count": 0,
+    "wrong_endpoint_count": 0,
+    "minimum_label_connector_clearance_px": 8,
+    "required_bridge_hop": "PASS"
+  },
+  "preserved_boundaries": {
+    "canonical_runtime_integrated": false,
+    "package_rebuilt": false,
+    "dist_modified": false,
+    "commit_push_tag_release_performed": false,
+    "p19_started": false
+  },
+  "gate": "G-03@1.5.0 NOT-EVALUATED",
+  "owner_visual_approval": "PENDING",
+  "blocking_next_step": "Owner must approve or reject the exact replacement manifest/contact sheets before P-18 can close or P-19 can be considered."
+}

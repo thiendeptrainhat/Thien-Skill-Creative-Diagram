@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "candidate_id": "P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-11-1.5.0",
+  "status": "TECHNICAL_PARTIAL_PASS_BROWSER_PENDING",
+  "static": {
+    "status": "PASS",
+    "test_count": 322,
+    "pass_count": 322,
+    "fail_count": 0,
+    "report": "review/static-verification.json"
+  },
+  "determinism": "PASS",
+  "quicklook_raster_review": "PASS",
+  "browser": "PENDING_LOCAL_FILE_NAVIGATION_BLOCKED_IN_CONTROLLING_BROWSER",
+  "semantic": "PASS",
+  "quantitative": "PASS",
+  "accessibility_structural": "PASS",
+  "security": "PASS",
+  "full_regression": "148/148 PASS",
+  "r5_parent_integrity": "PASS",
+  "r6_lane_local_phase_extension": "PASS",
+  "diagram_12_axis_annotation_contract": "PASS",
+  "diagram_12_focal_region_without_outline_contract": "PASS",
+  "diagram_11_separate_cardinality_and_relationship_name_placement_contract": "PASS",
+  "masked_blind_recognition": "PENDING_INDEPENDENT_REVIEW_TARGET_12_OF_14",
+  "five_second_takeaway": "PENDING_INDEPENDENT_REVIEW",
+  "implementer_visual_precheck": {
+    "status": "PASS",
+    "score": 92.5,
+    "minimum_dimension": 4.5
+  },
+  "independent_visual_craft_gate": "PENDING",
+  "owner_status": "PENDING",
+  "g03_1_5_0": "NOT-EVALUATED",
+  "p19_authorized": false
+}

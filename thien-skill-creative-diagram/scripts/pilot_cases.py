@@ -10,6 +10,7 @@ from __future__ import annotations
 import copy
 from typing import Any
 
+from diagram_core import SCHEMA_VERSION
 from semantic_grammars import validate_semantics
 
 
@@ -55,7 +56,7 @@ def _content_class(collection: str) -> str:
 
 def _finalize(case_id: str, diagram_type: str, title: str, language: str, *, variant_ids: list[str] | None = None, **collections: list[dict[str, Any]]) -> dict[str, Any]:
     ir: dict[str, Any] = {
-        "schema_version": "1.0",
+        "schema_version": SCHEMA_VERSION,
         "request_id": f"request-{case_id}",
         "diagram": {"type": diagram_type, "variant_ids": variant_ids or [], "language": language, "title": title, "detail": "faithful", "audience": "mixed"},
         "selection": {"mode": "manual", "confidence": "high", "evidence": [f"request:approved P-06 pilot {case_id}"], "alternatives": [], "assumption": None},

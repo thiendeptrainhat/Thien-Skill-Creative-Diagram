@@ -1,0 +1,19 @@
+{
+  "alternative_semantic_table": "PASS",
+  "archived_files_verified": 207,
+  "authority": "D-086",
+  "bone_tick_spine_continuity": "PASS",
+  "browser": "BLOCKED_NOT_EXECUTABLE",
+  "candidate_id": "P19B-P18-INHERITED-THREE-MODE-REVIEW-06-1.5.0",
+  "fishbone_category_count": 5,
+  "fishbone_cause_count": 10,
+  "fishbone_effect_count": 1,
+  "fishbone_html_changed": 3,
+  "non_target_html_artwork_preserved": 84,
+  "non_target_preview_svg_byte_identical": 28,
+  "owner_approval": "pending",
+  "p19c": "not-performed",
+  "protected_files_verified": 3128,
+  "status": "PASS",
+  "three_mode_geometry": "PASS"
+}

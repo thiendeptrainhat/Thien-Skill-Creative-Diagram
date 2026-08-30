@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1420 1000" width="1420" height="1000"
+      role="img" aria-labelledby="anchor-title anchor-desc" data-layout-engine="containment-stack"
+      data-canonical-type="pyramid-funnel" data-mode="neutral-light" data-semantic-ratio="0.89"
+      data-min-label-clearance="8" data-font-measured="true" data-no-global-transform="true"
+      data-takeaway-node="focal" data-resolved-human-font="Avenir Next" data-resolved-mono-font="Menlo">
+      <title id="anchor-title">Tháp vận hành từ thủ tục đến quyết định</title>
+      <desc id="anchor-desc">Bốn lớp thu hẹp theo độ hiếm và đòn bẩy; apex là focal layer.</desc>
+      <defs>
+        <pattern id="dot-field" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#d9d7d2" opacity=".34"/></pattern>
+        <marker id="arrow" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#4f5e76"/></marker>
+        <marker id="arrow-accent" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L11 6 L1 11 Z" fill="#f26a32"/></marker>
+        <style>
+      text{font-family:'Avenir Next';fill:#252b3c;text-rendering:geometricPrecision}
+      .display{font-family:'Georgia';font-size:48px;font-weight:400}
+      .node-title{font-size:24px;font-weight:650}
+      .material{font-size:16px;font-weight:500}
+      .material-strong{font-size:18px;font-weight:650}
+      .mono,.badge-text,.kicker,.legend-note{font-family:'Menlo';font-size:16px}
+      .mono{fill:#53627b}
+      .kicker{font-size:14px;font-weight:700;letter-spacing:2.1px;fill:#778194}
+      .relationship-label{font-family:'Menlo';font-size:16px;font-weight:700;letter-spacing:.5px;fill:#778194}
+      .axis-note{font-family:'Menlo';font-size:16px;font-weight:700;letter-spacing:1.2px;fill:#53627b}
+      .badge-text{font-size:14px;font-weight:700;letter-spacing:1px;fill:#53627b}
+      .node-boundary{fill:#ffffff;stroke:#4f5e76;stroke-width:2.2}
+      .node-card.focal .node-boundary{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.8}
+      .node-card.muted .node-boundary{fill:#eeece7;stroke:#c7ccd2}
+      .badge{fill:#eeece7;stroke:#c7ccd2;stroke-width:1.2}
+      .focal .badge{fill:#fff3ec;stroke:#f26a32}
+      .focal .badge-text{fill:#df5522}
+      .wire{fill:none;stroke:#4f5e76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .wire.soft{stroke:#c7ccd2;stroke-width:2}
+      .wire.accent{stroke:#f26a32;stroke-width:3.6}
+      .wire.blue{stroke:#2f65af}
+      .wire.green{stroke:#7c9167}
+      .wire.dashed{stroke-dasharray:9 9}
+      .bridge-hop-underlay{fill:none;stroke:#f7f6f2;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}
+      .bridge-hop{fill:none;stroke:#4f5e76;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .zone{fill:none;stroke:#c7ccd2;stroke-width:1.6}
+      .zone-fill{fill:#eeece7;fill-opacity:.55;stroke:#c7ccd2;stroke-width:1.6}
+      .grid{stroke:#d9d7d2;stroke-width:1.4}
+      .dot{fill:#252b3c}
+      .accent-dot{fill:#f26a32}
+      .legend-rule{stroke:#d9d7d2;stroke-width:1.5}
+      .legend-accent{fill:#f8e7dd;stroke:#f26a32;stroke-width:2}
+      .legend-text{font-size:16px;fill:#53627b}
+      .legend-note{font-size:14px;font-style:italic;fill:#53627b}
+      .band{fill:#e8ebee;stroke:#c7ccd2;stroke-width:1.5}
+      .band.focal{fill:#f8e7dd;stroke:#f26a32;stroke-width:2.3}
+      .pyramid-layer-fill{fill:#e8ebee;stroke:none}
+      .pyramid-layer-fill.focal{fill:#f8e7dd}
+      .pyramid-outer-outline,.pyramid-divider{fill:none;stroke:#c7ccd2;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+      .pyramid-apex-outline,.pyramid-divider.focal{fill:none;stroke:#f26a32;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+      .pyramid-annotation{font-family:'Menlo';font-size:16px;font-weight:650;letter-spacing:1px;fill:#778194}
+      .pyramid-annotation.accent{fill:#df5522}
+      .label-mask{fill:#f7f6f2}
+      .axis{stroke:#4f5e76;stroke-width:2.2}
+    </style>
+      </defs>
+      <rect width="1420" height="1000" fill="#f7f6f2"/>
+      <rect width="1420" height="1000" fill="url(#dot-field)"/>
+      <g class="pyramid-stack" data-pyramid-silhouette="continuous-triangle" data-remediation="D-063" data-text-remediation="D-064" data-annotation-remediation="D-065" data-apex-x="750.00" data-apex-y="112.00" data-base-left-x="250.00" data-base-right-x="1250.00" data-base-y="750.00" data-axis-x="90.00" data-min-axis-clearance="140.00" data-actual-axis-clearance="160.00" data-layer-count="4" data-shared-boundary-count="3" data-shared-boundary-rendering="single-stroke" data-min-text-polygon-inset="8.00" data-annotation-count="4" data-min-annotation-clearance="56.00" data-annotation-side="right" data-annotation-gap-metric="bbox-left-at-vertical-center-to-outer-triangle-right-edge" data-annotation-visual-gap-target="72.00" data-annotation-gap-tolerance="0.01"><polygon class="pyramid-layer-fill focal" points="750.00,112.00 928.68,340.00 571.32,340.00" data-pyramid-layer="0" data-layer-shape="triangle" data-top-y="112.00" data-bottom-y="340.00"/><polygon class="pyramid-layer-fill" points="571.32,340.00 928.68,340.00 1046.24,490.00 453.76,490.00" data-pyramid-layer="1" data-layer-shape="trapezoid" data-top-y="340.00" data-bottom-y="490.00"/><polygon class="pyramid-layer-fill" points="453.76,490.00 1046.24,490.00 1152.04,625.00 347.96,625.00" data-pyramid-layer="2" data-layer-shape="trapezoid" data-top-y="490.00" data-bottom-y="625.00"/><polygon class="pyramid-layer-fill" points="347.96,625.00 1152.04,625.00 1250.00,750.00 250.00,750.00" data-pyramid-layer="3" data-layer-shape="trapezoid" data-top-y="625.00" data-bottom-y="750.00"/><path class="pyramid-outer-outline" d="M 750.00 112.00 L 1250.00 750.00 L 250.00 750.00 Z" data-role="outer-triangle-outline"/><path class="pyramid-apex-outline" d="M 571.32 340.00 L 750.00 112.00 L 928.68 340.00" data-role="apex-two-side-outline"/><line class="pyramid-divider focal" x1="571.32" y1="340.0" x2="928.68" y2="340.0" data-shared-boundary-index="0" data-boundary-render-count="1" data-adjacent-layers="0 1"/><line class="pyramid-divider" x1="453.76" y1="490.0" x2="1046.24" y2="490.0" data-shared-boundary-index="1" data-boundary-render-count="1" data-adjacent-layers="1 2"/><line class="pyramid-divider" x1="347.96" y1="625.0" x2="1152.04" y2="625.0" data-shared-boundary-index="2" data-boundary-render-count="1" data-adjacent-layers="2 3"/><text class="node-title" x="750.0" y="270.0" text-anchor="middle" data-pyramid-text-layer="0" data-text-role="node_title" data-bbox-x="653.50" data-bbox-y="246.00" data-bbox-width="193.00" data-bbox-height="33.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">Flagship decision</text><text class="mono" x="750.0" y="307.0" text-anchor="middle" data-pyramid-text-layer="0" data-text-role="technical" data-bbox-x="635.00" data-bbox-y="292.00" data-bbox-width="230.00" data-bbox-height="19.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">rare · highest leverage</text><text class="node-title" x="750.0" y="414.0" text-anchor="middle" data-pyramid-text-layer="1" data-text-role="node_title" data-bbox-x="636.00" data-bbox-y="390.00" data-bbox-width="228.00" data-bbox-height="33.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">Operating principles</text><text class="mono" x="750.0" y="446.0" text-anchor="middle" data-pyramid-text-layer="1" data-text-role="technical" data-bbox-x="655.00" data-bbox-y="431.00" data-bbox-width="190.00" data-bbox-height="19.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">quarterly · durable</text><text class="node-title" x="750.0" y="552.0" text-anchor="middle" data-pyramid-text-layer="2" data-text-role="node_title" data-bbox-x="638.50" data-bbox-y="528.00" data-bbox-width="223.00" data-bbox-height="33.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">Reusable playbooks</text><text class="mono" x="750.0" y="584.0" text-anchor="middle" data-pyramid-text-layer="2" data-text-role="technical" data-bbox-x="650.00" data-bbox-y="569.00" data-bbox-width="200.00" data-bbox-height="19.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">monthly · repeatable</text><text class="node-title" x="750.0" y="682.0" text-anchor="middle" data-pyramid-text-layer="3" data-text-role="node_title" data-bbox-x="655.50" data-bbox-y="658.00" data-bbox-width="189.00" data-bbox-height="33.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">Daily procedures</text><text class="mono" x="750.0" y="714.0" text-anchor="middle" data-pyramid-text-layer="3" data-text-role="technical" data-bbox-x="655.00" data-bbox-y="699.00" data-bbox-width="190.00" data-bbox-height="19.00" data-minimum-polygon-inset="8.00" data-font-size-preserved="true">daily · volume work</text></g><text class="pyramid-annotation accent" x="911.73" y="232.0" text-anchor="start" data-pyramid-annotation="0" data-note-kind="semantic" data-bbox-x="911.73" data-bbox-y="217.00" data-bbox-width="80.00" data-bbox-height="19.00" data-bbox-center-y="226.50" data-visual-gap-target="72.00" data-visual-gap-actual="72.00" data-gap-reference="bbox-vertical-center-to-outer-triangle-right-edge" data-minimum-polygon-clearance="56.00" data-semantic-binding="apex">THE APEX</text><text class="pyramid-annotation" x="1054.37" y="414.0" text-anchor="start" data-pyramid-annotation="1" data-note-kind="cadence-quarterly" data-bbox-x="1054.37" data-bbox-y="399.00" data-bbox-width="70.00" data-bbox-height="19.00" data-bbox-center-y="408.50" data-visual-gap-target="72.00" data-visual-gap-actual="72.00" data-gap-reference="bbox-vertical-center-to-outer-triangle-right-edge" data-minimum-polygon-clearance="56.00" data-semantic-binding="quarterly · durable">~4 / YR</text><text class="pyramid-annotation" x="1162.52" y="552.0" text-anchor="start" data-pyramid-annotation="2" data-note-kind="cadence-monthly" data-bbox-x="1162.52" data-bbox-y="537.00" data-bbox-width="80.00" data-bbox-height="19.00" data-bbox-center-y="546.50" data-visual-gap-target="72.00" data-visual-gap-actual="72.00" data-gap-reference="bbox-vertical-center-to-outer-triangle-right-edge" data-minimum-polygon-clearance="56.00" data-semantic-binding="monthly · repeatable">~12 / YR</text><text class="pyramid-annotation" x="1264.40" y="682.0" text-anchor="start" data-pyramid-annotation="3" data-note-kind="cadence-workdays" data-bbox-x="1264.40" data-bbox-y="667.00" data-bbox-width="90.00" data-bbox-height="19.00" data-bbox-center-y="676.50" data-visual-gap-target="72.00" data-visual-gap-actual="72.00" data-gap-reference="bbox-vertical-center-to-outer-triangle-right-edge" data-minimum-polygon-clearance="56.00" data-semantic-binding="daily · volume work">~240 / YR</text><line class="axis" x1="90.0" y1="770" x2="90.0" y2="86" marker-end="url(#arrow)" data-role="leverage-axis" data-polygon-clearance="160.00"/><text class="kicker" x="54.0" y="430.0" text-anchor="middle" transform="rotate(-90 54 430)">RARER · HIGHER LEVERAGE</text><line class="legend-rule" x1="52" y1="882" x2="1368" y2="882"/><text class="kicker" x="56.0" y="920.0" text-anchor="start">LEGEND</text><rect class="legend-accent" x="210.0" y="902" width="28" height="24" rx="5"/><text class="legend-text" x="252.0" y="921.0" text-anchor="start">apex</text><line class="wire" x1="415.0" y1="916" x2="457.0" y2="916"/><text class="legend-text" x="473.0" y="921.0" text-anchor="start">supporting layer</text><text class="legend-note" x="1364.0" y="921.0" text-anchor="end">The base funds the apex; the apex defines the base.</text>
+    </svg>

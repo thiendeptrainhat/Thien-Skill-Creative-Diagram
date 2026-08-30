@@ -22,8 +22,9 @@ for path in (SCRIPT_DIR, TEST_DIR):
 
 from full_renderer import RENDERER_VERSION, render_static
 from p07_coverage import P07_COVERAGE, SPECIMEN_TOTAL
-from semantic_catalog import PATTERNS, SPECIMEN_GROUPS, TYPE_GRAMMARS, VARIANT_MAPPINGS
-from semantic_fixtures import finalize, fixtures
+from diagram_core import LEGACY_CANONICAL_TYPES
+from semantic_catalog import PATTERNS, SPECIMEN_GROUPS, VARIANT_MAPPINGS
+from semantic_fixtures import finalize, legacy_fixtures
 from semantic_patterns import apply_pattern
 
 
@@ -55,10 +56,10 @@ def generate() -> None:
         "capabilities": P07_COVERAGE,
     })
 
-    cases = fixtures()
+    cases = legacy_fixtures()
     type_runs: list[dict[str, str]] = []
     light_svgs: list[tuple[str, str]] = []
-    for diagram_type in TYPE_GRAMMARS:
+    for diagram_type in LEGACY_CANONICAL_TYPES:
         for mode in MODES:
             result = render_static(cases[diagram_type], mode)
             type_runs.append({"diagram_type": diagram_type, "mode": mode, "sha256": result.sha256, "status": result.validation["status"]})
@@ -72,6 +73,8 @@ def generate() -> None:
 
     variant_runs: list[dict[str, str]] = []
     for capability_id, variant in VARIANT_MAPPINGS.items():
+        if int(capability_id[-2:]) > 16:
+            continue
         parent = "architecture" if "all" in variant["parents"] else variant["parents"][0]
         ir = copy.deepcopy(cases[parent])
         ir["diagram"]["variant_ids"] = [capability_id]

@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "record_id": "P16-UPSTREAM-DELTA-2026-08-22",
+  "status": "candidate-awaiting-owner-and-technical-review",
+  "captured_at": "2026-08-22T15:34:21Z",
+  "authority": {
+    "decision_ids": [
+      "D-041",
+      "D-042",
+      "D-043",
+      "D-044",
+      "D-045",
+      "D-046"
+    ],
+    "authorized_phase": "P-16",
+    "target_version": "1.5.0",
+    "implementation_authorized": false,
+    "gallery_authorized": false,
+    "package_or_release_authorized": false
+  },
+  "source": {
+    "repository": "https://github.com/cathrynlavery/diagram-design",
+    "branch_resolved": "main",
+    "baseline_commit": "09df49d8d1a1c7fb2efdfcdc7a2a0713534350a6",
+    "baseline_commit_time": "2026-08-14T14:28:44-07:00",
+    "baseline_plugin_version": "2.4.0",
+    "candidate_commit": "648c2a597839301e06df1e7434a08bde9f42eed3",
+    "candidate_commit_time": "2026-08-21T17:26:23-05:00",
+    "candidate_commit_subject": "feat(scatter): add bubble variant for three-value comparisons (#141)",
+    "candidate_exact_tag": null,
+    "candidate_plugin_version": "2.6.5",
+    "candidate_git_tree": "614419398b69ca9d4dfbd6681b259304dfd0fe62",
+    "candidate_recursive_tree_sha256": "c36ef92b3e1eb1ba486a331bfad357a9435b699a93c96adb7075d6134d22bf17",
+    "candidate_file_count": 422,
+    "main_verified_at": "2026-08-22T16:39:11Z",
+    "main_resolved_commit": "648c2a597839301e06df1e7434a08bde9f42eed3",
+    "acquisition": "read-only exact-commit inspection in a temporary checkout; no upstream implementation file copied into the project workspace"
+  },
+  "source_file_hashes_sha256": {
+    "README.md": "7ecd8e28e94dfda598b75278df9bf12013a944718efb9f0d467c867f13a56113",
+    "LICENSE": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29",
+    "skills/diagram-design/SKILL.md": "553191201faf2e61a9b3cc24f01b688de172f67b3f9da69b544f194252fcacee",
+    "skills/diagram-design/assets/index.html": "24c31b8a1e5f7dbf5dad1f7df2a84302f46967f36ec946d69da1697fbb7fb15d",
+    ".claude-plugin/plugin.json": "0b8b6b0213d13bc948241acf6609b97b8800a20d229d63a0e0ad60914a139403",
+    "skills/diagram-design/references/type-polar.md": "51fd08897a65f4ae2fe0c28b5e3afdd4867633fb960e3107551e49f4f9d1e97c",
+    "skills/diagram-design/references/type-treemap.md": "6fc76ebac9b7895c03da82fb12964776c987c05db1798e9a744730f2f87d7737",
+    "skills/diagram-design/references/type-sankey.md": "bcc39b963fa4f340c7654204fa0c6c0a248a0b42b1669ebeb2375381d8013a2c",
+    "skills/diagram-design/references/type-fishbone.md": "d2f1c043fd40f5a20305bcc8b835b852b77a26b77516c3bbd813abf70dfa4f20",
+    "skills/diagram-design/references/type-wardley.md": "aa93eb728a022b85f38de69c1d287752f91c487b05c50396ee21e769162900a9",
+    "skills/diagram-design/references/type-kanban.md": "e64138a2629db2bf1de6aa4f4979088777a08c1426ef122c57f200aae20fc7eb",
+    "skills/diagram-design/references/type-journey.md": "135501cef58abd6c716746248a5bfd163e56b68d9f314516bb8f60d26a895256",
+    "skills/diagram-design/references/type-deployment.md": "d3d33ff53bb8bdb7b15bcc3b23d1009ee68b40638588dd054d0ab993fb480fd5",
+    "skills/diagram-design/references/type-dependency.md": "b6262d5337b3184aeb83f503627a665a9108b62a42e5ef2d6549c4167220fa6c",
+    "skills/diagram-design/references/type-uml-class.md": "8cc0bc8f77a38da58110287c1b112043be9751389ef45772fe607eae9aa77ecd",
+    "skills/diagram-design/references/type-story-map.md": "ee49c426397c3e5234fb544ea1394f7c8879610fea897da3b636891e3affb4c4",
+    "skills/diagram-design/references/type-db-schema.md": "433f2ede171453ccbc1e6e8d0be4846fa5fb88bb499e8ba7e6db02d066a06c46",
+    "skills/diagram-design/references/type-bar.md": "a6ab12ffe6fed07652f47924deefa14e9010f161db26daa90d918db16e353d9d",
+    "skills/diagram-design/references/type-line.md": "bf466f141a39dc4bc9185c1e693f2641735f9acdaa2dbd7094ae38afcfa74c49",
+    "skills/diagram-design/references/type-scatter.md": "0f56f6e2526c964d6530eac3a8e26927ac77b66322611ebe6704aeea7c8adb67",
+    "skills/diagram-design/references/type-er.md": "0f4a718b202edec593e4555e0353a4080d4be6d98328209db083898f2f01302c",
+    "skills/diagram-design/references/semantic-patterns.md": "c56d7b9dc95066dcea2ecb0810d92fd7b56afd62aaf48ca0971129de0e28bdfa",
+    "skills/diagram-design/references/animation.md": "24ce83341aee976680cb69d43b2afab40efcfa97edcd394e5b17183eb58fc94a",
+    "skills/diagram-design/references/import-drawio.md": "2615ba8efb300ecc498df72223a91c6c712411efb38892fc779b583ad8b7b4ce",
+    "skills/diagram-design/references/import-mermaid.md": "952de5fb9e0f24178cbbbfd784e9838ad6770d00e5e5550842f4f38f44f75474",
+    "skills/diagram-design/references/output-spec.md": "35ffeca80b5760cdc20614fcb95f82dae64a501ea75db885cb8d62819b883de9",
+    "THIRD_PARTY_LICENSES.md": "22f5afcea56373e84d7f7eff93d8d4d6e4b81c5375bb1c996e78b91e53fa0b37"
+  },
+  "capability_bearing_crosscut_delta": {
+    "disposition_record": "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md",
+    "semantic_patterns": {
+      "baseline_sha256": "6df3d41cafea6a0f16f8921a50af732e34f6172d4ba6fb9f05ec8f92bc27e472",
+      "candidate_sha256": "c56d7b9dc95066dcea2ecb0810d92fd7b56afd62aaf48ca0971129de0e28bdfa",
+      "disposition": "existing seven project patterns inherited unchanged; only target count alignment adopted"
+    },
+    "animation": {
+      "baseline_sha256": "24ce83341aee976680cb69d43b2afab40efcfa97edcd394e5b17183eb58fc94a",
+      "candidate_sha256": "24ce83341aee976680cb69d43b2afab40efcfa97edcd394e5b17183eb58fc94a",
+      "disposition": "byte-unchanged; existing motion contract inherited"
+    },
+    "import_drawio": {
+      "baseline_sha256": "106d29f5501fe39d423f9145c04ab1e1ffa747d6cd453ee8ffa58a604413c4c5",
+      "candidate_sha256": "2615ba8efb300ecc498df72223a91c6c712411efb38892fc779b583ad8b7b4ce",
+      "disposition": "upstream command rename excluded; project import behavior unchanged"
+    },
+    "import_mermaid": {
+      "baseline_sha256": "491ff83440fc995401b5ba20f63325f976732bf1669003c1840b4137072cc274",
+      "candidate_sha256": "952de5fb9e0f24178cbbbfd784e9838ad6770d00e5e5550842f4f38f44f75474",
+      "disposition": "new upstream grammar cases excluded; approved project subset unchanged"
+    },
+    "output_spec": {
+      "baseline_sha256": "d8fa916f523b99ada083a652f4440d3f0d086a8af61ae333bac50153338f42a3",
+      "candidate_sha256": "35ffeca80b5760cdc20614fcb95f82dae64a501ea75db885cb8d62819b883de9",
+      "disposition": "upstream Korean font guidance excluded; project output/language contract unchanged"
+    }
+  },
+  "declared_license": {
+    "name": "MIT",
+    "license_file_sha256": "bb7e12e91fecef43024111123ff784cec6c485585561d8b552557c0173b3ed29",
+    "third_party_ledger_sha256": "22f5afcea56373e84d7f7eff93d8d4d6e4b81c5375bb1c996e78b91e53fa0b37",
+    "project_policy": "stricter clean-room-oriented independent reimplementation boundary remains controlling; license does not authorize copying for this project"
+  },
+  "principle_source_inheritance": {
+    "repository": "Thien-UI-UX-Ultra",
+    "commit": "fb4e57758f525827e04004737d779f4c93b9b3a0",
+    "tag": "v2.0.0",
+    "git_tree": "96e55f4693b81af594cfb9190fc66321a3b5fecb",
+    "disposition": "P-01 principles-only binding inherited unchanged; no implementation material reused"
+  },
+  "delta_summary": {
+    "upstream_repository_files_changed": 170,
+    "repository_insertions": 23895,
+    "repository_deletions": 244,
+    "upstream_skill_files_changed": 74,
+    "upstream_files_outside_skill_pathscope": 96,
+    "skill_insertions": 9048,
+    "skill_deletions": 108,
+    "baseline_canonical_count": 27,
+    "canonical_additions": 12,
+    "candidate_canonical_count": 39,
+    "new_capability_count": 4,
+    "arithmetic_check": "27 + 12 = 39"
+  },
+  "canonical_types_39": [
+    "Architecture",
+    "IT current-state",
+    "Flowchart",
+    "Sequence",
+    "State machine",
+    "ER/data model",
+    "Timeline",
+    "Swimlane",
+    "Quadrant",
+    "Radar/Spider",
+    "Polar chart",
+    "Loop/Flywheel",
+    "Nested",
+    "Tree",
+    "Org chart",
+    "Layer stack",
+    "Venn",
+    "Pyramid/Funnel",
+    "Bar chart",
+    "Treemap",
+    "Line chart",
+    "Gantt",
+    "Scatter plot",
+    "High-Level",
+    "Process",
+    "Medallion",
+    "Data flow",
+    "DP integration",
+    "DP security matrix",
+    "Sankey",
+    "Fishbone",
+    "Wardley map",
+    "Kanban",
+    "User journey",
+    "Deployment",
+    "Dependency graph",
+    "UML class",
+    "Story map",
+    "Database schema"
+  ],
+  "canonical_additions_12": [
+    {
+      "capability_id": "CAP-T28",
+      "name": "Polar chart",
+      "abstract_requirement": "magnitude across cyclic categories using angle for category and radius for value",
+      "source_reference": "skills/diagram-design/references/type-polar.md"
+    },
+    {
+      "capability_id": "CAP-T29",
+      "name": "Treemap",
+      "abstract_requirement": "hierarchical part-to-whole comparison using area for magnitude",
+      "source_reference": "skills/diagram-design/references/type-treemap.md"
+    },
+    {
+      "capability_id": "CAP-T30",
+      "name": "Sankey",
+      "abstract_requirement": "quantitative flows that split and merge across stages with width representing amount",
+      "source_reference": "skills/diagram-design/references/type-sankey.md"
+    },
+    {
+      "capability_id": "CAP-T31",
+      "name": "Fishbone",
+      "abstract_requirement": "grouped causes converging on one observed effect",
+      "source_reference": "skills/diagram-design/references/type-fishbone.md"
+    },
+    {
+      "capability_id": "CAP-T32",
+      "name": "Wardley map",
+      "abstract_requirement": "value-chain components positioned by evolution to support strategic movement decisions",
+      "source_reference": "skills/diagram-design/references/type-wardley.md"
+    },
+    {
+      "capability_id": "CAP-T33",
+      "name": "Kanban",
+      "abstract_requirement": "work items organized by state with WIP limits and blocked-state semantics",
+      "source_reference": "skills/diagram-design/references/type-kanban.md"
+    },
+    {
+      "capability_id": "CAP-T34",
+      "name": "User journey",
+      "abstract_requirement": "stages, actions, touchpoints and sentiment across an experience",
+      "source_reference": "skills/diagram-design/references/type-journey.md"
+    },
+    {
+      "capability_id": "CAP-T35",
+      "name": "Deployment",
+      "abstract_requirement": "runtime placement across zones, hosts, artifacts, replicas and ports",
+      "source_reference": "skills/diagram-design/references/type-deployment.md"
+    },
+    {
+      "capability_id": "CAP-T36",
+      "name": "Dependency graph",
+      "abstract_requirement": "general dependency relationships including fan-in, ranks and cycles",
+      "source_reference": "skills/diagram-design/references/type-dependency.md"
+    },
+    {
+      "capability_id": "CAP-T37",
+      "name": "UML class",
+      "abstract_requirement": "classes, attributes, operations and typed relationships",
+      "source_reference": "skills/diagram-design/references/type-uml-class.md"
+    },
+    {
+      "capability_id": "CAP-T38",
+      "name": "Story map",
+      "abstract_requirement": "narrative backbone with stories organized into release slices and cut lines",
+      "source_reference": "skills/diagram-design/references/type-story-map.md"
+    },
+    {
+      "capability_id": "CAP-T39",
+      "name": "Database schema",
+      "abstract_requirement": "physical tables, columns, data types, constraints, indexes and column-level foreign keys",
+      "source_reference": "skills/diagram-design/references/type-db-schema.md"
+    }
+  ],
+  "new_capabilities_4": [
+    {
+      "capability_id": "CAP-V17",
+      "name": "Dumbbell",
+      "parent": "Bar chart",
+      "parent_capability_id": "CAP-T18",
+      "abstract_requirement": "two values per category on one shared scale, with the gap carrying the comparison",
+      "source_reference": "skills/diagram-design/references/type-bar.md",
+      "candidate_snapshot_gallery_examples": 0
+    },
+    {
+      "capability_id": "CAP-V18",
+      "name": "Slopegraph",
+      "parent": "Line chart",
+      "parent_capability_id": "CAP-T19",
+      "abstract_requirement": "multiple series compared across exactly two states, preserving direction, rank and crossing",
+      "source_reference": "skills/diagram-design/references/type-line.md",
+      "candidate_snapshot_gallery_examples": 3
+    },
+    {
+      "capability_id": "CAP-V19",
+      "name": "Ridgeline",
+      "parent": "Line chart",
+      "parent_capability_id": "CAP-T19",
+      "abstract_requirement": "one distribution per series on a shared domain and amplitude contract",
+      "source_reference": "skills/diagram-design/references/type-line.md",
+      "candidate_snapshot_gallery_examples": 3
+    },
+    {
+      "capability_id": "CAP-V20",
+      "name": "Bubble",
+      "parent": "Scatter plot",
+      "parent_capability_id": "CAP-T21",
+      "abstract_requirement": "x and y plus a third magnitude represented by mark area rather than radius",
+      "source_reference": "skills/diagram-design/references/type-scatter.md",
+      "candidate_snapshot_gallery_examples": 3
+    }
+  ],
+  "upstream_gallery_inventory": {
+    "asset_html_files": 149,
+    "example_html_files": 142,
+    "canonical_base_examples": 117,
+    "canonical_base_formula": "39 canonical types x 3 static variants",
+    "new_canonical_examples_since_baseline": 36,
+    "new_variant_examples_since_baseline": 9,
+    "baseline_other_examples": 16,
+    "dumbbell_example_present": false,
+    "use_boundary": "names, counts and abstract behavior only; no upstream HTML, CSS, SVG, text, coordinates, data or pixels may be reused"
+  },
+  "project_target_gallery": {
+    "custody": "QA-only evidence under evidence/p18 and evidence/p19",
+    "package_inclusion": false,
+    "visual_modes": [
+      "neutral-light",
+      "neutral-dark",
+      "editorial"
+    ],
+    "canonical_specimen_html": 117,
+    "new_capability_specimen_html": 12,
+    "minimum_specimen_html_total": 129,
+    "pilot_case_family_count": 12,
+    "pilot_standalone_html_count": 36,
+    "pilot_contract": "evidence/p16/PILOT-GALLERY-CONTRACT.md",
+    "index_or_contact_sheet_excluded_from_count": true,
+    "all_expression_must_be_original": true
+  },
+  "version_scoped_contract_artifacts": {
+    "capability_matrix": "evidence/p16/CAPABILITY-PROVENANCE-MATRIX.md",
+    "upstream_delta_disposition": "evidence/p16/UPSTREAM-CAPABILITY-DELTA.md",
+    "upstream_full_range_ledger": "evidence/p16/UPSTREAM-FULL-RANGE-LEDGER.json",
+    "platform_revalidation": "evidence/p16/PLATFORM-SURFACE-REVALIDATION.md",
+    "product_architecture_test_delta": "evidence/p16/PRODUCT-ARCHITECTURE-TEST-DELTA.md",
+    "request_schema": "evidence/p16/REQUEST-1.5.schema.json",
+    "semantic_ir_schema": "evidence/p16/SEMANTIC-IR-1.5.schema.json",
+    "pilot_gallery_contract": "evidence/p16/PILOT-GALLERY-CONTRACT.md",
+    "g02_contract_manifest": "evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json"
+  },
+  "explicitly_out_of_scope": [
+    "upstream onboarding and website token extraction",
+    "network font or resource loading",
+    "named profiles and project markers",
+    "doctor commands or environment diagnostics",
+    "upstream provider commands, prompts, manifests and packaging surfaces",
+    "copying or adapting upstream gallery assets",
+    "package build or rebuild",
+    "commit, push, tag, release or GitHub Release mutation"
+  ]
+}
