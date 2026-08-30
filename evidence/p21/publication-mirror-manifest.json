@@ -23,7 +23,7 @@
       "source_sha256": "e3648b4d8273ca3f7bf88557842897978bf3f527b838eef66c57ad84cc27b06f"
     },
     {
-      "mirror_sha256": "5af3714f306c9d1e095b574a712320a9bf9caa340f3fcc242767446c64b885cc",
+      "mirror_sha256": "86712ad4b52fa26387d083c71888ca403663e1f2998aa0c6829ce1a16793de6a",
       "path": "PROJECT-CONTRACT.md",
       "replacements": [
         {
@@ -35,7 +35,7 @@
           "replacement_id": "owner_license_template"
         }
       ],
-      "source_sha256": "e5ee859e247e9c54addd93262efba2f1a30b2ac4525b4eb7050627fa99453bc9"
+      "source_sha256": "c13db4fc1d565103e8986a46008c7df58104217ad388343871e4465e8d2aa848"
     },
     {
       "mirror_sha256": "3d8558b97ee0fa639dccc8c69bad14e9a200daeab3d0f45517047bfd0cee8e58",
@@ -2688,7 +2688,7 @@
     "generic /Users/example test fixture"
   ],
   "git_or_release_mutation_performed": false,
-  "mirror_file_count_including_manifest": 21009,
+  "mirror_file_count_including_manifest": 21011,
   "mirror_root": "<LOCAL_RELEASE_STAGING>/TCD-RELEASE-2.0.0-RC1",
   "personal_machine_path_scan": {
     "forbidden_token": "/Users/<owner>",
@@ -2699,7 +2699,7 @@
   "record_id": "P21-PUBLICATION-MIRROR-2.0.0-1",
   "sanitization_note": "Exact owner-home paths are replaced in UTF-8 audit text; generic security fixtures remain unchanged.",
   "sanitization_version": "2.0.0",
-  "source_file_count": 21008,
+  "source_file_count": 21010,
   "source_root": "<LOCAL_WORKSPACE>",
-  "tree_aggregate_sha256": "0183b9679f9340f5e94bd75cbf7bbab5d7ba12db50a8dbccf2047ed33796ceb9"
+  "tree_aggregate_sha256": "d161f697fa962afc09a2ecbbcde9489769e54d1ec8cc952c1be5431e29d96aba"
 }

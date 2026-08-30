@@ -1,12 +1,12 @@
-# Kế hoạch thực hiện — Thien-Skill-Creative-Diagram v1.0.0 baseline / v2.0.0 release candidate
+# Kế hoạch thực hiện — Thien-Skill-Creative-Diagram v1.0.0 baseline / v2.0.0 released
 
 File này là nguồn sự thật duy nhất cho **cách thực hiện, quyền thực hiện và trạng thái phase**.
 
 **Cập nhật:** 2026-08-31
-**Phạm vi được phép trong yêu cầu hiện tại:** D-132: thực thi private release cho exact `TCD-RELEASE-2.0.0-RC1` trên target đã xác minh `PRIVATE`; D-128 và owner waiver D-131 tiếp tục có hiệu lực.
-**Phase đang thực hiện:** P-21 private v2.0.0 release execution `in-progress`; toàn bộ `G-00…G-07@2.0.0` `PASS`
-**Quyền triển khai skill/gallery:** chỉ được cập nhật package-facing guidance/metadata cho v2.0.0 và tạo evidence/candidate; không đổi frozen P-18/P-19 artwork, comparison 107 hoặc sample-not-fixed flexibility.
-**Quyền build/package/commit/push/tag/release:** D-132 cho phép promote exact v2 approved bytes, refresh sanitized private mirror, commit `main`, tạo/push annotated tag `v2.0.0` và tạo private GitHub Release với exact assets; v1.0.0, target, visibility và approved bytes phải giữ nguyên
+**Phạm vi được phép trong yêu cầu hiện tại:** P-21 đã đóng theo D-133; không còn phase mutation đang được phép. D-128 và owner waiver D-131 tiếp tục có hiệu lực.
+**Phase đang thực hiện:** không có; P-21 private v2.0.0 release execution `passed`; toàn bộ `G-00…G-07@2.0.0` `PASS`
+**Quyền triển khai skill/gallery:** không có authorization mới; frozen P-18/P-19 artwork, comparison 107 và sample-not-fixed flexibility phải giữ nguyên.
+**Quyền build/package/commit/push/tag/release:** không còn quyền mutation sau closure D-133; maintenance, thay asset, di chuyển tag hoặc release kế tiếp cần lệnh và gate/version scope mới
 
 Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`, `passed`.
 
@@ -35,7 +35,7 @@ Trạng thái hợp lệ: `not-started`, `authorized`, `in-progress`, `blocked`,
 | P-18 | Visual vNext pilot & gallery approval | passed | G-03 repeat | Exact review-17 `P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0`, manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`, đạt static `366/366`, browser `42/42`, regression `148/148`, masked recognition/five-second `14/14` và independent visual-craft `93/100`, minimum dimension `4/5`. Owner phê duyệt exact candidate, `G-03@1.5.0 PASS` và cho phép đóng P-18 theo D-077. |
 | P-19 | Full 39-type source/gallery coverage | passed | G-04 repeat PASS | P-19A `passed`; exact P-19B review-45 `passed-owner-approved` theo D-126; exact P-19C review-01 `passed-owner-approved` theo D-128; `G-04@1.5.0 PASS` theo D-129. Bộ 31 silhouette chỉ là sample QA; user-request flexibility là bắt buộc. Không package/release. |
 | P-20 | v2.0.0 package/release preparation | passed | G-00…G-07@2.0.0 PASS | Technical preparation complete; D-131 owner-approved exact legal/brand, ba ZIP và `TCD-RELEASE-2.0.0-RC1`, đồng thời miễn independent lawyer review cho exact G-06. Historical execution hold được gỡ riêng bởi D-132/P-21. |
-| P-21 | Private v2.0.0 release execution | in-progress | G-07@2.0.0 execution | Authorized by D-132 for exact private target/candidate: promote approved bytes, sanitized mirror, preflight/QA, commit/tag/push/Release and remote digest verification. |
+| P-21 | Private v2.0.0 release execution | passed | G-07@2.0.0 execution PASS | D-133: private Release `v2.0.0` non-draft/non-prerelease, tag object `6dfd116c…abe` peels to release commit `7f6165ff…95f`; four remote asset digests exact, v1.0.0 preserved. |
 
 ## 2. Bảng trạng thái gate có thẩm quyền — historical v1.0.0
 
@@ -689,7 +689,7 @@ P-18R0→P-18R3 đã hoàn tất về mặt kỹ thuật, nhưng owner từ ch�
 
 **Authorization:** D-130.
 
-**Trạng thái:** `passed`. D-131 đặt tất cả `G-00…G-07@2.0.0` thành `PASS` và owner-approve exact `TCD-RELEASE-2.0.0-RC1`; release execution vẫn hold.
+**Trạng thái:** `passed`. D-131 đặt tất cả `G-00…G-07@2.0.0` thành `PASS` và owner-approve exact `TCD-RELEASE-2.0.0-RC1`; execution hold lịch sử đã được D-132 gỡ và P-21 hoàn tất theo D-133.
 
 **Kết quả:**
 
@@ -702,7 +702,29 @@ P-18R0→P-18R3 đã hoàn tất về mặt kỹ thuật, nhưng owner từ ch�
 
 **Evidence:** technical record `evidence/p20/P-20-EVIDENCE.md` SHA-256 `a262beb120365e0917f0b378470df4b0e59b8c0d0f565acfce29c033c6f728d2`; gate decision record `evidence/p20/GATE-READINESS-2.0.0.md` SHA-256 `7511b8c4cc320cb276255b666e9140e0a932b7d4485bc752a4e938a8d21aff46`; exact release manifest `evidence/p20/RELEASE-CANDIDATE-2.0.0.json` SHA-256 `2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72`.
 
-**Pending action:** không còn gate approval pending. Independent lawyer review đã được owner miễn riêng cho exact G-06 candidate theo D-131. Mọi thao tác `dist`/publication/commit/push/tag/Release vẫn chờ lệnh thực thi riêng, rõ ràng.
+**Pending action:** không còn gate approval hoặc release execution pending. Independent lawyer review đã được owner miễn riêng cho exact G-06 candidate theo D-131.
+
+## P-21 — Private v2.0.0 release execution
+
+**Mục tiêu:** promote và phát hành đúng exact `TCD-RELEASE-2.0.0-RC1` lên private GitHub repository, không làm thay đổi P-18/P-19, D-128 hoặc historical v1.0.0.
+
+**Authorization:** D-132.
+
+**Trạng thái:** `passed` theo D-133.
+
+**Kết quả:**
+
+- remote preflight xác minh đúng `thiendeptrainhat/Thien-Skill-Creative-Diagram`, `PRIVATE`, default `main`, tag/Release v2 chưa tồn tại;
+- exact legal/provenance bytes và ba ZIP được promote; v1.0.0 giữ nguyên;
+- pre-release verification `15/15 PASS`, package QA `26/26 PASS`, regression `414/414 PASS`, sanitized mirror `5/5 PASS`;
+- release commit `7f6165ffb60b75a65ffce51bf382ccb35529095f`, annotated tag object `6dfd116c4a770d45508ca7bd93bbe6ec61796abe`, tag peel exact;
+- GitHub Release `v2.0.0` non-draft/non-prerelease có đúng ba ZIP và `SHA256SUMS.txt`; toàn bộ remote SHA-256 khớp candidate;
+- v1.0.0 Release và bốn digest lịch sử được xác minh còn nguyên;
+- P-18/P-19 giữ riêng `14 + 93 = 107`, không substitution; D-128 sample-not-fixed/user-request flexibility tiếp tục có hiệu lực.
+
+**Evidence:** `evidence/p21/P-21-EVIDENCE.md` và `evidence/p21/RELEASE-EVIDENCE.json`.
+
+**Quyền sau closure:** không có maintenance/release mutation nào được tự suy ra từ P-21; cần authorization mới.
 
 ## 3. Change-control record
 

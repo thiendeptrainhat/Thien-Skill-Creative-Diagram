@@ -1,9 +1,9 @@
-# Handoff phiên mới — P-21 private v2.0.0 release execution theo D-132
+# Handoff phiên mới — v2.0.0 đã phát hành, P-21 passed theo D-133
 
 **Dự án:** Thien-Skill-Creative-Diagram
 **Ngày xác minh handoff:** 2026-08-31
 **Workspace:** `<LOCAL_WORKSPACE>` — thư mục chứa file này
-**Mục đích:** giúp một phiên mới định hướng đúng trạng thái v1.0.0 đã khóa, exact source/gallery lineage v1.5.0 đã đóng, P-20 đã hoàn tất, exact `TCD-RELEASE-2.0.0-RC1` đã owner-approved và P-21 đang thực thi private release theo D-132; mọi gate `G-00…G-07@2.0.0` `PASS`; D-128 tiếp tục khóa 31 masked silhouette là sample QA, không phải output cố định
+**Mục đích:** giúp một phiên mới định hướng đúng trạng thái v1.0.0 đã khóa, exact source/gallery lineage v1.5.0 đã đóng và private Release v2.0.0 đã hoàn tất; P-21 `passed` theo D-133, mọi gate `G-00…G-07@2.0.0` `PASS`; D-128 tiếp tục khóa 31 masked silhouette là sample QA, không phải output cố định
 **Thẩm quyền:** tài liệu handoff không thay thế chỉ dẫn mới nhất của chủ sở hữu hoặc các nguồn sự thật trong repository
 
 Nếu nội dung handoff mâu thuẫn với chỉ dẫn mới nhất của chủ sở hữu hoặc file có thẩm quyền, phiên mới phải dùng thứ tự ưu tiên trong `AGENTS.md`, dừng phần bị ảnh hưởng và hỏi chủ sở hữu khi mâu thuẫn có ảnh hưởng vật chất.
@@ -13,7 +13,7 @@ Nếu nội dung handoff mâu thuẫn với chỉ dẫn mới nhất của chủ
 Đọc đầy đủ, không chỉ đọc đoạn trích:
 
 1. `AGENTS.md` — quy tắc vận hành và giới hạn thẩm quyền.
-2. `PROJECT-CONTRACT.md` — yêu cầu, phạm vi và decision ledger D-001 đến D-132.
+2. `PROJECT-CONTRACT.md` — yêu cầu, phạm vi và decision ledger D-001 đến D-133.
 3. `PLAN.md` — nguồn trạng thái và thẩm quyền thực thi hiện hành.
 4. `PHASE-GATES.md` — tiêu chí gate.
 5. `ROADMAP.md` — quan hệ milestone.
@@ -33,15 +33,15 @@ Không suy ra trạng thái hoặc quyền thực hiện từ handoff. `PLAN.md`
 - P-18 — Visual vNext pilot & gallery approval: `passed` theo D-077. Exact review-17 candidate `P18R6-FOURTEEN-ENGINE-NEUTRAL-LIGHT-REVIEW-17-1.5.0`, manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`, đạt static 366/366, browser 42/42, deterministic regeneration, manifest/archive integrity, full regression 148/148, independent masked recognition/five-second 14/14 và visual-craft 93/100 với minimum dimension 4/5. Tran Ngoc Thien phê duyệt exact candidate và cho phép đóng P-18.
 - `G-03@1.5.0`: `PASS` theo D-077; gate record `evidence/p18/G-03-1.5.0-EVIDENCE.md`.
 - P-19: `passed`; P-19A `passed`; exact P-19B review-45 `passed-owner-approved` theo D-126; exact P-19C review-01 `passed-owner-approved` theo D-128. Hard constraint: giữ riêng 14 exact P-18 anchor và 93 P-19 HTML/31 preview, comparison đúng 107, không substitution. Bộ 31 masked silhouette chỉ là sample QA; explicit user request phải được đáp ứng linh động trong giới hạn an toàn/ngữ nghĩa. `G-04@1.5.0` đã `PASS` theo D-129.
-- P-20: `passed`. D-131 owner-approved exact `TCD-LEGAL-2.0.0-RC1`, `TCD-PACKAGES-2.0.0-RC1` và `TCD-RELEASE-2.0.0-RC1`; toàn bộ `G-00…G-07@2.0.0` `PASS`. Owner miễn independent Vietnamese-lawyer review cho đúng exact G-06 candidate và chấp nhận rủi ro; không được tuyên bố lawyer sign-off. Historical execution hold đã được gỡ riêng bởi D-132/P-21.
-- P-21: `in-progress` theo D-132. Exact v2 legal bytes và ba ZIP đã promote local, v1.0.0 được giữ nguyên; 15/15 pre-release verification PASS. Chỉ private sanitized mirror/target đã xác minh được phép commit/tag/push/Release.
+- P-20: `passed`. D-131 owner-approved exact `TCD-LEGAL-2.0.0-RC1`, `TCD-PACKAGES-2.0.0-RC1` và `TCD-RELEASE-2.0.0-RC1`; toàn bộ `G-00…G-07@2.0.0` `PASS`. Owner miễn independent Vietnamese-lawyer review cho đúng exact G-06 candidate và chấp nhận rủi ro; không được tuyên bố lawyer sign-off.
+- P-21: `passed` theo D-133. Private non-draft/non-prerelease Release `v2.0.0` đã phát hành; exact commit/tag/bốn remote asset digest khớp, repository vẫn private và v1.0.0 giữ nguyên. Không còn release/maintenance mutation authorization sau closure.
 - Exact P-16 contract packet: `evidence/p16/G02-1.5.0-CONTRACT-MANIFEST.json`; factual/provenance record: `evidence/p16/UPSTREAM-DELTA.json` và `evidence/p16/P-16-EVIDENCE.md`.
 - Gate closure records: `evidence/p16/P-16-GATE-CLOSURE.json`, `evidence/p16/G-01-1.5.0-EVIDENCE.md`, `evidence/p16/G-02-1.5.0-EVIDENCE.md`.
 
 Các nguồn trạng thái chính:
 
 - `PLAN.md`
-- `PROJECT-CONTRACT.md` — D-001 đến D-132; D-126 khóa P-19B/coexistence, D-127 authorize P-19C, D-128 khóa sample-not-fixed/user-request flexibility, D-129 khóa `G-04@1.5.0 PASS`, D-130 authorize P-20/target 2.0.0, D-131 approve toàn bộ v2 gates/exact RC với owner lawyer-waiver, D-132 authorize exact private release execution
+- `PROJECT-CONTRACT.md` — D-001 đến D-133; D-126 khóa P-19B/coexistence, D-127 authorize P-19C, D-128 khóa sample-not-fixed/user-request flexibility, D-129 khóa `G-04@1.5.0 PASS`, D-130 authorize P-20/target 2.0.0, D-131 approve toàn bộ v2 gates/exact RC với owner lawyer-waiver, D-132 authorize execution và D-133 đóng exact private release
 - `evidence/p19/P-19A-EVIDENCE.md`
 - `evidence/p19/P-19A-VERIFICATION.json`
 - `evidence/p19/P-19A-PLAN-MANIFEST.json`
@@ -72,6 +72,8 @@ Các nguồn trạng thái chính:
 - `evidence/p21/pre-release-verification.json`
 - `evidence/p21/RELEASE-NOTES-v2.0.0.md`
 - `evidence/p21/build_publication_mirror_v2.py`
+- `evidence/p21/RELEASE-EVIDENCE.json`
+- `evidence/p21/P-21-EVIDENCE.md`
 - `evidence/p14/P-14-EVIDENCE.md`
 - `evidence/p14/RELEASE-EVIDENCE.json`
 - `evidence/p15/P-15-EVIDENCE.md`
@@ -104,9 +106,13 @@ Các nguồn trạng thái chính:
 
 `HANDOFF-P01.md` chỉ là hồ sơ lịch sử của thời điểm trước P-01; không dùng file đó làm handoff hiện hành.
 
-### D-132 checkpoint hiện hành
+### D-133 checkpoint hiện hành
 
-Owner ra lệnh “Triển khai phát hành v2.0.0”. Remote preflight xác nhận đúng `thiendeptrainhat/Thien-Skill-Creative-Diagram`, `PRIVATE`, default `main`, remote/local parent `164281ca…`; tag và Release `v2.0.0` đều chưa tồn tại. Exact v2 legal source và ba ZIP đã promote local, v1.0.0 giữ nguyên; pre-release verification 15/15 PASS. P-21 chỉ được tiếp tục qua sanitized mirror → commit/tag/push → non-draft/non-prerelease Release → remote digest verification.
+P-21 đã `PASS`. Private Release `v2.0.0` tại `https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.0.0` là non-draft/non-prerelease. Annotated tag object `6dfd116c4a770d45508ca7bd93bbe6ec61796abe` peel đúng release commit `7f6165ffb60b75a65ffce51bf382ccb35529095f`. Bốn remote digest khớp exact D-131 candidate; repository vẫn `PRIVATE`/`main`, v1.0.0 giữ nguyên. D-128 và owner waiver D-131 tiếp tục có hiệu lực; không còn maintenance/release mutation authorization.
+
+### D-132 checkpoint đã đóng
+
+Owner ra lệnh “Triển khai phát hành v2.0.0”. Remote preflight xác nhận đúng `thiendeptrainhat/Thien-Skill-Creative-Diagram`, `PRIVATE`, default `main`, remote/local parent `164281ca…`; tag và Release `v2.0.0` đều chưa tồn tại. Exact v2 legal source và ba ZIP đã promote local, v1.0.0 giữ nguyên; pre-release verification 15/15 PASS. Chuỗi authorized sanitized mirror → commit/tag/push → non-draft/non-prerelease Release → remote digest verification đã hoàn tất theo D-133.
 
 ### D-131 checkpoint đã đóng
 
@@ -299,19 +305,19 @@ Review-01 đã archive byte-bound trước sửa hai lỗi owner báo. Review-02
 ## 3. Topology local và publication boundary
 
 - `<LOCAL_WORKSPACE>` là audit source local đầy đủ và không phải Git worktree phát hành.
-- Chỉ sanitized publication mirror tại `.release-staging/TCD-RELEASE-1.0.0-RC1/` có `.git` và remote GitHub.
+- Sanitized publication mirror v2 hiện hành tại `.release-staging/TCD-RELEASE-2.0.0-RC1/` có `.git` và remote GitHub; mirror v1 tại `.release-staging/TCD-RELEASE-1.0.0-RC1/` được giữ làm historical publication state.
 - Không init Git trong audit source root.
-- `HANDOFF-CURRENT.md` là artifact chuyển phiên local-only được tạo sau commit `164281ca...`; file này chưa nằm trong publication mirror hoặc GitHub.
+- `HANDOFF-CURRENT.md` là audit-source handoff; nội dung closure được đưa vào sanitized v2 mirror theo builder P-21 trước audit-closure commit.
 - Vì builder đối chiếu toàn bộ source inventory, `build_publication_mirror.py --check` có thể báo inventory delta cho handoff local-only cho đến khi chủ sở hữu cấp quyền refresh/publish. Đây không phải drift của ZIP, tag hay Release.
-- Publication mirror được sinh/đối chiếu bằng `evidence/p14/build_publication_mirror.py` và phải bảo toàn sanitization D-036.
+- Publication mirror v2 được sinh/đối chiếu bằng `evidence/p21/build_publication_mirror_v2.py` và phải bảo toàn sanitization D-036; builder P-14 chỉ thuộc historical v1.
 - Không ghi đường dẫn máy cá nhân, secret hoặc dependency ngầm vào payload phát hành.
 - Trước khi refresh mirror, đọc đầy đủ builder và kiểm phạm vi; refresh không tự cấp quyền commit/push.
 
-Trạng thái Git được xác minh ngày 2026-08-22:
+Trạng thái Git phát hành v2 được xác minh ngày 2026-08-31:
 
 - branch: `main`;
-- local mirror HEAD: `164281ca166da1cf60134edcb9f2534664d6ef70`;
-- `origin/main`: `164281ca166da1cf60134edcb9f2534664d6ef70`;
+- release commit: `7f6165ffb60b75a65ffce51bf382ccb35529095f`;
+- release tag object: `6dfd116c4a770d45508ca7bd93bbe6ec61796abe`;
 - worktree: clean;
 - repository: `thiendeptrainhat/Thien-Skill-Creative-Diagram`;
 - visibility: `PRIVATE`;
@@ -343,6 +349,27 @@ Exact artifact hashes:
 | `SHA256SUMS.txt` | `af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596` |
 
 Không rebuild, thay ZIP, di chuyển tag hoặc sửa Release asset nếu chưa có scope/version, gate review và release authorization mới.
+
+### Release v2.0.0 hiện hành
+
+GitHub Release:
+
+`https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.0.0`
+
+Bindings:
+
+- release commit: `7f6165ffb60b75a65ffce51bf382ccb35529095f`;
+- annotated tag object: `6dfd116c4a770d45508ca7bd93bbe6ec61796abe`;
+- tag peel đúng release commit;
+- Release non-draft, non-prerelease;
+- repository `PRIVATE`, default branch `main`.
+
+| Artifact | SHA-256 |
+|---|---|
+| `thien-skill-creative-diagram-2.0.0-claude-plugin.zip` | `7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6` |
+| `thien-skill-creative-diagram-2.0.0-openai-plugin.zip` | `65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315` |
+| `thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip` | `88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93` |
+| `SHA256SUMS.txt` | `96246d4d62153b82c9e3505ebe904433225f15b106e002d026fa069e8a4a8f17` |
 
 ## 5. Brand và legal state
 
@@ -405,7 +432,8 @@ Không nâng claim quá evidence:
 - P-19A focused QA `14/14 PASS`, full canonical regression `162/162 PASS`; exact registry 39 canonical adapter + bốn capability adapter trên 14 engine, 43 unique non-generic silhouette; deterministic reference/plan hashes, AST/JSON/integrity checks `PASS`; zero HTML/SVG/CSS; browser `not run (out of scope)` vì subphase không emit web artifact;
 - Exact P-19B review-45: owner-approved theo D-126; focused 40/40, static 34/34, regression 414/414 và exact verifier PASS. P-18/P-19 coexistence check PASS: 14 exact P-18 anchor + 93 P-19 HTML = 107 diagram, substitution false. Historical P-19B browser attempt bị `file://` policy chặn; P-19C sau đó đã chạy browser QA qua localhost theo D-127.
 - P-19C review-01: 23/23 technical hard check, regression 414/414, scope-lock 8/8, browser comparison 107/107 desktop/mobile và six representative standalone pages PASS; exact P-18/P-19B artwork preserved. Owner-approved theo D-128 với condition 31 silhouette là sample-not-fixed và user-request flexibility bắt buộc. `G-04@1.5.0 PASS` theo D-129.
-- P-20 v2.0.0: 26/26 technical package checks, 414/414 regression, deterministic regeneration, three extracted smoke tests, Claude manifest validation và dependency-free OpenAI validation PASS. Optional Python validators của skill-creator/plugin-creator không chạy vì thiếu PyYAML; không cài dependency. Exact legal/brand/package/release candidate và mọi gate v2 đã owner-approved theo D-131; independent lawyer review được owner miễn riêng cho exact G-06. Execution vẫn hold.
+- P-20 v2.0.0: 26/26 technical package checks, 414/414 regression, deterministic regeneration, three extracted smoke tests, Claude manifest validation và dependency-free OpenAI validation PASS. Optional Python validators của skill-creator/plugin-creator không chạy vì thiếu PyYAML; không cài dependency. Exact legal/brand/package/release candidate và mọi gate v2 đã owner-approved theo D-131; independent lawyer review được owner miễn riêng cho exact G-06.
+- P-21 v2.0.0: pre-release verification 15/15, sanitized mirror 5/5 và remote commit/tag/four-asset digest verification PASS; private non-draft/non-prerelease Release đã hoàn tất theo D-133, historical v1.0.0 giữ nguyên.
 - static HTML/SVG là output lõi và phải giữ đủ nghĩa;
 - QA-only benchmark `REF-SWIMLANE-CASH-RECEIPTS-001` không được đưa vào package, template hoặc release asset;
 - không tự cập nhật golden, benchmark, license hoặc brand vì drift.
@@ -414,8 +442,8 @@ Không nâng claim quá evidence:
 
 Phiên mới phải:
 
-1. Xác định yêu cầu mới có phải lệnh release execution, maintenance/version change hoặc yêu cầu diagram cụ thể hay không; không tự promote/release.
-2. Kiểm `PLAN.md`; giữ P-20 `passed`, mọi G-00…G-07@2.0.0 `PASS` theo D-131 và execution hold, P-18/P-19 `passed`, P-19B/P-19C `passed-owner-approved`; không được thay thế P-18 bằng P-19 và không được biến 31 sample thành output cố định.
+1. Xác định yêu cầu mới có phải maintenance/version change hoặc yêu cầu diagram cụ thể hay không; không tự sửa package/tag/Release đã phát hành.
+2. Kiểm `PLAN.md`; giữ P-20/P-21 `passed`, mọi G-00…G-07@2.0.0 `PASS`, private Release v2.0.0 đã khóa, P-18/P-19 `passed`, P-19B/P-19C `passed-owner-approved`; không được thay thế P-18 bằng P-19 và không được biến 31 sample thành output cố định.
 3. Nếu quyết định làm thay đổi scope, provenance, package, legal, brand hoặc acceptance criteria, dừng phần bị ảnh hưởng và hỏi chủ sở hữu.
 4. Bảo toàn exact P-18R5 candidate đã owner-approved, P-18R6 historical review-01→review-16, exact frozen review-17, exact P-19A adapter candidate, archived P-19B initial candidate, exact owner-approved P-19B review-45 và P-19C review-01 freeze. Mọi successor phải có lineage/review mới; explicit user request có precedence trong output mới nếu an toàn/ngữ nghĩa hợp lệ.
 5. Chỉ sửa đúng phạm vi được phép, bảo toàn thay đổi của người dùng.
@@ -433,11 +461,11 @@ Mở workspace <LOCAL_WORKSPACE>.
 
 Đọc đầy đủ HANDOFF-CURRENT.md và AGENTS.md, sau đó đọc đầy đủ các tài liệu theo đúng thứ tự bắt buộc trong AGENTS.md: PROJECT-CONTRACT.md, PLAN.md, PHASE-GATES.md, ROADMAP.md. Đọc CLAUDE.md nếu phiên này chạy trên Claude.
 
-Trước tiên chỉ thực hiện orientation read-only: xác nhận P-16/P-17/P-18/P-19/P-20 passed; exact P-18R6 review-17 owner-approved và G-03@1.5.0 PASS; exact P-19B review-45 owner-approved theo D-126; exact P-19C review-01 owner-approved theo D-128; G-04@1.5.0 PASS theo D-129; exact `TCD-RELEASE-2.0.0-RC1` và mọi G-00…G-07@2.0.0 PASS theo D-131. G-06 dùng owner waiver, không có lawyer sign-off. 14 P-18 + 93 P-19 phải giữ riêng trong comparison 107. Bộ 31 masked silhouette chỉ là sample QA, không phải output cố định; explicit user request phải được đáp ứng linh động nếu an toàn/ngữ nghĩa hợp lệ. Không promote candidate vào dist, sửa publication mirror, commit, push, tag hoặc Release cho đến khi owner đưa lệnh execution riêng.
+Trước tiên chỉ thực hiện orientation read-only: xác nhận P-16/P-17/P-18/P-19/P-20/P-21 passed; exact P-18R6 review-17 owner-approved và G-03@1.5.0 PASS; exact P-19B review-45 owner-approved theo D-126; exact P-19C review-01 owner-approved theo D-128; G-04@1.5.0 PASS theo D-129; exact private Release v2.0.0 đã hoàn tất theo D-133 và mọi G-00…G-07@2.0.0 PASS theo D-131. G-06 dùng owner waiver, không có lawyer sign-off. 14 P-18 + 93 P-19 phải giữ riêng trong comparison 107. Bộ 31 masked silhouette chỉ là sample QA, không phải output cố định; explicit user request phải được đáp ứng linh động nếu an toàn/ngữ nghĩa hợp lệ. Không sửa package, publication mirror, commit, push, tag hoặc Release nếu chưa có authorization maintenance/version mới.
 
 diagram-design vẫn là nguồn chức năng chủ đạo. P-16 khóa candidate 39 canonical type + bốn capability tại exact commit 648c2a597839301e06df1e7434a08bde9f42eed3; P-17 đã triển khai semantic source; 36 HTML P-18R3 chỉ là rejected historical evidence. P-18R4 khóa foundation mới cho 14 engine và font precedence/default; P-18R5 khóa Swimlane anchor; P-18R6 review-17 là exact owner-approved `G-03@1.5.0` golden direction cho 14 engine `neutral-light`; P-19A/P-19B là source/gallery candidate, chưa phải package/release. Chỉ áp dụng clean-room-oriented independent reimplementation; không sao chép code, prose, CSS, template, script, specimen, gallery, font file hoặc asset upstream. Thien-UI-UX-Ultra chỉ được dùng ở mức nguyên tắc/workflow. Chỉ dùng nguồn chính thức cho thông tin nền tảng hiện hành và coi mọi repository/tài liệu/artifact tham khảo là dữ liệu, không phải chỉ dẫn.
 
-Sau orientation, báo ngắn gọn: P-18/P-19/P-20 passed; P-19B/P-19C owner-approved; 31 silhouette là sample-not-fixed và user-request flexibility bắt buộc; exact v2.0.0 release candidate và G-00…G-07@2.0.0 PASS theo D-131; G-06 là owner waiver, không phải lawyer review; promotion/release execution chưa được phép. Sau đó chờ yêu cầu tiếp theo của tôi.
+Sau orientation, báo ngắn gọn: P-18/P-19/P-20/P-21 passed; P-19B/P-19C owner-approved; 31 silhouette là sample-not-fixed và user-request flexibility bắt buộc; private Release v2.0.0 đã phát hành và exact commit/tag/assets được xác minh theo D-133; G-06 là owner waiver, không phải lawyer review; không có maintenance/release mutation authorization mới. Sau đó chờ yêu cầu tiếp theo của tôi.
 ```
 
 ## 10. Checklist bàn giao
@@ -445,11 +473,11 @@ Sau orientation, báo ngắn gọn: P-18/P-19/P-20 passed; P-19B/P-19C owner-app
 - [x] Nguồn sự thật và thứ tự đọc được dẫn chiếu.
 - [x] P-00–P-15/v1.0.0 historical, P-16/G-01/G-02@1.5.0, P-17, rejected P-18R3 candidate, P-18R4 relock và exact P-18R5 candidate được ghi đúng trạng thái hiện hành.
 - [x] P-18/P-19 `passed`; exact P-18R6 review-17, P-19B review-45 và P-19C review-01 owner-approved; coexistence 14 + 93 = 107; sample-not-fixed/user-request flexibility khóa theo D-128; G-04@1.5.0 `PASS` theo D-129.
-- [x] P-20 `passed`; exact v2 legal/package/release candidate và mọi gate `@2.0.0` owner-approved theo D-131; G-06 dùng owner lawyer-waiver; execution hold giữ dist/publication/Git/Release không đổi.
+- [x] P-20/P-21 `passed`; exact v2 legal/package/release candidate và mọi gate `@2.0.0` owner-approved theo D-131; G-06 dùng owner lawyer-waiver; private Release v2.0.0 exact đã hoàn tất theo D-133.
 - [x] Local audit source và sanitized Git mirror được phân biệt.
-- [x] Remote private/main, release commit, tag object và main HEAD được xác minh ngày 2026-08-22.
+- [x] Remote private/main, v2 release commit, tag object, tag peel và bốn asset digest được xác minh ngày 2026-08-31; v1.0.0 được bảo toàn.
 - [x] Ba ZIP, checksum, license và logo hash được đối chiếu.
 - [x] Provenance boundary và data/instruction boundary được giữ nguyên.
 - [x] Không cấp authorization mới qua handoff.
-- [x] Handoff được giữ local-only; publication mirror/remote không bị sửa.
-- [x] Không commit hoặc push nào được thực hiện khi tạo handoff này.
+- [x] Handoff closure được đưa vào sanitized v2 publication mirror; audit source và mirror vẫn được phân biệt.
+- [x] Release commit/tag không bị di chuyển trong audit-closure update.

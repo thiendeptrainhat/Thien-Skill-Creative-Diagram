@@ -1,4 +1,4 @@
-# Roadmap — Thien-Skill-Creative-Diagram v1.0.0 baseline / v2.0.0 approved release candidate
+# Roadmap — Thien-Skill-Creative-Diagram v1.0.0 baseline / v2.0.0 released
 
 File này chỉ mô tả **thứ tự milestone và kết quả cấp cao**. Trạng thái có thẩm quyền và checklist nằm duy nhất trong `PLAN.md`; điều kiện pass/fail nằm trong `PHASE-GATES.md`.
 
@@ -44,7 +44,7 @@ flowchart LR
 | M12 — Visual vNext foundation & pilot | P-18R4→P-18R6 | Relock contract/foundation, chứng minh canonical kernel bằng Swimlane anchor rồi một `neutral-light` anchor cho đủ 14 layout engine; owner duyệt exact candidate trước khi nhân rộng. | G-03@1.5.0 |
 | M13 — Full 39-type source/gallery | P-19A→P-19C | P-19B review-45 và P-19C review-01 đã owner-approved; P-18/P-19 giữ riêng, đúng 14 + 93 = 107, không substitution. D-128 khóa sample-not-fixed/user-request flexibility; M13/P-19 đóng và `G-04@1.5.0 PASS` theo D-129. | G-04@1.5.0 PASS |
 | M14 — v2.0.0 package/release preparation | P-20 | Exact legal/brand, ba deterministic package và `TCD-RELEASE-2.0.0-RC1` đã owner-approved theo D-131; owner miễn independent lawyer review cho exact G-06 và chấp nhận rủi ro. Execution hold giữ historical dist/publication/Git/Release không đổi. | G-00…G-07@2.0.0 PASS |
-| M15 — Private v2.0.0 release | P-21 | D-132 authorize exact promotion, sanitized private mirror, commit/tag/push, GitHub Release và remote verification; v1.0.0 giữ nguyên. | G-07@2.0.0 execution |
+| M15 — Private v2.0.0 release | P-21 | Hoàn tất theo D-133: private non-draft/non-prerelease Release, exact commit/tag/asset digest verified; v1.0.0 giữ nguyên. | G-07@2.0.0 execution PASS |
 
 ## Nguyên tắc tiến tuyến
 
@@ -53,7 +53,7 @@ flowchart LR
 - Không rút ngắn QA, provenance hoặc legal gate để đạt mốc release.
 - Mọi thay đổi phạm vi phải quay lại `PROJECT-CONTRACT.md` trước khi cập nhật roadmap.
 - M10/P-16, M11/P-17, M12/P-18 và M13/P-19 đã hoàn tất. Exact P-18R6 review-17 giữ `G-03@1.5.0 PASS`; P-19B review-45 và P-19C review-01 đã owner-approved theo D-126/D-128; `G-04@1.5.0 PASS` theo D-129 với hard constraint 14 P-18 + 93 P-19 và sample-not-fixed flexibility.
-- M14/P-20 đã hoàn tất và toàn bộ gate v2 `PASS` theo D-131 cho exact `TCD-RELEASE-2.0.0-RC1`. Candidate/evidence vẫn local; copy/promote vào `dist`, commit, push, tag, publication và Release tiếp tục hold cho đến lệnh thực thi riêng.
-- M15/P-21 đang thực thi theo lệnh D-132; chỉ exact private target/candidate được phép và phải dừng nếu preflight/hash/visibility không khớp.
+- M14/P-20 đã hoàn tất và toàn bộ gate v2 `PASS` theo D-131 cho exact `TCD-RELEASE-2.0.0-RC1`; execution hold lịch sử đã được D-132 gỡ đúng một lần cho P-21.
+- M15/P-21 đã hoàn tất theo D-133. Release `v2.0.0` là private, exact tag/commit/assets đã được đối chiếu; không có maintenance/release mutation tiếp theo nếu chưa có authorization mới.
 
 **Current authoritative status:** xem `PLAN.md`.

@@ -1,7 +1,7 @@
 # Hợp đồng dự án — Thien-Skill-Creative-Diagram
 
 **Mã tài liệu:** PC-001
-**Phiên bản tài liệu:** 2.0-release
+**Phiên bản tài liệu:** 2.0-released
 **Ngày cập nhật:** 2026-08-31
 **Chủ sở hữu:** Tran Ngoc Thien
 **Baseline yêu cầu:** Đã được chủ sở hữu duyệt ngày 2026-08-15
@@ -27,8 +27,8 @@ Tạo một skill duy nhất có khả năng thiết kế diagram chuyên nghi�
 
 Tên hiển thị: `Thien-Skill-Creative-Diagram`
 Technical skill ID, folder name và plugin ID: `thien-skill-creative-diagram`
-Phiên bản đã phát hành và được bảo toàn: `1.0.0`
-Phiên bản phát hành đang thực thi: `2.0.0` theo D-132; source/gallery lineage nội bộ `1.5.0` tiếp tục bất biến
+Phiên bản đã phát hành và được bảo toàn: `1.0.0` và `2.0.0`
+Phiên bản phát hành hiện hành: `2.0.0` theo D-132/D-133; source/gallery lineage nội bộ `1.5.0` tiếp tục bất biến
 
 ## 3. Nguồn chức năng chủ đạo
 
@@ -526,6 +526,7 @@ Skill v1.0.0 phải có khả năng tạo một diagram nguyên bản cùng cấ
 | D-130 | Ngày 2026-08-30, chủ sở hữu ủy quyền lập và triển khai phase chuẩn bị package/release, đồng thời đổi **target release version** từ candidate line v1.5.0 thành `2.0.0`. Authorization mở riêng P-20 để: rebind exact passed source/gallery lineage vào target `2.0.0`; cập nhật package-facing canonical guidance không làm đổi frozen P-18/P-19 artwork; lập exact v2 legal/provenance/brand carry-forward candidate; xác minh lại official platform surfaces; tạo ba deterministic package candidate trong `evidence/p20/candidate-dist/`; chạy package, parity, hygiene, install/manifest, smoke và regression QA; lập hồ sơ G-01…G-07@2.0.0 để owner/lawyer review. Exact P-18 manifest `7925c1…a03a`, exact P-19B manifest `ae95aca9…0ba2`, P-19C freeze `5c98b8f5…80ed`, quy tắc coexistence `14 + 93 = 107` và D-128 sample-not-fixed/user-request flexibility phải giữ nguyên; các ID nội bộ mang suffix `1.5.0` được giữ làm immutable lineage, không được đổi tên để giả lập candidate mới. D-130 không tự phê duyệt bất kỳ gate `@2.0.0`, legal/brand candidate, ZIP hoặc release candidate nào; không cho phép sửa/xóa `dist/` v1.0.0, publication mirror, commit, push, tag, tạo/thay Release hoặc phát hành. | LOCKED |
 | D-131 | Ngày 2026-08-31, chủ sở hữu chỉ dẫn “tôi duyệt hết, không cần luật sư”, qua đó phê duyệt toàn bộ `G-00…G-07@2.0.0` cho exact release candidate `TCD-RELEASE-2.0.0-RC1`, manifest SHA-256 `2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72`. Approval khóa exact legal/brand candidate `TCD-LEGAL-2.0.0-RC1` aggregate `93643da0…f29c0` và exact package candidate `TCD-PACKAGES-2.0.0-RC1` gồm Claude `7ef52b21…99f6`, OpenAI `65c2d6fb…4315`, Universal `88e22cae…5f93`. Riêng `G-06@2.0.0`, owner miễn yêu cầu luật sư Việt Nam độc lập và chấp nhận rủi ro pháp lý cho đúng version/hash này; hồ sơ phải mô tả đây là owner waiver, không được tuyên bố đã có lawyer review. D-128 và coexistence `14 P-18 + 93 P-19 = 107` tiếp tục bất biến. Việc PASS gate/phê duyệt exact candidate không đồng nghĩa với lệnh thực thi: chưa được copy/promote vào `dist`, publication, commit, push, tag, tạo/thay Release hoặc phát hành cho đến khi có lệnh riêng, rõ ràng của owner. | LOCKED |
 | D-132 | Ngày 2026-08-31, chủ sở hữu ra lệnh rõ ràng “Triển khai phát hành v2.0.0”, qua đó authorize P-21 thực thi private release cho đúng `TCD-RELEASE-2.0.0-RC1` đã duyệt theo D-131. Scope gồm: promote exact legal/provenance bytes vào canonical source; copy ba exact ZIP v2.0.0 và versioned checksum vào `dist` mà không xóa/sửa v1.0.0; cập nhật README/release notes; tạo deterministic sanitized publication mirror v2 từ private `main`; preflight repository `thiendeptrainhat/Thien-Skill-Creative-Diagram` phải vẫn `PRIVATE`, remote `main` phải khớp local parent, tag/Release `v2.0.0` phải chưa tồn tại; commit vào `main`, tạo annotated tag `v2.0.0`, push `main` và tag, tạo non-draft/non-prerelease GitHub Release kèm đúng ba ZIP và candidate `SHA256SUMS.txt`; cuối cùng đối chiếu remote commit/tag/asset digest và ghi evidence. Không được đổi approved package/legal/brand bytes, P-18/P-19, D-128, tag/Release v1.0.0, repository visibility hoặc target remote. Nếu bất kỳ preflight/hash/private check nào fail, dừng trước mutation tương ứng. | LOCKED |
+| D-133 | Ngày 2026-08-31, P-21 hoàn tất `PASS`. Private GitHub Release `v2.0.0` đã phát hành tại `https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.0.0`, non-draft/non-prerelease. Annotated tag object `6dfd116c4a770d45508ca7bd93bbe6ec61796abe` peel đúng release commit `7f6165ffb60b75a65ffce51bf382ccb35529095f`. Bốn remote asset khớp exact candidate: checksum `96246d4d…8f17`, Claude `7ef52b21…99f6`, OpenAI `65c2d6fb…4315`, Universal `88e22cae…5f93`; repository vẫn `PRIVATE`/`main`, v1.0.0 và bốn digest lịch sử giữ nguyên. Evidence: `evidence/p21/RELEASE-EVIDENCE.json` và `evidence/p21/P-21-EVIDENCE.md`. D-128, coexistence `14 + 93 = 107` và owner waiver D-131 tiếp tục có hiệu lực; quyết định này không authorize maintenance mutation, di chuyển tag, thay asset hoặc release kế tiếp. | LOCKED |
 
 Không thay đổi mục `LOCKED` nếu chưa có quyết định mới, rõ ràng của chủ sở hữu.
 

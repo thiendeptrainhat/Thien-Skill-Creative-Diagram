@@ -1,0 +1,89 @@
+{
+  "record_id": "P21-RELEASE-EVIDENCE-2.0.0-1",
+  "decision": "D-132",
+  "closure_decision": "D-133",
+  "verified_at": "2026-08-31T00:00:00+07:00",
+  "result": "PASS",
+  "repository": {
+    "name_with_owner": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram",
+    "visibility": "PRIVATE",
+    "default_branch": "main"
+  },
+  "release": {
+    "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.0.0",
+    "release_id": 379358431,
+    "name": "Thien-Skill-Creative-Diagram v2.0.0",
+    "tag": "v2.0.0",
+    "draft": false,
+    "prerelease": false,
+    "published_at": "2026-08-30T17:56:38Z"
+  },
+  "git_binding": {
+    "release_commit": "7f6165ffb60b75a65ffce51bf382ccb35529095f",
+    "remote_main_at_release_creation": "7f6165ffb60b75a65ffce51bf382ccb35529095f",
+    "annotated_tag_object": "6dfd116c4a770d45508ca7bd93bbe6ec61796abe",
+    "tag_peels_to_release_commit": true
+  },
+  "assets": [
+    {
+      "name": "SHA256SUMS.txt",
+      "size": 363,
+      "sha256": "96246d4d62153b82c9e3505ebe904433225f15b106e002d026fa069e8a4a8f17",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-2.0.0-claude-plugin.zip",
+      "size": 377788,
+      "sha256": "7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-2.0.0-openai-plugin.zip",
+      "size": 468849,
+      "sha256": "65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315",
+      "state": "uploaded"
+    },
+    {
+      "name": "thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip",
+      "size": 460534,
+      "sha256": "88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93",
+      "state": "uploaded"
+    }
+  ],
+  "candidate_binding": {
+    "release_candidate": "TCD-RELEASE-2.0.0-RC1",
+    "release_manifest_sha256": "2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72",
+    "legal_logical_aggregate_sha256": "93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0",
+    "pre_release_checks": "15/15 PASS",
+    "package_checks": "26/26 PASS",
+    "full_regression": "414/414 PASS"
+  },
+  "lineage_invariants": {
+    "separate_p18_count": 14,
+    "separate_p19_count": 93,
+    "combined_count": 107,
+    "p19_substitutes_or_overwrites_p18": false,
+    "masked_silhouettes": 31,
+    "masked_silhouette_policy": "QA_SAMPLES_NOT_FIXED_OUTPUTS",
+    "explicit_safe_semantically_valid_user_request_has_precedence": true
+  },
+  "legal_review_statement": {
+    "independent_vietnamese_lawyer_review": false,
+    "owner_waiver_applies": true,
+    "note": "D-131 is an owner waiver for the exact v2.0.0 legal candidate, not a claim of lawyer review."
+  },
+  "historical_v1_preservation": {
+    "release_exists": true,
+    "release_id": 371118210,
+    "tag": "v1.0.0",
+    "draft": false,
+    "prerelease": false,
+    "asset_digests": {
+      "SHA256SUMS.txt": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596",
+      "thien-skill-creative-diagram-1.0.0-claude-plugin.zip": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
+      "thien-skill-creative-diagram-1.0.0-openai-plugin.zip": "7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c",
+      "thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip": "4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f"
+    }
+  }
+}
