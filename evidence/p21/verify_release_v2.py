@@ -19,6 +19,7 @@ P21 = ROOT / "evidence" / "p21"
 REPORT = P21 / "pre-release-verification.json"
 RELEASE_MANIFEST_SHA = "2905d4d3945a75ba9b644aece005bcb6de5bb2278ca8f7e47a4247189c77be72"
 P20_REPORT_SHA = "8d147d5affb25597125771bf15c458fb5563d2828294e531c49d0f14eb91bc44"
+P20_REPORT_SANITIZED_SHA = "4d36316d15c7c7157c27eb7a446af82ada7319ad12e25aebb8bd9fa1db46b98f"
 V1 = {
     "SHA256SUMS.txt": "af491f8f0dc9f3dd86ca9158a5456fb36e34acc14aa70030c4e46f6d5ed17596",
     "thien-skill-creative-diagram-1.0.0-claude-plugin.zip": "bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9",
@@ -98,7 +99,13 @@ def main() -> int:
 
     p20_report_path = P20 / "verification-report.json"
     p20_report = json.loads(p20_report_path.read_text(encoding="utf-8"))
-    add(checks, "V-P21-008", digest(p20_report_path) == P20_REPORT_SHA and p20_report["summary"] == {"checks": 26, "passed": 26, "failed": 0}, "Frozen P-20 package verification remains exact at 26/26 PASS")
+    add(
+        checks,
+        "V-P21-008",
+        digest(p20_report_path) in {P20_REPORT_SHA, P20_REPORT_SANITIZED_SHA}
+        and p20_report["summary"] == {"checks": 26, "passed": 26, "failed": 0},
+        "Frozen P-20 package verification remains exact at 26/26 PASS in audit-source or exact sanitized publication form",
+    )
 
     legal_check = run([sys.executable, "evidence/p20/build_legal_candidate_v2.py", "--check"])
     package_check = run([sys.executable, "evidence/p20/build_packages_v2.py", "--check"])

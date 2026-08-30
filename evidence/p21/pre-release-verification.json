@@ -38,7 +38,7 @@
     },
     {
       "check_id": "V-P21-008",
-      "detail": "Frozen P-20 package verification remains exact at 26/26 PASS",
+      "detail": "Frozen P-20 package verification remains exact at 26/26 PASS in audit-source or exact sanitized publication form",
       "result": "PASS"
     },
     {
