@@ -3,7 +3,7 @@
 **Chủ sở hữu:** Tran Ngoc Thien  
 **Cập nhật:** 2026-08-31  
 **Phiên bản hiện hành:** `2.0.0`  
-**Trạng thái:** released/private; exact D-139 maintenance candidate đã owner-approved; one-time commit/push lên `main` đang được thực thi
+**Trạng thái:** released/private; D-139 đã commit/push lên `main`; không có phase mutation đang được phép
 
 File này là nguồn sự thật duy nhất cho phạm vi, trạng thái, gate và quyết định còn hiệu lực. Lịch sử chi tiết nằm trong Git và evidence đã khóa; không tái tạo thêm plan, roadmap, handoff hoặc decision file ở root.
 
@@ -24,7 +24,7 @@ Tạo một skill provider-neutral có khả năng thiết kế diagram chuyên 
 - Source/gallery lineage 1.5.0: G-01, G-02, G-03, G-04 `PASS`; G-05/G-06/G-07 không dùng cho release line này.
 - Target v2.0.0 gates G-00…G-07: `PASS`.
 - P-21 private release execution: `PASS` theo D-133.
-- Current authorization: one-time authorization chỉ áp dụng để hoàn tất commit hiện tại và push commit đó một lần lên `origin/main`; tự hết hiệu lực ngay khi push thành công và không cho phép commit/push tiếp theo. Package mutation, dist mutation, publication khác, tag và Release chưa được phép.
+- Current authorization: không có. One-time authorization cho D-139 đã được sử dụng và hết hiệu lực sau khi commit `dee8c5c6d0722fd0ae61648a385d4f5493e79171` được push thành công lên `origin/main`. Package mutation, dist mutation, publication, commit, push, tag và Release chưa được phép.
 
 ## 3. Release bindings
 
@@ -118,7 +118,7 @@ Không được bù hard failure về security, semantic, numeric integrity, acc
 - D-136: implementation và technical QA completed. Catalog công khai hợp nhất đúng 135 sample, không lộ phase namespace; 14 anchor đã đủ ba mode và public folder cũ theo phase đã được loại bỏ. Baseline approval 14 + 93 = 107 không thay đổi. Quyết định này không cấp package, dist, publication, commit, push, tag hoặc Release.
 - D-137: owner-approved exact unified catalog gồm 45 diagram identity × 3 version = 135 diagram. `neutral-light`, `neutral-dark` và `editorial` ngang cấp tuyệt đối; không mode nào là mặc định, chính, phụ, fallback hoặc ưu tiên hơn mode khác. Approval này đóng owner visual approval còn thiếu của 28 variant D-136 nhưng không cấp package, dist, publication, commit, push, tag hoặc Release.
 - D-138: completed. Canonical Git worktree đã được hợp nhất tại root; release staging, snapshot history trùng lặp, review superseded, withdrawn artifacts, duplicate candidate-dist và rác runtime/file hệ thống đã bị xóa sau quarantine QA. Exact source/catalog 135 diagram, final evidence, release tags/digests và owner changes được bảo toàn; `.gitignore` ngăn rác tái phát. Không commit, push, tag, Release hoặc publication.
-- D-139: owner-approved exact maintenance candidate theo inventory fingerprint SHA-256 `ce82e433cd774ab2bdffebe614fc1de08e072b832eb7b4a14010e061e0d73744`; sau đó owner đã cho phép stage, commit và push exact candidate lên `origin/main`. Candidate hợp nhất governance, catalog 135 sample và cleanup D-138; không thay package/dist, release tag hoặc Release. Các approval/authorization record trong `PROJECT.md` là bookkeeping bắt buộc phát sinh trực tiếp từ quyết định owner.
+- D-139: completed. Owner-approved exact maintenance candidate theo inventory fingerprint SHA-256 `ce82e433cd774ab2bdffebe614fc1de08e072b832eb7b4a14010e061e0d73744`, sau đó cho phép stage/commit/push. Exact candidate được commit tại `dee8c5c6d0722fd0ae61648a385d4f5493e79171` và đã được xác minh trên `origin/main`; one-time authorization đã hết hiệu lực. Candidate hợp nhất governance, catalog 135 sample và cleanup D-138; không thay package/dist, release tag hoặc Release.
 
 ## 10. File policy
 
