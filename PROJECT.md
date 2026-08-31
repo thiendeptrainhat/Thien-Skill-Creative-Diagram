@@ -3,7 +3,7 @@
 **Chủ sở hữu:** Tran Ngoc Thien  
 **Cập nhật:** 2026-08-31  
 **Phiên bản hiện hành:** `2.0.0`  
-**Trạng thái:** released/private; D-139 đã commit/push lên `main`; không có phase mutation đang được phép
+**Trạng thái:** released/private; D-140 README information architecture refresh completed, chờ commit/push exact authorized change set
 
 File này là nguồn sự thật duy nhất cho phạm vi, trạng thái, gate và quyết định còn hiệu lực. Lịch sử chi tiết nằm trong Git và evidence đã khóa; không tái tạo thêm plan, roadmap, handoff hoặc decision file ở root.
 
@@ -24,7 +24,7 @@ Tạo một skill provider-neutral có khả năng thiết kế diagram chuyên 
 - Source/gallery lineage 1.5.0: G-01, G-02, G-03, G-04 `PASS`; G-05/G-06/G-07 không dùng cho release line này.
 - Target v2.0.0 gates G-00…G-07: `PASS`.
 - P-21 private release execution: `PASS` theo D-133.
-- Current authorization: không có. One-time authorization cho D-139 đã được sử dụng và hết hiệu lực sau khi commit `dee8c5c6d0722fd0ae61648a385d4f5493e79171` được push thành công lên `origin/main`. Package mutation, dist mutation, publication, commit, push, tag và Release chưa được phép.
+- Current authorization: one-time D-140 cho phép commit exact change set chỉ gồm `README.md` và record tương ứng trong `PROJECT.md`, sau đó push lên `origin/main`; authorization tự hết hiệu lực khi push thành công. Package mutation, dist mutation, tag và Release không được phép.
 
 ## 3. Release bindings
 
@@ -104,6 +104,7 @@ Không được bù hard failure về security, semantic, numeric integrity, acc
 - Historical snapshot/review paths được nhắc trong frozen evidence là binding theo thời điểm tạo evidence, không phải live workspace dependency. D-138 chuyển custody của các bytes superseded này sang Git commit `e1d685a57a38b101f674018687c128d7b3d7b0d9`; final manifest, exact source/gallery, review-45, P-19C và release evidence vẫn ở live tree.
 - Repository cleanup D-138: canonical Git metadata đã được đưa về workspace root; `HEAD` và `origin/main` cùng trỏ `e1d685a57a38b101f674018687c128d7b3d7b0d9`, tag `v2.0.0` vẫn peel đúng `7f6165ffb60b75a65ffce51bf382ccb35529095f`. Đã loại bỏ 41.806 file trùng/superseded/rác, giảm workspace từ khoảng 3,8 GiB xuống 100 MiB gồm 54 MiB Git metadata. Post-cleanup QA: 135 HTML + 135 PNG, 0 basename mismatch; P-18/P-19 exact manifest hash giữ nguyên; bốn v2 dist digest khớp; canonical regression 414/414 PASS; Git fsck và diff whitespace PASS; 0 cache/`.DS_Store`; không có staged change.
 - D-139 maintenance candidate: exact working tree gồm 20.312 path change — 20.037 deletion (20.030 historical/superseded evidence và bảy root governance file), một modification (`AGENTS.md`) và 274 addition (`PROJECT.md`, `.gitignore`, 136 asset HTML, 135 PNG screenshot và một canonical sample-library builder). Audit đã loại bỏ accidental personal-machine paths khỏi 24 live evidence/script file bằng placeholder trung lập trước khi chốt candidate; package/dist không đổi. QA: canonical regression 414/414 PASS; catalog check 45 identity × 3 mode = 135 HTML và 135/135 PNG hợp lệ; P-18 exact manifest SHA-256 `7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a`; P-19 current gallery/freeze manifests có đủ live dependency, còn missing path trong frozen source manifest chỉ thuộc governance/review lịch sử đã được D-138 chuyển custody sang Git; bốn v2 dist digest khớp D-133; JSON 126/126 parse; root allowlist, secret/personal-path scan, symlink/runtime-junk scan và Git fsck PASS. Staged `git diff --check` chỉ báo trailing spaces đã có trong exact owner-approved/generated catalog HTML và ba Markdown hard-break; giữ nguyên catalog bytes để không làm drift exact approval, không có patch corruption khác. Trước execution index chưa stage; sau owner authorization exact 20.312 path đã được stage. `skill-creator` canonical `quick_validate.py` không thể nạp do runtime thiếu PyYAML, nhưng kiểm tra tương đương toàn bộ rule của validator và parse `agents/openai.yaml` đều PASS.
+- D-140 README refresh: `README.md` được sắp lại đúng thứ tự giới thiệu → lợi ích → vai trò → hướng dẫn sử dụng, còn hướng dẫn cài đặt là major section cuối. Phần giới thiệu nhấn mạnh v2.0.0 có 45 diagram và nhúng đúng 45/45 PNG `neutral-light` duy nhất, mỗi ảnh dẫn tới đúng một HTML chi tiết tồn tại; đối soát exact với filesystem PASS, 0 thiếu/0 trùng. Lưới có đúng 15 row × 3 cell; catalog check vẫn giữ 45 identity × 3 mode = 135 HTML và 135 PNG. `git diff --check` PASS; exact v2 package digest và tag peel không đổi.
 
 ## 9. Quyết định còn hiệu lực
 
@@ -119,6 +120,7 @@ Không được bù hard failure về security, semantic, numeric integrity, acc
 - D-137: owner-approved exact unified catalog gồm 45 diagram identity × 3 version = 135 diagram. `neutral-light`, `neutral-dark` và `editorial` ngang cấp tuyệt đối; không mode nào là mặc định, chính, phụ, fallback hoặc ưu tiên hơn mode khác. Approval này đóng owner visual approval còn thiếu của 28 variant D-136 nhưng không cấp package, dist, publication, commit, push, tag hoặc Release.
 - D-138: completed. Canonical Git worktree đã được hợp nhất tại root; release staging, snapshot history trùng lặp, review superseded, withdrawn artifacts, duplicate candidate-dist và rác runtime/file hệ thống đã bị xóa sau quarantine QA. Exact source/catalog 135 diagram, final evidence, release tags/digests và owner changes được bảo toàn; `.gitignore` ngăn rác tái phát. Không commit, push, tag, Release hoặc publication.
 - D-139: completed. Owner-approved exact maintenance candidate theo inventory fingerprint SHA-256 `ce82e433cd774ab2bdffebe614fc1de08e072b832eb7b4a14010e061e0d73744`, sau đó cho phép stage/commit/push. Exact candidate được commit tại `dee8c5c6d0722fd0ae61648a385d4f5493e79171` và đã được xác minh trên `origin/main`; one-time authorization đã hết hiệu lực. Candidate hợp nhất governance, catalog 135 sample và cleanup D-138; không thay package/dist, release tag hoặc Release.
+- D-140: implementation và QA completed. README đưa phần giới thiệu skill lên đầu, tiếp theo là lợi ích, vai trò và hướng dẫn sử dụng; hướng dẫn cài đặt nằm ở cuối. Phần giới thiệu nhấn mạnh v2.0.0 có 45 diagram và hiển thị đủ 45 ảnh neutral-light với link HTML chi tiết; 45 diagram vẫn là mẫu tham chiếu linh động và ba mode vẫn ngang cấp. Owner cho phép one-time commit và push exact change set lên `origin/main`; không cho phép thay package/dist, tag hoặc Release.
 
 ## 10. File policy
 
