@@ -1,0 +1,122 @@
+{
+  "record_id": "D146-REPLACEMENT-SENTINEL-1",
+  "decision": "D-146",
+  "target_version": "2.1.0",
+  "recorded_at": "2026-08-31T22:14:24+07:00",
+  "disposition": "HARD-FAIL",
+  "step_4_state": "BLOCKED",
+  "scope": {
+    "protocol_timeout_correction": "COMPLETED",
+    "replacement_sentinel_runs_authorized": 1,
+    "replacement_sentinel_runs_executed": 1,
+    "replacement_sentinel_reruns_remaining": 0,
+    "runtime_or_test_modification_authorized": false,
+    "runtime_or_test_modified": false
+  },
+  "historical_binding": {
+    "d145_record": "evidence/p22/D-145-REMEDIATION-RECORD.json",
+    "d145_record_sha256": "f1fca83c66742d1d3610a618d7a8ecb7352a67f4dfefbf9d2b032bdd72b0c1f6",
+    "d145_reclassified": false
+  },
+  "frozen_inputs": {
+    "candidate_target": "openai-plugin",
+    "candidate_version": "2.1.0-d145.1",
+    "candidate_archive_sha256": "d3c4cc5051ee2831586c404a47f7b8a83761cee0f066cf4c0ed0a29545b42bfc",
+    "candidate_archive_bytes": 495424,
+    "candidate_file_count": 118,
+    "candidate_byte_identical_to_d145": true,
+    "candidate_registry_sha256": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787",
+    "candidate_profile_record_sha256": "9ec22eb819e220000e75227f19da0cfc9036669cf9e12f849d4f327b3bcf5f40",
+    "candidate_smoke_resolution": {
+      "requested_selector": "architecture",
+      "selected_profile": "topology-and-zones",
+      "canonical_parent": "architecture",
+      "layout_engine": "topology-and-zones"
+    },
+    "prompt_sha256": "2e54dee546feeeebba064f517ca3af76af08c6380cc013a84f9b0e8b89dd2b3a",
+    "prompt_byte_identical_to_d145": true,
+    "oracle_sha256": "3b26793003704af38a3d3c0590ed230d02e7a33afa3127677a54d5cf22621981",
+    "oracle_semantics": "D-145 structural and semantic oracle plus the D-146 execution limits",
+    "expected_profile": "topology-and-zones"
+  },
+  "execution_limits": {
+    "hard_wall_seconds": 900,
+    "no_material_progress_seconds": 300,
+    "post_artifact_validation_seconds": 180,
+    "poll_interval_seconds": 30,
+    "stop_ack_grace_seconds": 60,
+    "clock_origin": "generator turn started_at",
+    "material_progress": "completed tool/file event or expected-output hash/size change",
+    "non_progress": [
+      "reasoning",
+      "status commentary",
+      "task active state",
+      "placeholder file"
+    ],
+    "limit_disposition": "HARD-FAIL"
+  },
+  "execution": {
+    "platform": "Codex local",
+    "environment": "fresh projectless task",
+    "task_id": "01a05851-be84-72a0-ba77-951edef8ec50",
+    "turn_started_at": "2026-08-31T21:55:47+07:00",
+    "turn_started_epoch": 1788188147,
+    "hard_wall_deadline_at": "2026-08-31T22:10:47+07:00",
+    "hard_wall_deadline_epoch": 1788189047,
+    "first_controller_poll_after_deadline_at": "2026-08-31T22:11:09+07:00",
+    "first_controller_poll_after_deadline_epoch": 1788189069,
+    "poll_overshoot_seconds": 22,
+    "poll_overshoot_within_frozen_interval": true,
+    "trigger": "HARD_WALL_SECONDS",
+    "no_material_progress_triggered": false,
+    "output_file_count_at_deadline_poll": 0,
+    "output_artifacts_at_deadline_poll": [],
+    "stop_requested": true,
+    "stop_acknowledged_within_grace": false,
+    "write_lock_and_cleanup_at": "2026-08-31T22:13:01+07:00",
+    "write_lock_and_cleanup_epoch": 1788189181,
+    "task_state_at_cleanup": "active",
+    "task_completed_at": "2026-08-31T22:13:46+07:00",
+    "task_completed_epoch": 1788189226,
+    "task_total_duration_ms": 1079176,
+    "task_final_status": "completed-after-controller-stop",
+    "task_final_message": "Stopped at the pre-frozen hard timeout before artifact emission. No output files were written.",
+    "stop_acknowledged_after_cleanup": true,
+    "os_temp_cleanup": "PASS",
+    "isolation_observation": "No parent repository, .git, governance, evidence, approved-asset, screenshot, oracle, prior-task, browser, network, connector, installed-skill, or dependency-install access was observed before disposition.",
+    "generator_last_report": "Semantic model and package audit passed; profiled SVG emission had not produced an output file.",
+    "controller_protocol_observations": {
+      "frozen_limit_bytes_used_without_change": true,
+      "hard_wall_enforced": true,
+      "no_extension_or_coaching": true,
+      "grace_cleanup_delay_seconds_from_deadline_poll": 112,
+      "grace_cleanup_delay_exceeded_frozen_grace_by_seconds": 52,
+      "grace_delay_effect_on_verdict": "none; output inventory remained empty and hard-fail was already fixed at the hard-wall poll",
+      "controller_conformance": "PARTIAL-GRACE-CLEANUP-OVERSHOOT"
+    }
+  },
+  "review": {
+    "artifact_freeze": "NOT-RUN-NO-ARTIFACT",
+    "structural_judge": "NOT-RUN-NO-ARTIFACT",
+    "blind_visual_reviewer": "NOT-RUN-NO-ARTIFACT",
+    "reconciliation_auditor": "NOT-RUN-NO-ARTIFACT",
+    "behavioral_structural_conformance": "NOT-DEMONSTRATED"
+  },
+  "protected_surfaces_modified": {
+    "runtime_source_or_tests": false,
+    "approved_assets": false,
+    "golden_or_benchmark": false,
+    "license_or_brand": false,
+    "dist_or_release_archive": false,
+    "git_index_history_tag_or_release": false,
+    "frozen_d144_or_d145_evidence": false
+  },
+  "conclusion": {
+    "protocol_timeout_ambiguity_from_d145_removed": true,
+    "replacement_sentinel_passed": false,
+    "reason": "The exact candidate and raw prompt were bound to pre-frozen limits. At the first permitted controller poll after the 900-second hard wall, the isolated generator remained active and had emitted zero artifacts, so the pre-frozen oracle deterministically required HARD-FAIL. No structural or visual reviewer could run. The controller exceeded the 60-second cleanup grace by 52 seconds; this is recorded as a controller protocol deviation but cannot change the already-fixed hard-fail because no artifact appeared before or at disposition.",
+    "step_4_may_start": false,
+    "owner_decision_required": true,
+    "no_rerun_authorized": true
+  }
+}

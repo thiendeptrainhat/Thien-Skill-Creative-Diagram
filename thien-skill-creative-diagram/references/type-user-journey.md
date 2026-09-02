@@ -12,7 +12,7 @@ Use for an ordered journey whose stages retain actions, touchpoints, and optiona
 ## Required semantics
 
 - Preserve stage order, action, and touchpoint.
-- Keep sentiment within its declared normalized scale and separate from factual narrative.
+- Preserve supplied normalized numeric sentiment or exact categorical sentiment; never convert between them.
 
 ## Allowed abstract roles
 

@@ -180,6 +180,13 @@
       },
       "allOf": [
         {
+          "if": { "properties": { "kind": { "const": "column" } }, "required": ["kind"] },
+          "then": {
+            "required": ["data_type"],
+            "properties": { "data_type": { "type": "string", "minLength": 1, "pattern": ".*\\S.*" } }
+          }
+        },
+        {
           "if": { "properties": { "kind": { "const": "index" } }, "required": ["kind"] },
           "then": { "required": ["indexed_member_ids", "index_unique"] }
         }
@@ -216,7 +223,7 @@
         "stage_order": { "type": "integer", "minimum": 0 },
         "action": { "type": "string", "minLength": 1 },
         "touchpoint": { "type": "string", "minLength": 1 },
-        "sentiment": { "type": ["number", "null"], "minimum": -1, "maximum": 1 }
+        "sentiment": { "type": ["number", "string", "null"], "minimum": -1, "maximum": 1, "minLength": 1 }
       }
     },
     "strategy": {
@@ -376,7 +383,7 @@
       "allOf": [
         {
           "if": { "properties": { "method": { "const": "histogram" } }, "required": ["method"] },
-          "then": { "properties": { "bandwidth": { "type": "null" } } }
+          "then": { "properties": { "bandwidth": { "type": ["number", "null"], "exclusiveMinimum": 0 } } }
         },
         {
           "if": { "properties": { "method": { "const": "kde-gaussian" } }, "required": ["method"] },

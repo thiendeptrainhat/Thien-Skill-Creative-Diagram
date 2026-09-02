@@ -1,17 +1,27 @@
 """Focused D-104 tests for the detailed UML class renderer."""
 import copy
 import re
+import sys
 import unittest
+from pathlib import Path
 
-from diagram_core import CoreError
-from gallery_renderer_v15 import MODES, render_gallery_html
+
+ROOT = Path(__file__).resolve().parents[3]
+SCRIPT_DIR = ROOT / "thien-skill-creative-diagram/scripts"
+SOURCE = ROOT / "evidence/p19/source"
+for path in (SCRIPT_DIR, SCRIPT_DIR / "tests", SOURCE):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
+
+from diagram_core import CoreError  # noqa: E402
+from gallery_renderer_v15 import MODES, render_gallery_html  # noqa: E402
 from uml_class_layout_v15 import (
     EXPECTED_CONTAINERS, EXPECTED_RELATIONSHIPS, INTERFACE_PORTS, LEGEND_KINDS,
     layout_uml_class, render_uml_class, uml_class_table,
     validate_uml_class_svg,
-)
-from uml_class_review24_fixture import uml_class_fixture
-from visual_adapters_v15 import adapt_visual
+)  # noqa: E402
+from uml_class_review24_fixture import uml_class_fixture  # noqa: E402
+from visual_adapters_v15 import adapt_visual  # noqa: E402
 
 
 class DetailedUmlClassTests(unittest.TestCase):

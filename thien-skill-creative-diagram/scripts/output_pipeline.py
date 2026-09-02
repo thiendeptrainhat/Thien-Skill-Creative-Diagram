@@ -8,14 +8,18 @@ installs software, fetches a resource, or executes imported source content.
 
 from __future__ import annotations
 
+import argparse
+import copy
 import hashlib
 import importlib.util
 import json
 import os
 import re
 import shutil
+import stat
 import struct
 import subprocess
+import sys
 import tempfile
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
@@ -24,11 +28,20 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
-from diagram_core import CANONICAL_TYPES, canonical_json, normalize_request
+from diagram_core import AUDIENCES, CANONICAL_TYPES, DETAILS, SECURITY_LIMITS, SIZES, VISUAL_MODES, build_ir, canonical_json, normalize_request
 from full_renderer import RENDERER_VERSION, render_static
 from motion_catalog import select_motion_capabilities
 from safe_import import validate_workspace_target
 from semantic_grammars import validate_semantics
+from structural_profiles import (
+    build_profiled_plan,
+    load_profile_registry,
+    profile_binding_for_ledger,
+    validate_artifact_binding,
+    validate_profile_binding,
+    validate_profile_ledger,
+)
+from profile_renderer import RENDERER_VERSION as PROFILE_RENDERER_VERSION, render_profiled_svg, validate_rendered_geometry
 
 
 OUTPUT_VERSION = "p08-output-1"
@@ -36,7 +49,193 @@ SVG_NS = "http://www.w3.org/2000/svg"
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 RASTER_TIMEOUT_SECONDS = 30
 RASTER_OUTPUT_LIMIT = 64 * 1024 * 1024
+PROFILED_SVG_LIMIT = 10 * 1024 * 1024
+PROFILE_JOB_INPUT_LIMIT = 2 * 1024 * 1024
+PROFILE_JOB_VERSION = "2.1"
 ET.register_namespace("", SVG_NS)
+
+PROFILE_JOB_COLLECTIONS = (
+    "nodes",
+    "edges",
+    "groups",
+    "lanes",
+    "series",
+    "axes",
+    "annotations",
+)
+PROFILE_JOB_COUNT_FIELDS = (*PROFILE_JOB_COLLECTIONS, "directed_edges")
+
+
+def _profile_job_collection_schema() -> dict[str, Any]:
+    """Project the canonical semantic schema into the agent-authored job surface."""
+
+    schema_path = Path(__file__).resolve().parent.parent / "references" / "semantic-ir.schema.json"
+    raw = json.loads(schema_path.read_text(encoding="utf-8"))
+
+    def strip_runtime_receipts(value: Any) -> Any:
+        if isinstance(value, dict):
+            cleaned = {key: strip_runtime_receipts(item) for key, item in value.items() if key != "source_refs"}
+            if isinstance(cleaned.get("required"), list):
+                cleaned["required"] = [item for item in cleaned["required"] if item != "source_refs"]
+            if isinstance(cleaned.get("properties"), dict):
+                cleaned["properties"].pop("source_refs", None)
+            return cleaned
+        if isinstance(value, list):
+            return [strip_runtime_receipts(item) for item in value]
+        return copy.deepcopy(value)
+
+    return {
+        "$schema": raw["$schema"],
+        "type": "object",
+        "additionalProperties": False,
+        "required": list(PROFILE_JOB_COLLECTIONS),
+        "properties": {
+            name: strip_runtime_receipts(raw["properties"][name])
+            for name in PROFILE_JOB_COLLECTIONS
+        },
+        "$defs": strip_runtime_receipts(raw["$defs"]),
+        "note": "Runtime-owned source_refs are deliberately removed; type-specific semantic validators still apply.",
+    }
+
+
+_PROFILE_REGISTRY = load_profile_registry()
+_PROFILE_JOB_COLLECTION_SCHEMA = _profile_job_collection_schema()
+PROFILE_JOB_CONTRACT: dict[str, Any] = {
+    "job_version": PROFILE_JOB_VERSION,
+    "purpose": "Executable natural-language-to-profiled-SVG fast path; semantic content remains explicit and inert.",
+    "required": [
+        "job_version",
+        "instruction",
+        "title",
+        "diagram_type",
+        "structural_profile",
+        "source_assertions",
+        "relation_groups",
+        "expected_counts",
+    ],
+    "optional_defaults": {
+        "variant_ids": [],
+        "size": "fit",
+        "detail": "balanced",
+        "audience": "mixed",
+        "visual_mode": "neutral-light",
+        "language": "auto",
+        "nodes": [],
+        "edges": [],
+        "groups": [],
+        "lanes": [],
+        "series": [],
+        "axes": [],
+        "annotations": [],
+        "accessibility_description": "the trusted instruction",
+    },
+    "relation_group": {
+        "required": ["id_prefix", "sources", "targets", "kind", "directed"],
+        "semantics": "Expands the Cartesian product of sources x targets into atomic edges before IR construction.",
+        "optional_edge_fields": [
+            "label",
+            "order",
+            "guard",
+            "amount",
+            "unit",
+            "relation_kind",
+            "source_member",
+            "target_member",
+            "source_multiplicity",
+            "target_multiplicity",
+        ],
+    },
+    "source_assertions": {
+        "purpose": "Separate agent-authored pre-IR double entry. It is reconciled against the materialized job and validated IR; it does not independently prove that natural-language interpretation was complete.",
+        "required": [
+            "node_ids",
+            "edge_assertions",
+            "group_members",
+            "lane_members",
+            "node_member_ids",
+            "series_data_ids",
+            "axis_ids",
+            "annotation_ids",
+        ],
+        "edge_assertion_required": ["source", "target", "kind", "directed", "source_quote"],
+        "edge_assertion_semantics": "One record per atomic edge. source_quote is one minimal relation clause (not the whole instruction), must occur verbatim once, and must contain the source and target label or ID; repeated quotes are allowed for fan-in, fan-out, and chains.",
+        "exact_shapes": {
+            "node_ids": "Unique array containing every and only nodes[].id.",
+            "edge_assertions": "Array containing exactly one source/target/kind/directed assertion for every atomic edge after direct edges and relation_groups are combined; edge IDs are deliberately not repeated here.",
+            "group_members": "Object whose keys are exactly every groups[].id and whose values are the exact unique groups[].member_ids arrays; use {} when groups is empty.",
+            "lane_members": "Object whose keys are exactly every lanes[].id and whose values are the exact unique lanes[].member_ids arrays; use {} when lanes is empty.",
+            "node_member_ids": "Object whose keys are exactly nodes that explicitly contain a members field (including an explicit empty members array) and whose values are those exact unique nested member IDs; use {} when no node contains members.",
+            "series_data_ids": "Object whose keys are exactly every series[].id and whose values are the exact unique IDs in that series data array; use {} when series is empty.",
+            "axis_ids": "Unique array containing every and only axes[].id; use [] when axes is empty.",
+            "annotation_ids": "Unique array containing every and only annotations[].id; use [] when annotations is empty.",
+        },
+    },
+    "collection_schema": _PROFILE_JOB_COLLECTION_SCHEMA,
+    "supported_diagram_types": sorted(CANONICAL_TYPES),
+    "supported_profiles": [
+        {
+            "profile_id": profile["profile_id"],
+            "profile_class": profile["profile_class"],
+            "canonical_parent": profile["canonical_parent"],
+            "layout_engine": profile["layout_engine"],
+            "variant_ids": [profile["capability_id"]] if profile.get("capability_id") else [],
+        }
+        for profile in _PROFILE_REGISTRY["profiles"]
+    ],
+    "dial_values": {
+        "size": list(SIZES),
+        "detail": list(DETAILS),
+        "audience": list(AUDIENCES),
+        "visual_mode": list(VISUAL_MODES),
+        "language": {"accepted": "auto or one BCP-47-style tag matching ^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$", "examples": ["auto", "vi", "en-US"]},
+    },
+    "expected_counts": {
+        "required": list(PROFILE_JOB_COUNT_FIELDS),
+        "additional_keys": False,
+        "value_contract": "Every required value is a non-negative integer; booleans are invalid.",
+        "semantics": "The object must contain exactly all eight required keys. Each value must equal both the fully materialized collection count and its independent source_assertions count; directed_edges counts atomic edges whose directed value is true.",
+    },
+    "minimal_valid_job": {
+        "job_version": "2.1",
+        "instruction": "Người dùng gọi API.",
+        "title": "Luồng truy cập tối thiểu",
+        "diagram_type": "architecture",
+        "structural_profile": "topology-and-zones",
+        "nodes": [
+            {"id": "user", "role": "actor", "label": "Người dùng"},
+            {"id": "api", "role": "service", "label": "API"},
+        ],
+        "groups": [
+            {"id": "trusted-zone", "label": "Vùng tin cậy", "member_ids": ["api"]},
+        ],
+        "source_assertions": {
+            "node_ids": ["user", "api"],
+            "edge_assertions": [
+                {"source": "user", "target": "api", "kind": "request", "directed": True, "source_quote": "Người dùng gọi API."},
+            ],
+            "group_members": {"trusted-zone": ["api"]},
+            "lane_members": {},
+            "node_member_ids": {},
+            "series_data_ids": {},
+            "axis_ids": [],
+            "annotation_ids": [],
+        },
+        "relation_groups": [
+            {"id_prefix": "user-api", "sources": ["user"], "targets": ["api"], "kind": "request", "directed": True},
+        ],
+        "expected_counts": {
+            "nodes": 2,
+            "edges": 1,
+            "groups": 1,
+            "lanes": 0,
+            "series": 0,
+            "axes": 0,
+            "annotations": 0,
+            "directed_edges": 1,
+        },
+    },
+    "fixed_output": {"format": "svg", "motion": "none", "files": ["diagram.svg", "diagram.ledger.json"]},
+}
 
 OUTPUT_CAPABILITIES = {
     "CAP-O01": "format routing and transparent fallback",
@@ -93,6 +292,17 @@ class RasterizerAdapter:
 class ExportBundle:
     artifacts: Mapping[str, Artifact]
     ledger: Mapping[str, Any]
+
+
+@dataclass(frozen=True)
+class ProfiledWriteResult:
+    output_dir: str
+    svg_path: str
+    ledger_path: str
+    selected_profile: str
+    layout_engine: str
+    svg_sha256: str
+    ledger_sha256: str
 
 
 def _run_command(command: list[str], svg: str) -> bytes:
@@ -170,9 +380,17 @@ def _exact_data(ir: Mapping[str, Any]) -> tuple[str, str]:
         for series in ir["series"]:
             unit = series.get("unit") or ""
             for datum in series["data"]:
-                value = words["missing"] if datum.get("missing") else str(datum.get("value"))
-                rows.append(f"<tr><th scope=\"row\">{escape(str(datum['domain']))}</th><td>{escape(str(series['label']))}</td><td>{escape(value)}</td><td>{escape(str(unit))}</td></tr>")
-                plain.append(f"{series['label']} / {datum['domain']} = {value} {unit}".strip())
+                if "distribution_samples" in datum:
+                    domain = datum["id"]
+                    value = ", ".join(str(item) for item in datum["distribution_samples"])
+                elif {"x_value", "y_value", "size_value"} <= set(datum):
+                    domain = f"x={datum['x_value']}, y={datum['y_value']}"
+                    value = f"size={datum['size_value']} {datum.get('size_unit') or ''}".strip()
+                else:
+                    domain = datum.get("domain", datum["id"])
+                    value = words["missing"] if datum.get("missing") else str(datum.get("value"))
+                rows.append(f"<tr><th scope=\"row\">{escape(str(domain))}</th><td>{escape(str(series['label']))}</td><td>{escape(value)}</td><td>{escape(str(unit))}</td></tr>")
+                plain.append(f"{series['label']} / {domain} = {value} {unit}".strip())
         table = f'<table><caption>{words["caption"]}</caption><thead><tr><th>{words["domain"]}</th><th>{words["series"]}</th><th>{words["value"]}</th><th>{words["unit"]}</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table>"
         return table, "; ".join(plain)
     if ir["diagram"]["type"] == "dp-security-matrix":
@@ -188,11 +406,50 @@ def _exact_data(ir: Mapping[str, Any]) -> tuple[str, str]:
     return "", ""
 
 
-def _prepare_svg(svg: str, ir: Mapping[str, Any], mode: str, size: str, *, annotate_motion: bool) -> tuple[str, int]:
+def _semantic_snapshot(ir: Mapping[str, Any]) -> dict[str, Any]:
+    """Return the exact validated semantic payload without runtime provenance handles."""
+
+    def strip_runtime_receipts(value: Any) -> Any:
+        if isinstance(value, Mapping):
+            return {
+                str(key): strip_runtime_receipts(item)
+                for key, item in value.items()
+                if key != "source_refs"
+            }
+        if isinstance(value, list):
+            return [strip_runtime_receipts(item) for item in value]
+        return copy.deepcopy(value)
+
+    return {
+        "diagram": strip_runtime_receipts(ir["diagram"]),
+        **{
+            name: strip_runtime_receipts(ir[name])
+            for name in PROFILE_JOB_COLLECTIONS
+        },
+    }
+
+
+def _prepare_svg(
+    svg: str,
+    ir: Mapping[str, Any],
+    mode: str,
+    size: str,
+    *,
+    annotate_motion: bool,
+    include_semantic_snapshot: bool = False,
+) -> tuple[str, int]:
     root = ET.fromstring(svg)
-    width, height, _, _ = SIZE_OUTPUTS[size]
-    root.set("width", width)
-    root.set("height", height)
+    profiled_fit = size == "fit" and root.get("data-renderer-version") == PROFILE_RENDERER_VERSION
+    if profiled_fit:
+        try:
+            if float(root.attrib["width"]) <= 0 or float(root.attrib["height"]) <= 0:
+                raise ValueError
+        except (KeyError, TypeError, ValueError) as error:
+            raise OutputFailure("svg-canvas-invalid", "Profiled fit output needs positive numeric intrinsic dimensions.") from error
+    else:
+        width, height, _, _ = SIZE_OUTPUTS[size]
+        root.set("width", width)
+        root.set("height", height)
     root.set("data-output-version", OUTPUT_VERSION)
     root.set("data-static-frame", "complete")
     root.set("lang", str(ir["diagram"]["language"]))
@@ -206,6 +463,10 @@ def _prepare_svg(svg: str, ir: Mapping[str, Any], mode: str, size: str, *, annot
         metadata = ET.SubElement(root, f"{{{SVG_NS}}}metadata")
         metadata.set("data-kind", "exact-data")
         metadata.text = canonical_json({"series": ir["series"], "matrix": ir["nodes"] if ir["diagram"]["type"] == "dp-security-matrix" else []})
+    if include_semantic_snapshot:
+        metadata = ET.SubElement(root, f"{{{SVG_NS}}}metadata")
+        metadata.set("data-kind", "exact-semantics")
+        metadata.text = canonical_json(_semantic_snapshot(ir))
     target_count = 0
     if annotate_motion:
         root.set("data-motion-frame", "enhanceable")
@@ -364,22 +625,35 @@ def _validate_png(content: bytes, width: int, height: int) -> None:
         raise OutputFailure("png-invalid", "PNG is missing required chunks or has trailing data.")
 
 
-def export_artifacts(
-    ir_value: Mapping[str, Any],
-    raw_request: Mapping[str, Any],
+def _export_from_svg(
+    ir: Mapping[str, Any],
+    request: Mapping[str, Any],
+    base_svg: str,
+    base_static_svg_hash: str,
     *,
-    rasterizer: RasterizerAdapter | None = None,
-    auto_detect_rasterizer: bool = True,
-    motion_runtime: bool = True,
-    font_substitution: str | None = None,
+    rasterizer: RasterizerAdapter | None,
+    auto_detect_rasterizer: bool,
+    motion_runtime: bool,
+    font_substitution: str | None,
+    structural_profile: Mapping[str, Any] | None = None,
 ) -> ExportBundle:
-    ir = validate_semantics(ir_value)
-    request = normalize_request(raw_request)
-    if request["diagram_type"] != "auto" and request["diagram_type"] != ir["diagram"]["type"]:
-        raise OutputFailure("output-type-mismatch", "The validated IR type does not match the explicitly requested diagram type.")
-    static = render_static(ir, request["visual_mode"], coverage_badge=False)
-    standalone_svg, _ = _prepare_svg(static.svg, ir, request["visual_mode"], request["size"], annotate_motion=False)
-    motion_svg, target_count = _prepare_svg(static.svg, ir, request["visual_mode"], request["size"], annotate_motion=request["motion"] != "none" and motion_runtime)
+    profiled = structural_profile is not None
+    standalone_svg, _ = _prepare_svg(
+        base_svg,
+        ir,
+        request["visual_mode"],
+        request["size"],
+        annotate_motion=False,
+        include_semantic_snapshot=profiled,
+    )
+    motion_svg, target_count = _prepare_svg(
+        base_svg,
+        ir,
+        request["visual_mode"],
+        request["size"],
+        annotate_motion=request["motion"] != "none" and motion_runtime,
+        include_semantic_snapshot=profiled,
+    )
     artifacts: dict[str, Artifact] = {}
     warnings: list[str] = []
     if font_substitution:
@@ -401,7 +675,12 @@ def export_artifacts(
                 artifacts["svg"] = Artifact("diagram.svg", "image/svg+xml", standalone_svg.encode("utf-8"))
         else:
             try:
-                _, _, raster_width, raster_height = SIZE_OUTPUTS[request["size"]]
+                if profiled and request["size"] == "fit":
+                    prepared_root = ET.fromstring(standalone_svg)
+                    raster_width = int(float(prepared_root.attrib["width"]))
+                    raster_height = int(float(prepared_root.attrib["height"]))
+                else:
+                    _, _, raster_width, raster_height = SIZE_OUTPUTS[request["size"]]
                 png = active_rasterizer.render(standalone_svg, raster_width, raster_height)
                 _validate_png(png, raster_width, raster_height)
                 artifacts["png"] = Artifact("diagram.png", "image/png", png)
@@ -414,9 +693,9 @@ def export_artifacts(
     effective_motion = request["motion"] if motion_runtime and requested_format in {"html", "html+png"} else "none"
     motion_capabilities = select_motion_capabilities(ir, effective_motion)
     ledger = {
-        "schema_version": "1.0",
+        "schema_version": "2.1" if structural_profile is not None else "1.0",
         "output_version": OUTPUT_VERSION,
-        "renderer_version": RENDERER_VERSION,
+        "renderer_version": "caller-supplied-profiled-svg" if structural_profile is not None else RENDERER_VERSION,
         "requested_format": requested_format,
         "delivered_artifacts": delivered,
         "artifacts": {key: {"name": value.name, "media_type": value.media_type, "sha256": value.sha256, "bytes": len(value.content)} for key, value in artifacts.items()},
@@ -424,7 +703,7 @@ def export_artifacts(
         "diagram_type": ir["diagram"]["type"],
         "dials": {key: request[key] for key in ("size", "detail", "audience", "visual_mode", "format", "motion")},
         "ir_hash": hashlib.sha256(canonical_json(ir).encode("utf-8")).hexdigest(),
-        "base_static_svg_hash": static.sha256,
+        "base_static_svg_hash": base_static_svg_hash,
         "standalone_svg_hash": hashlib.sha256(standalone_svg.encode("utf-8")).hexdigest(),
         "rasterizer": active_rasterizer.name if active_rasterizer else None,
         "font_policy": {"network_fetch": False, "stack": "Inter, Noto Sans, Arial, Helvetica Neue, system-ui, sans-serif", "substitution": font_substitution},
@@ -434,7 +713,110 @@ def export_artifacts(
         "warnings": warnings,
         "validation": {"semantic": "pass", "svg": "pass", "html": "pass" if "html" in artifacts else "not-requested", "png": "pass" if "png" in artifacts else "unavailable-or-not-requested"},
     }
+    if structural_profile is not None:
+        binding = profile_binding_for_ledger(structural_profile)
+        semantic_snapshot = _semantic_snapshot(ir)
+        ledger.update({
+            "selected_profile": binding["selected_profile"],
+            "canonical_parent": binding["canonical_parent"],
+            "layout_engine": binding["layout_engine"],
+            "mode": binding["mode"],
+            "structural_override": binding["structural_override"],
+            "profile_fallback": binding["fallback"],
+            "profile_registry_sha256": binding["registry_sha256"],
+            "profile_record_sha256": binding["profile_record_sha256"],
+            "binding_stage": binding["binding_stage"],
+            "structural_profile": binding,
+            "profile_binding": "pass",
+            "structural_conformance": "not-evaluated",
+            "semantic_snapshot": semantic_snapshot,
+            "semantic_snapshot_sha256": hashlib.sha256(canonical_json(semantic_snapshot).encode("utf-8")).hexdigest(),
+        })
+        ledger["validation"] = {**ledger["validation"], "profile_binding": "pass", "structural_conformance": "not-evaluated"}
+        validate_profile_ledger(ledger, binding)
     return ExportBundle(artifacts, ledger)
+
+
+def export_artifacts(
+    ir_value: Mapping[str, Any],
+    raw_request: Mapping[str, Any],
+    *,
+    rasterizer: RasterizerAdapter | None = None,
+    auto_detect_rasterizer: bool = True,
+    motion_runtime: bool = True,
+    font_substitution: str | None = None,
+) -> ExportBundle:
+    """Historical P-08 export path using the historical P-07 renderer."""
+
+    ir = validate_semantics(ir_value)
+    request = normalize_request(raw_request)
+    if request["diagram_type"] != "auto" and request["diagram_type"] != ir["diagram"]["type"]:
+        raise OutputFailure("output-type-mismatch", "The validated IR type does not match the explicitly requested diagram type.")
+    static = render_static(ir, request["visual_mode"], coverage_badge=False)
+    return _export_from_svg(
+        ir,
+        request,
+        static.svg,
+        static.sha256,
+        rasterizer=rasterizer,
+        auto_detect_rasterizer=auto_detect_rasterizer,
+        motion_runtime=motion_runtime,
+        font_substitution=font_substitution,
+    )
+
+
+def export_profiled_artifacts(
+    ir_value: Mapping[str, Any],
+    raw_request: Mapping[str, Any],
+    profiled_svg: str,
+    pre_render_binding: Mapping[str, Any],
+    *,
+    rasterizer: RasterizerAdapter | None = None,
+    auto_detect_rasterizer: bool = True,
+    motion_runtime: bool = True,
+    font_substitution: str | None = None,
+) -> ExportBundle:
+    """Export an SVG produced from a validated v2.1 pre-render profile plan.
+
+    This path never calls the historical renderer.  It validates identity and
+    provenance, but leaves structural geometry conformance unevaluated for an
+    independent validator or judge.
+    """
+
+    ir = validate_semantics(ir_value)
+    request = normalize_request(raw_request)
+    if request["diagram_type"] != "auto" and request["diagram_type"] != ir["diagram"]["type"]:
+        raise OutputFailure("output-type-mismatch", "The validated IR type does not match the explicitly requested diagram type.")
+    if not isinstance(profiled_svg, str) or not profiled_svg.strip() or len(profiled_svg.encode("utf-8")) > PROFILED_SVG_LIMIT:
+        raise OutputFailure("profiled-svg-invalid", "Profile-aware export needs one bounded non-empty SVG string.")
+    try:
+        validate_profile_binding(pre_render_binding)
+        if pre_render_binding["canonical_parent"] != ir["diagram"]["type"]:
+            raise OutputFailure("profile-parent-mismatch", "Profile binding does not match the validated semantic IR.")
+        if pre_render_binding["requested_selector"] != request["structural_profile"]:
+            raise OutputFailure("profile-selector-mismatch", "Profile binding does not match the normalized request selector.")
+        if pre_render_binding["mode"] != request["visual_mode"]:
+            raise OutputFailure("profile-mode-mismatch", "Profile binding does not match the normalized visual mode.")
+        override = request["structural_override"]
+        if pre_render_binding["structural_override"] != override["status"] or pre_render_binding.get("override_reason") != override.get("reason"):
+            raise OutputFailure("profile-override-mismatch", "Profile binding does not match the normalized structural override.")
+        validate_artifact_binding(profiled_svg, pre_render_binding)
+    except OutputFailure:
+        raise
+    except Exception as error:
+        code = getattr(error, "code", "profile-binding-invalid")
+        raise OutputFailure(str(code), "Profile-aware export rejected an invalid pre-render binding or SVG receipt.") from error
+    return _export_from_svg(
+        ir,
+        request,
+        profiled_svg,
+        hashlib.sha256(profiled_svg.encode("utf-8")).hexdigest(),
+        rasterizer=rasterizer,
+        auto_detect_rasterizer=auto_detect_rasterizer,
+        motion_runtime=motion_runtime,
+        font_substitution=font_substitution,
+        structural_profile=pre_render_binding,
+    )
 
 
 def write_bundle(
@@ -463,8 +845,723 @@ def write_bundle(
     return written
 
 
+_PROFILE_JOB_FIELDS = frozenset(
+    {
+        "job_version",
+        "instruction",
+        "title",
+        "diagram_type",
+        "structural_profile",
+        "variant_ids",
+        "size",
+        "detail",
+        "audience",
+        "visual_mode",
+        "language",
+        "source_assertions",
+        "relation_groups",
+        "expected_counts",
+        "accessibility_description",
+        *PROFILE_JOB_COLLECTIONS,
+    }
+)
+_RELATION_GROUP_FIELDS = frozenset(
+    {
+        "id_prefix",
+        "sources",
+        "targets",
+        "kind",
+        "directed",
+        "label",
+        "order",
+        "guard",
+        "amount",
+        "unit",
+        "relation_kind",
+        "source_member",
+        "target_member",
+        "source_multiplicity",
+        "target_multiplicity",
+    }
+)
+_SOURCE_ASSERTION_FIELDS = frozenset(
+    {
+        "node_ids",
+        "edge_assertions",
+        "group_members",
+        "lane_members",
+        "node_member_ids",
+        "series_data_ids",
+        "axis_ids",
+        "annotation_ids",
+    }
+)
+_EDGE_ASSERTION_FIELDS = frozenset({"source", "target", "kind", "directed", "source_quote"})
+_CONTENT_CLASS = {
+    "nodes": "entity",
+    "edges": "relation",
+    "groups": "group",
+    "lanes": "lane",
+    "series": "value",
+    "axes": "label",
+    "annotations": "annotation",
+}
+
+
+def _profile_job_mapping(value: Any, field: str) -> dict[str, Any]:
+    if not isinstance(value, Mapping):
+        raise OutputFailure("profile-job-invalid", f"{field} must be an object.")
+    return dict(value)
+
+
+def _profile_job_list(value: Any, field: str) -> list[Any]:
+    if not isinstance(value, list):
+        raise OutputFailure("profile-job-invalid", f"{field} must be an array.")
+    return value
+
+
+def _profile_job_string(value: Any, field: str) -> str:
+    if not isinstance(value, str) or not value:
+        raise OutputFailure("profile-job-invalid", f"{field} must be a non-empty string.")
+    return value
+
+
+def _expand_relation_groups(raw_groups: Any, *, edge_budget: int) -> list[dict[str, Any]]:
+    expanded: list[dict[str, Any]] = []
+    for index, raw_group in enumerate(_profile_job_list(raw_groups, "relation_groups")):
+        field = f"relation_groups[{index}]"
+        group = _profile_job_mapping(raw_group, field)
+        extras = sorted(set(group) - _RELATION_GROUP_FIELDS)
+        if extras:
+            raise OutputFailure("profile-job-unknown-field", f"Unknown {field} field: {extras[0]}.")
+        missing = sorted({"id_prefix", "sources", "targets", "kind", "directed"} - set(group))
+        if missing:
+            raise OutputFailure("profile-job-missing-field", f"Missing {field}.{missing[0]}.")
+        prefix = _profile_job_string(group["id_prefix"], f"{field}.id_prefix")
+        sources = _profile_job_list(group["sources"], f"{field}.sources")
+        targets = _profile_job_list(group["targets"], f"{field}.targets")
+        if not sources or not targets:
+            raise OutputFailure("profile-job-relation-empty", f"{field} needs at least one source and one target.")
+        if any(not isinstance(item, str) or not item for item in [*sources, *targets]):
+            raise OutputFailure("profile-job-relation-invalid", f"{field} sources and targets must be unique non-empty IDs.")
+        if len(sources) != len(set(sources)) or len(targets) != len(set(targets)):
+            raise OutputFailure("profile-job-relation-invalid", f"{field} sources and targets must be unique non-empty IDs.")
+        if not isinstance(group["directed"], bool):
+            raise OutputFailure("profile-job-relation-invalid", f"{field}.directed must be a boolean.")
+        kind = _profile_job_string(group["kind"], f"{field}.kind")
+        pair_count = len(sources) * len(targets)
+        if pair_count > edge_budget - len(expanded):
+            raise OutputFailure(
+                "profile-job-complexity-limit",
+                f"Expanded relation groups exceed the hard limit of {edge_budget} edges.",
+            )
+        extras_for_edge = {key: copy.deepcopy(value) for key, value in group.items() if key not in {"id_prefix", "sources", "targets"}}
+        extras_for_edge["kind"] = kind
+        for raw_source in sources:
+            for raw_target in targets:
+                source, target = str(raw_source), str(raw_target)
+                edge_id = prefix if pair_count == 1 else f"{prefix}-{source}-{target}"
+                expanded.append({"id": edge_id, "source": source, "target": target, **copy.deepcopy(extras_for_edge)})
+    return expanded
+
+
+def _profile_job_counts(collections: Mapping[str, list[dict[str, Any]]]) -> dict[str, int]:
+    counts = {name: len(collections[name]) for name in PROFILE_JOB_COLLECTIONS}
+    counts["directed_edges"] = sum(1 for edge in collections["edges"] if edge.get("directed") is True)
+    return counts
+
+
+def _profile_job_id_list(value: Any, field: str) -> list[str]:
+    values = _profile_job_list(value, field)
+    if any(not isinstance(item, str) or not item for item in values) or len(values) != len(set(values)):
+        raise OutputFailure("source-assertion-invalid", f"{field} must contain unique non-empty IDs.")
+    return list(values)
+
+
+def _profile_job_members_map(value: Any, field: str) -> dict[str, list[str]]:
+    raw_mapping = _profile_job_mapping(value, field)
+    normalized: dict[str, list[str]] = {}
+    for raw_id, raw_members in raw_mapping.items():
+        item_id = _profile_job_string(raw_id, f"{field}.id")
+        normalized[item_id] = sorted(_profile_job_id_list(raw_members, f"{field}.{item_id}"))
+    return dict(sorted(normalized.items()))
+
+
+def _source_assertion_counts(assertions: Mapping[str, Any]) -> dict[str, int]:
+    edges = _profile_job_list(assertions["edge_assertions"], "source_assertions.edge_assertions")
+    return {
+        "nodes": len(_profile_job_list(assertions["node_ids"], "source_assertions.node_ids")),
+        "edges": len(edges),
+        "groups": len(_profile_job_mapping(assertions["group_members"], "source_assertions.group_members")),
+        "lanes": len(_profile_job_mapping(assertions["lane_members"], "source_assertions.lane_members")),
+        "series": len(_profile_job_mapping(assertions["series_data_ids"], "source_assertions.series_data_ids")),
+        "axes": len(_profile_job_list(assertions["axis_ids"], "source_assertions.axis_ids")),
+        "annotations": len(_profile_job_list(assertions["annotation_ids"], "source_assertions.annotation_ids")),
+        "directed_edges": sum(1 for edge in edges if isinstance(edge, Mapping) and edge.get("directed") is True),
+    }
+
+
+def _validate_expected_counts(raw_counts: Any, actual: Mapping[str, int], asserted: Mapping[str, int]) -> None:
+    expected = _profile_job_mapping(raw_counts, "expected_counts")
+    if set(expected) != set(PROFILE_JOB_COUNT_FIELDS):
+        raise OutputFailure(
+            "profile-job-count-contract",
+            "expected_counts must contain exactly nodes, edges, groups, lanes, series, axes, annotations, and directed_edges.",
+        )
+    for field in PROFILE_JOB_COUNT_FIELDS:
+        value = expected[field]
+        if isinstance(value, bool) or not isinstance(value, int) or value < 0:
+            raise OutputFailure("profile-job-count-contract", f"expected_counts.{field} must be a non-negative integer.")
+        if value != actual[field]:
+            raise OutputFailure(
+                "semantic-coverage-mismatch",
+                f"Expected {value} {field}, but the materialized semantic receipt contains {actual[field]}.",
+            )
+        if value != asserted[field]:
+            raise OutputFailure(
+                "semantic-coverage-mismatch",
+                f"Expected {value} {field}, but independent source assertions contain {asserted[field]}.",
+            )
+
+
+def _validate_source_assertions(
+    raw_assertions: Any,
+    instruction: str,
+    collections: Mapping[str, list[dict[str, Any]]],
+) -> dict[str, Any]:
+    assertions = _profile_job_mapping(raw_assertions, "source_assertions")
+    if set(assertions) != _SOURCE_ASSERTION_FIELDS:
+        raise OutputFailure(
+            "source-assertion-contract",
+            "source_assertions must contain exactly node_ids, edge_assertions, group_members, lane_members, node_member_ids, series_data_ids, axis_ids, and annotation_ids.",
+        )
+
+    node_ids = sorted(_profile_job_id_list(assertions["node_ids"], "source_assertions.node_ids"))
+    material_node_ids = sorted(_profile_job_string(item.get("id"), f"nodes[{index}].id") for index, item in enumerate(collections["nodes"]))
+    if node_ids != material_node_ids:
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted node IDs do not exactly match the materialized job.")
+    node_labels = {
+        _profile_job_string(item.get("id"), f"nodes[{index}].id"): _profile_job_string(item.get("label"), f"nodes[{index}].label")
+        for index, item in enumerate(collections["nodes"])
+    }
+
+    raw_edges = _profile_job_list(assertions["edge_assertions"], "source_assertions.edge_assertions")
+    asserted_edges: list[dict[str, Any]] = []
+    asserted_edge_tuples: list[tuple[str, str, str, bool]] = []
+    for index, raw_edge in enumerate(raw_edges):
+        field = f"source_assertions.edge_assertions[{index}]"
+        edge = _profile_job_mapping(raw_edge, field)
+        if set(edge) != _EDGE_ASSERTION_FIELDS or not isinstance(edge.get("directed"), bool):
+            raise OutputFailure("source-assertion-invalid", f"{field} needs exact source/target/kind/directed/source_quote fields.")
+        source = _profile_job_string(edge["source"], f"{field}.source")
+        target = _profile_job_string(edge["target"], f"{field}.target")
+        kind = _profile_job_string(edge["kind"], f"{field}.kind")
+        quote = _profile_job_string(edge["source_quote"], f"{field}.source_quote")
+        if source not in node_labels or target not in node_labels:
+            raise OutputFailure("source-assertion-invalid", f"{field} references an unknown node ID.")
+        if len(quote) > 320 or ";" in quote or "\n" in quote or "\r" in quote:
+            raise OutputFailure("source-assertion-unbound", f"{field}.source_quote must be one bounded minimal relation clause, not a paragraph.")
+        if instruction.count(quote) != 1:
+            raise OutputFailure("source-assertion-unbound", f"{field}.source_quote must occur exactly once in the trusted instruction.")
+        folded_quote = quote.casefold()
+        for endpoint in (source, target):
+            if node_labels[endpoint].casefold() not in folded_quote and endpoint.casefold() not in folded_quote:
+                raise OutputFailure(
+                    "source-assertion-unbound",
+                    f"{field}.source_quote does not name endpoint {endpoint} by exact label or ID.",
+                )
+        asserted_edges.append({"source": source, "target": target, "kind": kind, "directed": edge["directed"], "source_quote": quote})
+        asserted_edge_tuples.append((source, target, kind, edge["directed"]))
+
+    material_edge_tuples: list[tuple[str, str, str, bool]] = []
+    for index, edge in enumerate(collections["edges"]):
+        if not isinstance(edge.get("directed"), bool):
+            raise OutputFailure("profile-job-invalid", f"edges[{index}].directed must be a boolean.")
+        material_edge_tuples.append(
+            (
+                _profile_job_string(edge.get("source"), f"edges[{index}].source"),
+                _profile_job_string(edge.get("target"), f"edges[{index}].target"),
+                _profile_job_string(edge.get("kind"), f"edges[{index}].kind"),
+                edge["directed"],
+            )
+        )
+    if sorted(asserted_edge_tuples) != sorted(material_edge_tuples):
+        raise OutputFailure("semantic-coverage-mismatch", "Atomic source-asserted edges do not exactly match materialized edges.")
+
+    group_members = _profile_job_members_map(assertions["group_members"], "source_assertions.group_members")
+    material_groups = {
+        _profile_job_string(group.get("id"), f"groups[{index}].id"): sorted(
+            _profile_job_id_list(group.get("member_ids"), f"groups[{index}].member_ids")
+        )
+        for index, group in enumerate(collections["groups"])
+    }
+    if group_members != dict(sorted(material_groups.items())):
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted group IDs or members do not exactly match the materialized job.")
+
+    lane_members = _profile_job_members_map(assertions["lane_members"], "source_assertions.lane_members")
+    material_lanes = {
+        _profile_job_string(lane.get("id"), f"lanes[{index}].id"): sorted(
+            _profile_job_id_list(lane.get("member_ids"), f"lanes[{index}].member_ids")
+        )
+        for index, lane in enumerate(collections["lanes"])
+    }
+    if lane_members != dict(sorted(material_lanes.items())):
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted lane IDs or members do not exactly match the materialized job.")
+
+    node_member_ids = _profile_job_members_map(assertions["node_member_ids"], "source_assertions.node_member_ids")
+    material_node_members = {
+        _profile_job_string(node.get("id"), f"nodes[{index}].id"): sorted(
+            _profile_job_string(member.get("id"), f"nodes[{index}].members[{member_index}].id")
+            for member_index, member in enumerate(_profile_job_list(node.get("members"), f"nodes[{index}].members"))
+        )
+        for index, node in enumerate(collections["nodes"])
+        if "members" in node
+    }
+    if node_member_ids != dict(sorted(material_node_members.items())):
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted node-member IDs do not exactly match the materialized job.")
+
+    series_data_ids = _profile_job_members_map(assertions["series_data_ids"], "source_assertions.series_data_ids")
+    material_series_data = {
+        _profile_job_string(series.get("id"), f"series[{index}].id"): sorted(
+            _profile_job_string(datum.get("id"), f"series[{index}].data[{datum_index}].id")
+            for datum_index, datum in enumerate(_profile_job_list(series.get("data"), f"series[{index}].data"))
+        )
+        for index, series in enumerate(collections["series"])
+    }
+    if series_data_ids != dict(sorted(material_series_data.items())):
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted series or datum IDs do not exactly match the materialized job.")
+
+    axis_ids = sorted(_profile_job_id_list(assertions["axis_ids"], "source_assertions.axis_ids"))
+    material_axis_ids = sorted(_profile_job_string(axis.get("id"), f"axes[{index}].id") for index, axis in enumerate(collections["axes"]))
+    if axis_ids != material_axis_ids:
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted axis IDs do not exactly match the materialized job.")
+    annotation_ids = sorted(_profile_job_id_list(assertions["annotation_ids"], "source_assertions.annotation_ids"))
+    material_annotation_ids = sorted(
+        _profile_job_string(annotation.get("id"), f"annotations[{index}].id") for index, annotation in enumerate(collections["annotations"])
+    )
+    if annotation_ids != material_annotation_ids:
+        raise OutputFailure("semantic-coverage-mismatch", "Source-asserted annotation IDs do not exactly match the materialized job.")
+
+    normalized = {
+        "node_ids": node_ids,
+        "edge_assertions": sorted(asserted_edges, key=lambda item: (item["source"], item["target"], item["kind"], item["directed"], item["source_quote"])),
+        "group_members": group_members,
+        "lane_members": lane_members,
+        "node_member_ids": node_member_ids,
+        "series_data_ids": series_data_ids,
+        "axis_ids": axis_ids,
+        "annotation_ids": annotation_ids,
+    }
+    return normalized
+
+
+def _semantic_receipt(
+    instruction: str,
+    collections: Mapping[str, list[dict[str, Any]]],
+    source_assertions: Mapping[str, Any],
+) -> dict[str, Any]:
+    node_ids = [_profile_job_string(item.get("id"), f"nodes[{index}].id") for index, item in enumerate(collections["nodes"])]
+    edge_records: list[dict[str, Any]] = []
+    for index, item in enumerate(collections["edges"]):
+        if not isinstance(item.get("directed"), bool):
+            raise OutputFailure("profile-job-invalid", f"edges[{index}].directed must be a boolean.")
+        edge_records.append(
+            {
+                "id": _profile_job_string(item.get("id"), f"edges[{index}].id"),
+                "source": _profile_job_string(item.get("source"), f"edges[{index}].source"),
+                "target": _profile_job_string(item.get("target"), f"edges[{index}].target"),
+                "kind": _profile_job_string(item.get("kind"), f"edges[{index}].kind"),
+                "directed": item["directed"],
+            }
+        )
+    group_members: dict[str, list[str]] = {}
+    for index, item in enumerate(collections["groups"]):
+        group_id = _profile_job_string(item.get("id"), f"groups[{index}].id")
+        members = _profile_job_list(item.get("member_ids"), f"groups[{index}].member_ids")
+        if any(not isinstance(member, str) or not member for member in members):
+            raise OutputFailure("profile-job-invalid", f"groups[{index}].member_ids must contain non-empty IDs.")
+        if len(members) != len(set(members)):
+            raise OutputFailure("profile-job-invalid", f"groups[{index}].member_ids must be unique.")
+        if group_id in group_members:
+            raise OutputFailure("profile-job-invalid", "Profiled-job group IDs must be unique.")
+        group_members[group_id] = sorted(members)
+    return {
+        "schema_version": "1.2",
+        "source_instruction_sha256": hashlib.sha256(instruction.encode("utf-8")).hexdigest(),
+        "source_assertions_sha256": hashlib.sha256(canonical_json(source_assertions).encode("utf-8")).hexdigest(),
+        "source_assertions": copy.deepcopy(source_assertions),
+        "node_ids": sorted(node_ids),
+        "edges": sorted(edge_records, key=lambda item: item["id"]),
+        "group_members": dict(sorted(group_members.items())),
+    }
+
+
+def _reconcile_semantic_receipt(
+    receipt_value: Mapping[str, Any],
+    request: Mapping[str, Any],
+    ir: Mapping[str, Any],
+) -> dict[str, Any]:
+    receipt = _profile_job_mapping(receipt_value, "semantic_receipt")
+    if set(receipt) != {
+        "schema_version",
+        "source_instruction_sha256",
+        "source_assertions_sha256",
+        "source_assertions",
+        "node_ids",
+        "edges",
+        "group_members",
+    }:
+        raise OutputFailure("semantic-receipt-invalid", "Semantic receipt fields are incomplete or unknown.")
+    if receipt["schema_version"] != "1.2":
+        raise OutputFailure("semantic-receipt-invalid", "Semantic receipt version is unsupported.")
+    instruction_hash = hashlib.sha256(str(request["instruction"]).encode("utf-8")).hexdigest()
+    if receipt["source_instruction_sha256"] != instruction_hash:
+        raise OutputFailure("semantic-coverage-mismatch", "Semantic receipt is not bound to the trusted instruction.")
+    if not isinstance(receipt["source_assertions_sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}", receipt["source_assertions_sha256"]):
+        raise OutputFailure("semantic-receipt-invalid", "Semantic receipt source assertion hash is invalid.")
+    ir_collections = {name: [copy.deepcopy(item) for item in ir[name]] for name in PROFILE_JOB_COLLECTIONS}
+    normalized_assertions = _validate_source_assertions(receipt["source_assertions"], str(request["instruction"]), ir_collections)
+    assertion_hash = hashlib.sha256(canonical_json(normalized_assertions).encode("utf-8")).hexdigest()
+    if receipt["source_assertions_sha256"] != assertion_hash:
+        raise OutputFailure("semantic-coverage-mismatch", "Semantic receipt source assertions do not match their bound hash.")
+
+    node_ids = _profile_job_list(receipt["node_ids"], "semantic_receipt.node_ids")
+    if any(not isinstance(item, str) or not item for item in node_ids):
+        raise OutputFailure("semantic-receipt-invalid", "Semantic receipt node IDs must be unique non-empty strings.")
+    if len(node_ids) != len(set(node_ids)):
+        raise OutputFailure("semantic-receipt-invalid", "Semantic receipt node IDs must be unique non-empty strings.")
+    expected_nodes = {str(item["id"]) for item in ir["nodes"]}
+    if set(node_ids) != expected_nodes:
+        raise OutputFailure("semantic-coverage-mismatch", "Semantic receipt node IDs do not exactly match validated IR.")
+
+    edge_records = _profile_job_list(receipt["edges"], "semantic_receipt.edges")
+    receipt_edges: dict[str, tuple[str, str, str, bool]] = {}
+    for index, raw_edge in enumerate(edge_records):
+        edge = _profile_job_mapping(raw_edge, f"semantic_receipt.edges[{index}]")
+        if set(edge) != {"id", "source", "target", "kind", "directed"} or not isinstance(edge.get("directed"), bool):
+            raise OutputFailure("semantic-receipt-invalid", "Every semantic receipt edge needs exact id/source/target/kind/directed fields.")
+        edge_id = _profile_job_string(edge["id"], f"semantic_receipt.edges[{index}].id")
+        if edge_id in receipt_edges:
+            raise OutputFailure("semantic-receipt-invalid", "Semantic receipt edge IDs must be unique.")
+        receipt_edges[edge_id] = (
+            _profile_job_string(edge["source"], f"semantic_receipt.edges[{index}].source"),
+            _profile_job_string(edge["target"], f"semantic_receipt.edges[{index}].target"),
+            _profile_job_string(edge["kind"], f"semantic_receipt.edges[{index}].kind"),
+            edge["directed"],
+        )
+    ir_edges = {
+        str(edge["id"]): (str(edge["source"]), str(edge["target"]), str(edge["kind"]), edge.get("directed") is True)
+        for edge in ir["edges"]
+    }
+    if receipt_edges != ir_edges:
+        raise OutputFailure("semantic-coverage-mismatch", "Semantic receipt edges do not exactly match validated IR.")
+
+    raw_group_members = _profile_job_mapping(receipt["group_members"], "semantic_receipt.group_members")
+    receipt_groups: dict[str, set[str]] = {}
+    for group_id, raw_members in raw_group_members.items():
+        members = _profile_job_list(raw_members, f"semantic_receipt.group_members.{group_id}")
+        if any(not isinstance(item, str) or not item for item in members):
+            raise OutputFailure("semantic-receipt-invalid", "Semantic receipt group members must be unique non-empty IDs.")
+        if len(members) != len(set(members)):
+            raise OutputFailure("semantic-receipt-invalid", "Semantic receipt group members must be unique non-empty IDs.")
+        receipt_groups[str(group_id)] = set(members)
+    ir_groups = {str(group["id"]): {str(member) for member in group["member_ids"]} for group in ir["groups"]}
+    if receipt_groups != ir_groups:
+        raise OutputFailure("semantic-coverage-mismatch", "Semantic receipt group IDs or members do not exactly match validated IR.")
+    return copy.deepcopy(receipt)
+
+
+def _materialize_profile_job(job_value: Mapping[str, Any]) -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
+    job = _profile_job_mapping(job_value, "job")
+    extras = sorted(set(job) - _PROFILE_JOB_FIELDS)
+    if extras:
+        raise OutputFailure("profile-job-unknown-field", f"Unknown job field: {extras[0]}.")
+    missing = sorted(set(PROFILE_JOB_CONTRACT["required"]) - set(job))
+    if missing:
+        raise OutputFailure("profile-job-missing-field", f"Missing job field: {missing[0]}.")
+    if job["job_version"] != PROFILE_JOB_VERSION:
+        raise OutputFailure("profile-job-version", f"job_version must be {PROFILE_JOB_VERSION}.")
+    instruction = _profile_job_string(job["instruction"], "instruction")
+    title = _profile_job_string(job["title"], "title")
+
+    collections: dict[str, list[dict[str, Any]]] = {}
+    for name in PROFILE_JOB_COLLECTIONS:
+        raw_values = _profile_job_list(job.get(name, []), name)
+        values: list[dict[str, Any]] = []
+        for index, raw_value in enumerate(raw_values):
+            value = _profile_job_mapping(raw_value, f"{name}[{index}]")
+            if "source_refs" in value:
+                raise OutputFailure("profile-job-source-receipt-owned", f"{name}[{index}].source_refs is owned by the runtime.")
+            values.append(copy.deepcopy(value))
+        collections[name] = values
+    if len(collections["edges"]) > SECURITY_LIMITS["edges"]:
+        raise OutputFailure("profile-job-complexity-limit", f"Direct edges exceed the hard limit of {SECURITY_LIMITS['edges']}.")
+    collections["edges"].extend(
+        _expand_relation_groups(
+            job["relation_groups"],
+            edge_budget=SECURITY_LIMITS["edges"] - len(collections["edges"]),
+        )
+    )
+    source_assertions = _validate_source_assertions(job["source_assertions"], instruction, collections)
+    _validate_expected_counts(
+        job["expected_counts"],
+        _profile_job_counts(collections),
+        _source_assertion_counts(source_assertions),
+    )
+    receipt = _semantic_receipt(instruction, collections, source_assertions)
+
+    source_items: list[dict[str, Any]] = []
+    kept: list[dict[str, Any]] = []
+    reading_order: list[str] = []
+    source_counter = 0
+
+    def attach_receipt(item: dict[str, Any], content_class: str, locator: str, *, include_reading_order: bool = True) -> None:
+        nonlocal source_counter
+        if "source_refs" in item:
+            raise OutputFailure("profile-job-source-receipt-owned", f"{locator}.source_refs is owned by the runtime.")
+        item_id = _profile_job_string(item.get("id"), f"{locator}.id")
+        source_counter += 1
+        source_id = f"source-{source_counter:04d}"
+        item["source_refs"] = [source_id]
+        source_items.append(
+            {
+                "id": source_id,
+                "source_kind": "natural-language",
+                "locator": f"profile-job:{locator}",
+                "content_class": content_class,
+            }
+        )
+        kept.append({"source_ids": [source_id], "ir_ids": [item_id], "reason": "Explicit profiled-job semantic item retained."})
+        if include_reading_order:
+            reading_order.append(item_id)
+
+    for collection_name in PROFILE_JOB_COLLECTIONS:
+        for index, item in enumerate(collections[collection_name]):
+            attach_receipt(item, _CONTENT_CLASS[collection_name], f"{collection_name}[{index}]")
+            if collection_name == "nodes" and "members" in item:
+                for member_index, raw_member in enumerate(_profile_job_list(item["members"], f"nodes[{index}].members")):
+                    member = _profile_job_mapping(raw_member, f"nodes[{index}].members[{member_index}]")
+                    item["members"][member_index] = member
+                    attach_receipt(member, "entity", f"nodes[{index}].members[{member_index}]")
+            if collection_name == "series":
+                for datum_index, raw_datum in enumerate(_profile_job_list(item.get("data"), f"series[{index}].data")):
+                    datum = _profile_job_mapping(raw_datum, f"series[{index}].data[{datum_index}]")
+                    item["data"][datum_index] = datum
+                    attach_receipt(datum, "value", f"series[{index}].data[{datum_index}]", include_reading_order=False)
+
+    language_value = job.get("language", "auto")
+    if language_value == "auto":
+        language = {"mode": "auto"}
+    else:
+        language = {"mode": "explicit", "tag": _profile_job_string(language_value, "language")}
+    raw_request = {
+        "instruction": instruction,
+        "source": {"kind": "natural-language", "content": instruction},
+        "diagram_type": _profile_job_string(job["diagram_type"], "diagram_type"),
+        "variant_ids": copy.deepcopy(job.get("variant_ids", [])),
+        "structural_profile": _profile_job_string(job["structural_profile"], "structural_profile"),
+        "structural_override": {"status": "none"},
+        "size": job.get("size", "fit"),
+        "detail": job.get("detail", "balanced"),
+        "audience": job.get("audience", "mixed"),
+        "visual_mode": job.get("visual_mode", "neutral-light"),
+        "language": language,
+        "format": "svg",
+        "motion": "none",
+    }
+    normalized_request = normalize_request(raw_request)
+    parsed_model = {
+        "title": title,
+        "route_candidates": [
+            {
+                "type": normalized_request["diagram_type"],
+                "confidence": "high",
+                "evidence": ["request:explicit profiled-job diagram_type"],
+                "compatible": True,
+                "viable": True,
+                "materially_distinct": False,
+            }
+        ],
+        "variant_ids": copy.deepcopy(normalized_request["variant_ids"]),
+        **collections,
+        "source_items": source_items,
+        "fidelity": {"kept": kept, "merged": [], "dropped": [], "source_rot": [], "invented_count": 0},
+        "accessibility": {
+            "name": title,
+            "description": job.get("accessibility_description", instruction),
+            "reading_order": reading_order,
+            "data_representation_required": bool(
+                collections["series"]
+                or normalized_request["diagram_type"] in {"dp-security-matrix", "treemap", "sankey"}
+            ),
+        },
+    }
+    ir = build_ir(normalized_request, parsed_model)
+    return normalized_request, ir, receipt
+
+
+def create_profiled_diagram(
+    raw_request: Mapping[str, Any],
+    semantic_model: Mapping[str, Any],
+    output_dir: str | Path,
+    *,
+    semantic_receipt: Mapping[str, Any] | None = None,
+) -> ProfiledWriteResult:
+    """Resolve, render, validate, and atomically publish exactly SVG + ledger.
+
+    ``semantic_model`` is validated common IR, not SVG or free-form drawing
+    instructions.  ``output_dir`` must not already exist so the completed pair
+    can be made visible with one directory rename and no partial artifact set.
+    """
+
+    ir = validate_semantics(semantic_model)
+    request = normalize_request(raw_request)
+    reconciled_receipt = _reconcile_semantic_receipt(semantic_receipt, request, ir) if semantic_receipt is not None else None
+    if request["format"] != "svg" or request["motion"] != "none":
+        raise OutputFailure("profiled-output-contract", "The one-call profile renderer publishes one static SVG plus one ledger; request format=svg and motion=none.")
+    target = Path(output_dir).expanduser()
+    if target.exists():
+        raise OutputFailure("output-exists", "Atomic profile output requires a new, non-existing output directory.", status="needs-clarification")
+    requested_parent = target.parent
+    if requested_parent.is_symlink() or not requested_parent.is_dir():
+        raise OutputFailure("output-parent-invalid", "Output parent must be an existing non-symlink directory.")
+    parent = requested_parent.resolve()
+    resolved_target = parent / target.name
+    if not target.name or target.name in {".", ".."}:
+        raise OutputFailure("output-target-invalid", "Output directory needs one explicit safe final name.")
+
+    plan = build_profiled_plan(ir, request)
+    binding = plan["profile_binding"]
+    svg = render_profiled_svg(ir, request, plan)
+    geometry = validate_rendered_geometry(svg, ir, binding)
+    bundle = export_profiled_artifacts(ir, request, svg, binding, auto_detect_rasterizer=False, motion_runtime=False)
+    if set(bundle.artifacts) != {"svg"}:
+        raise OutputFailure("profiled-output-ambiguous", "The one-call renderer must produce exactly one SVG before ledger publication.")
+    ledger = dict(bundle.ledger)
+    ledger["renderer_version"] = PROFILE_RENDERER_VERSION
+    ledger["structural_conformance"] = "pass"
+    ledger["geometry_validation"] = geometry
+    ledger["validation"] = {**dict(ledger["validation"]), "structural_conformance": "pass", "geometry": "pass"}
+    if reconciled_receipt is not None:
+        ledger["semantic_receipt_sha256"] = hashlib.sha256(canonical_json(reconciled_receipt).encode("utf-8")).hexdigest()
+        ledger["source_assertions_sha256"] = reconciled_receipt["source_assertions_sha256"]
+        ledger["semantic_coverage"] = "pass"
+        ledger["semantic_coverage_scope"] = "declared-source-assertions-to-validated-ir"
+        ledger["source_interpretation_attestation"] = "agent-authored-not-independently-proven"
+        ledger["validation"] = {**dict(ledger["validation"]), "semantic_coverage": "pass"}
+    validate_profile_ledger(ledger, binding)
+    svg_bytes = bundle.artifacts["svg"].content
+    ledger_bytes = (json.dumps(ledger, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8")
+
+    stage = Path(tempfile.mkdtemp(prefix=f".{target.name}.", dir=parent))
+    try:
+        (stage / "diagram.svg").write_bytes(svg_bytes)
+        (stage / "diagram.ledger.json").write_bytes(ledger_bytes)
+        if {item.name for item in stage.iterdir()} != {"diagram.svg", "diagram.ledger.json"}:
+            raise OutputFailure("profiled-output-ambiguous", "Atomic stage contains an unexpected file.")
+        os.replace(stage, resolved_target)
+    except Exception:
+        shutil.rmtree(stage, ignore_errors=True)
+        raise
+    return ProfiledWriteResult(
+        output_dir=str(resolved_target),
+        svg_path=str(resolved_target / "diagram.svg"),
+        ledger_path=str(resolved_target / "diagram.ledger.json"),
+        selected_profile=str(binding["selected_profile"]),
+        layout_engine=str(binding["layout_engine"]),
+        svg_sha256=hashlib.sha256(svg_bytes).hexdigest(),
+        ledger_sha256=hashlib.sha256(ledger_bytes).hexdigest(),
+    )
+
+
+def create_profiled_diagram_from_job(job: Mapping[str, Any], output_dir: str | Path) -> ProfiledWriteResult:
+    """Materialize a bounded semantic job, reconcile its receipt, and call the canonical one-call renderer."""
+
+    request, ir, receipt = _materialize_profile_job(job)
+    return create_profiled_diagram(request, ir, output_dir, semantic_receipt=receipt)
+
+
+def _load_profile_job(path_value: str) -> dict[str, Any]:
+    path = Path(path_value)
+    descriptor: int | None = None
+    try:
+        descriptor = os.open(
+            path,
+            os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0) | getattr(os, "O_NONBLOCK", 0),
+        )
+        metadata = os.fstat(descriptor)
+        if not stat.S_ISREG(metadata.st_mode) or metadata.st_size == 0 or metadata.st_size > PROFILE_JOB_INPUT_LIMIT:
+            raise OutputFailure("profile-job-input-invalid", "Job path must be a non-empty regular non-symlink file no larger than 2 MiB.")
+        with os.fdopen(descriptor, "rb") as stream:
+            descriptor = None
+            content = stream.read(PROFILE_JOB_INPUT_LIMIT + 1)
+    except OutputFailure:
+        raise
+    except OSError as error:
+        raise OutputFailure("profile-job-input-invalid", "Job path must be an existing readable regular non-symlink file.") from error
+    finally:
+        if descriptor is not None:
+            os.close(descriptor)
+    if not content or len(content) > PROFILE_JOB_INPUT_LIMIT:
+        raise OutputFailure("profile-job-input-invalid", "Job file is empty or exceeds the 2 MiB limit.")
+    try:
+        value = json.loads(content.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise OutputFailure("profile-job-json-invalid", "Job file must contain one valid UTF-8 JSON object.") from error
+    return _profile_job_mapping(value, "job")
+
+
+def _main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(
+        description="Create one validated profiled SVG + ledger pair from a bounded JSON job without a custom Python driver.",
+    )
+    parser.add_argument("--job", help="Path to one UTF-8 JSON profiled job. Use --print-job-contract to inspect fields.")
+    parser.add_argument("--output-dir", help="New, non-existing directory that will atomically receive diagram.svg and diagram.ledger.json.")
+    parser.add_argument("--print-job-contract", action="store_true", help="Print the machine-readable profiled-job contract and exit.")
+    args = parser.parse_args(argv)
+    if args.print_job_contract:
+        if args.job or args.output_dir:
+            parser.error("--print-job-contract cannot be combined with --job or --output-dir")
+        print(json.dumps(PROFILE_JOB_CONTRACT, ensure_ascii=False, indent=2, sort_keys=True))
+        return 0
+    if not args.job or not args.output_dir:
+        parser.error("--job and --output-dir are required for creation")
+    try:
+        result = create_profiled_diagram_from_job(_load_profile_job(args.job), args.output_dir)
+    except Exception as error:
+        issue_method = getattr(error, "issue", None)
+        issue = issue_method() if callable(issue_method) else {
+            "code": str(getattr(error, "code", "profile-job-failed")),
+            "stage": str(getattr(error, "stage", "profile-job")),
+            "message": str(getattr(error, "message", "Profiled job failed closed.")),
+        }
+        print(json.dumps({"status": "FAIL", "issue": issue}, ensure_ascii=False, sort_keys=True), file=sys.stderr)
+        return 2
+    print(
+        json.dumps(
+            {
+                "status": "PASS",
+                "output_dir": result.output_dir,
+                "files": {
+                    "diagram.svg": {"path": result.svg_path, "sha256": result.svg_sha256},
+                    "diagram.ledger.json": {"path": result.ledger_path, "sha256": result.ledger_sha256},
+                },
+                "selected_profile": result.selected_profile,
+                "layout_engine": result.layout_engine,
+            },
+            ensure_ascii=False,
+            sort_keys=True,
+        )
+    )
+    return 0
+
+
 __all__ = [
-    "Artifact", "ExportBundle", "OUTPUT_CAPABILITIES", "OUTPUT_VERSION",
-    "OutputFailure", "RasterizerAdapter", "detect_rasterizer", "export_artifacts",
-    "registered_capabilities", "write_bundle",
+    "Artifact", "ExportBundle", "ProfiledWriteResult", "OUTPUT_CAPABILITIES", "OUTPUT_VERSION",
+    "OutputFailure", "RasterizerAdapter", "detect_rasterizer", "export_artifacts", "export_profiled_artifacts",
+    "PROFILE_JOB_CONTRACT", "create_profiled_diagram", "create_profiled_diagram_from_job", "registered_capabilities", "write_bundle",
 ]
+
+
+if __name__ == "__main__":
+    raise SystemExit(_main())

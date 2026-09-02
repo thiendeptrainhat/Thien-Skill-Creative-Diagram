@@ -1,4 +1,4 @@
 interface:
-  display_name: "Thien-Skill-Creative-Diagram"
+  display_name: "Thiện’s Skill — Creative Diagram"
   short_description: "Design professional, semantic diagrams"
   default_prompt: "Use $thien-skill-creative-diagram to create a professional diagram from my requirements."

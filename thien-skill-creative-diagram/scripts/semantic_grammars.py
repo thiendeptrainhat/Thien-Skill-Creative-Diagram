@@ -732,8 +732,8 @@ def _validate_user_journey_valid(ir: Mapping[str, Any]) -> None:
 def _validate_deployment_placement_valid(ir: Mapping[str, Any]) -> None:
     if not ir["nodes"] or any("placement" not in node for node in ir["nodes"]):
         _error("deployment-placement-missing", "Every deployment node requires explicit placement metadata.", "ir.nodes")
-    if any(edge.get("relation_kind") not in {"runtime", "dependency"} for edge in ir["edges"]):
-        _error("deployment-relation-invalid", "Deployment edges require runtime or dependency relation kind.", "ir.edges")
+    if any(edge.get("relation_kind") not in {None, "runtime", "dependency", "flow"} for edge in ir["edges"]):
+        _error("deployment-relation-invalid", "Deployment relation kind may be omitted or declared as runtime, dependency, or flow.", "ir.edges")
 
 
 def _validate_dependency_graph_valid(ir: Mapping[str, Any]) -> None:
@@ -877,6 +877,16 @@ def derive_ridgeline_profiles(ir: Mapping[str, Any]) -> dict[str, Any]:
         if grid is None:
             grid = centers
         if distribution["method"] == "histogram":
+            bandwidth = distribution["bandwidth"]
+            if bandwidth is not None and any(
+                not numerically_equal(right - left, bandwidth)
+                for left, right in zip(edges, edges[1:])
+            ):
+                _error(
+                    "ridgeline-histogram-bandwidth-mismatch",
+                    "Explicit histogram bandwidth must match every uniform bin interval.",
+                    "ir.series",
+                )
             counts = [0] * (len(edges) - 1)
             for sample in samples:
                 bin_index = len(counts) - 1 if sample == edges[-1] else next(

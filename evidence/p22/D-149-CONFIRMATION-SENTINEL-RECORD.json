@@ -1,0 +1,217 @@
+{
+  "record_id": "D149-CONFIRMATION-SENTINEL-1",
+  "decision": "D-149",
+  "target_version": "2.1.0",
+  "recorded_at": "2026-09-01T00:00:00+07:00",
+  "disposition": "HARD-FAIL",
+  "summary": {
+    "d148_deterministic_qa": "PASS",
+    "candidate_preflight": "PASS",
+    "fresh_sentinel": "HARD-FAIL",
+    "connector_geometry": "PASS",
+    "semantic_group_conformance": "HARD-FAIL",
+    "mandatory_stop_applied": true,
+    "step_4": "BLOCKED",
+    "release_candidate": false
+  },
+  "authorization": {
+    "run_count": 1,
+    "new_file_budget": {
+      "machine_evidence": 1,
+      "human_summary": 0
+    },
+    "source_repair_after_start": false,
+    "rerun": false,
+    "protected_surfaces": [
+      "runtime",
+      "tests",
+      "skill",
+      "profile-registry",
+      "approved-assets",
+      "golden",
+      "benchmark",
+      "license",
+      "brand",
+      "dist",
+      "release",
+      "git",
+      "p22-full-baseline",
+      "steps-4-through-7"
+    ]
+  },
+  "source_preflight": {
+    "full_regression": {
+      "status": "PASS",
+      "passed": 439,
+      "total": 439
+    },
+    "git_diff_check": "PASS",
+    "hashes_sha256": {
+      "profile_renderer.py": "d8985287511471a6d29dbe890109464e80788063fc8b5b850fbf5423363cbdc7",
+      "test_profile_renderer.py": "02c102b436685c5fb4b72e4375edc5e12362f3eecf76d00d8975f2113dd22b66",
+      "structural-profiles.json": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787"
+    }
+  },
+  "candidate": {
+    "target": "openai-plugin",
+    "candidate_id": "TCD-PACKAGES-2.1.0-D149.1",
+    "archive_name": "thien-skill-creative-diagram-2.1.0-d149.1-openai-plugin.zip",
+    "sha256": "a113ec692e84c71e46476c73f6f9f64145da4d6d7830afe7fa4ab4edcb75a355",
+    "bytes": 523986,
+    "file_count": 120,
+    "second_build_byte_identical": true,
+    "candidate_only_smoke": {
+      "status": "PASS",
+      "selected_profile": "topology-and-zones",
+      "layout_engine": "topology-and-zones",
+      "output_files": [
+        "diagram.svg",
+        "diagram.ledger.json"
+      ]
+    },
+    "contains_tests_or_evidence": false,
+    "personal_path_scan": "PASS",
+    "location_lifecycle": "OS-temp only; never copied to dist"
+  },
+  "frozen_input": {
+    "raw_prompt": {
+      "sha256": "b08706697fa1b736ecf4d5a5af3d005504c60b07580e2365609ccb462ab0aafb",
+      "bytes": 1255,
+      "relation_to_d147": "new semantically-equivalent confirmation; not an exact prompt-byte replay"
+    },
+    "oracle": {
+      "sha256": "f1c053cc21c396bbd401c6d7a8e785810b95e30dea6f6ab96a4adf8b14c5e0f3",
+      "bytes": 2712,
+      "expected_profile": "topology-and-zones",
+      "expected_parent": "architecture",
+      "expected_nodes": 8,
+      "expected_groups": 3,
+      "expected_edges": 10
+    },
+    "execution_limits_seconds": {
+      "hard_wall": 900,
+      "no_material_progress": 300,
+      "post_artifact_validation": 180,
+      "poll_interval": 30,
+      "stop_ack_grace": 60
+    }
+  },
+  "execution": {
+    "fresh_projectless_task_id": "01a058e4-77e3-75c1-bafc-b0da8b541d50",
+    "started_epoch": 1788197763,
+    "completed_epoch": 1788198235,
+    "duration_milliseconds": 471404,
+    "within_hard_wall": true,
+    "output_mtime_epoch": 1788198188,
+    "output_file_count": 2,
+    "output_files": {
+      "diagram.svg": {
+        "bytes": 12632,
+        "sha256": "13690449256663e8be4764f4e426dc265df70257f55ad0a8a219d9fbd46896e2"
+      },
+      "diagram.ledger.json": {
+        "bytes": 3192,
+        "sha256": "28f460fd5b9607539e6036b8948be4b504088ec37997fa37b9de59e571e3902f"
+      }
+    },
+    "agent_reported_hashes_match_controller": true,
+    "isolation": {
+      "oracle_access": false,
+      "repository_access": false,
+      "network_access": false,
+      "dependency_install": false,
+      "package_mutation": false,
+      "repository_mutation": false,
+      "status": "PASS",
+      "provider_context_outside_controller_control": "not claimed eliminated"
+    }
+  },
+  "artifact_facts": {
+    "selected_profile": "topology-and-zones",
+    "canonical_parent": "architecture",
+    "layout_engine": "topology-and-zones",
+    "mode": "neutral-light",
+    "canvas": "social-square",
+    "nodes": 8,
+    "directed_edges": 10,
+    "collision_graph": {
+      "segment_count": 30,
+      "terminal_fan_groups": 5,
+      "proper_crossings": 5,
+      "declared_junctions": 0,
+      "shared_segments": 0,
+      "undeclared_junctions": 0
+    },
+    "distinct_terminal_ports": {
+      "api-gateway_outgoing": 3,
+      "transaction-db_incoming": 2,
+      "log-store_incoming": 3
+    },
+    "crossing_bridges": [
+      [785, 372],
+      [809, 372],
+      [809, 402],
+      [797, 526],
+      [809, 432]
+    ],
+    "semantic_zone_boundaries": {
+      "outside": ["customer"],
+      "public-edge": ["waf", "api-gateway"],
+      "private-services": ["identity", "order", "payment"],
+      "data": ["transaction-db", "log-store"]
+    }
+  },
+  "independent_review": {
+    "structural_judge": {
+      "verdict": "HARD-FAIL",
+      "supported": [
+        "exact 8 nodes and 10 directed edges",
+        "correct profile, parent, engine, mode, and canvas",
+        "correct node containment",
+        "distinct terminal ports, approaches, and arrowheads",
+        "zero shared or opposing segment",
+        "zero undeclared junction",
+        "five declared visible crossing bridges",
+        "no serious overlap or clipping"
+      ],
+      "hard_failure": "SVG declares four semantic zone-boundary groups: an extra outside group and data instead of the oracle-required data-zone ID; therefore exact three-group conformance is not met",
+      "unsupported_ledger_claims": [
+        "validation.semantic=pass",
+        "structural_conformance=pass"
+      ]
+    },
+    "blind_visual_reviewer": {
+      "verdict": "PASS",
+      "identity_guess": "system architecture using topology-and-zones/swimlane",
+      "five_second_takeaway": "Customer flows through WAF and API Gateway to private services and then Transaction DB and Log Store",
+      "craft_score_out_of_5": 4,
+      "crossings_read_as_non_joining": true,
+      "terminal_ports_and_arrowheads_read_as_distinct": true,
+      "hard_visual_defect": false,
+      "minor_observations": [
+        "connector cluster near the data zone is dense",
+        "subtitle repeats the same profile/engine label"
+      ]
+    },
+    "reconciliation": {
+      "verdict": "HARD-FAIL",
+      "oracle_ambiguity": false,
+      "reason": "Frozen oracle explicitly defines three semantic group IDs and rejects missing or extra groups; outside is emitted as a semantic zone-boundary, not a decorative shell, and data does not match data-zone"
+    }
+  },
+  "conclusion": {
+    "d148_connector_remediation_behaviorally_confirmed_for_sample": true,
+    "overall_behavioral_confirmation": "HARD-FAIL",
+    "root_cause": "Fresh generator emitted an additional semantic outside zone-boundary and normalized the data group ID to data instead of the frozen data-zone ID",
+    "mandatory_stop": "Applied after independent reconciliation",
+    "source_repair_after_start": false,
+    "oracle_change_after_start": false,
+    "sentinel_rerun": false,
+    "p22_full_baseline_opened": false,
+    "step_4_opened": false,
+    "protected_surface_changed": false,
+    "dist_changed": false,
+    "git_operation_performed": false,
+    "owner_authorization_required_for_any_next_action": true
+  }
+}

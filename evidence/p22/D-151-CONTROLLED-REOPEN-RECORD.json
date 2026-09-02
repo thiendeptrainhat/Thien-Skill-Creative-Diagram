@@ -1,0 +1,144 @@
+{
+  "record_id": "D151-CONTROLLED-REOPEN-1",
+  "decision": "D-151",
+  "target_version": "2.1.0",
+  "recorded_at": "2026-09-01T00:00:00+07:00",
+  "disposition": "INVALID-CONTROLLER-ABORT",
+  "summary": {
+    "d150_deterministic_qa": "PASS",
+    "candidate_preflight": "PASS",
+    "fresh_sentinel": "NOT-EVALUABLE",
+    "controller_protocol": "INVALID",
+    "step_3_reopened": false,
+    "remaining_cases_run": 0,
+    "step_4": "BLOCKED",
+    "release_candidate": false
+  },
+  "authorization": {
+    "staged_gate": "1 confirmation sentinel + at most 19 remaining Step 3 cases after sentinel PASS",
+    "new_file_budget": {
+      "machine_evidence": 1,
+      "human_summary": 0
+    },
+    "source_repair_after_freeze": false,
+    "failed_case_rerun": false,
+    "protected_surface_mutation": false
+  },
+  "source_preflight": {
+    "full_regression": {
+      "status": "PASS",
+      "passed": 442,
+      "total": 442
+    },
+    "git_diff_check": "PASS",
+    "hashes_sha256": {
+      "SKILL.md": "015e47a5da352b8869e23de74b9795a381ef59caa19d0ea89e7aaf6a6ffb8f69",
+      "profile_renderer.py": "8c6cdb28076b88dc181c530200f7fb5f4dbfb58bc7245e412cf52a64b7805552",
+      "test_profile_renderer.py": "1a9ef419dcea3342702979c01d66a2cf5bda0e8f9cf268c50bcc714377293f16",
+      "structural-profiles.json": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787",
+      "structural_profiles.py": "66632f9498bd82beb347235691173c54302b636ee7f6f70a357c0fe5b858494c"
+    }
+  },
+  "candidate": {
+    "target": "openai-plugin",
+    "candidate_id": "TCD-PACKAGES-2.1.0-D151.1",
+    "archive_name": "thien-skill-creative-diagram-2.1.0-d151.1-openai-plugin.zip",
+    "sha256": "93a75590f1c493cdbbb5218baa5b1aa6ef5a01a95a3c62b7c5d69c867c8c9fec",
+    "bytes": 524635,
+    "file_count": 120,
+    "second_build_byte_identical": true,
+    "contains_tests_or_evidence": false,
+    "personal_path_scan": "PASS",
+    "candidate_only_smoke": {
+      "status": "PASS",
+      "selected_profile": "topology-and-zones",
+      "layout_engine": "topology-and-zones",
+      "semantic_groups": 3,
+      "presentation_shells": 1,
+      "semantic_group_validation": "pass",
+      "output_files": [
+        "diagram.svg",
+        "diagram.ledger.json"
+      ]
+    },
+    "location_lifecycle": "OS-temp only; never copied to dist"
+  },
+  "frozen_phase": {
+    "casebook": {
+      "sha256": "e2354a738ec609cfe14862719f8f49d4be69f2bfb0e797911e174fa77489103c",
+      "bytes": 14220
+    },
+    "roster": {
+      "sha256": "54ceceb2426c766492079c1d392b3ba0b82f48677dcc7d16195ae0cf8ef1f3a8",
+      "bytes": 8563,
+      "case_count": 20,
+      "layout_engine_count": 14,
+      "capability_count": 4,
+      "presentation_count": 2
+    },
+    "r01": {
+      "role": "d150-confirmation-sentinel",
+      "raw_prompt_sha256": "bacd49df311c9142e3d39718f592144cb3caf58205bcf73187e158b7895606c8",
+      "raw_prompt_bytes": 819,
+      "oracle_sha256": "088f341e01d38600aaad0e40187326a2d55034360b3803cf6815f92437dced89",
+      "oracle_bytes": 621,
+      "expected_profile": "topology-and-zones",
+      "expected_nodes": 8,
+      "expected_edges": 10,
+      "expected_semantic_groups": 3,
+      "oracle_id_policy": "Exact SVG semantic-group IDs and members must equal IDs explicitly required by the raw prompt and normalized IR; external actor is presentation-only."
+    },
+    "execution_limits_seconds": {
+      "hard_wall": 900,
+      "no_material_progress": 300,
+      "post_artifact_validation": 180,
+      "poll_interval": 30,
+      "stop_ack_grace": 60
+    }
+  },
+  "execution": {
+    "fresh_projectless_task_id": "01a0590f-666f-7ae0-8676-b9beb5fc7026",
+    "started_epoch": 1788200577,
+    "completed_epoch": 1788200938,
+    "duration_milliseconds": 361635,
+    "within_hard_wall": true,
+    "output_file_count_at_stop": 0,
+    "agent_stop_acknowledged": true,
+    "isolation": {
+      "oracle_access": false,
+      "repository_access": false,
+      "network_access": false,
+      "dependency_install": false,
+      "package_mutation": false,
+      "repository_mutation": false,
+      "status": "PASS"
+    }
+  },
+  "controller_deviation": {
+    "code": "D151-CONTROLLER-MISAPPLIED-NO-MATERIAL-PROGRESS",
+    "severity": "phase-invalidating",
+    "incorrect_action": "Controller treated zero output files at approximately the 300-second threshold as no material progress and sent a hard-stop instruction.",
+    "protocol_definition": "D-146 defines material progress as a completed tool/file event or a changed expected-output hash/size; reasoning, commentary, active status, and placeholders alone do not reset the clock.",
+    "contradicting_evidence": "The fresh task log contains repeated completed command events throughout the interval, including package verification/extraction, reference reads, profile resolution, runtime inspection, and a completed command immediately before the stop message.",
+    "correct_disposition": "The stop was not justified by the frozen inactivity rule. With no frozen output artifact, generator conformance cannot be judged; the run is NOT-EVALUABLE rather than HARD-FAIL or PASS.",
+    "repair_policy": "No continuation or replacement run was attempted because the authorization prohibited rerun after a stopped sentinel and the interrupted task was no longer an uninterrupted fresh execution."
+  },
+  "independent_review": {
+    "structural_judge": "NOT-EXECUTABLE-NO-ARTIFACT",
+    "blind_visual_reviewer": "NOT-EXECUTABLE-NO-ARTIFACT",
+    "reconciliation": "NOT-EXECUTABLE-PHASE-INVALIDATED-BEFORE-ARTIFACT"
+  },
+  "conclusion": {
+    "d150_behaviorally_confirmed": false,
+    "d150_behaviorally_refuted": false,
+    "step_3_reopened": false,
+    "r02_through_r20_run": false,
+    "step_4_opened": false,
+    "source_or_oracle_changed_after_freeze": false,
+    "sentinel_rerun": false,
+    "protected_surface_changed": false,
+    "dist_changed": false,
+    "git_operation_performed": false,
+    "owner_authorization_required_for_replacement_sentinel": true
+  }
+}

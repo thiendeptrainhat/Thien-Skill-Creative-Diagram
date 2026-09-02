@@ -1,6 +1,6 @@
 {
   "capability_mappings": [],
-  "generated_at": "2026-08-30T00:00:00+07:00",
+  "generated_at": "2026-09-02T00:00:00+07:00",
   "notice_projection": {
     "sort_key": "source_id",
     "source_selector": "sources[notice.include=true]",
@@ -10,10 +10,10 @@
   "project": {
     "reimplementation_model": "clean-room-oriented independent reimplementation",
     "technical_id": "thien-skill-creative-diagram",
-    "version": "2.0.0"
+    "version": "2.5.0"
   },
   "release_lineage": {
-    "authorization": "D-130",
+    "authorization": "D-200 Step4A successor implementation from D-199",
     "coexistence": {
       "combined": 107,
       "p18": 14,
@@ -21,7 +21,7 @@
       "substitution": false
     },
     "flexibility_condition": "D-128: 31 masked silhouettes are QA samples, not fixed outputs; safe semantically valid user requests take precedence.",
-    "gate_state": "G-00...G-07@2.0.0 NOT-EVALUATED until separately reviewed",
+    "gate_state": "G-00@2.5.0 PASS; G-01@2.5.0 PASS; G-02@2.5.0 PASS; G-03@2.5.0 PASS-CARRIED-FORWARD; G-04@2.5.0 PASS; G-05...G-07@2.5.0 NOT-EVALUATED",
     "p17_source_manifest_sha256": "efabfb7e9e485449947ce98bc8e2fc5078a4c7d2593521c115b309c9aef24c57",
     "p18_manifest_sha256": "7925c1ab0515a59057851bb3888ff4d9974e5f5701b873b1f11468a5fd64a03a",
     "p19b_manifest_sha256": "ae95aca927ec69904483441db6b85de0381c1c1d85f4f01ee07a21a40aed0ba2",
@@ -32,7 +32,7 @@
       "result": "PASS",
       "sha256": "0d3720f9ff9bfc658a1477fa6d487bdabb32e99aa7a9a0e42f0ebd02869c5d63"
     },
-    "target_version": "2.0.0"
+    "target_version": "2.5.0"
   },
   "schema_version": "2.0-candidate",
   "sources": [

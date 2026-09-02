@@ -24,7 +24,7 @@ Bind these roles to original visual shapes only in an authorized visual phase. D
 
 ## Edge rules
 
-- Use directed runtime or dependency edges.
+- Use directed edges that preserve action-specific kind and label; optional relation kind may be runtime, dependency, or flow.
 - Keep logical architecture distinct from runtime placement.
 
 ## Label rules

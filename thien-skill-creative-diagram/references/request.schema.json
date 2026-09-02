@@ -1,25 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:thien-skill-creative-diagram:schema:request:1.5",
-  "title": "Thien-Skill-Creative-Diagram request contract 1.5",
-  "description": "Portable request envelope for 39 canonical types and four explicit 1.5 capability variants.",
+  "title": "Thien-Skill-Creative-Diagram raw request contract 1.5 with v2.1 structural-profile extension",
+  "description": "Portable raw request envelope. Only instruction and source are required at the boundary; the canonical runtime materializes and validates every declared default before producing the normalized request receipt.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema_version",
-    "instruction",
-    "source",
-    "diagram_type",
-    "size",
-    "detail",
-    "audience",
-    "visual_mode",
-    "language",
-    "format",
-    "motion"
-  ],
+  "required": ["instruction", "source"],
   "properties": {
-    "schema_version": { "const": "1.5" },
+    "schema_version": { "const": "1.5", "default": "1.5" },
     "instruction": {
       "type": "string",
       "minLength": 1,
@@ -104,14 +92,44 @@
         "uml-class",
         "story-map",
         "database-schema"
-      ]
+      ],
+      "default": "auto"
     },
     "variant_ids": {
       "type": "array",
       "uniqueItems": true,
       "maxItems": 1,
       "items": { "enum": ["CAP-V17", "CAP-V18", "CAP-V19", "CAP-V20"] },
+      "default": [],
       "description": "Optional explicit selection of a new 1.5 capability. Existing v1.0 variants remain selected by the approved routing behavior and are not changed by this candidate."
+    },
+    "structural_profile": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$",
+      "maxLength": 80,
+      "default": "auto",
+      "description": "Public structural-profile selector or auto. Exact membership and aliases are resolved only from references/structural-profiles.json after semantic routing."
+    },
+    "structural_override": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["none", "custom-structure"] },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 2000 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "custom-structure" } }, "required": ["status"] },
+          "then": { "required": ["reason"] }
+        },
+        {
+          "if": { "properties": { "status": { "const": "none" } }, "required": ["status"] },
+          "then": { "not": { "required": ["reason"] } }
+        }
+      ],
+      "default": { "status": "none" },
+      "description": "Only an explicit safe user request may select custom-structure; it places the output outside the 45-profile conformance scope."
     },
     "size": {
       "enum": [
@@ -124,12 +142,14 @@
         "print-a4-landscape",
         "print-letter-landscape",
         "fit"
-      ]
+      ],
+      "default": "fit"
     },
-    "detail": { "enum": ["faithful", "balanced", "simplified"] },
-    "audience": { "enum": ["engineer", "mixed", "executive"] },
+    "detail": { "enum": ["faithful", "balanced", "simplified"], "default": "balanced" },
+    "audience": { "enum": ["engineer", "mixed", "executive"], "default": "mixed" },
     "visual_mode": {
       "enum": ["neutral-light", "neutral-dark", "editorial"],
+      "default": "neutral-light",
       "description": "Approved P-02 visual-mode names inherited unchanged."
     },
     "language": {
@@ -152,10 +172,11 @@
           "if": { "properties": { "mode": { "const": "auto" } } },
           "then": { "not": { "required": ["tag"] } }
         }
-      ]
+      ],
+      "default": { "mode": "auto" }
     },
-    "format": { "enum": ["html", "svg", "png", "html+png"] },
-    "motion": { "enum": ["none", "reveal", "step", "loop"] }
+    "format": { "enum": ["html", "svg", "png", "html+png"], "default": "html" },
+    "motion": { "enum": ["none", "reveal", "step", "loop"], "default": "none" }
   },
   "allOf": [
     {

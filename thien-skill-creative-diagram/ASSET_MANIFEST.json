@@ -4,7 +4,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-1024",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         1024,
@@ -17,7 +17,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "21ad34d49d29c381c7d81abe14d29b29ee16a109b5f98e2113afb3659b8788b1",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-1024.png"
     },
@@ -25,7 +25,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-512",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         512,
@@ -38,7 +38,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "20a83423a77ac03177b244c808b83b224177ab6123061c24d2ec7415bd0dd516",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-512.png"
     },
@@ -46,7 +46,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-400",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         400,
@@ -59,7 +59,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "b0b93f8b523a636299465678ac47bd3a51a9e19a94fed65ebd4f8b8e2ea3512e",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-400.png"
     },
@@ -67,7 +67,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-256",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         256,
@@ -80,7 +80,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "5982799c7be383590e4b3d97cd25e9038ea4f4d5609ff94138c6d7f979831bdc",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-256.png"
     },
@@ -88,7 +88,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-128",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         128,
@@ -101,7 +101,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "088a2cf1f07da32815f973978ee510018d7a229dee2ec5fbfc31b99196a9f73a",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-128.png"
     },
@@ -109,7 +109,7 @@
       "alt_text": "TDTN crest with sword, lion, letterforms and open book in navy and gold",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-TRANSPARENT-64",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         64,
@@ -122,7 +122,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "4955305d5d6cdebe8e8cbf07d27591ea7be7ac9fc2f76c362cae7079206719c3",
       "source_evidence_path": "evidence/p09/candidates/full-crest-transparent-64.png"
     },
@@ -130,7 +130,7 @@
       "alt_text": "TDTN crest on a light rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-LIGHT-512",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         512,
@@ -143,7 +143,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "ad17e260a194f5750b8b91c84a152a78683c1519bba13079f84a4d4301079371",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-512.png"
     },
@@ -151,7 +151,7 @@
       "alt_text": "TDTN crest on a light rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-LIGHT-400",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [
         {
           "intended_use": "OpenAI icon carry-forward candidate; P-20 revalidates the official host field and smoke-tests exact bytes",
@@ -178,7 +178,7 @@
         "universal-raw-skill"
       ],
       "release_eligible": false,
-      "scope": "v2.0.0-brand-presentation-candidate",
+      "scope": "v2.5.0-brand-presentation-candidate",
       "sha256": "69789949b4233d14a4010245a3a614b8e6fcfbd28cbae0e2f26e0a890faa1453",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-400.png"
     },
@@ -186,7 +186,7 @@
       "alt_text": "TDTN crest on a light rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-LIGHT-256",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         256,
@@ -199,7 +199,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "75d36d549af791e102d2ed21080102321100ccf53f8608d8edc45773d5413322",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-256.png"
     },
@@ -207,7 +207,7 @@
       "alt_text": "TDTN crest on a light rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-LIGHT-128",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         128,
@@ -220,7 +220,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "0f14b393d3bf5cd4a90900c9ba4b08d7763221fc19ffd9166448792e700cd3a1",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-128.png"
     },
@@ -228,7 +228,7 @@
       "alt_text": "TDTN crest on a light rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-LIGHT-64",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [
         {
           "intended_use": "OpenAI icon carry-forward candidate; P-20 revalidates the official host field and smoke-tests exact bytes",
@@ -255,7 +255,7 @@
         "universal-raw-skill"
       ],
       "release_eligible": false,
-      "scope": "v2.0.0-brand-presentation-candidate",
+      "scope": "v2.5.0-brand-presentation-candidate",
       "sha256": "70d971a66da8b4ce6c75d8c95c2c23a32aa584b9697ba5d3487960fbafccc5de",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-light-64.png"
     },
@@ -263,7 +263,7 @@
       "alt_text": "TDTN crest on a dark rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-DARK-512",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         512,
@@ -276,7 +276,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "6bba9325d05f9f26cf0410b0a72ad3c8247514226513493181704a2be01c6502",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-512.png"
     },
@@ -284,7 +284,7 @@
       "alt_text": "TDTN crest on a dark rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-DARK-400",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         400,
@@ -297,7 +297,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "eb49f13f9fc5bd53be5942d19b9351b82a3410424575c6e45fab1f957635f004",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-400.png"
     },
@@ -305,7 +305,7 @@
       "alt_text": "TDTN crest on a dark rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-DARK-256",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         256,
@@ -318,7 +318,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "b8c35974524f4620d97029563c55398d661a07afc43191a0ca46d51beb75d9cd",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-256.png"
     },
@@ -326,7 +326,7 @@
       "alt_text": "TDTN crest on a dark rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-DARK-128",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         128,
@@ -339,7 +339,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "5d477309169b66de919a4574765478403097bef4e5d837fc6668c6ac1fae010a",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-128.png"
     },
@@ -347,7 +347,7 @@
       "alt_text": "TDTN crest on a dark rounded-square presentation plate",
       "approval_ref": "P09-OWNER-A-2026-08-15",
       "asset_id": "AST-TDTN-DARK-64",
-      "destination_status": "D-130 exact-byte carry-forward candidate; G-06@2.0.0 owner/legal approval pending",
+      "destination_status": "D-197 rebaseline of D-130 exact bytes; G-06@2.5.0 owner disposition pending",
       "destinations": [],
       "dimensions": [
         64,
@@ -360,7 +360,7 @@
       "owner_approved": true,
       "package_targets": [],
       "release_eligible": false,
-      "scope": "owner-approved-provenance-not-packaged-v2.0.0",
+      "scope": "owner-approved-provenance-not-packaged-v2.5.0",
       "sha256": "ffe7d296a75cee9b5df1f8eeba40179e87436d772f65195154b20a6469f7d256",
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-64.png"
     }
@@ -380,7 +380,7 @@
         48,
         48
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-transparent-safe-area",
       "package_targets": [],
       "release_eligible": false,
@@ -394,7 +394,7 @@
         32,
         32
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-transparent-safe-area",
       "package_targets": [],
       "release_eligible": false,
@@ -408,7 +408,7 @@
         48,
         48
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-light-squircle-plate",
       "package_targets": [],
       "release_eligible": false,
@@ -422,7 +422,7 @@
         32,
         32
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-light-squircle-plate",
       "package_targets": [],
       "release_eligible": false,
@@ -436,7 +436,7 @@
         48,
         48
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-dark-squircle-plate",
       "package_targets": [],
       "release_eligible": false,
@@ -450,7 +450,7 @@
         32,
         32
       ],
-      "exclusion_reason": "D-130 candidate continues the D-027 exclusion of 32px and 48px derivatives for v2.0.0",
+      "exclusion_reason": "D-197 rebaseline preserves the D-130/D-027 exclusion of 32px and 48px derivatives for v2.5.0",
       "family": "full-crest-dark-squircle-plate",
       "package_targets": [],
       "release_eligible": false,
@@ -459,7 +459,7 @@
       "source_evidence_path": "evidence/p09/candidates/full-crest-plate-dark-32.png"
     }
   ],
-  "generated_at": "2026-08-30T00:00:00+07:00",
+  "generated_at": "2026-09-02T00:00:00+07:00",
   "master": {
     "dimensions": [
       1100,
@@ -473,23 +473,23 @@
     "source_evidence_path": "evidence/p09/source/Logo-TDTN-master.png"
   },
   "package_mapping_decision": {
-    "decision": "D-130 candidate carry-forward of exact D-027/D-028 bytes",
-    "p20_boundary": "P-20 may build local-only candidate archives and evidence; no dist, publication, Git, tag, Release, or release eligibility before G-06/G-07@2.0.0 approvals.",
+    "decision": "D-197 rebaseline of exact D-130/D-027/D-028 bytes under D-196",
+    "step4b_boundary": "Step4B may build local-only v2.5.0 candidate archives and evidence; no dist, publication, Git, tag, Release, or release eligibility before G-06/G-07@2.5.0 approvals.",
     "policy": "Propose exact light-plate 64px and 400px for OpenAI plugin and Universal raw skill; no Claude brand asset; all other approved derivatives remain provenance-only.",
-    "state": "candidate-awaiting-owner-and-vietnamese-lawyer-review"
+    "state": "candidate-awaiting-g06-owner-disposition"
   },
   "project": {
     "technical_id": "thien-skill-creative-diagram",
-    "version": "2.0.0"
+    "version": "2.5.0"
   },
-  "record_id": "P20-ASSET-MANIFEST-CANDIDATE-1",
+  "record_id": "D197-ASSET-MANIFEST-CANDIDATE-1",
   "rights_boundary": {
-    "independent_legal_review_required": true,
+    "counsel_approval_or_explicit_owner_waiver_required": true,
     "owner_assertion_only": true,
     "skill_license_grant_includes_brand_rights": false,
     "trademark_registration_or_clearance_claimed": false
   },
   "schema_version": "2.0-candidate",
   "source_manifest_id": "SRC-TDTN-LOGO-MASTER",
-  "status": "candidate-awaiting-owner-and-vietnamese-lawyer-review"
+  "status": "candidate-awaiting-g06-owner-disposition"
 }

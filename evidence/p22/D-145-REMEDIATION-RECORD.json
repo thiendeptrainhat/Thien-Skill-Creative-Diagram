@@ -1,0 +1,165 @@
+{
+  "record_id": "D145-REMEDIATION-1",
+  "decision": "D-145",
+  "target_version": "2.1.0",
+  "recorded_at": "2026-08-31T21:13:57+07:00",
+  "disposition": "STOPPED",
+  "implementation_result": "PASS",
+  "sentinel_result": "HARD-FAIL",
+  "step_4_state": "BLOCKED",
+  "claims": {
+    "structural_profile_runtime_implemented": true,
+    "deterministic_regression_passed": true,
+    "fresh_behavioral_conformance_passed": false,
+    "p22_d144_reclassified": false,
+    "release_ready": false
+  },
+  "implementation": {
+    "canonical_profile_count": 45,
+    "layout_engine_count": 14,
+    "profile_identity_classes": {
+      "canonical_anchor": 14,
+      "canonical_type": 25,
+      "capability": 4,
+      "presentation": 2
+    },
+    "binding_stage": "pre-render",
+    "profile_registry_sha256": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787",
+    "changed_runtime_files": [
+      "thien-skill-creative-diagram/SKILL.md",
+      "thien-skill-creative-diagram/references/output-motion.md",
+      "thien-skill-creative-diagram/references/request.schema.json",
+      "thien-skill-creative-diagram/references/structural-profiles.json",
+      "thien-skill-creative-diagram/scripts/diagram_core.py",
+      "thien-skill-creative-diagram/scripts/output_pipeline.py",
+      "thien-skill-creative-diagram/scripts/structural_profiles.py",
+      "thien-skill-creative-diagram/scripts/tests/test_structural_profiles.py"
+    ],
+    "protected_surfaces_modified": {
+      "approved_assets": false,
+      "golden_or_benchmark": false,
+      "license_or_brand": false,
+      "dist_or_release_archive": false,
+      "git_index_history_tag_or_release": false,
+      "frozen_p22_records": false
+    }
+  },
+  "deterministic_qa": {
+    "full_unittest_suite": {
+      "result": "PASS",
+      "tests": 427,
+      "import_roots": [
+        "thien-skill-creative-diagram/scripts",
+        "evidence/p19/source"
+      ],
+      "bytecode_disabled": true
+    },
+    "structural_profile_suite": {
+      "result": "PASS",
+      "tests": 13
+    },
+    "component_regressions": [
+      {
+        "suite": "output_pipeline",
+        "result": "PASS",
+        "tests": 18
+      },
+      {
+        "suite": "diagram_core",
+        "result": "PASS",
+        "tests": 23
+      },
+      {
+        "suite": "semantic_v15",
+        "result": "PASS",
+        "tests": 20
+      }
+    ],
+    "sample_library_check": {
+      "result": "PASS",
+      "identities": 45,
+      "html_mode_derivatives": 135,
+      "png_mode_derivatives": 135
+    },
+    "static_checks": {
+      "python_ast": "PASS",
+      "json_parse": "PASS",
+      "skill_markdown_links": "PASS",
+      "ruby_yaml_frontmatter_equivalent": "PASS",
+      "git_diff_check": "PASS",
+      "runtime_junk_scan": "PASS",
+      "personal_path_and_todo_scan": "PASS"
+    },
+    "canonical_quick_validate": {
+      "result": "NOT-EXECUTABLE",
+      "reason": "PyYAML is not installed in the bounded local runtime; no dependency installation was authorized or attempted.",
+      "equivalent_rule_check": "PASS"
+    }
+  },
+  "ephemeral_candidate": {
+    "target": "openai-plugin",
+    "candidate_version": "2.1.0-d145.1",
+    "archive_sha256": "d3c4cc5051ee2831586c404a47f7b8a83761cee0f066cf4c0ed0a29545b42bfc",
+    "bytes": 495424,
+    "file_count": 118,
+    "two_builds_byte_identical": true,
+    "safe_member_inventory": "PASS",
+    "development_or_evidence_files_excluded": "PASS",
+    "personal_machine_paths_absent": "PASS",
+    "smoke_resolution": {
+      "requested_selector": "architecture",
+      "selected_profile": "topology-and-zones",
+      "canonical_parent": "architecture",
+      "layout_engine": "topology-and-zones",
+      "mode": "neutral-light",
+      "profile_record_sha256": "9ec22eb819e220000e75227f19da0cfc9036669cf9e12f849d4f327b3bcf5f40"
+    },
+    "persisted_to_dist": false
+  },
+  "sentinel": {
+    "case_id": "D145-SENTINEL-01",
+    "platform": "Codex local",
+    "environment": "fresh projectless task",
+    "task_id": "01a05812-4690-7ec2-b390-0d7bfc29ad9d",
+    "prompt_sha256": "2e54dee546feeeebba064f517ca3af76af08c6380cc013a84f9b0e8b89dd2b3a",
+    "oracle_sha256": "0fd178ef62d462b2af9107b43eef4b9733500801908a857a95e54e8906599ef6",
+    "started_at": "2026-08-31T20:46:28+07:00",
+    "controller_disposition_at": "2026-08-31T21:13:57+07:00",
+    "elapsed_seconds": 1649,
+    "task_completed_at": "2026-08-31T21:18:55+07:00",
+    "task_total_duration_ms": 1947447,
+    "task_final_status": "completed-after-controller-stop",
+    "task_final_message": "Run stopped by the controller before artifact emission. No deliverables were written to the output directory.",
+    "expected_profile": "topology-and-zones",
+    "generator_reported_profile": "topology-and-zones",
+    "output_file_count_at_disposition": 0,
+    "output_artifacts": [],
+    "structural_judge": "NOT-RUN-NO-ARTIFACT",
+    "blind_visual_reviewer": "NOT-RUN-NO-ARTIFACT",
+    "reconciliation": "NOT-RUN-NO-ARTIFACT",
+    "isolation_observation": "No repository, oracle, approved-asset, network, connector, or installed-skill access was observed in the controller-visible task log before disposition.",
+    "stop_reasons": [
+      "SENTINEL_NO_ARTIFACT_EMITTED_BEFORE_CONTROLLER_TIMEOUT",
+      "SENTINEL_TIMEOUT_BOUND_WAS_NOT_PRE_FROZEN"
+    ],
+    "controller_actions": [
+      "Requested immediate stop without artifact emission.",
+      "Removed write permission from the exact ephemeral sentinel workspace after timeout.",
+      "Deleted the complete candidate, controller, helper, and output temporary trees after the task acknowledged the stop.",
+      "Did not rerun, coach, replace, or score the generator output."
+    ],
+    "os_temp_cleanup": "PASS",
+    "temporary_helper_observed": {
+      "name": "generate_sentinel.py",
+      "bytes": 12,
+      "location_class": "OS-temp outside repository and outside final output directory",
+      "lifecycle": "delete with the complete sentinel workspace"
+    }
+  },
+  "gate_conclusion": {
+    "reason": "The implementation is deterministically consistent, but the only authorized fresh sentinel emitted no artifact and therefore supplied no behavioral proof of approved structural-signature conformance. The controller timeout was not pre-bound in the frozen oracle, which is itself a protocol ambiguity requiring stop under D-145.",
+    "step_4_may_start": false,
+    "owner_decision_required": true,
+    "permitted_next_action": "Owner may separately authorize a bounded D-146 protocol correction and one replacement sentinel, or direct another disposition. No replacement run is authorized by this record."
+  }
+}

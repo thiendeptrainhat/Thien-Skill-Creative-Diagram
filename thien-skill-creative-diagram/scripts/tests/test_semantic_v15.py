@@ -73,6 +73,10 @@ class P17SchemaRouterTests(unittest.TestCase):
         self.assertEqual(tuple(request_schema["properties"]["diagram_type"]["enum"][1:]), CANONICAL_TYPES)
         self.assertEqual(tuple(ir_schema["$defs"]["type"]["enum"]), CANONICAL_TYPES)
         self.assertEqual(len(CANONICAL_TYPES), 39)
+        self.assertEqual(request_schema["required"], ["instruction", "source"])
+        minimal = normalize_request({"instruction": "Tạo sơ đồ.", "source": {"kind": "natural-language", "content": "Dữ kiện."}})
+        for field in ("schema_version", "diagram_type", "variant_ids", "structural_profile", "structural_override", "size", "detail", "audience", "visual_mode", "language", "format", "motion"):
+            self.assertEqual(request_schema["properties"][field]["default"], minimal[field])
 
     def test_ir_schema_exposes_all_locked_structured_fields(self) -> None:
         schema = json.loads((SKILL_ROOT / "references" / "semantic-ir.schema.json").read_text(encoding="utf-8"))
@@ -193,6 +197,40 @@ class P17CanonicalSemanticTests(unittest.TestCase):
         deployment["nodes"][0]["placement"]["run_script"] = True
         expect_core_code(self, "unknown-field", lambda: validate_semantics(deployment))
 
+    def test_deployment_accepts_action_specific_kind_without_relation_kind(self) -> None:
+        deployment = copy.deepcopy(fixtures()["deployment"])
+        deployment["edges"][0].update({
+            "kind": "authenticate",
+            "label": "gọi authenticate",
+        })
+        deployment["edges"][0].pop("relation_kind")
+        validated = validate_semantics(deployment)
+        self.assertEqual(validated["edges"][0]["kind"], "authenticate")
+        self.assertEqual(validated["edges"][0]["label"], "gọi authenticate")
+        self.assertNotIn("relation_kind", validated["edges"][0])
+        explicit_flow = copy.deepcopy(deployment)
+        explicit_flow["edges"][0]["relation_kind"] = "flow"
+        self.assertEqual(validate_semantics(explicit_flow)["edges"][0]["relation_kind"], "flow")
+        invalid = copy.deepcopy(deployment)
+        invalid["edges"][0]["relation_kind"] = "other"
+        expect_core_code(self, "deployment-relation-invalid", lambda: validate_semantics(invalid))
+
+    def test_user_journey_preserves_exact_categorical_or_normalized_numeric_sentiment(self) -> None:
+        journey = copy.deepcopy(fixtures()["user-journey"])
+        journey["nodes"][0]["journey"]["sentiment"] = "curious"
+        journey["nodes"][1]["journey"]["sentiment"] = "uncertain"
+        validated = validate_semantics(journey)
+        self.assertEqual(
+            [node["journey"]["sentiment"] for node in validated["nodes"]],
+            ["curious", "uncertain"],
+        )
+        blank = copy.deepcopy(journey)
+        blank["nodes"][0]["journey"]["sentiment"] = ""
+        expect_core_code(self, "invalid-string", lambda: validate_semantics(blank))
+        outside = copy.deepcopy(journey)
+        outside["nodes"][0]["journey"]["sentiment"] = 1.01
+        expect_core_code(self, "sentiment-out-of-domain", lambda: validate_semantics(outside))
+
 
 class P17VariantQuantitativeTests(unittest.TestCase):
     def test_numeric_equality_formula_and_nfc_unit_normalization_are_exact(self) -> None:
@@ -233,6 +271,20 @@ class P17VariantQuantitativeTests(unittest.TestCase):
         self.assertAlmostEqual(profiles["global_max"], 0.4)
         self.assertTrue(all(0 <= value <= 1 for values in profiles["amplitudes"].values() for value in values))
         self.assertTrue(any(value == 1 for values in profiles["amplitudes"].values() for value in values))
+        explicit_histogram = copy.deepcopy(histogram)
+        for series in explicit_histogram["series"]:
+            series["distribution"]["bandwidth"] = 1
+        self.assertAlmostEqual(
+            derive_ridgeline_profiles(validate_semantics(explicit_histogram))["global_max"],
+            profiles["global_max"],
+        )
+        mismatched_histogram = copy.deepcopy(explicit_histogram)
+        mismatched_histogram["series"][0]["distribution"]["bandwidth"] = 0.5
+        expect_core_code(
+            self,
+            "ridgeline-histogram-bandwidth-mismatch",
+            lambda: validate_semantics(mismatched_histogram),
+        )
         kde = copy.deepcopy(histogram)
         for series in kde["series"]:
             series["distribution"].update({"method": "kde-gaussian", "bandwidth": 0.5})

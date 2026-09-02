@@ -1,4 +1,4 @@
-# Thien-Skill-Creative-Diagram
+# Thiện’s Skill — Creative Diagram
 
 <p align="center">
   <img src="evidence/p09/candidates/full-crest-plate-light-400.png" alt="TDTN crest with sword, lion, letterforms and open book in navy and gold" width="180">
@@ -6,7 +6,9 @@
 
 ## Giới thiệu skill
 
-`Thien-Skill-Creative-Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. **Phiên bản hiện tại `2.0.0` có 45 diagram đã được duyệt**, bao phủ kiến trúc, quy trình, dữ liệu, định lượng, planning, experience và nhiều cấu trúc trực quan chuyên biệt.
+`Thiện’s Skill — Creative Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. **Bản phát hành hiện hành là `2.0.0`; candidate kế tiếp là `2.5.0` với 45 public structural profile và 14 layout engine**, bao phủ kiến trúc, quy trình, dữ liệu, định lượng, planning, experience và nhiều cấu trúc trực quan chuyên biệt.
+
+Candidate `2.5.0` đã hoàn tất Step 3 product closure và đang đi qua release gates. Chưa có ZIP hoặc checksum `2.5.0` được công bố; phần cài đặt bên dưới tiếp tục mô tả exact private release `2.0.0` cho đến khi G-05…G-07 của `2.5.0` hoàn tất.
 
 Mỗi diagram có ba phiên bản hình thức ngang cấp: `neutral-light`, `neutral-dark` và `editorial`, tạo thành thư viện 135 mẫu trình bày. 45 diagram dưới đây là toàn bộ bộ `neutral-light`; bấm vào từng ảnh để mở HTML chi tiết. Có thể xem và chuyển đổi giữa cả ba phiên bản tại [`assets/index.html`](assets/index.html).
 
@@ -154,7 +156,7 @@ Ràng buộc: [kích thước, màu thương hiệu, ngôn ngữ, accessibility]
 
 - Runtime hỗ trợ 39 canonical diagram type, bốn capability variant và bảy semantic pattern.
 - Bộ 31 masked silhouette chỉ là sample QA, không phải template/catalog/output cố định; yêu cầu rõ ràng, an toàn và phù hợp ngữ nghĩa của người dùng có precedence.
-- Ba package đã qua deterministic build, parity, hygiene và extracted-runtime smoke checks.
+- Ba package `2.0.0` đã qua deterministic build, parity, hygiene và extracted-runtime smoke checks; package `2.5.0` chưa được build tại Step4A.
 - Ma trận host tại thời điểm phát hành giữ `0 supported`, `13 conditional`, `2 unsupported`; repository không quảng bá surface conditional thành supported.
 - Browser/cross-browser execution không được tuyên bố PASS do local `file://` policy trong môi trường QA.
 - Skill không thay thế ý kiến pháp lý, thuế, kiểm toán, an toàn, kiến trúc hoặc chuyên môn khác.
@@ -172,14 +174,14 @@ Phiên bản này chịu sự điều chỉnh của **Tran Ngoc Thien's Skill Co
 
 Đọc đầy đủ trước khi sử dụng:
 
-- [`LICENSE.md`](LICENSE.md) — bản ở root repository, byte-identical với legal candidate đã duyệt
+- [`LICENSE.md`](LICENSE.md) — bản license 2.0 ở root repository, byte-identical với bản trong skill
 - [`thien-skill-creative-diagram/LICENSE-APPLICATION.md`](thien-skill-creative-diagram/LICENSE-APPLICATION.md)
 - [`thien-skill-creative-diagram/NOTICE`](thien-skill-creative-diagram/NOTICE)
 - [`thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md`](thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md)
 - [`thien-skill-creative-diagram/SOURCE_MANIFEST.json`](thien-skill-creative-diagram/SOURCE_MANIFEST.json)
 - [`thien-skill-creative-diagram/ASSET_MANIFEST.json`](thien-skill-creative-diagram/ASSET_MANIFEST.json)
 
-Legal package bytes là exact candidate `TCD-LEGAL-2.0.0-RC1`, aggregate SHA-256 `93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0`, đã được owner phê duyệt theo D-131. Owner miễn independent Vietnamese-lawyer review cho đúng version/hash này và chấp nhận rủi ro; đây không phải tuyên bố lawyer sign-off.
+Legal package bytes của release `2.0.0` là exact candidate `TCD-LEGAL-2.0.0-RC1`, aggregate SHA-256 `93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0`, đã được owner phê duyệt theo D-131 với explicit waiver; đây không phải tuyên bố lawyer sign-off. Legal/brand aggregate `2.5.0` chưa được G-06 phê duyệt và không kế thừa tự động approval `2.0.0`.
 
 ## Provenance
 
@@ -189,13 +191,15 @@ Chi tiết nằm trong `SOURCE_MANIFEST.json`, `THIRD_PARTY_NOTICES.md` và evid
 
 ## Release integrity
 
-Release hợp lệ phải có:
+Release `2.0.0` hiện hành có:
 
 - tag `v2.0.0`;
 - ba ZIP đúng hash trong mục cài đặt;
 - `SHA256SUMS.txt`;
 - G-00 đến G-07 `PASS` trong private audit records;
 - không thay đổi legal, brand hoặc package bytes sau approval.
+
+Release `2.5.0` chỉ hợp lệ sau khi G-00…G-07 đều `PASS`, ba archive và `SHA256SUMS-2.5.0.txt` có exact digest, legal/brand aggregate đạt G-06, và owner cấp G-07 trên exact commit/payload trước annotated tag `v2.5.0` cùng private GitHub Release.
 
 Repository này là **private audit repository**. Quyền truy cập, xem, tải xuống hoặc clone repository **không tự cấp quyền sử dụng**. Xem mục [Giấy phép](#giấy-phép) trước khi cài đặt hoặc thực thi.
 

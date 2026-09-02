@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "phase": "P-22-Step-3",
+  "decision": "D-144",
+  "recorded_on": "2026-08-31",
+  "status": "NOT_READY_GLOBAL_STOP_AFTER_R01",
+  "qa_disposition": "not_ready",
+  "approval_status": "not_requested",
+  "scope": {
+    "target_version": "2.1.0",
+    "baseline_version": "2.0.0",
+    "activation": "explicit",
+    "envelope": "OpenAI plugin",
+    "host": "Codex local",
+    "planned_runs": 20,
+    "class_distribution": {
+      "layout_engine_representatives": 14,
+      "capability_profiles": 4,
+      "presentation_profiles": 2
+    },
+    "excluded": [
+      "implicit discovery",
+      "envelope parity",
+      "full 45-profile baseline",
+      "rerun",
+      "remediation",
+      "source or package mutation",
+      "gate evaluation",
+      "Steps 4-7"
+    ]
+  },
+  "release_binding": {
+    "archive": "dist/thien-skill-creative-diagram-2.0.0-openai-plugin.zip",
+    "sha256": "65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315",
+    "verified_before_run": true,
+    "verified_at_disposition": true,
+    "package_file_count": 116,
+    "approved_diagram_html_png_in_package": 0,
+    "brand_png_in_package": 2
+  },
+  "pre_run_freeze": {
+    "status": "FROZEN_BEFORE_FIRST_RUN",
+    "casebook_sha256": "780bbb70ae3bf520d7023810ea350f08b1280c8789b4205d9ef3d43b61a946f9",
+    "roster_sha256": "2f921c66b0c11ad6ff9c0ca84ad94a84cb69516c71f1ded0f9ade2762cc3c066",
+    "generator_protocol_sha256": "beb5712316bfc3555d4fc01e01cbf1492803a5f9315cfb91ccb7d6272336717e",
+    "prompt_normalization": "UTF-8 JSON string bytes; no trailing LF",
+    "oracle_normalization": "UTF-8 compact key-sorted JSON plus one trailing LF",
+    "row_count": 20,
+    "rows": [
+      {"case_id":"R01","raw_prompt_sha256":"d4e3273eed381d26621044c9bb2d6abada5a97fb32d94be20b89c2dd178a8346","expected_profile":"architecture","canonical_parent":"architecture","layout_engine_family":"topology-and-zones","invariant_oracle_sha256":"a8c2a786f5ceef99f2013fee6080f91c935ac25be9610cd69b478bf8e5abfbad"},
+      {"case_id":"R02","raw_prompt_sha256":"4d6c68c4c4bdb0e40355d7604446d22d9bdc74eb740af9c1d3af6aa41185af9c","expected_profile":"data-flow","canonical_parent":"data-flow","layout_engine_family":"integration-pipeline","invariant_oracle_sha256":"23965bc445b99e1fe53183a229e95d02b16bc2060b3ab76462e17079cd726b40"},
+      {"case_id":"R03","raw_prompt_sha256":"8a9497a2ceb5b467fa9fcedde56d1952524af9670eef48a6fa261c1af159a3ef","expected_profile":"deployment","canonical_parent":"deployment","layout_engine_family":"runtime-deployment","invariant_oracle_sha256":"a8fb2361048595965629f55c02685c48c353fabc3f2ab8a0964893c0db1c38a5"},
+      {"case_id":"R04","raw_prompt_sha256":"e0e607e9c644f755c29e26e548929eb8c7788b7d02869973f1693e64c6f6d7f3","expected_profile":"dependency-graph","canonical_parent":"dependency-graph","layout_engine_family":"dependency-dag","invariant_oracle_sha256":"1b6e787d045bc7549c802d1582ce417447c92a63d4857267396ddcb21c396e0b"},
+      {"case_id":"R05","raw_prompt_sha256":"6ace23378e9ee534fc868d62dc2e7a65981a0b20c28d60ca228b955cfa08b8b7","expected_profile":"flowchart","canonical_parent":"flowchart","layout_engine_family":"directed-flow-state","invariant_oracle_sha256":"60215cfd2236bcef7b5775e21486da9a8f1417ecdc634a98b4b6428f7c7274fb"},
+      {"case_id":"R06","raw_prompt_sha256":"807446bb2247cc7d635751fd02e3cff3ac831cc30e432a8ed3b5b37f6f7bed80","expected_profile":"swimlane","canonical_parent":"swimlane","layout_engine_family":"lane-interaction","invariant_oracle_sha256":"e827c83cf8f45eaf1308820554043eeb47760e1f5071c3fc987000c0d48f0517"},
+      {"case_id":"R07","raw_prompt_sha256":"fe1f15c98809159a8147b1f9abf8876dd08cf44595b654b272244d152fb52b0c","expected_profile":"gantt","canonical_parent":"gantt","layout_engine_family":"time-planning","invariant_oracle_sha256":"28be500cb8b3c4f1def273834e3c8918cc4c86f9bce8dd6e1ecc572a764b2e06"},
+      {"case_id":"R08","raw_prompt_sha256":"63afdc594f5a96b8c15b83ad302485870b1b5cee4b1cde7f4cdbacd0780e7c62","expected_profile":"user-journey","canonical_parent":"user-journey","layout_engine_family":"work-experience","invariant_oracle_sha256":"b71f9b5c4fd8d294b06aa395164fc9ba38addf5d1ddd170d798f5f0959727176"},
+      {"case_id":"R09","raw_prompt_sha256":"595e25096fba990d84ea1f9a9ba3cd29744c25ba53bb9fdd4f84f5667003b04c","expected_profile":"org-chart","canonical_parent":"org-chart","layout_engine_family":"hierarchy","invariant_oracle_sha256":"8568c1c35355ef3d6b1bada56c416448bfddc01f7140ebec31fb25f81e994b6a"},
+      {"case_id":"R10","raw_prompt_sha256":"c9933a0b2df71c9c9f3ad637bdb8582aabd79ff6ba9a0130352ffcfed088c362","expected_profile":"medallion","canonical_parent":"medallion","layout_engine_family":"containment-stack","invariant_oracle_sha256":"7ffda792165521c64e82fc54b0d5220130abd87b0588e1ca50698d81a52dc8c8"},
+      {"case_id":"R11","raw_prompt_sha256":"9175888dab7c23ac645bf8bc09ab286426a00a53e777f1427eeb4bfd159aeec7","expected_profile":"database-schema","canonical_parent":"database-schema","layout_engine_family":"compartment-model","invariant_oracle_sha256":"f9402d6f1c8ff2bebddda81cf88efaeb68a40c75aaca425cb8b3b84cdcb4507d"},
+      {"case_id":"R12","raw_prompt_sha256":"456270101624fc6296ff3475fe90c63b98f435f68abca5860336fecfe005aa8a","expected_profile":"quadrant","canonical_parent":"quadrant","layout_engine_family":"spatial-matrix","invariant_oracle_sha256":"347438d01ac15040ae6901a22b02d8c32e6238ce7500aaee7973112b41091874"},
+      {"case_id":"R13","raw_prompt_sha256":"399bed0ae4c479552bb231bc6ad640df15329b84929e75203d97a14c7981c934","expected_profile":"bar-chart","canonical_parent":"bar-chart","layout_engine_family":"quantitative","invariant_oracle_sha256":"5a26757837c3289ad70d8ad13f45034e8295470495d1225efc828edfb4640bf5"},
+      {"case_id":"R14","raw_prompt_sha256":"8a0caa9a48ca449331adcc982aa6f82916bcb46cc6700fa08d1c4832b82633bd","expected_profile":"fishbone","canonical_parent":"fishbone","layout_engine_family":"special-geometry","invariant_oracle_sha256":"37c7ce4ead06f6285b2382a551408d74d0ada886387a1fb8872e7e3c407be0ed"},
+      {"case_id":"R15","raw_prompt_sha256":"426687550389c58db5474e670d8a169d171878ea3f76643a48a8d0c7bceee19d","expected_profile":"dumbbell","canonical_parent":"bar-chart","layout_engine_family":"quantitative","invariant_oracle_sha256":"b73af0905997985d70a94d4bbf308f17ca030fdd7b6ab8c6efc30988c83cee0a"},
+      {"case_id":"R16","raw_prompt_sha256":"123cde90268c69b7b325fa9bb17cdc3bdae54bafdfe9b7092c60fd65f0f5fd6e","expected_profile":"slope-graph","canonical_parent":"line-chart","layout_engine_family":"quantitative","invariant_oracle_sha256":"357465185f0fcd38e51fff72f140c64fa63cbe32573f1ad1934147cb1fc31bbd"},
+      {"case_id":"R17","raw_prompt_sha256":"35111886c952e67475679fc5febd5d6fc5e8aff17ee730c13d6865c6140491f3","expected_profile":"ridgeline","canonical_parent":"line-chart","layout_engine_family":"quantitative","invariant_oracle_sha256":"de8aa3d57446579615a564b2b76a7d6ee51fb0b6544fd06b20a85f744feb73ed"},
+      {"case_id":"R18","raw_prompt_sha256":"98660ea401c10c80adc50f7f2e8142bb4e1deda1eb05ad8708d57c355346ef5c","expected_profile":"bubble","canonical_parent":"scatter-plot","layout_engine_family":"quantitative","invariant_oracle_sha256":"3ff8f9cd96eec341bcc0980af51b6a98968f6b8f40e8dad29d883c72567be97e"},
+      {"case_id":"R19","raw_prompt_sha256":"99e667ad20f16e309e3bae4dfdad263f3fc5436ba79b0830236f5aa4ad34ad27","expected_profile":"layers","canonical_parent":"layer-stack","layout_engine_family":"containment-stack","invariant_oracle_sha256":"b6e24000e4bf07becf3235945059b0acb5c71092168764a60ae7bd6b562b235b"},
+      {"case_id":"R20","raw_prompt_sha256":"b073619ec33147fa27517a0dd247874ba8ce2cdefad55c593ab1edb088aeb30c","expected_profile":"scatter-chart","canonical_parent":"scatter-plot","layout_engine_family":"quantitative","invariant_oracle_sha256":"5810016a0ed3936bdde01870df89cd68837c98c8bb859f946247340dd4f2b244"}
+    ],
+    "all_prompt_oracle_bindings_reconciled": true
+  },
+  "execution": {
+    "planned": 20,
+    "executed_count": 1,
+    "executed_case_ids": ["R01"],
+    "not_run_count": 19,
+    "not_run_case_ids": ["R02","R03","R04","R05","R06","R07","R08","R09","R10","R11","R12","R13","R14","R15","R16","R17","R18","R19","R20"],
+    "not_run_reason": "P-22 global stop triggered by R01 before any later generator task was launched"
+  },
+  "runs": [
+    {
+      "case_id": "R01",
+      "class": "layout-engine",
+      "expected_profile": "architecture",
+      "canonical_parent": "architecture",
+      "expected_layout_engine": "topology-and-zones",
+      "mode": "neutral-light",
+      "raw_prompt_sha256": "d4e3273eed381d26621044c9bb2d6abada5a97fb32d94be20b89c2dd178a8346",
+      "invariant_oracle_sha256": "a8c2a786f5ceef99f2013fee6080f91c935ac25be9610cd69b478bf8e5abfbad",
+      "generator": {
+        "task_id": "01a056ea-ca23-7f03-9176-a418ef6bb499",
+        "fresh_projectless": true,
+        "duration_ms": 890042,
+        "explicit_skill_activation": true,
+        "network_install_connectors_browser_other_tasks_used": false,
+        "out_of_scope_manifest_paths": 0,
+        "initial_wrong_relative_probes": "non-existent paths inside the allowed package root; no mutation",
+        "temporary_helper": "created only inside run output and removed before freeze",
+        "provider_cache_absence_claimed": false
+      },
+      "frozen_output": {
+        "file_count": 2,
+        "mode": "0444",
+        "svg": {"bytes":10123,"sha256":"f00a90c45cf1682e4e3a5e897d1c2230bc084dd1a616566e21f8ecc307a3a03e"},
+        "ledger": {"bytes":17229,"sha256":"d4107f0cc2ea97d731bee74a4a714293824052b182048b4b326084cfb7e8a6b5","schema_version":"1.0"}
+      },
+      "structural_judge": {
+        "verdict": "HARD-FAIL",
+        "oracle_ambiguity": false,
+        "semantic_graph": "PASS",
+        "topology_and_containment": "PASS",
+        "relative_placement": "PASS",
+        "shape_vocabulary": "PASS",
+        "connector_grammar": "PASS",
+        "content_fidelity": "PASS",
+        "observed_legacy_resolution": "architecture / topology-and-zones",
+        "failure_code": "V21_PROFILE_LEDGER_CONTRACT_MISSING",
+        "missing_target_declarations": ["selected_profile","canonical_parent","structural_override"],
+        "canonical_machine_readable_profile_record_binding_declared": false,
+        "contractual_pre_render_binding_proven": false
+      },
+      "blind_visual": {
+        "accepted_renderer": "preinstalled AppKit NSImage",
+        "render_width": 1600,
+        "render_height": 900,
+        "render_bytes": 107818,
+        "render_sha256": "f0b95f650f06d6d299380a7df6a1b9f9387cd3ead7119e1cd9e164e63f878b43",
+        "identity_guess": "service architecture/dependency map with three trust zones",
+        "five_second_takeaway": "Web and Mobile flow through API Gateway to application services and data stores across three trust zones",
+        "scores": {"recognizability":5,"hierarchy":5,"connector_clarity":3,"label_legibility":5,"spacing":4,"overall":4},
+        "serious_overlap_clipping_covered_label": false,
+        "verdict": "PASS",
+        "renderer_limitation": "Arrowheads were not reliably visible in the AppKit PNG even though the SVG source contains marker-end on all seven edges; this verdict is craft/recognizability evidence and is not used to prove arrow direction."
+      },
+      "invalid_renderer_attempt": {
+        "renderer": "Quick Look square thumbnail",
+        "status": "INVALIDATED_AND_EXCLUDED",
+        "reason": "fill-cropped the 16:9 SVG into a square thumbnail; not an output defect and not counted"
+      },
+      "reconciliation": {
+        "verdict_consistency": true,
+        "scope_or_isolation_breach_evidenced": false,
+        "global_stop_required": true
+      }
+    }
+  ],
+  "post_freeze_owner_observation": {
+    "observation": "The generated diagram does not follow the owner-approved template in the skill/assets.",
+    "retroactive_oracle_change": false,
+    "effect_on_r01_frozen_verdict": "none",
+    "coverage_gap": "The frozen pilot oracle measures semantic, topology and connector invariants but does not prove the approved asset-template structural signature.",
+    "approved_asset": {
+      "id": "01-topology-and-zones--neutral-light",
+      "html_sha256": "fbccfe372b9917a8679f8a295298d08ebb1e0bb576f70244e6a2992f587aa08c",
+      "png_sha256": "5368d76841b013bcb7866a2e6e7a59701f9201126ff937823405c7ed6cf1de11"
+    },
+    "post_freeze_comparison": {
+      "verdict": "NON-CONFORMING",
+      "matched_family_level_features": [
+        "three horizontal trust zones in left-to-right reading order",
+        "bounded rounded node cards",
+        "correct membership and directed topology",
+        "orthogonal routes without node overlap or clipping"
+      ],
+      "structural_divergences": [
+        "node mark vocabulary changed from inset badge plus centered title/subtitle to accent rail plus left-aligned role/title",
+        "approved single/row/column child-layout grammar changed to converging and hub/branch sub-layouts",
+        "direct successors of API Gateway drifted across different ranks",
+        "approved rounded-orthogonal route construction changed to hard L-segments and a different source-port vocabulary",
+        "selected profile, rank/order grammar, child layout, port distribution, route family and structural override were not declared"
+      ],
+      "allowed_customizations_excluded_from_verdict": ["content","node count","color","font"],
+      "frozen_oracle_changed": false,
+      "used_as_retroactive_failure": false
+    },
+    "package_gap": {
+      "type_architecture_contract_scope": "semantic only; layout, visual tokens, rendering and export explicitly excluded",
+      "canonical_machine_readable_profile_record_present": false,
+      "approved_diagram_html_png_present_in_package": false
+    },
+    "diagnostic_status": "POST-FREEZE-NON-ORACLE"
+  },
+  "global_stop": {
+    "triggered": true,
+    "trigger": "Mandatory target-v2.1 profile binding is absent and continuing to conformance would require unauthorized remediation.",
+    "oracle_ambiguity": false,
+    "later_runs_launched": false,
+    "rerun_or_oracle_change_performed": false,
+    "implementation_golden_package_dist_changed": false,
+    "steps_4_to_7_opened": false
+  },
+  "gates": {
+    "G-00_to_G-07_at_2.1.0": "NOT-EVALUATED"
+  },
+  "raw_temp": {
+    "repository_raw_artifacts_retained": 0,
+    "deletion_required": true,
+    "deleted_and_verified": true,
+    "deleted_target_count": 4,
+    "remaining_p22_os_temp_directories": 0
+  },
+  "durable_evidence": {
+    "human_summary": "evidence/p22/P-22-PILOT-EVIDENCE.md",
+    "machine_record": "evidence/p22/P-22-PILOT-RECORD.json",
+    "file_count": 2
+  }
+}

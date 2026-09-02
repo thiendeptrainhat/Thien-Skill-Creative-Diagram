@@ -1,16 +1,26 @@
 """Focused D-088 tests for the eight-sprint bar chart."""
 import copy
 import re
+import sys
 import unittest
+from pathlib import Path
 
-from diagram_core import CoreError
+
+ROOT = Path(__file__).resolve().parents[3]
+SCRIPT_DIR = ROOT / "thien-skill-creative-diagram/scripts"
+SOURCE = ROOT / "evidence/p19/source"
+for path in (SCRIPT_DIR, SCRIPT_DIR / "tests", SOURCE):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
+
+from diagram_core import CoreError  # noqa: E402
 from bar_chart_layout_v15 import (
     EXPECTED_POINTS, bar_chart_table, layout_bar_chart,
     render_bar_chart, validate_bar_chart_svg,
-)
-from bar_chart_review08_fixture import bar_chart_fixture
-from gallery_renderer_v15 import MODES, render_gallery_html
-from visual_adapters_v15 import adapt_visual
+)  # noqa: E402
+from bar_chart_review08_fixture import bar_chart_fixture  # noqa: E402
+from gallery_renderer_v15 import MODES, render_gallery_html  # noqa: E402
+from visual_adapters_v15 import adapt_visual  # noqa: E402
 
 
 class DetailedBarChartTests(unittest.TestCase):

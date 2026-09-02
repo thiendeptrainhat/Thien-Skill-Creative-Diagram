@@ -1,0 +1,238 @@
+{
+  "record_id": "D147-PROFILE-RENDERER-1",
+  "decision": "D-147",
+  "target_version": "2.1.0",
+  "recorded_at": "2026-08-31T16:27:11Z",
+  "disposition": "HARD-FAIL",
+  "summary": {
+    "implementation": "PASS",
+    "deterministic_qa": "PASS",
+    "fresh_sentinel": "HARD-FAIL",
+    "step_4": "BLOCKED",
+    "release_candidate": false,
+    "mandatory_stop_applied": true
+  },
+  "authorization": {
+    "parts": [
+      "scope-and-authorization",
+      "topology-and-zones-vertical-slice",
+      "renderer-kernel-and-geometry-validation",
+      "fourteen-engines-for-forty-five-profiles",
+      "one-call-atomic-api",
+      "deterministic-qa-and-os-temp-candidate",
+      "one-fresh-bounded-sentinel-and-independent-review"
+    ],
+    "new_file_budget": {
+      "runtime": 1,
+      "test": 1,
+      "machine_evidence": 1,
+      "human_summary": 0
+    },
+    "protected_surfaces": [
+      "approved-assets",
+      "golden",
+      "benchmark",
+      "license",
+      "brand",
+      "dist",
+      "release",
+      "git",
+      "steps-4-through-7"
+    ]
+  },
+  "implementation": {
+    "new_runtime": "thien-skill-creative-diagram/scripts/profile_renderer.py",
+    "new_test": "thien-skill-creative-diagram/scripts/tests/test_profile_renderer.py",
+    "new_evidence": "evidence/p22/D-147-PROFILE-RENDERER-RECORD.json",
+    "updated_existing": [
+      "PROJECT.md",
+      "thien-skill-creative-diagram/SKILL.md",
+      "thien-skill-creative-diagram/references/output-motion.md",
+      "thien-skill-creative-diagram/scripts/output_pipeline.py"
+    ],
+    "capabilities": {
+      "layout_engines": 14,
+      "public_profiles": 45,
+      "one_call_api": "create_profiled_diagram",
+      "atomic_output_files": [
+        "diagram.svg",
+        "diagram.ledger.json"
+      ],
+      "renderer_version": "profile-renderer-2.1.0",
+      "geometry_checks": [
+        "exact-node-edge-mark-count",
+        "port-attachment",
+        "orthogonal-route",
+        "arrowhead",
+        "containment",
+        "node-overlap",
+        "route-obstruction",
+        "engine-primitive"
+      ]
+    },
+    "source_hashes_sha256": {
+      "profile_renderer.py": "e35854a8be8d602fc0f66b864c19da3afe97cf21ec0cf50e75424682b03edb3f",
+      "output_pipeline.py": "b09f451f390ae96d2dfdcb925e87705e51ee2e6d7cdd82768473b67990dc64a4",
+      "SKILL.md": "015e47a5da352b8869e23de74b9795a381ef59caa19d0ea89e7aaf6a6ffb8f69",
+      "structural-profiles.json": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787"
+    }
+  },
+  "deterministic_qa": {
+    "profile_sweep": {
+      "status": "PASS",
+      "passed": 45,
+      "total": 45
+    },
+    "new_renderer_tests": {
+      "status": "PASS",
+      "passed": 8,
+      "total": 8
+    },
+    "full_regression": {
+      "status": "PASS",
+      "passed": 435,
+      "total": 435
+    },
+    "representative_visual_review": {
+      "status": "PASS-PRE-SENTIN",
+      "engines_reviewed": 14
+    },
+    "quick_validate_skill": {
+      "status": "NOT-EXECUTABLE",
+      "reason": "PyYAML module unavailable; no dependency installation was authorized",
+      "equivalent_repository_qa_contract": "PASS"
+    },
+    "git_diff_check": "PASS",
+    "repository_cache_scan": "PASS"
+  },
+  "candidate": {
+    "location_lifecycle": "OS-temp only; never copied to dist",
+    "archive_name": "thien-skill-creative-diagram-2.1.0-d147.1-openai-plugin.zip",
+    "sha256": "0dc17721f6bc0c6f7635433a24fe78aa13984110d269b57a1b8c3e534146b6d5",
+    "bytes": 519929,
+    "file_count": 120,
+    "second_build_byte_identical": true,
+    "candidate_only_smoke": "PASS",
+    "candidate_smoke_output_files": [
+      "diagram.svg",
+      "diagram.ledger.json"
+    ],
+    "contains_renderer": true,
+    "contains_tests": false,
+    "personal_path_scan": "PASS"
+  },
+  "frozen_sentinel": {
+    "raw_prompt": {
+      "sha256": "817d833a1a3720f34a1314c0b1e1ac801eac23e7c3137396f6079347325d382c",
+      "bytes": 1205
+    },
+    "oracle": {
+      "sha256": "b1942b541b5a054a6a808da615e3c47736d4f2c4ba87809fd5dca532742479d8",
+      "bytes": 1982,
+      "expected_profile": "topology-and-zones",
+      "expected_canonical_parent": "architecture",
+      "expected_nodes": 8,
+      "expected_groups": 3,
+      "expected_directed_edges": 10,
+      "mode": "neutral-light",
+      "canvas": "social-square"
+    },
+    "execution_limits_seconds": {
+      "hard_wall": 900,
+      "no_material_progress": 300,
+      "post_artifact_validation": 180,
+      "poll_interval": 30,
+      "stop_ack_grace": 60
+    }
+  },
+  "execution": {
+    "fresh_projectless_task_id": "01a05896-8ad6-7c23-b24f-778fedb98e1f",
+    "started_epoch": 1788192656,
+    "completed_epoch": 1788193300,
+    "duration_milliseconds": 644509,
+    "within_hard_wall": true,
+    "output_file_count": 2,
+    "output_files": {
+      "diagram.svg": {
+        "bytes": 12174,
+        "sha256": "fe326dd5b64bcbed583f843be0771be44f6ecdf39d7beb0380491d3c504b623f"
+      },
+      "diagram.ledger.json": {
+        "bytes": 2978,
+        "sha256": "abb58bb3b942029cbefd97096718713d5c440221f5d3dee6ff9552ccf7e81649"
+      }
+    },
+    "agent_reported_hashes_match_controller": true,
+    "isolation": {
+      "oracle_access": false,
+      "repository_access": false,
+      "network_access": false,
+      "dependency_install": false,
+      "repository_mutation": false,
+      "status": "PASS"
+    },
+    "ledger_claims": {
+      "selected_profile": "topology-and-zones",
+      "layout_engine": "topology-and-zones",
+      "canonical_parent": "architecture",
+      "profile_record_sha256": "9ec22eb819e220000e75227f19da0cfc9036669cf9e12f849d4f327b3bcf5f40",
+      "registry_sha256": "def133f35b1b96fae9e0055840d01388c608c73b14c0742c130a1bb8f39f6787",
+      "geometry_validation": "pass",
+      "profile_binding": "pass",
+      "structural_conformance": "pass"
+    }
+  },
+  "independent_review": {
+    "artifact_freeze": "PASS",
+    "structural_judge": {
+      "verdict": "HARD-FAIL",
+      "confirmed": [
+        "8 required nodes",
+        "3 required groups",
+        "10 directed edges",
+        "profile identity and containment",
+        "endpoint labels and arrowheads",
+        "frozen artifact hashes"
+      ],
+      "hard_failures": [
+        "Routes merge into an undeclared four-way junction at (785,258)",
+        "Routes share and overlap the vertical segment x=785 from y=258 through y=402, including opposing directions",
+        "Routes merge into an undeclared junction at (785,402)",
+        "Two Transaction DB edges overlap on the final segment and arrowhead at (821,258)",
+        "Three Log Store edges overlap on the final segment and arrowhead at (821,402)",
+        "The shared routes create false visual paths"
+      ],
+      "unsupported_ledger_claims": [
+        "geometry_validation.status=pass",
+        "structural_conformance=pass",
+        "validation.geometry=pass",
+        "warnings=[]"
+      ]
+    },
+    "blind_visual_reviewer": {
+      "verdict": "PASS",
+      "identity_guess": "topology/security-deployment zones",
+      "five_second_takeaway": "correct",
+      "craft_score_out_of_5": 4,
+      "observation": "The shared vertical connector and crossing lacked a junction marker and made exact relations somewhat ambiguous"
+    },
+    "reconciliation": {
+      "verdict": "HARD-FAIL",
+      "oracle_ambiguity": false,
+      "reason": "Structural hard gate is explicit and cannot be offset by the blind visual PASS; artifact contradicts its own geometry and structural-conformance claims"
+    }
+  },
+  "conclusion": {
+    "deterministic_implementation": "PASS",
+    "behavioral_structural_conformance": "HARD-FAIL",
+    "root_cause_observed": "The renderer's geometry validator did not detect shared route segments, undeclared junctions, opposing-direction overlap, or coincident terminal arrowheads in the frozen sentinel output",
+    "mandatory_stop": "Applied immediately after independent reconciliation",
+    "source_repair_after_sentinel": false,
+    "sentinel_rerun": false,
+    "step_4_opened": false,
+    "owner_decision_required_for_any_new_remediation": true,
+    "protected_surface_changed": false,
+    "dist_changed": false,
+    "git_operation_performed": false
+  }
+}

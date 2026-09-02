@@ -1,8 +1,8 @@
 # TUYÊN BỐ ÁP DỤNG GIẤY PHÉP / LICENSE APPLICATION DECLARATION
 
-**Mã tài liệu / Document ID:** `TCD-LA-1.0.0-RC2`  
-**Ngày áp dụng / Application date:** 15 August 2026  
-**Tình trạng / Status:** Exact legal release candidate awaiting Vietnamese-lawyer review / candidate pháp lý chính xác đang chờ luật sư Việt Nam rà soát
+**Mã tài liệu / Document ID:** `TCD-LA-2.5.0-RC1`  
+**Ngày áp dụng / Application date:** 2 September 2026  
+**Tình trạng / Status:** Exact v2.5.0 legal candidate awaiting G-06 owner disposition and counsel approval or explicit owner waiver / candidate pháp lý v2.5.0 đang chờ G-06 owner disposition và luật sư phê duyệt hoặc owner waiver rõ ràng
 
 ## PHẦN I — TIẾNG VIỆT (BẢN ƯU TIÊN ÁP DỤNG)
 
@@ -10,9 +10,9 @@
 
 Tuyên bố này áp dụng **Tran Ngoc Thien's Skill Commercial Source-Available License 2.0** cho:
 
-- tên hiển thị: `Thien-Skill-Creative-Diagram`;
+- tên hiển thị: `Thiện’s Skill — Creative Diagram`;
 - mã kỹ thuật: `thien-skill-creative-diagram`;
-- phiên bản: `1.0.0`;
+- phiên bản: `2.5.0`;
 - chủ sở hữu: Tran Ngoc Thien, cá nhân, tại Thành phố Hồ Chí Minh, Việt Nam;
 - email cấp quyền: `thien.8888@gmail.com`;
 - trạng thái repository dự kiến: private;
@@ -22,7 +22,7 @@ Tuyên bố này không tự cấp quyền. Quyền chỉ phát sinh qua Đơn h
 
 ### 2. Tài liệu được cấp phép
 
-Trong phạm vi Chủ sở hữu có quyền cấp phép, “Tài liệu được cấp phép” gồm runtime core nguyên bản của skill, tài liệu hướng dẫn nguyên bản, script, reference, cấu hình, artifact và package v2.0.0 được xác định bởi release manifest cuối cùng.
+Trong phạm vi Chủ sở hữu có quyền cấp phép, “Tài liệu được cấp phép” gồm runtime core nguyên bản của skill, tài liệu hướng dẫn nguyên bản, script, reference, cấu hình, artifact và package v2.5.0 được xác định bởi release manifest cuối cùng.
 
 Không thuộc Tài liệu được cấp phép theo grant chung:
 
@@ -39,7 +39,7 @@ Quyền đối với logo/brand không được cấp kèm quyền dùng skill/c
 
 Nguồn, snapshot, transfer state và notice projection nằm trong `SOURCE_MANIFEST.json`. Logo master, recipe, hash, approval và trạng thái package nằm trong `ASSET_MANIFEST.json`.
 
-Theo D-130, legal/brand candidate v2.0.0 đề xuất tiếp tục dùng đúng byte derivative light-plate 64px và 400px cho OpenAI plugin và Universal raw skill tại `assets/brand/`; không chọn asset brand cho Claude. Các derivative owner-approved còn lại chỉ giữ vai trò provenance và không được đóng gói trong v2.0.0. P-20 chỉ được xác minh field host hiện hành, copy đúng byte đã khai báo, tạo candidate overlay và smoke-test; candidate phải được owner và luật sư Việt Nam duyệt theo exact hash trước khi đủ điều kiện phát hành.
+Theo D-196/D-197, legal/brand candidate v2.5.0 rebaseline đúng byte derivative light-plate 64px và 400px đã khóa từ D-130 cho OpenAI plugin và Universal raw skill tại `assets/brand/`; không chọn asset brand cho Claude. Các derivative owner-approved còn lại chỉ giữ vai trò provenance và không được đóng gói trong v2.5.0. Step4B chỉ được copy đúng byte đã khai báo, tạo candidate overlay và smoke-test; candidate phải đạt G-06 trên exact aggregate bằng counsel approval hoặc explicit owner risk-accepted waiver trước khi đủ điều kiện phát hành.
 
 ### 4. Tài liệu bên thứ ba
 
@@ -53,7 +53,7 @@ Input, repository tham khảo, diagram, Markdown, JSON, CSV, Mermaid, draw.io v�
 
 ### 6. Điều kiện phát hành
 
-Candidate này chưa được phép phát hành thương mại. Trước phát hành, luật sư Việt Nam của Chủ sở hữu phải phê duyệt đúng version và hash của toàn bộ legal candidate; sau đó mọi thay đổi byte pháp lý hoặc brand làm mất hiệu lực sign-off cho đến khi được duyệt lại.
+Candidate này chưa được phép phát hành thương mại. Trước phát hành, G-06 yêu cầu Chủ sở hữu phê duyệt đúng version/hash của toàn bộ legal candidate và ghi nhận hoặc counsel approval trên exact bytes hoặc explicit owner risk-accepted waiver. Mọi thay đổi byte pháp lý hoặc brand sau disposition làm mất hiệu lực G-06 cho đến khi được duyệt lại.
 
 ---
 
@@ -63,9 +63,9 @@ Candidate này chưa được phép phát hành thương mại. Trước phát h
 
 This declaration applies **Tran Ngoc Thien's Skill Commercial Source-Available License 2.0** to:
 
-- display name: `Thien-Skill-Creative-Diagram`;
+- display name: `Thiện’s Skill — Creative Diagram`;
 - technical identifier: `thien-skill-creative-diagram`;
-- version: `1.0.0`;
+- version: `2.5.0`;
 - owner: Tran Ngoc Thien, an individual in Ho Chi Minh City, Vietnam;
 - licensing email: `thien.8888@gmail.com`;
 - intended repository status: private;
@@ -75,7 +75,7 @@ This declaration grants no rights by itself. Rights arise only through a Paid Or
 
 ### 2. Licensed Material
 
-To the extent the Owner has the right to license it, “Licensed Material” includes the project's original runtime core, original instructions, scripts, references, configuration, artifacts, and v2.0.0 packages identified by the final release manifest.
+To the extent the Owner has the right to license it, “Licensed Material” includes the project's original runtime core, original instructions, scripts, references, configuration, artifacts, and v2.5.0 packages identified by the final release manifest.
 
 The general grant does not include:
 
@@ -92,7 +92,7 @@ Skill/code rights do not include logo or brand rights. Any logo/brand use requir
 
 Source, snapshot, transfer-state, and notice-projection records are in `SOURCE_MANIFEST.json`. Logo-master, recipe, hash, approval, and package status are in `ASSET_MANIFEST.json`.
 
-Under D-130, the v2.0.0 legal/brand candidate proposes carrying forward the exact 64px and 400px light-plate bytes for the OpenAI plugin and Universal raw skill under `assets/brand/`; no Claude brand asset is selected. The remaining owner-approved derivatives stay provenance-only and are not packaged in v2.0.0. P-20 may re-verify current host fields, copy the declared bytes, create candidate overlays, and smoke-test; owner and Vietnamese-lawyer approval of the exact hash is required before release eligibility.
+Under D-196/D-197, the v2.5.0 legal/brand candidate rebaselines the exact 64px and 400px light-plate bytes frozen by D-130 for the OpenAI plugin and Universal raw skill under `assets/brand/`; no Claude brand asset is selected. The remaining owner-approved derivatives stay provenance-only and are not packaged in v2.5.0. Step4B may copy only the declared bytes, create candidate overlays, and smoke-test; G-06 requires exact-aggregate owner approval plus either counsel approval or an explicit owner risk-accepted waiver before release eligibility.
 
 ### 4. Third-party material
 
@@ -106,4 +106,4 @@ Inputs, reference repositories, diagrams, Markdown, JSON, CSV, Mermaid, draw.io,
 
 ### 6. Release condition
 
-This candidate is not authorized for commercial release. Before release, the Owner's Vietnamese counsel must approve the exact version and hash of the complete legal candidate. Any later change to legal or brand bytes invalidates that sign-off until re-approved.
+This candidate is not authorized for commercial release. Before release, G-06 requires the Owner to approve the exact version and hash of the complete legal candidate and record either counsel approval or an explicit owner risk-accepted waiver. Any later change to legal or brand bytes invalidates G-06 until re-approved.

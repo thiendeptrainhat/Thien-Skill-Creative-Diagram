@@ -1,12 +1,22 @@
 """Focused D-123 ridgeline layout tests."""
+import sys
 import unittest
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[3]
+SCRIPT_DIR = ROOT / "thien-skill-creative-diagram/scripts"
+SOURCE = ROOT / "evidence/p19/source"
+for path in (SCRIPT_DIR, SCRIPT_DIR / "tests", SOURCE):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))
 
 from ridgeline_layout_v15 import (
     is_detailed_ridgeline, layout_ridgeline, render_ridgeline,
     ridgeline_css, ridgeline_table, validate_ridgeline_svg,
-)
-from ridgeline_review43_fixture import ridgeline_fixture
-from visual_adapters_v15 import adapt_visual
+)  # noqa: E402
+from ridgeline_review43_fixture import ridgeline_fixture  # noqa: E402
+from visual_adapters_v15 import adapt_visual  # noqa: E402
 
 
 class RidgelineLayoutTests(unittest.TestCase):

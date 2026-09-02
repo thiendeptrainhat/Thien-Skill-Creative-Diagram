@@ -1,7 +1,7 @@
 THIEN-SKILL-CREATIVE-DIAGRAM NOTICE
 
-Version: 1.0.0
-Candidate status: EXACT RC2 — awaiting Vietnamese-lawyer approval; not authorized for release
+Version: 2.5.0
+Candidate status: EXACT RC1 — awaiting G-06 owner disposition and counsel approval or explicit owner waiver; not authorized for release
 Owner: Tran Ngoc Thien, an individual in Ho Chi Minh City, Vietnam
 Licensing contact: thien.8888@gmail.com
 
@@ -18,7 +18,7 @@ Provenance
 SOURCE_MANIFEST.json is the machine-readable source ledger. THIRD_PARTY_NOTICES.md is an exact deterministic projection of its notice-selected records. The current projection contains 1 external functional-reference entry. That reference transferred no code, prose, CSS, template, script, specimen, or asset bytes into this project.
 
 Asset state
-ASSET_MANIFEST.json records 16 owner-approved derivatives at 64px or larger and 6 QA-only 32/48px derivatives excluded from the v2.0.0 candidate. Under D-130, the candidate proposes carrying forward only the exact light-plate 64px and 400px bytes for the OpenAI plugin and Universal raw skill under assets/brand; Claude receives no brand asset. The other owner-approved derivatives remain provenance-only and are not packaged. No asset is release-eligible before G-06@2.0.0 and G-07@2.0.0 approvals.
+ASSET_MANIFEST.json records 16 owner-approved derivatives at 64px or larger and 6 QA-only 32/48px derivatives excluded from the v2.5.0 candidate. Under D-196/D-197, the candidate rebaselines only the exact light-plate 64px and 400px bytes frozen by D-130 for the OpenAI plugin and Universal raw skill under assets/brand; Claude receives no brand asset. The other owner-approved derivatives remain provenance-only and are not packaged. No asset is release-eligible before G-06@2.5.0 and G-07@2.5.0 approvals.
 
 Release control
-This candidate is not release authorization. Vietnamese counsel must approve the exact legal-candidate version/hash and G-06@2.0.0 must pass before these local candidate archives can be promoted to a release payload.
+This candidate is not release authorization. G-06@2.5.0 must bind the exact legal-candidate version/hash and record counsel approval or an explicit owner risk-accepted waiver before any candidate archive can be promoted to a release payload.

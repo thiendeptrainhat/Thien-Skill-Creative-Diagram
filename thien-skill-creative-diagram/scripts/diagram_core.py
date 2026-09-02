@@ -129,6 +129,8 @@ REQUEST_DEFAULTS = {
     "schema_version": SCHEMA_VERSION,
     "diagram_type": "auto",
     "variant_ids": [],
+    "structural_profile": "auto",
+    "structural_override": {"status": "none"},
     "size": "fit",
     "detail": "balanced",
     "audience": "mixed",
@@ -145,6 +147,8 @@ REQUEST_FIELDS = frozenset(
         "source",
         "diagram_type",
         "variant_ids",
+        "structural_profile",
+        "structural_override",
         "size",
         "detail",
         "audience",
@@ -192,6 +196,7 @@ PARSED_FIELDS = frozenset(
 
 ID_RE = re.compile(r"^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$")
 CAP_RE = re.compile(r"^CAP-[A-Z][A-Z0-9-]+$")
+PROFILE_SELECTOR_RE = re.compile(r"^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$")
 LANG_RE = re.compile(r"^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$")
 DIGEST_RE = re.compile(r"^[a-f0-9]{64}$")
 
@@ -390,6 +395,17 @@ def normalize_request(raw_request: Mapping[str, Any]) -> dict[str, Any]:
             field="variant_ids",
         )
     normalized["variant_ids"] = list(variant_ids)
+    structural_profile = _require_string(normalized["structural_profile"], "structural_profile", maximum=80)
+    if structural_profile != "auto" and not PROFILE_SELECTOR_RE.fullmatch(structural_profile):
+        _fail("invalid-structural-profile", "request", "Structural profile must be auto or a safe profile selector.", field="structural_profile")
+    structural_override = dict(_require_mapping(normalized["structural_override"], "structural_override"))
+    _reject_unknown(structural_override, ("status", "reason"), "structural_override", "request")
+    override_status = _require_enum(structural_override.get("status"), ("none", "custom-structure"), "structural_override.status")
+    if override_status == "custom-structure":
+        _require_string(structural_override.get("reason"), "structural_override.reason", maximum=2_000)
+    elif "reason" in structural_override:
+        _fail("conflicting-field", "request", "A structural-override reason is valid only for custom-structure.", field="structural_override.reason")
+    normalized["structural_override"] = structural_override
     _require_enum(normalized["size"], SIZES, "size")
     _require_enum(normalized["detail"], DETAILS, "detail")
     _require_enum(normalized["audience"], AUDIENCES, "audience")
@@ -969,9 +985,13 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
             _require_string(journey["action"], f"{field}.action", stage="ir")
             _require_string(journey["touchpoint"], f"{field}.touchpoint", stage="ir")
             if journey.get("sentiment") is not None:
-                _validate_finite(journey["sentiment"], f"{field}.sentiment", allow_null=False)
-                if not -1 <= journey["sentiment"] <= 1:
-                    _fail("sentiment-out-of-domain", "ir", "Sentiment must be within -1..1.", field=f"{field}.sentiment")
+                sentiment = journey["sentiment"]
+                if isinstance(sentiment, str):
+                    _require_string(sentiment, f"{field}.sentiment", stage="ir")
+                else:
+                    _validate_finite(sentiment, f"{field}.sentiment", allow_null=False)
+                    if not -1 <= sentiment <= 1:
+                        _fail("sentiment-out-of-domain", "ir", "Numeric sentiment must be within -1..1.", field=f"{field}.sentiment")
         if "strategy" in node:
             field = f"ir.nodes[{index}].strategy"
             strategy = dict(_require_mapping(node["strategy"], field, "ir"))
@@ -1073,7 +1093,9 @@ def validate_common_ir(ir_value: Mapping[str, Any]) -> dict[str, Any]:
                 _validate_finite(value, f"{field}.bin_edges[{edge_index}]", allow_null=False)
             if distribution["method"] == "histogram":
                 if distribution["bandwidth"] is not None:
-                    _fail("distribution-bandwidth", "ir", "Histogram bandwidth must be null.", field=f"{field}.bandwidth")
+                    _validate_finite(distribution["bandwidth"], f"{field}.bandwidth", allow_null=False)
+                    if distribution["bandwidth"] <= 0:
+                        _fail("distribution-bandwidth", "ir", "Histogram bandwidth must be positive when supplied.", field=f"{field}.bandwidth")
             else:
                 _validate_finite(distribution["bandwidth"], f"{field}.bandwidth", allow_null=False)
                 if distribution["bandwidth"] <= 0:
