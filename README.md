@@ -6,13 +6,33 @@
 
 ## Giới thiệu skill
 
-`Thiện’s Skill — Creative Diagram` là skill tạo và kiểm tra diagram chuyên nghiệp cho Claude, ChatGPT và Codex. **Bản phát hành hiện hành là `2.0.0`; candidate kế tiếp là `2.5.0` với 45 public structural profile và 14 layout engine**, bao phủ kiến trúc, quy trình, dữ liệu, định lượng, planning, experience và nhiều cấu trúc trực quan chuyên biệt.
+**Thiện’s Skill — Creative Diagram** hỗ trợ chuyển yêu cầu bằng ngôn ngữ tự nhiên, dữ liệu và quan hệ nghiệp vụ thành diagram có cấu trúc, dễ đọc và kiểm tra được. Skill phù hợp với sơ đồ kiến trúc, quy trình, mô hình dữ liệu, biểu đồ định lượng, kế hoạch và hành trình người dùng; chú trọng giữ đúng ngữ nghĩa, số liệu, khả năng tiếp cận và tiếng Việt.
 
-Candidate `2.5.0` đã hoàn tất Step 3 product closure và đang đi qua release gates. Chưa có ZIP hoặc checksum `2.5.0` được công bố; phần cài đặt bên dưới tiếp tục mô tả exact private release `2.0.0` cho đến khi G-05…G-07 của `2.5.0` hoàn tất.
+**Bản phát hành hiện hành: [v2.5.0](https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.5.0)** — private, non-draft, non-prerelease. Tên kỹ thuật, folder và ID của skill vẫn là `thien-skill-creative-diagram`; tên hiển thị là `Thiện’s Skill — Creative Diagram`.
 
-Mỗi diagram có ba phiên bản hình thức ngang cấp: `neutral-light`, `neutral-dark` và `editorial`, tạo thành thư viện 135 mẫu trình bày. 45 diagram dưới đây là toàn bộ bộ `neutral-light`; bấm vào từng ảnh để mở HTML chi tiết. Có thể xem và chuyển đổi giữa cả ba phiên bản tại [`assets/index.html`](assets/index.html).
+### Nền tảng từ bản 2.0.0
 
-Các diagram này là **mẫu tham chiếu đã duyệt**, không phải danh mục output cố định. Người dùng được quyền yêu cầu linh động về nội dung, cấu trúc, phong cách và định dạng; implementation phải điều chỉnh theo yêu cầu khi an toàn và phù hợp ngữ nghĩa.
+- Một lõi dùng chung cho 39 loại diagram chuẩn và bốn biến thể chuyên biệt: Dumbbell, Slopegraph, Ridgeline và Bubble.
+- Thư viện 45 mẫu tham chiếu, mỗi mẫu có ba phong cách ngang cấp `neutral-light`, `neutral-dark`, `editorial`: tổng cộng 135 mẫu.
+- Quy trình chọn loại diagram, bảo toàn dữ liệu, xử lý đầu vào không tin cậy và kiểm tra khả năng đọc; ba cách đóng gói Claude, OpenAI và Universal từ cùng một nguồn.
+
+### Cải tiến trong bản 2.5.0
+
+- Hoàn thiện **45 structural profile trên 14 layout engine** — quy tắc bố cục tương ứng với cấu trúc của từng diagram. 45 profile gồm 39 loại chuẩn, bốn biến thể và hai profile trình bày, không phải 45 loại ngữ nghĩa hoàn toàn độc lập.
+- Luồng tạo chuẩn xuất `diagram.svg` cùng `diagram.ledger.json`, lưu dữ liệu ngữ nghĩa, profile, hash và kết quả kiểm tra hình học để đối chiếu.
+- Cải thiện đường nối và hướng mũi tên, thành viên nhóm/lane, bố cục theo canvas, cùng cấu trúc deployment và database schema.
+- Sửa các vấn đề về nhãn/số liệu định lượng, cảm xúc dạng phân loại trong user journey, va chạm tiêu đề ridgeline và cách nhận diện series của bubble không chỉ dựa vào màu.
+- Ba gói đã qua kiểm tra package/parity và smoke trên runtime được giải nén; bản phát hành có đúng năm artifact tại `dist/2.5.0/`. Khả năng tích hợp trên từng host vẫn có điều kiện, xem [Hướng dẫn cài đặt](#hướng-dẫn-cài-đặt).
+
+Các cải tiến trên dựa vào evidence đã chốt cho bản phát hành; không phải cam kết mọi diagram mới tự động đạt QA. Xem [Release body v2.5.0](https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.5.0) để đối chiếu thay đổi, giới hạn và artifact.
+
+## Các hình diagram của skill
+
+Dưới đây là **45 ảnh `neutral-light` đã duyệt**, giữ nguyên từ gallery tham chiếu. Đây là tài liệu minh họa và lịch sử QA, không phải ảnh được tạo lại bằng runtime `2.5.0`, template cố định hoặc giới hạn nội dung đầu ra.
+
+Bấm ảnh để mở tệp HTML tương ứng. Để xem bản render và chuyển giữa cả ba phong cách, tải repository rồi mở [thư viện đầy đủ — assets/index.html](assets/index.html) bằng trình duyệt. GitHub có thể hiển thị mã nguồn HTML thay vì chạy trực tiếp trang.
+
+Người dùng có thể thay nội dung, số lượng thành phần, nhãn, kích thước, màu sắc và cách nhấn mạnh khi an toàn, phù hợp ngữ nghĩa. Nếu yêu cầu thay đổi cấu trúc vượt profile chuẩn, skill phải nêu rõ khả năng xử lý, không âm thầm dùng một loại diagram khác.
 
 <table>
   <tr>
@@ -92,240 +112,182 @@ Các diagram này là **mẫu tham chiếu đã duyệt**, không phải danh m�
   </tr>
 </table>
 
-## Lợi ích của skill
+## Lợi ích và vai trò của skill
 
-- Biến yêu cầu tự nhiên thành diagram có cấu trúc, có chủ đích và phù hợp ngữ nghĩa thay vì chỉ trang trí.
-- Giảm thời gian chọn loại diagram, bố cục, luồng đọc, hierarchy và visual encoding.
-- Hỗ trợ output HTML/SVG tự chứa, có thể kiểm tra, chỉnh sửa, chia sẻ và tái tạo.
-- Cung cấp ba hướng nghệ thuật ngang cấp để phù hợp giao diện sáng, tối hoặc tài liệu biên tập.
-- Tăng khả năng tiếp cận bằng nhãn rõ ràng, text/table bổ trợ và cách biểu diễn không phụ thuộc duy nhất vào màu sắc.
-- Áp dụng kỷ luật QA cho dữ liệu, clipping, overlap, overflow, contrast và tính toàn vẹn của output.
+### Lợi ích
 
-## Vai trò của skill
+- **Làm rõ thông tin:** thể hiện quan hệ, luồng xử lý, phụ thuộc và số liệu để người đọc hiểu câu chuyện chính.
+- **Giảm công việc bố cục thủ công:** hỗ trợ chọn diagram, tổ chức luồng đọc, phân cấp nội dung và phân bổ khoảng cách.
+- **Dễ đối chiếu và chỉnh sửa:** giữ SVG cùng ledger của luồng chuẩn để xem lại dữ liệu, quan hệ và kết quả kiểm tra.
+- **Trình bày nhất quán:** dùng ba phong cách sáng, tối và biên tập mà vẫn giữ cùng ý nghĩa.
+- **Dễ tiếp cận hơn:** chú trọng nhãn, thứ tự đọc và nhận diện không chỉ dựa vào màu; yêu cầu text/table bổ trợ khi cần.
 
-Skill hoạt động như một lớp thiết kế và QA trực quan giữa yêu cầu của người dùng và artifact cuối. Nó có thể:
+### Vai trò
 
-- phân tích mục tiêu, đối tượng đọc, dữ liệu và quan hệ cần thể hiện;
-- đề xuất hoặc chọn cấu trúc diagram phù hợp;
-- tạo artifact mới, không bị giới hạn vào 45 mẫu có sẵn;
-- điều chỉnh nội dung, bố cục và phong cách theo yêu cầu rõ ràng của người dùng;
-- kiểm tra tính đúng đắn về cấu trúc, khả năng đọc và khả năng truy cập;
-- trả về cảnh báo trung thực khi môi trường không hỗ trợ một định dạng hoặc bước render.
+Skill là lớp hỗ trợ **thiết kế diagram và QA trực quan**, nằm giữa dữ liệu nguồn và artifact cuối:
 
-Skill không thay thế chuyên gia của lĩnh vực nguồn. Với nội dung pháp lý, thuế, kiểm toán, an toàn, kiến trúc hoặc chuyên môn khác, người dùng vẫn chịu trách nhiệm cung cấp và xác nhận nội dung nghiệp vụ.
+- Với BA, product và vận hành: mô tả quy trình, swimlane, hành trình, backlog hoặc roadmap.
+- Với kiến trúc sư, kỹ sư và nhóm dữ liệu: mô tả hệ thống, deployment, luồng dữ liệu, ER và phụ thuộc.
+- Với người phân tích và người ra quyết định: trình bày so sánh, phân bố, xu hướng hoặc các đánh đổi.
+- Với người viết tài liệu và đào tạo: biến nội dung đã xác nhận thành sơ đồ để giải thích.
+
+Skill không tự xác minh sự thật của dữ liệu nguồn và không thay thế chuyên gia pháp lý, thuế, kiểm toán, an toàn, kiến trúc hoặc chuyên môn khác. Người dùng vẫn cần xác nhận nội dung nghiệp vụ trước khi sử dụng kết quả.
 
 ## Hướng dẫn sử dụng skill
 
-### Yêu cầu nhanh
+### Gọi skill
 
-Nêu nội dung cần thể hiện, đối tượng đọc và định dạng mong muốn. Ví dụ:
+Sau khi cài, có thể yêu cầu bằng ngôn ngữ tự nhiên hoặc chọn skill trong giao diện host. Trong Codex CLI/IDE, dùng `/skills` hoặc gõ `$` để chọn `thien-skill-creative-diagram`; trong ChatGPT có hỗ trợ skill, dùng bộ chọn `@`. Cách gọi có thể khác theo surface và gói cài. [Tài liệu OpenAI về skills](https://learn.chatgpt.com/docs/build-skills).
+
+Ví dụ prompt trong Codex:
 
 ```text
-Tạo swimlane diagram bằng tiếng Việt cho quy trình thu tiền, xuất HTML tĩnh và kèm bảng dữ liệu truy cập được.
+$thien-skill-creative-diagram
+
+Tạo swimlane diagram bằng tiếng Việt cho quy trình duyệt đề nghị mua hàng.
+Người đề nghị: tạo đề nghị → gửi trưởng bộ phận.
+Trưởng bộ phận: duyệt → chuyển kế toán.
+Kế toán: kiểm tra ngân sách → xác nhận cho người đề nghị.
+Giữ đúng các bên tham gia, thứ tự và chiều chuyển giao đã nêu;
+không tự thêm bước, nhánh từ chối hoặc số liệu.
+Dùng neutral-light, xuất SVG tĩnh cùng ledger.
+Nếu dữ liệu chưa đủ, hỏi trước khi bổ sung.
 ```
 
-### Prompt đầy đủ nên có
+Đây là prompt minh họa cách sử dụng, không phải một kết quả kiểm thử đã thực thi.
+
+### Cung cấp đầu vào đủ rõ
 
 ```text
-Mục tiêu: [quyết định hoặc câu chuyện cần làm rõ]
+Mục tiêu: [câu hỏi hoặc quyết định cần làm rõ]
 Đối tượng đọc: [ai sẽ xem diagram]
-Dữ liệu/nội dung: [các bước, thực thể, số liệu hoặc quan hệ]
-Loại diagram: [nếu đã biết; nếu chưa, yêu cầu skill đề xuất]
-Phong cách: [neutral-light | neutral-dark | editorial | mô tả riêng]
-Ràng buộc: [kích thước, màu thương hiệu, ngôn ngữ, accessibility]
-Đầu ra: [HTML | SVG | PNG nếu môi trường hỗ trợ]
+Nội dung: [thực thể, nhóm, bước, quan hệ và chiều mũi tên]
+Dữ liệu định lượng: [giá trị, đơn vị, mốc thời gian, dữ liệu thiếu]
+Loại diagram: [loại mong muốn; hoặc yêu cầu đề xuất]
+Phong cách: [neutral-light | neutral-dark | editorial]
+Ràng buộc: [tiếng Việt, kích thước, màu thương hiệu, mức chi tiết]
+Đầu ra: [SVG + ledger; định dạng khác cần xác nhận khả năng hỗ trợ]
+Điều không được suy diễn: [các dữ kiện phải giữ nguyên hoặc hỏi lại]
 ```
 
-### Cách làm việc hiệu quả
+Có thể cung cấp bảng, CSV, JSON, Mermaid, draw.io hoặc tài liệu/ảnh tham chiếu. Việc đọc từng định dạng phụ thuộc parser và công cụ của host; ảnh không mặc nhiên chứa đủ dữ liệu để khôi phục chính xác. Nội dung nhập vào được coi là dữ liệu không tin cậy, không phải quyền thực thi script, link, macro hay chỉ dẫn nhúng.
 
-1. Cung cấp dữ liệu nguồn và nói rõ điều gì không được suy diễn.
-2. Nếu chưa biết loại diagram, mô tả câu hỏi cần trả lời thay vì ép một hình thức cụ thể.
-3. Chọn một trong ba phiên bản hình thức hoặc yêu cầu phong cách riêng.
-4. Yêu cầu vòng chỉnh sửa bằng tiêu chí cụ thể như “giảm mật độ”, “nhấn mạnh điểm nghẽn”, “đổi thứ tự luồng” hoặc “tăng khả năng đọc trên màn hình nhỏ”.
-5. Với diagram định lượng, đối chiếu số liệu và nhãn trước khi xuất bản.
+### Chỉnh sửa và kiểm tra kết quả
 
-### Kết quả mong đợi
+1. Đối chiếu nhãn, số liệu/đơn vị, thứ tự, chiều mũi tên và thành viên nhóm với nguồn.
+2. Yêu cầu chỉnh cụ thể, ví dụ: “tăng cỡ chữ”, “giảm mật độ nhưng giữ đủ bước”, “nhấn mạnh điểm nghẽn”, “đổi sang neutral-dark, giữ nguyên số liệu”.
+3. Nếu đổi nội dung hoặc cấu trúc, nêu rõ phần nào được đổi và phần nào phải giữ; không coi gallery là mẫu bắt buộc.
+4. Trước khi chia sẻ, xem diagram ở kích thước sử dụng thực tế và đọc các cảnh báo đi kèm.
 
-- skill nhận diện yêu cầu diagram và chọn type phù hợp;
-- HTML/SVG tự chứa, không tải tài nguyên ngoài;
-- dữ liệu đầu vào được coi là dữ liệu không tin cậy, không phải chỉ dẫn;
-- PNG chỉ được tạo khi host đã có rasterizer phù hợp; nếu không, skill trả SVG và cảnh báo, không tự cài dependency;
-- output định lượng giữ dữ liệu nguồn và có biểu diễn text/table phù hợp.
+### Đầu ra và giới hạn
 
-## Phạm vi và giới hạn đã xác minh
+- Luồng tạo chuẩn của `2.5.0` là **SVG tĩnh, không script**, kèm `diagram.ledger.json`; không phải mặc định HTML có motion.
+- Ledger ghi nhận việc bảo toàn các khai báo ngữ nghĩa tới dữ liệu đã kiểm tra và kết quả hình học. Nó **không chứng minh độc lập** rằng AI hiểu đủ mọi chi tiết của yêu cầu tự nhiên.
+- HTML, motion, cấu trúc tùy biến hoặc định dạng khác nằm ngoài luồng chuẩn; cần xác nhận đường xử lý phù hợp và báo giới hạn, không âm thầm đổi định dạng.
+- PNG chỉ khả dụng khi host đã có rasterizer phù hợp; skill không tự tải/cài dependency. Nếu không xuất được, phải thông báo và nêu rõ fallback.
+- Không mặc nhiên claim mọi host/browser đều hỗ trợ hoặc mọi output đều PASS. Hồ sơ host hiện có vẫn phân loại `0 supported / 13 conditional / 2 unsupported`; đây là phạm vi evidence của dự án, không phải thống kê mọi nền tảng trên thị trường.
 
-- Runtime hỗ trợ 39 canonical diagram type, bốn capability variant và bảy semantic pattern.
-- Bộ 31 masked silhouette chỉ là sample QA, không phải template/catalog/output cố định; yêu cầu rõ ràng, an toàn và phù hợp ngữ nghĩa của người dùng có precedence.
-- Ba package `2.0.0` đã qua deterministic build, parity, hygiene và extracted-runtime smoke checks; package `2.5.0` chưa được build tại Step4A.
-- Ma trận host tại thời điểm phát hành giữ `0 supported`, `13 conditional`, `2 unsupported`; repository không quảng bá surface conditional thành supported.
-- Browser/cross-browser execution không được tuyên bố PASS do local `file://` policy trong môi trường QA.
-- Skill không thay thế ý kiến pháp lý, thuế, kiểm toán, an toàn, kiến trúc hoặc chuyên môn khác.
-
-## Giấy phép
-
-Phiên bản này chịu sự điều chỉnh của **Tran Ngoc Thien's Skill Commercial Source-Available License 2.0**:
-
-- đây là giấy phép thương mại nguồn có thể xem, **không phải giấy phép nguồn mở**;
-- bản tiếng Việt được ưu tiên áp dụng;
-- quyền truy cập, clone, tải xuống hoặc nhận bản sao không tự cấp quyền cài đặt, thực thi, sửa đổi, phân phối hay cung cấp dịch vụ;
-- quyền sử dụng chỉ phát sinh theo Paid Order, Written Permission/email hoặc Commercial Agreement hợp lệ;
-- logo, crest, tên, nhãn hiệu và goodwill TDTN bị loại khỏi quyền cấp chung và cần văn bản cho phép riêng;
-- liên hệ cấp quyền: `thien.8888@gmail.com`.
-
-Đọc đầy đủ trước khi sử dụng:
-
-- [`LICENSE.md`](LICENSE.md) — bản license 2.0 ở root repository, byte-identical với bản trong skill
-- [`thien-skill-creative-diagram/LICENSE-APPLICATION.md`](thien-skill-creative-diagram/LICENSE-APPLICATION.md)
-- [`thien-skill-creative-diagram/NOTICE`](thien-skill-creative-diagram/NOTICE)
-- [`thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md`](thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md)
-- [`thien-skill-creative-diagram/SOURCE_MANIFEST.json`](thien-skill-creative-diagram/SOURCE_MANIFEST.json)
-- [`thien-skill-creative-diagram/ASSET_MANIFEST.json`](thien-skill-creative-diagram/ASSET_MANIFEST.json)
-
-Legal package bytes của release `2.0.0` là exact candidate `TCD-LEGAL-2.0.0-RC1`, aggregate SHA-256 `93643da0d3183db68f1f70730840bd1bcae5935b130e405179f14284501f29c0`, đã được owner phê duyệt theo D-131 với explicit waiver; đây không phải tuyên bố lawyer sign-off. Legal/brand aggregate `2.5.0` chưa được G-06 phê duyệt và không kế thừa tự động approval `2.0.0`.
-
-## Provenance
-
-`diagram-design` là nguồn chức năng chủ đạo ở mức taxonomy, hành vi và yêu cầu trừu tượng. Repository này là **clean-room-oriented independent reimplementation**: không sao chép code, prose, CSS, template, script, specimen hoặc asset upstream. `Thien-UI-UX-Ultra` chỉ được dùng ở mức nguyên tắc và workflow.
-
-Chi tiết nằm trong `SOURCE_MANIFEST.json`, `THIRD_PARTY_NOTICES.md` và evidence G-01/G-06 của private audit repository.
-
-## Release integrity
-
-Release `2.0.0` hiện hành có:
-
-- tag `v2.0.0`;
-- ba ZIP đúng hash trong mục cài đặt;
-- `SHA256SUMS.txt`;
-- G-00 đến G-07 `PASS` trong private audit records;
-- không thay đổi legal, brand hoặc package bytes sau approval.
-
-Release `2.5.0` chỉ hợp lệ sau khi G-00…G-07 đều `PASS`, ba archive và `SHA256SUMS-2.5.0.txt` có exact digest, legal/brand aggregate đạt G-06, và owner cấp G-07 trên exact commit/payload trước annotated tag `v2.5.0` cùng private GitHub Release.
-
-Repository này là **private audit repository**. Quyền truy cập, xem, tải xuống hoặc clone repository **không tự cấp quyền sử dụng**. Xem mục [Giấy phép](#giấy-phép) trước khi cài đặt hoặc thực thi.
+Chi tiết kỹ thuật: [SKILL.md](thien-skill-creative-diagram/SKILL.md), [output và motion](thien-skill-creative-diagram/references/output-motion.md).
 
 ## Hướng dẫn cài đặt
 
-### Artifact v2.0.0
+### Chọn đúng gói v2.5.0
 
-| Mục tiêu | File | SHA-256 |
-|---|---|---|
-| Claude Code plugin | `thien-skill-creative-diagram-2.0.0-claude-plugin.zip` | `7ef52b21be9dcc96caae5621e7788f9eb31cd46ae26ef94e47e3a75889ce99f6` |
-| OpenAI plugin | `thien-skill-creative-diagram-2.0.0-openai-plugin.zip` | `65c2d6fbc33dc6d3065c5d6ae44a5b4fe02e5f7e8838b7f05eede07766124315` |
-| Universal raw skill | `thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip` | `88e22caee1f7df7ff8893dbd5cb461c6117921765e56c349e3da6c6452f15f93` |
+Đọc [Giấy phép](#giấy-phép) trước khi cài hoặc chạy. Repository và Release là private; quyền truy cập/tải xuống không tự cấp quyền sử dụng.
 
-Tải ba ZIP và `SHA256SUMS.txt` từ GitHub Release `v2.0.0`, sau đó để chúng trong cùng một thư mục.
+Tải artifact từ [GitHub Release v2.5.0](https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.5.0), hoặc dùng đúng file trong [dist/2.5.0](dist/2.5.0/):
 
-### Kiểm tra checksum trước khi cài đặt
+| Gói / tệp | Dùng cho | SHA-256 |
+| --- | --- | --- |
+| [Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip) | Claude Code plugin | `b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2` |
+| [Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip) | OpenAI plugin cho host hỗ trợ | `d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2` |
+| [Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip) | Raw skill cho Codex và host đọc Agent Skills | `c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb` |
+| [SHA256SUMS](dist/2.5.0/SHA256SUMS) | Checksum của ba ZIP | `578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2` |
+| [packaging-report.json](dist/2.5.0/packaging-report.json) | Báo cáo đóng gói/parity | `1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a` |
 
-macOS/Linux:
+Ba ZIP có cùng lõi runtime nhưng lớp đóng gói khác nhau. Tên `ChatGPT` là tên archive của OpenAI plugin, **không bảo đảm upload ZIP trực tiếp vào mọi tài khoản ChatGPT**. Không đổi đuôi/tên một gói để dùng thay gói khác, không cài trùng nhiều bản cùng ID vào một host.
+
+### Xác minh checksum
+
+Đặt `SHA256SUMS` và ba ZIP cùng thư mục rồi chạy một trong hai lệnh:
 
 ```bash
-shasum -a 256 -c SHA256SUMS.txt
+# macOS
+shasum -a 256 -c SHA256SUMS
 ```
-
-Nếu hệ thống có GNU coreutils:
 
 ```bash
-sha256sum -c SHA256SUMS.txt
+# Linux có GNU coreutils
+sha256sum -c SHA256SUMS
 ```
 
-Windows PowerShell:
+Trên Windows PowerShell, lấy hash từng ZIP và so với bảng:
 
 ```powershell
-Get-FileHash .\thien-skill-creative-diagram-2.0.0-claude-plugin.zip -Algorithm SHA256
-Get-FileHash .\thien-skill-creative-diagram-2.0.0-openai-plugin.zip -Algorithm SHA256
-Get-FileHash .\thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -Algorithm SHA256
+Get-FileHash .\Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip -Algorithm SHA256
+Get-FileHash .\Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip -Algorithm SHA256
+Get-FileHash .\Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip -Algorithm SHA256
 ```
 
-Chỉ tiếp tục nếu hash khớp hoàn toàn với bảng trên và `SHA256SUMS.txt`.
+`SHA256SUMS` chỉ liệt kê ba ZIP. Đối chiếu hash của chính `SHA256SUMS` và `packaging-report.json` với bảng trên hoặc Release body. Nếu chỉ tải một ZIP, tính SHA-256 riêng của file đó; không coi lỗi thiếu các ZIP còn lại là xác minh thành công. Dừng nếu có mismatch.
 
-### Cài đặt Claude Code
+### Claude Code — gói Claude
 
-#### Cách 1 — nạp Claude plugin ZIP cho một phiên
-
-Yêu cầu Claude Code hiện hành có hỗ trợ `--plugin-dir` với ZIP. Từ thư mục chứa artifact:
+Từ thư mục tải artifact, giải nén vào **thư mục mới chưa tồn tại**. Ví dụ bash; dừng nếu bước này không thành công:
 
 ```bash
-claude --plugin-dir ./thien-skill-creative-diagram-2.0.0-claude-plugin.zip
+test ! -e ./tcd-claude-v2.5.0 && test ! -L ./tcd-claude-v2.5.0 && unzip -n ./Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip -d ./tcd-claude-v2.5.0
 ```
 
-Trong phiên Claude Code, yêu cầu tự nhiên một diagram hoặc gọi skill theo namespace plugin nếu host hiển thị lệnh đó:
+Sau khi giải nén thành công, validate và nạp đúng plugin root:
+
+```bash
+claude plugin validate ./tcd-claude-v2.5.0/thien-skill-creative-diagram &&
+  claude --plugin-dir ./tcd-claude-v2.5.0/thien-skill-creative-diagram
+```
+
+Chỉ nạp nếu validation thành công. `--plugin-dir` nạp cho phiên hiện tại; không đồng nghĩa đã cài cố định qua marketplace. Trong phiên đó, gọi:
 
 ```text
 /thien-skill-creative-diagram:thien-skill-creative-diagram
 ```
 
-Nếu lệnh không xuất hiện, chạy `/help`, kiểm tra log nạp plugin và xác nhận checksum/phiên bản Claude Code.
+Nếu skill không xuất hiện, xem `/help` và log nạp plugin. Cấu trúc Claude có `.claude-plugin/plugin.json` tại plugin root; không dùng gói ChatGPT thay thế. [Claude Code plugins](https://code.claude.com/docs/en/plugins), [plugin reference](https://code.claude.com/docs/en/plugins-reference).
 
-#### Cách 2 — giải nén, validate và nạp thư mục plugin
+### Codex — gói Universal
 
-```bash
-mkdir -p ./tcd-claude-plugin
-unzip ./thien-skill-creative-diagram-2.0.0-claude-plugin.zip -d ./tcd-claude-plugin
-claude plugin validate ./tcd-claude-plugin/thien-skill-creative-diagram
-claude --plugin-dir ./tcd-claude-plugin/thien-skill-creative-diagram
-```
+Đây là đường cài raw skill cho host đọc `.agents/skills`. Chọn **một** phạm vi: repository hoặc người dùng. Đích phải chưa có folder/symlink `thien-skill-creative-diagram`; nếu đã có bản cũ, dừng để bảo toàn và xử lý nâng cấp riêng, không giải nén chồng.
 
-Claude Code plugin là route phát hành dành cho Claude. Không dùng OpenAI plugin ZIP thay cho Claude plugin.
-
-Tài liệu nền tảng chính thức: [Claude Code plugins](https://code.claude.com/docs/en/plugins), [Claude Code skills](https://code.claude.com/docs/en/skills), [plugin reference](https://code.claude.com/docs/en/plugins-reference).
-
-### Cài đặt Codex bằng Universal raw skill
-
-Đây là route local đơn giản nhất cho Codex CLI, Codex IDE và các host đọc Agent Skills từ `.agents/skills`.
-
-#### Cài cho một repository
-
-Chạy tại repository đích:
+**Cho một repository:** chạy tại repository đích, thay `/path/to/` bằng thư mục chứa ZIP:
 
 ```bash
 mkdir -p ./.agents/skills
-unzip /path/to/thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -d ./.agents/skills
-test -f ./.agents/skills/thien-skill-creative-diagram/SKILL.md
+test ! -e ./.agents/skills/thien-skill-creative-diagram && test ! -L ./.agents/skills/thien-skill-creative-diagram && unzip -n "/path/to/Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip" -d ./.agents/skills
 ```
 
-Cây kết quả bắt buộc:
-
-```text
-.agents/
-└── skills/
-    └── thien-skill-creative-diagram/
-        ├── SKILL.md
-        ├── scripts/
-        ├── references/
-        └── ...
-```
-
-Khởi động hoặc khởi động lại Codex trong repository đó. Codex sẽ phát hiện skill từ `.agents/skills` dọc theo cây thư mục tới repository root.
-
-#### Cài cho người dùng hiện tại
+**Cho người dùng hiện tại:** dùng đích `$HOME/.agents/skills` thay vì repository:
 
 ```bash
 mkdir -p "$HOME/.agents/skills"
-unzip /path/to/thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip -d "$HOME/.agents/skills"
-test -f "$HOME/.agents/skills/thien-skill-creative-diagram/SKILL.md"
+test ! -e "$HOME/.agents/skills/thien-skill-creative-diagram" && test ! -L "$HOME/.agents/skills/thien-skill-creative-diagram" && unzip -n "/path/to/Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip" -d "$HOME/.agents/skills"
 ```
 
-Khởi động lại Codex nếu skill chưa xuất hiện. Không đổi tên folder vì `name` trong `SKILL.md` phải khớp `thien-skill-creative-diagram`.
+Kết quả phải có `.agents/skills/thien-skill-creative-diagram/SKILL.md` cùng các thư mục `scripts/`, `references/`, `agents/` và tài liệu license. Giữ nguyên technical ID/folder. Nếu skill chưa xuất hiện, khởi động lại Codex. Vị trí discovery và cách gọi được đối chiếu với [OpenAI — Build skills](https://learn.chatgpt.com/docs/build-skills).
 
-Tài liệu nền tảng chính thức: [OpenAI — Build skills](https://learn.chatgpt.com/docs/build-skills).
+### ChatGPT Desktop/Codex — gói ChatGPT (OpenAI plugin)
 
-### Cài OpenAI plugin cho ChatGPT Desktop/Codex
+Archive chứa `.codex-plugin/plugin.json` và `skills/thien-skill-creative-diagram/SKILL.md` dưới root `thien-skill-creative-diagram/`. Route này phụ thuộc phiên bản ứng dụng, tài khoản và workspace policy; không thay thế quyền cấp phép của skill.
 
-OpenAI plugin ZIP là delivery archive có `.codex-plugin/plugin.json`; đây **không phải** cam kết rằng mọi tài khoản có thể upload ZIP trực tiếp. Route marketplace/plugin phụ thuộc phiên bản ứng dụng, tài khoản, workspace policy và quyền admin.
+Với **local repository marketplace** trên desktop có hỗ trợ:
 
-#### Local repository marketplace
-
-1. Giải nén plugin vào repository sử dụng:
+1. Tại repository đích, giải nén vào `plugins/` khi folder plugin chưa tồn tại:
 
 ```bash
 mkdir -p ./plugins
-unzip /path/to/thien-skill-creative-diagram-2.0.0-openai-plugin.zip -d ./plugins
-test -f ./plugins/thien-skill-creative-diagram/.codex-plugin/plugin.json
-mkdir -p ./.agents/plugins
+test ! -e ./plugins/thien-skill-creative-diagram && test ! -L ./plugins/thien-skill-creative-diagram && unzip -n "/path/to/Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip" -d ./plugins
 ```
 
-2. Tạo hoặc bổ sung `./.agents/plugins/marketplace.json`:
+2. Sau khi giải nén thành công, thêm entry vào `.agents/plugins/marketplace.json` theo mẫu. Nếu file đã tồn tại, hợp nhất entry, không ghi đè marketplace khác.
 
 ```json
 {
@@ -350,30 +312,57 @@ mkdir -p ./.agents/plugins
 }
 ```
 
-Nếu file đã có plugin khác, hợp nhất entry mới vào mảng `plugins`; không ghi đè các entry hiện hữu.
+3. Khởi động lại ứng dụng, chọn marketplace `Thien Private Plugins` trong Plugins Directory, cài plugin rồi mở chat mới.
 
-3. Khởi động lại ChatGPT Desktop, mở **Plugins Directory**, chọn marketplace `Thien Private Plugins`, cài plugin và thử trong chat mới.
+`source.path` tính từ repository root, không từ thư mục chứa JSON. Xem [OpenAI — Package your plugin](https://developers.openai.com/plugins/build/plugins). Nếu host không có route marketplace phù hợp, không giả định upload ZIP vào chat sẽ cài plugin.
 
-Codex CLI hiện hành cũng có thể đăng ký marketplace Git bằng `codex plugin marketplace add`, nhưng repository này chứa full audit corpus chứ không phải catalog marketplace độc lập. Không dùng lệnh đó thay cho local marketplace ở trên nếu chưa tạo marketplace Git chuyên biệt.
+Codex CLI dùng `/plugins` cho marketplace đã cấu hình; IDE extension không hỗ trợ plugin, nên dùng gói Universal. Các bề mặt và chính sách có thể thay đổi, xem [OpenAI — Plugins](https://learn.chatgpt.com/docs/plugins). Repository audit này không tự trở thành public marketplace.
 
-Tài liệu nền tảng chính thức: [OpenAI — Package your plugin](https://developers.openai.com/plugins/build/plugins), [OpenAI Plugins](https://developers.openai.com/plugins).
+### Sau khi cài
 
-### Artifact lịch sử v1.0.0
+Kiểm tra skill xuất hiện đúng ID/tên hiển thị và chỉ có một bản đang được chọn. Nếu bạn muốn kiểm tra sử dụng, chạy prompt minh họa ở mục [Gọi skill](#gọi-skill) rồi đối chiếu [Đầu ra và giới hạn](#đầu-ra-và-giới-hạn).
 
-| Mục tiêu | File | SHA-256 |
+Các lệnh ở README là hướng dẫn cho người cài, không phải bằng chứng chúng đã được thực thi trên host của bạn. Build-time package verification không thay cho xác minh tích hợp ở môi trường thực tế.
+
+### Giấy phép
+
+Phiên bản này chịu sự điều chỉnh của **Tran Ngoc Thien's Skill Commercial Source-Available License 2.0**:
+
+- đây là giấy phép thương mại nguồn có thể xem, **không phải giấy phép nguồn mở**;
+- bản tiếng Việt được ưu tiên áp dụng;
+- quyền truy cập, clone, tải xuống hoặc nhận bản sao không tự cấp quyền cài đặt, thực thi, sửa đổi, phân phối hay cung cấp dịch vụ;
+- quyền sử dụng chỉ phát sinh theo Paid Order, Written Permission/email hoặc Commercial Agreement hợp lệ;
+- logo, crest, tên, nhãn hiệu và goodwill TDTN bị loại khỏi quyền cấp chung và cần văn bản cho phép riêng;
+- liên hệ cấp quyền: `thien.8888@gmail.com`.
+
+Đọc đầy đủ trước khi sử dụng:
+
+- [`LICENSE.md`](LICENSE.md) — bản license 2.0 ở root repository, byte-identical với bản trong skill
+- [`thien-skill-creative-diagram/LICENSE-APPLICATION.md`](thien-skill-creative-diagram/LICENSE-APPLICATION.md)
+- [`thien-skill-creative-diagram/NOTICE`](thien-skill-creative-diagram/NOTICE)
+- [`thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md`](thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md)
+- [`thien-skill-creative-diagram/SOURCE_MANIFEST.json`](thien-skill-creative-diagram/SOURCE_MANIFEST.json)
+- [`thien-skill-creative-diagram/ASSET_MANIFEST.json`](thien-skill-creative-diagram/ASSET_MANIFEST.json)
+
+Release `2.5.0` đã có owner legal/brand/provenance approval theo D-202 trên exact legal/provenance aggregate SHA-256 `96f611803df589e7dadd75287237dfc6eb3a98380ef78f4fcfb68ea731356227`, bằng explicit owner risk-accepted waiver. Chưa có independent Vietnamese counsel review; không tuyên bố lawyer-reviewed. Approval này dành riêng cho bytes đã phát hành, không phải kế thừa tự động từ `2.0.0` hoặc cho phép sửa license/brand.
+
+### Provenance
+
+`diagram-design` là nguồn chức năng chủ đạo ở mức taxonomy, hành vi và yêu cầu trừu tượng. Repository này là **clean-room-oriented independent reimplementation**: không sao chép code, prose, CSS, template, script, specimen hoặc asset upstream. `Thien-UI-UX-Ultra` chỉ được dùng ở mức nguyên tắc và workflow.
+
+Chi tiết nằm trong [SOURCE_MANIFEST.json](thien-skill-creative-diagram/SOURCE_MANIFEST.json), [THIRD_PARTY_NOTICES.md](thien-skill-creative-diagram/THIRD_PARTY_NOTICES.md) và evidence đã chốt trong [PROJECT.md](PROJECT.md).
+
+### Tính toàn vẹn bản phát hành và phiên bản cũ
+
+- Tag `v2.5.0` trỏ release commit `99c179155c8bccc5f0da3e29fea81a72a660439d`; năm artifact trong bảng là exact bytes đã được phê duyệt và phát hành.
+- `packaging-report.json` giữ provenance tại lúc build: `release_notes_sha256` trỏ source notes khi còn là candidate và trạng thái G-06 trong report là trạng thái khi đó. Owner approval G-06 đã hoàn tất sau đó; xem Release body và PROJECT, không sửa report để viết lại lịch sử.
+- README này được cập nhật **sau phát hành** để hướng dẫn sử dụng `2.5.0`. Nó không thay README tại tag, ZIP, checksum hoặc Release body đã khóa.
+- [Release v2.0.0](https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.0.0) và [Release v1.0.0](https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v1.0.0) vẫn là các bản lịch sử. Các artifact trong repository được xếp theo thư mục phiên bản như bảng dưới; tám file cũ chỉ đổi thư mục chứa, giữ nguyên tên, nội dung và SHA-256. Tag và GitHub Release cũ không thay đổi.
+
+| Thư mục phiên bản | Bộ cài | File kiểm tra |
 |---|---|---|
-| Claude Code plugin | `thien-skill-creative-diagram-1.0.0-claude-plugin.zip` | `bba5b464322d8d50ec2f9b76e18581df3e5614004078ba40708f2c8cd1104fa9` |
-| OpenAI plugin | `thien-skill-creative-diagram-1.0.0-openai-plugin.zip` | `7d7a33dbdecdd87e9f5237c3ab39b1416ba11c3b736424ba3eb0151c9d73893c` |
-| Universal raw skill | `thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip` | `4fcccc656008dd1caba8c1605b0523b0c041afaf216f739aba7373b5d5ac748f` |
+| [`dist/1.0.0/`](dist/1.0.0/) | [Claude](dist/1.0.0/thien-skill-creative-diagram-1.0.0-claude-plugin.zip) · [OpenAI](dist/1.0.0/thien-skill-creative-diagram-1.0.0-openai-plugin.zip) · [Universal](dist/1.0.0/thien-skill-creative-diagram-1.0.0-universal-raw-skill.zip) | [SHA256SUMS.txt](dist/1.0.0/SHA256SUMS.txt) |
+| [`dist/2.0.0/`](dist/2.0.0/) | [Claude](dist/2.0.0/thien-skill-creative-diagram-2.0.0-claude-plugin.zip) · [OpenAI](dist/2.0.0/thien-skill-creative-diagram-2.0.0-openai-plugin.zip) · [Universal](dist/2.0.0/thien-skill-creative-diagram-2.0.0-universal-raw-skill.zip) | [SHA256SUMS-2.0.0.txt](dist/2.0.0/SHA256SUMS-2.0.0.txt) |
+| [`dist/2.5.0/`](dist/2.5.0/) | [Claude](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip) · [ChatGPT](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip) · [Universal](dist/2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip) | [SHA256SUMS](dist/2.5.0/SHA256SUMS) · [packaging-report.json](dist/2.5.0/packaging-report.json) |
 
-Release `v1.0.0` và checksum lịch sử được giữ nguyên; không dùng checksum v1.0.0 để xác minh ZIP v2.0.0.
-
-### Kiểm tra sau cài đặt
-
-Thử một yêu cầu rõ loại diagram, dữ liệu và định dạng, ví dụ:
-
-```text
-Tạo swimlane diagram bằng tiếng Việt cho quy trình thu tiền, xuất HTML tĩnh và kèm bảng dữ liệu truy cập được.
-```
-
-Đối chiếu kết quả với các tiêu chí tại mục [Kết quả mong đợi](#kết-quả-mong-đợi).
+Chạy kiểm tra checksum từ bên trong thư mục phiên bản tương ứng. Hai bản cũ giữ tên ZIP/checksum lịch sử và không có `packaging-report.json`; không tạo lại artifact chỉ để đồng nhất tên. Không dùng checksum của phiên bản khác cho ZIP `2.5.0`.
