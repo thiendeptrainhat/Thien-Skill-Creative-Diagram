@@ -7358,7 +7358,7 @@
   },
   "d207_g07_release_publication": {
     "decision": "D-207",
-    "status": "AUTHORIZED / IN-PROGRESS / LOCAL-GOVERNANCE-CUSTODY",
+    "status": "RELEASE-PUBLISHED / G07-PASS / REMOTE-VERIFIED / GOVERNANCE-CLOSURE-RECORDED",
     "authorization_contract": {
       "decision": "D-207",
       "release": "v2.5.0",
@@ -7423,7 +7423,184 @@
       "initial_remote_tag_and_release": "ABSENT",
       "live_recheck_before_publication": "REQUIRED"
     },
-    "started_at": "2026-09-02T16:27:29Z"
+    "started_at": "2026-09-02T16:27:29Z",
+    "authorization_contract_sha256": "3e6ecf2fecd9b3799f10cf94e70f1cd970b83db1f3c8cfc4289df67130cdf1b1",
+    "governance_custody_commit": {
+      "sha1": "41c2969053419cedd53da3124c746f95a1eb16bf",
+      "tree_sha1": "a972cd02c54353e07f66f78baf2d2b30267d925f",
+      "parent_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "exact_changes": [
+        "PROJECT.md",
+        "evidence/p22/D-157-FULL-POPULATION-REGISTER.json"
+      ],
+      "remote_push_verified": true
+    },
+    "preflight": {
+      "result": "PASS",
+      "completed_at": "2026-09-02T16:29:36Z",
+      "body_binding": "EXACT D-206 / OWNER APPROVED BY D-207",
+      "clean_custody_tree": true,
+      "product_package_dist_unchanged": true,
+      "historical_dist_8_of_8": true,
+      "remote_private": true,
+      "remote_release_branch_initially_absent": true,
+      "remote_tag_initially_absent": true,
+      "remote_release_initially_absent": true,
+      "main_sha1": "db2be7805c1b0e87214992e4f7a3a91c4648a06f"
+    },
+    "publication": {
+      "release_id": 381415252,
+      "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.5.0",
+      "title": "Thiện’s Skill — Creative Diagram v2.5.0",
+      "tag": "v2.5.0",
+      "tag_object_sha1": "5bc712ddfbec4d0f330709374ca2b12f8e60d778",
+      "tag_type": "annotated",
+      "tag_created_at": "2026-09-02T16:30:37Z",
+      "tag_peel_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "release_target_commitish": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "published_at": "2026-09-02T16:31:49Z",
+      "draft": false,
+      "prerelease": false,
+      "repository_visibility": "private",
+      "github_release_immutable": false,
+      "body_sha256": "5aabf9899deecbc6f843522a9c344b926be2e8393e8ce1ac5a6a7b3058ab6e5d",
+      "body_bytes": 3340,
+      "body_transmission": "Decoded canonical D-206 UTF-8 string streamed directly to gh --notes-file -; no body file or generated notes.",
+      "asset_transmission": "Exactly five D-203 dist paths uploaded; no archive/report/checksum mutation or sixth asset.",
+      "asset_receipts": [
+        {
+          "filename": "SHA256SUMS",
+          "bytes": 343,
+          "sha256": "578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2",
+          "github_asset_id": 541451261,
+          "github_digest": "sha256:578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2",
+          "state": "uploaded",
+          "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/download/v2.5.0/SHA256SUMS",
+          "downloaded_byte_stream_sha256": "578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2"
+        },
+        {
+          "filename": "packaging-report.json",
+          "bytes": 103998,
+          "sha256": "1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a",
+          "github_asset_id": 541451262,
+          "github_digest": "sha256:1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a",
+          "state": "uploaded",
+          "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/download/v2.5.0/packaging-report.json",
+          "downloaded_byte_stream_sha256": "1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a"
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip",
+          "bytes": 460059,
+          "sha256": "b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2",
+          "github_asset_id": 541451263,
+          "github_digest": "sha256:b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2",
+          "state": "uploaded",
+          "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/download/v2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip",
+          "downloaded_byte_stream_sha256": "b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2"
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip",
+          "bytes": 551142,
+          "sha256": "d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2",
+          "github_asset_id": 541451257,
+          "github_digest": "sha256:d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2",
+          "state": "uploaded",
+          "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/download/v2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip",
+          "downloaded_byte_stream_sha256": "d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2"
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip",
+          "bytes": 542515,
+          "sha256": "c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb",
+          "github_asset_id": 541451255,
+          "github_digest": "sha256:c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb",
+          "state": "uploaded",
+          "url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/download/v2.5.0/Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip",
+          "downloaded_byte_stream_sha256": "c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb"
+        }
+      ]
+    },
+    "post_release_verification": {
+      "verified_at": "2026-09-02T16:33:45Z",
+      "remote_body_byte_identity": "PASS / EXACT UTF-8 STRING INCLUDING TERMINAL LF",
+      "asset_inventory_size_api_digest": "PASS / 5 OF 5",
+      "actual_download_stream_hashes": "PASS / 5 OF 5 / NO LOCAL DOWNLOAD FILES",
+      "tag_object_and_peel": "PASS / ORIGINAL PRODUCT COMMIT, NOT GOVERNANCE COMMIT",
+      "repository_visibility": "PASS / PRIVATE",
+      "main_unchanged": "PASS / db2be7805c1b0e87214992e4f7a3a91c4648a06f",
+      "historical_dist": "PASS / 8 OF 8 / NO PATH OR BYTE CHANGE",
+      "legal_representation": "D-202 EXPLICIT OWNER RISK-ACCEPTED WAIVER / NO INDEPENDENT VIETNAMESE COUNSEL REVIEW / NO LAWYER-REVIEWED CLAIM"
+    },
+    "closure": {
+      "g07": "PASS / EXACT OWNER APPROVAL, LIVE PREFLIGHT, PUBLICATION AND REMOTE VERIFICATION",
+      "release": "v2.5.0 PUBLISHED / PRIVATE / NON-DRAFT / NON-PRERELEASE",
+      "post_release_governance_files": [
+        "PROJECT.md",
+        "evidence/p22/D-157-FULL-POPULATION-REGISTER.json"
+      ],
+      "governance_commit_rule": "Commit this two-file closure separately and push only codex/release-v2.5.0. Its own final commit SHA is read from Git and reported after the push; it is not self-embedded.",
+      "final_completion_condition": "Local branch and remote branch must equal the closure commit, working tree clean, main unchanged and tag object/peel unchanged after closure push.",
+      "current_authorization": "NONE AFTER D-207 CLOSURE / NO FURTHER MUTATION",
+      "forbidden_actions_performed": false
+    },
+    "new_persistent_files": [],
+    "source_or_package_or_dist_mutated": false,
+    "test_build_package_r_case_run": false,
+    "main_mutated": false,
+    "force_or_overwrite_or_substitution": false,
+    "completed_at": "2026-09-02",
+    "aggregate_release_closure_binding": {
+      "decision": "D-207",
+      "authorization_contract_sha256": "3e6ecf2fecd9b3799f10cf94e70f1cd970b83db1f3c8cfc4289df67130cdf1b1",
+      "d206_review_binding_sha256": "c9d6fa2279a1ebde4753c84c456f9a2132e20552dd2d97144980eaa7e2d12d20",
+      "d203_dist_binding_sha256": "a73772e4169cfce1bd5d09b8b201fbe26fed08fd654df1985964c1bc3e9dbc2a",
+      "release_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "release_tree_sha1": "c42067e695dce468138d299a901d83cf252a0a89",
+      "governance_custody_commit_sha1": "41c2969053419cedd53da3124c746f95a1eb16bf",
+      "tag_object_sha1": "5bc712ddfbec4d0f330709374ca2b12f8e60d778",
+      "github_release_id": 381415252,
+      "release_url": "https://github.com/thiendeptrainhat/Thien-Skill-Creative-Diagram/releases/tag/v2.5.0",
+      "published_at": "2026-09-02T16:31:49Z",
+      "body_sha256": "5aabf9899deecbc6f843522a9c344b926be2e8393e8ce1ac5a6a7b3058ab6e5d",
+      "body_bytes": 3340,
+      "assets": [
+        {
+          "filename": "SHA256SUMS",
+          "bytes": 343,
+          "sha256": "578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2",
+          "github_asset_id": 541451261
+        },
+        {
+          "filename": "packaging-report.json",
+          "bytes": 103998,
+          "sha256": "1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a",
+          "github_asset_id": 541451262
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip",
+          "bytes": 460059,
+          "sha256": "b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2",
+          "github_asset_id": 541451263
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip",
+          "bytes": 551142,
+          "sha256": "d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2",
+          "github_asset_id": 541451257
+        },
+        {
+          "filename": "Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip",
+          "bytes": 542515,
+          "sha256": "c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb",
+          "github_asset_id": 541451255
+        }
+      ],
+      "verification": "REMOTE BODY BYTE-IDENTICAL / FIVE API AND DOWNLOADED BYTE DIGESTS MATCH / TAG PEEL EXACT / PRIVATE / NON-DRAFT / NON-PRERELEASE",
+      "main_sha1_unchanged": "db2be7805c1b0e87214992e4f7a3a91c4648a06f",
+      "g07": "PASS",
+      "d185": "NO-FURTHER-FULL-R01-R20"
+    },
+    "aggregate_release_closure_binding_sha256": "ff3b8439eeaad31fc3e47bcb2c2dc1101202b1c0bf2c4b884e3a7770dcffca61"
   },
   "file_policy_justification": {
     "consumer": ["Phase 4 controller", "Phase 5 consolidation", "Phase 6 owner triage", "Phase 7 remediation", "Phase 8 final confirmation"],
