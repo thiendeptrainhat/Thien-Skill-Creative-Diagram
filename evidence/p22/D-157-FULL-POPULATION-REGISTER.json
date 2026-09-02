@@ -7211,6 +7211,220 @@
     "completed_at": "2026-09-02",
     "authorization_expired_at_closure": true
   },
+  "d205_g07_preflight_fail_closed": {
+    "decision": "D-205",
+    "status": "PREFLIGHT-FAIL-CLOSED / NO-PUSH-NO-TAG-NO-RELEASE",
+    "recorded_by": "D-206 / append-only record of the immediately preceding read-only attempt",
+    "authorized_release_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+    "input_d203_aggregate_binding_sha256": "a73772e4169cfce1bd5d09b8b201fbe26fed08fd654df1985964c1bc3e9dbc2a",
+    "preflight_observations": {
+      "exact_commit_and_clean_tree": "PASS before any D-206 governance changes",
+      "d203_d204_binding_hashes": "MATCH",
+      "final_staging_and_committed_release_artifacts": "PASS / 5 OF 5",
+      "historical_dist": "PASS / 8 OF 8",
+      "repository": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+      "private": true,
+      "default_branch": "main",
+      "remote_main_sha1": "db2be7805c1b0e87214992e4f7a3a91c4648a06f",
+      "remote_release_branch_present": false,
+      "remote_v250_tag_present": false,
+      "remote_v250_release_present": false,
+      "temporal_scope": "Observed during D-205 only; remote absence, permissions and visibility must be checked afresh before any future publication."
+    },
+    "blocker": {
+      "classification": "RELEASE-BODY-METADATA-NOT-REBASELINED / NOT A PRODUCT OR PACKAGE HASH DRIFT",
+      "source_path": "evidence/p21/RELEASE-NOTES-v2.5.0.md",
+      "source_sha256": "a2c3b7195139893489e8c5fec292ef66c4545ef4bfc0596da43f7f45ed5953e8",
+      "stale_lines": [
+        15,
+        17,
+        18,
+        19,
+        21,
+        29
+      ],
+      "cause": "D-199/D-200 changed the release-note heading only. The candidate source still names superseded ZIPs and SHA256SUMS-2.5.0.txt, defers digests to G-05 and describes G-06 as pending. No exact final derived GitHub body had been frozen for owner approval.",
+      "package_report_source_hash": "MATCH / the frozen report correctly binds the unchanged candidate source, not a finalized publication body"
+    },
+    "actions": {
+      "file_mutation": false,
+      "git_mutation": false,
+      "push": false,
+      "tag": false,
+      "github_release": false,
+      "publication": false,
+      "test_build_package_r_case": false
+    },
+    "outcome": "Publication was stopped before mutation. D-206 does not resume or re-enable D-205 publication authority.",
+    "closed_at": "2026-09-02"
+  },
+  "d206_governance_release_body_review_freeze": {
+    "decision": "D-206",
+    "owner_authorization": "Governance-only draft and freeze the exact Release body for owner review; no publication continuation.",
+    "status": "COMPLETED / RELEASE-BODY-FROZEN-FOR-OWNER-REVIEW / BODY-APPROVAL-PENDING / PUBLICATION-NOT-AUTHORIZED",
+    "release_body_freeze_contract": {
+      "decision": "D-206",
+      "purpose": "Freeze an exact deterministically derived GitHub Release body FOR OWNER REVIEW ONLY under the D-196 body rule.",
+      "input": {
+        "release_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+        "release_tree_sha1": "c42067e695dce468138d299a901d83cf252a0a89",
+        "branch": "codex/release-v2.5.0",
+        "canonical_register_before": {
+          "bytes": 571922,
+          "sha256": "e2da938c688a8be816be6b4b1475454a202fdaa88448ec35d44e23dc68942f9a"
+        },
+        "project_before_sha256": "917dd67daf2ae23dc6eadce3d6d9453460836f9a19f9ba03006aeb50230fd35d",
+        "source_release_notes": {
+          "path": "evidence/p21/RELEASE-NOTES-v2.5.0.md",
+          "bytes": 2430,
+          "sha256": "a2c3b7195139893489e8c5fec292ef66c4545ef4bfc0596da43f7f45ed5953e8"
+        },
+        "d202_aggregate_g06_binding_sha256": "659f8903ee2b582ad599435f51f9ab6453cb5f275f1eefecfd7012e7221b45ce",
+        "d203_aggregate_dist_binding_sha256": "a73772e4169cfce1bd5d09b8b201fbe26fed08fd654df1985964c1bc3e9dbc2a",
+        "d204_aggregate_pre_amend_receipt_binding_sha256": "0fdfbc5c7aacee623cc0e386273e6e6169d0a163962711259f65b2ffe5ec743d"
+      },
+      "derivation": {
+        "encoding": "UTF-8 / no BOM / LF / exactly one terminal LF",
+        "source_line_numbering": "One-based 29-line source; source hash must match before any derivation.",
+        "preserved": "Source lines 1-14 preserved except the line-3 prefix Candidate is replaced by Release. Source lines 23-27 are preserved exactly. No feature, compatibility or runtime claim is expanded.",
+        "replacement": "Replace source lines 15-22 with the five-asset introduction, Markdown SHA-256 table and checksum guidance in release_body_utf8. Table rows are rendered directly from D-203 promoted_inventory in its frozen order; each row is | `filename` | `sha256` |.",
+        "controls": "Replace source lines 28-29 with exact-byte G-05 PASS, D-202 explicit owner waiver/no independent Vietnamese counsel review/no lawyer-reviewed claim, and unchanged access-does-not-grant-rights disclosure.",
+        "appended_binding": "Append exact release commit and explain packaging-report historical source-note hash and build-time pending G-06 state; do not alter report or source-note bytes.",
+        "body_role": "Intended publication wording only. Freezing this draft does not declare v2.5.0 published or the new body owner-approved."
+      },
+      "release_body_utf8": "# Thiện’s Skill — Creative Diagram v2.5.0\n\nRelease `v2.5.0` extends the private `v2.0.0` release with the completed 45-profile/14-engine structural system and the semantic, accessibility, quantitative, routing and layout corrections verified through Step 3.\n\n## Highlights\n\n- Exactly 45 public structural profiles resolve through 14 deterministic layout engines while preserving the 39 canonical semantic types, four capability variants and two presentation profiles.\n- Three equal visual modes remain available: `neutral-light`, `neutral-dark` and `editorial`.\n- Connector routing, semantic group identity, profiled-fit canvas behavior, deployment/database grammar, categorical journey sentiment, quantitative labels, ridgeline headers and bubble-series non-color identity have cause-specific verification evidence.\n- The 135 approved gallery samples remain immutable QA lineage, not fixed templates or a restriction on safe user-directed output.\n- Release payloads remain independently authored, self-contained and governed by Tran Ngoc Thien's Skill Commercial Source-Available License 2.0.\n\n## Compatibility and installation\n\nThe release provides three installable ZIP envelopes and two verification files. The five attached assets are byte-identical to the approved `dist/2.5.0/` inventory.\n\n| Asset | SHA-256 |\n| --- | --- |\n| `SHA256SUMS` | `578d844d1ad77162b83b9b9e199f54b7042dc7b0be813cfc6b92ec744b1835e2` |\n| `packaging-report.json` | `1d16f994ee9acc3b5a024edf3d7d02d9cf25c2e47dae4352b9734cf4f48cfe1a` |\n| `Thien-Skill-Creative-Diagram-v2.5.0-Claude.zip` | `b986fa524aa35d903f7686af58e3241e05f2cc047fc1773049b682c617d0c8e2` |\n| `Thien-Skill-Creative-Diagram-v2.5.0-ChatGPT.zip` | `d3a2c9d1f3a36fe8ceb6cb8e2d842839961440156065a9d43bdfa3039d1d57a2` |\n| `Thien-Skill-Creative-Diagram-v2.5.0-Universal.zip` | `c0e1f954c6c5b9a308a27fc37ce2aa3dd4b1dcf6544ee22d7828b40224ff6ffb` |\n\n`SHA256SUMS` lists the three ZIP digests. Use it to verify the archives before extracting the envelope for your host. The hashes of `SHA256SUMS` and `packaging-report.json` are listed above.\n\n## Known limitations and release controls\n\n- PNG output remains conditional on a host-provided rasterizer; the skill does not install one automatically.\n- Host integrations classified as conditional are not advertised as universally supported.\n- Product release `2.5.0` does not mechanically rename independent internal schemas and protocols such as semantic `1.5` or structural renderer/job `2.1`.\n- G-05 package verification passed for the exact attached artifact bytes.\n- G-06 owner legal/brand/provenance approval was recorded under an explicit owner risk-accepted waiver. No independent Vietnamese counsel review was obtained, and no lawyer-reviewed claim is made.\n- This private release grants no usage rights by access or download alone.\n\n## Release binding\n\nRelease commit: `99c179155c8bccc5f0da3e29fea81a72a660439d`.\n\n`packaging-report.json` preserves build-time provenance: its `release_notes_sha256` identifies the unchanged candidate release-note source, not this derived body, and its G-06 field records the then-pending state. G-06 was subsequently completed by owner disposition. This body reconciles the source notes with the approved artifact inventory and that disposition; the source notes, report and all package bytes remain unchanged.\n",
+      "release_body_sha256": "5aabf9899deecbc6f843522a9c344b926be2e8393e8ce1ac5a6a7b3058ab6e5d",
+      "release_body_bytes": 3340,
+      "artifact_binding_rule": "The five filename/byte/SHA-256 entries are inherited without modification from D-203 dist_promotion_contract.promoted_inventory; no sixth release asset or new local body file.",
+      "provenance_rule": "The frozen report release_notes_sha256 remains a2c3b7195139893489e8c5fec292ef66c4545ef4bfc0596da43f7f45ed5953e8. That historical source hash and the new derived-body hash have distinct roles; neither is substituted for the other.",
+      "approval_boundary": {
+        "body_owner_approved": false,
+        "g07_pass": false,
+        "publication_authorized": false,
+        "next_required_action": "Owner must approve the exact body SHA-256 and separately authorize publication bound to the original D-204 release commit and exact D-203 five-member inventory. Reverify live preflight; do not resume D-205 by implication.",
+        "governance_custody": "This phase leaves only two intentional unstaged governance deltas. Any future Git custody/commit/push handling requires explicit authorization and must not move the release target away from the exact D-204 commit."
+      },
+      "invariants": {
+        "source_notes_unchanged": true,
+        "product_package_dist_bytes_unchanged": true,
+        "release_commit_unchanged": true,
+        "legal_terms_and_waiver_unchanged": true,
+        "d185": "NO-FURTHER-FULL-R01-R20"
+      },
+      "prohibited": {
+        "test_build_package_r_case": true,
+        "git_mutation": true,
+        "push": true,
+        "tag": true,
+        "github_release": true,
+        "publication": true
+      }
+    },
+    "release_body_freeze_contract_sha256": "1f2a2df908ee027745791db0356d0fd574dc832890e53493e04697e6d6a22885",
+    "aggregate_release_body_review_binding": {
+      "decision": "D-206",
+      "release_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "release_tree_sha1": "c42067e695dce468138d299a901d83cf252a0a89",
+      "source_register_sha256": "e2da938c688a8be816be6b4b1475454a202fdaa88448ec35d44e23dc68942f9a",
+      "source_release_notes_sha256": "a2c3b7195139893489e8c5fec292ef66c4545ef4bfc0596da43f7f45ed5953e8",
+      "d202_g06_binding_sha256": "659f8903ee2b582ad599435f51f9ab6453cb5f275f1eefecfd7012e7221b45ce",
+      "d203_dist_binding_sha256": "a73772e4169cfce1bd5d09b8b201fbe26fed08fd654df1985964c1bc3e9dbc2a",
+      "d204_receipt_binding_sha256": "0fdfbc5c7aacee623cc0e386273e6e6169d0a163962711259f65b2ffe5ec743d",
+      "d206_body_freeze_contract_sha256": "1f2a2df908ee027745791db0356d0fd574dc832890e53493e04697e6d6a22885",
+      "release_body_sha256": "5aabf9899deecbc6f843522a9c344b926be2e8393e8ce1ac5a6a7b3058ab6e5d",
+      "release_body_bytes": 3340,
+      "artifact_inventory_binding": "EXACT D-203 FIVE MEMBERS / UNCHANGED",
+      "body_owner_approval": "PENDING",
+      "publication_authorized": false,
+      "d185_constraint": "NO-FURTHER-FULL-R01-R20"
+    },
+    "aggregate_release_body_review_binding_sha256": "c9d6fa2279a1ebde4753c84c456f9a2132e20552dd2d97144980eaa7e2d12d20",
+    "verification": {
+      "deterministic_body_derivation": "PASS / EXACT SOURCE SECTIONS, D-203 ORDERED HASH TABLE, D-202 DISPOSITION AND FROZEN REPLACEMENT WORDING; UTF-8 LF WITH ONE TERMINAL LF",
+      "source_and_five_artifact_hashes": "PASS / EXACT SOURCE AND D-203 DIST-STAGING PARITY",
+      "json_and_size_cap": "PASS / JSON PARSE AND BELOW 1 MiB",
+      "scope_and_history": "PASS / HISTORICAL REGISTER DATA UNCHANGED; ONLY CANONICAL REGISTER AND PROJECT GOVERNANCE DELTAS; SOURCE NOTES AND PRODUCT/PACKAGE/DIST UNCHANGED",
+      "body_stale_name_secret_personal_path_scan": "PASS / NO MATCH"
+    },
+    "new_persistent_files": [],
+    "closure": {
+      "current_authorization": "NONE AFTER D-206 CLOSURE",
+      "body_owner_approval": "PENDING",
+      "publication": "NOT AUTHORIZED",
+      "git_mutation": false,
+      "source_notes_or_package_or_dist_mutation": false
+    },
+    "completed_at": "2026-09-02"
+  },
+  "d207_g07_release_publication": {
+    "decision": "D-207",
+    "status": "AUTHORIZED / IN-PROGRESS / LOCAL-GOVERNANCE-CUSTODY",
+    "authorization_contract": {
+      "decision": "D-207",
+      "release": "v2.5.0",
+      "owner_authorization": "Owner said 'triển khai đi' after confirming the D-207 proposal: approve exact D-206 body and new G-07 publication, separately commit two governance files, keep release tag at the D-204 product commit, push only codex/release-v2.5.0, verify remote then commit/push separate governance closure.",
+      "source_register_before": {
+        "bytes": 584573,
+        "sha256": "71bf6d09fdd018ea5834563203a6d4832bb464e87ba31fe57d13e7defd9f6fea"
+      },
+      "source_project_before_sha256": "51715b0672499279f2c5e929df2fba211291f4bdc0cdef690fd8356aa3622e88",
+      "repository": "thiendeptrainhat/Thien-Skill-Creative-Diagram",
+      "repository_visibility": "private",
+      "push_branch": "codex/release-v2.5.0",
+      "main_mutation": false,
+      "release_commit_sha1": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+      "release_tree_sha1": "c42067e695dce468138d299a901d83cf252a0a89",
+      "d203_dist_binding_sha256": "a73772e4169cfce1bd5d09b8b201fbe26fed08fd654df1985964c1bc3e9dbc2a",
+      "d206_review_binding_sha256": "c9d6fa2279a1ebde4753c84c456f9a2132e20552dd2d97144980eaa7e2d12d20",
+      "approved_body_sha256": "5aabf9899deecbc6f843522a9c344b926be2e8393e8ce1ac5a6a7b3058ab6e5d",
+      "approved_body_bytes": 3340,
+      "body_owner_approved": true,
+      "tag": {
+        "name": "v2.5.0",
+        "type": "annotated",
+        "exact_target": "99c179155c8bccc5f0da3e29fea81a72a660439d",
+        "replacement": false
+      },
+      "github_release": {
+        "title": "Thiện’s Skill — Creative Diagram v2.5.0",
+        "draft": false,
+        "prerelease": false,
+        "asset_inventory": "EXACT D-203 FIVE MEMBERS",
+        "body": "EXACT D-206 UTF-8 BYTES"
+      },
+      "governance_custody": {
+        "files": [
+          "PROJECT.md",
+          "evidence/p22/D-157-FULL-POPULATION-REGISTER.json"
+        ],
+        "pre_publication": "Separate governance-only commit above the release commit; include this owner authorization to preserve the project authority trail.",
+        "post_publication": "Separate governance-only receipt/closure commit and push; never move the release tag."
+      },
+      "execution_gate": "All live G-07 preflight checks must PASS before publication. Existing tag/Release or any mismatch stops mutation; no force, overwrite or substitution.",
+      "prohibited": [
+        "main update",
+        "source/test/product/package/dist mutation",
+        "test/build/package/R-case",
+        "full R01-R20",
+        "R17/R18 rerun",
+        "force push",
+        "tag replacement",
+        "release overwrite",
+        "asset substitution"
+      ]
+    },
+    "pre_custody_checks": {
+      "input_body_binding": "PASS",
+      "release_artifacts": "PASS / 5 OF 5 WORKING-STAGING-COMMITTED",
+      "historical_dist": "PASS / 8 OF 8",
+      "source_notes": "UNCHANGED",
+      "repository": "PRIVATE / PUSH PERMISSION / MAIN UNCHANGED",
+      "initial_remote_release_branch": "ABSENT",
+      "initial_remote_tag_and_release": "ABSENT",
+      "live_recheck_before_publication": "REQUIRED"
+    },
+    "started_at": "2026-09-02T16:27:29Z"
+  },
   "file_policy_justification": {
     "consumer": ["Phase 4 controller", "Phase 5 consolidation", "Phase 6 owner triage", "Phase 7 remediation", "Phase 8 final confirmation"],
     "why_existing_file_is_insufficient": "PROJECT.md remains the governance source of truth but cannot safely carry the exact machine-readable prompts, per-case oracles, hashes and mutable deduplicated finding state.",
